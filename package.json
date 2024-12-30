@@ -1,0 +1,42 @@
+{
+  "name": "horde-survival",
+  "version": "0.1.0",
+  "description": "A warcraft III survival map",
+  "main": "src/main.ts",
+  "scripts": {
+    "start": "npm run build:dev",
+    "build:dev": "ts-node --transpile-only scripts/test.ts",
+    "build:release": "ts-node --transpile-only scripts/build.ts",
+    "build:defs": "ts-node scripts/dev",
+    "test": "ava"
+  },
+  "author": "runi95",
+  "license": "MIT",
+  "dependencies": {
+    "w3ts": "^3.0.2"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^22.10.0",
+    "@types/pako": "^2.0.3",
+    "ava": "^6.2.0",
+    "fs-extra": "^11.2.0",
+    "logform": "^2.7.0",
+    "lua-types": "2.13.1",
+    "luamin": "1.0.4",
+    "mdx-m3-viewer": "^5.12.0",
+    "module-alias": "^2.2.3",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "tsutils": "^3.21.0",
+    "typescript": "^5.7.2",
+    "typescript-to-lua": "^1.28.1",
+    "war3-transformer": "^3.0.9",
+    "war3-types": "1.0.4",
+    "war3tstlhelper": "1.0.1",
+    "winston": "^3.17.0"
+  },
+  "_moduleAliases": {
+    "w3ts": "test/overrides/w3ts"
+  }
+}

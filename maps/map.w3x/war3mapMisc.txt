@@ -1,0 +1,15 @@
+[Misc]
+AgiDefenseBase=0.0
+AgiDefenseBonus=0.0
+AgiMoveBonus=5.0
+BoneDecayTime=5.0
+GrantHeroXP=500,600,750,950,1250
+HeroAbilityLevelSkip=3
+HeroExpRange=10000
+HeroFactorXP=100,95,85,70,50,25
+MaxBldgSpeed=999.0
+MaxHeroLevel=1000
+MaxUnitLevel=100
+MaxUnitSpeed=999.0
+NeedHeroXP=500
+

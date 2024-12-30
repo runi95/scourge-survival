@@ -1,0 +1,14 @@
+.DS_Store
+.vscode
+.idea
+/lua
+/target
+/node_modules
+maps/map/war3map.lua
+/logs
+/backups
+/logo
+settings.json
+config.json
+project.log
+/dist

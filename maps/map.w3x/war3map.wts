@@ -1,0 +1,847 @@
+﻿STRING 1
+{
+Player 1
+}
+
+STRING 2
+{
+Player 2
+}
+
+STRING 3
+{
+Player 3
+}
+
+STRING 4
+{
+Player 4
+}
+
+STRING 5
+{
+Player 5
+}
+
+STRING 6
+{
+Player 6
+}
+
+STRING 7
+{
+Player 7
+}
+
+STRING 8
+{
+Player 8
+}
+
+STRING 9
+{
+Player 9
+}
+
+STRING 11
+{
+Horde Survival
+}
+
+STRING 12
+{
+4 - 9
+}
+
+STRING 13
+{
+Survive the onslaught of enemies while upgrading your customizable vehicle to fight the horde!
+}
+
+STRING 14
+{
+runi95#2202
+}
+
+STRING 15
+// Units: H001 (Siege Engine), Name (Name)
+{
+Siege Engine
+}
+
+STRING 16
+{
+Horde
+}
+
+STRING 17
+{
+Players
+}
+
+STRING 18
+{
+Hostile
+}
+
+STRING 20
+// Units: H001 (Siege Engine), Propernames (Proper Names)
+{
+Ironclad Guardian,Bulwark Titan,Steel Vanguard,Adamantine Sentinel,Eternal Bastion,Fortress Golem
+}
+
+STRING 21
+// Units: H001 (Siege Engine), Awakentip (Tooltip - Awaken)
+{
+Revive Siege Engine
+}
+
+STRING 22
+// Units: H001 (Siege Engine), Tip (Tooltip - Basic)
+{
+Summon Siege Engine
+}
+
+STRING 23
+// Units: H001 (Siege Engine), Revivetip (Tooltip - Revive)
+{
+Revive Siege Engine
+}
+
+STRING 24
+// Abilities: A005 (Repair), EditorSuffix (Editor Suffix)
+{
+(Siege Engine)
+}
+
+STRING 27
+// Abilities: A005 (Repair), Name (Name)
+{
+Repair
+}
+
+STRING 28
+// Buffs/Effects: B000 (), Bufftip (Tooltip)
+{
+Repair
+}
+
+STRING 30
+// Buffs/Effects: B000 (), Buffubertip (Tooltip - Extended)
+{
+This unit is being repaired; lost hit points are being restored.
+}
+
+STRING 32
+// Abilities: A005 (Repair), Ubertip (Tooltip - Normal - Extended)
+{
+Repairs a target, damaged friendly mechanical tank for <A005,DataA2> hit points.
+}
+
+STRING 33
+// Abilities: A005 (Repair), Ubertip (Tooltip - Normal - Extended)
+{
+Repairs a target, damaged friendly mechanical tank for <A005,DataA3> hit points.
+}
+
+STRING 34
+// Abilities: A005 (Repair), Untip (Tooltip - Turn Off)
+{
+|cffc3dbffRight-click to activate auto-casting.|r
+}
+
+STRING 35
+// Abilities: A005 (Repair), Untip (Tooltip - Turn Off)
+{
+|cffc3dbffRight-click to activate auto-casting.|r
+}
+
+STRING 36
+// Abilities: A005 (Repair), Unubertip (Tooltip - Turn Off - Extended)
+{
+|cffc3dbffRight-click to deactivate auto-casting.|r
+}
+
+STRING 37
+// Abilities: A005 (Repair), Unubertip (Tooltip - Turn Off - Extended)
+{
+|cffc3dbffRight-click to deactivate auto-casting.|r
+}
+
+STRING 38
+// Abilities: A005 (Repair), Ubertip (Tooltip - Normal - Extended)
+{
+Repairs a target, damaged friendly mechanical tank for <A005,DataA1> hit points.
+}
+
+STRING 41
+// Abilities: A005 (Repair), Ubertip (Tooltip - Normal - Extended)
+{
+Repairs a target, damaged friendly mechanical tank for <A005,DataA4> hit points.
+}
+
+STRING 42
+// Abilities: A005 (Repair), Ubertip (Tooltip - Normal - Extended)
+{
+Repairs a target, damaged friendly mechanical tank for <A005,DataA5> hit points.
+}
+
+STRING 43
+// Abilities: A005 (Repair), Untip (Tooltip - Turn Off)
+{
+|cffc3dbffRight-click to activate auto-casting.|r
+}
+
+STRING 44
+// Abilities: A005 (Repair), Untip (Tooltip - Turn Off)
+{
+|cffc3dbffRight-click to activate auto-casting.|r
+}
+
+STRING 45
+// Abilities: A005 (Repair), Unubertip (Tooltip - Turn Off - Extended)
+{
+|cffc3dbffRight-click to deactivate auto-casting.|r
+}
+
+STRING 46
+// Abilities: A005 (Repair), Unubertip (Tooltip - Turn Off - Extended)
+{
+|cffc3dbffRight-click to deactivate auto-casting.|r
+}
+
+STRING 48
+// Abilities: A005 (Repair), Researchubertip (Tooltip - Learn - Extended)
+{
+Repairs a target, damaged friendly mechanical tank.|n|n|cffffcc00Level 1|r - Repairs for <A005,DataA1> hit points.|n|cffffcc00Level 2|r - Repairs for <A005,DataA2> hit points.|n|cffffcc00Level 3|r - Repairs for <A005,DataA1> hit points.|n|cffffcc00Level 4|r - Repairs for <A005,DataA4> hit points.|n|cffffcc00Level 5|r - Repairs for <A005,DataA5> hit points.
+}
+
+STRING 50
+// Abilities: A000 (Phoenix Fire), EditorSuffix (Editor Suffix)
+{
+(1)
+}
+
+STRING 51
+// Abilities: A004 (Phoenix Fire), EditorSuffix (Editor Suffix)
+{
+(2)
+}
+
+STRING 52
+// Abilities: A006 (Phoenix Fire), EditorSuffix (Editor Suffix)
+{
+(3)
+}
+
+STRING 53
+// Abilities: A007 (Phoenix Fire), EditorSuffix (Editor Suffix)
+{
+(4)
+}
+
+STRING 54
+// Abilities: A008 (Phoenix Fire), EditorSuffix (Editor Suffix)
+{
+(5)
+}
+
+STRING 55
+// Abilities: A009 (Inventory), EditorSuffix (Editor Suffix)
+{
+(Tank)
+}
+
+STRING 56
+// Items: I000 (Cannon), Name (Name)
+{
+Cannon
+}
+
+STRING 58
+// Items: I000 (Cannon), Description (Description)
+{
+Fires a cannonball at a random nearby enemy.
+}
+
+STRING 59
+// Items: I000 (Cannon), Ubertip (Tooltip - Extended)
+{
+Fires a cannonball at a random nearby enemy.
+}
+
+STRING 60
+// Units: u000 (Dummy), Name (Name)
+{
+Dummy
+}
+
+STRING 61
+// Items: I000 (Cannon), Tip (Tooltip - Basic)
+{
+Purchase Cannon
+}
+
+STRING 62
+// Items: I001 (Impale), Name (Name)
+{
+Impale
+}
+
+STRING 63
+// Items: I001 (Impale), Tip (Tooltip - Basic)
+{
+Purchase Impale
+}
+
+STRING 66
+// Items: I002 (Shockwave), Name (Name)
+{
+Shockwave
+}
+
+STRING 67
+// Items: I002 (Shockwave), Tip (Tooltip - Basic)
+{
+Purchase Shockwave
+}
+
+STRING 68
+// Items: I002 (Shockwave), Description (Description)
+{
+Sends a shockwave in a random direction every 2.5 seconds.
+}
+
+STRING 69
+// Items: I002 (Shockwave), Ubertip (Tooltip - Extended)
+{
+Sends a shockwave in a random direction every 2.5 seconds.
+}
+
+STRING 70
+// Items: I001 (Impale), Description (Description)
+{
+Impales in a random direction every 3 seconds.
+}
+
+STRING 71
+// Items: I001 (Impale), Ubertip (Tooltip - Extended)
+{
+Impales in a random direction every 3 seconds.
+}
+
+STRING 72
+// Items: I005 (Permanent Immolation), Name (Name)
+{
+Permanent Immolation
+}
+
+STRING 73
+// Abilities: A002 (Permanent Immolation), Tip (Tooltip - Normal)
+{
+Permanent Immolation
+}
+
+STRING 74
+// Abilities: A002 (Permanent Immolation), Tip (Tooltip - Normal)
+{
+Permanent Immolation
+}
+
+STRING 75
+// Abilities: A002 (Permanent Immolation), Tip (Tooltip - Normal)
+{
+Permanent Immolation
+}
+
+STRING 80
+// Abilities: A002 (Permanent Immolation), Ubertip (Tooltip - Normal - Extended)
+{
+Burns nearby enemy units for <A002,DataA2> points of damage per second.
+}
+
+STRING 81
+// Abilities: A002 (Permanent Immolation), Ubertip (Tooltip - Normal - Extended)
+{
+Burns nearby enemy units for <A002,DataA3> points of damage per second.
+}
+
+STRING 82
+// Abilities: A002 (Permanent Immolation), Ubertip (Tooltip - Normal - Extended)
+{
+Burns nearby enemy units for <A002,DataA4> points of damage per second.
+}
+
+STRING 83
+// Abilities: A002 (Permanent Immolation), Ubertip (Tooltip - Normal - Extended)
+{
+Burns nearby enemy units for <A002,DataA5> points of damage per second.
+}
+
+STRING 84
+// Items: I005 (Permanent Immolation), Description (Description)
+{
+Burns nearby enemy units for <A002,DataA1> points of damage per second.
+}
+
+STRING 85
+// Abilities: A003 (Evasion), Tip (Tooltip - Normal)
+{
+Evasion
+}
+
+STRING 86
+// Abilities: A003 (Evasion), Tip (Tooltip - Normal)
+{
+Evasion
+}
+
+STRING 87
+// Abilities: A003 (Evasion), Tip (Tooltip - Normal)
+{
+Evasion
+}
+
+STRING 88
+// Abilities: A003 (Evasion), Tip (Tooltip - Normal)
+{
+Evasion
+}
+
+STRING 89
+// Abilities: A003 (Evasion), Ubertip (Tooltip - Normal - Extended)
+{
+Gives a <A003,DataA1,%>% percent chance to avoid an attack.
+}
+
+STRING 90
+// Abilities: A003 (Evasion), Ubertip (Tooltip - Normal - Extended)
+{
+Gives a <A003,DataA2,%>% percent chance to avoid an attack.
+}
+
+STRING 91
+// Abilities: A003 (Evasion), Ubertip (Tooltip - Normal - Extended)
+{
+Gives a <A003,DataA3,%>% percent chance to avoid an attack.
+}
+
+STRING 92
+// Abilities: A003 (Evasion), Ubertip (Tooltip - Normal - Extended)
+{
+Gives a <A003,DataA4,%>% percent chance to avoid an attack.
+}
+
+STRING 93
+// Abilities: A003 (Evasion), Ubertip (Tooltip - Normal - Extended)
+{
+Gives a <A003,DataA5,%>% percent chance to avoid an attack.
+}
+
+STRING 94
+// Items: I003 (Goblin Land Mine), Name (Name)
+{
+Goblin Land Mine
+}
+
+STRING 95
+// Items: I003 (Goblin Land Mine), Tip (Tooltip - Basic)
+{
+Purchase Goblin Land Mine
+}
+
+STRING 96
+// Items: I003 (Goblin Land Mine), Description (Description)
+{
+Places a goblin land mine onto the ground every 1.5 seconds.
+}
+
+STRING 97
+// Items: I003 (Goblin Land Mine), Ubertip (Tooltip - Extended)
+{
+Places a goblin land mine onto the ground every 1.5 seconds.
+}
+
+STRING 98
+// Items: I004 (Monsoon), Name (Name)
+{
+Monsoon
+}
+
+STRING 99
+// Items: I004 (Monsoon), Tip (Tooltip - Basic)
+{
+Purchase Monsoon
+}
+
+STRING 100
+// Items: I004 (Monsoon), Description (Description)
+{
+Creates a permanent thunderstorm that strikes enemies with lightning every so often.
+}
+
+STRING 101
+// Items: I004 (Monsoon), Ubertip (Tooltip - Extended)
+{
+Creates a permanent thunderstorm that strikes enemies with lightning every so often.
+}
+
+STRING 102
+// Abilities: A00F (Avatar), Tip (Tooltip - Normal)
+{
+Activate Avatar
+}
+
+STRING 103
+// Abilities: A00F (Avatar), Tip (Tooltip - Normal)
+{
+Activate Avatar
+}
+
+STRING 104
+// Abilities: A00F (Avatar), Untip (Tooltip - Turn Off)
+{
+Deactivate Avatar
+}
+
+STRING 105
+// Abilities: A00F (Avatar), Untip (Tooltip - Turn Off)
+{
+Deactivate Avatar
+}
+
+STRING 106
+// Abilities: A00F (Avatar), Ubertip (Tooltip - Normal - Extended)
+{
+Activate Avatar to give the Siege Engine <A00F,DataA2> bonus armor, <A00F,DataB2> bonus hit points and spell immunity. |nLasts <A00F,Dur2> seconds.
+}
+
+STRING 107
+// Abilities: A00F (Avatar), Ubertip (Tooltip - Normal - Extended)
+{
+Activate Avatar to give the Siege Engine <A00F,DataA3> bonus armor, <A00F,DataB3> bonus hit points and spell immunity. |nLasts <A00F,Dur3> seconds.
+}
+
+STRING 108
+// Abilities: A00F (Avatar), Ubertip (Tooltip - Normal - Extended)
+{
+Activate Avatar to give the Siege Engine <A00F,DataA1> bonus armor, <A00F,DataB1> bonus hit points and spell immunity. |nLasts <A00F,Dur1> seconds.
+}
+
+STRING 109
+// Abilities: A005 (Repair), Researchtip (Tooltip - Learn)
+{
+Learn Repair - [|cffffcc00Level %d|r]
+}
+
+STRING 110
+// Abilities: A005 (Repair), Researchhotkey (Hotkey - Learn)
+{
+E
+}
+
+STRING 111
+// Abilities: A00F (Avatar), Hotkey (Hotkey - Normal)
+{
+R
+}
+
+STRING 112
+// Abilities: A00F (Avatar), Researchhotkey (Hotkey - Learn)
+{
+R
+}
+
+STRING 113
+// Abilities: A00F (Avatar), Unhotkey (Hotkey - Turn Off)
+{
+R
+}
+
+STRING 114
+// Abilities: A00F (Avatar), Researchtip (Tooltip - Learn)
+{
+Learn Avatar - [|cffffcc00Level %d|r]
+}
+
+STRING 115
+// Abilities: A00F (Avatar), Researchubertip (Tooltip - Learn - Extended)
+{
+When Avatar is activated, it gives the Siege Engine <A00F,DataA1> bonus armor, <A00F,DataB1> bonus hit points and spell immunity. |nLasts <A00F,Dur1> seconds.
+}
+
+STRING 116
+// Abilities: A00G (Thunder Clap), Researchhotkey (Hotkey - Learn)
+{
+W
+}
+
+STRING 117
+// Abilities: A00G (Thunder Clap), Hotkey (Hotkey - Normal)
+{
+W
+}
+
+STRING 118
+// Abilities: A00G (Thunder Clap), Tip (Tooltip - Normal)
+{
+Thunder Clap - [|cffffcc00Level 4|r]
+}
+
+STRING 119
+// Abilities: A00G (Thunder Clap), Tip (Tooltip - Normal)
+{
+Thunder Clap - [|cffffcc00Level 5|r]
+}
+
+STRING 120
+// Abilities: A00G (Thunder Clap), Researchubertip (Tooltip - Learn - Extended)
+{
+Slams the ground, dealing damage to and slowing the movement speed and attack rate of nearby enemy land units. |n|n|cffffcc00Level 1|r - <A00G,DataA1> damage, <A00G,DataC1,%>% move, <A00G,DataD1,%>% attack. |n|cffffcc00Level 2|r - <A00G,DataA2> damage, <A00G,DataC2,%>% move, <A00G,DataD2,%>% attack. |n|cffffcc00Level 3|r - <A00G,DataA3> damage, <A00G,DataC3,%>% move, <A00G,DataD3,%>% attack.
+}
+
+STRING 121
+// Abilities: A00G (Thunder Clap), Ubertip (Tooltip - Normal - Extended)
+{
+Slams the ground, dealing <A00G,DataA1> damage to nearby enemy land units and slowing their movement by <A00G,DataC1,%>% and attack rate by <A00G,DataD1,%>%.
+}
+
+STRING 122
+// Abilities: A00G (Thunder Clap), Ubertip (Tooltip - Normal - Extended)
+{
+Slams the ground, dealing <A00G,DataA2> damage to nearby enemy land units and slowing their movement by <A00G,DataC2,%>% and attack rate by <A00G,DataD2,%>%.
+}
+
+STRING 123
+// Abilities: A00G (Thunder Clap), Ubertip (Tooltip - Normal - Extended)
+{
+Slams the ground, dealing <A00G,DataA3> damage to nearby enemy land units and slowing their movement by <A00G,DataC3,%>% and attack rate by <A00G,DataD3,%>%.
+}
+
+STRING 124
+// Abilities: A00G (Thunder Clap), Ubertip (Tooltip - Normal - Extended)
+{
+Slams the ground, dealing <A00G,DataA4> damage to nearby enemy land units and slowing their movement by <A00G,DataC4,%>% and attack rate by <A00G,DataD4,%>%.
+}
+
+STRING 125
+// Abilities: A00G (Thunder Clap), Ubertip (Tooltip - Normal - Extended)
+{
+Slams the ground, dealing <A00G,DataA5> damage to nearby enemy land units and slowing their movement by <A00G,DataC5,%>% and attack rate by <A00G,DataD5,%>%.
+}
+
+STRING 126
+// Abilities: A00F (Avatar), EditorSuffix (Editor Suffix)
+{
+(Siege Engine)
+}
+
+STRING 127
+// Abilities: A00G (Thunder Clap), EditorSuffix (Editor Suffix)
+{
+(Siege Engine)
+}
+
+STRING 128
+// Abilities: A00H (Flame Strike), Researchhotkey (Hotkey - Learn)
+{
+Q
+}
+
+STRING 129
+// Abilities: A00H (Flame Strike), Hotkey (Hotkey - Normal)
+{
+Q
+}
+
+STRING 130
+// Abilities: A00H (Flame Strike), Tip (Tooltip - Normal)
+{
+Flame Strike - [|cffffcc00Level 4|r]
+}
+
+STRING 131
+// Abilities: A00H (Flame Strike), Tip (Tooltip - Normal)
+{
+Flame Strike - [|cffffcc00Level 5|r]
+}
+
+STRING 132
+// Abilities: A00H (Flame Strike), EditorSuffix (Editor Suffix)
+{
+(Siege Engine)
+}
+
+STRING 133
+// Abilities: A00H (Flame Strike), Researchubertip (Tooltip - Learn - Extended)
+{
+Conjures a pillar of fire which damages ground units in a target area over time. |n|n|cffffcc00Level 1|r - 45 damage a second for 3 seconds, followed by minor damage for 6 seconds. |n|cffffcc00Level 2|r - 80 damage a second for 3 seconds, followed by light damage for 6 seconds. |n|cffffcc00Level 3|r - 110 damage a second for 3 seconds, followed by moderate damage for 6 seconds. |n|cffffcc00Level 4|r - 140 damage a second for 3 seconds, followed by moderate damage for 6 seconds. |n|cffffcc00Level 5|r - 170 damage a second for 3 seconds, followed by moderate damage for 6 seconds.
+}
+
+STRING 134
+// Abilities: A00H (Flame Strike), Ubertip (Tooltip - Normal - Extended)
+{
+Conjures a pillar of flame that burns ground units for 140 damage a second for 3 seconds. As the pillar of flame subsides, units within the fire continue to take moderate damage.
+}
+
+STRING 135
+// Abilities: A00H (Flame Strike), Ubertip (Tooltip - Normal - Extended)
+{
+Conjures a pillar of flame that burns ground units for 170 damage a second for 3 seconds. As the pillar of flame subsides, units within the fire continue to take moderate damage.
+}
+
+STRING 136
+// Upgrades: R000 (Creature Attack,Improved Creature Attack,Advanced Creature Attack), Name (Name)
+{
+Attack Damage
+}
+
+STRING 137
+// Upgrades: R000 (Creature Attack,Improved Creature Attack,Advanced Creature Attack), class (Class)
+{
+melee
+}
+
+STRING 138
+// Upgrades: R001 (Creature Carapace,Improved Creature Carapace,Advanced Creature Carapace), Name (Name)
+{
+Armor
+}
+
+STRING 139
+// Upgrades: R002 (Creature Attack,Improved Creature Attack,Advanced Creature Attack), Name (Name)
+{
+Attack Speed
+}
+
+STRING 140
+// Upgrades: R002 (Creature Attack,Improved Creature Attack,Advanced Creature Attack), effect1 (Effect 1)
+{
+rats
+}
+
+STRING 142
+// Upgrades: R003 (Creature Attack,Improved Creature Attack,Advanced Creature Attack), Name (Name)
+{
+Hit Points
+}
+
+STRING 143
+// Upgrades: R003 (Creature Attack,Improved Creature Attack,Advanced Creature Attack), effect1 (Effect 1)
+{
+rhpx
+}
+
+STRING 145
+// Upgrades: R004 (Creature Attack,Improved Creature Attack,Advanced Creature Attack), Name (Name)
+{
+Hit Point Regeneration
+}
+
+STRING 146
+// Upgrades: R004 (Creature Attack,Improved Creature Attack,Advanced Creature Attack), effect1 (Effect 1)
+{
+rhpr
+}
+
+STRING 148
+// Upgrades: R002 (Creature Attack,Improved Creature Attack,Advanced Creature Attack), class (Class)
+{
+_
+}
+
+STRING 149
+// Upgrades: R003 (Creature Attack,Improved Creature Attack,Advanced Creature Attack), class (Class)
+{
+_
+}
+
+STRING 150
+// Upgrades: R004 (Creature Attack,Improved Creature Attack,Advanced Creature Attack), class (Class)
+{
+_
+}
+
+STRING 151
+// Abilities: A005 (Repair), Tip (Tooltip - Normal)
+{
+Repair - [|cffffcc00Level 1|r]
+}
+
+STRING 152
+// Abilities: A005 (Repair), Tip (Tooltip - Normal)
+{
+Repair - [|cffffcc00Level 2|r]
+}
+
+STRING 153
+// Abilities: A005 (Repair), Tip (Tooltip - Normal)
+{
+Repair - [|cffffcc00Level 3|r]
+}
+
+STRING 154
+// Abilities: A005 (Repair), Tip (Tooltip - Normal)
+{
+Repair - [|cffffcc00Level 4|r]
+}
+
+STRING 155
+// Abilities: A005 (Repair), Tip (Tooltip - Normal)
+{
+Repair - [|cffffcc00Level 5|r]
+}
+
+STRING 156
+// Items: I005 (Permanent Immolation), Tip (Tooltip - Basic)
+{
+Purchase Permanent Immolation
+}
+
+STRING 157
+// Items: I005 (Permanent Immolation), Ubertip (Tooltip - Extended)
+{
+Burns nearby enemy units for <A002,DataA1> points of damage per second.
+}
+
+STRING 158
+// Items: I006 (Air Support), Name (Name)
+{
+Air Support
+}
+
+STRING 159
+// Items: I006 (Air Support), Tip (Tooltip - Basic)
+{
+Purchase Air Support
+}
+
+STRING 160
+// Items: I006 (Air Support), Description (Description)
+{
+Spawns 3 drones to permanently fight for you.
+}
+
+STRING 161
+// Items: I006 (Air Support), Ubertip (Tooltip - Extended)
+{
+Spawns 3 drones to permanently fight for you.
+}
+
+STRING 162
+// Abilities: A002 (Permanent Immolation), Tip (Tooltip - Normal)
+{
+Permanent Immolation
+}
+
+STRING 163
+// Abilities: A002 (Permanent Immolation), Ubertip (Tooltip - Normal - Extended)
+{
+Burns nearby enemy units for <A002,DataA1> points of damage per second.
+}
+
+STRING 164
+{
+Weapons
+}
+
