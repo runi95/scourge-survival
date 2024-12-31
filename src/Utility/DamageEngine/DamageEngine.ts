@@ -677,7 +677,8 @@ export class DamageEngine {
             if (
               d.damageType == DAMAGE_TYPE_SPIRIT_LINK ||
               d.damageType == DAMAGE_TYPE_DEFENSIVE ||
-              d.damageType == DAMAGE_TYPE_PLANT
+              d.damageType == DAMAGE_TYPE_PLANT ||
+              d.damageType == DAMAGE_TYPE_FIRE
             ) {
               this.lastInstance = this.current;
               this.totem = false;
