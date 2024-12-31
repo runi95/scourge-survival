@@ -86,12 +86,15 @@ type MappedEventsObject = {
 };
 
 /**
- * Lua Damage Engine 2.0 (or Damage Engine 5.9.0.0)
+ * Lua Damage Engine 2.0 (or Damage Engine 5.A.0.0)
  */
 export class DamageEngine {
   public static nextType: number | null = null;
   public static readonly targets = CreateGroup();
 
+  /**
+   * Configurable variables are listed below
+   */
   private static readonly _USE_EXTRA: boolean = false; // If you don't use DamageEventLevel/DamageEventAOE/SourceDamageEvent, set this to false
   private static readonly _USE_ARMOR_MOD: boolean = true; // If you do not modify nor detect armor/defense, set this to false
   private static readonly _USE_MELEE_RANGE: boolean = true; // If you do not detect melee nor ranged damage, set this to false
@@ -110,12 +113,12 @@ export class DamageEngine {
   private static readonly _FILTER_SPELL: number = 4; // GREATER_THAN
   private static readonly _FILTER_CODE: number = 5; // NOT_EQUAL
 
-  private t1 = CreateTrigger();
-  private t2 = CreateTrigger();
-  private t3 = CreateTrigger();
+  private readonly t1: trigger = CreateTrigger();
+  private readonly t2: trigger = CreateTrigger();
+  private readonly t3: trigger = CreateTrigger();
   private current: DamageInstance = null;
   private userIndex: DamageEventRegistry = null; // userIndex identifies the registry table for the damage function that's currently running.
-  private checkConfig = (() => {
+  private readonly checkConfig = (() => {
     const checkItem = (u: unit, id: number): boolean => {
       if (IsUnitType(u, UNIT_TYPE_HERO)) {
         for (let i = 0; i < UnitInventorySize(u); i++) {
@@ -127,64 +130,66 @@ export class DamageEngine {
     };
 
     return () => {
+      /**
+       * Mapmakers should comment-out any of the below lines that they will never need to check
+       * for, and move the most common checks to the top of the list.
+       */
       if (!this.userIndex.configured) return true;
-
-      // TO BE CONFIGURED
-      if (
+      else if (
         this.userIndex.sourceType &&
         GetUnitTypeId(this.current.source) !==
           (this.userIndex.sourceType as unknown as number)
       )
         return true;
-      if (
+      else if (
         this.userIndex.targetType &&
         GetUnitTypeId(this.current.target) !==
           (this.userIndex.targetType as unknown as number)
       )
         return true;
-      if (
+      else if (
         this.userIndex.sourceBuff &&
         GetUnitAbilityLevel(this.current.source, this.userIndex.sourceBuff) ===
           0
       )
         return true;
-      if (
+      else if (
         this.userIndex.targetBuff &&
         GetUnitAbilityLevel(this.current.target, this.userIndex.targetBuff) ===
           0
       )
         return true;
-      if (
+      else if (
         this.userIndex.failChance &&
         GetRandomReal(0.0, 1.0) <= this.userIndex.failChance
       )
         return true;
-      if (
+      else if (
         this.userIndex.userType &&
         this.current.userType !== this.userIndex.userType
       )
         return true;
-      if (
+      else if (
         this.userIndex.source &&
-        this.current.source !== this.userIndex.source
+        this.userIndex.source !== this.current.source
       )
         return true;
-      if (
+      else if (
         this.userIndex.target &&
-        this.current.target !== this.userIndex.target
+        this.userIndex.target !== this.current.target
       )
         return true;
-      if (
+      else if (
         this.userIndex.attackType &&
-        this.current.attackType !== this.userIndex.attackType
+        this.userIndex.attackType !== this.current.attackType
       )
         return true;
-      if (
+      else if (
         this.userIndex.damageType &&
-        this.current.damageType !== this.userIndex.damageType
+        this.userIndex.damageType !== this.current.damageType
       )
         return true;
-      if (
+      else if (
         this.userIndex.sourceItem &&
         !checkItem(
           this.current.source,
@@ -192,7 +197,7 @@ export class DamageEngine {
         )
       )
         return true;
-      if (
+      else if (
         this.userIndex.targetItem &&
         !checkItem(
           this.current.target,
@@ -200,21 +205,25 @@ export class DamageEngine {
         )
       )
         return true;
-      if (
+      else if (
         this.userIndex.sourceClass &&
         !IsUnitType(this.current.source, this.userIndex.sourceClass)
       )
         return true;
-      if (
+      else if (
         this.userIndex.targetClass &&
         !IsUnitType(this.current.target, this.userIndex.targetClass)
       )
         return true;
-      if (this.current.damage >= this.userIndex.damageMin) return true;
+      else if (this.current.damage >= this.userIndex.damageMin) return true;
 
       Log.Fatal("DamageEngine configuration failed!");
       return false;
     };
+
+    /*
+     * Configuration section is over. The rest of the library is hard-coded.
+     */
   })();
 
   private sourceStacks = 1; // sourceStacks holds how many times a single unit was hit from the same source using the same attack. AKA udg_DamageEventLevel.
@@ -415,7 +424,7 @@ export class DamageEngine {
       isCode
     );
     if (!d.isCode) {
-      if (d.damageType == DAMAGE_TYPE_NORMAL && d.isAttack) {
+      if (d.damageType === DAMAGE_TYPE_NORMAL && d.isAttack) {
         if (DamageEngine._USE_MELEE_RANGE) {
           d.isMelee = IsUnitType(d.source, UNIT_TYPE_MELEE_ATTACKER);
           d.isRanged = IsUnitType(d.source, UNIT_TYPE_RANGED_ATTACKER);
@@ -491,8 +500,8 @@ export class DamageEngine {
     }
   }
 
-  private proclusGlobal = {};
-  private fischerMorrow = {};
+  private proclusGlobal: boolean[] = [];
+  private fischerMorrow: boolean[] = [];
 
   /**
    * Setup pre-events before running any user-facing damage events.
@@ -514,10 +523,10 @@ export class DamageEngine {
     this.proclusGlobal[d.source as any] = true;
     this.fischerMorrow[d.target as any] = true;
 
-    if (d.damage == 0.0) {
+    if (d.damage === 0.0) {
       return true;
     }
-    this.canOverride = d.damageType == DAMAGE_TYPE_UNKNOWN;
+    this.canOverride = d.damageType === DAMAGE_TYPE_UNKNOWN;
     this.runEvent(DamageEventType.PreDamageEvent);
     if (isNatural) {
       BlzSetEventAttackType(d.attackType);
@@ -592,7 +601,7 @@ export class DamageEngine {
               }
               this.afterDamage();
             }
-            i = i + 1;
+            i += 1;
           } while (i >= exit);
         } while (i >= this.recursiveStack.length);
       }
@@ -608,8 +617,8 @@ export class DamageEngine {
       this.isDreaming = false;
       this.enable(true);
 
-      this.proclusGlobal = {};
-      this.fischerMorrow = {};
+      this.proclusGlobal = [];
+      this.fischerMorrow = [];
       Log.Debug("Cleared up the groups");
     }
   }
@@ -675,10 +684,10 @@ export class DamageEngine {
           if (this.totem) {
             // WarCraft 3 didn't run the DAMAGED event despite running the DAMAGING event.
             if (
-              d.damageType == DAMAGE_TYPE_SPIRIT_LINK ||
-              d.damageType == DAMAGE_TYPE_DEFENSIVE ||
-              d.damageType == DAMAGE_TYPE_PLANT ||
-              d.damageType == DAMAGE_TYPE_FIRE
+              d.damageType === DAMAGE_TYPE_SPIRIT_LINK ||
+              d.damageType === DAMAGE_TYPE_DEFENSIVE ||
+              d.damageType === DAMAGE_TYPE_PLANT ||
+              d.damageType === DAMAGE_TYPE_FIRE
             ) {
               this.lastInstance = this.current;
               this.totem = false;
@@ -695,7 +704,7 @@ export class DamageEngine {
               this.onAOEEnd();
               this.originalSource = d.source;
               this.originalTarget = d.target;
-            } else if (d.target == this.originalTarget) {
+            } else if (d.target === this.originalTarget) {
               this.sourceStacks += 1;
             } else if (!IsUnitInGroup(d.target, DamageEngine.targets)) {
               this.sourceAOE += 1;
@@ -751,7 +760,7 @@ export class DamageEngine {
         let d = this.current;
         Log.Debug("Second damage event running...");
         if (this.prepped) this.prepped = null;
-        else if (this.isDreaming || d.prevAmt == 0.0) return;
+        else if (this.isDreaming || d.prevAmt === 0.0) return;
         else if (this.totem) this.totem = false;
         else {
           this.afterDamage();
@@ -767,13 +776,16 @@ export class DamageEngine {
         if (r > 0.0) {
           this.runEvent(DamageEventType.ArmorDamageEvent);
           if (DamageEngine.HAS_LETHAL || d.userType < 0) {
-            d.life = GetWidgetLife(d.target) - d.damage;
-            if (d.life <= DamageEngine._DEATH_VAL) {
+            this.current.life = GetWidgetLife(d.target) - d.damage;
+            if (this.current.life <= DamageEngine._DEATH_VAL) {
               if (DamageEngine.HAS_LETHAL) {
                 this.runEvent(DamageEventType.LethalDamageEvent);
-                d.damage = GetWidgetLife(d.target) - d.life;
+                d.damage = GetWidgetLife(d.target) - this.current.life;
               }
-              if (d.userType < 0 && d.life <= DamageEngine._DEATH_VAL) {
+              if (
+                d.userType < 0 &&
+                this.current.life <= DamageEngine._DEATH_VAL
+              ) {
                 SetUnitExploded(d.target, true);
               }
             }
@@ -783,7 +795,7 @@ export class DamageEngine {
           this.runEvent(DamageEventType.OnDamageEvent);
         BlzSetEventDamage(d.damage);
         this.isEventsRun = true;
-        if (d.damage == 0.0) this.finish();
+        if (d.damage === 0.0) this.finish();
 
         return false;
       })
@@ -802,7 +814,10 @@ export class DamageEngine {
     DisableTrigger(this.t3);
   }
 
-  // function Damage.inception() userIndex.inceptionTrig = true end // FIXME: Implement!
+  // Call to enable recursive damage on your trigger.
+  public inception() {
+    this.userIndex.inceptionTrig = true;
+  }
 
   /**
    * add a recursive damage instance
@@ -854,9 +869,9 @@ export class DamageEngine {
     filt?: number
   ): void {
     if (eventType === DamageEventType.AoeDamageEvent) {
-      this.HAS_SOURCE = true;
+      DamageEngine.HAS_SOURCE = true;
     } else if (eventType === DamageEventType.LethalDamageEvent) {
-      this.HAS_LETHAL = true;
+      DamageEngine.HAS_LETHAL = true;
     }
 
     filt = filt || this._FILTER_OTHER;
