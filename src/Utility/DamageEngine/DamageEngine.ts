@@ -411,11 +411,14 @@ export class DamageEngine {
    * @param {boolean} isCode
    * @returns {DamageInstance}
    */
-  private createFromEvent(isCode: boolean): DamageInstance {
+  private createFromEvent(
+    eventDamage: number,
+    isCode: boolean
+  ): DamageInstance {
     const d = this.create(
       GetEventDamageSource(),
       GetTriggerUnit(),
-      GetEventDamage(),
+      eventDamage,
       BlzGetEventIsAttack(),
       false,
       BlzGetEventAttackType(),
@@ -678,7 +681,12 @@ export class DamageEngine {
     TriggerAddCondition(
       this.t1,
       Filter(() => {
-        const d = this.createFromEvent(false);
+        const eventDamage = GetEventDamage();
+        // FIXME: A bug in wc3 causes a 0.0 damage event when attacking enemy units with initial damage + DOT (ex: Slow Poison, Envenomed Spears, Phoenix Fire)
+        // This breaks the damage engine later down the line so this is a hotfix for this bug
+        if (eventDamage === 0.0) return;
+
+        const d = this.createFromEvent(eventDamage, false);
         Log.Debug("Pre-damage event running...");
         if (this.isAlarmSet) {
           if (this.totem) {
@@ -805,7 +813,7 @@ export class DamageEngine {
     TriggerAddCondition(
       this.t3,
       Filter(() => {
-        this.addRecursive(this.createFromEvent(true));
+        this.addRecursive(this.createFromEvent(GetEventDamage(), true));
         BlzSetEventDamage(0.0);
 
         return false;
