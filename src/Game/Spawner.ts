@@ -26,6 +26,13 @@ export class Spawner {
   }
 
   public initializeAI() {
+    // for (let i = 0; i < GameMap.ONLINE_PLAYER_ID_LIST.length; i++) {
+    //   StartCampaignAI(
+    //     Player(GameMap.ONLINE_PLAYER_ID_LIST[i] + 9),
+    //     "war3mapImported/scourge.ai"
+    //   );
+    // }
+
     const t: Timer = TimerUtils.newTimer();
     t.start(10, false, () => {
       const localPlayerId = GetPlayerId(GetLocalPlayer());
@@ -123,6 +130,10 @@ export class Spawner {
         TimerUtils.releaseTimer(t);
         if (portalWaves.length - 1 > index) {
           this.spawnPortal(portalWaves, index + 1, isFirstPortal);
+        } else {
+          for (let i = 0; i < GameMap.ONLINE_PLAYER_ID_LIST.length; i++) {
+            CommandAI(Player(GameMap.ONLINE_PLAYER_ID_LIST[i] + 9), 0, 0);
+          }
         }
       }
     });

@@ -1,0 +1,105 @@
+//***************************************************************************
+//*
+//*  Basic Options
+//*
+//***************************************************************************
+
+//===========================================================================
+function InitOptions takes nothing returns nothing
+    call SetCampaignAI()
+    call SetDefendPlayer(false)
+    call SetRandomPaths(false)
+    call SetTargetHeroes(true)
+    call SetPeonsRepair(false)
+    call SetHeroesFlee(false)
+    call SetHeroesBuyItems(false)
+    call SetUnitsFlee(false)
+    call SetGroupsFlee(false)
+    call SetWatchMegaTargets(true)
+    call SetIgnoreInjured(false)
+    call SetHeroesTakeItems(false)
+    call SetSlowChopping(false)
+    call SetCaptainChanges(true)
+    call SetSmartArtillery(true)
+endfunction
+
+//***************************************************************************
+//*
+//*  Conditions
+//*
+//***************************************************************************
+
+//===========================================================================
+// Updates the values of all preset conditions
+//===========================================================================
+function UpdateConditions takes nothing returns nothing
+endfunction
+
+//***************************************************************************
+//*
+//*  Attacking
+//*
+//***************************************************************************
+
+//===========================================================================
+// Assigns units to attack based on the given attack group
+//===========================================================================
+function PrepareAttackGroup takes nothing returns nothing
+    call AddAssault(GetUnitCountDone('u001'), 'u001')
+    call AddAssault(GetUnitCountDone('u002'), 'u002')
+    call AddAssault(GetUnitCountDone('u003'), 'u003')
+    call AddAssault(GetUnitCountDone('u004'), 'u004')
+    call AddAssault(GetUnitCountDone('u005'), 'u005')
+endfunction
+
+//===========================================================================
+// Basic attack functionality
+//===========================================================================
+function AttackTarget takes unit target returns nothing
+    call SetAllianceTarget(target)
+    call FormGroup(3, true)
+    call AttackMoveKillA(target)
+endfunction
+
+//===========================================================================
+// Initiates an attack based on target priorities
+//===========================================================================
+function LaunchAttack takes nothing returns nothing
+    call CaptainVsUnits(Player(0))
+endfunction
+
+//===========================================================================
+// Determines all attacking assignments
+//===========================================================================
+function AttackAssignment takes nothing returns nothing
+    call StaggerSleep(0, 2)
+    loop
+        loop
+            exitwhen CommandsWaiting() != 0
+            call Sleep(2)
+        endloop
+
+        call PopLastCommand()
+        call InitAssaultGroup()
+        call PrepareAttackGroup()
+        call LaunchAttack()
+    endloop
+endfunction
+
+//***************************************************************************
+//*
+//*  Main Entry Point
+//*
+//***************************************************************************
+
+//===========================================================================
+function main takes nothing returns nothing
+    call InitAI()
+    call SetPlayerName(ai_player, "Scourge")
+    call InitOptions()
+    call CreateCaptains()
+
+    call Sleep(0.1)
+    call StartThread(function AttackAssignment)
+endfunction
+
