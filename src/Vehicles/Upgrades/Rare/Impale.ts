@@ -14,6 +14,8 @@ export class Impale extends VehicleUpgrade {
   public readonly isWeapon = true;
   public readonly description = "TODO: Write description";
 
+  private readonly playerTimers: Timer[] = [];
+
   private readonly dummyUnitId: number = FourCC("u000");
   private readonly impaleAbilityId: number = FourCC("A00A");
 
@@ -24,6 +26,7 @@ export class Impale extends VehicleUpgrade {
 
     const t: Timer = TimerUtils.newTimer();
     const owner = vehicle.unit.owner;
+    this.playerTimers[owner.id] = t;
     t.start(1.5, true, () => {
       const impaleLevel = vehicle.upgradeMap.get(this.name);
       const { x, y } = vehicle.unit;

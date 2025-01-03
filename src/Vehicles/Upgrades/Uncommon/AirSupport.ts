@@ -15,6 +15,8 @@ export class AirSupport extends VehicleUpgrade {
   public readonly isWeapon = true;
   public readonly description = "TODO: Write description";
 
+  private readonly playerTimers: Timer[] = [];
+
   private readonly flyingMachineUnitTypeId: number = FourCC("h000");
   private readonly playerFlyingMachines: Unit[][] = [];
 
@@ -26,6 +28,7 @@ export class AirSupport extends VehicleUpgrade {
       vehicle.unit.addItemById(FourCC("I006"));
       this.playerFlyingMachines[playerId] = [];
       const t: Timer = TimerUtils.newTimer();
+      this.playerTimers[playerId] = t;
       t.start(2, true, () => {
         const { x, y } = vehicle.unit;
         for (let i = 0; i < this.playerFlyingMachines[playerId].length; i++) {

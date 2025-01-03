@@ -15,6 +15,8 @@ export class Shockwave extends VehicleUpgrade {
   public readonly description =
     "Sends a shockwave out in 2 random directions every 2.5 seconds.";
 
+  private readonly playerTimers: Timer[] = [];
+
   private readonly dummyUnitId: number = FourCC("u000");
   private readonly shockwaveAbilityId: number = FourCC("A00B");
 
@@ -25,6 +27,7 @@ export class Shockwave extends VehicleUpgrade {
 
     const t: Timer = TimerUtils.newTimer();
     const owner = vehicle.unit.owner;
+    this.playerTimers[owner.id] = t;
     t.start(2.5, true, () => {
       const shockwaveLevel = vehicle.upgradeMap.get(this.name);
       const { x, y } = vehicle.unit;

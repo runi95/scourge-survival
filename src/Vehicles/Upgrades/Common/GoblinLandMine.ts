@@ -16,6 +16,8 @@ export class GoblinLandMine extends VehicleUpgrade {
   public readonly description =
     "Places a Goblin Land Mine underneath the tank every 3 seconds.";
 
+  private readonly playerTimers: Timer[] = [];
+
   private readonly landMineUnitTypeId: number = FourCC("n005");
   private readonly explosionAbilityId: number = FourCC("A00D");
 
@@ -26,6 +28,7 @@ export class GoblinLandMine extends VehicleUpgrade {
 
     const t: Timer = TimerUtils.newTimer();
     const owner = vehicle.unit.owner;
+    this.playerTimers[owner.id] = t;
     t.start(3, true, () => {
       const landMineLevel = vehicle.upgradeMap.get(this.name);
       const { x, y } = vehicle.unit;
