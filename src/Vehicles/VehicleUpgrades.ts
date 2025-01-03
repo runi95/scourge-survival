@@ -4,6 +4,7 @@ import {
   Fortification,
   Shockwave,
   GoblinLandMine,
+  HardenedSkin,
 } from "./Upgrades/Common/index";
 import {
   Glyph,
@@ -28,6 +29,7 @@ export const commonUpgrades: VehicleUpgrade[] = [
   new Fortification(),
   new Shockwave(),
   new GoblinLandMine(),
+  new HardenedSkin(),
 ];
 
 export const uncommonUpgrades: VehicleUpgrade[] = [
