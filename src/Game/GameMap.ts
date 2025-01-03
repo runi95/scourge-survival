@@ -42,4 +42,5 @@ export enum CREEP_TYPE {
   SKELETAL_MAGE = FourCC("u002"),
   MEAT_WAGON = FourCC("u004"),
   NECROMANCER = FourCC("u005"),
+  FROST_WYRM = FourCC("u006"),
 }
