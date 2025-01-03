@@ -81,17 +81,23 @@ export class Game {
       );
     });
 
-    const hordePlayer = MapPlayer.fromIndex(23);
-    const fogModifier = FogModifier.fromRect(
-      hordePlayer,
-      FOG_OF_WAR_VISIBLE,
-      Rectangle.fromHandle(GetPlayableMapRect()),
-      false,
-      false
-    );
-    fogModifier.start();
+    for (let i = 9; i < 18; i++) {
+      const scourgePlayer = MapPlayer.fromIndex(i);
+      const fogModifier = FogModifier.fromRect(
+        scourgePlayer,
+        FOG_OF_WAR_VISIBLE,
+        Rectangle.fromHandle(GetPlayableMapRect()),
+        false,
+        false
+      );
+      fogModifier.start();
 
-    hordePlayer.setState(PLAYER_STATE_GIVES_BOUNTY, 1);
+      scourgePlayer.setState(PLAYER_STATE_GIVES_BOUNTY, 1);
+
+      const player = MapPlayer.fromIndex(i - 9);
+      scourgePlayer.setAlliance(player, ALLIANCE_PASSIVE, false);
+      player.setAlliance(scourgePlayer, ALLIANCE_PASSIVE, false);
+    }
 
     const startOfGameSound = Sound.create(
       Sounds.TREMBLE_MORTALS_AND_DESPAIR_DOOM_HAS_COME,

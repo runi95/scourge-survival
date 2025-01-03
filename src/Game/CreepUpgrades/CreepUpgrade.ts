@@ -8,7 +8,10 @@ export abstract class CreepUpgrade {
 
   public apply(): void {
     this.currentLevel++;
-    const hordePlayer = MapPlayer.fromIndex(23);
-    hordePlayer.addTechResearched(this.upgradeTypeId, 1);
+
+    for (let i = 9; i < 18; i++) {
+      const scourgePlayer = MapPlayer.fromIndex(i);
+      scourgePlayer.addTechResearched(this.upgradeTypeId, 1);
+    }
   }
 }

@@ -45,7 +45,7 @@ Player 9
 
 STRING 11
 {
-Horde Survival
+Scourge Survival
 }
 
 STRING 12
@@ -69,19 +69,9 @@ STRING 15
 Siege Engine
 }
 
-STRING 16
-{
-Horde
-}
-
 STRING 17
 {
 Players
-}
-
-STRING 18
-{
-Hostile
 }
 
 STRING 20
@@ -843,5 +833,55 @@ Burns nearby enemy units for <A002,DataA1> points of damage per second.
 STRING 164
 {
 Weapons
+}
+
+STRING 179
+{
+Scourge 1
+}
+
+STRING 180
+{
+Scourge 2
+}
+
+STRING 181
+{
+Scourge 3
+}
+
+STRING 182
+{
+Scourge 4
+}
+
+STRING 183
+{
+Scourge 5
+}
+
+STRING 184
+{
+Scourge 6
+}
+
+STRING 185
+{
+Scourge 7
+}
+
+STRING 186
+{
+Scourge 8
+}
+
+STRING 187
+{
+Scourge 9
+}
+
+STRING 188
+{
+Scourge
 }
 

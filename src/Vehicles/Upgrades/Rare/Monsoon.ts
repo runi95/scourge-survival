@@ -46,11 +46,11 @@ export class Monsoon extends VehicleUpgrade {
     const lightRain = WeatherEffect.create(area, FourCC("RAlr"));
     lightRain.enable(true);
 
-    const creepPlayer = MapPlayer.fromIndex(23);
+    const scourgePlayer = MapPlayer.fromIndex(playerId + 9);
     const t: Timer = TimerUtils.newTimer();
     this.playerTimers[playerId] = t;
     t.start(timeout, true, () => {
-      const grp: Group = Group.fromRectOfPlayer(area, creepPlayer);
+      const grp: Group = Group.fromRectOfPlayer(area, scourgePlayer);
       let hasStruck = false;
 
       grp.for((u) => {

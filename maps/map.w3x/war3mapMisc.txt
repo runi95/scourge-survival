@@ -2,7 +2,6 @@
 AgiDefenseBase=0.0
 AgiDefenseBonus=0.0
 AgiMoveBonus=5.0
-BoneDecayTime=5.0
 GrantHeroXP=500,600,750,950,1250
 HeroAbilityLevelSkip=3
 HeroExpRange=10000

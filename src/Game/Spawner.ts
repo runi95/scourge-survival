@@ -64,9 +64,9 @@ export class Spawner {
     const { delay, unitTypeId } = portalWaves[index];
     const t: Timer = TimerUtils.newTimer();
     t.start(delay, true, () => {
-      const hordePlayer = MapPlayer.fromIndex(23);
       for (let i = 0; i < GameMap.ONLINE_PLAYER_ID_LIST.length; i++) {
         if (GameMap.IS_PLAYER_DEFEATED[i]) continue;
+        const scourgePlayer = MapPlayer.fromIndex(i + 9);
         const playerId = GameMap.ONLINE_PLAYER_ID_LIST[i];
         const x = isFirstPortal
           ? GameMap.PLAYER_AREAS[playerId].minX + 150
@@ -79,14 +79,14 @@ export class Spawner {
           x,
           y
         ).destroy();
-        const hordeUnit = Unit.create(
-          hordePlayer,
+        const scourgeUnit = Unit.create(
+          scourgePlayer,
           unitTypeId,
           x,
           y,
           isFirstPortal ? 315.0 : 135.0
         );
-        hordeUnit.issueTargetOrder(
+        scourgeUnit.issueTargetOrder(
           OrderId.Attack,
           this.gameMap.playerVehicles[playerId].unit
         );
