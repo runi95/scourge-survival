@@ -627,11 +627,15 @@ export class DamageEngine {
   }
 
   private failsafeClear(): void {
-    this.setArmor(true);
+    if (this.current !== null) {
+      this.setArmor(true);
+    }
     this.canKick = true;
     this.isKicking = false;
     this.totem = false;
-    this.runEvent(DamageEventType.OnDamageEvent);
+    if (this.current !== null) {
+      this.runEvent(DamageEventType.OnDamageEvent);
+    }
     this.isEventsRun = true;
     this.finish();
   }
@@ -694,8 +698,7 @@ export class DamageEngine {
             if (
               d.damageType === DAMAGE_TYPE_SPIRIT_LINK ||
               d.damageType === DAMAGE_TYPE_DEFENSIVE ||
-              d.damageType === DAMAGE_TYPE_PLANT ||
-              d.damageType === DAMAGE_TYPE_FIRE
+              d.damageType === DAMAGE_TYPE_PLANT
             ) {
               this.lastInstance = this.current;
               this.totem = false;
