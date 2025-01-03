@@ -7,6 +7,8 @@ export class CreepAbilityController {
   private readonly attackTrigger = Trigger.create();
   private readonly stopTrigger = Trigger.create();
 
+  private readonly crippleBuffId = FourCC("Bcri");
+
   constructor(gameMap: GameMap) {
     this.gameMap = gameMap;
   }
@@ -18,7 +20,12 @@ export class CreepAbilityController {
 
       switch (unitTypeId) {
         case CREEP_TYPE.NECROMANCER:
-          IssueTargetOrder(attacker, "cripple", GetTriggerUnit());
+          (() => {
+            const triggerUnit = GetTriggerUnit();
+            if (!UnitHasBuffBJ(triggerUnit, this.crippleBuffId)) {
+              IssueTargetOrder(attacker, "cripple", triggerUnit);
+            }
+          })();
           break;
       }
     });
