@@ -21,6 +21,7 @@ import { Sounds } from "../Utility/Sounds";
 import { RandomNumberGenerator } from "../Utility/RandomNumberGenerator";
 import { Abilities } from "../Vehicles/Abilities/Abilities";
 import { DamageEventController } from "../Utility/DamageEngine/DamageEventController";
+import { CreepAbilityController } from "./CreepAbilityController";
 
 export class Game {
   private readonly damageEngine: DamageEngine;
@@ -35,6 +36,7 @@ export class Game {
   private readonly abilities: Abilities;
   private readonly damageEventController: DamageEventController;
   private readonly vehicleDeathTriggers: Trigger[] = [];
+  private readonly creepAbilityController: CreepAbilityController;
 
   constructor() {
     this.gameOptions = new GameOptions();
@@ -45,6 +47,7 @@ export class Game {
     this.spawner = new Spawner(this.gameMap);
     this.abilities = new Abilities(this.gameMap);
     this.damageEventController = new DamageEventController(this.gameMap);
+    this.creepAbilityController = new CreepAbilityController(this.gameMap);
   }
 
   public start(): void {
@@ -224,6 +227,7 @@ export class Game {
       }
     }
 
+    this.creepAbilityController.initialize();
     this.spawner.initializeAI();
   }
 }
