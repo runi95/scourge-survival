@@ -6,12 +6,12 @@ export const SIX: Wave = [
     {
       delay: 0.2,
       count: 1,
-      unitTypeId: CREEP_TYPE.FEL_RAVAGER,
+      unitTypeId: CREEP_TYPE.GHOUL,
     },
     {
       delay: 0.2,
       count: 1,
-      unitTypeId: CREEP_TYPE.FEL_RAVAGER,
+      unitTypeId: CREEP_TYPE.GHOUL,
     },
     {
       delay: 0.2,
@@ -23,7 +23,7 @@ export const SIX: Wave = [
     {
       delay: 0.2,
       count: 3,
-      unitTypeId: CREEP_TYPE.FEL_RAVAGER,
+      unitTypeId: CREEP_TYPE.GHOUL,
     },
   ],
 ];

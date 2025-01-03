@@ -25,7 +25,34 @@ export class Spawner {
     this.gameMap = gameMap;
   }
 
-  public startWave() {
+  public initializeAI() {
+    const t: Timer = TimerUtils.newTimer();
+    t.start(10, false, () => {
+      const localPlayerId = GetPlayerId(GetLocalPlayer());
+      PingMinimapEx(
+        GameMap.PLAYER_AREAS[localPlayerId].minX + 100,
+        GameMap.PLAYER_AREAS[localPlayerId].maxY - 100,
+        4,
+        255,
+        0,
+        0,
+        true
+      );
+      PingMinimapEx(
+        GameMap.PLAYER_AREAS[localPlayerId].maxX - 100,
+        GameMap.PLAYER_AREAS[localPlayerId].minY + 100,
+        4,
+        255,
+        0,
+        0,
+        true
+      );
+      this.startWave();
+      TimerUtils.releaseTimer(t);
+    });
+  }
+
+  private startWave() {
     const wave = this.waves[this.currentWaveIndex++];
     const [firstPortal, secondPortal] = wave;
     this.spawnPortal(firstPortal, 0, true);
@@ -94,7 +121,7 @@ export class Spawner {
 
       if (--count <= 0) {
         TimerUtils.releaseTimer(t);
-        if (portalWaves.length > index) {
+        if (portalWaves.length - 1 > index) {
           this.spawnPortal(portalWaves, index + 1, isFirstPortal);
         }
       }

@@ -93,10 +93,6 @@ export class Game {
       fogModifier.start();
 
       scourgePlayer.setState(PLAYER_STATE_GIVES_BOUNTY, 1);
-
-      const player = MapPlayer.fromIndex(i - 9);
-      scourgePlayer.setAlliance(player, ALLIANCE_PASSIVE, false);
-      player.setAlliance(scourgePlayer, ALLIANCE_PASSIVE, false);
     }
 
     const startOfGameSound = Sound.create(
@@ -110,7 +106,7 @@ export class Game {
     );
     startOfGameSound.start();
 
-    for (let i = 0; i < bj_MAX_PLAYERS; i++) {
+    for (let i = 0; i < 9; i++) {
       const player = MapPlayer.fromIndex(i);
       new Commands(this.gameOptions, this.gameMap, player);
 
@@ -122,15 +118,6 @@ export class Game {
         GameMap.ONLINE_PLAYER_ID_LIST.push(i);
         GameMap.IS_PLAYER_ID_ONLINE.push(true);
         GameMap.IS_PLAYER_DEFEATED.push(false);
-
-        // const fogModifier = FogModifier.fromRect(
-        //   player,
-        //   FOG_OF_WAR_VISIBLE,
-        //   GameMap.PLAYER_AREAS[i],
-        //   false,
-        //   false
-        // );
-        // fogModifier.start();
 
         player.setState(PLAYER_STATE_RESOURCE_GOLD, 200);
 
@@ -237,29 +224,6 @@ export class Game {
       }
     }
 
-    const t: Timer = TimerUtils.newTimer();
-    t.start(10, false, () => {
-      const localPlayerId = GetPlayerId(GetLocalPlayer());
-      PingMinimapEx(
-        GameMap.PLAYER_AREAS[localPlayerId].minX + 100,
-        GameMap.PLAYER_AREAS[localPlayerId].maxY - 100,
-        4,
-        255,
-        0,
-        0,
-        true
-      );
-      PingMinimapEx(
-        GameMap.PLAYER_AREAS[localPlayerId].maxX - 100,
-        GameMap.PLAYER_AREAS[localPlayerId].minY + 100,
-        4,
-        255,
-        0,
-        0,
-        true
-      );
-      this.spawner.startWave();
-      TimerUtils.releaseTimer(t);
-    });
+    this.spawner.initializeAI();
   }
 }

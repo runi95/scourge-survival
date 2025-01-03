@@ -6,34 +6,34 @@ export const TWO: Wave = [
     {
       delay: 1,
       count: 2,
-      unitTypeId: CREEP_TYPE.FEL_BEAST,
+      unitTypeId: CREEP_TYPE.SKELETON_WARRIOR,
     },
     {
       delay: 1,
       count: 3,
-      unitTypeId: CREEP_TYPE.LESSER_VOIDWALKER,
+      unitTypeId: CREEP_TYPE.SKELETAL_MAGE,
     },
     {
       delay: 1,
       count: 2,
-      unitTypeId: CREEP_TYPE.FEL_BEAST,
+      unitTypeId: CREEP_TYPE.SKELETON_WARRIOR,
     },
   ],
   [
     {
       delay: 1,
       count: 2,
-      unitTypeId: CREEP_TYPE.FEL_BEAST,
+      unitTypeId: CREEP_TYPE.SKELETON_WARRIOR,
     },
     {
       delay: 1,
       count: 3,
-      unitTypeId: CREEP_TYPE.LESSER_VOIDWALKER,
+      unitTypeId: CREEP_TYPE.SKELETAL_MAGE,
     },
     {
       delay: 1,
       count: 2,
-      unitTypeId: CREEP_TYPE.FEL_BEAST,
+      unitTypeId: CREEP_TYPE.SKELETON_WARRIOR,
     },
   ],
 ];

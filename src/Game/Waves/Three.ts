@@ -4,16 +4,16 @@ import { Wave } from "./Wave";
 export const THREE: Wave = [
   [
     {
-      delay: 0.5,
+      delay: 0.3,
       count: 15,
-      unitTypeId: CREEP_TYPE.FEL_BEAST,
+      unitTypeId: CREEP_TYPE.SKELETON_WARRIOR,
     },
   ],
   [
     {
-      delay: 0.5,
+      delay: 0.3,
       count: 15,
-      unitTypeId: CREEP_TYPE.FEL_BEAST,
+      unitTypeId: CREEP_TYPE.SKELETON_WARRIOR,
     },
   ],
 ];

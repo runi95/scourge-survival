@@ -6,34 +6,34 @@ export const FOUR: Wave = [
     {
       delay: 0.25,
       count: 2,
-      unitTypeId: CREEP_TYPE.FEL_RAVAGER,
+      unitTypeId: CREEP_TYPE.GHOUL,
     },
     {
       delay: 0.5,
       count: 3,
-      unitTypeId: CREEP_TYPE.FEL_BEAST,
+      unitTypeId: CREEP_TYPE.SKELETON_WARRIOR,
     },
     {
       delay: 0.5,
       count: 5,
-      unitTypeId: CREEP_TYPE.LESSER_VOIDWALKER,
+      unitTypeId: CREEP_TYPE.SKELETAL_MAGE,
     },
   ],
   [
     {
       delay: 0.25,
       count: 2,
-      unitTypeId: CREEP_TYPE.FEL_RAVAGER,
+      unitTypeId: CREEP_TYPE.GHOUL,
     },
     {
       delay: 0.5,
       count: 3,
-      unitTypeId: CREEP_TYPE.FEL_BEAST,
+      unitTypeId: CREEP_TYPE.SKELETON_WARRIOR,
     },
     {
       delay: 0.5,
       count: 5,
-      unitTypeId: CREEP_TYPE.LESSER_VOIDWALKER,
+      unitTypeId: CREEP_TYPE.SKELETAL_MAGE,
     },
   ],
 ];

@@ -37,9 +37,9 @@ export class GameMap {
 }
 
 export enum CREEP_TYPE {
-  FEL_BEAST = FourCC("n000"),
-  FEL_RAVAGER = FourCC("n001"),
-  LESSER_VOIDWALKER = FourCC("n002"),
-  VOIDWALKER = FourCC("n003"),
-  NECROMANCER = FourCC("u001"),
+  SKELETON_WARRIOR = FourCC("u001"),
+  GHOUL = FourCC("u003"),
+  SKELETAL_MAGE = FourCC("u002"),
+  MEAT_WAGON = FourCC("u004"),
+  NECROMANCER = FourCC("u005"),
 }
