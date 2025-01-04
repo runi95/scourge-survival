@@ -5,6 +5,8 @@ import { DamageEvent } from "../DamageEvent";
 import type { ExtendedDamageInstance } from "../DamageEventController";
 
 export class CriticalStrikeDamageEvent implements DamageEvent {
+  public static READY_INSTANCES = 0;
+
   private readonly gameMap: GameMap;
 
   constructor(gameMap: GameMap) {
@@ -14,6 +16,7 @@ export class CriticalStrikeDamageEvent implements DamageEvent {
   public event(damageInstance: ExtendedDamageInstance): void {
     if (damageInstance.damage < 1) return;
     if (damageInstance.targetOwningPlayerId < 9) return;
+    if (CriticalStrikeDamageEvent.READY_INSTANCES === 0) return;
 
     const vehicle =
       this.gameMap.playerVehicles[damageInstance.sourceOwningPlayerId];
