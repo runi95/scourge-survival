@@ -11,6 +11,7 @@ import {
   FOUR,
   FIVE,
   SIX,
+  SEVEN,
 } from "./Waves/index";
 import { RandomNumberGenerator } from "../Utility/RandomNumberGenerator";
 import { CreepUpgrades } from "./CreepUpgrades/CreepUpgrades";
@@ -18,7 +19,7 @@ import { CreepUpgrades } from "./CreepUpgrades/CreepUpgrades";
 export class Spawner {
   private readonly creepUpgrades = new CreepUpgrades();
   private readonly gameMap: GameMap;
-  private readonly waves: Wave[] = [ONE, TWO, THREE, FOUR, FIVE, SIX];
+  private readonly waves: Wave[] = [ONE, TWO, THREE, FOUR, FIVE, SIX, SEVEN];
   private currentWaveIndex: number = 0;
 
   constructor(gameMap: GameMap) {

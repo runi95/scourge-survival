@@ -43,4 +43,5 @@ export enum CREEP_TYPE {
   MEAT_WAGON = FourCC("u004"),
   NECROMANCER = FourCC("u005"),
   FROST_WYRM = FourCC("u006"),
+  GARGOYLE = FourCC("u007"),
 }
