@@ -111,7 +111,7 @@ Repair
 }
 
 STRING 28
-// Buffs/Effects: B000 (), Bufftip (Tooltip)
+// Abilities: A00P (Repair), Name (Name)
 {
 Repair
 }
@@ -198,12 +198,6 @@ STRING 46
 // Abilities: A005 (Repair), Unubertip (Tooltip - Turn Off - Extended)
 {
 |cffc3dbffRight-click to deactivate auto-casting.|r
-}
-
-STRING 48
-// Abilities: A005 (Repair), Researchubertip (Tooltip - Learn - Extended)
-{
-Repairs a target, damaged friendly mechanical tank.|n|n|cffffcc00Level 1|r - Repairs for <A005,DataA1> hit points.|n|cffffcc00Level 2|r - Repairs for <A005,DataA2> hit points.|n|cffffcc00Level 3|r - Repairs for <A005,DataA1> hit points.|n|cffffcc00Level 4|r - Repairs for <A005,DataA4> hit points.|n|cffffcc00Level 5|r - Repairs for <A005,DataA5> hit points.
 }
 
 STRING 50
@@ -883,5 +877,1361 @@ Scourge 9
 STRING 188
 {
 Scourge
+}
+
+STRING 189
+// Abilities: A005 (Repair), Researchubertip (Tooltip - Learn - Extended)
+{
+Repairs a target, damaged friendly mechanical tank.|n|n|cffffcc00Level 1|r - Repairs for <A005,DataA1> hit points.|n|cffffcc00Level 2|r - Repairs for <A005,DataA2> hit points.|n|cffffcc00Level 3|r - Repairs for <A005,DataA3> hit points.|n|cffffcc00Level 4|r - Repairs for <A005,DataA4> hit points.|n|cffffcc00Level 5|r - Repairs for <A005,DataA5> hit points.
+}
+
+STRING 190
+// Abilities: A00K (Flame Strike), Researchhotkey (Hotkey - Learn)
+{
+Q
+}
+
+STRING 191
+// Abilities: A00K (Flame Strike), Hotkey (Hotkey - Normal)
+{
+Q
+}
+
+STRING 192
+// Abilities: A00K (Flame Strike), Tip (Tooltip - Normal)
+{
+Flame Strike - [|cffffcc00Level 4|r]
+}
+
+STRING 193
+// Abilities: A00K (Flame Strike), Tip (Tooltip - Normal)
+{
+Flame Strike - [|cffffcc00Level 5|r]
+}
+
+STRING 194
+// Abilities: A00K (Flame Strike), EditorSuffix (Editor Suffix)
+{
+(Siege Engine) (Upgrade 1)
+}
+
+STRING 195
+// Abilities: A00K (Flame Strike), Researchubertip (Tooltip - Learn - Extended)
+{
+Conjures a pillar of fire which damages ground units in a target area over time. |n|n|cffffcc00Level 1|r - 80 damage a second for 3 seconds, followed by minor damage for 6 seconds. |n|cffffcc00Level 2|r - 110 damage a second for 3 seconds, followed by light damage for 6 seconds. |n|cffffcc00Level 3|r - 140 damage a second for 3 seconds, followed by moderate damage for 6 seconds. |n|cffffcc00Level 4|r - 170 damage a second for 3 seconds, followed by moderate damage for 6 seconds. |n|cffffcc00Level 5|r - 200 damage a second for 3 seconds, followed by moderate damage for 6 seconds.
+}
+
+STRING 196
+// Abilities: A00K (Flame Strike), Ubertip (Tooltip - Normal - Extended)
+{
+Conjures a pillar of flame that burns ground units for 170 damage a second for 3 seconds. As the pillar of flame subsides, units within the fire continue to take moderate damage.
+}
+
+STRING 197
+// Abilities: A00K (Flame Strike), Ubertip (Tooltip - Normal - Extended)
+{
+Conjures a pillar of flame that burns ground units for 200 damage a second for 3 seconds. As the pillar of flame subsides, units within the fire continue to take moderate damage.
+}
+
+STRING 198
+// Abilities: A00K (Flame Strike), Ubertip (Tooltip - Normal - Extended)
+{
+Conjures a pillar of flame that burns ground units for 80 damage a second for 3 seconds. As the pillar of flame subsides, units within the fire continue to take light damage.
+}
+
+STRING 199
+// Abilities: A00K (Flame Strike), Ubertip (Tooltip - Normal - Extended)
+{
+Conjures a pillar of flame that burns ground units for 110 damage a second for 3 seconds. As the pillar of flame subsides, units within the fire continue to take moderate damage.
+}
+
+STRING 200
+// Abilities: A00K (Flame Strike), Ubertip (Tooltip - Normal - Extended)
+{
+Conjures a pillar of flame that burns ground units for 140 damage a second for 3 seconds. As the pillar of flame subsides, units within the fire continue to take moderate damage.
+}
+
+STRING 201
+// Abilities: A00L (Flame Strike), Researchhotkey (Hotkey - Learn)
+{
+Q
+}
+
+STRING 202
+// Abilities: A00L (Flame Strike), Hotkey (Hotkey - Normal)
+{
+Q
+}
+
+STRING 203
+// Abilities: A00L (Flame Strike), Tip (Tooltip - Normal)
+{
+Flame Strike - [|cffffcc00Level 4|r]
+}
+
+STRING 204
+// Abilities: A00L (Flame Strike), Tip (Tooltip - Normal)
+{
+Flame Strike - [|cffffcc00Level 5|r]
+}
+
+STRING 205
+// Abilities: A00L (Flame Strike), EditorSuffix (Editor Suffix)
+{
+(Siege Engine) (Upgrade 2)
+}
+
+STRING 206
+// Abilities: A00L (Flame Strike), Researchubertip (Tooltip - Learn - Extended)
+{
+Conjures a pillar of fire which damages ground units in a target area over time. |n|n|cffffcc00Level 1|r - 110 damage a second for 3 seconds, followed by minor damage for 6 seconds. |n|cffffcc00Level 2|r - 140 damage a second for 3 seconds, followed by light damage for 6 seconds. |n|cffffcc00Level 3|r - 170 damage a second for 3 seconds, followed by moderate damage for 6 seconds. |n|cffffcc00Level 4|r - 200 damage a second for 3 seconds, followed by moderate damage for 6 seconds. |n|cffffcc00Level 5|r - 230 damage a second for 3 seconds, followed by moderate damage for 6 seconds.
+}
+
+STRING 207
+// Abilities: A00L (Flame Strike), Ubertip (Tooltip - Normal - Extended)
+{
+Conjures a pillar of flame that burns ground units for 200 damage a second for 3 seconds. As the pillar of flame subsides, units within the fire continue to take moderate damage.
+}
+
+STRING 208
+// Abilities: A00L (Flame Strike), Ubertip (Tooltip - Normal - Extended)
+{
+Conjures a pillar of flame that burns ground units for 230 damage a second for 3 seconds. As the pillar of flame subsides, units within the fire continue to take moderate damage.
+}
+
+STRING 209
+// Abilities: A00L (Flame Strike), Ubertip (Tooltip - Normal - Extended)
+{
+Conjures a pillar of flame that burns ground units for 110 damage a second for 3 seconds. As the pillar of flame subsides, units within the fire continue to take moderate damage.
+}
+
+STRING 210
+// Abilities: A00L (Flame Strike), Ubertip (Tooltip - Normal - Extended)
+{
+Conjures a pillar of flame that burns ground units for 140 damage a second for 3 seconds. As the pillar of flame subsides, units within the fire continue to take moderate damage.
+}
+
+STRING 211
+// Abilities: A00L (Flame Strike), Ubertip (Tooltip - Normal - Extended)
+{
+Conjures a pillar of flame that burns ground units for 170 damage a second for 3 seconds. As the pillar of flame subsides, units within the fire continue to take moderate damage.
+}
+
+STRING 212
+// Abilities: A00M (Flame Strike), Researchhotkey (Hotkey - Learn)
+{
+Q
+}
+
+STRING 213
+// Abilities: A00M (Flame Strike), Hotkey (Hotkey - Normal)
+{
+Q
+}
+
+STRING 214
+// Abilities: A00M (Flame Strike), Tip (Tooltip - Normal)
+{
+Flame Strike - [|cffffcc00Level 4|r]
+}
+
+STRING 215
+// Abilities: A00M (Flame Strike), Tip (Tooltip - Normal)
+{
+Flame Strike - [|cffffcc00Level 5|r]
+}
+
+STRING 216
+// Abilities: A00M (Flame Strike), EditorSuffix (Editor Suffix)
+{
+(Siege Engine) (Upgrade 3)
+}
+
+STRING 217
+// Abilities: A00M (Flame Strike), Researchubertip (Tooltip - Learn - Extended)
+{
+Conjures a pillar of fire which damages ground units in a target area over time. |n|n|cffffcc00Level 1|r - 140 damage a second for 3 seconds, followed by minor damage for 6 seconds. |n|cffffcc00Level 2|r - 170 damage a second for 3 seconds, followed by light damage for 6 seconds. |n|cffffcc00Level 3|r - 200 damage a second for 3 seconds, followed by moderate damage for 6 seconds. |n|cffffcc00Level 4|r - 230 damage a second for 3 seconds, followed by moderate damage for 6 seconds. |n|cffffcc00Level 5|r - 260 damage a second for 3 seconds, followed by moderate damage for 6 seconds.
+}
+
+STRING 218
+// Abilities: A00M (Flame Strike), Ubertip (Tooltip - Normal - Extended)
+{
+Conjures a pillar of flame that burns ground units for 230 damage a second for 3 seconds. As the pillar of flame subsides, units within the fire continue to take moderate damage.
+}
+
+STRING 219
+// Abilities: A00M (Flame Strike), Ubertip (Tooltip - Normal - Extended)
+{
+Conjures a pillar of flame that burns ground units for 260 damage a second for 3 seconds. As the pillar of flame subsides, units within the fire continue to take moderate damage.
+}
+
+STRING 220
+// Abilities: A00M (Flame Strike), Ubertip (Tooltip - Normal - Extended)
+{
+Conjures a pillar of flame that burns ground units for 140 damage a second for 3 seconds. As the pillar of flame subsides, units within the fire continue to take moderate damage.
+}
+
+STRING 221
+// Abilities: A00M (Flame Strike), Ubertip (Tooltip - Normal - Extended)
+{
+Conjures a pillar of flame that burns ground units for 170 damage a second for 3 seconds. As the pillar of flame subsides, units within the fire continue to take moderate damage.
+}
+
+STRING 222
+// Abilities: A00M (Flame Strike), Ubertip (Tooltip - Normal - Extended)
+{
+Conjures a pillar of flame that burns ground units for 200 damage a second for 3 seconds. As the pillar of flame subsides, units within the fire continue to take moderate damage.
+}
+
+STRING 223
+// Abilities: A00N (Flame Strike), Researchhotkey (Hotkey - Learn)
+{
+Q
+}
+
+STRING 224
+// Abilities: A00N (Flame Strike), Hotkey (Hotkey - Normal)
+{
+Q
+}
+
+STRING 225
+// Abilities: A00N (Flame Strike), Tip (Tooltip - Normal)
+{
+Flame Strike - [|cffffcc00Level 4|r]
+}
+
+STRING 226
+// Abilities: A00N (Flame Strike), Tip (Tooltip - Normal)
+{
+Flame Strike - [|cffffcc00Level 5|r]
+}
+
+STRING 227
+// Abilities: A00N (Flame Strike), EditorSuffix (Editor Suffix)
+{
+(Siege Engine) (Upgrade 4)
+}
+
+STRING 228
+// Abilities: A00N (Flame Strike), Researchubertip (Tooltip - Learn - Extended)
+{
+Conjures a pillar of fire which damages ground units in a target area over time. |n|n|cffffcc00Level 1|r - 170 damage a second for 3 seconds, followed by minor damage for 6 seconds. |n|cffffcc00Level 2|r - 200 damage a second for 3 seconds, followed by light damage for 6 seconds. |n|cffffcc00Level 3|r - 230 damage a second for 3 seconds, followed by moderate damage for 6 seconds. |n|cffffcc00Level 4|r - 260 damage a second for 3 seconds, followed by moderate damage for 6 seconds. |n|cffffcc00Level 5|r - 290 damage a second for 3 seconds, followed by moderate damage for 6 seconds.
+}
+
+STRING 229
+// Abilities: A00N (Flame Strike), Ubertip (Tooltip - Normal - Extended)
+{
+Conjures a pillar of flame that burns ground units for 260 damage a second for 3 seconds. As the pillar of flame subsides, units within the fire continue to take moderate damage.
+}
+
+STRING 230
+// Abilities: A00N (Flame Strike), Ubertip (Tooltip - Normal - Extended)
+{
+Conjures a pillar of flame that burns ground units for 290 damage a second for 3 seconds. As the pillar of flame subsides, units within the fire continue to take moderate damage.
+}
+
+STRING 231
+// Abilities: A00N (Flame Strike), Ubertip (Tooltip - Normal - Extended)
+{
+Conjures a pillar of flame that burns ground units for 170 damage a second for 3 seconds. As the pillar of flame subsides, units within the fire continue to take moderate damage.
+}
+
+STRING 232
+// Abilities: A00N (Flame Strike), Ubertip (Tooltip - Normal - Extended)
+{
+Conjures a pillar of flame that burns ground units for 200 damage a second for 3 seconds. As the pillar of flame subsides, units within the fire continue to take moderate damage.
+}
+
+STRING 233
+// Abilities: A00N (Flame Strike), Ubertip (Tooltip - Normal - Extended)
+{
+Conjures a pillar of flame that burns ground units for 230 damage a second for 3 seconds. As the pillar of flame subsides, units within the fire continue to take moderate damage.
+}
+
+STRING 234
+// Abilities: A00O (Flame Strike), Researchhotkey (Hotkey - Learn)
+{
+Q
+}
+
+STRING 235
+// Abilities: A00O (Flame Strike), Hotkey (Hotkey - Normal)
+{
+Q
+}
+
+STRING 236
+// Abilities: A00O (Flame Strike), Tip (Tooltip - Normal)
+{
+Flame Strike - [|cffffcc00Level 4|r]
+}
+
+STRING 237
+// Abilities: A00O (Flame Strike), Tip (Tooltip - Normal)
+{
+Flame Strike - [|cffffcc00Level 5|r]
+}
+
+STRING 238
+// Abilities: A00O (Flame Strike), EditorSuffix (Editor Suffix)
+{
+(Siege Engine) (Upgrade 5)
+}
+
+STRING 239
+// Abilities: A00O (Flame Strike), Researchubertip (Tooltip - Learn - Extended)
+{
+Conjures a pillar of fire which damages ground units in a target area over time. |n|n|cffffcc00Level 1|r - 200 damage a second for 3 seconds, followed by minor damage for 6 seconds. |n|cffffcc00Level 2|r - 230 damage a second for 3 seconds, followed by light damage for 6 seconds. |n|cffffcc00Level 3|r - 260 damage a second for 3 seconds, followed by moderate damage for 6 seconds. |n|cffffcc00Level 4|r - 290 damage a second for 3 seconds, followed by moderate damage for 6 seconds. |n|cffffcc00Level 5|r - 320 damage a second for 3 seconds, followed by moderate damage for 6 seconds.
+}
+
+STRING 240
+// Abilities: A00O (Flame Strike), Ubertip (Tooltip - Normal - Extended)
+{
+Conjures a pillar of flame that burns ground units for 290 damage a second for 3 seconds. As the pillar of flame subsides, units within the fire continue to take moderate damage.
+}
+
+STRING 241
+// Abilities: A00O (Flame Strike), Ubertip (Tooltip - Normal - Extended)
+{
+Conjures a pillar of flame that burns ground units for 320 damage a second for 3 seconds. As the pillar of flame subsides, units within the fire continue to take moderate damage.
+}
+
+STRING 242
+// Abilities: A00O (Flame Strike), Ubertip (Tooltip - Normal - Extended)
+{
+Conjures a pillar of flame that burns ground units for 200 damage a second for 3 seconds. As the pillar of flame subsides, units within the fire continue to take moderate damage.
+}
+
+STRING 243
+// Abilities: A00O (Flame Strike), Ubertip (Tooltip - Normal - Extended)
+{
+Conjures a pillar of flame that burns ground units for 230 damage a second for 3 seconds. As the pillar of flame subsides, units within the fire continue to take moderate damage.
+}
+
+STRING 244
+// Abilities: A00O (Flame Strike), Ubertip (Tooltip - Normal - Extended)
+{
+Conjures a pillar of flame that burns ground units for 260 damage a second for 3 seconds. As the pillar of flame subsides, units within the fire continue to take moderate damage.
+}
+
+STRING 245
+// Abilities: A00P (Repair), Tip (Tooltip - Normal)
+{
+Repair - [|cffffcc00Level 1|r]
+}
+
+STRING 246
+// Abilities: A00P (Repair), EditorSuffix (Editor Suffix)
+{
+(Siege Engine) (Upgrade 1)
+}
+
+STRING 247
+// Abilities: A00P (Repair), Tip (Tooltip - Normal)
+{
+Repair - [|cffffcc00Level 2|r]
+}
+
+STRING 248
+// Abilities: A00P (Repair), Tip (Tooltip - Normal)
+{
+Repair - [|cffffcc00Level 3|r]
+}
+
+STRING 249
+// Abilities: A00P (Repair), Ubertip (Tooltip - Normal - Extended)
+{
+Repairs a target, damaged friendly mechanical tank for <A00P,DataA2> hit points.
+}
+
+STRING 250
+// Abilities: A00P (Repair), Ubertip (Tooltip - Normal - Extended)
+{
+Repairs a target, damaged friendly mechanical tank for <A00P,DataA3> hit points.
+}
+
+STRING 251
+// Abilities: A00P (Repair), Untip (Tooltip - Turn Off)
+{
+|cffc3dbffRight-click to activate auto-casting.|r
+}
+
+STRING 252
+// Abilities: A00P (Repair), Untip (Tooltip - Turn Off)
+{
+|cffc3dbffRight-click to activate auto-casting.|r
+}
+
+STRING 253
+// Abilities: A00P (Repair), Unubertip (Tooltip - Turn Off - Extended)
+{
+|cffc3dbffRight-click to deactivate auto-casting.|r
+}
+
+STRING 254
+// Abilities: A00P (Repair), Unubertip (Tooltip - Turn Off - Extended)
+{
+|cffc3dbffRight-click to deactivate auto-casting.|r
+}
+
+STRING 255
+// Abilities: A00P (Repair), Ubertip (Tooltip - Normal - Extended)
+{
+Repairs a target, damaged friendly mechanical tank for <A00P,DataA1> hit points.
+}
+
+STRING 256
+// Abilities: A00P (Repair), Tip (Tooltip - Normal)
+{
+Repair - [|cffffcc00Level 4|r]
+}
+
+STRING 257
+// Abilities: A00P (Repair), Tip (Tooltip - Normal)
+{
+Repair - [|cffffcc00Level 5|r]
+}
+
+STRING 258
+// Abilities: A00P (Repair), Ubertip (Tooltip - Normal - Extended)
+{
+Repairs a target, damaged friendly mechanical tank for <A00P,DataA4> hit points.
+}
+
+STRING 259
+// Abilities: A00P (Repair), Ubertip (Tooltip - Normal - Extended)
+{
+Repairs a target, damaged friendly mechanical tank for <A00P,DataA5> hit points.
+}
+
+STRING 260
+// Abilities: A00P (Repair), Untip (Tooltip - Turn Off)
+{
+|cffc3dbffRight-click to activate auto-casting.|r
+}
+
+STRING 261
+// Abilities: A00P (Repair), Untip (Tooltip - Turn Off)
+{
+|cffc3dbffRight-click to activate auto-casting.|r
+}
+
+STRING 262
+// Abilities: A00P (Repair), Unubertip (Tooltip - Turn Off - Extended)
+{
+|cffc3dbffRight-click to deactivate auto-casting.|r
+}
+
+STRING 263
+// Abilities: A00P (Repair), Unubertip (Tooltip - Turn Off - Extended)
+{
+|cffc3dbffRight-click to deactivate auto-casting.|r
+}
+
+STRING 264
+// Abilities: A00P (Repair), Researchtip (Tooltip - Learn)
+{
+Learn Repair - [|cffffcc00Level %d|r]
+}
+
+STRING 265
+// Abilities: A00P (Repair), Researchubertip (Tooltip - Learn - Extended)
+{
+Repairs a target, damaged friendly mechanical tank.|n|n|cffffcc00Level 1|r - Repairs for <A00P,DataA1> hit points.|n|cffffcc00Level 2|r - Repairs for <A00P,DataA2> hit points.|n|cffffcc00Level 3|r - Repairs for <A00P,DataA3> hit points.|n|cffffcc00Level 4|r - Repairs for <A00P,DataA4> hit points.|n|cffffcc00Level 5|r - Repairs for <A00P,DataA5> hit points.
+}
+
+STRING 266
+// Abilities: A00P (Repair), Researchhotkey (Hotkey - Learn)
+{
+E
+}
+
+STRING 267
+// Abilities: A00Q (Repair), Tip (Tooltip - Normal)
+{
+Repair - [|cffffcc00Level 1|r]
+}
+
+STRING 268
+// Abilities: A00Q (Repair), Name (Name)
+{
+Repair
+}
+
+STRING 269
+// Abilities: A00Q (Repair), EditorSuffix (Editor Suffix)
+{
+(Siege Engine) (Upgrade 2)
+}
+
+STRING 270
+// Abilities: A00Q (Repair), Tip (Tooltip - Normal)
+{
+Repair - [|cffffcc00Level 2|r]
+}
+
+STRING 271
+// Abilities: A00Q (Repair), Tip (Tooltip - Normal)
+{
+Repair - [|cffffcc00Level 3|r]
+}
+
+STRING 272
+// Abilities: A00Q (Repair), Ubertip (Tooltip - Normal - Extended)
+{
+Repairs a target, damaged friendly mechanical tank for <A00Q,DataA2> hit points.
+}
+
+STRING 273
+// Abilities: A00Q (Repair), Ubertip (Tooltip - Normal - Extended)
+{
+Repairs a target, damaged friendly mechanical tank for <A00Q,DataA3> hit points.
+}
+
+STRING 274
+// Abilities: A00Q (Repair), Untip (Tooltip - Turn Off)
+{
+|cffc3dbffRight-click to activate auto-casting.|r
+}
+
+STRING 275
+// Abilities: A00Q (Repair), Untip (Tooltip - Turn Off)
+{
+|cffc3dbffRight-click to activate auto-casting.|r
+}
+
+STRING 276
+// Abilities: A00Q (Repair), Unubertip (Tooltip - Turn Off - Extended)
+{
+|cffc3dbffRight-click to deactivate auto-casting.|r
+}
+
+STRING 277
+// Abilities: A00Q (Repair), Unubertip (Tooltip - Turn Off - Extended)
+{
+|cffc3dbffRight-click to deactivate auto-casting.|r
+}
+
+STRING 278
+// Abilities: A00Q (Repair), Ubertip (Tooltip - Normal - Extended)
+{
+Repairs a target, damaged friendly mechanical tank for <A00Q,DataA1> hit points.
+}
+
+STRING 279
+// Abilities: A00Q (Repair), Tip (Tooltip - Normal)
+{
+Repair - [|cffffcc00Level 4|r]
+}
+
+STRING 280
+// Abilities: A00Q (Repair), Tip (Tooltip - Normal)
+{
+Repair - [|cffffcc00Level 5|r]
+}
+
+STRING 281
+// Abilities: A00Q (Repair), Ubertip (Tooltip - Normal - Extended)
+{
+Repairs a target, damaged friendly mechanical tank for <A00Q,DataA4> hit points.
+}
+
+STRING 282
+// Abilities: A00Q (Repair), Ubertip (Tooltip - Normal - Extended)
+{
+Repairs a target, damaged friendly mechanical tank for <A00Q,DataA5> hit points.
+}
+
+STRING 283
+// Abilities: A00Q (Repair), Untip (Tooltip - Turn Off)
+{
+|cffc3dbffRight-click to activate auto-casting.|r
+}
+
+STRING 284
+// Abilities: A00Q (Repair), Untip (Tooltip - Turn Off)
+{
+|cffc3dbffRight-click to activate auto-casting.|r
+}
+
+STRING 285
+// Abilities: A00Q (Repair), Unubertip (Tooltip - Turn Off - Extended)
+{
+|cffc3dbffRight-click to deactivate auto-casting.|r
+}
+
+STRING 286
+// Abilities: A00Q (Repair), Unubertip (Tooltip - Turn Off - Extended)
+{
+|cffc3dbffRight-click to deactivate auto-casting.|r
+}
+
+STRING 287
+// Abilities: A00Q (Repair), Researchtip (Tooltip - Learn)
+{
+Learn Repair - [|cffffcc00Level %d|r]
+}
+
+STRING 288
+// Abilities: A00Q (Repair), Researchubertip (Tooltip - Learn - Extended)
+{
+Repairs a target, damaged friendly mechanical tank.|n|n|cffffcc00Level 1|r - Repairs for <A00Q,DataA1> hit points.|n|cffffcc00Level 2|r - Repairs for <A00Q,DataA2> hit points.|n|cffffcc00Level 3|r - Repairs for <A00Q,DataA3> hit points.|n|cffffcc00Level 4|r - Repairs for <A00Q,DataA4> hit points.|n|cffffcc00Level 5|r - Repairs for <A00Q,DataA5> hit points.
+}
+
+STRING 289
+// Abilities: A00Q (Repair), Researchhotkey (Hotkey - Learn)
+{
+E
+}
+
+STRING 290
+// Abilities: A00R (Repair), Tip (Tooltip - Normal)
+{
+Repair - [|cffffcc00Level 1|r]
+}
+
+STRING 291
+// Abilities: A00R (Repair), Name (Name)
+{
+Repair
+}
+
+STRING 292
+// Abilities: A00R (Repair), EditorSuffix (Editor Suffix)
+{
+(Siege Engine) (Upgrade 3)
+}
+
+STRING 293
+// Abilities: A00R (Repair), Tip (Tooltip - Normal)
+{
+Repair - [|cffffcc00Level 2|r]
+}
+
+STRING 294
+// Abilities: A00R (Repair), Tip (Tooltip - Normal)
+{
+Repair - [|cffffcc00Level 3|r]
+}
+
+STRING 295
+// Abilities: A00R (Repair), Ubertip (Tooltip - Normal - Extended)
+{
+Repairs a target, damaged friendly mechanical tank for <A00R,DataA2> hit points.
+}
+
+STRING 296
+// Abilities: A00R (Repair), Ubertip (Tooltip - Normal - Extended)
+{
+Repairs a target, damaged friendly mechanical tank for <A00R,DataA3> hit points.
+}
+
+STRING 297
+// Abilities: A00R (Repair), Untip (Tooltip - Turn Off)
+{
+|cffc3dbffRight-click to activate auto-casting.|r
+}
+
+STRING 298
+// Abilities: A00R (Repair), Untip (Tooltip - Turn Off)
+{
+|cffc3dbffRight-click to activate auto-casting.|r
+}
+
+STRING 299
+// Abilities: A00R (Repair), Unubertip (Tooltip - Turn Off - Extended)
+{
+|cffc3dbffRight-click to deactivate auto-casting.|r
+}
+
+STRING 300
+// Abilities: A00R (Repair), Unubertip (Tooltip - Turn Off - Extended)
+{
+|cffc3dbffRight-click to deactivate auto-casting.|r
+}
+
+STRING 301
+// Abilities: A00R (Repair), Ubertip (Tooltip - Normal - Extended)
+{
+Repairs a target, damaged friendly mechanical tank for <A00R,DataA1> hit points.
+}
+
+STRING 302
+// Abilities: A00R (Repair), Tip (Tooltip - Normal)
+{
+Repair - [|cffffcc00Level 4|r]
+}
+
+STRING 303
+// Abilities: A00R (Repair), Tip (Tooltip - Normal)
+{
+Repair - [|cffffcc00Level 5|r]
+}
+
+STRING 304
+// Abilities: A00R (Repair), Ubertip (Tooltip - Normal - Extended)
+{
+Repairs a target, damaged friendly mechanical tank for <A00R,DataA4> hit points.
+}
+
+STRING 305
+// Abilities: A00R (Repair), Ubertip (Tooltip - Normal - Extended)
+{
+Repairs a target, damaged friendly mechanical tank for <A00R,DataA5> hit points.
+}
+
+STRING 306
+// Abilities: A00R (Repair), Untip (Tooltip - Turn Off)
+{
+|cffc3dbffRight-click to activate auto-casting.|r
+}
+
+STRING 307
+// Abilities: A00R (Repair), Untip (Tooltip - Turn Off)
+{
+|cffc3dbffRight-click to activate auto-casting.|r
+}
+
+STRING 308
+// Abilities: A00R (Repair), Unubertip (Tooltip - Turn Off - Extended)
+{
+|cffc3dbffRight-click to deactivate auto-casting.|r
+}
+
+STRING 309
+// Abilities: A00R (Repair), Unubertip (Tooltip - Turn Off - Extended)
+{
+|cffc3dbffRight-click to deactivate auto-casting.|r
+}
+
+STRING 310
+// Abilities: A00R (Repair), Researchtip (Tooltip - Learn)
+{
+Learn Repair - [|cffffcc00Level %d|r]
+}
+
+STRING 311
+// Abilities: A00R (Repair), Researchubertip (Tooltip - Learn - Extended)
+{
+Repairs a target, damaged friendly mechanical tank.|n|n|cffffcc00Level 1|r - Repairs for <A00R,DataA1> hit points.|n|cffffcc00Level 2|r - Repairs for <A00R,DataA2> hit points.|n|cffffcc00Level 3|r - Repairs for <A00R,DataA3> hit points.|n|cffffcc00Level 4|r - Repairs for <A00R,DataA4> hit points.|n|cffffcc00Level 5|r - Repairs for <A00R,DataA5> hit points.
+}
+
+STRING 312
+// Abilities: A00R (Repair), Researchhotkey (Hotkey - Learn)
+{
+E
+}
+
+STRING 313
+// Abilities: A00S (Repair), Tip (Tooltip - Normal)
+{
+Repair - [|cffffcc00Level 1|r]
+}
+
+STRING 314
+// Abilities: A00S (Repair), Name (Name)
+{
+Repair
+}
+
+STRING 315
+// Abilities: A00S (Repair), EditorSuffix (Editor Suffix)
+{
+(Siege Engine) (Upgrade 4)
+}
+
+STRING 316
+// Abilities: A00S (Repair), Tip (Tooltip - Normal)
+{
+Repair - [|cffffcc00Level 2|r]
+}
+
+STRING 317
+// Abilities: A00S (Repair), Tip (Tooltip - Normal)
+{
+Repair - [|cffffcc00Level 3|r]
+}
+
+STRING 318
+// Abilities: A00S (Repair), Ubertip (Tooltip - Normal - Extended)
+{
+Repairs a target, damaged friendly mechanical tank for <A00S,DataA2> hit points.
+}
+
+STRING 319
+// Abilities: A00S (Repair), Ubertip (Tooltip - Normal - Extended)
+{
+Repairs a target, damaged friendly mechanical tank for <A00S,DataA3> hit points.
+}
+
+STRING 320
+// Abilities: A00S (Repair), Untip (Tooltip - Turn Off)
+{
+|cffc3dbffRight-click to activate auto-casting.|r
+}
+
+STRING 321
+// Abilities: A00S (Repair), Untip (Tooltip - Turn Off)
+{
+|cffc3dbffRight-click to activate auto-casting.|r
+}
+
+STRING 322
+// Abilities: A00S (Repair), Unubertip (Tooltip - Turn Off - Extended)
+{
+|cffc3dbffRight-click to deactivate auto-casting.|r
+}
+
+STRING 323
+// Abilities: A00S (Repair), Unubertip (Tooltip - Turn Off - Extended)
+{
+|cffc3dbffRight-click to deactivate auto-casting.|r
+}
+
+STRING 324
+// Abilities: A00S (Repair), Ubertip (Tooltip - Normal - Extended)
+{
+Repairs a target, damaged friendly mechanical tank for <A00S,DataA1> hit points.
+}
+
+STRING 325
+// Abilities: A00S (Repair), Tip (Tooltip - Normal)
+{
+Repair - [|cffffcc00Level 4|r]
+}
+
+STRING 326
+// Abilities: A00S (Repair), Tip (Tooltip - Normal)
+{
+Repair - [|cffffcc00Level 5|r]
+}
+
+STRING 327
+// Abilities: A00S (Repair), Ubertip (Tooltip - Normal - Extended)
+{
+Repairs a target, damaged friendly mechanical tank for <A00S,DataA4> hit points.
+}
+
+STRING 328
+// Abilities: A00S (Repair), Ubertip (Tooltip - Normal - Extended)
+{
+Repairs a target, damaged friendly mechanical tank for <A00S,DataA5> hit points.
+}
+
+STRING 329
+// Abilities: A00S (Repair), Untip (Tooltip - Turn Off)
+{
+|cffc3dbffRight-click to activate auto-casting.|r
+}
+
+STRING 330
+// Abilities: A00S (Repair), Untip (Tooltip - Turn Off)
+{
+|cffc3dbffRight-click to activate auto-casting.|r
+}
+
+STRING 331
+// Abilities: A00S (Repair), Unubertip (Tooltip - Turn Off - Extended)
+{
+|cffc3dbffRight-click to deactivate auto-casting.|r
+}
+
+STRING 332
+// Abilities: A00S (Repair), Unubertip (Tooltip - Turn Off - Extended)
+{
+|cffc3dbffRight-click to deactivate auto-casting.|r
+}
+
+STRING 333
+// Abilities: A00S (Repair), Researchtip (Tooltip - Learn)
+{
+Learn Repair - [|cffffcc00Level %d|r]
+}
+
+STRING 334
+// Abilities: A00S (Repair), Researchubertip (Tooltip - Learn - Extended)
+{
+Repairs a target, damaged friendly mechanical tank.|n|n|cffffcc00Level 1|r - Repairs for <A00S,DataA1> hit points.|n|cffffcc00Level 2|r - Repairs for <A00S,DataA2> hit points.|n|cffffcc00Level 3|r - Repairs for <A00S,DataA3> hit points.|n|cffffcc00Level 4|r - Repairs for <A00S,DataA4> hit points.|n|cffffcc00Level 5|r - Repairs for <A00S,DataA5> hit points.
+}
+
+STRING 335
+// Abilities: A00S (Repair), Researchhotkey (Hotkey - Learn)
+{
+E
+}
+
+STRING 336
+// Abilities: A00T (Repair), Tip (Tooltip - Normal)
+{
+Repair - [|cffffcc00Level 1|r]
+}
+
+STRING 337
+// Abilities: A00T (Repair), Name (Name)
+{
+Repair
+}
+
+STRING 338
+// Abilities: A00T (Repair), EditorSuffix (Editor Suffix)
+{
+(Siege Engine) (Upgrade 5)
+}
+
+STRING 339
+// Abilities: A00T (Repair), Tip (Tooltip - Normal)
+{
+Repair - [|cffffcc00Level 2|r]
+}
+
+STRING 340
+// Abilities: A00T (Repair), Tip (Tooltip - Normal)
+{
+Repair - [|cffffcc00Level 3|r]
+}
+
+STRING 341
+// Abilities: A00T (Repair), Ubertip (Tooltip - Normal - Extended)
+{
+Repairs a target, damaged friendly mechanical tank for <A00T,DataA2> hit points.
+}
+
+STRING 342
+// Abilities: A00T (Repair), Ubertip (Tooltip - Normal - Extended)
+{
+Repairs a target, damaged friendly mechanical tank for <A00T,DataA3> hit points.
+}
+
+STRING 343
+// Abilities: A00T (Repair), Untip (Tooltip - Turn Off)
+{
+|cffc3dbffRight-click to activate auto-casting.|r
+}
+
+STRING 344
+// Abilities: A00T (Repair), Untip (Tooltip - Turn Off)
+{
+|cffc3dbffRight-click to activate auto-casting.|r
+}
+
+STRING 345
+// Abilities: A00T (Repair), Unubertip (Tooltip - Turn Off - Extended)
+{
+|cffc3dbffRight-click to deactivate auto-casting.|r
+}
+
+STRING 346
+// Abilities: A00T (Repair), Unubertip (Tooltip - Turn Off - Extended)
+{
+|cffc3dbffRight-click to deactivate auto-casting.|r
+}
+
+STRING 347
+// Abilities: A00T (Repair), Ubertip (Tooltip - Normal - Extended)
+{
+Repairs a target, damaged friendly mechanical tank for <A00T,DataA1> hit points.
+}
+
+STRING 348
+// Abilities: A00T (Repair), Tip (Tooltip - Normal)
+{
+Repair - [|cffffcc00Level 4|r]
+}
+
+STRING 349
+// Abilities: A00T (Repair), Tip (Tooltip - Normal)
+{
+Repair - [|cffffcc00Level 5|r]
+}
+
+STRING 350
+// Abilities: A00T (Repair), Ubertip (Tooltip - Normal - Extended)
+{
+Repairs a target, damaged friendly mechanical tank for <A00T,DataA4> hit points.
+}
+
+STRING 351
+// Abilities: A00T (Repair), Ubertip (Tooltip - Normal - Extended)
+{
+Repairs a target, damaged friendly mechanical tank for <A00T,DataA5> hit points.
+}
+
+STRING 352
+// Abilities: A00T (Repair), Untip (Tooltip - Turn Off)
+{
+|cffc3dbffRight-click to activate auto-casting.|r
+}
+
+STRING 353
+// Abilities: A00T (Repair), Untip (Tooltip - Turn Off)
+{
+|cffc3dbffRight-click to activate auto-casting.|r
+}
+
+STRING 354
+// Abilities: A00T (Repair), Unubertip (Tooltip - Turn Off - Extended)
+{
+|cffc3dbffRight-click to deactivate auto-casting.|r
+}
+
+STRING 355
+// Abilities: A00T (Repair), Unubertip (Tooltip - Turn Off - Extended)
+{
+|cffc3dbffRight-click to deactivate auto-casting.|r
+}
+
+STRING 356
+// Abilities: A00T (Repair), Researchtip (Tooltip - Learn)
+{
+Learn Repair - [|cffffcc00Level %d|r]
+}
+
+STRING 357
+// Abilities: A00T (Repair), Researchubertip (Tooltip - Learn - Extended)
+{
+Repairs a target, damaged friendly mechanical tank.|n|n|cffffcc00Level 1|r - Repairs for <A00T,DataA1> hit points.|n|cffffcc00Level 2|r - Repairs for <A00T,DataA2> hit points.|n|cffffcc00Level 3|r - Repairs for <A00T,DataA3> hit points.|n|cffffcc00Level 4|r - Repairs for <A00T,DataA4> hit points.|n|cffffcc00Level 5|r - Repairs for <A00T,DataA5> hit points.
+}
+
+STRING 358
+// Abilities: A00T (Repair), Researchhotkey (Hotkey - Learn)
+{
+E
+}
+
+STRING 359
+// Buffs/Effects: B000 (), Bufftip (Tooltip)
+{
+Repair
+}
+
+STRING 360
+// Abilities: A00U (Thunder Clap), Researchhotkey (Hotkey - Learn)
+{
+W
+}
+
+STRING 361
+// Abilities: A00U (Thunder Clap), Hotkey (Hotkey - Normal)
+{
+W
+}
+
+STRING 362
+// Abilities: A00U (Thunder Clap), Tip (Tooltip - Normal)
+{
+Thunder Clap - [|cffffcc00Level 4|r]
+}
+
+STRING 363
+// Abilities: A00U (Thunder Clap), Tip (Tooltip - Normal)
+{
+Thunder Clap - [|cffffcc00Level 5|r]
+}
+
+STRING 364
+// Abilities: A00U (Thunder Clap), Researchubertip (Tooltip - Learn - Extended)
+{
+Slams the ground, dealing damage to and slowing the movement speed and attack rate of nearby enemy land units. |n|n|cffffcc00Level 1|r - <A00U,DataA1> damage, <A00U,DataC1,%>% move, <A00U,DataD1,%>% attack. |n|cffffcc00Level 2|r - <A00U,DataA2> damage, <A00U,DataC2,%>% move, <A00U,DataD2,%>% attack. |n|cffffcc00Level 3|r - <A00U,DataA3> damage, <A00U,DataC3,%>% move, <A00U,DataD3,%>% attack.
+}
+
+STRING 365
+// Abilities: A00U (Thunder Clap), Ubertip (Tooltip - Normal - Extended)
+{
+Slams the ground, dealing <A00U,DataA1> damage to nearby enemy land units and slowing their movement by <A00U,DataC1,%>% and attack rate by <A00U,DataD1,%>%.
+}
+
+STRING 366
+// Abilities: A00U (Thunder Clap), Ubertip (Tooltip - Normal - Extended)
+{
+Slams the ground, dealing <A00U,DataA2> damage to nearby enemy land units and slowing their movement by <A00U,DataC2,%>% and attack rate by <A00U,DataD2,%>%.
+}
+
+STRING 367
+// Abilities: A00U (Thunder Clap), Ubertip (Tooltip - Normal - Extended)
+{
+Slams the ground, dealing <A00U,DataA3> damage to nearby enemy land units and slowing their movement by <A00U,DataC3,%>% and attack rate by <A00U,DataD3,%>%.
+}
+
+STRING 368
+// Abilities: A00U (Thunder Clap), Ubertip (Tooltip - Normal - Extended)
+{
+Slams the ground, dealing <A00U,DataA4> damage to nearby enemy land units and slowing their movement by <A00U,DataC4,%>% and attack rate by <A00U,DataD4,%>%.
+}
+
+STRING 369
+// Abilities: A00U (Thunder Clap), Ubertip (Tooltip - Normal - Extended)
+{
+Slams the ground, dealing <A00U,DataA5> damage to nearby enemy land units and slowing their movement by <A00U,DataC5,%>% and attack rate by <A00U,DataD5,%>%.
+}
+
+STRING 370
+// Abilities: A00U (Thunder Clap), EditorSuffix (Editor Suffix)
+{
+(Siege Engine) (Upgrade 1)
+}
+
+STRING 371
+// Abilities: A00V (Thunder Clap), Researchhotkey (Hotkey - Learn)
+{
+W
+}
+
+STRING 372
+// Abilities: A00V (Thunder Clap), Hotkey (Hotkey - Normal)
+{
+W
+}
+
+STRING 373
+// Abilities: A00V (Thunder Clap), Tip (Tooltip - Normal)
+{
+Thunder Clap - [|cffffcc00Level 4|r]
+}
+
+STRING 374
+// Abilities: A00V (Thunder Clap), Tip (Tooltip - Normal)
+{
+Thunder Clap - [|cffffcc00Level 5|r]
+}
+
+STRING 375
+// Abilities: A00V (Thunder Clap), Researchubertip (Tooltip - Learn - Extended)
+{
+Slams the ground, dealing damage to and slowing the movement speed and attack rate of nearby enemy land units. |n|n|cffffcc00Level 1|r - <A00V,DataA1> damage, <A00V,DataC1,%>% move, <A00V,DataD1,%>% attack. |n|cffffcc00Level 2|r - <A00V,DataA2> damage, <A00V,DataC2,%>% move, <A00V,DataD2,%>% attack. |n|cffffcc00Level 3|r - <A00V,DataA3> damage, <A00V,DataC3,%>% move, <A00V,DataD3,%>% attack.
+}
+
+STRING 376
+// Abilities: A00V (Thunder Clap), Ubertip (Tooltip - Normal - Extended)
+{
+Slams the ground, dealing <A00V,DataA1> damage to nearby enemy land units and slowing their movement by <A00V,DataC1,%>% and attack rate by <A00V,DataD1,%>%.
+}
+
+STRING 377
+// Abilities: A00V (Thunder Clap), Ubertip (Tooltip - Normal - Extended)
+{
+Slams the ground, dealing <A00V,DataA2> damage to nearby enemy land units and slowing their movement by <A00V,DataC2,%>% and attack rate by <A00V,DataD2,%>%.
+}
+
+STRING 378
+// Abilities: A00V (Thunder Clap), Ubertip (Tooltip - Normal - Extended)
+{
+Slams the ground, dealing <A00V,DataA3> damage to nearby enemy land units and slowing their movement by <A00V,DataC3,%>% and attack rate by <A00V,DataD3,%>%.
+}
+
+STRING 379
+// Abilities: A00V (Thunder Clap), Ubertip (Tooltip - Normal - Extended)
+{
+Slams the ground, dealing <A00V,DataA4> damage to nearby enemy land units and slowing their movement by <A00V,DataC4,%>% and attack rate by <A00V,DataD4,%>%.
+}
+
+STRING 380
+// Abilities: A00V (Thunder Clap), Ubertip (Tooltip - Normal - Extended)
+{
+Slams the ground, dealing <A00V,DataA5> damage to nearby enemy land units and slowing their movement by <A00V,DataC5,%>% and attack rate by <A00V,DataD5,%>%.
+}
+
+STRING 381
+// Abilities: A00V (Thunder Clap), EditorSuffix (Editor Suffix)
+{
+(Siege Engine) (Upgrade 2)
+}
+
+STRING 382
+// Abilities: A00W (Thunder Clap), Researchhotkey (Hotkey - Learn)
+{
+W
+}
+
+STRING 383
+// Abilities: A00W (Thunder Clap), Hotkey (Hotkey - Normal)
+{
+W
+}
+
+STRING 384
+// Abilities: A00W (Thunder Clap), Tip (Tooltip - Normal)
+{
+Thunder Clap - [|cffffcc00Level 4|r]
+}
+
+STRING 385
+// Abilities: A00W (Thunder Clap), Tip (Tooltip - Normal)
+{
+Thunder Clap - [|cffffcc00Level 5|r]
+}
+
+STRING 386
+// Abilities: A00W (Thunder Clap), Researchubertip (Tooltip - Learn - Extended)
+{
+Slams the ground, dealing damage to and slowing the movement speed and attack rate of nearby enemy land units. |n|n|cffffcc00Level 1|r - <A00W,DataA1> damage, <A00W,DataC1,%>% move, <A00W,DataD1,%>% attack. |n|cffffcc00Level 2|r - <A00W,DataA2> damage, <A00W,DataC2,%>% move, <A00W,DataD2,%>% attack. |n|cffffcc00Level 3|r - <A00W,DataA3> damage, <A00W,DataC3,%>% move, <A00W,DataD3,%>% attack.
+}
+
+STRING 387
+// Abilities: A00W (Thunder Clap), Ubertip (Tooltip - Normal - Extended)
+{
+Slams the ground, dealing <A00W,DataA1> damage to nearby enemy land units and slowing their movement by <A00W,DataC1,%>% and attack rate by <A00W,DataD1,%>%.
+}
+
+STRING 388
+// Abilities: A00W (Thunder Clap), Ubertip (Tooltip - Normal - Extended)
+{
+Slams the ground, dealing <A00W,DataA2> damage to nearby enemy land units and slowing their movement by <A00W,DataC2,%>% and attack rate by <A00W,DataD2,%>%.
+}
+
+STRING 389
+// Abilities: A00W (Thunder Clap), Ubertip (Tooltip - Normal - Extended)
+{
+Slams the ground, dealing <A00W,DataA3> damage to nearby enemy land units and slowing their movement by <A00W,DataC3,%>% and attack rate by <A00W,DataD3,%>%.
+}
+
+STRING 390
+// Abilities: A00W (Thunder Clap), Ubertip (Tooltip - Normal - Extended)
+{
+Slams the ground, dealing <A00W,DataA4> damage to nearby enemy land units and slowing their movement by <A00W,DataC4,%>% and attack rate by <A00W,DataD4,%>%.
+}
+
+STRING 391
+// Abilities: A00W (Thunder Clap), Ubertip (Tooltip - Normal - Extended)
+{
+Slams the ground, dealing <A00W,DataA5> damage to nearby enemy land units and slowing their movement by <A00W,DataC5,%>% and attack rate by <A00W,DataD5,%>%.
+}
+
+STRING 392
+// Abilities: A00W (Thunder Clap), EditorSuffix (Editor Suffix)
+{
+(Siege Engine) (Upgrade 3)
+}
+
+STRING 393
+// Abilities: A00X (Thunder Clap), Researchhotkey (Hotkey - Learn)
+{
+W
+}
+
+STRING 394
+// Abilities: A00X (Thunder Clap), Hotkey (Hotkey - Normal)
+{
+W
+}
+
+STRING 395
+// Abilities: A00X (Thunder Clap), Tip (Tooltip - Normal)
+{
+Thunder Clap - [|cffffcc00Level 4|r]
+}
+
+STRING 396
+// Abilities: A00X (Thunder Clap), Tip (Tooltip - Normal)
+{
+Thunder Clap - [|cffffcc00Level 5|r]
+}
+
+STRING 397
+// Abilities: A00X (Thunder Clap), Researchubertip (Tooltip - Learn - Extended)
+{
+Slams the ground, dealing damage to and slowing the movement speed and attack rate of nearby enemy land units. |n|n|cffffcc00Level 1|r - <A00X,DataA1> damage, <A00X,DataC1,%>% move, <A00X,DataD1,%>% attack. |n|cffffcc00Level 2|r - <A00X,DataA2> damage, <A00X,DataC2,%>% move, <A00X,DataD2,%>% attack. |n|cffffcc00Level 3|r - <A00X,DataA3> damage, <A00X,DataC3,%>% move, <A00X,DataD3,%>% attack.
+}
+
+STRING 398
+// Abilities: A00X (Thunder Clap), Ubertip (Tooltip - Normal - Extended)
+{
+Slams the ground, dealing <A00X,DataA1> damage to nearby enemy land units and slowing their movement by <A00X,DataC1,%>% and attack rate by <A00X,DataD1,%>%.
+}
+
+STRING 399
+// Abilities: A00X (Thunder Clap), Ubertip (Tooltip - Normal - Extended)
+{
+Slams the ground, dealing <A00X,DataA2> damage to nearby enemy land units and slowing their movement by <A00X,DataC2,%>% and attack rate by <A00X,DataD2,%>%.
+}
+
+STRING 400
+// Abilities: A00X (Thunder Clap), Ubertip (Tooltip - Normal - Extended)
+{
+Slams the ground, dealing <A00X,DataA3> damage to nearby enemy land units and slowing their movement by <A00X,DataC3,%>% and attack rate by <A00X,DataD3,%>%.
+}
+
+STRING 401
+// Abilities: A00X (Thunder Clap), Ubertip (Tooltip - Normal - Extended)
+{
+Slams the ground, dealing <A00X,DataA4> damage to nearby enemy land units and slowing their movement by <A00X,DataC4,%>% and attack rate by <A00X,DataD4,%>%.
+}
+
+STRING 402
+// Abilities: A00X (Thunder Clap), Ubertip (Tooltip - Normal - Extended)
+{
+Slams the ground, dealing <A00X,DataA5> damage to nearby enemy land units and slowing their movement by <A00X,DataC5,%>% and attack rate by <A00X,DataD5,%>%.
+}
+
+STRING 403
+// Abilities: A00X (Thunder Clap), EditorSuffix (Editor Suffix)
+{
+(Siege Engine) (Upgrade 4)
+}
+
+STRING 404
+// Abilities: A00Y (Thunder Clap), Researchhotkey (Hotkey - Learn)
+{
+W
+}
+
+STRING 405
+// Abilities: A00Y (Thunder Clap), Hotkey (Hotkey - Normal)
+{
+W
+}
+
+STRING 406
+// Abilities: A00Y (Thunder Clap), Tip (Tooltip - Normal)
+{
+Thunder Clap - [|cffffcc00Level 4|r]
+}
+
+STRING 407
+// Abilities: A00Y (Thunder Clap), Tip (Tooltip - Normal)
+{
+Thunder Clap - [|cffffcc00Level 5|r]
+}
+
+STRING 408
+// Abilities: A00Y (Thunder Clap), Researchubertip (Tooltip - Learn - Extended)
+{
+Slams the ground, dealing damage to and slowing the movement speed and attack rate of nearby enemy land units. |n|n|cffffcc00Level 1|r - <A00Y,DataA1> damage, <A00Y,DataC1,%>% move, <A00Y,DataD1,%>% attack. |n|cffffcc00Level 2|r - <A00Y,DataA2> damage, <A00Y,DataC2,%>% move, <A00Y,DataD2,%>% attack. |n|cffffcc00Level 3|r - <A00Y,DataA3> damage, <A00Y,DataC3,%>% move, <A00Y,DataD3,%>% attack.
+}
+
+STRING 409
+// Abilities: A00Y (Thunder Clap), Ubertip (Tooltip - Normal - Extended)
+{
+Slams the ground, dealing <A00Y,DataA1> damage to nearby enemy land units and slowing their movement by <A00Y,DataC1,%>% and attack rate by <A00Y,DataD1,%>%.
+}
+
+STRING 410
+// Abilities: A00Y (Thunder Clap), Ubertip (Tooltip - Normal - Extended)
+{
+Slams the ground, dealing <A00Y,DataA2> damage to nearby enemy land units and slowing their movement by <A00Y,DataC2,%>% and attack rate by <A00Y,DataD2,%>%.
+}
+
+STRING 411
+// Abilities: A00Y (Thunder Clap), Ubertip (Tooltip - Normal - Extended)
+{
+Slams the ground, dealing <A00Y,DataA3> damage to nearby enemy land units and slowing their movement by <A00Y,DataC3,%>% and attack rate by <A00Y,DataD3,%>%.
+}
+
+STRING 412
+// Abilities: A00Y (Thunder Clap), Ubertip (Tooltip - Normal - Extended)
+{
+Slams the ground, dealing <A00Y,DataA4> damage to nearby enemy land units and slowing their movement by <A00Y,DataC4,%>% and attack rate by <A00Y,DataD4,%>%.
+}
+
+STRING 413
+// Abilities: A00Y (Thunder Clap), Ubertip (Tooltip - Normal - Extended)
+{
+Slams the ground, dealing <A00Y,DataA5> damage to nearby enemy land units and slowing their movement by <A00Y,DataC5,%>% and attack rate by <A00Y,DataD5,%>%.
+}
+
+STRING 414
+// Abilities: A00Y (Thunder Clap), EditorSuffix (Editor Suffix)
+{
+(Siege Engine) (Upgrade 5)
 }
 
