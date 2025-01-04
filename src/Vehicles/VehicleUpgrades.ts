@@ -3,7 +3,7 @@ import {
   AttributeBonus,
   Fortification,
   Shockwave,
-  GoblinLandMine,
+  AirSupport,
   HardenedSkin,
 } from "./Upgrades/Common/index";
 import {
@@ -15,8 +15,8 @@ import {
 } from "./Upgrades/Legendary/index";
 import { Monsoon, Dummy6, Dummy7, Dummy8, Impale } from "./Upgrades/Rare/index";
 import {
-  AirSupport,
   ManaLeech,
+  GoblinLandMine,
   CriticalStrike,
   Evasion,
   PermanentImmolation,
@@ -29,14 +29,14 @@ export const commonUpgrades: VehicleUpgrade[] = [
   new AttributeBonus(),
   new Fortification(),
   new Shockwave(),
-  new GoblinLandMine(),
+  new AirSupport(),
   new HardenedSkin(),
 ];
 
 export const uncommonUpgrades: VehicleUpgrade[] = [
   new Evasion(),
   new PermanentImmolation(),
-  new AirSupport(),
+  new GoblinLandMine(),
   new ManaLeech(),
   new CriticalStrike(),
   new EngineeringUpgrade(),

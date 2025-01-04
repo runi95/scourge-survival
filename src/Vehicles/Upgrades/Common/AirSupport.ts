@@ -7,10 +7,10 @@ import { RandomNumberGenerator } from "../../../Utility/RandomNumberGenerator";
 
 export class AirSupport extends VehicleUpgrade {
   public readonly name = "Air Support";
-  public readonly rarity = VehicleUpgradeRarity.UNCOMMON;
+  public readonly rarity = VehicleUpgradeRarity.COMMON;
   public readonly icon =
     "ReplaceableTextures/CommandButtons/BTNFlyingMachine.blp";
-  public readonly cost = 250;
+  public readonly cost = 150;
   public readonly maxLevel = 5;
   public readonly isWeapon = true;
   public readonly description = "TODO: Write description";

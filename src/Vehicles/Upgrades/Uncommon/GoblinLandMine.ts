@@ -7,10 +7,10 @@ import { Globals } from "../../../Utility/Globals";
 
 export class GoblinLandMine extends VehicleUpgrade {
   public readonly name = "Goblin Land Mine";
-  public readonly rarity = VehicleUpgradeRarity.COMMON;
+  public readonly rarity = VehicleUpgradeRarity.UNCOMMON;
   public readonly icon =
     "ReplaceableTextures/CommandButtons/BTNGoblinLandMine.blp";
-  public readonly cost = 100;
+  public readonly cost = 200;
   public readonly maxLevel = 5;
   public readonly isWeapon = true;
   public readonly description =

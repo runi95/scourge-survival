@@ -2,5 +2,5 @@ export * from "./Cannon";
 export * from "./AttributeBonus";
 export * from "./Fortification";
 export * from "./Shockwave";
-export * from "./GoblinLandMine";
+export * from "./AirSupport";
 export * from "./HardenedSkin";
