@@ -14,7 +14,7 @@ export class Runes {
       if (killingUnit == null) return;
 
       const dyingUnit = Unit.fromEvent();
-      if (dyingUnit.owner.id < 20) return;
+      if (dyingUnit.owner.id < 9) return;
 
       const { x, y } = dyingUnit;
       const runeDrop = RandomNumberGenerator.random(1, 100);
