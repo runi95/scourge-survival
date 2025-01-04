@@ -13,7 +13,7 @@ export class CriticalStrikeDamageEvent implements DamageEvent {
 
   public event(damageInstance: ExtendedDamageInstance): void {
     if (damageInstance.damage < 1) return;
-    if (damageInstance.targetOwningPlayerId !== 23) return;
+    if (damageInstance.targetOwningPlayerId < 9) return;
 
     const vehicle =
       this.gameMap.playerVehicles[damageInstance.sourceOwningPlayerId];
