@@ -4,3 +4,4 @@ export * from "./GoblinLandMine";
 export * from "./ManaLeech";
 export * from "./CriticalStrike";
 export * from "./EngineeringUpgrade";
+export * from "./InnerFire";

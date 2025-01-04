@@ -1,6 +1,7 @@
 import { GameMap } from "../../Game/GameMap";
 import { DamageEngine, DamageEventType, DamageInstance } from "./DamageEngine";
 import { CriticalStrikeDamageEvent } from "./DamageEvents/CriticalStrikeDamageEvent";
+import { InnerFireDamageEvent } from "./DamageEvents/InnerFireDamageEvent";
 import { MagicSurgeDamageEvent } from "./DamageEvents/MagicSurgeDamageEvent";
 
 export interface ExtendedDamageInstance extends DamageInstance {
@@ -46,6 +47,10 @@ export class DamageEventController {
     );
 
     // After damage events
+    DamageEngine.register(
+      new InnerFireDamageEvent(this.gameMap),
+      DamageEventType.AfterDamageEvent
+    );
 
     // Lethal damage events
   }
