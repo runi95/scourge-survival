@@ -13,11 +13,16 @@ import {
   Dummy9,
   FlakCannons,
 } from "./Upgrades/Legendary/index";
-import { Monsoon, Dummy6, Dummy7, Dummy8, Impale } from "./Upgrades/Rare/index";
+import {
+  Monsoon,
+  CriticalStrike,
+  Dummy7,
+  Dummy8,
+  Impale,
+} from "./Upgrades/Rare/index";
 import {
   ManaLeech,
   GoblinLandMine,
-  CriticalStrike,
   Evasion,
   PermanentImmolation,
   EngineeringUpgrade,
@@ -39,7 +44,6 @@ export const uncommonUpgrades: VehicleUpgrade[] = [
   new PermanentImmolation(),
   new GoblinLandMine(),
   new ManaLeech(),
-  new CriticalStrike(),
   new EngineeringUpgrade(),
   new InnerFire(),
 ];
@@ -47,7 +51,7 @@ export const uncommonUpgrades: VehicleUpgrade[] = [
 export const rareUpgrades: VehicleUpgrade[] = [
   new Impale(),
   new Monsoon(),
-  new Dummy6(),
+  new CriticalStrike(),
   new Dummy7(),
   new Dummy8(),
 ];

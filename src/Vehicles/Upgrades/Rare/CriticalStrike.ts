@@ -5,7 +5,7 @@ import { VehicleUpgradeRarity } from "../../VehicleUpgradeRarity";
 
 export class CriticalStrike extends VehicleUpgrade {
   public readonly name = "Critical Strike";
-  public readonly rarity = VehicleUpgradeRarity.UNCOMMON;
+  public readonly rarity = VehicleUpgradeRarity.RARE;
   public readonly icon =
     "ReplaceableTextures/CommandButtons/BTNCriticalStrike.blp";
   public readonly cost = 200;
