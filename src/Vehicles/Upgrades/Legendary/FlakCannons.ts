@@ -3,6 +3,7 @@ import { VehicleUpgrade } from "../../VehicleUpgrade";
 import { VehicleUpgradeRarity } from "../../VehicleUpgradeRarity";
 
 export class FlakCannons extends VehicleUpgrade {
+  public readonly name = "Flak Cannons";
   public readonly rarity = VehicleUpgradeRarity.LEGENDARY;
   public readonly icon =
     "ReplaceableTextures/CommandButtons/BTNFlakCannons.blp";
