@@ -100,10 +100,6 @@ export class Spawner {
         this.creepUpgrades.creepUpgradeTypes[creepUpgradeIndex];
       creepUpgrade.apply();
 
-      print(
-        `|cFFFF0000Creep ${creepUpgrade.name} increased to level ${creepUpgrade.currentLevel}!|r`
-      );
-
       if (this.waves.length > this.currentWaveIndex) {
         this.startWave();
       } else {
