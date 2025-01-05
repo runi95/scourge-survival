@@ -113,6 +113,7 @@ export class Spawner {
     index: number,
     isFirstPortal: boolean
   ) {
+    if (portalWaves.length === 0) return;
     let { count } = portalWaves[index];
     const { delay, unitTypeId } = portalWaves[index];
     const t: Timer = TimerUtils.newTimer();
