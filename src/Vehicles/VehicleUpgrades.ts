@@ -19,6 +19,7 @@ import {
   MagicSentry,
   ThornsAura,
   Impale,
+  ScourgeBoneChimes,
 } from "./Upgrades/Rare/index";
 import {
   ManaLeech,
@@ -54,6 +55,7 @@ export const rareUpgrades: VehicleUpgrade[] = [
   new CriticalStrike(),
   new MagicSentry(),
   new ThornsAura(),
+  new ScourgeBoneChimes(),
 ];
 
 export const legendaryUpgrades: VehicleUpgrade[] = [

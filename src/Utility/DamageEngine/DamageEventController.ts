@@ -3,6 +3,7 @@ import { DamageEngine, DamageEventType, DamageInstance } from "./DamageEngine";
 import { CriticalStrikeDamageEvent } from "./DamageEvents/CriticalStrikeDamageEvent";
 import { InnerFireDamageEvent } from "./DamageEvents/InnerFireDamageEvent";
 import { MagicSurgeDamageEvent } from "./DamageEvents/MagicSurgeDamageEvent";
+import { ScourgeBoneChimesDamageEvent } from "./DamageEvents/ScourgeBoneChimesDamageEvent";
 import { WarDrumsDamageEvent } from "./DamageEvents/WarDrumsDamageEvent";
 
 export interface ExtendedDamageInstance extends DamageInstance {
@@ -54,6 +55,10 @@ export class DamageEventController {
     // After damage events
     DamageEngine.register(
       new InnerFireDamageEvent(this.gameMap),
+      DamageEventType.AfterDamageEvent
+    );
+    DamageEngine.register(
+      new ScourgeBoneChimesDamageEvent(this.gameMap),
       DamageEventType.AfterDamageEvent
     );
 
