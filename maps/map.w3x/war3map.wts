@@ -2235,3 +2235,33 @@ STRING 414
 (Siege Engine) (Upgrade 5)
 }
 
+STRING 415
+// Units: u009 (StormHammers), Name (Name)
+{
+StormHammers
+}
+
+STRING 416
+// Items: I00M (Storm Hammers), Name (Name)
+{
+Storm Hammers
+}
+
+STRING 417
+// Items: I00M (Storm Hammers), Tip (Tooltip - Basic)
+{
+Purchase Storm Hammers
+}
+
+STRING 418
+// Items: I00M (Storm Hammers), Description (Description)
+{
+Throws a storm hammer with line damage at a random nearby enemy.
+}
+
+STRING 419
+// Items: I00M (Storm Hammers), Ubertip (Tooltip - Extended)
+{
+Throws a storm hammer with line damage at a random nearby enemy.
+}
+
