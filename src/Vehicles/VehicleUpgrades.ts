@@ -9,7 +9,7 @@ import {
 import {
   Glyph,
   MagicSurge,
-  Dummy5,
+  WarDrums,
   Dummy9,
   FlakCannons,
 } from "./Upgrades/Legendary/index";
@@ -60,8 +60,8 @@ export const legendaryUpgrades: VehicleUpgrade[] = [
   new FlakCannons(),
   new Glyph(),
   new MagicSurge(),
+  new WarDrums(),
   new Dummy9(),
-  new Dummy5(),
 ];
 
 export const vehicleUpgrades: VehicleUpgrade[] = [
