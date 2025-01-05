@@ -16,7 +16,7 @@ import {
 import {
   Monsoon,
   CriticalStrike,
-  Dummy7,
+  MagicSentry,
   Dummy8,
   Impale,
 } from "./Upgrades/Rare/index";
@@ -52,7 +52,7 @@ export const rareUpgrades: VehicleUpgrade[] = [
   new Impale(),
   new Monsoon(),
   new CriticalStrike(),
-  new Dummy7(),
+  new MagicSentry(),
   new Dummy8(),
 ];
 

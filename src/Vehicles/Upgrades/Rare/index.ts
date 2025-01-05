@@ -1,5 +1,5 @@
 export * from "./Impale";
 export * from "./Monsoon";
 export * from "./CriticalStrike";
-export * from "./Dummy7";
+export * from "./MagicSentry";
 export * from "./Dummy8";
