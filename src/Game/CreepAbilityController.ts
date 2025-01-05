@@ -8,6 +8,7 @@ export class CreepAbilityController {
   private readonly stopTrigger = Trigger.create();
 
   private readonly crippleBuffId = FourCC("Bcri");
+  private readonly crippleAbilityId = FourCC("A00C");
 
   constructor(gameMap: GameMap) {
     this.gameMap = gameMap;
@@ -21,9 +22,15 @@ export class CreepAbilityController {
       switch (unitTypeId) {
         case CREEP_TYPE.NECROMANCER:
           (() => {
-            const triggerUnit = GetTriggerUnit();
-            if (!UnitHasBuffBJ(triggerUnit, this.crippleBuffId)) {
-              IssueTargetOrder(attacker, "cripple", triggerUnit);
+            const cooldown = BlzGetUnitAbilityCooldownRemaining(
+              attacker,
+              this.crippleAbilityId
+            );
+            if (cooldown === 0) {
+              const triggerUnit = GetTriggerUnit();
+              if (!UnitHasBuffBJ(triggerUnit, this.crippleBuffId)) {
+                IssueTargetOrder(attacker, "cripple", triggerUnit);
+              }
             }
           })();
           break;
