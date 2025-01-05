@@ -1,7 +1,7 @@
 import { CREEP_TYPE } from "../GameMap";
 import { Wave } from "./Wave";
 
-export const EIGHT: Wave = [
+export const NINE: Wave = [
   [
     {
       delay: 0.1,
@@ -11,7 +11,7 @@ export const EIGHT: Wave = [
     {
       delay: 0.1,
       count: 3,
-      unitTypeId: CREEP_TYPE.MEAT_WAGON,
+      unitTypeId: CREEP_TYPE.GARGOYLE,
     },
   ],
   [
@@ -23,7 +23,7 @@ export const EIGHT: Wave = [
     {
       delay: 0.1,
       count: 3,
-      unitTypeId: CREEP_TYPE.MEAT_WAGON,
+      unitTypeId: CREEP_TYPE.GARGOYLE,
     },
   ],
 ];

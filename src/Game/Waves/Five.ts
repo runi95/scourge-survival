@@ -5,28 +5,8 @@ export const FIVE: Wave = [
   [
     {
       delay: 0.3,
-      count: 1,
-      unitTypeId: CREEP_TYPE.NECROMANCER,
-    },
-    {
-      delay: 0.3,
-      count: 1,
-      unitTypeId: CREEP_TYPE.MEAT_WAGON,
-    },
-    {
-      delay: 0.3,
-      count: 1,
-      unitTypeId: CREEP_TYPE.NECROMANCER,
-    },
-    {
-      delay: 0.3,
-      count: 1,
-      unitTypeId: CREEP_TYPE.MEAT_WAGON,
-    },
-    {
-      delay: 0.3,
-      count: 1,
-      unitTypeId: CREEP_TYPE.NECROMANCER,
+      count: 5,
+      unitTypeId: CREEP_TYPE.GHOUL,
     },
     {
       delay: 0.3,
@@ -37,28 +17,8 @@ export const FIVE: Wave = [
   [
     {
       delay: 0.3,
-      count: 1,
-      unitTypeId: CREEP_TYPE.NECROMANCER,
-    },
-    {
-      delay: 0.3,
-      count: 1,
-      unitTypeId: CREEP_TYPE.MEAT_WAGON,
-    },
-    {
-      delay: 0.3,
-      count: 1,
-      unitTypeId: CREEP_TYPE.NECROMANCER,
-    },
-    {
-      delay: 0.3,
-      count: 1,
-      unitTypeId: CREEP_TYPE.MEAT_WAGON,
-    },
-    {
-      delay: 0.3,
-      count: 1,
-      unitTypeId: CREEP_TYPE.NECROMANCER,
+      count: 5,
+      unitTypeId: CREEP_TYPE.GHOUL,
     },
     {
       delay: 0.3,

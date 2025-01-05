@@ -13,6 +13,9 @@ import {
   SIX,
   SEVEN,
   EIGHT,
+  NINE,
+  TEN,
+  ELEVEN,
 } from "./Waves/index";
 import { RandomNumberGenerator } from "../Utility/RandomNumberGenerator";
 import { CreepUpgrades } from "./CreepUpgrades/CreepUpgrades";
@@ -29,8 +32,15 @@ export class Spawner {
     SIX,
     SEVEN,
     EIGHT,
+    NINE,
+    TEN,
+    ELEVEN,
   ];
   private currentWaveIndex: number = 0;
+
+  private waveTimer: Timer;
+  private firstPortalTimer: Timer;
+  private secondPortalTimer: Timer;
 
   constructor(gameMap: GameMap) {
     this.gameMap = gameMap;
@@ -45,6 +55,7 @@ export class Spawner {
     // }
 
     const t: Timer = TimerUtils.newTimer();
+    this.waveTimer = t;
     t.start(10, false, () => {
       const localPlayerId = GetPlayerId(GetLocalPlayer());
       PingMinimapEx(
@@ -77,6 +88,7 @@ export class Spawner {
     this.spawnPortal(secondPortal, 0, false);
 
     const t: Timer = TimerUtils.newTimer();
+    this.waveTimer = t;
     t.start(30, false, () => {
       TimerUtils.releaseTimer(t);
 
@@ -108,6 +120,11 @@ export class Spawner {
     let { count } = portalWaves[index];
     const { delay, unitTypeId } = portalWaves[index];
     const t: Timer = TimerUtils.newTimer();
+    if (isFirstPortal) {
+      this.firstPortalTimer = t;
+    } else {
+      this.secondPortalTimer = t;
+    }
     t.start(delay, true, () => {
       for (let i = 0; i < GameMap.ONLINE_PLAYER_ID_LIST.length; i++) {
         if (GameMap.IS_PLAYER_DEFEATED[i]) continue;

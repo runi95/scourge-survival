@@ -4,16 +4,10 @@ import { Wave } from "./Wave";
 export const SEVEN: Wave = [
   [
     {
-      delay: 0.1,
-      count: 10,
-      unitTypeId: CREEP_TYPE.GARGOYLE,
+      delay: 0.2,
+      count: 1,
+      unitTypeId: CREEP_TYPE.FROST_WYRM,
     },
   ],
-  [
-    {
-      delay: 0.1,
-      count: 10,
-      unitTypeId: CREEP_TYPE.GARGOYLE,
-    },
-  ],
+  [],
 ];
