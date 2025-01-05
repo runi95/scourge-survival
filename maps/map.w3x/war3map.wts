@@ -2301,3 +2301,75 @@ STRING 425
 Flying Machine
 }
 
+STRING 427
+// Abilities: S000 (Stone Form), Name (Name)
+{
+Stone Form
+}
+
+STRING 428
+// Buffs/Effects: B001 (), Bufftip (Tooltip)
+{
+Stone Form
+}
+
+STRING 429
+// Buffs/Effects: B001 (), Buffubertip (Tooltip - Extended)
+{
+This unit is under the effects of Stone Form; upon reaching 0 health it covers itself in a protective layer of stones to regenerate.
+}
+
+STRING 430
+// Abilities: A00C (Cripple), EditorSuffix (Editor Suffix)
+{
+(Necromancer)
+}
+
+STRING 431
+// Abilities: A011 (Gargoyle Morphing), Name (Name)
+{
+Gargoyle Morphing
+}
+
+STRING 432
+// Abilities: A011 (Gargoyle Morphing), EditorSuffix (Editor Suffix)
+{
+(Gargoyle)
+}
+
+STRING 433
+// Abilities: S000 (Stone Form), EditorSuffix (Editor Suffix)
+{
+(Buff)
+}
+
+STRING 434
+// Abilities: S001 (Kaboom!), EditorSuffix (Editor Suffix)
+{
+(Buff)
+}
+
+STRING 435
+// Abilities: S001 (Kaboom!), Name (Name)
+{
+Kaboom!
+}
+
+STRING 436
+// Abilities: A012 (AOE damage upon death), EditorSuffix (Editor Suffix)
+{
+(Abomination)
+}
+
+STRING 437
+// Buffs/Effects: B002 (), Bufftip (Tooltip)
+{
+Kaboom!
+}
+
+STRING 438
+// Buffs/Effects: B002 (), Buffubertip (Tooltip - Extended)
+{
+This unit is under the effects of Kaboom!; it explodes upon death, dealing damage to all nearby enemy units.
+}
+
