@@ -17,6 +17,7 @@ export class AirSupport extends VehicleUpgrade {
 
   private readonly playerTimers: Timer[] = [];
 
+  private readonly flyingMachineUpgradeId: number = FourCC("R005");
   private readonly flyingMachineUnitTypeId: number = FourCC("h000");
   private readonly playerFlyingMachines: Unit[][] = [];
 
@@ -24,7 +25,9 @@ export class AirSupport extends VehicleUpgrade {
     const owner = vehicle.unit.owner;
     const playerId = owner.id;
     const airSupportLevel = vehicle.upgradeMap.get(this.name);
-    if (airSupportLevel === 1) {
+    if (airSupportLevel > 1) {
+      owner.addTechResearched(this.flyingMachineUpgradeId, 1);
+    } else {
       vehicle.unit.addItemById(FourCC("I006"));
       this.playerFlyingMachines[playerId] = [];
       const t: Timer = TimerUtils.newTimer();
@@ -51,18 +54,18 @@ export class AirSupport extends VehicleUpgrade {
           }
         }
       });
-    }
 
-    const { x, y } = vehicle.unit;
-    for (let i = 0; i < 3; i++) {
-      const flyingMachine = Unit.create(
-        owner,
-        this.flyingMachineUnitTypeId,
-        x + RandomNumberGenerator.random(-250, 250),
-        y + RandomNumberGenerator.random(-250, 250)
-      );
-      flyingMachine.issueTargetOrder("patrol", vehicle.unit);
-      this.playerFlyingMachines[playerId].push(flyingMachine);
+      const { x, y } = vehicle.unit;
+      for (let i = 0; i < 3; i++) {
+        const flyingMachine = Unit.create(
+          owner,
+          this.flyingMachineUnitTypeId,
+          x + RandomNumberGenerator.random(-250, 250),
+          y + RandomNumberGenerator.random(-250, 250)
+        );
+        flyingMachine.issueTargetOrder("patrol", vehicle.unit);
+        this.playerFlyingMachines[playerId].push(flyingMachine);
+      }
     }
   }
 }

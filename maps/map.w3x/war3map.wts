@@ -2265,3 +2265,39 @@ STRING 419
 Throws a storm hammer with line damage at a random nearby enemy.
 }
 
+STRING 420
+// Upgrades: R005 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Flying Machine
+}
+
+STRING 421
+// Upgrades: R005 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Flying Machine
+}
+
+STRING 422
+// Upgrades: R005 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Flying Machine
+}
+
+STRING 423
+// Upgrades: R005 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), class (Class)
+{
+ranged
+}
+
+STRING 424
+// Upgrades: R005 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), effect1 (Effect 1)
+{
+ratx
+}
+
+STRING 425
+// Upgrades: R005 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Flying Machine
+}
+
