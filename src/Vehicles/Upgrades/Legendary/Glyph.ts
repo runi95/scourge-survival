@@ -1,3 +1,4 @@
+import { GlyphAbility } from "../../Abilities/GlyphAbility";
 import { Vehicle } from "../../Vehicle";
 import { VehicleUpgrade } from "../../VehicleUpgrade";
 import { VehicleUpgradeRarity } from "../../VehicleUpgradeRarity";
@@ -7,9 +8,10 @@ export class Glyph extends VehicleUpgrade {
   public readonly icon = "ReplaceableTextures/CommandButtons/BTNGlyph.blp";
   public readonly cost = 500;
   public readonly description =
-    "Gives a 20% chance for creeps that did not drop a rune to drop a tome instead.";
+    "Gain +1 to a random attribute whenever you kill an enemy unit.";
 
-  public applyUpgrade(_vehicle: Vehicle): void {
-    // Intentionally left empty
+  public applyUpgrade(vehicle: Vehicle): void {
+    if (vehicle.upgradeMap.get(this.name) !== 1) return;
+    GlyphAbility.PLAYER_ID_UNLOCKS[vehicle.unit.owner.id] = true;
   }
 }

@@ -227,6 +227,7 @@ export class Game {
       }
     }
 
+    this.abilities.initialize();
     this.creepAbilityController.initialize();
     this.spawner.initializeAI();
   }
