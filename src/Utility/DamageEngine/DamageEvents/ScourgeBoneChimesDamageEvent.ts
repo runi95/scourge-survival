@@ -17,6 +17,7 @@ export class ScourgeBoneChimesDamageEvent implements DamageEvent {
     if (damageInstance.damage < 1) return;
     if (damageInstance.targetOwningPlayerId < 9) return;
     if (ScourgeBoneChimesDamageEvent.READY_INSTANCES === 0) return;
+    if (damageInstance.damageType === DAMAGE_TYPE_DEFENSIVE) return;
 
     const vehicle =
       this.gameMap.playerVehicles[damageInstance.sourceOwningPlayerId];
