@@ -1,6 +1,7 @@
 import { MapPlayer, Trigger } from "w3ts";
 import { OrderId } from "w3ts/globals";
 import { CREEP_TYPE, GameMap } from "./GameMap";
+import { Globals } from "../Utility/Globals";
 
 export class CreepAbilityController {
   private readonly gameMap: GameMap;
@@ -8,6 +9,7 @@ export class CreepAbilityController {
   private readonly stopTrigger = Trigger.create();
   private readonly spellCastTrigger = Trigger.create();
 
+  private readonly dummyUnitId: number = FourCC("u000");
   private readonly crippleBuffId = FourCC("Bcri");
   private readonly crippleAbilityId = FourCC("A00C");
 
@@ -23,15 +25,23 @@ export class CreepAbilityController {
       switch (unitTypeId) {
         case CREEP_TYPE.NECROMANCER:
           (() => {
-            const cooldown = BlzGetUnitAbilityCooldownRemaining(
-              attacker,
-              this.crippleAbilityId
-            );
-            if (cooldown === 0) {
-              const triggerUnit = GetTriggerUnit();
-              if (!UnitHasBuffBJ(triggerUnit, this.crippleBuffId)) {
-                IssueTargetOrder(attacker, "cripple", triggerUnit);
-              }
+            const mana = GetUnitState(attacker, UNIT_STATE_MANA);
+            if (mana < 30) return;
+
+            const triggerUnit = GetTriggerUnit();
+            if (!UnitHasBuffBJ(triggerUnit, this.crippleBuffId)) {
+              SetUnitState(attacker, UNIT_STATE_MANA, mana - 30);
+
+              const dummy = CreateUnit(
+                GetOwningPlayer(attacker),
+                this.dummyUnitId,
+                GetUnitX(attacker),
+                GetUnitY(attacker),
+                0
+              );
+              UnitApplyTimedLife(dummy, Globals.TIMED_LIFE_BUFF_ID, 1);
+              UnitAddAbility(dummy, this.crippleAbilityId);
+              IssueTargetOrderById(dummy, OrderId.Cripple, triggerUnit);
             }
           })();
           break;
@@ -40,6 +50,13 @@ export class CreepAbilityController {
 
     this.stopTrigger.addAction(() => {
       const issuedOrderId = GetIssuedOrderId();
+      switch (issuedOrderId) {
+        case OrderId.Stop:
+        case OrderId.Holdposition:
+          break;
+        default:
+          return;
+      }
       if (issuedOrderId !== OrderId.Stop) return;
 
       const triggerUnit = GetTriggerUnit();
@@ -74,6 +91,16 @@ export class CreepAbilityController {
       this.stopTrigger.registerPlayerUnitEvent(
         creepPlayer,
         EVENT_PLAYER_UNIT_ISSUED_ORDER,
+        undefined
+      );
+      this.stopTrigger.registerPlayerUnitEvent(
+        creepPlayer,
+        EVENT_PLAYER_UNIT_ISSUED_POINT_ORDER,
+        undefined
+      );
+      this.stopTrigger.registerPlayerUnitEvent(
+        creepPlayer,
+        EVENT_PLAYER_UNIT_ISSUED_TARGET_ORDER,
         undefined
       );
       this.spellCastTrigger.registerPlayerUnitEvent(
