@@ -17,7 +17,7 @@ import {
   Monsoon,
   CriticalStrike,
   MagicSentry,
-  ThornsAura,
+  Thorns,
   Impale,
   ScourgeBoneChimes,
 } from "./Upgrades/Rare/index";
@@ -54,7 +54,7 @@ export const rareUpgrades: VehicleUpgrade[] = [
   new Monsoon(),
   new CriticalStrike(),
   new MagicSentry(),
-  new ThornsAura(),
+  new Thorns(),
   new ScourgeBoneChimes(),
 ];
 
