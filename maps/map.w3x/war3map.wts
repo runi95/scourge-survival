@@ -2385,3 +2385,393 @@ STRING 440
 Blizzard
 }
 
+STRING 441
+// Abilities: A013 (Avatar), Tip (Tooltip - Normal)
+{
+Activate Avatar
+}
+
+STRING 442
+// Abilities: A013 (Avatar), Tip (Tooltip - Normal)
+{
+Activate Avatar
+}
+
+STRING 443
+// Abilities: A013 (Avatar), Untip (Tooltip - Turn Off)
+{
+Deactivate Avatar
+}
+
+STRING 444
+// Abilities: A013 (Avatar), Untip (Tooltip - Turn Off)
+{
+Deactivate Avatar
+}
+
+STRING 445
+// Abilities: A013 (Avatar), Ubertip (Tooltip - Normal - Extended)
+{
+Activate Avatar to give the Siege Engine <A013,DataA2> bonus armor, <A013,DataB2> bonus hit points and spell immunity. |nLasts <A013,Dur2> seconds.
+}
+
+STRING 446
+// Abilities: A013 (Avatar), Ubertip (Tooltip - Normal - Extended)
+{
+Activate Avatar to give the Siege Engine <A013,DataA3> bonus armor, <A013,DataB3> bonus hit points and spell immunity. |nLasts <A013,Dur3> seconds.
+}
+
+STRING 447
+// Abilities: A013 (Avatar), Ubertip (Tooltip - Normal - Extended)
+{
+Activate Avatar to give the Siege Engine <A013,DataA1> bonus armor, <A013,DataB1> bonus hit points and spell immunity. |nLasts <A013,Dur1> seconds.
+}
+
+STRING 448
+// Abilities: A013 (Avatar), Hotkey (Hotkey - Normal)
+{
+R
+}
+
+STRING 449
+// Abilities: A013 (Avatar), Researchhotkey (Hotkey - Learn)
+{
+R
+}
+
+STRING 450
+// Abilities: A013 (Avatar), Unhotkey (Hotkey - Turn Off)
+{
+R
+}
+
+STRING 451
+// Abilities: A013 (Avatar), Researchtip (Tooltip - Learn)
+{
+Learn Avatar - [|cffffcc00Level %d|r]
+}
+
+STRING 452
+// Abilities: A013 (Avatar), Researchubertip (Tooltip - Learn - Extended)
+{
+When Avatar is activated, it gives the Siege Engine <A013,DataA1> bonus armor, <A013,DataB1> bonus hit points and spell immunity. |nLasts <A013,Dur1> seconds.
+}
+
+STRING 453
+// Abilities: A013 (Avatar), EditorSuffix (Editor Suffix)
+{
+(Siege Engine) (Upgrade 1)
+}
+
+STRING 454
+// Abilities: A014 (Avatar), Tip (Tooltip - Normal)
+{
+Activate Avatar
+}
+
+STRING 455
+// Abilities: A014 (Avatar), Tip (Tooltip - Normal)
+{
+Activate Avatar
+}
+
+STRING 456
+// Abilities: A014 (Avatar), Untip (Tooltip - Turn Off)
+{
+Deactivate Avatar
+}
+
+STRING 457
+// Abilities: A014 (Avatar), Untip (Tooltip - Turn Off)
+{
+Deactivate Avatar
+}
+
+STRING 458
+// Abilities: A014 (Avatar), Ubertip (Tooltip - Normal - Extended)
+{
+Activate Avatar to give the Siege Engine <A00F,DataA2> bonus armor, <A00F,DataB2> bonus hit points and spell immunity. |nLasts <A00F,Dur2> seconds.
+}
+
+STRING 459
+// Abilities: A014 (Avatar), Ubertip (Tooltip - Normal - Extended)
+{
+Activate Avatar to give the Siege Engine <A00F,DataA3> bonus armor, <A00F,DataB3> bonus hit points and spell immunity. |nLasts <A00F,Dur3> seconds.
+}
+
+STRING 460
+// Abilities: A014 (Avatar), Ubertip (Tooltip - Normal - Extended)
+{
+Activate Avatar to give the Siege Engine <A014,DataA1> bonus armor, <A014,DataB1> bonus hit points and spell immunity. |nLasts <A014,Dur1> seconds.
+}
+
+STRING 461
+// Abilities: A014 (Avatar), Hotkey (Hotkey - Normal)
+{
+R
+}
+
+STRING 462
+// Abilities: A014 (Avatar), Researchhotkey (Hotkey - Learn)
+{
+R
+}
+
+STRING 463
+// Abilities: A014 (Avatar), Unhotkey (Hotkey - Turn Off)
+{
+R
+}
+
+STRING 464
+// Abilities: A014 (Avatar), Researchtip (Tooltip - Learn)
+{
+Learn Avatar - [|cffffcc00Level %d|r]
+}
+
+STRING 465
+// Abilities: A014 (Avatar), Researchubertip (Tooltip - Learn - Extended)
+{
+When Avatar is activated, it gives the Siege Engine <A014,DataA1> bonus armor, <A014,DataB1> bonus hit points and spell immunity. |nLasts <A014,Dur1> seconds.
+}
+
+STRING 466
+// Abilities: A014 (Avatar), EditorSuffix (Editor Suffix)
+{
+(Siege Engine) (Upgrade 2)
+}
+
+STRING 467
+// Abilities: A015 (Avatar), Tip (Tooltip - Normal)
+{
+Activate Avatar
+}
+
+STRING 468
+// Abilities: A015 (Avatar), Tip (Tooltip - Normal)
+{
+Activate Avatar
+}
+
+STRING 469
+// Abilities: A015 (Avatar), Untip (Tooltip - Turn Off)
+{
+Deactivate Avatar
+}
+
+STRING 470
+// Abilities: A015 (Avatar), Untip (Tooltip - Turn Off)
+{
+Deactivate Avatar
+}
+
+STRING 471
+// Abilities: A015 (Avatar), Ubertip (Tooltip - Normal - Extended)
+{
+Activate Avatar to give the Siege Engine <A015,DataA2> bonus armor, <A015,DataB2> bonus hit points and spell immunity. |nLasts <A015,Dur2> seconds.
+}
+
+STRING 472
+// Abilities: A015 (Avatar), Ubertip (Tooltip - Normal - Extended)
+{
+Activate Avatar to give the Siege Engine <A015,DataA3> bonus armor, <A015,DataB3> bonus hit points and spell immunity. |nLasts <A015,Dur3> seconds.
+}
+
+STRING 473
+// Abilities: A015 (Avatar), Ubertip (Tooltip - Normal - Extended)
+{
+Activate Avatar to give the Siege Engine <A015,DataA1> bonus armor, <A015,DataB1> bonus hit points and spell immunity. |nLasts <A015,Dur1> seconds.
+}
+
+STRING 474
+// Abilities: A015 (Avatar), Hotkey (Hotkey - Normal)
+{
+R
+}
+
+STRING 475
+// Abilities: A015 (Avatar), Researchhotkey (Hotkey - Learn)
+{
+R
+}
+
+STRING 476
+// Abilities: A015 (Avatar), Unhotkey (Hotkey - Turn Off)
+{
+R
+}
+
+STRING 477
+// Abilities: A015 (Avatar), Researchtip (Tooltip - Learn)
+{
+Learn Avatar - [|cffffcc00Level %d|r]
+}
+
+STRING 478
+// Abilities: A015 (Avatar), Researchubertip (Tooltip - Learn - Extended)
+{
+When Avatar is activated, it gives the Siege Engine <A015,DataA1> bonus armor, <A015,DataB1> bonus hit points and spell immunity. |nLasts <A015,Dur1> seconds.
+}
+
+STRING 479
+// Abilities: A015 (Avatar), EditorSuffix (Editor Suffix)
+{
+(Siege Engine) (Upgrade 3)
+}
+
+STRING 480
+// Abilities: A016 (Avatar), Tip (Tooltip - Normal)
+{
+Activate Avatar
+}
+
+STRING 481
+// Abilities: A016 (Avatar), Tip (Tooltip - Normal)
+{
+Activate Avatar
+}
+
+STRING 482
+// Abilities: A016 (Avatar), Untip (Tooltip - Turn Off)
+{
+Deactivate Avatar
+}
+
+STRING 483
+// Abilities: A016 (Avatar), Untip (Tooltip - Turn Off)
+{
+Deactivate Avatar
+}
+
+STRING 484
+// Abilities: A016 (Avatar), Ubertip (Tooltip - Normal - Extended)
+{
+Activate Avatar to give the Siege Engine <A016,DataA2> bonus armor, <A016,DataB2> bonus hit points and spell immunity. |nLasts <A016,Dur2> seconds.
+}
+
+STRING 485
+// Abilities: A016 (Avatar), Ubertip (Tooltip - Normal - Extended)
+{
+Activate Avatar to give the Siege Engine <A016,DataA3> bonus armor, <A016,DataB3> bonus hit points and spell immunity. |nLasts <A016,Dur3> seconds.
+}
+
+STRING 486
+// Abilities: A016 (Avatar), Ubertip (Tooltip - Normal - Extended)
+{
+Activate Avatar to give the Siege Engine <A016,DataA1> bonus armor, <A016,DataB1> bonus hit points and spell immunity. |nLasts <A016,Dur1> seconds.
+}
+
+STRING 487
+// Abilities: A016 (Avatar), Hotkey (Hotkey - Normal)
+{
+R
+}
+
+STRING 488
+// Abilities: A016 (Avatar), Researchhotkey (Hotkey - Learn)
+{
+R
+}
+
+STRING 489
+// Abilities: A016 (Avatar), Unhotkey (Hotkey - Turn Off)
+{
+R
+}
+
+STRING 490
+// Abilities: A016 (Avatar), Researchtip (Tooltip - Learn)
+{
+Learn Avatar - [|cffffcc00Level %d|r]
+}
+
+STRING 491
+// Abilities: A016 (Avatar), Researchubertip (Tooltip - Learn - Extended)
+{
+When Avatar is activated, it gives the Siege Engine <A016,DataA1> bonus armor, <A016,DataB1> bonus hit points and spell immunity. |nLasts <A016,Dur1> seconds.
+}
+
+STRING 492
+// Abilities: A016 (Avatar), EditorSuffix (Editor Suffix)
+{
+(Siege Engine) (Upgrade 4)
+}
+
+STRING 493
+// Abilities: A017 (Avatar), Tip (Tooltip - Normal)
+{
+Activate Avatar
+}
+
+STRING 494
+// Abilities: A017 (Avatar), Tip (Tooltip - Normal)
+{
+Activate Avatar
+}
+
+STRING 495
+// Abilities: A017 (Avatar), Untip (Tooltip - Turn Off)
+{
+Deactivate Avatar
+}
+
+STRING 496
+// Abilities: A017 (Avatar), Untip (Tooltip - Turn Off)
+{
+Deactivate Avatar
+}
+
+STRING 497
+// Abilities: A017 (Avatar), Ubertip (Tooltip - Normal - Extended)
+{
+Activate Avatar to give the Siege Engine <A017,DataA2> bonus armor, <A017,DataB2> bonus hit points and spell immunity. |nLasts <A017,Dur2> seconds.
+}
+
+STRING 498
+// Abilities: A017 (Avatar), Ubertip (Tooltip - Normal - Extended)
+{
+Activate Avatar to give the Siege Engine <A017,DataA3> bonus armor, <A017,DataB3> bonus hit points and spell immunity. |nLasts <A017,Dur3> seconds.
+}
+
+STRING 499
+// Abilities: A017 (Avatar), Ubertip (Tooltip - Normal - Extended)
+{
+Activate Avatar to give the Siege Engine <A017,DataA1> bonus armor, <A017,DataB1> bonus hit points and spell immunity. |nLasts <A017,Dur1> seconds.
+}
+
+STRING 500
+// Abilities: A017 (Avatar), Hotkey (Hotkey - Normal)
+{
+R
+}
+
+STRING 501
+// Abilities: A017 (Avatar), Researchhotkey (Hotkey - Learn)
+{
+R
+}
+
+STRING 502
+// Abilities: A017 (Avatar), Unhotkey (Hotkey - Turn Off)
+{
+R
+}
+
+STRING 503
+// Abilities: A017 (Avatar), Researchtip (Tooltip - Learn)
+{
+Learn Avatar - [|cffffcc00Level %d|r]
+}
+
+STRING 504
+// Abilities: A017 (Avatar), Researchubertip (Tooltip - Learn - Extended)
+{
+When Avatar is activated, it gives the Siege Engine <A017,DataA1> bonus armor, <A017,DataB1> bonus hit points and spell immunity. |nLasts <A017,Dur1> seconds.
+}
+
+STRING 505
+// Abilities: A017 (Avatar), EditorSuffix (Editor Suffix)
+{
+(Siege Engine) (Upgrade 5)
+}
+
