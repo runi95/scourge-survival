@@ -59,6 +59,9 @@ export class CreepAbilityController {
       }
 
       const triggerUnit = GetTriggerUnit();
+      const unitTypeId = GetUnitTypeId(triggerUnit);
+      if (unitTypeId === this.dummyUnitId) return;
+
       const owner = GetOwningPlayer(triggerUnit);
       const ownerId = GetPlayerId(owner);
       IssueTargetOrder(
