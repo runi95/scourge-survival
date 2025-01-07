@@ -1,4 +1,5 @@
 import { GameMap } from "../../Game/GameMap";
+import { Blizzard } from "./Blizzard";
 import { GlyphAbility } from "./GlyphAbility";
 import { MagicSentry } from "./MagicSentry";
 import { ManaLeech } from "./ManaLeech";
@@ -17,5 +18,6 @@ export class Abilities {
     this.abilities.push(new Runes());
     this.abilities.push(new MagicSentry(this.gameMap));
     this.abilities.push(new GlyphAbility(this.gameMap));
+    this.abilities.push(new Blizzard());
   }
 }

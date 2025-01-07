@@ -12,6 +12,7 @@ export class CreepAbilityController {
   private readonly dummyUnitId: number = FourCC("u000");
   private readonly crippleBuffId = FourCC("Bcri");
   private readonly crippleAbilityId = FourCC("A00C");
+  private readonly blizzardUnitTypeId = FourCC("u00B");
 
   constructor(gameMap: GameMap) {
     this.gameMap = gameMap;
@@ -43,6 +44,25 @@ export class CreepAbilityController {
               UnitAddAbility(dummy, this.crippleAbilityId);
               IssueTargetOrderById(dummy, OrderId.Cripple, triggerUnit);
             }
+          })();
+          break;
+        case CREEP_TYPE.FROST_WYRM:
+          (() => {
+            const mana = GetUnitState(attacker, UNIT_STATE_MANA);
+            if (mana < 75) return;
+
+            SetUnitState(attacker, UNIT_STATE_MANA, mana - 75);
+            const triggerUnit = GetTriggerUnit();
+            const x = GetUnitX(triggerUnit);
+            const y = GetUnitY(triggerUnit);
+            const blizzardDummy = CreateUnit(
+              Player(26),
+              this.blizzardUnitTypeId,
+              x,
+              y,
+              0
+            );
+            UnitApplyTimedLife(blizzardDummy, Globals.TIMED_LIFE_BUFF_ID, 1.5);
           })();
           break;
       }

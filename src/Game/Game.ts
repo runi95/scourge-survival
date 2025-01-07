@@ -84,6 +84,7 @@ export class Game {
       );
     });
 
+    const hostilePlayer = MapPlayer.fromIndex(26);
     for (let i = 9; i < 18; i++) {
       const scourgePlayer = MapPlayer.fromIndex(i);
       const fogModifier = FogModifier.fromRect(
@@ -96,6 +97,7 @@ export class Game {
       fogModifier.start();
 
       scourgePlayer.setState(PLAYER_STATE_GIVES_BOUNTY, 1);
+      hostilePlayer.setAlliance(scourgePlayer, ALLIANCE_PASSIVE, true);
     }
 
     const startOfGameSound = Sound.create(

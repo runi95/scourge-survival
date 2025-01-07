@@ -2373,3 +2373,15 @@ STRING 438
 This unit is under the effects of Kaboom!; it explodes upon death, dealing damage to all nearby enemy units.
 }
 
+STRING 439
+// Abilities: A010 (Blizzard), EditorSuffix (Editor Suffix)
+{
+(Frost Wyrm)
+}
+
+STRING 440
+// Units: u00B (Blizzard), Name (Name)
+{
+Blizzard
+}
+
