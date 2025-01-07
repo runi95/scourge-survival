@@ -57,7 +57,6 @@ export class CreepAbilityController {
         default:
           return;
       }
-      if (issuedOrderId !== OrderId.Stop) return;
 
       const triggerUnit = GetTriggerUnit();
       const owner = GetOwningPlayer(triggerUnit);
