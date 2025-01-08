@@ -5,6 +5,7 @@ import {
   Shockwave,
   AirSupport,
   HardenedSkin,
+  TrollRegeneration,
 } from "./Upgrades/Common/index";
 import {
   Glyph,
@@ -38,6 +39,7 @@ export const commonUpgrades: VehicleUpgrade[] = [
   new Shockwave(),
   new AirSupport(),
   new HardenedSkin(),
+  new TrollRegeneration(),
 ];
 
 export const uncommonUpgrades: VehicleUpgrade[] = [
