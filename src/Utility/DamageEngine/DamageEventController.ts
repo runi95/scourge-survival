@@ -5,6 +5,7 @@ import { InnerFireDamageEvent } from "./DamageEvents/InnerFireDamageEvent";
 import { MagicSurgeDamageEvent } from "./DamageEvents/MagicSurgeDamageEvent";
 import { ScourgeBoneChimesDamageEvent } from "./DamageEvents/ScourgeBoneChimesDamageEvent";
 import { ThornsDamageEvent } from "./DamageEvents/ThornsDamageEvent";
+import { UnholyAuraDamageEvent } from "./DamageEvents/UnholyAuraDamageEvent";
 import { WarDrumsDamageEvent } from "./DamageEvents/WarDrumsDamageEvent";
 
 export interface ExtendedDamageInstance extends DamageInstance {
@@ -68,5 +69,9 @@ export class DamageEventController {
     );
 
     // Lethal damage events
+    DamageEngine.register(
+      new UnholyAuraDamageEvent(this.gameMap),
+      DamageEventType.LethalDamageEvent
+    );
   }
 }
