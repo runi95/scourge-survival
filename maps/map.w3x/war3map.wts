@@ -2787,3 +2787,27 @@ STRING 507
 (Unholy Aura)
 }
 
+STRING 508
+// Items: I00N (Cluster Rockets), Name (Name)
+{
+Cluster Rockets
+}
+
+STRING 509
+// Items: I00N (Cluster Rockets), Tip (Tooltip - Basic)
+{
+Purchase Cluster Rockets
+}
+
+STRING 510
+// Items: I00N (Cluster Rockets), Description (Description)
+{
+Sends Cluster Rockets in a random direction every 2 seconds.
+}
+
+STRING 511
+// Items: I00N (Cluster Rockets), Ubertip (Tooltip - Extended)
+{
+Sends Cluster Rockets in a random direction every 2 seconds.
+}
+
