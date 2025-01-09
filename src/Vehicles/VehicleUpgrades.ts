@@ -6,6 +6,7 @@ import {
   AirSupport,
   HardenedSkin,
   TrollRegeneration,
+  SlowAura,
 } from "./Upgrades/Common/index";
 import {
   Glyph,
@@ -40,6 +41,7 @@ export const commonUpgrades: VehicleUpgrade[] = [
   new AirSupport(),
   new HardenedSkin(),
   new TrollRegeneration(),
+  new SlowAura(),
 ];
 
 export const uncommonUpgrades: VehicleUpgrade[] = [
