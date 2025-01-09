@@ -34,7 +34,7 @@ export class Shockwave extends VehicleUpgrade {
 
       for (let i = 0; i < 2; i++) {
         const dummy = Unit.create(owner, this.dummyUnitId, x, y);
-        dummy.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 1);
+        dummy.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 4);
         dummy.addAbility(this.shockwaveAbilityId);
         if (shockwaveLevel > 1) {
           dummy.setAbilityLevel(this.shockwaveAbilityId, shockwaveLevel);

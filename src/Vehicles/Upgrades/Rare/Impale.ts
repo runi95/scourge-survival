@@ -31,7 +31,7 @@ export class Impale extends VehicleUpgrade {
       const impaleLevel = vehicle.upgradeMap.get(this.name);
       const { x, y } = vehicle.unit;
       const dummy = Unit.create(owner, this.dummyUnitId, x, y);
-      dummy.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 1);
+      dummy.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 4);
       dummy.addAbility(this.impaleAbilityId);
       if (impaleLevel > 1) {
         dummy.setAbilityLevel(this.impaleAbilityId, impaleLevel);
