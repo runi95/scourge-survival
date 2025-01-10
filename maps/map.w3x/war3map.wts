@@ -2811,3 +2811,93 @@ STRING 511
 Sends Cluster Rockets in a random direction every 2 seconds.
 }
 
+STRING 512
+// Units: n001 (Pocket Factory), EditorSuffix (Name - Editor Suffix)
+{
+ (Level 2)
+}
+
+STRING 513
+// Units: n002 (Pocket Factory), EditorSuffix (Name - Editor Suffix)
+{
+ (Level 3)
+}
+
+STRING 514
+// Units: n003 (Pocket Factory), EditorSuffix (Name - Editor Suffix)
+{
+ (Level 4)
+}
+
+STRING 515
+// Units: n006 (Pocket Factory), EditorSuffix (Name - Editor Suffix)
+{
+ (Level 5)
+}
+
+STRING 516
+// Units: n007 (Clockwerk Goblin), EditorSuffix (Name - Editor Suffix)
+{
+ (Level 1)
+}
+
+STRING 517
+// Units: n008 (Clockwerk Goblin), EditorSuffix (Name - Editor Suffix)
+{
+ (Level 2)
+}
+
+STRING 518
+// Units: n009 (Clockwerk Goblin), EditorSuffix (Name - Editor Suffix)
+{
+ (Level 3)
+}
+
+STRING 519
+// Units: n00A (Clockwerk Goblin), EditorSuffix (Name - Editor Suffix)
+{
+ (Level 4)
+}
+
+STRING 520
+// Units: n00B (Clockwerk Goblin), EditorSuffix (Name - Editor Suffix)
+{
+ (Level 5)
+}
+
+STRING 521
+// Abilities: A01D (Kaboom!), EditorSuffix (Editor Suffix)
+{
+ (Clockwerk Goblin-Level 4)
+}
+
+STRING 522
+// Abilities: A01E (Kaboom!), EditorSuffix (Editor Suffix)
+{
+ (Clockwerk Goblin-Level 5)
+}
+
+STRING 523
+// Items: I00O (Pocket Factory), Name (Name)
+{
+Pocket Factory
+}
+
+STRING 524
+// Items: I00O (Pocket Factory), Tip (Tooltip - Basic)
+{
+Purchase Pocket Factory
+}
+
+STRING 525
+// Items: I00O (Pocket Factory), Description (Description)
+{
+Creates a Pocket Factory nearby every 60 seconds.
+}
+
+STRING 526
+// Items: I00O (Pocket Factory), Ubertip (Tooltip - Extended)
+{
+Creates a Pocket Factory nearby every 60 seconds.
+}
+

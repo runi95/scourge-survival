@@ -7,6 +7,7 @@ import {
   HardenedSkin,
   TrollRegeneration,
   SlowAura,
+  PocketFactory,
 } from "./Upgrades/Common/index";
 import {
   Glyph,
@@ -43,6 +44,7 @@ export const commonUpgrades: VehicleUpgrade[] = [
   new HardenedSkin(),
   new TrollRegeneration(),
   new SlowAura(),
+  new PocketFactory(),
 ];
 
 export const uncommonUpgrades: VehicleUpgrade[] = [

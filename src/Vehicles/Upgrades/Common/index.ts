@@ -6,3 +6,4 @@ export * from "./AirSupport";
 export * from "./HardenedSkin";
 export * from "./TrollRegeneration";
 export * from "./SlowAura";
+export * from "./PocketFactory";
