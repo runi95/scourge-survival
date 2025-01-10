@@ -7,3 +7,6 @@ export * from "./HardenedSkin";
 export * from "./TrollRegeneration";
 export * from "./SlowAura";
 export * from "./PocketFactory";
+export * from "./BeltOfGiantStrength";
+export * from "./BootsOfQuelThalas";
+export * from "./RobeOfTheMagi";

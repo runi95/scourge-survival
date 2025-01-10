@@ -8,6 +8,9 @@ import {
   TrollRegeneration,
   SlowAura,
   PocketFactory,
+  BeltOfGiantStrength,
+  BootsOfQuelThalas,
+  RobeOfTheMagi,
 } from "./Upgrades/Common/index";
 import {
   Glyph,
@@ -46,6 +49,9 @@ export const commonUpgrades: VehicleUpgrade[] = [
   new TrollRegeneration(),
   new SlowAura(),
   new PocketFactory(),
+  new BeltOfGiantStrength(),
+  new BootsOfQuelThalas(),
+  new RobeOfTheMagi(),
 ];
 
 export const uncommonUpgrades: VehicleUpgrade[] = [
