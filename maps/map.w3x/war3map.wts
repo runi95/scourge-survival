@@ -320,48 +320,6 @@ STRING 72
 Permanent Immolation
 }
 
-STRING 73
-// Abilities: A002 (Permanent Immolation), Tip (Tooltip - Normal)
-{
-Permanent Immolation
-}
-
-STRING 74
-// Abilities: A002 (Permanent Immolation), Tip (Tooltip - Normal)
-{
-Permanent Immolation
-}
-
-STRING 75
-// Abilities: A002 (Permanent Immolation), Tip (Tooltip - Normal)
-{
-Permanent Immolation
-}
-
-STRING 80
-// Abilities: A002 (Permanent Immolation), Ubertip (Tooltip - Normal - Extended)
-{
-Burns nearby enemy units for <A002,DataA2> points of damage per second.
-}
-
-STRING 81
-// Abilities: A002 (Permanent Immolation), Ubertip (Tooltip - Normal - Extended)
-{
-Burns nearby enemy units for <A002,DataA3> points of damage per second.
-}
-
-STRING 82
-// Abilities: A002 (Permanent Immolation), Ubertip (Tooltip - Normal - Extended)
-{
-Burns nearby enemy units for <A002,DataA4> points of damage per second.
-}
-
-STRING 83
-// Abilities: A002 (Permanent Immolation), Ubertip (Tooltip - Normal - Extended)
-{
-Burns nearby enemy units for <A002,DataA5> points of damage per second.
-}
-
 STRING 84
 // Items: I005 (Permanent Immolation), Description (Description)
 {
@@ -810,18 +768,6 @@ STRING 161
 // Items: I006 (Air Support), Ubertip (Tooltip - Extended)
 {
 Spawns 3 drones to permanently fight for you.
-}
-
-STRING 162
-// Abilities: A002 (Permanent Immolation), Tip (Tooltip - Normal)
-{
-Permanent Immolation
-}
-
-STRING 163
-// Abilities: A002 (Permanent Immolation), Ubertip (Tooltip - Normal - Extended)
-{
-Burns nearby enemy units for <A002,DataA1> points of damage per second.
 }
 
 STRING 164
@@ -2899,5 +2845,41 @@ STRING 526
 // Items: I00O (Pocket Factory), Ubertip (Tooltip - Extended)
 {
 Creates a Pocket Factory nearby every 60 seconds.
+}
+
+STRING 527
+// Units: u00D (Breath of Fire), Name (Name)
+{
+Breath of Fire
+}
+
+STRING 528
+// Items: I00P (Breath of Fire), Name (Name)
+{
+Breath of Fire
+}
+
+STRING 530
+// Items: I00P (Breath of Fire), Tip (Tooltip - Basic)
+{
+Purchase Breath of Fire
+}
+
+STRING 531
+// Items: I00P (Breath of Fire), Description (Description)
+{
+Leaves a trail of fire behind the vehicle for as long as it's moving.
+}
+
+STRING 532
+// Items: I00P (Breath of Fire), Ubertip (Tooltip - Extended)
+{
+Leaves a trail of fire behind the vehicle for as long as it's moving.
+}
+
+STRING 533
+// Abilities: A01J (Breath of Fire), Name (Name)
+{
+Breath of Fire
 }
 

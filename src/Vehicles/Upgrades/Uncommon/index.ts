@@ -5,3 +5,4 @@ export * from "./ManaLeech";
 export * from "./EngineeringUpgrade";
 export * from "./InnerFire";
 export * from "./ClusterRockets";
+export * from "./BreathOfFire";
