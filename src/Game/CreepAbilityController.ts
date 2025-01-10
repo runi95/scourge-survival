@@ -6,8 +6,6 @@ import { Globals } from "../Utility/Globals";
 export class CreepAbilityController {
   private readonly gameMap: GameMap;
   private readonly attackTrigger = Trigger.create();
-  private readonly stopTrigger = Trigger.create();
-  private readonly spellCastTrigger = Trigger.create();
 
   private readonly dummyUnitId: number = FourCC("u000");
   private readonly crippleBuffId = FourCC("Bcri");
@@ -68,67 +66,10 @@ export class CreepAbilityController {
       }
     });
 
-    this.stopTrigger.addAction(() => {
-      const issuedOrderId = GetIssuedOrderId();
-      switch (issuedOrderId) {
-        case OrderId.Stop:
-        case OrderId.Holdposition:
-          break;
-        default:
-          return;
-      }
-
-      const triggerUnit = GetTriggerUnit();
-      const unitTypeId = GetUnitTypeId(triggerUnit);
-      if (unitTypeId === this.dummyUnitId) return;
-
-      const owner = GetOwningPlayer(triggerUnit);
-      const ownerId = GetPlayerId(owner);
-      IssueTargetOrder(
-        triggerUnit,
-        "attack",
-        this.gameMap.playerVehicles[ownerId - 9].unit.handle
-      );
-    });
-
-    this.spellCastTrigger.addAction(() => {
-      const triggerUnit = GetTriggerUnit();
-      const owner = GetOwningPlayer(triggerUnit);
-      const ownerId = GetPlayerId(owner);
-      IssueTargetOrder(
-        triggerUnit,
-        "attack",
-        this.gameMap.playerVehicles[ownerId - 9].unit.handle
-      );
-    });
-
     for (let i = 0; i < GameMap.ONLINE_PLAYER_ID_LIST.length; i++) {
       this.attackTrigger.registerUnitEvent(
         this.gameMap.playerVehicles[GameMap.ONLINE_PLAYER_ID_LIST[i]].unit,
         EVENT_UNIT_ATTACKED
-      );
-      const creepPlayer = MapPlayer.fromIndex(
-        GameMap.ONLINE_PLAYER_ID_LIST[i] + 9
-      );
-      this.stopTrigger.registerPlayerUnitEvent(
-        creepPlayer,
-        EVENT_PLAYER_UNIT_ISSUED_ORDER,
-        undefined
-      );
-      this.stopTrigger.registerPlayerUnitEvent(
-        creepPlayer,
-        EVENT_PLAYER_UNIT_ISSUED_POINT_ORDER,
-        undefined
-      );
-      this.stopTrigger.registerPlayerUnitEvent(
-        creepPlayer,
-        EVENT_PLAYER_UNIT_ISSUED_TARGET_ORDER,
-        undefined
-      );
-      this.spellCastTrigger.registerPlayerUnitEvent(
-        creepPlayer,
-        EVENT_PLAYER_UNIT_SPELL_FINISH,
-        undefined
       );
     }
   }

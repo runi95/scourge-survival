@@ -8,6 +8,8 @@ export class Vehicle {
   public readonly cooldowns = new Map<string, number>();
   public readonly unit: Unit;
   public readonly weapons: string[];
+  public lastKnownX: number = 0;
+  public lastKnownY: number = 0;
 
   constructor(unit: Unit, weapons: string[]) {
     this.internalId = internalIdSeq++;

@@ -1,4 +1,4 @@
-import { Effect, MapPlayer, Timer, Unit } from "w3ts";
+import { Effect, MapPlayer, Timer, Trigger, Unit } from "w3ts";
 import { OrderId } from "w3ts/globals/order";
 import { TimerUtils } from "../Utility/TimerUtils";
 import { GameMap } from "./GameMap";
@@ -19,6 +19,7 @@ import {
 } from "./Waves/index";
 import { RandomNumberGenerator } from "../Utility/RandomNumberGenerator";
 import { CreepUpgrades } from "./CreepUpgrades/CreepUpgrades";
+import { Creep } from "./Creep";
 
 export class Spawner {
   private readonly creepUpgrades = new CreepUpgrades();
@@ -41,9 +42,16 @@ export class Spawner {
   private waveTimer: Timer;
   private firstPortalTimer: Timer;
   private secondPortalTimer: Timer;
+  private readonly positionTimer: Timer;
+  private readonly attackTimer: Timer;
+
+  private readonly deathTrigger = Trigger.create();
+  private readonly remainingPlayerCreeps: Map<number, Creep>[] = [];
 
   constructor(gameMap: GameMap) {
     this.gameMap = gameMap;
+    this.positionTimer = TimerUtils.newTimer();
+    this.attackTimer = TimerUtils.newTimer();
   }
 
   public initializeAI() {
@@ -53,6 +61,56 @@ export class Spawner {
     //     "war3mapImported/scourge.ai"
     //   );
     // }
+
+    this.deathTrigger.addAction(() => {
+      const dyingUnit = GetTriggerUnit();
+      if (dyingUnit == null) return;
+
+      this.remainingPlayerCreeps[
+        GetPlayerId(GetOwningPlayer(dyingUnit))
+      ].delete(GetHandleId(dyingUnit));
+    });
+
+    for (let i = 0; i < GameMap.ONLINE_PLAYER_ID_LIST.length; i++) {
+      this.remainingPlayerCreeps[GameMap.ONLINE_PLAYER_ID_LIST[i] + 9] =
+        new Map<number, Creep>();
+    }
+
+    this.positionTimer.start(1, true, () => {
+      for (let i = 0; i < GameMap.ONLINE_PLAYER_ID_LIST.length; i++) {
+        const playerId = GameMap.ONLINE_PLAYER_ID_LIST[i];
+        const vehicle = this.gameMap.playerVehicles[playerId];
+        if (vehicle == null) continue;
+
+        const { x, y } = vehicle.unit;
+        vehicle.lastKnownX = x;
+        vehicle.lastKnownY = y;
+      }
+    });
+
+    this.attackTimer.start(0.1, true, () => {
+      for (let i = 0; i < GameMap.ONLINE_PLAYER_ID_LIST.length; i++) {
+        const playerId = GameMap.ONLINE_PLAYER_ID_LIST[i];
+        const vehicle = this.gameMap.playerVehicles[playerId];
+        if (vehicle == null) continue;
+
+        let counter = 0;
+        for (const [_id, creep] of this.remainingPlayerCreeps[playerId + 9]) {
+          const dist = Math.sqrt(
+            Math.pow(creep.attackX - vehicle.lastKnownX, 2) +
+              Math.pow(creep.attackY - vehicle.lastKnownY, 2)
+          );
+          if (dist < 500) continue;
+
+          const attackX = vehicle.lastKnownX;
+          const attackY = vehicle.lastKnownY;
+          creep.attackX = attackX;
+          creep.attackY = attackY;
+          creep.unit.issueOrderAt(OrderId.Attack, attackX, attackY);
+          if (++counter > 11) break;
+        }
+      }
+    });
 
     const t: Timer = TimerUtils.newTimer();
     this.waveTimer = t;
@@ -82,6 +140,16 @@ export class Spawner {
   }
 
   private startWave() {
+    for (let i = 0; i < GameMap.ONLINE_PLAYER_ID_LIST.length; i++) {
+      const vehicle =
+        this.gameMap.playerVehicles[GameMap.ONLINE_PLAYER_ID_LIST[i]];
+      if (vehicle == null) continue;
+
+      const { x, y } = vehicle.unit;
+      vehicle.lastKnownX = x;
+      vehicle.lastKnownY = y;
+    }
+
     const wave = this.waves[this.currentWaveIndex++];
     const [firstPortal, secondPortal] = wave;
     this.spawnPortal(firstPortal, 0, true);
@@ -125,8 +193,8 @@ export class Spawner {
     t.start(delay, true, () => {
       for (let i = 0; i < GameMap.ONLINE_PLAYER_ID_LIST.length; i++) {
         if (GameMap.IS_PLAYER_DEFEATED[i]) continue;
-        const scourgePlayer = MapPlayer.fromIndex(i + 9);
         const playerId = GameMap.ONLINE_PLAYER_ID_LIST[i];
+        const scourgePlayer = MapPlayer.fromIndex(playerId + 9);
         const x = isFirstPortal
           ? GameMap.PLAYER_AREAS[playerId].minX + 150
           : GameMap.PLAYER_AREAS[playerId].maxX - 150;
@@ -145,9 +213,14 @@ export class Spawner {
           y,
           isFirstPortal ? 315.0 : 135.0
         );
-        scourgeUnit.issueTargetOrder(
-          OrderId.Attack,
-          this.gameMap.playerVehicles[playerId].unit
+
+        const vehicle = this.gameMap.playerVehicles[playerId];
+        const attackX = vehicle.lastKnownX;
+        const attackY = vehicle.lastKnownY;
+        scourgeUnit.issueOrderAt(OrderId.Attack, attackX, attackY);
+        this.remainingPlayerCreeps[playerId + 9].set(
+          scourgeUnit.id,
+          new Creep(scourgeUnit, attackX, attackY)
         );
       }
 
