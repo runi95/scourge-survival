@@ -155,10 +155,10 @@ export class Spawner {
         TimerUtils.releaseTimer(t);
         if (portalWaves.length - 1 > index) {
           this.spawnPortal(portalWaves, index + 1, isFirstPortal);
-        } else {
-          for (let i = 0; i < GameMap.ONLINE_PLAYER_ID_LIST.length; i++) {
-            CommandAI(Player(GameMap.ONLINE_PLAYER_ID_LIST[i] + 9), 0, 0);
-          }
+          // } else {
+          //   for (let i = 0; i < GameMap.ONLINE_PLAYER_ID_LIST.length; i++) {
+          //     CommandAI(Player(GameMap.ONLINE_PLAYER_ID_LIST[i] + 9), 0, 0);
+          //   }
         }
       }
     });
