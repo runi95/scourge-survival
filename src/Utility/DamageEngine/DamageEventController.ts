@@ -1,5 +1,6 @@
 import { GameMap } from "../../Game/GameMap";
 import { DamageEngine, DamageEventType, DamageInstance } from "./DamageEngine";
+import { BerserkDamageEvent } from "./DamageEvents/BerserkDamageEvent";
 import { CriticalStrikeDamageEvent } from "./DamageEvents/CriticalStrikeDamageEvent";
 import { InnerFireDamageEvent } from "./DamageEvents/InnerFireDamageEvent";
 import { MagicSurgeDamageEvent } from "./DamageEvents/MagicSurgeDamageEvent";
@@ -47,6 +48,10 @@ export class DamageEventController {
     );
     DamageEngine.register(
       new WarDrumsDamageEvent(this.gameMap),
+      DamageEventType.OnDamageEvent
+    );
+    DamageEngine.register(
+      new BerserkDamageEvent(this.gameMap),
       DamageEventType.OnDamageEvent
     );
     DamageEngine.register(

@@ -36,6 +36,7 @@ import {
   InnerFire,
   ClusterRockets,
   BreathOfFire,
+  Berserk,
 } from "./Upgrades/Uncommon/index";
 import { VehicleUpgrade } from "./VehicleUpgrade";
 
@@ -63,6 +64,7 @@ export const uncommonUpgrades: VehicleUpgrade[] = [
   new InnerFire(),
   new ClusterRockets(),
   new BreathOfFire(),
+  new Berserk(),
 ];
 
 export const rareUpgrades: VehicleUpgrade[] = [
