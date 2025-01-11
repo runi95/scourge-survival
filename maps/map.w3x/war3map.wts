@@ -2883,3 +2883,27 @@ STRING 533
 Breath of Fire
 }
 
+STRING 538
+// Doodads: D001 (Tranquility), Name (Name)
+{
+Tranquility
+}
+
+STRING 541
+// Abilities: A001 (Exhume Corpses), EditorSuffix (Editor Suffix)
+{
+(Pocket Factory Cooldown)
+}
+
+STRING 542
+// Abilities: S002 (Cargo Hold), EditorSuffix (Editor Suffix)
+{
+(Pocket Factory Cooldown)
+}
+
+STRING 543
+// Abilities: A01I (Spell Book), EditorSuffix (Editor Suffix)
+{
+(Pocket Factory Cooldown)
+}
+

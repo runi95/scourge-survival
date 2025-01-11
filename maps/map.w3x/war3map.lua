@@ -1,6 +1,28 @@
 function InitGlobals()
 end
 
+function CreateNeutralPassiveBuildings()
+local p = Player(PLAYER_NEUTRAL_PASSIVE)
+local u
+local unitID
+local t
+local life
+
+u = BlzCreateUnitWithSkin(p, FourCC("n00D"), -11648.0, 6400.0, 270.000, FourCC("n00D"))
+end
+
+function CreatePlayerBuildings()
+end
+
+function CreatePlayerUnits()
+end
+
+function CreateAllUnits()
+CreateNeutralPassiveBuildings()
+CreatePlayerBuildings()
+CreatePlayerUnits()
+end
+
 function InitCustomPlayerSlots()
 SetPlayerStartLocation(Player(0), 0)
 ForcePlayerStartLocation(Player(0), 0)
@@ -461,6 +483,7 @@ NewSoundEnvironment("Default")
 SetAmbientDaySound("LordaeronSummerDay")
 SetAmbientNightSound("LordaeronSummerNight")
 SetMapMusic("Music", true, 0)
+CreateAllUnits()
 InitBlizzard()
 InitGlobals()
 end
