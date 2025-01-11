@@ -19,8 +19,11 @@ export class Monsoon extends VehicleUpgrade {
   public applyUpgrade(vehicle: Vehicle): void {
     const owner = vehicle.unit.owner;
     const playerId = owner.id;
+    const area = GameMap.PLAYER_AREAS[playerId];
     const monsoonLevel = vehicle.upgradeMap.get(this.name);
     if (monsoonLevel === 1) {
+      const lightRain = WeatherEffect.create(area, FourCC("RAlr"));
+      lightRain.enable(true);
       vehicle.unit.addItemById(FourCC("I004"));
     } else {
       TimerUtils.releaseTimer(this.playerTimers[playerId]);
@@ -41,10 +44,6 @@ export class Monsoon extends VehicleUpgrade {
         timeout = 3;
         break;
     }
-
-    const area = GameMap.PLAYER_AREAS[playerId];
-    const lightRain = WeatherEffect.create(area, FourCC("RAlr"));
-    lightRain.enable(true);
 
     const scourgePlayer = MapPlayer.fromIndex(playerId + 9);
     const t: Timer = TimerUtils.newTimer();
