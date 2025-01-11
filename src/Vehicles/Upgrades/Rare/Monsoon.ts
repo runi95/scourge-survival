@@ -63,7 +63,6 @@ export class Monsoon extends VehicleUpgrade {
           u.x,
           u.y
         ).destroy();
-        const monsoonLevel = vehicle.upgradeMap.get(this.name);
         vehicle.unit.damageTarget(
           u.handle,
           1500,
