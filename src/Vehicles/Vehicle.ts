@@ -8,6 +8,7 @@ export class Vehicle {
   public readonly cooldowns = new Map<string, number>();
   public readonly unit: Unit;
   public readonly weapons: string[];
+  public weaponLimit: number = 4;
   public lastKnownX: number = 0;
   public lastKnownY: number = 0;
 

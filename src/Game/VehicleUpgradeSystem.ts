@@ -157,7 +157,7 @@ export class VehicleUpgradeSystem {
           cost = "MAX";
         } else if (upgrade.isWeapon) {
           if (
-            vehicle.weapons.length > 3 &&
+            vehicle.weapons.length + 1 > vehicle.weaponLimit &&
             !vehicle.weapons.some((weapons) => weapons === upgrade.name)
           ) {
             costColor = "|cFFC3DBFF";
@@ -425,7 +425,11 @@ export class VehicleUpgradeSystem {
       const isWeaponIncluded =
         upgrade.isWeapon &&
         vehicle.weapons.some((weapon) => weapon === upgrade.name);
-      if (upgrade.isWeapon && vehicle.weapons.length > 3 && !isWeaponIncluded) {
+      if (
+        upgrade.isWeapon &&
+        vehicle.weapons.length + 1 > vehicle.weaponLimit &&
+        !isWeaponIncluded
+      ) {
         return;
       }
       if (playerCurrentGold < upgrade.cost) return;
@@ -438,12 +442,16 @@ export class VehicleUpgradeSystem {
         upgrade.name,
         (vehicle.upgradeMap.get(upgrade.name) ?? 0) + 1
       );
-      let isLastWeapon = false;
+      let needsFullRefresh = false;
       if (upgrade.isWeapon && !isWeaponIncluded) {
-        if (vehicle.weapons.length === 3) {
-          isLastWeapon = true;
+        if (vehicle.weapons.length + 1 === vehicle.weaponLimit) {
+          needsFullRefresh = true;
         }
         vehicle.weapons.push(upgrade.name);
+      }
+
+      if (upgrade.name === "Barrage" && vehicle.weapons.length === 4) {
+        needsFullRefresh = true;
       }
 
       const indexesToSkip = new Map<number, boolean>();
@@ -467,7 +475,7 @@ export class VehicleUpgradeSystem {
         availableLegendaryUpgrades
       );
 
-      if (isLastWeapon) {
+      if (needsFullRefresh) {
         this.refreshUpgradeIcons();
       } else {
         this.refreshUpgradeIcon(index);
