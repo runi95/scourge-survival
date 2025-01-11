@@ -1,29 +1,31 @@
 import { CREEP_TYPE } from "../GameMap";
 import { Wave } from "./Wave";
 
-export const EIGHT: Wave = [
-  [
-    {
-      delay: 0.1,
-      count: 10,
-      unitTypeId: CREEP_TYPE.GHOUL,
-    },
-    {
-      delay: 0.1,
-      count: 3,
-      unitTypeId: CREEP_TYPE.MEAT_WAGON,
-    },
+export const EIGHT: Wave = {
+  portals: [
+    [
+      {
+        delay: 0.1,
+        count: 10,
+        unitTypeId: CREEP_TYPE.GHOUL,
+      },
+      {
+        delay: 0.1,
+        count: 3,
+        unitTypeId: CREEP_TYPE.MEAT_WAGON,
+      },
+    ],
+    [
+      {
+        delay: 0.1,
+        count: 10,
+        unitTypeId: CREEP_TYPE.GHOUL,
+      },
+      {
+        delay: 0.1,
+        count: 3,
+        unitTypeId: CREEP_TYPE.MEAT_WAGON,
+      },
+    ],
   ],
-  [
-    {
-      delay: 0.1,
-      count: 10,
-      unitTypeId: CREEP_TYPE.GHOUL,
-    },
-    {
-      delay: 0.1,
-      count: 3,
-      unitTypeId: CREEP_TYPE.MEAT_WAGON,
-    },
-  ],
-];
+};

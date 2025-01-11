@@ -6,4 +6,7 @@ export type PortalWave = {
   unitTypeId: CREEP_TYPE;
 };
 
-export type Wave = [PortalWave[], PortalWave[]];
+export type Wave = {
+  portals: [PortalWave[], PortalWave[]];
+  before?: () => void;
+};

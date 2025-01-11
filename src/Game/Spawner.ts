@@ -179,7 +179,11 @@ export class Spawner {
     const wave = this.waves[this.currentWaveIndex++];
     print(`Wave ${this.currentWaveIndex} incoming!`);
 
-    const [firstPortal, secondPortal] = wave;
+    if (wave.before != null) {
+      wave.before();
+    }
+
+    const [firstPortal, secondPortal] = wave.portals;
     this.spawnPortal(firstPortal, 0, true);
     this.spawnPortal(secondPortal, 0, false);
 
