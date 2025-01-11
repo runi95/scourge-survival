@@ -50,6 +50,7 @@ export class Spawner {
 
   private readonly deathTrigger = Trigger.create();
   private readonly unholyAuraUnitTypeId = FourCC("u00C");
+  private readonly dummyUnitTypeId = FourCC("u000");
   private readonly remainingPlayerCreeps: Map<number, Creep>[] = [];
   private readonly remainingPlayerCreepsCount: Map<number, number> = new Map();
 
@@ -71,7 +72,9 @@ export class Spawner {
       const dyingUnit = GetTriggerUnit();
       if (dyingUnit == null) return;
 
-      if (GetUnitTypeId(dyingUnit) === this.unholyAuraUnitTypeId) return;
+      const unitTypeId = GetUnitTypeId(dyingUnit);
+      if (unitTypeId === this.unholyAuraUnitTypeId) return;
+      if (unitTypeId === this.dummyUnitTypeId) return;
 
       const creepPlayerId = GetPlayerId(GetOwningPlayer(dyingUnit));
       this.remainingPlayerCreeps[creepPlayerId].delete(GetHandleId(dyingUnit));
