@@ -23,7 +23,7 @@ export class Monsoon extends VehicleUpgrade {
     if (monsoonLevel === 1) {
       vehicle.unit.addItemById(FourCC("I004"));
     } else {
-      this.playerTimers[playerId].destroy();
+      TimerUtils.releaseTimer(this.playerTimers[playerId]);
     }
 
     let timeout = 15;
