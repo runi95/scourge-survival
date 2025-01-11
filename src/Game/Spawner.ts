@@ -44,9 +44,11 @@ export class Spawner {
   private secondPortalTimer: Timer;
   private readonly positionTimer: Timer;
   private readonly attackTimer: Timer;
+  private isCreepSpawnerRunning = false;
 
   private readonly deathTrigger = Trigger.create();
   private readonly remainingPlayerCreeps: Map<number, Creep>[] = [];
+  private readonly remainingPlayerCreepsCount: Map<number, number> = new Map();
 
   constructor(gameMap: GameMap) {
     this.gameMap = gameMap;
@@ -66,14 +68,30 @@ export class Spawner {
       const dyingUnit = GetTriggerUnit();
       if (dyingUnit == null) return;
 
-      this.remainingPlayerCreeps[
-        GetPlayerId(GetOwningPlayer(dyingUnit))
-      ].delete(GetHandleId(dyingUnit));
+      const creepPlayerId = GetPlayerId(GetOwningPlayer(dyingUnit));
+      this.remainingPlayerCreeps[creepPlayerId].delete(GetHandleId(dyingUnit));
+      const newPlayerCreepCount =
+        this.remainingPlayerCreepsCount.get(creepPlayerId - 9) - 1;
+      this.remainingPlayerCreepsCount.set(
+        creepPlayerId - 9,
+        newPlayerCreepCount
+      );
+
+      if (newPlayerCreepCount < 1 && !this.isCreepSpawnerRunning) {
+        TimerUtils.releaseTimer(this.waveTimer);
+        this.startWave();
+      }
     });
 
     for (let i = 0; i < GameMap.ONLINE_PLAYER_ID_LIST.length; i++) {
       this.remainingPlayerCreeps[GameMap.ONLINE_PLAYER_ID_LIST[i] + 9] =
         new Map<number, Creep>();
+      this.remainingPlayerCreepsCount.set(GameMap.ONLINE_PLAYER_ID_LIST[i], 0);
+      this.deathTrigger.registerPlayerUnitEvent(
+        MapPlayer.fromIndex(GameMap.ONLINE_PLAYER_ID_LIST[i] + 9),
+        EVENT_PLAYER_UNIT_DEATH,
+        undefined
+      );
     }
 
     this.positionTimer.start(1, true, () => {
@@ -151,15 +169,18 @@ export class Spawner {
     }
 
     const wave = this.waves[this.currentWaveIndex++];
+    print(`Wave ${this.currentWaveIndex} incoming!`);
+
     const [firstPortal, secondPortal] = wave;
     this.spawnPortal(firstPortal, 0, true);
     this.spawnPortal(secondPortal, 0, false);
 
     const t: Timer = TimerUtils.newTimer();
     this.waveTimer = t;
-    t.start(30, false, () => {
+    t.start(60, false, () => {
       TimerUtils.releaseTimer(t);
 
+      this.isCreepSpawnerRunning = true;
       const creepUpgradeIndex = RandomNumberGenerator.random(
         0,
         this.creepUpgrades.creepUpgradeTypes.length - 1
@@ -222,17 +243,24 @@ export class Spawner {
           scourgeUnit.id,
           new Creep(scourgeUnit, attackX, attackY)
         );
+        this.remainingPlayerCreepsCount.set(
+          playerId,
+          this.remainingPlayerCreepsCount.get(playerId) + 1
+        );
       }
 
       if (--count <= 0) {
         TimerUtils.releaseTimer(t);
         if (portalWaves.length - 1 > index) {
           this.spawnPortal(portalWaves, index + 1, isFirstPortal);
-          // } else {
-          //   for (let i = 0; i < GameMap.ONLINE_PLAYER_ID_LIST.length; i++) {
-          //     CommandAI(Player(GameMap.ONLINE_PLAYER_ID_LIST[i] + 9), 0, 0);
-          //   }
+        } else {
+          this.isCreepSpawnerRunning = false;
         }
+
+        // } else {
+        //   for (let i = 0; i < GameMap.ONLINE_PLAYER_ID_LIST.length; i++) {
+        //     CommandAI(Player(GameMap.ONLINE_PLAYER_ID_LIST[i] + 9), 0, 0);
+        //   }
       }
     });
   }
