@@ -2907,3 +2907,15 @@ STRING 543
 (Pocket Factory Cooldown)
 }
 
+STRING 544
+// Units: u00E (Shade), Name (Name)
+{
+Shade
+}
+
+STRING 545
+// Units: u00E (Shade), Tip (Tooltip - Basic)
+{
+Train Shade
+}
+

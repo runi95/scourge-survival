@@ -5,8 +5,13 @@ export const NINE: Wave = [
   [
     {
       delay: 0.1,
-      count: 10,
+      count: 7,
       unitTypeId: CREEP_TYPE.GHOUL,
+    },
+    {
+      delay: 0.1,
+      count: 1,
+      unitTypeId: CREEP_TYPE.SHADE,
     },
     {
       delay: 0.1,
@@ -17,8 +22,13 @@ export const NINE: Wave = [
   [
     {
       delay: 0.1,
-      count: 10,
+      count: 7,
       unitTypeId: CREEP_TYPE.GHOUL,
+    },
+    {
+      delay: 0.1,
+      count: 1,
+      unitTypeId: CREEP_TYPE.SHADE,
     },
     {
       delay: 0.1,

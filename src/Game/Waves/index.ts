@@ -10,3 +10,4 @@ export * from "./Eight";
 export * from "./Nine";
 export * from "./Ten";
 export * from "./Eleven";
+export * from "./Twelve";
