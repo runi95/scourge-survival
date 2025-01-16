@@ -122,16 +122,26 @@ export class Spawner {
 
         let counter = 0;
         for (const [_id, creep] of this.remainingPlayerCreeps[playerId + 9]) {
-          const dist = Math.sqrt(
-            Math.pow(creep.attackX - vehicle.lastKnownX, 2) +
-              Math.pow(creep.attackY - vehicle.lastKnownY, 2)
-          );
-          if (dist < 500) continue;
+          if (creep.attackOrderPosition == null) {
+            if (creep.attackMoveIndex <= 0) {
+              creep.attackMoveIndex = 0;
+              creep.attackOrderPosition = [creep.spawnX, creep.spawnY];
+            } else {
+              creep.attackMoveIndex -= 0.1;
+              continue;
+            }
+          } else {
+            const dist = Math.sqrt(
+              Math.pow(creep.attackOrderPosition[0] - vehicle.lastKnownX, 2) +
+                Math.pow(creep.attackOrderPosition[1] - vehicle.lastKnownY, 2)
+            );
+            if (dist < 500) continue;
+          }
 
           const attackX = vehicle.lastKnownX;
           const attackY = vehicle.lastKnownY;
-          creep.attackX = attackX;
-          creep.attackY = attackY;
+          creep.attackOrderPosition[0] = attackX;
+          creep.attackOrderPosition[1] = attackY;
           creep.unit.issueOrderAt(OrderId.Attack, attackX, attackY);
           if (++counter > 11) break;
         }
@@ -247,13 +257,9 @@ export class Spawner {
           isFirstPortal ? 315.0 : 135.0
         );
 
-        const vehicle = this.gameMap.playerVehicles[playerId];
-        const attackX = vehicle.lastKnownX;
-        const attackY = vehicle.lastKnownY;
-        scourgeUnit.issueOrderAt(OrderId.Attack, attackX, attackY);
         this.remainingPlayerCreeps[playerId + 9].set(
           scourgeUnit.id,
-          new Creep(scourgeUnit, attackX, attackY)
+          new Creep(scourgeUnit, x, y, count)
         );
         this.remainingPlayerCreepsCount.set(
           playerId,
