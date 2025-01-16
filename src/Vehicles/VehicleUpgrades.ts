@@ -11,6 +11,7 @@ import {
   BeltOfGiantStrength,
   BootsOfQuelThalas,
   RobeOfTheMagi,
+  AdeptTraining,
 } from "./Upgrades/Common/index";
 import {
   Glyph,
@@ -54,6 +55,7 @@ export const commonUpgrades: VehicleUpgrade[] = [
   new BeltOfGiantStrength(),
   new BootsOfQuelThalas(),
   new RobeOfTheMagi(),
+  new AdeptTraining(),
 ];
 
 export const uncommonUpgrades: VehicleUpgrade[] = [

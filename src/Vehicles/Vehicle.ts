@@ -5,6 +5,7 @@ export class Vehicle {
   public readonly internalId: number;
   public readonly customData: unknown;
   public readonly upgradeMap = new Map<string, number>();
+  public readonly skillMap = new Map<number, number>();
   public readonly cooldowns = new Map<string, number>();
   public readonly unit: Unit;
   public readonly weapons: string[];
