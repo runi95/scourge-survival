@@ -1,3 +1,5 @@
+import { Sound } from "../../../node_modules/w3ts/index";
+import { Sounds } from "../../Utility/Sounds";
 import { CREEP_TYPE } from "../GameMap";
 import { Wave } from "./Wave";
 
@@ -18,4 +20,16 @@ export const THREE: Wave = {
       },
     ],
   ],
+  before: () => {
+    const spawnSkeletonSound = Sound.create(
+      Sounds.SKELETON_WHAT,
+      false,
+      false,
+      true,
+      10,
+      10,
+      "DefaultEAXON"
+    );
+    spawnSkeletonSound.start();
+  },
 };

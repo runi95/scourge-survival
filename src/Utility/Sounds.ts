@@ -5,4 +5,5 @@ export enum Sounds {
   TREMBLE_MORTALS_AND_DESPAIR_DOOM_HAS_COME = "Sound/Dialogue/UndeadCampaign/Undead08/U08Archimonde19.flac",
   VICTORY_DRAWS_NEAR_HASTEN_THE_ATTACK = "Sound/Dialogue/UndeadExpCamp/Undead06x/L06Varimathras42.flac",
   FROST_WYRM_WAR_CRY = "Units/Undead/FrostWyrm/FrostWyrmWarcry1.flac",
+  SKELETON_WHAT = "Units/Undead/Skeleton/SkeletonWhat2.flac",
 }
