@@ -72,12 +72,11 @@ export class Spawner {
       const dyingUnit = GetTriggerUnit();
       if (dyingUnit == null) return;
 
-      const unitTypeId = GetUnitTypeId(dyingUnit);
-      if (unitTypeId === this.unholyAuraUnitTypeId) return;
-      if (unitTypeId === this.dummyUnitTypeId) return;
-
       const creepPlayerId = GetPlayerId(GetOwningPlayer(dyingUnit));
-      this.remainingPlayerCreeps[creepPlayerId].delete(GetHandleId(dyingUnit));
+      const handleId = GetHandleId(dyingUnit);
+      if (this.remainingPlayerCreeps[creepPlayerId].get(handleId) == null)
+        return;
+      this.remainingPlayerCreeps[creepPlayerId].delete(handleId);
       const newPlayerCreepCount =
         this.remainingPlayerCreepsCount.get(creepPlayerId - 9) - 1;
       this.remainingPlayerCreepsCount.set(
