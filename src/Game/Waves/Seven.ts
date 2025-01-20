@@ -6,26 +6,15 @@ export const SEVEN: Wave = {
     [
       {
         delay: 0.1,
-        count: 3,
+        count: 4,
         unitTypeId: CREEP_TYPE.NECROMANCER,
       },
       {
         delay: 0.1,
-        count: 3,
+        count: 6,
         unitTypeId: CREEP_TYPE.MEAT_WAGON,
       },
     ],
-    [
-      {
-        delay: 0.1,
-        count: 3,
-        unitTypeId: CREEP_TYPE.NECROMANCER,
-      },
-      {
-        delay: 0.1,
-        count: 3,
-        unitTypeId: CREEP_TYPE.MEAT_WAGON,
-      },
-    ],
+    [],
   ],
 };

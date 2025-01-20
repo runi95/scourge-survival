@@ -6,36 +6,20 @@ export const TWELVE: Wave = {
     [
       {
         delay: 0.1,
-        count: 4,
+        count: 8,
         unitTypeId: CREEP_TYPE.GHOUL,
       },
       {
         delay: 0.1,
-        count: 1,
+        count: 2,
         unitTypeId: CREEP_TYPE.ABOMINATION,
       },
-      {
-        delay: 0.1,
-        count: 3,
-        unitTypeId: CREEP_TYPE.SKELETAL_MAGE,
-      },
-    ],
-    [
       {
         delay: 0.1,
         count: 6,
-        unitTypeId: CREEP_TYPE.GHOUL,
-      },
-      {
-        delay: 0.1,
-        count: 1,
-        unitTypeId: CREEP_TYPE.ABOMINATION,
-      },
-      {
-        delay: 0.1,
-        count: 3,
         unitTypeId: CREEP_TYPE.SKELETAL_MAGE,
       },
     ],
+    [],
   ],
 };

@@ -5,6 +5,7 @@ import { Sounds } from "../../Utility/Sounds";
 
 export const EIGHT: Wave = {
   portals: [
+    [],
     [
       {
         delay: 0.2,
@@ -12,7 +13,6 @@ export const EIGHT: Wave = {
         unitTypeId: CREEP_TYPE.FROST_WYRM,
       },
     ],
-    [],
   ],
   before: () => {
     const spawnDragonSound = Sound.create(

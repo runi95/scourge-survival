@@ -6,16 +6,10 @@ export const THIRTEEN: Wave = {
     [
       {
         delay: 0.1,
-        count: 5,
+        count: 10,
         unitTypeId: CREEP_TYPE.SHADE,
       },
     ],
-    [
-      {
-        delay: 0.1,
-        count: 5,
-        unitTypeId: CREEP_TYPE.SHADE,
-      },
-    ],
+    [],
   ],
 };
