@@ -6,13 +6,13 @@ export const TEN: Wave = {
     [
       {
         delay: 0.1,
-        count: 3,
+        count: 7,
         unitTypeId: CREEP_TYPE.GHOUL,
       },
       {
         delay: 0.1,
-        count: 3,
-        unitTypeId: CREEP_TYPE.NECROMANCER,
+        count: 1,
+        unitTypeId: CREEP_TYPE.SHADE,
       },
       {
         delay: 0.1,
@@ -23,13 +23,13 @@ export const TEN: Wave = {
     [
       {
         delay: 0.1,
-        count: 3,
+        count: 7,
         unitTypeId: CREEP_TYPE.GHOUL,
       },
       {
         delay: 0.1,
-        count: 3,
-        unitTypeId: CREEP_TYPE.NECROMANCER,
+        count: 1,
+        unitTypeId: CREEP_TYPE.SHADE,
       },
       {
         delay: 0.1,

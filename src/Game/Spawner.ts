@@ -17,6 +17,7 @@ import {
   TEN,
   ELEVEN,
   TWELVE,
+  THIRTEEN,
 } from "./Waves/index";
 import { RandomNumberGenerator } from "../Utility/RandomNumberGenerator";
 import { CreepUpgrades } from "./CreepUpgrades/CreepUpgrades";
@@ -38,6 +39,7 @@ export class Spawner {
     TEN,
     ELEVEN,
     TWELVE,
+    THIRTEEN,
   ];
   private currentWaveIndex: number = 0;
 

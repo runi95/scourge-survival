@@ -5,26 +5,26 @@ export const FIVE: Wave = {
   portals: [
     [
       {
-        delay: 0.3,
-        count: 5,
+        delay: 0.25,
+        count: 3,
         unitTypeId: CREEP_TYPE.GHOUL,
       },
       {
-        delay: 0.3,
-        count: 1,
-        unitTypeId: CREEP_TYPE.MEAT_WAGON,
+        delay: 0.5,
+        count: 3,
+        unitTypeId: CREEP_TYPE.SKELETAL_MAGE,
       },
     ],
     [
       {
-        delay: 0.3,
-        count: 5,
+        delay: 0.25,
+        count: 3,
         unitTypeId: CREEP_TYPE.GHOUL,
       },
       {
-        delay: 0.3,
-        count: 1,
-        unitTypeId: CREEP_TYPE.MEAT_WAGON,
+        delay: 0.5,
+        count: 3,
+        unitTypeId: CREEP_TYPE.SKELETAL_MAGE,
       },
     ],
   ],

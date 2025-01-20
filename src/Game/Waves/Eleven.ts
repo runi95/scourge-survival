@@ -6,35 +6,35 @@ export const ELEVEN: Wave = {
     [
       {
         delay: 0.1,
-        count: 4,
+        count: 3,
         unitTypeId: CREEP_TYPE.GHOUL,
       },
       {
         delay: 0.1,
-        count: 1,
-        unitTypeId: CREEP_TYPE.ABOMINATION,
+        count: 3,
+        unitTypeId: CREEP_TYPE.NECROMANCER,
       },
       {
         delay: 0.1,
         count: 3,
-        unitTypeId: CREEP_TYPE.SKELETAL_MAGE,
+        unitTypeId: CREEP_TYPE.GARGOYLE,
       },
     ],
     [
       {
         delay: 0.1,
-        count: 6,
+        count: 3,
         unitTypeId: CREEP_TYPE.GHOUL,
       },
       {
         delay: 0.1,
-        count: 1,
-        unitTypeId: CREEP_TYPE.ABOMINATION,
+        count: 3,
+        unitTypeId: CREEP_TYPE.NECROMANCER,
       },
       {
         delay: 0.1,
         count: 3,
-        unitTypeId: CREEP_TYPE.SKELETAL_MAGE,
+        unitTypeId: CREEP_TYPE.GARGOYLE,
       },
     ],
   ],

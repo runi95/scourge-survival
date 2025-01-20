@@ -2919,3 +2919,51 @@ STRING 545
 Train Shade
 }
 
+STRING 546
+// Units: u00F (Giant Skeleton Warrior), Name (Name)
+{
+Giant Skeleton Warrior
+}
+
+STRING 547
+// Units: u00G (Large Skeleton Warrior), EditorSuffix (Name - Editor Suffix)
+{
+(1/4)
+}
+
+STRING 548
+// Units: u00G (Large Skeleton Warrior), Name (Name)
+{
+Large Skeleton Warrior
+}
+
+STRING 549
+// Units: u00H (Half-Giant Skeleton Warrior), EditorSuffix (Name - Editor Suffix)
+{
+(1/2)
+}
+
+STRING 550
+// Units: u00H (Half-Giant Skeleton Warrior), Name (Name)
+{
+Half-Giant Skeleton Warrior
+}
+
+STRING 551
+// Abilities: A01K (Spawn Half-Giant Skeleton Warrior), Name (Name)
+{
+Spawn Half-Giant Skeleton Warrior
+}
+
+STRING 552
+// Abilities: A01L (Spawn Large Skeleton Warrior), Name (Name)
+{
+Spawn Large Skeleton Warrior
+}
+
+STRING 553
+// Abilities: A01M (Spawn Skeleton Warrior), Name (Name)
+{
+Spawn Skeleton Warrior
+}
+
