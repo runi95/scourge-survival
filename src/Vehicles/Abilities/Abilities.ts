@@ -1,5 +1,6 @@
 import { GameMap } from "../../Game/GameMap";
 import { AdeptTraining } from "./AdeptTraining";
+import { AntiMagicShell } from "./AntiMagicShell";
 import { Blizzard } from "./Blizzard";
 import { GlyphAbility } from "./GlyphAbility";
 import { MagicSentry } from "./MagicSentry";
@@ -23,5 +24,6 @@ export class Abilities {
     this.abilities.push(new Blizzard());
     this.abilities.push(new PocketFactory(this.gameMap));
     this.abilities.push(new AdeptTraining(this.gameMap));
+    this.abilities.push(new AntiMagicShell());
   }
 }

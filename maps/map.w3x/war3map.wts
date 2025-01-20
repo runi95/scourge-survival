@@ -2967,3 +2967,27 @@ STRING 553
 Spawn Skeleton Warrior
 }
 
+STRING 554
+// Units: u00I (Ancient Skeletal Mage), EditorSuffix (Name - Editor Suffix)
+{
+(Boss)
+}
+
+STRING 555
+// Abilities: A01N (Exhume Corpses), EditorSuffix (Editor Suffix)
+{
+(Anti-magic Shell)
+}
+
+STRING 556
+// Units: u00I (Ancient Skeletal Mage), Name (Name)
+{
+Ancient Skeletal Mage
+}
+
+STRING 557
+// Abilities: S003 (Cargo Hold), EditorSuffix (Editor Suffix)
+{
+(Pocket Factory Cooldown)
+}
+

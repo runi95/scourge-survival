@@ -15,6 +15,12 @@ export const SIX: Wave = {
         unitTypeId: CREEP_TYPE.MEAT_WAGON,
       },
     ],
-    [],
+    [
+      {
+        delay: 0.1,
+        count: 1,
+        unitTypeId: CREEP_TYPE.ANCIENT_SKELETAL_MAGE,
+      },
+    ],
   ],
 };

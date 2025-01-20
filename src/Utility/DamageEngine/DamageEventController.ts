@@ -1,5 +1,6 @@
 import { GameMap } from "../../Game/GameMap";
 import { DamageEngine, DamageEventType, DamageInstance } from "./DamageEngine";
+import { AntiMagicShellDamageEvent } from "./DamageEvents/AntiMagicShellDamageEvent";
 import { BerserkDamageEvent } from "./DamageEvents/BerserkDamageEvent";
 import { CriticalStrikeDamageEvent } from "./DamageEvents/CriticalStrikeDamageEvent";
 import { InnerFireDamageEvent } from "./DamageEvents/InnerFireDamageEvent";
@@ -56,6 +57,10 @@ export class DamageEventController {
     );
     DamageEngine.register(
       new CriticalStrikeDamageEvent(this.gameMap),
+      DamageEventType.OnDamageEvent
+    );
+    DamageEngine.register(
+      new AntiMagicShellDamageEvent(),
       DamageEventType.OnDamageEvent
     );
 
