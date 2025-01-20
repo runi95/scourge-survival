@@ -17,40 +17,25 @@ export class Monsoon extends VehicleUpgrade {
   private readonly playerTimers: Timer[] = [];
 
   public applyUpgrade(vehicle: Vehicle): void {
+    const monsoonLevel = vehicle.upgradeMap.get(this.name);
+    if (monsoonLevel !== 1) return;
+
     const owner = vehicle.unit.owner;
     const playerId = owner.id;
     const area = GameMap.PLAYER_AREAS[playerId];
-    const monsoonLevel = vehicle.upgradeMap.get(this.name);
-    if (monsoonLevel === 1) {
-      const lightRain = WeatherEffect.create(area, FourCC("RAlr"));
-      lightRain.enable(true);
-      vehicle.unit.addItemById(FourCC("I004"));
-    } else {
-      TimerUtils.releaseTimer(this.playerTimers[playerId]);
-    }
-
-    let timeout = 15;
-    switch (monsoonLevel) {
-      case 2:
-        timeout = 7.5;
-        break;
-      case 3:
-        timeout = 5;
-        break;
-      case 4:
-        timeout = 3.75;
-        break;
-      case 5:
-        timeout = 3;
-        break;
-    }
+    const lightRain = WeatherEffect.create(area, FourCC("RAlr"));
+    lightRain.enable(true);
+    vehicle.unit.addItemById(FourCC("I004"));
 
     const scourgePlayer = MapPlayer.fromIndex(playerId + 9);
     const t: Timer = TimerUtils.newTimer();
     this.playerTimers[playerId] = t;
-    t.start(timeout, true, () => {
+    t.start(3, true, () => {
       const grp: Group = Group.fromRectOfPlayer(area, scourgePlayer);
       let hasStruck = false;
+
+      const monsoonLevel = vehicle.upgradeMap.get(this.name);
+      const damage = monsoonLevel * 180;
 
       grp.for((u) => {
         if (hasStruck) return;
@@ -64,7 +49,7 @@ export class Monsoon extends VehicleUpgrade {
         ).destroy();
         vehicle.unit.damageTarget(
           u.handle,
-          1500,
+          damage,
           false,
           false,
           ATTACK_TYPE_NORMAL,
