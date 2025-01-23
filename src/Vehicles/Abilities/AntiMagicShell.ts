@@ -4,13 +4,13 @@ import { TimerUtils } from "../../Utility/TimerUtils";
 
 export class AntiMagicShell {
   private readonly antiMagicShellTrig: Trigger;
-  private readonly antiMagicShellAbilitId = FourCC("A01N");
+  private readonly antiMagicShellAbilityId = FourCC("A01N");
 
   constructor() {
     this.antiMagicShellTrig = Trigger.create();
     this.antiMagicShellTrig.addAction(() => {
       const ability = GetSpellAbilityId();
-      if (ability !== this.antiMagicShellAbilitId) return;
+      if (ability !== this.antiMagicShellAbilityId) return;
 
       const triggeringUnit = Unit.fromEvent();
       const { owner } = triggeringUnit;
