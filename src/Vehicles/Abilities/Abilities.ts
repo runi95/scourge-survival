@@ -7,6 +7,7 @@ import { MagicSentry } from "./MagicSentry";
 import { ManaLeech } from "./ManaLeech";
 import { PocketFactory } from "./PocketFactory";
 import { Runes } from "./Runes";
+import { UnholyFrenzy } from "./UnholyFrenzy";
 
 export class Abilities {
   private readonly gameMap: GameMap;
@@ -25,5 +26,6 @@ export class Abilities {
     this.abilities.push(new PocketFactory(this.gameMap));
     this.abilities.push(new AdeptTraining(this.gameMap));
     this.abilities.push(new AntiMagicShell());
+    this.abilities.push(new UnholyFrenzy(this.gameMap));
   }
 }

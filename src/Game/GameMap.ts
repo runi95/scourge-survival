@@ -48,4 +48,5 @@ export enum CREEP_TYPE {
   SHADE = FourCC("u00E"),
   GIANT_SKELETON_WARRIOR = FourCC("u00F"),
   ANCIENT_SKELETAL_MAGE = FourCC("u00I"),
+  CRAZED_GHOUL = FourCC("u00J"),
 }

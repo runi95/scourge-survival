@@ -6,8 +6,18 @@ export const THIRTEEN: Wave = {
     [
       {
         delay: 0.1,
-        count: 10,
-        unitTypeId: CREEP_TYPE.SHADE,
+        count: 8,
+        unitTypeId: CREEP_TYPE.GHOUL,
+      },
+      {
+        delay: 0.1,
+        count: 2,
+        unitTypeId: CREEP_TYPE.ABOMINATION,
+      },
+      {
+        delay: 0.1,
+        count: 6,
+        unitTypeId: CREEP_TYPE.SKELETAL_MAGE,
       },
     ],
     [],

@@ -2968,7 +2968,7 @@ Spawn Skeleton Warrior
 }
 
 STRING 554
-// Units: u00I (Ancient Skeletal Mage), EditorSuffix (Name - Editor Suffix)
+// Units: u00F (Giant Skeleton Warrior), EditorSuffix (Name - Editor Suffix)
 {
 (Boss)
 }
@@ -2985,9 +2985,51 @@ STRING 556
 Ancient Skeletal Mage
 }
 
-STRING 557
+STRING 558
+// Abilities: A01O (Bash), EditorSuffix (Editor Suffix)
+{
+ (Neutral Hostile)
+}
+
+STRING 559
+// Buffs/Effects: B005 (), Buffubertip (Tooltip - Extended)
+{
+This unit has Unholy Frenzy; its movement speed has been increased, but it takes damage if it doesn't keep moving.
+}
+
+STRING 560
+// Units: u00I (Ancient Skeletal Mage), EditorSuffix (Name - Editor Suffix)
+{
+(Boss)
+}
+
+STRING 561
+// Units: u00J (Crazed Ghoul), Name (Name)
+{
+Crazed Ghoul
+}
+
+STRING 562
+// Units: u00J (Crazed Ghoul), EditorSuffix (Name - Editor Suffix)
+{
+(Boss)
+}
+
+STRING 563
 // Abilities: S003 (Cargo Hold), EditorSuffix (Editor Suffix)
 {
-(Pocket Factory Cooldown)
+(Exhume Corpse Cooldowns)
+}
+
+STRING 564
+// Abilities: A01P (Slow Aura), EditorSuffix (Editor Suffix)
+{
+ (Unholy Frenzy)
+}
+
+STRING 565
+// Abilities: A01Q (Exhume Corpses), EditorSuffix (Editor Suffix)
+{
+(Unholy Frenzy)
 }
 
