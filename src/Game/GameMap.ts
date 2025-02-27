@@ -34,6 +34,7 @@ export class GameMap {
   ];
   public static PLAYER_AREAS: Rectangle[] = [];
   public playerVehicles: (Vehicle | null)[] = [];
+  public static CURRENT_WAVE: number = 0;
 }
 
 export enum CREEP_TYPE {

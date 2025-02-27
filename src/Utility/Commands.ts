@@ -155,6 +155,12 @@ export class Commands {
           vehicle.unit.setHeroLevel(Number(args[0]), true);
         })();
         break;
+      case "wave":
+        (() => {
+          if (args.length !== 1) return;
+          GameMap.CURRENT_WAVE = Number(args[0]);
+        })();
+        break;
       case "debug":
         Log.Init([new StringSink(LogLevel.Debug, print)]);
     }

@@ -189,8 +189,8 @@ export class Spawner {
       vehicle.lastKnownY = y;
     }
 
-    const wave = this.waves[this.currentWaveIndex++];
-    print(`Wave ${this.currentWaveIndex} incoming!`);
+    const wave = this.waves[GameMap.CURRENT_WAVE++];
+    print(`Wave ${GameMap.CURRENT_WAVE} incoming!`);
 
     if (wave.before != null) {
       wave.before();
@@ -214,7 +214,7 @@ export class Spawner {
         this.creepUpgrades.creepUpgradeTypes[creepUpgradeIndex];
       creepUpgrade.apply();
 
-      if (this.waves.length > this.currentWaveIndex) {
+      if (this.waves.length > GameMap.CURRENT_WAVE) {
         this.startWave();
       } else {
         print("No more waves!");
