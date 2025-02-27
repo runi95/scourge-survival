@@ -145,6 +145,16 @@ export class Commands {
           true
         );
         break;
+      case "level":
+        (() => {
+          if (args.length !== 1) return;
+
+          const vehicle = this.gameMap.playerVehicles[0];
+          if (vehicle == null) return;
+
+          vehicle.unit.setHeroLevel(Number(args[0]), true);
+        })();
+        break;
       case "debug":
         Log.Init([new StringSink(LogLevel.Debug, print)]);
     }
