@@ -199,6 +199,12 @@ export class Spawner {
       wave.before();
     }
 
+    if (wave.bonusUpgrades != null) {
+      for (const bonusUpgrade of wave.bonusUpgrades) {
+        bonusUpgrade.apply();
+      }
+    }
+
     const [firstPortal, secondPortal] = wave.portals;
     this.spawnPortal(firstPortal, 0, true);
     this.spawnPortal(secondPortal, 0, false);

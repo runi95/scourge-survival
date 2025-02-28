@@ -1,3 +1,4 @@
+import { CreepUpgrade } from "../CreepUpgrades/CreepUpgrade";
 import { CREEP_TYPE } from "../GameMap";
 
 export type PortalWave = {
@@ -8,6 +9,7 @@ export type PortalWave = {
 };
 
 export type Wave = {
+  bonusUpgrades?: CreepUpgrade[];
   portals: [PortalWave[], PortalWave[]];
   before?: () => void;
 };
