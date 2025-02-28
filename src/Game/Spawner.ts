@@ -232,7 +232,7 @@ export class Spawner {
   ) {
     if (portalWaves.length === 0) return;
     let { count } = portalWaves[index];
-    const { delay, unitTypeId } = portalWaves[index];
+    const { delay, unitTypeId, attackImmediately } = portalWaves[index];
     const t: Timer = TimerUtils.newTimer();
     if (isFirstPortal) {
       this.firstPortalTimer = t;
@@ -263,14 +263,25 @@ export class Spawner {
           isFirstPortal ? 315.0 : 135.0
         );
 
+        const creep = new Creep(scourgeUnit, x, y, count);
         GameMap.REMAINING_PLAYER_CREEPS[playerId + 9].set(
           scourgeUnit.id,
-          new Creep(scourgeUnit, x, y, count)
+          creep
         );
         GameMap.REMAINING_PLAYER_CREEPS_COUNT.set(
           playerId + 9,
           GameMap.REMAINING_PLAYER_CREEPS_COUNT.get(playerId + 9) + 1
         );
+
+        if (!attackImmediately) continue;
+
+        const vehicle = this.gameMap.playerVehicles[playerId];
+        if (vehicle == null) continue;
+        const attackX = vehicle.lastKnownX;
+        const attackY = vehicle.lastKnownY;
+        creep.attackOrderPosition[0] = attackX;
+        creep.attackOrderPosition[1] = attackY;
+        creep.unit.issueOrderAt(OrderId.Attack, attackX, attackY);
       }
 
       if (--count <= 0) {

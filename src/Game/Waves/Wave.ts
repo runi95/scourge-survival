@@ -4,6 +4,7 @@ export type PortalWave = {
   delay: number;
   count: number;
   unitTypeId: CREEP_TYPE;
+  attackImmediately?: boolean;
 };
 
 export type Wave = {
