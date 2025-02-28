@@ -281,8 +281,7 @@ export class Spawner {
         if (vehicle == null) continue;
         const attackX = vehicle.lastKnownX;
         const attackY = vehicle.lastKnownY;
-        creep.attackOrderPosition[0] = attackX;
-        creep.attackOrderPosition[1] = attackY;
+        creep.attackOrderPosition = [attackX, attackY];
         creep.unit.issueOrderAt(OrderId.Attack, attackX, attackY);
       }
 
