@@ -3045,3 +3045,21 @@ STRING 568
 This unit is under the effects of Unholy Aura; it has increased hit point regeneration and will negate any damage dealt to the Necromancer that holds the aura.
 }
 
+STRING 569
+// Upgrades: R006 (Freezing Breath), Name (Name)
+{
+Critical Strike
+}
+
+STRING 570
+// Upgrades: R006 (Freezing Breath), Tip (Tooltip)
+{
+Research Critical Strike
+}
+
+STRING 571
+// Upgrades: R006 (Freezing Breath), Ubertip (Tooltip - Extended)
+{
+Enables all creeps to Critical Strike on attack.
+}
+

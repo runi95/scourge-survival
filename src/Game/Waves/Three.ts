@@ -20,6 +20,7 @@ export const THREE: Wave = {
       },
     ],
   ],
+  bonusUpgrades: [new CriticalStrike()],
   before: () => {
     const spawnSkeletonSound = Sound.create(
       Sounds.SKELETON_WHAT,
