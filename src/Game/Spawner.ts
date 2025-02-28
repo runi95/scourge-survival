@@ -181,6 +181,16 @@ export class Spawner {
     });
   }
 
+  private applyRandomCreepUpgrade() {
+    const creepUpgradeIndex = RandomNumberGenerator.random(
+      0,
+      this.creepUpgrades.creepUpgradeTypes.length - 1
+    );
+    const creepUpgrade =
+      this.creepUpgrades.creepUpgradeTypes[creepUpgradeIndex];
+    creepUpgrade.apply();
+  }
+
   private startWave() {
     for (let i = 0; i < GameMap.ONLINE_PLAYER_ID_LIST.length; i++) {
       const vehicle =
@@ -215,13 +225,8 @@ export class Spawner {
       TimerUtils.releaseTimer(t);
 
       this.isCreepSpawnerRunning = true;
-      const creepUpgradeIndex = RandomNumberGenerator.random(
-        0,
-        this.creepUpgrades.creepUpgradeTypes.length - 1
-      );
-      const creepUpgrade =
-        this.creepUpgrades.creepUpgradeTypes[creepUpgradeIndex];
-      creepUpgrade.apply();
+      this.applyRandomCreepUpgrade();
+      this.applyRandomCreepUpgrade();
 
       if (this.waves.length > GameMap.CURRENT_WAVE) {
         this.startWave();
