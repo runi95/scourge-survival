@@ -1,5 +1,6 @@
 import { Sound } from "../../../node_modules/w3ts/index";
 import { Sounds } from "../../Utility/Sounds";
+import { CriticalStrike } from "../CreepUpgrades/CriticalStrike";
 import { CREEP_TYPE, GameMap } from "../GameMap";
 import { Wave } from "./Wave";
 
