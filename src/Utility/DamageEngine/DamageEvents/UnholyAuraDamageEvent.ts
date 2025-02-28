@@ -4,16 +4,10 @@ import type { ExtendedDamageInstance } from "../DamageEventController";
 
 export class UnholyAuraDamageEvent implements DamageEvent {
   public event(damageInstance: ExtendedDamageInstance): void {
-    print("damage event...");
     if (damageInstance.damage < 1) return;
     if (damageInstance.targetOwningPlayerId < 9) return;
     if (damageInstance.targetUnitTypeId !== CREEP_TYPE.DEATHLESS_NECROMANCER)
       return;
-    print(
-      GameMap.REMAINING_PLAYER_CREEPS_COUNT.get(
-        damageInstance.targetOwningPlayerId
-      )
-    );
     if (
       GameMap.REMAINING_PLAYER_CREEPS_COUNT.get(
         damageInstance.targetOwningPlayerId
