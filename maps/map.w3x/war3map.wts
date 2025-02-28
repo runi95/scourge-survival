@@ -3063,3 +3063,39 @@ STRING 571
 Enables all creeps to Critical Strike on attack.
 }
 
+STRING 572
+// Abilities: A01R (Magic Resistance), Tip (Tooltip - Normal)
+{
+Magic Resistance
+}
+
+STRING 573
+// Abilities: A01R (Magic Resistance), Name (Name)
+{
+Magic Resistance
+}
+
+STRING 574
+// Abilities: A01R (Magic Resistance), Ubertip (Tooltip - Normal - Extended)
+{
+Reduces the damage taken from spells and Magic attacks to <A01R,DataE1,%>%.
+}
+
+STRING 575
+// Upgrades: R007 (Freezing Breath), Name (Name)
+{
+Magic Resistance
+}
+
+STRING 576
+// Upgrades: R007 (Freezing Breath), Tip (Tooltip)
+{
+Research Magic Resistance
+}
+
+STRING 577
+// Upgrades: R007 (Freezing Breath), Ubertip (Tooltip - Extended)
+{
+Enables Magic Resistance for all creeps.
+}
+
