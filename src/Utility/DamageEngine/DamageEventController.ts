@@ -63,6 +63,10 @@ export class DamageEventController {
       new AntiMagicShellDamageEvent(),
       DamageEventType.OnDamageEvent
     );
+    DamageEngine.register(
+      new UnholyAuraDamageEvent(),
+      DamageEventType.OnDamageEvent
+    );
 
     // After damage events
     DamageEngine.register(
@@ -76,12 +80,6 @@ export class DamageEventController {
     DamageEngine.register(
       new ThornsDamageEvent(this.gameMap),
       DamageEventType.AfterDamageEvent
-    );
-
-    // Lethal damage events
-    DamageEngine.register(
-      new UnholyAuraDamageEvent(this.gameMap),
-      DamageEventType.LethalDamageEvent
     );
   }
 }

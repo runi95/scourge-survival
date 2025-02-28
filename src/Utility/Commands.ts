@@ -1,6 +1,6 @@
 import { Frame, Trigger } from "w3ts";
 import { GameMap } from "../Game/GameMap";
-import type { MapPlayer, Unit } from "w3ts";
+import type { MapPlayer } from "w3ts";
 import { Log, LogLevel } from "../lib/Serilog/Serilog";
 import { StringSink } from "../lib/Serilog/Sinks/StringSink";
 import { GameOptions } from "../Game/GameOptions";

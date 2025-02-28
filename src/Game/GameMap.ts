@@ -1,5 +1,6 @@
 import { Rectangle } from "w3ts";
 import { Vehicle } from "../Vehicles/Vehicle";
+import { Creep } from "./Creep";
 
 export class GameMap {
   public static ONLINE_PLAYER_ID_LIST: number[] = [];
@@ -35,6 +36,9 @@ export class GameMap {
   public static PLAYER_AREAS: Rectangle[] = [];
   public playerVehicles: (Vehicle | null)[] = [];
   public static CURRENT_WAVE: number = 0;
+  public static readonly REMAINING_PLAYER_CREEPS: Map<number, Creep>[] = [];
+  public static readonly REMAINING_PLAYER_CREEPS_COUNT: Map<number, number> =
+    new Map();
 }
 
 export enum CREEP_TYPE {
@@ -50,4 +54,5 @@ export enum CREEP_TYPE {
   GIANT_SKELETON_WARRIOR = FourCC("u00F"),
   ANCIENT_SKELETAL_MAGE = FourCC("u00I"),
   CRAZED_GHOUL = FourCC("u00J"),
+  DEATHLESS_NECROMANCER = FourCC("u00K"),
 }

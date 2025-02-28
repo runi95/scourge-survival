@@ -2721,12 +2721,6 @@ STRING 505
 (Siege Engine) (Upgrade 5)
 }
 
-STRING 506
-// Buffs/Effects: B003 (), Buffubertip (Tooltip - Extended)
-{
-This unit is under the effects of Unholy Aura; it has an increased hit point regeneration and will temporarily resurrect as an immortal skeleton upon death.
-}
-
 STRING 507
 // Units: u00C (Skeleton Warrior), EditorSuffix (Name - Editor Suffix)
 {
@@ -3031,5 +3025,23 @@ STRING 565
 // Abilities: A01Q (Exhume Corpses), EditorSuffix (Editor Suffix)
 {
 (Unholy Frenzy)
+}
+
+STRING 566
+// Units: u00K (Deathless Necromancer), EditorSuffix (Name - Editor Suffix)
+{
+(Boss)
+}
+
+STRING 567
+// Units: u00K (Deathless Necromancer), Name (Name)
+{
+Deathless Necromancer
+}
+
+STRING 568
+// Buffs/Effects: B003 (), Buffubertip (Tooltip - Extended)
+{
+This unit is under the effects of Unholy Aura; it has increased hit point regeneration and will negate any damage dealt to the Necromancer that holds the aura.
 }
 

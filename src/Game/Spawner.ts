@@ -19,6 +19,7 @@ import {
   TWELVE,
   THIRTEEN,
   FOURTEEN,
+  FIFTEEN,
 } from "./Waves/index";
 import { RandomNumberGenerator } from "../Utility/RandomNumberGenerator";
 import { CreepUpgrades } from "./CreepUpgrades/CreepUpgrades";
@@ -42,8 +43,8 @@ export class Spawner {
     TWELVE,
     THIRTEEN,
     FOURTEEN,
+    FIFTEEN,
   ];
-  private currentWaveIndex: number = 0;
 
   private waveTimer: Timer;
   private firstPortalTimer: Timer;
@@ -53,10 +54,7 @@ export class Spawner {
   private isCreepSpawnerRunning = false;
 
   private readonly deathTrigger = Trigger.create();
-  private readonly unholyAuraUnitTypeId = FourCC("u00C");
   private readonly dummyUnitTypeId = FourCC("u000");
-  private readonly remainingPlayerCreeps: Map<number, Creep>[] = [];
-  private readonly remainingPlayerCreepsCount: Map<number, number> = new Map();
 
   constructor(gameMap: GameMap) {
     this.gameMap = gameMap;
@@ -78,13 +76,13 @@ export class Spawner {
 
       const creepPlayerId = GetPlayerId(GetOwningPlayer(dyingUnit));
       const handleId = GetHandleId(dyingUnit);
-      if (this.remainingPlayerCreeps[creepPlayerId].get(handleId) == null)
+      if (GameMap.REMAINING_PLAYER_CREEPS[creepPlayerId].get(handleId) == null)
         return;
-      this.remainingPlayerCreeps[creepPlayerId].delete(handleId);
+      GameMap.REMAINING_PLAYER_CREEPS[creepPlayerId].delete(handleId);
       const newPlayerCreepCount =
-        this.remainingPlayerCreepsCount.get(creepPlayerId - 9) - 1;
-      this.remainingPlayerCreepsCount.set(
-        creepPlayerId - 9,
+        GameMap.REMAINING_PLAYER_CREEPS_COUNT.get(creepPlayerId) - 1;
+      GameMap.REMAINING_PLAYER_CREEPS_COUNT.set(
+        creepPlayerId,
         newPlayerCreepCount
       );
 
@@ -95,9 +93,12 @@ export class Spawner {
     });
 
     for (let i = 0; i < GameMap.ONLINE_PLAYER_ID_LIST.length; i++) {
-      this.remainingPlayerCreeps[GameMap.ONLINE_PLAYER_ID_LIST[i] + 9] =
+      GameMap.REMAINING_PLAYER_CREEPS[GameMap.ONLINE_PLAYER_ID_LIST[i] + 9] =
         new Map<number, Creep>();
-      this.remainingPlayerCreepsCount.set(GameMap.ONLINE_PLAYER_ID_LIST[i], 0);
+      GameMap.REMAINING_PLAYER_CREEPS_COUNT.set(
+        GameMap.ONLINE_PLAYER_ID_LIST[i] + 9,
+        0
+      );
       this.deathTrigger.registerPlayerUnitEvent(
         MapPlayer.fromIndex(GameMap.ONLINE_PLAYER_ID_LIST[i] + 9),
         EVENT_PLAYER_UNIT_DEATH,
@@ -124,7 +125,9 @@ export class Spawner {
         if (vehicle == null) continue;
 
         let counter = 0;
-        for (const [_id, creep] of this.remainingPlayerCreeps[playerId + 9]) {
+        for (const [_id, creep] of GameMap.REMAINING_PLAYER_CREEPS[
+          playerId + 9
+        ]) {
           if (creep.attackOrderPosition == null) {
             if (creep.attackMoveIndex <= 0) {
               creep.attackMoveIndex = 0;
@@ -260,13 +263,13 @@ export class Spawner {
           isFirstPortal ? 315.0 : 135.0
         );
 
-        this.remainingPlayerCreeps[playerId + 9].set(
+        GameMap.REMAINING_PLAYER_CREEPS[playerId + 9].set(
           scourgeUnit.id,
           new Creep(scourgeUnit, x, y, count)
         );
-        this.remainingPlayerCreepsCount.set(
-          playerId,
-          this.remainingPlayerCreepsCount.get(playerId) + 1
+        GameMap.REMAINING_PLAYER_CREEPS_COUNT.set(
+          playerId + 9,
+          GameMap.REMAINING_PLAYER_CREEPS_COUNT.get(playerId + 9) + 1
         );
       }
 
