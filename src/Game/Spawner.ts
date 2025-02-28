@@ -167,15 +167,6 @@ export class Spawner {
         0,
         true
       );
-      PingMinimapEx(
-        GameMap.PLAYER_AREAS[localPlayerId].maxX - 100,
-        GameMap.PLAYER_AREAS[localPlayerId].minY + 100,
-        4,
-        255,
-        0,
-        0,
-        true
-      );
       this.startWave();
       TimerUtils.releaseTimer(t);
     });

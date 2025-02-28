@@ -1,6 +1,6 @@
 import { Sound } from "../../../node_modules/w3ts/index";
 import { Sounds } from "../../Utility/Sounds";
-import { CREEP_TYPE } from "../GameMap";
+import { CREEP_TYPE, GameMap } from "../GameMap";
 import { Wave } from "./Wave";
 
 export const THREE: Wave = {
@@ -32,5 +32,16 @@ export const THREE: Wave = {
       "DefaultEAXON"
     );
     spawnSkeletonSound.start();
+
+    const localPlayerId = GetPlayerId(GetLocalPlayer());
+    PingMinimapEx(
+      GameMap.PLAYER_AREAS[localPlayerId].maxX - 100,
+      GameMap.PLAYER_AREAS[localPlayerId].minY + 100,
+      4,
+      255,
+      0,
+      0,
+      true
+    );
   },
 };
