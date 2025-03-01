@@ -3117,3 +3117,45 @@ STRING 581
 rlev
 }
 
+STRING 582
+// Abilities: A01O (Bash), Ubertip (Tooltip - Normal - Extended)
+{
+Gives a <A01O,DataA1>% chance that an attack will do <A01O,DataC1> bonus damage and stun an opponent for <A01O,Dur1> seconds.
+}
+
+STRING 583
+// Abilities: A01O (Bash), Tip (Tooltip - Normal)
+{
+Bash
+}
+
+STRING 584
+// Upgrades: R008 (Freezing Breath), Tip (Tooltip)
+{
+Research Bash
+}
+
+STRING 585
+// Upgrades: R008 (Freezing Breath), Ubertip (Tooltip - Extended)
+{
+Enables Bash for all melee creeps.
+}
+
+STRING 586
+// Abilities: A01O (Bash), Ubertip (Tooltip - Normal - Extended)
+{
+Gives a <A01O,DataA2>% chance that an attack will do <A01O,DataC2> bonus damage and stun an opponent for <A01O,Dur2> seconds.
+}
+
+STRING 587
+// Upgrades: R008 (Freezing Breath), Name (Name)
+{
+Bash
+}
+
+STRING 588
+// Upgrades: R008 (Freezing Breath), effect1 (Effect 1)
+{
+rlev
+}
+

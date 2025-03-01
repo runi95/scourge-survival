@@ -18,6 +18,7 @@ export const NINE: Wave = {
       },
     ],
   ],
+  bonusUpgrades: [new Bash()],
   before: () => {
     const localPlayerId = GetPlayerId(GetLocalPlayer());
     PingMinimapEx(
