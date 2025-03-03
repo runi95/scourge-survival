@@ -19,7 +19,7 @@ export class AntiMagicShellDamageEvent implements DamageEvent {
     damageInstance.damage *= -1;
 
     const txt = TextTag.create();
-    txt.setText(`${Math.floor(healedAmount).toString()}!`, 0.023);
+    txt.setText(`+${Math.floor(healedAmount).toString()}!`, 0.023);
     txt.setPos(
       GetUnitX(damageInstance.target),
       GetUnitY(damageInstance.target),
