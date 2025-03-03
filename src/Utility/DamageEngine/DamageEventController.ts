@@ -6,6 +6,7 @@ import { CriticalStrikeDamageEvent } from "./DamageEvents/CriticalStrikeDamageEv
 import { InnerFireDamageEvent } from "./DamageEvents/InnerFireDamageEvent";
 import { MagicSurgeDamageEvent } from "./DamageEvents/MagicSurgeDamageEvent";
 import { ScourgeBoneChimesDamageEvent } from "./DamageEvents/ScourgeBoneChimesDamageEvent";
+import { StrengthInNumbersDamageEvent } from "./DamageEvents/StrengthInNumbersDamageEvent";
 import { ThornsDamageEvent } from "./DamageEvents/ThornsDamageEvent";
 import { UnholyAuraDamageEvent } from "./DamageEvents/UnholyAuraDamageEvent";
 import { WarDrumsDamageEvent } from "./DamageEvents/WarDrumsDamageEvent";
@@ -56,15 +57,19 @@ export class DamageEventController {
       DamageEventType.OnDamageEvent
     );
     DamageEngine.register(
-      new CriticalStrikeDamageEvent(this.gameMap),
-      DamageEventType.OnDamageEvent
-    );
-    DamageEngine.register(
       new AntiMagicShellDamageEvent(),
       DamageEventType.OnDamageEvent
     );
     DamageEngine.register(
+      new StrengthInNumbersDamageEvent(),
+      DamageEventType.OnDamageEvent
+    );
+    DamageEngine.register(
       new UnholyAuraDamageEvent(),
+      DamageEventType.OnDamageEvent
+    );
+    DamageEngine.register(
+      new CriticalStrikeDamageEvent(this.gameMap),
       DamageEventType.OnDamageEvent
     );
 

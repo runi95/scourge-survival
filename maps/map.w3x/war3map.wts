@@ -3159,3 +3159,21 @@ STRING 588
 rlev
 }
 
+STRING 589
+// Upgrades: R009 (Freezing Breath), Name (Name)
+{
+Strength In Numbers
+}
+
+STRING 590
+// Upgrades: R009 (Freezing Breath), Tip (Tooltip)
+{
+Research Strength In Numbers
+}
+
+STRING 591
+// Upgrades: R009 (Freezing Breath), Ubertip (Tooltip - Extended)
+{
+Enables Strength In Numbers for all creeps.
+}
+

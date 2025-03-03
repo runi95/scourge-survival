@@ -1,3 +1,4 @@
+import { StrengthInNumbers } from "../CreepUpgrades/StrengthInNumbers";
 import { CREEP_TYPE, GameMap } from "../GameMap";
 import { Wave } from "./Wave";
 
@@ -27,6 +28,7 @@ export const TWELVE: Wave = {
       },
     ],
   ],
+  bonusUpgrades: [new StrengthInNumbers()],
   before: () => {
     const localPlayerId = GetPlayerId(GetLocalPlayer());
     PingMinimapEx(
