@@ -1,3 +1,4 @@
+import { MagicResistance } from "../CreepUpgrades/MagicResistance";
 import { CREEP_TYPE, GameMap } from "../GameMap";
 import { Wave } from "./Wave";
 
@@ -5,9 +6,9 @@ export const SIX: Wave = {
   portals: [
     [
       {
-        delay: 0.3,
+        delay: 0.1,
         count: 8,
-        unitTypeId: CREEP_TYPE.GHOUL,
+        unitTypeId: CREEP_TYPE.SKELETAL_MAGE,
       },
       {
         delay: 0.3,

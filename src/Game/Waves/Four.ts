@@ -6,12 +6,7 @@ export const FOUR: Wave = {
     [
       {
         delay: 0.15,
-        count: 1,
-        unitTypeId: CREEP_TYPE.GHOUL,
-      },
-      {
-        delay: 0.15,
-        count: 3,
+        count: 5,
         unitTypeId: CREEP_TYPE.SKELETAL_MAGE,
       },
       {
@@ -21,8 +16,9 @@ export const FOUR: Wave = {
       },
       {
         delay: 0.15,
-        count: 1,
-        unitTypeId: CREEP_TYPE.GHOUL,
+        count: 5,
+        unitTypeId: CREEP_TYPE.SKELETAL_MAGE,
+        attackImmediately: true,
       },
     ],
     [],

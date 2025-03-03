@@ -18,6 +18,7 @@ export const THREE: Wave = {
         delay: 0.1,
         count: 1,
         unitTypeId: CREEP_TYPE.GIANT_SKELETON_WARRIOR,
+        attackImmediately: true,
       },
     ],
   ],

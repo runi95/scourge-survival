@@ -5,14 +5,15 @@ export const SEVEN: Wave = {
   portals: [
     [
       {
-        delay: 0.1,
-        count: 4,
-        unitTypeId: CREEP_TYPE.NECROMANCER,
+        delay: 0.05,
+        count: 8,
+        unitTypeId: CREEP_TYPE.GHOUL,
       },
       {
         delay: 0.1,
-        count: 6,
+        count: 1,
         unitTypeId: CREEP_TYPE.MEAT_WAGON,
+        attackImmediately: true,
       },
     ],
     [],

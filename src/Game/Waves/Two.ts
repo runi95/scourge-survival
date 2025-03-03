@@ -5,18 +5,8 @@ export const TWO: Wave = {
   portals: [
     [
       {
-        delay: 0.5,
-        count: 5,
-        unitTypeId: CREEP_TYPE.SKELETON_WARRIOR,
-      },
-      {
-        delay: 0.5,
-        count: 5,
-        unitTypeId: CREEP_TYPE.SKELETAL_MAGE,
-      },
-      {
-        delay: 0.5,
-        count: 5,
+        delay: 0.1,
+        count: 12,
         unitTypeId: CREEP_TYPE.SKELETON_WARRIOR,
       },
     ],

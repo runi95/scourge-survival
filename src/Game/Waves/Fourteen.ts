@@ -5,19 +5,29 @@ export const FOURTEEN: Wave = {
   portals: [
     [
       {
-        delay: 0.1,
-        count: 8,
-        unitTypeId: CREEP_TYPE.GHOUL,
+        delay: 0.03,
+        count: 5,
+        unitTypeId: CREEP_TYPE.GARGOYLE,
       },
       {
-        delay: 0.1,
-        count: 2,
-        unitTypeId: CREEP_TYPE.ABOMINATION,
-      },
-      {
-        delay: 0.1,
-        count: 6,
+        delay: 0.03,
+        count: 3,
         unitTypeId: CREEP_TYPE.SKELETAL_MAGE,
+      },
+      {
+        delay: 0.03,
+        count: 5,
+        unitTypeId: CREEP_TYPE.GARGOYLE,
+      },
+      {
+        delay: 0.03,
+        count: 3,
+        unitTypeId: CREEP_TYPE.SKELETAL_MAGE,
+      },
+      {
+        delay: 0.03,
+        count: 5,
+        unitTypeId: CREEP_TYPE.GARGOYLE,
       },
     ],
     [],
