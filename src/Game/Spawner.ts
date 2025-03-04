@@ -2,49 +2,11 @@ import { Effect, MapPlayer, Timer, Trigger, Unit } from "w3ts";
 import { OrderId } from "w3ts/globals/order";
 import { TimerUtils } from "../Utility/TimerUtils";
 import { GameMap } from "./GameMap";
-import {
-  Wave,
-  PortalWave,
-  ONE,
-  TWO,
-  THREE,
-  FOUR,
-  FIVE,
-  SIX,
-  SEVEN,
-  EIGHT,
-  NINE,
-  TEN,
-  ELEVEN,
-  TWELVE,
-  THIRTEEN,
-  FOURTEEN,
-  FIFTEEN,
-} from "./Waves/index";
-import { RandomNumberGenerator } from "../Utility/RandomNumberGenerator";
-import { CreepUpgrades } from "./CreepUpgrades/CreepUpgrades";
 import { Creep } from "./Creep";
+import { PortalWave } from "./Waves/index";
 
 export class Spawner {
-  private readonly creepUpgrades = new CreepUpgrades();
   private readonly gameMap: GameMap;
-  private readonly waves: Wave[] = [
-    ONE,
-    TWO,
-    THREE,
-    FOUR,
-    FIVE,
-    SIX,
-    SEVEN,
-    EIGHT,
-    NINE,
-    TEN,
-    ELEVEN,
-    TWELVE,
-    THIRTEEN,
-    FOURTEEN,
-    FIFTEEN,
-  ];
 
   private waveTimer: Timer;
   private firstPortalTimer: Timer;
@@ -172,16 +134,6 @@ export class Spawner {
     });
   }
 
-  private applyRandomCreepUpgrade() {
-    const creepUpgradeIndex = RandomNumberGenerator.random(
-      0,
-      this.creepUpgrades.creepUpgradeTypes.length - 1
-    );
-    const creepUpgrade =
-      this.creepUpgrades.creepUpgradeTypes[creepUpgradeIndex];
-    creepUpgrade.apply();
-  }
-
   private startWave() {
     for (let i = 0; i < GameMap.ONLINE_PLAYER_ID_LIST.length; i++) {
       const vehicle =
@@ -193,17 +145,15 @@ export class Spawner {
       vehicle.lastKnownY = y;
     }
 
-    const wave = this.waves[GameMap.CURRENT_WAVE++];
+    const { wave, upgrades } = GameMap.WAVES[GameMap.CURRENT_WAVE++];
     print(`Wave ${GameMap.CURRENT_WAVE} incoming!`);
 
     if (wave.before != null) {
       wave.before();
     }
 
-    if (wave.bonusUpgrades != null) {
-      for (const bonusUpgrade of wave.bonusUpgrades) {
-        bonusUpgrade.apply();
-      }
+    for (const { upgrade, level } of upgrades) {
+      upgrade.apply(level);
     }
 
     const [firstPortal, secondPortal] = wave.portals;
@@ -216,10 +166,8 @@ export class Spawner {
       TimerUtils.releaseTimer(t);
 
       this.isCreepSpawnerRunning = true;
-      this.applyRandomCreepUpgrade();
-      this.applyRandomCreepUpgrade();
 
-      if (this.waves.length > GameMap.CURRENT_WAVE) {
+      if (GameMap.WAVES.length > GameMap.CURRENT_WAVE) {
         this.startWave();
       } else {
         print("No more waves!");

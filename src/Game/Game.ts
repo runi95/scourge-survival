@@ -22,13 +22,17 @@ import { RandomNumberGenerator } from "../Utility/RandomNumberGenerator";
 import { Abilities } from "../Vehicles/Abilities/Abilities";
 import { DamageEventController } from "../Utility/DamageEngine/DamageEventController";
 import { CreepAbilityController } from "./CreepAbilityController";
+import { CreepUpgrades } from "./CreepUpgrades/CreepUpgrades";
+import { CreepWaveUpgrade } from "./CreepUpgrades/CreepWaveUpgrade";
+import { waves } from "./Waves/index";
+import { CreepUpgradesFrameSystem } from "./CreepUpgrades/CreepUpgradesFrameSystem";
 
 export class Game {
-  private readonly damageEngine: DamageEngine;
-  private readonly gameOptions: GameOptions;
+  private readonly damageEngine = new DamageEngine();
+  private readonly gameOptions = new GameOptions();
   private readonly debugger: Debugger;
   private readonly commands: Commands;
-  private readonly gameMap: GameMap;
+  private readonly gameMap = new GameMap();
   private readonly vehicleUnitTypeId: number = FourCC("H001");
   private readonly zeppelinUnitTypeId: number = FourCC("n004");
   private readonly vehicleUpgradeSystem: VehicleUpgradeSystem;
@@ -37,17 +41,68 @@ export class Game {
   private readonly damageEventController: DamageEventController;
   private readonly vehicleDeathTriggers: Trigger[] = [];
   private readonly creepAbilityController: CreepAbilityController;
+  private readonly creepUpgrades = new CreepUpgrades();
+  private readonly creepUpgradesFrameSystem: CreepUpgradesFrameSystem =
+    new CreepUpgradesFrameSystem();
 
   constructor() {
-    this.gameOptions = new GameOptions();
     this.debugger = new Debugger(this.gameOptions);
-    this.gameMap = new GameMap();
-    this.damageEngine = new DamageEngine();
     this.vehicleUpgradeSystem = new VehicleUpgradeSystem(this.gameMap);
     this.spawner = new Spawner(this.gameMap);
     this.abilities = new Abilities(this.gameMap);
     this.damageEventController = new DamageEventController(this.gameMap);
     this.creepAbilityController = new CreepAbilityController(this.gameMap);
+
+    const availableCreepUpgradeIndexes =
+      this.creepUpgrades.creepUpgradeTypes.map((_, i) => i);
+    const currentUpgradeLevel = availableCreepUpgradeIndexes.map(() => 0);
+    const getAvailableUpgradeIndex = () => {
+      const availableCreepUpgradeIndex = RandomNumberGenerator.random(
+        0,
+        availableCreepUpgradeIndexes.length - 1
+      );
+      const creepUpgradeIndex =
+        availableCreepUpgradeIndexes[availableCreepUpgradeIndex];
+
+      if (
+        currentUpgradeLevel[creepUpgradeIndex]++ >=
+        this.creepUpgrades.creepUpgradeTypes[creepUpgradeIndex].maxLevel
+      ) {
+        availableCreepUpgradeIndexes.splice(availableCreepUpgradeIndex, 1);
+      }
+
+      return creepUpgradeIndex;
+    };
+
+    for (const wave of waves) {
+      const firstCreepUpgradeIndex = getAvailableUpgradeIndex();
+      const upgrades: CreepWaveUpgrade[] = [
+        {
+          level: currentUpgradeLevel[firstCreepUpgradeIndex],
+          upgrade: this.creepUpgrades.creepUpgradeTypes[firstCreepUpgradeIndex],
+        },
+      ];
+
+      const secondCreepUpgradeIndex = getAvailableUpgradeIndex();
+      upgrades.push({
+        level: currentUpgradeLevel[secondCreepUpgradeIndex],
+        upgrade: this.creepUpgrades.creepUpgradeTypes[secondCreepUpgradeIndex],
+      });
+
+      if (wave.bonusUpgrades != null) {
+        upgrades.push(
+          ...wave.bonusUpgrades.map((upgrade) => ({
+            level: 1,
+            upgrade,
+          }))
+        );
+      }
+
+      GameMap.WAVES.push({
+        wave,
+        upgrades,
+      });
+    }
   }
 
   public start(): void {

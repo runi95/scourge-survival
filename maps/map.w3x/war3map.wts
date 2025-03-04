@@ -668,12 +668,6 @@ STRING 142
 Hit Points
 }
 
-STRING 143
-// Upgrades: R003 (Creature Attack,Improved Creature Attack,Advanced Creature Attack), effect1 (Effect 1)
-{
-rhpx
-}
-
 STRING 145
 // Upgrades: R004 (Creature Attack,Improved Creature Attack,Advanced Creature Attack), Name (Name)
 {
@@ -3175,5 +3169,17 @@ STRING 591
 // Upgrades: R009 (Freezing Breath), Ubertip (Tooltip - Extended)
 {
 Enables Strength In Numbers for all creeps.
+}
+
+STRING 592
+// Upgrades: R000 (Creature Attack,Improved Creature Attack,Advanced Creature Attack), effect1 (Effect 1)
+{
+ratt
+}
+
+STRING 593
+// Upgrades: R003 (Creature Attack,Improved Creature Attack,Advanced Creature Attack), effect1 (Effect 1)
+{
+rhpo
 }
 

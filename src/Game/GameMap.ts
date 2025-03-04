@@ -1,6 +1,9 @@
 import { Rectangle } from "w3ts";
 import { Vehicle } from "../Vehicles/Vehicle";
 import { Creep } from "./Creep";
+import { CreepUpgrade } from "./CreepUpgrades/CreepUpgrade";
+import { CreepWaveUpgrade } from "./CreepUpgrades/CreepWaveUpgrade";
+import { WaveWithUpgrades } from "./Waves/Wave";
 
 export class GameMap {
   public static ONLINE_PLAYER_ID_LIST: number[] = [];
@@ -39,6 +42,7 @@ export class GameMap {
   public static readonly REMAINING_PLAYER_CREEPS: Map<number, Creep>[] = [];
   public static readonly REMAINING_PLAYER_CREEPS_COUNT: Map<number, number> =
     new Map();
+  public static readonly WAVES: WaveWithUpgrades[] = [];
 }
 
 export enum CREEP_TYPE {
