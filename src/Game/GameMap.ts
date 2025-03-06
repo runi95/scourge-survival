@@ -1,8 +1,6 @@
 import { Rectangle } from "w3ts";
 import { Vehicle } from "../Vehicles/Vehicle";
 import { Creep } from "./Creep";
-import { CreepUpgrade } from "./CreepUpgrades/CreepUpgrade";
-import { CreepWaveUpgrade } from "./CreepUpgrades/CreepWaveUpgrade";
 import { WaveWithUpgrades } from "./Waves/Wave";
 
 export class GameMap {
