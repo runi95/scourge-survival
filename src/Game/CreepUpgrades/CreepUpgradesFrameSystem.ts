@@ -3,7 +3,8 @@ import { GameMap } from "../GameMap";
 import { TimerUtils } from "../../Utility/TimerUtils";
 
 export class CreepUpgradesFrameSystem {
-  private readonly upgradeFrames: Frame[] = [];
+  private readonly upgradeFrames: Frame[][] = [];
+  private readonly textFrames: Frame[][] = [];
   private multiboardFrame: Frame;
   private multiBoard: multiboard;
 
@@ -26,6 +27,8 @@ export class CreepUpgradesFrameSystem {
       const multiboardContainerFrame = this.multiboardFrame.getChild(4);
       for (let x = 0; x < GameMap.WAVES.length; x++) {
         const wave = GameMap.WAVES[x];
+        const waveUpgradeFrames: Frame[] = [];
+        const waveTextFrames: Frame[] = [];
         for (let y = 0; y < wave.upgrades.length; y++) {
           const waveUpgrade = wave.upgrades[y];
           const upgradeFrame = Frame.createType(
@@ -35,6 +38,7 @@ export class CreepUpgradesFrameSystem {
             "BACKDROP",
             ""
           );
+
           const upgradeHoverFrame = Frame.createType(
             "UpgradeHoverFrame",
             upgradeFrame,
@@ -53,7 +57,6 @@ export class CreepUpgradesFrameSystem {
             xOffset + x * 0.0175,
             yOffset - y * 0.0175
           );
-          upgradeFrame.setTexture(waveUpgrade.upgrade.icon, 0, true);
 
           const tooltipFrame = Frame.create("BoxedText", upgradeFrame, 0, 0);
           const textFrame = Frame.createType(
@@ -65,11 +68,31 @@ export class CreepUpgradesFrameSystem {
           );
           textFrame.setSize(0.25, 0);
 
-          textFrame.setText(
-            `${waveUpgrade.upgrade.name} (${
-              waveUpgrade.level
-            })|n|n${waveUpgrade.upgrade.description(waveUpgrade.level)}`
-          );
+          if (x > 0) {
+            upgradeFrame.setTexture(
+              waveUpgrade.upgrade.icon.replace(
+                "CommandButtons/",
+                "CommandButtonsDisabled/DIS"
+              ),
+              0,
+              true
+            );
+            textFrame.setText(
+              `${waveUpgrade.upgrade.name} (${
+                waveUpgrade.level
+              })|n|n|cff808080(Unlocks after wave ${x})|r|n${waveUpgrade.upgrade.description(
+                waveUpgrade.level
+              )}`
+            );
+          } else {
+            upgradeFrame.setTexture(waveUpgrade.upgrade.icon, 0, true);
+            textFrame.setText(
+              `${waveUpgrade.upgrade.name} (${
+                waveUpgrade.level
+              })|n|n${waveUpgrade.upgrade.description(waveUpgrade.level)}`
+            );
+          }
+
           tooltipFrame.setPoint(
             FRAMEPOINT_BOTTOMLEFT,
             textFrame,
@@ -94,11 +117,34 @@ export class CreepUpgradesFrameSystem {
             0.01
           );
 
-          this.upgradeFrames.push(upgradeFrame);
+          waveUpgradeFrames.push(upgradeFrame);
+          waveTextFrames.push(textFrame);
         }
+
+        this.upgradeFrames.push(waveUpgradeFrames);
+        this.textFrames.push(waveTextFrames);
       }
 
       TimerUtils.releaseTimer(t);
     });
+  }
+
+  public unlockWaveUpgrade(waveIndex: number) {
+    if (this.upgradeFrames.length - 1 < waveIndex) return;
+
+    const wave = GameMap.WAVES[waveIndex];
+    for (let y = 0; y < wave.upgrades.length; y++) {
+      const waveUpgrade = wave.upgrades[y];
+      this.upgradeFrames[waveIndex][y].setTexture(
+        waveUpgrade.upgrade.icon,
+        0,
+        true
+      );
+      this.textFrames[waveIndex][y].setText(
+        `${waveUpgrade.upgrade.name} (${
+          waveUpgrade.level
+        })|n|n${waveUpgrade.upgrade.description(waveUpgrade.level)}`
+      );
+    }
   }
 }

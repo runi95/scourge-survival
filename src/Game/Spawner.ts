@@ -4,9 +4,11 @@ import { TimerUtils } from "../Utility/TimerUtils";
 import { GameMap } from "./GameMap";
 import { Creep } from "./Creep";
 import { PortalWave } from "./Waves/index";
+import { CreepUpgradesFrameSystem } from "./CreepUpgrades/CreepUpgradesFrameSystem";
 
 export class Spawner {
   private readonly gameMap: GameMap;
+  private readonly creepUpgradeFrameSystem: CreepUpgradesFrameSystem;
 
   private waveTimer: Timer;
   private firstPortalTimer: Timer;
@@ -18,8 +20,12 @@ export class Spawner {
   private readonly deathTrigger = Trigger.create();
   private readonly dummyUnitTypeId = FourCC("u000");
 
-  constructor(gameMap: GameMap) {
+  constructor(
+    gameMap: GameMap,
+    creepUpgradeFrameSystem: CreepUpgradesFrameSystem
+  ) {
     this.gameMap = gameMap;
+    this.creepUpgradeFrameSystem = creepUpgradeFrameSystem;
     this.positionTimer = TimerUtils.newTimer();
     this.attackTimer = TimerUtils.newTimer();
   }
@@ -145,7 +151,8 @@ export class Spawner {
       vehicle.lastKnownY = y;
     }
 
-    const { wave, upgrades } = GameMap.WAVES[GameMap.CURRENT_WAVE++];
+    const { wave, upgrades } = GameMap.WAVES[++GameMap.CURRENT_WAVE];
+    this.creepUpgradeFrameSystem.unlockWaveUpgrade(GameMap.CURRENT_WAVE);
     print(`Wave ${GameMap.CURRENT_WAVE} incoming!`);
 
     if (wave.before != null) {

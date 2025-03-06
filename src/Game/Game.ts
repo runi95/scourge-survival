@@ -48,7 +48,7 @@ export class Game {
   constructor() {
     this.debugger = new Debugger(this.gameOptions);
     this.vehicleUpgradeSystem = new VehicleUpgradeSystem(this.gameMap);
-    this.spawner = new Spawner(this.gameMap);
+    this.spawner = new Spawner(this.gameMap, this.creepUpgradesFrameSystem);
     this.abilities = new Abilities(this.gameMap);
     this.damageEventController = new DamageEventController(this.gameMap);
     this.creepAbilityController = new CreepAbilityController(this.gameMap);
