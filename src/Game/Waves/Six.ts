@@ -1,3 +1,5 @@
+import { Sound } from "../../../node_modules/w3ts/index";
+import { Sounds } from "../../Utility/Sounds";
 import { MagicResistance } from "../CreepUpgrades/MagicResistance";
 import { CREEP_TYPE, GameMap } from "../GameMap";
 import { Wave } from "./Wave";
@@ -26,6 +28,17 @@ export const SIX: Wave = {
   ],
   bonusUpgrades: [new MagicResistance()],
   before: () => {
+    const spawnSkeletonSound = Sound.create(
+      Sounds.TOMB_OF_RELICS,
+      false,
+      false,
+      true,
+      10,
+      10,
+      "DefaultEAXON"
+    );
+    spawnSkeletonSound.start();
+
     const localPlayerId = GetPlayerId(GetLocalPlayer());
     PingMinimapEx(
       GameMap.PLAYER_AREAS[localPlayerId].maxX - 100,
