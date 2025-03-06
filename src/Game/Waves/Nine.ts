@@ -16,19 +16,21 @@ export const NINE: Wave = {
     ],
     [
       {
-        delay: 0.03,
-        count: 10,
-        unitTypeId: CREEP_TYPE.GHOUL,
+        delay: 2,
+        count: 1,
+        unitTypeId: CREEP_TYPE.CRAZED_GHOUL,
       },
       {
         delay: 0.03,
-        count: 1,
-        unitTypeId: CREEP_TYPE.CRAZED_GHOUL,
+        count: 10,
+        unitTypeId: CREEP_TYPE.GHOUL,
       },
     ],
   ],
   bonusUpgrades: [new Bash()],
   before: () => {
+    print("|Cffff0000KEEP MOVING!|r");
+
     const spawnSkeletonSound = Sound.create(
       Sounds.NO_GUTS_NO_GLORY,
       false,
