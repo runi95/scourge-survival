@@ -1,3 +1,5 @@
+import { Sound } from "../../../node_modules/w3ts/index";
+import { Sounds } from "../../Utility/Sounds";
 import { Bash } from "../CreepUpgrades/Bash";
 import { CREEP_TYPE, GameMap } from "../GameMap";
 import { Wave } from "./Wave";
@@ -27,6 +29,17 @@ export const NINE: Wave = {
   ],
   bonusUpgrades: [new Bash()],
   before: () => {
+    const spawnSkeletonSound = Sound.create(
+      Sounds.NO_GUTS_NO_GLORY,
+      false,
+      false,
+      true,
+      10,
+      10,
+      "DefaultEAXON"
+    );
+    spawnSkeletonSound.start();
+
     const localPlayerId = GetPlayerId(GetLocalPlayer());
     PingMinimapEx(
       GameMap.PLAYER_AREAS[localPlayerId].maxX - 100,
