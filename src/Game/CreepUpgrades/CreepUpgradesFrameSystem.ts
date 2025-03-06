@@ -16,6 +16,7 @@ export class CreepUpgradesFrameSystem {
       MultiboardSetItemsWidth(this.multiBoard, GameMap.WAVES.length * 0.0175);
       MultiboardSetRowCount(this.multiBoard, 4);
       MultiboardSetColumnCount(this.multiBoard, 1);
+      MultiboardMinimize(this.multiBoard, true);
       MultiboardDisplay(this.multiBoard, true);
 
       this.multiboardFrame = Frame.fromName("Multiboard", 0);
