@@ -151,7 +151,7 @@ export class Spawner {
       vehicle.lastKnownY = y;
     }
 
-    const { wave, upgrades } = GameMap.WAVES[++GameMap.CURRENT_WAVE];
+    const { wave, upgrades } = GameMap.WAVES[GameMap.CURRENT_WAVE++];
     this.creepUpgradeFrameSystem.unlockWaveUpgrade(GameMap.CURRENT_WAVE);
     print(`Wave ${GameMap.CURRENT_WAVE} incoming!`);
 
