@@ -29,6 +29,6 @@ export class ScourgeBoneChimesDamageEvent implements DamageEvent {
     if (scourgeBoneChimesLevel == null) return;
     if (scourgeBoneChimesLevel < 1) return;
 
-    vehicle.unit.life = vehicle.unit.life + 0.4 * damageInstance.damage;
+    vehicle.unit.life = vehicle.unit.life + 0.12 * damageInstance.damage;
   }
 }
