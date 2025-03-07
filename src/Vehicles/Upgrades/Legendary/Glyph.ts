@@ -8,7 +8,7 @@ export class Glyph extends VehicleUpgrade {
   public readonly icon = "ReplaceableTextures/CommandButtons/BTNGlyph.blp";
   public readonly cost = 500;
   public readonly description =
-    "Gain +1 to a random attribute whenever you kill an enemy unit.";
+    "Gain +1 to a random attribute whenever an enemy unit dies";
 
   public applyUpgrade(vehicle: Vehicle): void {
     if (vehicle.upgradeMap.get(this.name) !== 1) return;

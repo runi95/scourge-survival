@@ -9,7 +9,7 @@ export class AdeptTraining extends VehicleUpgrade {
     "ReplaceableTextures/CommandButtons/BTNPriestAdept.blp";
   public readonly cost = 75;
   public readonly maxLevel = 5;
-  public readonly description = "Reduces the cooldown of all spells by %10.";
+  public readonly description = "Reduces spell cooldown by %10";
 
   public applyUpgrade(vehicle: Vehicle): void {
     const adeptTrainingLevel = vehicle.upgradeMap.get(this.name);

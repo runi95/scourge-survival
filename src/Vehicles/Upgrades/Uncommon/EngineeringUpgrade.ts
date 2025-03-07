@@ -9,7 +9,8 @@ export class EngineeringUpgrade extends VehicleUpgrade {
     "ReplaceableTextures/CommandButtons/BTNEngineeringUpgrade.blp";
   public readonly cost = 250;
   public readonly maxLevel = 5;
-  public readonly description = "TODO: Write description";
+  public readonly description =
+    "Upgrades all spells to their next tier (all spells are upgraded to be as strong as +1 level higher than they currently are)";
 
   private readonly engeneeringUpgradeAbilityId: number = FourCC("A00J");
 

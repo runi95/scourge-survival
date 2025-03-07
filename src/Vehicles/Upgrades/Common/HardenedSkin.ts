@@ -10,7 +10,7 @@ export class HardenedSkin extends VehicleUpgrade {
   public readonly cost = 150;
   public readonly maxLevel = 5;
   public readonly description =
-    "Reduces all attacks by 4 damage. Attacks cannot be reduced below 2 damage.";
+    "Reduces all attacks by 4 damage|nAttacks cannot be reduced below 2 damage";
 
   private readonly hardenedSkinAbilityId: number = FourCC("A00I");
 

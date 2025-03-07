@@ -8,7 +8,7 @@ export class AttributeBonus extends VehicleUpgrade {
   public readonly icon = "ReplaceableTextures/CommandButtons/BTNStatUp.blp";
   public readonly cost = 75;
   public readonly description =
-    "Increases Strength, Agility and Intelligence by +2 points.";
+    "Increases Strength, Agility and Intelligence by +2 points";
 
   public applyUpgrade(vehicle: Vehicle): void {
     vehicle.unit.setStrength(vehicle.unit.strength + 2, true);

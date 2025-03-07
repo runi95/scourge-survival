@@ -12,7 +12,8 @@ export class Monsoon extends VehicleUpgrade {
   public readonly cost = 350;
   public readonly maxLevel = 5;
   public readonly isWeapon = true;
-  public readonly description = "TODO: Write description";
+  public readonly description =
+    "Creates a Monsoon that strikes lightning at a random enemy every 3 seconds, dealing 180 damage";
 
   private readonly playerTimers: Timer[] = [];
 

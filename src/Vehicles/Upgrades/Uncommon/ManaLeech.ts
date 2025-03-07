@@ -8,7 +8,8 @@ export class ManaLeech extends VehicleUpgrade {
   public readonly icon = "ReplaceableTextures/CommandButtons/BTNBrilliance.blp";
   public readonly cost = 200;
   public readonly maxLevel = 5;
-  public readonly description = "Regenerate +5 mana on kill.";
+  public readonly description =
+    "Regenerate 5 mana whenever an enemy unit is killed";
 
   public applyUpgrade(_vehicle: Vehicle): void {
     // Intentionally left empty

@@ -13,7 +13,8 @@ export class StormHammers extends VehicleUpgrade {
   public readonly cost = 500;
   public readonly maxLevel = 5;
   public readonly isWeapon = true;
-  public readonly description = "TODO: Write description";
+  public readonly description =
+    "Fires a storm hammer at a random enemy unit every 1 second dealing 180 - 224 attack damage with a small splash area on hit";
 
   private readonly playerTimers: Timer[] = [];
 

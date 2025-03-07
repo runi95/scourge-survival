@@ -10,7 +10,7 @@ export class Cannon extends VehicleUpgrade {
   public readonly maxLevel = 5;
   public readonly isWeapon = true;
   public readonly description =
-    "Fires a cannon dealing 25 damage to a random enemy unit within a range of 600 to the tank.";
+    "Fires a rocket that deals 25 spell damage to a random enemy unit within a range of 600";
 
   private readonly phoenixFireAbilityIds: number[] = [
     FourCC("A000"),

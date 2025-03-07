@@ -8,7 +8,8 @@ export class SlowAura extends VehicleUpgrade {
   public readonly icon = "ReplaceableTextures/CommandButtons/BTNTornado.blp";
   public readonly cost = 150;
   public readonly maxLevel = 5;
-  public readonly description = "TODO: Write description";
+  public readonly description =
+    "Slow nearby enemy units movement speed by -6% in a range of 600";
 
   private readonly slowAuraAilityId: number = FourCC("A01A");
 

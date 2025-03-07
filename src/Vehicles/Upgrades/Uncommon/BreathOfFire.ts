@@ -1,4 +1,4 @@
-import { Timer, Unit } from "w3ts";
+import { Effect, Timer, Unit } from "w3ts";
 import { TimerUtils } from "../../../Utility/TimerUtils";
 import { Vehicle } from "../../Vehicle";
 import { VehicleUpgrade } from "../../VehicleUpgrade";
@@ -13,7 +13,8 @@ export class BreathOfFire extends VehicleUpgrade {
   public readonly cost = 200;
   public readonly maxLevel = 5;
   public readonly isWeapon = true;
-  public readonly description = "TODO: Write description";
+  public readonly description =
+    "Leaves a trail of fire behind you when moving around";
 
   private readonly playerTimers: Timer[] = [];
   private readonly playerUnitPosition: [number, number][] = [];

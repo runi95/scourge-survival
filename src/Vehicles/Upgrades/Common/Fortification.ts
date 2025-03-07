@@ -7,7 +7,7 @@ export class Fortification extends VehicleUpgrade {
   public readonly icon =
     "ReplaceableTextures/CommandButtons/BTNStoneArchitecture.blp";
   public readonly cost = 200;
-  public readonly description = "TODO: Write description";
+  public readonly description = "Increases armor by +2 and Max Health by +125";
 
   public applyUpgrade(vehicle: Vehicle): void {
     BlzSetUnitArmor(

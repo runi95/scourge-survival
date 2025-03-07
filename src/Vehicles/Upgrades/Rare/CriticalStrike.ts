@@ -10,7 +10,8 @@ export class CriticalStrike extends VehicleUpgrade {
     "ReplaceableTextures/CommandButtons/BTNCriticalStrike.blp";
   public readonly cost = 200;
   public readonly maxLevel = 5;
-  public readonly description = "TODO: Write description";
+  public readonly description =
+    "Gives a 20% chance to increase any damage dealt by 2 times the normal amount";
 
   public applyUpgrade(vehicle: Vehicle): void {
     if (vehicle.upgradeMap.get(this.name) !== 1) return;

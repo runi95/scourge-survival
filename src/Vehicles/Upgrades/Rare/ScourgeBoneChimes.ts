@@ -10,7 +10,7 @@ export class ScourgeBoneChimes extends VehicleUpgrade {
   public readonly cost = 400;
   public readonly maxLevel = 1;
   public readonly description =
-    "Stolen bone chimes from the scourge; heals for 40% of all damage dealt.";
+    "Heals your hero for +12% of all damage dealt (including spell and ranged damage)";
 
   public applyUpgrade(vehicle: Vehicle): void {
     if (vehicle.upgradeMap.get(this.name) !== 1) return;

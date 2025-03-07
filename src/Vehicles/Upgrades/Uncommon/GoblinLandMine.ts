@@ -14,7 +14,7 @@ export class GoblinLandMine extends VehicleUpgrade {
   public readonly maxLevel = 5;
   public readonly isWeapon = true;
   public readonly description =
-    "Places a Goblin Land Mine underneath the tank every 3 seconds.";
+    "Places a Goblin Land Mine underneath you every 3 seconds";
 
   private readonly playerTimers: Timer[] = [];
 

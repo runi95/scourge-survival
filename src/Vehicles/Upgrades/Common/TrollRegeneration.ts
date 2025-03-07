@@ -10,7 +10,8 @@ export class TrollRegeneration extends VehicleUpgrade {
   public readonly icon = "ReplaceableTextures/CommandButtons/BTNRegenerate.blp";
   public readonly cost = 150;
   public readonly maxLevel = 5;
-  public readonly description = "TODO: Write description";
+  public readonly description =
+    "Regenerates 10 hit points per second while not moving";
 
   private readonly playerTimers: Timer[] = [];
   private readonly playerUnitPosition: [number, number][] = [];

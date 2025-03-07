@@ -16,7 +16,8 @@ export class ClusterRockets extends VehicleUpgrade {
   public readonly cost = 250;
   public readonly maxLevel = 5;
   public readonly isWeapon = true;
-  public readonly description = "TODO: Write description";
+  public readonly description =
+    "Sends cluster rockets firing in random directions every 2 seconds";
 
   private readonly playerTimers: Timer[] = [];
 

@@ -7,7 +7,7 @@ export class Evasion extends VehicleUpgrade {
   public readonly icon = "ReplaceableTextures/CommandButtons/BTNEvasion.blp";
   public readonly cost = 200;
   public readonly maxLevel = 5;
-  public readonly description = "TODO: Write description";
+  public readonly description = "Gives a 5% chance to avoid an incoming attack";
 
   private readonly evasionAbilityId: number = FourCC("A003");
 

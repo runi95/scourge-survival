@@ -12,7 +12,8 @@ export class Impale extends VehicleUpgrade {
   public readonly cost = 300;
   public readonly maxLevel = 5;
   public readonly isWeapon = true;
-  public readonly description = "TODO: Write description";
+  public readonly description =
+    "Impales the ground in a random direction every 1.5 seconds, dealing 75 damage and stunning enemy units for 1 second on hit";
 
   private readonly playerTimers: Timer[] = [];
 

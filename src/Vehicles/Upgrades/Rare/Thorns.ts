@@ -8,7 +8,7 @@ export class Thorns extends VehicleUpgrade {
   public readonly icon = "ReplaceableTextures/CommandButtons/BTNThorns.blp";
   public readonly cost = 300;
   public readonly description =
-    "Deals +6% of all damage taken back to the source.";
+    "Deals +6% of all damage taken back to the source (including spell and ranged damage)";
 
   public applyUpgrade(vehicle: Vehicle): void {
     if (vehicle.upgradeMap.get(this.name) !== 1) return;

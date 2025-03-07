@@ -9,7 +9,8 @@ export class FlakCannons extends VehicleUpgrade {
     "ReplaceableTextures/CommandButtons/BTNFlakCannons.blp";
   public readonly cost = 500;
   public readonly maxLevel = 1;
-  public readonly description = "Enables the tank to attack units directly.";
+  public readonly description =
+    "Enables your hero to attack enemy units directly with a basic attack";
 
   public applyUpgrade(vehicle: Vehicle): void {
     BlzSetUnitWeaponBooleanField(

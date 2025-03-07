@@ -8,7 +8,8 @@ export class Barrage extends VehicleUpgrade {
     "ReplaceableTextures/CommandButtons/BTNScatterRockets.blp";
   public readonly cost = 400;
   public readonly maxLevel = 1;
-  public readonly description = "Increases inventory space by +1.";
+  public readonly description =
+    "Increases inventory space by +1 (allowing for 1 additional weapon to be obtained)";
 
   private readonly inventoryAbilityId = FourCC("A009");
 
