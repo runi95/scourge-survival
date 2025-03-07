@@ -1,10 +1,8 @@
-import { Timer, Unit } from "w3ts/index";
+import { Timer } from "w3ts/index";
 import { TimerUtils } from "../../../Utility/TimerUtils";
 import { Vehicle } from "../../Vehicle";
 import { VehicleUpgrade } from "../../VehicleUpgrade";
 import { VehicleUpgradeRarity } from "../../VehicleUpgradeRarity";
-import { RandomNumberGenerator } from "../../../Utility/RandomNumberGenerator";
-import { Globals } from "../../../Utility/Globals";
 
 export class TrollRegeneration extends VehicleUpgrade {
   public readonly name = "Troll Regeneration";
