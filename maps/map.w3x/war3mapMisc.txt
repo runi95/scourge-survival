@@ -11,4 +11,5 @@ MaxHeroLevel=1000
 MaxUnitLevel=100
 MaxUnitSpeed=999.0
 NeedHeroXP=500
+UpkeepUsage=24,34,10000,10000,10000,10000,10000,10000,10000,10000
 

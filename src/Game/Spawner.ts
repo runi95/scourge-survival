@@ -53,6 +53,11 @@ export class Spawner {
         creepPlayerId,
         newPlayerCreepCount
       );
+      SetPlayerState(
+        Player(creepPlayerId - 9),
+        PLAYER_STATE_RESOURCE_FOOD_USED,
+        newPlayerCreepCount
+      );
 
       if (newPlayerCreepCount < 1 && !this.isCreepSpawnerRunning) {
         TimerUtils.releaseTimer(this.waveTimer);
@@ -172,7 +177,12 @@ export class Spawner {
         const income = Math.floor(0.1 * gold);
         if (income < 1) continue;
 
-        player.setState(PLAYER_STATE_RESOURCE_GOLD, gold + income);
+        const upkeepMult =
+          100 - player.getState(PLAYER_STATE_GOLD_UPKEEP_RATE) * 0.01;
+        const realIncome = Math.floor(income * upkeepMult);
+        if (realIncome > 0) {
+          player.setState(PLAYER_STATE_RESOURCE_GOLD, gold + realIncome);
+        }
         if (GetPlayerId(GetLocalPlayer()) === i) {
           DisplayTextToPlayer(
             GetLocalPlayer(),
@@ -246,9 +256,13 @@ export class Spawner {
           scourgeUnit.id,
           creep
         );
-        GameMap.REMAINING_PLAYER_CREEPS_COUNT.set(
-          playerId + 9,
-          GameMap.REMAINING_PLAYER_CREEPS_COUNT.get(playerId + 9) + 1
+        const newCreepCount =
+          GameMap.REMAINING_PLAYER_CREEPS_COUNT.get(playerId + 9) + 1;
+        GameMap.REMAINING_PLAYER_CREEPS_COUNT.set(playerId + 9, newCreepCount);
+        SetPlayerState(
+          Player(playerId),
+          PLAYER_STATE_RESOURCE_FOOD_USED,
+          newCreepCount
         );
 
         if (!attackImmediately) continue;
