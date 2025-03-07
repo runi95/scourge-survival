@@ -13,8 +13,13 @@ export class GoblinLandMine extends VehicleUpgrade {
   public readonly cost = 200;
   public readonly maxLevel = 5;
   public readonly isWeapon = true;
-  public readonly description =
-    "Places a Goblin Land Mine underneath you every 3 seconds";
+  public readonly description = `Places Goblin Land Mines underneath your hero.
+
+Damage: |cffffcc00150|r
+Cooldown: |cffffcc003s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell|r
+Mine activation delay: |cffffcc004s|r`;
 
   private readonly playerTimers: Timer[] = [];
 

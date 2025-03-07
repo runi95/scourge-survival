@@ -14,8 +14,12 @@ export class Shockwave extends VehicleUpgrade {
   public readonly cost = 150;
   public readonly maxLevel = 5;
   public readonly isWeapon = true;
-  public readonly description =
-    "Sends 2 shockwaves in opposite directions every 2.5 seconds|nShockwaves deal 50 damage to any unit it hits";
+  public readonly description = `Sends 2 shockwaves in opposite directions.
+
+Damage: |cffffcc002 x 50|r
+Cooldown: |cffffcc002.5s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r`;
 
   private readonly playerTimers: Timer[] = [];
 

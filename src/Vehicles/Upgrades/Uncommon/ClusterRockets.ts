@@ -16,8 +16,14 @@ export class ClusterRockets extends VehicleUpgrade {
   public readonly cost = 250;
   public readonly maxLevel = 5;
   public readonly isWeapon = true;
-  public readonly description =
-    "Sends cluster rockets firing in random directions every 2 seconds";
+  public readonly description = `Sends Cluster Rockets firing off in a random area at a random direction.
+
+Damage: |cffffcc006 x 17.5 (max 210)|r
+Cooldown: |cffffcc002s|r
+Area of effect: |cffffcc00300|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+Effect: stuns for |cffffcc001s|r`;
 
   private readonly playerTimers: Timer[] = [];
 

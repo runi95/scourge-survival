@@ -13,8 +13,12 @@ export class AirSupport extends VehicleUpgrade {
   public readonly cost = 150;
   public readonly maxLevel = 5;
   public readonly isWeapon = true;
-  public readonly description =
-    "Spawns in 3 Flying Machines that follow you around and attack nearby enemies|n|nDamage Type: Piercing|nAttack Cooldown: 2s|nAttack Damage: 24 - 26";
+  public readonly description = `Spawns 3 Flying Machines that follows your hero around and attack nearby enemy units.
+
+Damage: |cffffcc003 x 25|r
+Cooldown: |cffffcc002s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing|r`;
 
   private readonly playerTimers: Timer[] = [];
 

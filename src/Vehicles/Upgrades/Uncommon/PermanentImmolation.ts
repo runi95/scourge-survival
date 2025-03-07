@@ -10,8 +10,12 @@ export class PermanentImmolation extends VehicleUpgrade {
   public readonly cost = 250;
   public readonly maxLevel = 5;
   public readonly isWeapon = true;
-  public readonly description =
-    "Engulfs your hero in flames that deal 10 damage every second to nearby enemy units";
+  public readonly description = `Engulfs your hero in flames that deal damage to nearby enemy units.
+
+Damage: |cffffcc0010|r
+Cooldown: |cffffcc001s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r`;
 
   private readonly permanentImmolationAbilityId: number = FourCC("A002");
 

@@ -1,4 +1,4 @@
-import { Effect, Timer, Unit } from "w3ts";
+import { Timer, Unit } from "w3ts";
 import { TimerUtils } from "../../../Utility/TimerUtils";
 import { Vehicle } from "../../Vehicle";
 import { VehicleUpgrade } from "../../VehicleUpgrade";
@@ -13,8 +13,13 @@ export class BreathOfFire extends VehicleUpgrade {
   public readonly cost = 200;
   public readonly maxLevel = 5;
   public readonly isWeapon = true;
-  public readonly description =
-    "Leaves a trail of fire behind you when moving around";
+  public readonly description = `Leaves a trail of fire that burns enemies behind you whenever your hero moves around.
+
+Damage: |cffffcc0010|r
+Cooldown: |cffffcc001s|r
+Area of effect: |cffffcc00125|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell|r`;
 
   private readonly playerTimers: Timer[] = [];
   private readonly playerUnitPosition: [number, number][] = [];
