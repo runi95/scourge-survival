@@ -6,6 +6,8 @@ import { VehicleUpgradeRarity } from "../../VehicleUpgradeRarity";
 import { RandomNumberGenerator } from "../../../Utility/RandomNumberGenerator";
 import { Globals } from "../../../Utility/Globals";
 
+const MULT = Math.PI / 180;
+
 export class Shockwave extends VehicleUpgrade {
   public readonly rarity = VehicleUpgradeRarity.COMMON;
   public readonly icon = "ReplaceableTextures/CommandButtons/BTNShockWave.blp";
@@ -32,6 +34,8 @@ export class Shockwave extends VehicleUpgrade {
       const shockwaveLevel = vehicle.upgradeMap.get(this.name);
       const { x, y } = vehicle.unit;
 
+      const randomAngle = RandomNumberGenerator.random(0, 359);
+      const radians = [randomAngle * MULT, ((randomAngle + 180) % 360) * MULT];
       for (let i = 0; i < 2; i++) {
         const dummy = Unit.create(owner, this.dummyUnitId, x, y);
         dummy.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 4);
@@ -42,8 +46,8 @@ export class Shockwave extends VehicleUpgrade {
 
         dummy.issueOrderAt(
           "shockwave",
-          x + RandomNumberGenerator.random(-100, 100),
-          y + RandomNumberGenerator.random(-100, 100)
+          x + 400 * Math.cos(radians[i]),
+          y + 400 * Math.sin(radians[i])
         );
       }
     });
