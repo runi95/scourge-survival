@@ -163,6 +163,27 @@ export class Spawner {
       upgrade.apply(level);
     }
 
+    if (GameMap.CURRENT_WAVE > 1) {
+      for (let i = 0; i < GameMap.ONLINE_PLAYER_ID_LIST.length; i++) {
+        if (GameMap.IS_PLAYER_DEFEATED[i]) continue;
+
+        const player = MapPlayer.fromIndex(i);
+        const gold = player.getState(PLAYER_STATE_RESOURCE_GOLD);
+        const income = Math.floor(0.1 * gold);
+        if (income < 1) continue;
+
+        player.setState(PLAYER_STATE_RESOURCE_GOLD, gold + income);
+        if (GetPlayerId(GetLocalPlayer()) === i) {
+          DisplayTextToPlayer(
+            GetLocalPlayer(),
+            0,
+            0,
+            `Income: |cffffcc00+${income}|r`
+          );
+        }
+      }
+    }
+
     const [firstPortal, secondPortal] = wave.portals;
     this.spawnPortal(firstPortal, 0, true);
     this.spawnPortal(secondPortal, 0, false);
