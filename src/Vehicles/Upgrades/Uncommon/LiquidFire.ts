@@ -6,11 +6,10 @@ import { VehicleUpgradeRarity } from "../../VehicleUpgradeRarity";
 import { Globals } from "../../../Utility/Globals";
 import { levelUpStr } from "../LevelUpStr";
 
-export class BreathOfFire extends VehicleUpgrade {
+export class LiquidFire extends VehicleUpgrade {
   public readonly name = "Breath of Fire";
   public readonly rarity = VehicleUpgradeRarity.UNCOMMON;
-  public readonly icon =
-    "ReplaceableTextures/CommandButtons/BTNBreathOfFire.blp";
+  public readonly icon = "ReplaceableTextures/CommandButtons/BTNLiquidFire.blp";
   public readonly cost = 200;
   public readonly maxLevel = 5;
   public readonly isWeapon = true;
@@ -28,7 +27,7 @@ Damage type: |cffffcc00spell|r`;
   private readonly playerUnitPosition: [number, number][] = [];
 
   private readonly dummyUnitId: number = FourCC("u00D");
-  private readonly breathOfFireAbilityId: number = FourCC("A01J");
+  private readonly liquidFireAbilityId: number = FourCC("A01J");
 
   public applyUpgrade(vehicle: Vehicle): void {
     if (vehicle.upgradeMap.get(this.name) !== 1) return;
@@ -49,11 +48,11 @@ Damage type: |cffffcc00spell|r`;
       this.playerUnitPosition[ownerId][0] = x;
       this.playerUnitPosition[ownerId][1] = y;
 
-      const breathOfFireLevel = vehicle.upgradeMap.get(this.name);
+      const liquidFireLevel = vehicle.upgradeMap.get(this.name);
       const dummy = Unit.create(owner, this.dummyUnitId, x, y);
       dummy.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 10);
-      if (breathOfFireLevel > 1) {
-        dummy.setAbilityLevel(this.breathOfFireAbilityId, breathOfFireLevel);
+      if (liquidFireLevel > 1) {
+        dummy.setAbilityLevel(this.liquidFireAbilityId, liquidFireLevel);
       }
     });
   }

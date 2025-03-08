@@ -2841,34 +2841,16 @@ STRING 527
 Breath of Fire
 }
 
-STRING 528
-// Items: I00P (Breath of Fire), Name (Name)
-{
-Breath of Fire
-}
-
-STRING 530
-// Items: I00P (Breath of Fire), Tip (Tooltip - Basic)
-{
-Purchase Breath of Fire
-}
-
 STRING 531
-// Items: I00P (Breath of Fire), Description (Description)
+// Items: I00P (Liquid Fire), Description (Description)
 {
 Leaves a trail of fire behind the vehicle for as long as it's moving.
 }
 
 STRING 532
-// Items: I00P (Breath of Fire), Ubertip (Tooltip - Extended)
+// Items: I00P (Liquid Fire), Ubertip (Tooltip - Extended)
 {
 Leaves a trail of fire behind the vehicle for as long as it's moving.
-}
-
-STRING 533
-// Abilities: A01J (Breath of Fire), Name (Name)
-{
-Breath of Fire
 }
 
 STRING 538
@@ -3181,5 +3163,23 @@ STRING 593
 // Upgrades: R003 (Creature Attack,Improved Creature Attack,Advanced Creature Attack), effect1 (Effect 1)
 {
 rhpo
+}
+
+STRING 594
+// Items: I00P (Liquid Fire), Name (Name)
+{
+Liquid Fire
+}
+
+STRING 595
+// Items: I00P (Liquid Fire), Tip (Tooltip - Basic)
+{
+Purchase Liquid Fire
+}
+
+STRING 596
+// Abilities: A01J (Liquid Fire), Name (Name)
+{
+Liquid Fire
 }
 
