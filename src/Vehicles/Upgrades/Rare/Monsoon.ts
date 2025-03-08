@@ -5,6 +5,7 @@ import { VehicleUpgradeRarity } from "../../VehicleUpgradeRarity";
 import { GameMap } from "../../../Game/GameMap";
 import { TimerUtils } from "../../../Utility/TimerUtils";
 import { Group } from "../../../Utility/Group";
+import { levelUpStr } from "../LevelUpStr";
 
 export class Monsoon extends VehicleUpgrade {
   public readonly rarity = VehicleUpgradeRarity.RARE;
@@ -12,9 +13,11 @@ export class Monsoon extends VehicleUpgrade {
   public readonly cost = 350;
   public readonly maxLevel = 5;
   public readonly isWeapon = true;
-  public readonly description = `Creates a Monsoon that causes lighting to strike any random enemy. 
+  public readonly description = (
+    level: number
+  ) => `Creates a Monsoon that causes lighting to strike any random enemy. 
 
-Damage: |cffffcc00180|r
+Damage: ${levelUpStr(level, 180)}
 Cooldown: |cffffcc003s|r
 Area of effect: |cffffcc00global|r
 Targets: |cffffcc00air & ground|r

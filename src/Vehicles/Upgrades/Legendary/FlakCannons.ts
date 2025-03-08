@@ -9,7 +9,8 @@ export class FlakCannons extends VehicleUpgrade {
     "ReplaceableTextures/CommandButtons/BTNFlakCannons.blp";
   public readonly cost = 500;
   public readonly maxLevel = 1;
-  public readonly description = `Enables your hero's basic attack, allowing you to attack enemies directly.
+  public readonly description =
+    () => `Enables your hero's basic attack, allowing you to attack enemies directly.
 
 Damage: |cffffcc0050 + strength|r
 Cooldown: |cffffcc002.1s|r

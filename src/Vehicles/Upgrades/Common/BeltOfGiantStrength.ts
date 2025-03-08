@@ -7,7 +7,7 @@ export class BeltOfGiantStrength extends VehicleUpgrade {
   public readonly rarity = VehicleUpgradeRarity.COMMON;
   public readonly icon = "ReplaceableTextures/CommandButtons/BTNBelt.blp";
   public readonly cost = 50;
-  public readonly description = "Increases Strength by +5 points";
+  public readonly description = () => "Increases Strength by +5 points";
 
   public applyUpgrade(vehicle: Vehicle): void {
     vehicle.unit.setStrength(vehicle.unit.strength + 5, true);

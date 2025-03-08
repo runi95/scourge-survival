@@ -1,6 +1,7 @@
 import { Vehicle } from "../../Vehicle";
 import { VehicleUpgrade } from "../../VehicleUpgrade";
 import { VehicleUpgradeRarity } from "../../VehicleUpgradeRarity";
+import { levelUpStr } from "../LevelUpStr";
 
 export class AdeptTraining extends VehicleUpgrade {
   public readonly name = "Adept Training";
@@ -9,7 +10,8 @@ export class AdeptTraining extends VehicleUpgrade {
     "ReplaceableTextures/CommandButtons/BTNPriestAdept.blp";
   public readonly cost = 75;
   public readonly maxLevel = 5;
-  public readonly description = "Reduces spell cooldown by %10";
+  public readonly description = (level: number) =>
+    `Reduces spell cooldown by ${levelUpStr(level, 10)}%`;
 
   public applyUpgrade(vehicle: Vehicle): void {
     const adeptTrainingLevel = vehicle.upgradeMap.get(this.name);

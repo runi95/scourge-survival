@@ -1,13 +1,15 @@
 import { Vehicle } from "../../Vehicle";
 import { VehicleUpgrade } from "../../VehicleUpgrade";
 import { VehicleUpgradeRarity } from "../../VehicleUpgradeRarity";
+import { levelUpStr } from "../LevelUpStr";
 
 export class Evasion extends VehicleUpgrade {
   public readonly rarity = VehicleUpgradeRarity.UNCOMMON;
   public readonly icon = "ReplaceableTextures/CommandButtons/BTNEvasion.blp";
   public readonly cost = 200;
   public readonly maxLevel = 5;
-  public readonly description = "Gives a 5% chance to avoid an incoming attack";
+  public readonly description = (level: number) =>
+    `Gives a ${levelUpStr(level, 5)}% chance to avoid an incoming attack`;
 
   private readonly evasionAbilityId: number = FourCC("A003");
 

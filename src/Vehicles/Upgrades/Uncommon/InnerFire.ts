@@ -2,6 +2,7 @@ import { InnerFireDamageEvent } from "../../../Utility/DamageEngine/DamageEvents
 import { Vehicle } from "../../Vehicle";
 import { VehicleUpgrade } from "../../VehicleUpgrade";
 import { VehicleUpgradeRarity } from "../../VehicleUpgradeRarity";
+import { levelUpStr } from "../LevelUpStr";
 
 export class InnerFire extends VehicleUpgrade {
   public readonly name = "Inner Fire";
@@ -9,8 +10,17 @@ export class InnerFire extends VehicleUpgrade {
   public readonly icon = "ReplaceableTextures/CommandButtons/BTNInnerFire.blp";
   public readonly cost = 250;
   public readonly maxLevel = 5;
-  public readonly description =
-    "Applies Inner Fire to your hero whenever you take damage|nInner Fire increases attack damage by +10% and armor by +5 for 10 seconds and has a 60 seconds cooldown";
+  public readonly description = (
+    level: number
+  ) => `Applies Inner Fire to your hero whenever you take damage.
+Inner Fire increases attack damage by +${levelUpStr(
+    level,
+    2,
+    10
+  )}% and armor by +${levelUpStr(
+    level,
+    5
+  )} for 10 seconds and has a 60 seconds cooldown.`;
 
   public applyUpgrade(vehicle: Vehicle): void {
     if (vehicle.upgradeMap.get(this.name) !== 1) return;

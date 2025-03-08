@@ -5,6 +5,7 @@ import { VehicleUpgrade } from "../../VehicleUpgrade";
 import { VehicleUpgradeRarity } from "../../VehicleUpgradeRarity";
 import { RandomNumberGenerator } from "../../../Utility/RandomNumberGenerator";
 import { Globals } from "../../../Utility/Globals";
+import { levelUpStr } from "../LevelUpStr";
 
 const MULT = Math.PI / 180;
 
@@ -14,9 +15,11 @@ export class Shockwave extends VehicleUpgrade {
   public readonly cost = 150;
   public readonly maxLevel = 5;
   public readonly isWeapon = true;
-  public readonly description = `Sends 2 shockwaves in opposite directions.
+  public readonly description = (
+    level: number
+  ) => `Sends 2 shockwaves in opposite directions.
 
-Damage: |cffffcc002 x 50|r
+Damage: ${levelUpStr(level, 50)}
 Cooldown: |cffffcc002.5s|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r`;

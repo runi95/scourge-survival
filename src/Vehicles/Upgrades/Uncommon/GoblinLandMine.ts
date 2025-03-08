@@ -4,6 +4,7 @@ import { Vehicle } from "../../Vehicle";
 import { VehicleUpgrade } from "../../VehicleUpgrade";
 import { VehicleUpgradeRarity } from "../../VehicleUpgradeRarity";
 import { Globals } from "../../../Utility/Globals";
+import { levelUpStr } from "../LevelUpStr";
 
 export class GoblinLandMine extends VehicleUpgrade {
   public readonly name = "Goblin Land Mine";
@@ -13,9 +14,11 @@ export class GoblinLandMine extends VehicleUpgrade {
   public readonly cost = 200;
   public readonly maxLevel = 5;
   public readonly isWeapon = true;
-  public readonly description = `Places Goblin Land Mines underneath your hero.
+  public readonly description = (
+    level: number
+  ) => `Places Goblin Land Mines underneath your hero.
 
-Damage: |cffffcc00150|r
+Damage: ${levelUpStr(level, 150)}
 Cooldown: |cffffcc003s|r
 Targets: |cffffcc00ground only!|r
 Damage type: |cffffcc00spell|r

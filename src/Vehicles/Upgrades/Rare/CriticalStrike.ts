@@ -2,6 +2,7 @@ import { CriticalStrikeDamageEvent } from "../../../Utility/DamageEngine/DamageE
 import { Vehicle } from "../../Vehicle";
 import { VehicleUpgrade } from "../../VehicleUpgrade";
 import { VehicleUpgradeRarity } from "../../VehicleUpgradeRarity";
+import { levelUpStr } from "../LevelUpStr";
 
 export class CriticalStrike extends VehicleUpgrade {
   public readonly name = "Critical Strike";
@@ -10,8 +11,12 @@ export class CriticalStrike extends VehicleUpgrade {
     "ReplaceableTextures/CommandButtons/BTNCriticalStrike.blp";
   public readonly cost = 200;
   public readonly maxLevel = 5;
-  public readonly description =
-    "Gives a 20% chance to increase any damage dealt by 2 times the normal amount";
+  public readonly description = (level: number) =>
+    `Gives a 20% chance to increase any damage dealt by ${levelUpStr(
+      level,
+      1,
+      1
+    )} times the normal amount`;
 
   public applyUpgrade(vehicle: Vehicle): void {
     if (vehicle.upgradeMap.get(this.name) !== 1) return;

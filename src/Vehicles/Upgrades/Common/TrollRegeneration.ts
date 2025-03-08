@@ -3,6 +3,7 @@ import { TimerUtils } from "../../../Utility/TimerUtils";
 import { Vehicle } from "../../Vehicle";
 import { VehicleUpgrade } from "../../VehicleUpgrade";
 import { VehicleUpgradeRarity } from "../../VehicleUpgradeRarity";
+import { levelUpStr } from "../LevelUpStr";
 
 export class TrollRegeneration extends VehicleUpgrade {
   public readonly name = "Troll Regeneration";
@@ -10,8 +11,11 @@ export class TrollRegeneration extends VehicleUpgrade {
   public readonly icon = "ReplaceableTextures/CommandButtons/BTNRegenerate.blp";
   public readonly cost = 150;
   public readonly maxLevel = 5;
-  public readonly description =
-    "Regenerates 10 hit points per second while not moving";
+  public readonly description = (level: number) =>
+    `Regenerates ${levelUpStr(
+      level,
+      10
+    )} hit points per second while not moving`;
 
   private readonly playerTimers: Timer[] = [];
   private readonly playerUnitPosition: [number, number][] = [];

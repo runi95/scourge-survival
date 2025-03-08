@@ -9,7 +9,7 @@ export class ScourgeBoneChimes extends VehicleUpgrade {
   public readonly icon = "ReplaceableTextures/CommandButtons/BTNBoneChimes.blp";
   public readonly cost = 400;
   public readonly maxLevel = 1;
-  public readonly description =
+  public readonly description = () =>
     "Heals your hero for +12% of all damage dealt (including spell and ranged damage)";
 
   public applyUpgrade(vehicle: Vehicle): void {

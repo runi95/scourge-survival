@@ -4,6 +4,7 @@ import { VehicleUpgrade } from "../../VehicleUpgrade";
 import { VehicleUpgradeRarity } from "../../VehicleUpgradeRarity";
 import { TimerUtils } from "../../../Utility/TimerUtils";
 import { Globals } from "../../../Utility/Globals";
+import { levelUpStr } from "../LevelUpStr";
 
 export class StormHammers extends VehicleUpgrade {
   public readonly name = "Storm Hammers";
@@ -13,9 +14,13 @@ export class StormHammers extends VehicleUpgrade {
   public readonly cost = 500;
   public readonly maxLevel = 5;
   public readonly isWeapon = true;
-  public readonly description = `Fires Storm Hammers at random enemy units within range.
+  public readonly description = (
+    level: number
+  ) => `Fires Storm Hammers at random enemy units within range.
 
-Damage: |cffffcc00180 - 224|r
+Damage: ${
+    level > 1 ? `${levelUpStr(level, 1, 0, true)} x ` : "|cffffcc00"
+  }180 - 224|r
 Cooldown: |cffffcc001s|r
 Range: |cffffcc00450|r
 Area of Effect (line splash): |cffffcc00250|r

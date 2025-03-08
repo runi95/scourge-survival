@@ -1,6 +1,7 @@
 import { Vehicle } from "../../Vehicle";
 import { VehicleUpgrade } from "../../VehicleUpgrade";
 import { VehicleUpgradeRarity } from "../../VehicleUpgradeRarity";
+import { levelUpStr } from "../LevelUpStr";
 
 export class SlowAura extends VehicleUpgrade {
   public readonly name = "Slow Aura";
@@ -8,8 +9,11 @@ export class SlowAura extends VehicleUpgrade {
   public readonly icon = "ReplaceableTextures/CommandButtons/BTNTornado.blp";
   public readonly cost = 150;
   public readonly maxLevel = 5;
-  public readonly description =
-    "Slow nearby enemy units movement speed by -6% in a range of 600";
+  public readonly description = (level: number) =>
+    `Slow nearby enemy units movement speed by -${levelUpStr(
+      level,
+      6
+    )}% in a range of 600`;
 
   private readonly slowAuraAilityId: number = FourCC("A01A");
 

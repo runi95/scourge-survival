@@ -9,7 +9,7 @@ export class Berserk extends VehicleUpgrade {
     "ReplaceableTextures/CommandButtons/BTNBerserkForTrolls.blp";
   public readonly cost = 250;
   public readonly maxLevel = 1;
-  public readonly description =
+  public readonly description = () =>
     "Increases all damage dealt by +50% and all damage received by +30%";
 
   public applyUpgrade(vehicle: Vehicle): void {

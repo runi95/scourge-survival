@@ -1,6 +1,7 @@
 import { Vehicle } from "../../Vehicle";
 import { VehicleUpgrade } from "../../VehicleUpgrade";
 import { VehicleUpgradeRarity } from "../../VehicleUpgradeRarity";
+import { levelUpStr } from "../LevelUpStr";
 
 export class HardenedSkin extends VehicleUpgrade {
   public readonly name = "Hardened Skin";
@@ -9,8 +10,9 @@ export class HardenedSkin extends VehicleUpgrade {
     "ReplaceableTextures/CommandButtons/BTNHardenedSkin.blp";
   public readonly cost = 150;
   public readonly maxLevel = 5;
-  public readonly description =
-    "Reduces all attacks by 4 damage|nAttacks cannot be reduced below 2 damage";
+  public readonly description = (level: number) =>
+    `Reduces all attacks by ${levelUpStr(level, 4)} damage
+Attacks cannot be reduced below 2 damage.`;
 
   private readonly hardenedSkinAbilityId: number = FourCC("A00I");
 

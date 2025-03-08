@@ -4,6 +4,7 @@ import { Vehicle } from "../../Vehicle";
 import { VehicleUpgrade } from "../../VehicleUpgrade";
 import { VehicleUpgradeRarity } from "../../VehicleUpgradeRarity";
 import { Globals } from "../../../Utility/Globals";
+import { levelUpStr } from "../LevelUpStr";
 
 export class BreathOfFire extends VehicleUpgrade {
   public readonly name = "Breath of Fire";
@@ -13,9 +14,11 @@ export class BreathOfFire extends VehicleUpgrade {
   public readonly cost = 200;
   public readonly maxLevel = 5;
   public readonly isWeapon = true;
-  public readonly description = `Leaves a trail of fire that burns enemies behind you whenever your hero moves around.
+  public readonly description = (
+    level: number
+  ) => `Leaves a trail of fire that burns enemies behind you whenever your hero moves around.
 
-Damage: |cffffcc0010|r
+Damage: ${levelUpStr(level, 10)}
 Cooldown: |cffffcc001s|r
 Area of effect: |cffffcc00125|r
 Targets: |cffffcc00ground only!|r

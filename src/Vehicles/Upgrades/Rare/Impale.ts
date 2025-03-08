@@ -5,6 +5,7 @@ import { VehicleUpgrade } from "../../VehicleUpgrade";
 import { VehicleUpgradeRarity } from "../../VehicleUpgradeRarity";
 import { RandomNumberGenerator } from "../../../Utility/RandomNumberGenerator";
 import { Globals } from "../../../Utility/Globals";
+import { levelUpStr } from "../LevelUpStr";
 
 export class Impale extends VehicleUpgrade {
   public readonly rarity = VehicleUpgradeRarity.RARE;
@@ -12,11 +13,14 @@ export class Impale extends VehicleUpgrade {
   public readonly cost = 300;
   public readonly maxLevel = 5;
   public readonly isWeapon = true;
-  public readonly description = `Impales the ground in a random direction, hurting and stunning enemy units that are hit.
+  public readonly description = (
+    level: number
+  ) => `Impales the ground in a random direction, hurting and stunning enemy units that are hit.
 
-Damage: |cffffcc0075|r
+Damage: ${levelUpStr(level, 75)}
 Cooldown: |cffffcc001.5s|r
-Range: |cffffcc00400|r
+Range: ${levelUpStr(level, 150, 250)}
+Stun duration: ${levelUpStr(level, 0.125, 0.875, true)}s|r
 Targets: |cffffcc00ground only!|r
 Damage type: |cffffcc00spell|r`;
 

@@ -16,9 +16,17 @@ export class ClusterRockets extends VehicleUpgrade {
   public readonly cost = 250;
   public readonly maxLevel = 5;
   public readonly isWeapon = true;
-  public readonly description = `Sends Cluster Rockets firing off in a random area at a random direction.
+  public readonly description = (
+    level: number
+  ) => `Sends Cluster Rockets firing off in a random area at a random direction.
 
-Damage: |cffffcc006 x 17.5 (max 210)|r
+Damage: ${
+    level > 1
+      ? `|cff808080${(level - 1) * 6} x ${(level - 1) * 17.5} (max ${
+          (level - 1) * 210
+        })|r => |cffffcc00${level * 6} x ${level * 17.5} (max ${level * 210})|r`
+      : `|cffffcc00${level * 6} x ${level * 17.5} (max ${level * 210})|r`
+  }
 Cooldown: |cffffcc002s|r
 Area of effect: |cffffcc00300|r
 Targets: |cffffcc00air & ground|r

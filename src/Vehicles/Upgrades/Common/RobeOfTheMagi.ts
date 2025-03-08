@@ -8,7 +8,7 @@ export class RobeOfTheMagi extends VehicleUpgrade {
   public readonly icon =
     "ReplaceableTextures/CommandButtons/BTNRobeOfTheMagi.blp";
   public readonly cost = 50;
-  public readonly description = "Increases Intelligence by +5 points";
+  public readonly description = () => "Increases Intelligence by +5 points";
 
   public applyUpgrade(vehicle: Vehicle): void {
     vehicle.unit.setIntelligence(vehicle.unit.intelligence + 5, true);

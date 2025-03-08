@@ -10,7 +10,7 @@ export abstract class VehicleUpgrade {
   public abstract readonly rarity: VehicleUpgradeRarity;
   public abstract readonly icon: string;
   public abstract readonly cost: number;
-  public abstract readonly description: string;
+  public abstract readonly description: (level: number) => string;
   public abstract applyUpgrade(vehicle: Vehicle): void;
 
   // Optional

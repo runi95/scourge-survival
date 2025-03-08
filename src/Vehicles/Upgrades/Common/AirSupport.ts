@@ -4,6 +4,7 @@ import { VehicleUpgrade } from "../../VehicleUpgrade";
 import { VehicleUpgradeRarity } from "../../VehicleUpgradeRarity";
 import { TimerUtils } from "../../../Utility/TimerUtils";
 import { RandomNumberGenerator } from "../../../Utility/RandomNumberGenerator";
+import { levelUpStr } from "../LevelUpStr";
 
 export class AirSupport extends VehicleUpgrade {
   public readonly name = "Air Support";
@@ -13,9 +14,11 @@ export class AirSupport extends VehicleUpgrade {
   public readonly cost = 150;
   public readonly maxLevel = 5;
   public readonly isWeapon = true;
-  public readonly description = `Spawns 3 Flying Machines that follows your hero around and attack nearby enemy units.
+  public readonly description = (
+    level: number
+  ) => `Spawns 3 Flying Machines that follows your hero around to attack nearby enemy units.
 
-Damage: |cffffcc003 x 25|r
+Damage: |cffffcc003 x |r${levelUpStr(level, 25)}
 Cooldown: |cffffcc002s|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00piercing|r`;

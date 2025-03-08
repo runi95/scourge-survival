@@ -1,6 +1,7 @@
 import { Vehicle } from "../../Vehicle";
 import { VehicleUpgrade } from "../../VehicleUpgrade";
 import { VehicleUpgradeRarity } from "../../VehicleUpgradeRarity";
+import { levelUpStr } from "../LevelUpStr";
 
 export class PermanentImmolation extends VehicleUpgrade {
   public readonly name = "Permanent Immolation";
@@ -10,9 +11,11 @@ export class PermanentImmolation extends VehicleUpgrade {
   public readonly cost = 250;
   public readonly maxLevel = 5;
   public readonly isWeapon = true;
-  public readonly description = `Engulfs your hero in flames that deal damage to nearby enemy units.
+  public readonly description = (
+    level: number
+  ) => `Engulfs your hero in flames that deal damage to nearby enemy units.
 
-Damage: |cffffcc0010|r
+Damage: ${levelUpStr(level, 10)}
 Cooldown: |cffffcc001s|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r`;

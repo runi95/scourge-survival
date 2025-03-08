@@ -9,7 +9,7 @@ export class MagicSentry extends VehicleUpgrade {
     "ReplaceableTextures/CommandButtons/BTNMagicalSentry.blp";
   public readonly cost = 350;
   public readonly maxLevel = 1;
-  public readonly description =
+  public readonly description = () =>
     "Heals your hero for +50% of the mana spent on casting a spell";
 
   public applyUpgrade(_vehicle: Vehicle): void {
