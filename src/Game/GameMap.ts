@@ -4,9 +4,9 @@ import { Creep } from "./Creep";
 import { WaveWithUpgrades } from "./Waves/Wave";
 
 export class GameMap {
-  public static ONLINE_PLAYER_ID_LIST: number[] = [];
-  public static IS_PLAYER_ID_ONLINE: boolean[] = [];
-  public static IS_PLAYER_DEFEATED: boolean[] = [];
+  public static readonly ONLINE_PLAYER_ID_LIST: number[] = [];
+  public static readonly IS_PLAYER_ID_ONLINE: boolean[] = [];
+  public static readonly IS_PLAYER_DEFEATED: boolean[] = [];
   public static readonly PLAYER_COLORS = [
     "ffff0303",
     "ff0042ff",
@@ -33,8 +33,8 @@ export class GameMap {
     "ff00781e",
     "ffa46f33",
   ];
-  public static PLAYER_AREAS: Rectangle[] = [];
-  public static PLAYER_VEHICLES: Vehicle[] = [
+  public static readonly PLAYER_AREAS: Rectangle[] = [];
+  public static readonly PLAYER_VEHICLES: Vehicle[] = [
     new Vehicle(),
     new Vehicle(),
     new Vehicle(),

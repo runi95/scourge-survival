@@ -106,19 +106,33 @@ export class Game {
   }
 
   public start(): void {
-    GameMap.PLAYER_AREAS = [
-      Rectangle.create(-15232.0, 5248.0, -5504.0, 14976.0), // Red
-      Rectangle.create(-4864.0, 5248.0, 4864.0, 14976.0), // Blue
-      Rectangle.create(5504.0, 5248.0, 15232.0, 14976.0), // Teal
-
-      Rectangle.create(-15232.0, -5120.0, -5504.0, 4608.0), // Purple
-      Rectangle.create(-4864.0, -5120.0, -4864.0, 4608.0), // Yellow
-      Rectangle.create(5504.0, -5120.0, 15232.0, 4608.0), // Orange
-
-      Rectangle.create(-15232.0, -15488.0, -5504.0, -5760.0), // Green
-      Rectangle.create(-4864.0, -15488.0, -4864.0, -5760.0), // Pink
-      Rectangle.create(5504.0, -15488.0, 15232.0, -5760.0), // Grey
-    ];
+    GameMap.PLAYER_AREAS.push(
+      Rectangle.create(-15232.0, 5248.0, -5504.0, 14976.0)
+    ); // Red
+    GameMap.PLAYER_AREAS.push(
+      Rectangle.create(-4864.0, 5248.0, 4864.0, 14976.0)
+    ); // Blue
+    GameMap.PLAYER_AREAS.push(
+      Rectangle.create(5504.0, 5248.0, 15232.0, 14976.0)
+    ); // Teal
+    GameMap.PLAYER_AREAS.push(
+      Rectangle.create(-15232.0, -5120.0, -5504.0, 4608.0)
+    ); // Purple
+    GameMap.PLAYER_AREAS.push(
+      Rectangle.create(-4864.0, -5120.0, -4864.0, 4608.0)
+    ); // Yellow
+    GameMap.PLAYER_AREAS.push(
+      Rectangle.create(5504.0, -5120.0, 15232.0, 4608.0)
+    ); // Orange
+    GameMap.PLAYER_AREAS.push(
+      Rectangle.create(-15232.0, -15488.0, -5504.0, -5760.0)
+    ); // Green
+    GameMap.PLAYER_AREAS.push(
+      Rectangle.create(-4864.0, -15488.0, -4864.0, -5760.0)
+    ); // Pink
+    GameMap.PLAYER_AREAS.push(
+      Rectangle.create(5504.0, -15488.0, 15232.0, -5760.0)
+    ); // Grey
 
     const playerLeavesTrig: Trigger = Trigger.create();
     playerLeavesTrig.addAction(() => {
