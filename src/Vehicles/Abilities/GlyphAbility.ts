@@ -6,10 +6,7 @@ export class GlyphAbility {
   public static PLAYER_ID_UNLOCKS: boolean[] = [];
   private readonly runesTrig: Trigger;
 
-  private readonly gameMap: GameMap;
-
-  constructor(gameMap: GameMap) {
-    this.gameMap = gameMap;
+  constructor() {
     this.runesTrig = Trigger.create();
     this.runesTrig.addAction(() => {
       const killingUnit = GetKillingUnit();
@@ -19,8 +16,8 @@ export class GlyphAbility {
       const playerId = dyingUnit.owner.id;
       if (playerId < 9) return;
 
-      const vehicle = this.gameMap.playerVehicles[playerId - 9];
-      if (vehicle == null) return;
+      const vehicle = GameMap.PLAYER_VEHICLES[playerId - 9];
+      if (vehicle.unit == null) return;
 
       const glyphLevel = vehicle.upgradeMap.get("Glyph");
       if (glyphLevel == null) return;

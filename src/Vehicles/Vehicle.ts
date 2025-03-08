@@ -1,21 +1,12 @@
 import type { Unit } from "w3ts";
 
-let internalIdSeq = 0;
 export class Vehicle {
-  public readonly internalId: number;
-  public readonly customData: unknown;
   public readonly upgradeMap = new Map<string, number>();
   public readonly skillMap = new Map<number, number>();
   public readonly cooldowns = new Map<string, number>();
-  public readonly unit: Unit;
-  public readonly weapons: string[];
+  public readonly weapons: string[] = [];
+  public unit: Unit | null = null;
   public weaponLimit: number = 4;
   public lastKnownX: number = 0;
   public lastKnownY: number = 0;
-
-  constructor(unit: Unit, weapons: string[]) {
-    this.internalId = internalIdSeq++;
-    this.unit = unit;
-    this.weapons = weapons;
-  }
 }

@@ -1,20 +1,15 @@
-import { MapPlayer, Trigger } from "w3ts";
+import { Trigger } from "w3ts";
 import { OrderId } from "w3ts/globals";
 import { CREEP_TYPE, GameMap } from "./GameMap";
 import { Globals } from "../Utility/Globals";
 
 export class CreepAbilityController {
-  private readonly gameMap: GameMap;
   private readonly attackTrigger = Trigger.create();
 
   private readonly dummyUnitId: number = FourCC("u000");
   private readonly crippleBuffId = FourCC("Bcri");
   private readonly crippleAbilityId = FourCC("A00C");
   private readonly blizzardUnitTypeId = FourCC("u00B");
-
-  constructor(gameMap: GameMap) {
-    this.gameMap = gameMap;
-  }
 
   public initialize() {
     this.attackTrigger.addAction(() => {
@@ -67,10 +62,10 @@ export class CreepAbilityController {
     });
 
     for (let i = 0; i < GameMap.ONLINE_PLAYER_ID_LIST.length; i++) {
-      this.attackTrigger.registerUnitEvent(
-        this.gameMap.playerVehicles[GameMap.ONLINE_PLAYER_ID_LIST[i]].unit,
-        EVENT_UNIT_ATTACKED
-      );
+      const vehicleUnit =
+        GameMap.PLAYER_VEHICLES[GameMap.ONLINE_PLAYER_ID_LIST[i]].unit;
+      if (vehicleUnit == null) continue;
+      this.attackTrigger.registerUnitEvent(vehicleUnit, EVENT_UNIT_ATTACKED);
     }
   }
 }

@@ -2,19 +2,17 @@ import { Trigger, Unit } from "w3ts/index";
 import { GameMap } from "../../Game/GameMap";
 
 export class ManaLeech {
-  private readonly gameMap: GameMap;
   private readonly manaLeechTrig: Trigger;
 
-  constructor(gameMap: GameMap) {
-    this.gameMap = gameMap;
+  constructor() {
     this.manaLeechTrig = Trigger.create();
     this.manaLeechTrig.addAction(() => {
       const killingUnit = GetKillingUnit();
       if (killingUnit == null) return;
 
       const trig = Unit.fromHandle(killingUnit);
-      const vehicle = this.gameMap.playerVehicles[trig.owner.id];
-      if (vehicle == null) return;
+      const vehicle = GameMap.PLAYER_VEHICLES[trig.owner.id];
+      if (vehicle.unit == null) return;
 
       const manaLeechLevel = vehicle.upgradeMap.get("Mana Leech");
       if (manaLeechLevel == null) return;

@@ -2,19 +2,17 @@ import { Trigger, Unit } from "w3ts/index";
 import { GameMap } from "../../Game/GameMap";
 
 export class MagicSentry {
-  private readonly gameMap: GameMap;
   private readonly magicSentryTrig: Trigger;
 
-  constructor(gameMap: GameMap) {
-    this.gameMap = gameMap;
+  constructor() {
     this.magicSentryTrig = Trigger.create();
     this.magicSentryTrig.addAction(() => {
       const trig = Unit.fromEvent();
       const ownerId = trig.owner.id;
       if (ownerId > 8) return;
 
-      const vehicle = this.gameMap.playerVehicles[ownerId];
-      if (vehicle == null) return;
+      const vehicle = GameMap.PLAYER_VEHICLES[ownerId];
+      if (vehicle.unit == null) return;
 
       const magicSentryLevel = vehicle.upgradeMap.get("Magic Sentry");
       if (magicSentryLevel == null) return;

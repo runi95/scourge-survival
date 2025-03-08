@@ -1,4 +1,3 @@
-import { GameMap } from "../../Game/GameMap";
 import { DamageEngine, DamageEventType, DamageInstance } from "./DamageEngine";
 import { AntiMagicShellDamageEvent } from "./DamageEvents/AntiMagicShellDamageEvent";
 import { BerserkDamageEvent } from "./DamageEvents/BerserkDamageEvent";
@@ -23,11 +22,7 @@ export interface ExtendedDamageInstance extends DamageInstance {
 }
 
 export class DamageEventController {
-  private readonly gameMap: GameMap;
-
-  constructor(gameMap: GameMap) {
-    this.gameMap = gameMap;
-
+  constructor() {
     DamageEngine.registerTransformer((d: ExtendedDamageInstance) => {
       d.sourceOwningPlayer = GetOwningPlayer(d.source);
       d.targetOwningPlayer = GetOwningPlayer(d.target);
@@ -45,15 +40,15 @@ export class DamageEventController {
 
     // On damage events
     DamageEngine.register(
-      new MagicSurgeDamageEvent(this.gameMap),
+      new MagicSurgeDamageEvent(),
       DamageEventType.OnDamageEvent
     );
     DamageEngine.register(
-      new WarDrumsDamageEvent(this.gameMap),
+      new WarDrumsDamageEvent(),
       DamageEventType.OnDamageEvent
     );
     DamageEngine.register(
-      new BerserkDamageEvent(this.gameMap),
+      new BerserkDamageEvent(),
       DamageEventType.OnDamageEvent
     );
     DamageEngine.register(
@@ -69,21 +64,21 @@ export class DamageEventController {
       DamageEventType.OnDamageEvent
     );
     DamageEngine.register(
-      new CriticalStrikeDamageEvent(this.gameMap),
+      new CriticalStrikeDamageEvent(),
       DamageEventType.OnDamageEvent
     );
 
     // After damage events
     DamageEngine.register(
-      new InnerFireDamageEvent(this.gameMap),
+      new InnerFireDamageEvent(),
       DamageEventType.AfterDamageEvent
     );
     DamageEngine.register(
-      new ScourgeBoneChimesDamageEvent(this.gameMap),
+      new ScourgeBoneChimesDamageEvent(),
       DamageEventType.AfterDamageEvent
     );
     DamageEngine.register(
-      new ThornsDamageEvent(this.gameMap),
+      new ThornsDamageEvent(),
       DamageEventType.AfterDamageEvent
     );
   }

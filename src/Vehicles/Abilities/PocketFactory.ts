@@ -7,15 +7,13 @@ import { GameMap } from "../../Game/GameMap";
 const MULT = Math.PI / 180;
 
 export class PocketFactory {
-  private readonly gameMap: GameMap;
   private readonly trigger = Trigger.create();
 
   private readonly pocketFactoryItemTypeId = FourCC("I00O");
   private readonly dummyUnitId: number = FourCC("u000");
   private readonly pocketFactoryAbilityId: number = FourCC("A01C");
 
-  constructor(gameMap: GameMap) {
-    this.gameMap = gameMap;
+  constructor() {
     this.trigger.addAction(() => {
       const item = GetManipulatedItem();
       if (GetItemTypeId(item) !== this.pocketFactoryItemTypeId) return;
@@ -23,8 +21,8 @@ export class PocketFactory {
       const unit = Unit.fromEvent();
       const owner = unit.owner;
       const ownerId = owner.id;
-      const vehicle = this.gameMap.playerVehicles[ownerId];
-      if (vehicle == null) return;
+      const vehicle = GameMap.PLAYER_VEHICLES[ownerId];
+      if (vehicle.unit == null) return;
 
       this.createFactory(vehicle, owner);
     });

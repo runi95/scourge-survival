@@ -12,7 +12,6 @@ import { VehicleUpgrade } from "../Vehicles/VehicleUpgrade";
 import { VehicleUpgradeRarity } from "../Vehicles/VehicleUpgradeRarity";
 
 export class VehicleUpgradeSystem {
-  private readonly gameMap: GameMap;
   private readonly originFrameGameUi: Frame;
   private readonly menu: Frame;
   private readonly upgradeIconBorderFrames: Frame[] = [];
@@ -24,8 +23,7 @@ export class VehicleUpgradeSystem {
 
   private hasUsedFreeReroll: boolean[] = [];
 
-  constructor(gameMap: GameMap) {
-    this.gameMap = gameMap;
+  constructor() {
     this.originFrameGameUi = Frame.fromOrigin(ORIGIN_FRAME_GAME_UI, 0);
 
     this.menu = Frame.create("EscMenuBackdrop", this.originFrameGameUi, -1, 0);
@@ -110,10 +108,8 @@ export class VehicleUpgradeSystem {
     );
 
     for (let i = 0; i < 4; i++) {
-      const { icon, borderIcon, text, costColor, cost } = this.getUpgradeData(
-        i,
-        true
-      );
+      const { icon, borderIcon, text, costColor, cost } =
+        this.getUpgradeData(i);
       const [upgradeIconFrame, upgradeIconBorderFrame, upgradeCostFrame] =
         this.createUpgradeIconFrame(
           this.menu,
@@ -138,7 +134,7 @@ export class VehicleUpgradeSystem {
     this.menu.setFocus(false);
   }
 
-  private getUpgradeData(iconIndex: number, skipVehicleCheck = false) {
+  private getUpgradeData(iconIndex: number) {
     const upgrade =
       vehicleUpgrades[this.upgradeIndexes[this.localPlayerId][iconIndex]];
     let icon = "UI/Widgets/EscMenu/Human/Quest-Unknown.dds";
@@ -147,44 +143,44 @@ export class VehicleUpgradeSystem {
     let nameColor = "|cFFFFFFFF";
     let costColor = "|cFFFFCC00";
     let cost: number | string = 0;
-    if (upgrade != null) {
-      icon = upgrade.icon;
-      cost = upgrade.cost;
-      if (upgrade.maxLevel != null && !skipVehicleCheck) {
-        const vehicle = this.gameMap.playerVehicles[this.localPlayerId];
-        if ((vehicle.upgradeMap.get(upgrade.name) ?? 0) >= upgrade.maxLevel) {
+    if (upgrade == null) return { icon, borderIcon, text, costColor, cost };
+
+    icon = upgrade.icon;
+    cost = upgrade.cost;
+    const vehicle = GameMap.PLAYER_VEHICLES[this.localPlayerId];
+    if (upgrade.maxLevel != null) {
+      if ((vehicle.upgradeMap.get(upgrade.name) ?? 0) >= upgrade.maxLevel) {
+        costColor = "|cFFC3DBFF";
+        cost = "MAX";
+      } else if (upgrade.isWeapon) {
+        if (
+          vehicle.weapons.length + 1 > vehicle.weaponLimit &&
+          !vehicle.weapons.some((weapons) => weapons === upgrade.name)
+        ) {
           costColor = "|cFFC3DBFF";
           cost = "MAX";
-        } else if (upgrade.isWeapon) {
-          if (
-            vehicle.weapons.length + 1 > vehicle.weaponLimit &&
-            !vehicle.weapons.some((weapons) => weapons === upgrade.name)
-          ) {
-            costColor = "|cFFC3DBFF";
-            cost = "MAX";
-          }
         }
       }
-
-      switch (upgrade.rarity) {
-        case VehicleUpgradeRarity.UNCOMMON:
-          borderIcon = "war3mapImported/UncommonBorder.dds";
-          nameColor = "|cFF00FF00";
-          break;
-        case VehicleUpgradeRarity.RARE:
-          borderIcon = "war3mapImported/RareBorder.dds";
-          nameColor = "|cFF4080FF";
-          break;
-        case VehicleUpgradeRarity.LEGENDARY:
-          borderIcon = "war3mapImported/LegendaryBorder.dds";
-          nameColor = "|cFFFF8040";
-          break;
-      }
-
-      text =
-        `${nameColor}${upgrade.name}|r |cFFFFCC00(${cost})|r|n|n` +
-        upgrade.description;
     }
+
+    switch (upgrade.rarity) {
+      case VehicleUpgradeRarity.UNCOMMON:
+        borderIcon = "war3mapImported/UncommonBorder.dds";
+        nameColor = "|cFF00FF00";
+        break;
+      case VehicleUpgradeRarity.RARE:
+        borderIcon = "war3mapImported/RareBorder.dds";
+        nameColor = "|cFF4080FF";
+        break;
+      case VehicleUpgradeRarity.LEGENDARY:
+        borderIcon = "war3mapImported/LegendaryBorder.dds";
+        nameColor = "|cFFFF8040";
+        break;
+    }
+
+    text =
+      `${nameColor}${upgrade.name}|r |cFFFFCC00(${cost})|r|n|n` +
+      upgrade.description;
 
     return { icon, borderIcon, text, costColor, cost };
   }
@@ -409,12 +405,10 @@ export class VehicleUpgradeSystem {
       buttonFrame.setEnabled(false);
       buttonFrame.setEnabled(true);
 
-      const vehicle = this.gameMap.playerVehicles[player.id];
-      if (vehicle == null) return;
-
       const playerId = player.id;
       const upgrade: VehicleUpgrade =
         vehicleUpgrades[this.upgradeIndexes[playerId][index]];
+      const vehicle = GameMap.PLAYER_VEHICLES[player.id];
       if (
         upgrade.maxLevel != null &&
         (vehicle.upgradeMap.get(upgrade.name) ?? 0) >= upgrade.maxLevel

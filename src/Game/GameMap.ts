@@ -7,7 +7,6 @@ export class GameMap {
   public static ONLINE_PLAYER_ID_LIST: number[] = [];
   public static IS_PLAYER_ID_ONLINE: boolean[] = [];
   public static IS_PLAYER_DEFEATED: boolean[] = [];
-  public static readonly SELECTED_VEHCILE_MAP: Map<number, Vehicle> = new Map();
   public static readonly PLAYER_COLORS = [
     "ffff0303",
     "ff0042ff",
@@ -35,7 +34,17 @@ export class GameMap {
     "ffa46f33",
   ];
   public static PLAYER_AREAS: Rectangle[] = [];
-  public playerVehicles: (Vehicle | null)[] = [];
+  public static PLAYER_VEHICLES: Vehicle[] = [
+    new Vehicle(),
+    new Vehicle(),
+    new Vehicle(),
+    new Vehicle(),
+    new Vehicle(),
+    new Vehicle(),
+    new Vehicle(),
+    new Vehicle(),
+    new Vehicle(),
+  ];
   public static CURRENT_WAVE: number = 0;
   public static readonly REMAINING_PLAYER_CREEPS: Map<number, Creep>[] = [];
   public static readonly REMAINING_PLAYER_CREEPS_COUNT: Map<number, number> =

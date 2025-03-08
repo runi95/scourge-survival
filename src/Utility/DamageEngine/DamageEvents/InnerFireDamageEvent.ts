@@ -8,16 +8,10 @@ import { Globals } from "../../Globals";
 export class InnerFireDamageEvent implements DamageEvent {
   public static READY_INSTANCES = 0;
 
-  private readonly gameMap: GameMap;
-
   private readonly playerTimers: Timer[] = [];
 
   private readonly dummyUnitId: number = FourCC("u000");
   private readonly innerFireAbilityId: number = FourCC("A00Z");
-
-  constructor(gameMap: GameMap) {
-    this.gameMap = gameMap;
-  }
 
   public event(damageInstance: ExtendedDamageInstance): void {
     if (damageInstance.damage < 1) return;
@@ -25,8 +19,8 @@ export class InnerFireDamageEvent implements DamageEvent {
     if (InnerFireDamageEvent.READY_INSTANCES === 0) return;
 
     const vehicle =
-      this.gameMap.playerVehicles[damageInstance.targetOwningPlayerId];
-    if (vehicle == null) return;
+      GameMap.PLAYER_VEHICLES[damageInstance.targetOwningPlayerId];
+    if (vehicle.unit == null) return;
 
     const innerFireLevel = vehicle.upgradeMap.get("Inner Fire");
     if (innerFireLevel == null) return;

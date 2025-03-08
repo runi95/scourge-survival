@@ -5,20 +5,14 @@ import type { ExtendedDamageInstance } from "../DamageEventController";
 export class MagicSurgeDamageEvent implements DamageEvent {
   public static READY_INSTANCES = 0;
 
-  private readonly gameMap: GameMap;
-
-  constructor(gameMap: GameMap) {
-    this.gameMap = gameMap;
-  }
-
   public event(damageInstance: ExtendedDamageInstance): void {
     if (damageInstance.damage < 1) return;
     if (damageInstance.targetOwningPlayerId !== 23) return;
     if (MagicSurgeDamageEvent.READY_INSTANCES === 0) return;
 
     const vehicle =
-      this.gameMap.playerVehicles[damageInstance.sourceOwningPlayerId];
-    if (vehicle == null) return;
+      GameMap.PLAYER_VEHICLES[damageInstance.sourceOwningPlayerId];
+    if (vehicle.unit == null) return;
 
     const magicSurgeLevel = vehicle.upgradeMap.get("Magic Surge");
     if (magicSurgeLevel == null) return;

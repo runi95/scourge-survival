@@ -7,7 +7,6 @@ import { PortalWave } from "./Waves/index";
 import { CreepUpgradesFrameSystem } from "./CreepUpgrades/CreepUpgradesFrameSystem";
 
 export class Spawner {
-  private readonly gameMap: GameMap;
   private readonly creepUpgradeFrameSystem: CreepUpgradesFrameSystem;
 
   private waveTimer: Timer;
@@ -20,11 +19,7 @@ export class Spawner {
   private readonly deathTrigger = Trigger.create();
   private readonly dummyUnitTypeId = FourCC("u000");
 
-  constructor(
-    gameMap: GameMap,
-    creepUpgradeFrameSystem: CreepUpgradesFrameSystem
-  ) {
-    this.gameMap = gameMap;
+  constructor(creepUpgradeFrameSystem: CreepUpgradesFrameSystem) {
     this.creepUpgradeFrameSystem = creepUpgradeFrameSystem;
     this.positionTimer = TimerUtils.newTimer();
     this.attackTimer = TimerUtils.newTimer();
@@ -82,8 +77,8 @@ export class Spawner {
     this.positionTimer.start(1, true, () => {
       for (let i = 0; i < GameMap.ONLINE_PLAYER_ID_LIST.length; i++) {
         const playerId = GameMap.ONLINE_PLAYER_ID_LIST[i];
-        const vehicle = this.gameMap.playerVehicles[playerId];
-        if (vehicle == null) continue;
+        const vehicle = GameMap.PLAYER_VEHICLES[playerId];
+        if (vehicle.unit == null) continue;
 
         const { x, y } = vehicle.unit;
         vehicle.lastKnownX = x;
@@ -94,8 +89,8 @@ export class Spawner {
     this.attackTimer.start(0.1, true, () => {
       for (let i = 0; i < GameMap.ONLINE_PLAYER_ID_LIST.length; i++) {
         const playerId = GameMap.ONLINE_PLAYER_ID_LIST[i];
-        const vehicle = this.gameMap.playerVehicles[playerId];
-        if (vehicle == null) continue;
+        const vehicle = GameMap.PLAYER_VEHICLES[playerId];
+        if (vehicle.unit == null) continue;
 
         let counter = 0;
         for (const [_id, creep] of GameMap.REMAINING_PLAYER_CREEPS[
@@ -147,9 +142,8 @@ export class Spawner {
 
   private startWave() {
     for (let i = 0; i < GameMap.ONLINE_PLAYER_ID_LIST.length; i++) {
-      const vehicle =
-        this.gameMap.playerVehicles[GameMap.ONLINE_PLAYER_ID_LIST[i]];
-      if (vehicle == null) continue;
+      const vehicle = GameMap.PLAYER_VEHICLES[GameMap.ONLINE_PLAYER_ID_LIST[i]];
+      if (vehicle.unit == null) continue;
 
       const { x, y } = vehicle.unit;
       vehicle.lastKnownX = x;
@@ -267,8 +261,7 @@ export class Spawner {
 
         if (!attackImmediately) continue;
 
-        const vehicle = this.gameMap.playerVehicles[playerId];
-        if (vehicle == null) continue;
+        const vehicle = GameMap.PLAYER_VEHICLES[playerId];
         const attackX = vehicle.lastKnownX;
         const attackY = vehicle.lastKnownY;
         creep.attackOrderPosition = [attackX, attackY];

@@ -1,17 +1,9 @@
-import { TextTag } from "w3ts/index";
 import { GameMap } from "../../../Game/GameMap";
-import { RandomNumberGenerator } from "../../RandomNumberGenerator";
 import { DamageEvent } from "../DamageEvent";
 import type { ExtendedDamageInstance } from "../DamageEventController";
 
 export class ThornsDamageEvent implements DamageEvent {
   public static READY_INSTANCES = 0;
-
-  private readonly gameMap: GameMap;
-
-  constructor(gameMap: GameMap) {
-    this.gameMap = gameMap;
-  }
 
   public event(damageInstance: ExtendedDamageInstance): void {
     if (damageInstance.damage < 1) return;
@@ -20,8 +12,8 @@ export class ThornsDamageEvent implements DamageEvent {
     if (damageInstance.damageType === DAMAGE_TYPE_DEFENSIVE) return;
 
     const vehicle =
-      this.gameMap.playerVehicles[damageInstance.targetOwningPlayerId];
-    if (vehicle == null) return;
+      GameMap.PLAYER_VEHICLES[damageInstance.targetOwningPlayerId];
+    if (vehicle.unit == null) return;
 
     const thornsLevel = vehicle.upgradeMap.get("Thorns");
     if (thornsLevel == null) return;

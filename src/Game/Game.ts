@@ -47,11 +47,11 @@ export class Game {
 
   constructor() {
     this.debugger = new Debugger(this.gameOptions);
-    this.vehicleUpgradeSystem = new VehicleUpgradeSystem(this.gameMap);
-    this.spawner = new Spawner(this.gameMap, this.creepUpgradesFrameSystem);
-    this.abilities = new Abilities(this.gameMap);
-    this.damageEventController = new DamageEventController(this.gameMap);
-    this.creepAbilityController = new CreepAbilityController(this.gameMap);
+    this.vehicleUpgradeSystem = new VehicleUpgradeSystem();
+    this.spawner = new Spawner(this.creepUpgradesFrameSystem);
+    this.abilities = new Abilities();
+    this.damageEventController = new DamageEventController();
+    this.creepAbilityController = new CreepAbilityController();
 
     const availableCreepUpgradeIndexes =
       this.creepUpgrades.creepUpgradeTypes.map((_, i) => i);
@@ -125,8 +125,8 @@ export class Game {
       const playerId = GetPlayerId(GetTriggerPlayer());
       GameMap.IS_PLAYER_ID_ONLINE[playerId] = false;
       GameMap.IS_PLAYER_DEFEATED[playerId] = true;
-      const vehicle = this.gameMap.playerVehicles[playerId];
-      if (vehicle != null && vehicle.unit.isAlive()) {
+      const vehicle = GameMap.PLAYER_VEHICLES[playerId];
+      if (vehicle.unit?.isAlive()) {
         vehicle.unit.kill();
       }
 
@@ -168,7 +168,7 @@ export class Game {
 
     for (let i = 0; i < 9; i++) {
       const player = MapPlayer.fromIndex(i);
-      new Commands(this.gameOptions, this.gameMap, player);
+      new Commands(this.gameOptions, player);
 
       playerLeavesTrig.registerPlayerEvent(player, EVENT_PLAYER_LEAVE);
       if (
@@ -247,11 +247,10 @@ export class Game {
         });
         zeppelinDeathTrigger.registerUnitEvent(zeppelinUnit, EVENT_UNIT_DEATH);
 
-        const vehicle = new Vehicle(vehicleUnit, ["Cannon"]);
+        const vehicle = GameMap.PLAYER_VEHICLES[i];
+        vehicle.unit = vehicleUnit;
+        vehicle.weapons.push("Cannon");
         vehicle.upgradeMap.set("Cannon", 1);
-
-        this.gameMap.playerVehicles.push(vehicle);
-        GameMap.SELECTED_VEHCILE_MAP.set(vehicleUnit.id, vehicle);
 
         const playerName = player.name;
         const vehicleDeathTrig = Trigger.create();
@@ -280,7 +279,6 @@ export class Game {
       } else {
         GameMap.IS_PLAYER_ID_ONLINE.push(false);
         GameMap.IS_PLAYER_DEFEATED.push(true);
-        this.gameMap.playerVehicles.push(null);
       }
     }
 

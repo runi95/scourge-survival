@@ -7,11 +7,9 @@ export class UnholyFrenzy {
   private readonly unholyFrenzyTrigAbilityId = FourCC("A01Q");
   private readonly unholyFrenzyAbilityId = FourCC("A01P");
 
-  private readonly gameMap: GameMap;
   private readonly playerTimers: Timer[] = [];
 
-  constructor(gameMap: GameMap) {
-    this.gameMap = gameMap;
+  constructor() {
     this.unholyFrenzyTrig = Trigger.create();
     this.unholyFrenzyTrig.addAction(() => {
       const ability = GetSpellAbilityId();
@@ -22,8 +20,8 @@ export class UnholyFrenzy {
       const ownerId = owner.id;
 
       const playerId = ownerId - 9;
-      const vehicle = this.gameMap.playerVehicles[playerId];
-      if (vehicle == null) return;
+      const vehicle = GameMap.PLAYER_VEHICLES[playerId];
+      if (vehicle.unit == null) return;
 
       vehicle.unit.addAbility(this.unholyFrenzyAbilityId);
       const t: Timer = TimerUtils.newTimer();

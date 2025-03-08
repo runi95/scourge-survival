@@ -3,18 +3,16 @@ import { GameMap } from "../../Game/GameMap";
 
 export class AdeptTraining {
   private readonly adeptTrainingTrig: Trigger;
-  private readonly gameMap: GameMap;
 
-  constructor(gameMap: GameMap) {
-    this.gameMap = gameMap;
+  constructor() {
     this.adeptTrainingTrig = Trigger.create();
     this.adeptTrainingTrig.addAction(() => {
       const triggeringUnit = Unit.fromEvent();
       const { owner } = triggeringUnit;
       const ownerId = owner.id;
 
-      const vehicle = this.gameMap.playerVehicles[ownerId];
-      if (vehicle == null) return;
+      const vehicle = GameMap.PLAYER_VEHICLES[ownerId];
+      if (vehicle.unit == null) return;
 
       const learnedSkill = GetLearnedSkill();
       const skillLevel = GetLearnedSkillLevel();

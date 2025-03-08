@@ -8,13 +8,11 @@ import { GameOptions } from "../Game/GameOptions";
 const COMMAND_PREFIX = "-";
 
 export class Commands {
-  private readonly gameMap: GameMap;
   private readonly gameOptions: GameOptions;
   private readonly player: MapPlayer;
 
-  constructor(gameOptions: GameOptions, gameMap: GameMap, player: MapPlayer) {
+  constructor(gameOptions: GameOptions, player: MapPlayer) {
     this.gameOptions = gameOptions;
-    this.gameMap = gameMap;
     this.player = player;
 
     const trig = Trigger.create();
@@ -59,8 +57,8 @@ export class Commands {
         (() => {
           if (args.length !== 1) return;
 
-          const vehicle = this.gameMap.playerVehicles[0];
-          if (vehicle == null) return;
+          const vehicle = GameMap.PLAYER_VEHICLES[0];
+          if (vehicle.unit == null) return;
 
           vehicle.unit.setHeroLevel(Number(args[0]), true);
         })();

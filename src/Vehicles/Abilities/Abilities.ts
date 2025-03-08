@@ -10,22 +10,17 @@ import { Runes } from "./Runes";
 import { UnholyFrenzy } from "./UnholyFrenzy";
 
 export class Abilities {
-  private readonly gameMap: GameMap;
   private readonly abilities: unknown[] = [];
 
-  constructor(gameMap: GameMap) {
-    this.gameMap = gameMap;
-  }
-
   public initialize() {
-    this.abilities.push(new ManaLeech(this.gameMap));
+    this.abilities.push(new ManaLeech());
     this.abilities.push(new Runes());
-    this.abilities.push(new MagicSentry(this.gameMap));
-    this.abilities.push(new GlyphAbility(this.gameMap));
+    this.abilities.push(new MagicSentry());
+    this.abilities.push(new GlyphAbility());
     this.abilities.push(new Blizzard());
-    this.abilities.push(new PocketFactory(this.gameMap));
-    this.abilities.push(new AdeptTraining(this.gameMap));
+    this.abilities.push(new PocketFactory());
+    this.abilities.push(new AdeptTraining());
     this.abilities.push(new AntiMagicShell());
-    this.abilities.push(new UnholyFrenzy(this.gameMap));
+    this.abilities.push(new UnholyFrenzy());
   }
 }

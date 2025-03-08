@@ -1,17 +1,9 @@
-import { TextTag } from "w3ts/index";
 import { GameMap } from "../../../Game/GameMap";
-import { RandomNumberGenerator } from "../../RandomNumberGenerator";
 import { DamageEvent } from "../DamageEvent";
 import type { ExtendedDamageInstance } from "../DamageEventController";
 
 export class ScourgeBoneChimesDamageEvent implements DamageEvent {
   public static READY_INSTANCES = 0;
-
-  private readonly gameMap: GameMap;
-
-  constructor(gameMap: GameMap) {
-    this.gameMap = gameMap;
-  }
 
   public event(damageInstance: ExtendedDamageInstance): void {
     if (damageInstance.damage < 1) return;
@@ -20,8 +12,8 @@ export class ScourgeBoneChimesDamageEvent implements DamageEvent {
     if (damageInstance.damageType === DAMAGE_TYPE_DEFENSIVE) return;
 
     const vehicle =
-      this.gameMap.playerVehicles[damageInstance.sourceOwningPlayerId];
-    if (vehicle == null) return;
+      GameMap.PLAYER_VEHICLES[damageInstance.sourceOwningPlayerId];
+    if (vehicle.unit == null) return;
 
     const scourgeBoneChimesLevel = vehicle.upgradeMap.get(
       "Scourge Bone Chimes"
