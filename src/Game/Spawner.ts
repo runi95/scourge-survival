@@ -172,7 +172,7 @@ export class Spawner {
         if (income < 1) continue;
 
         const upkeepMult =
-          100 - player.getState(PLAYER_STATE_GOLD_UPKEEP_RATE) * 0.01;
+          (100 - player.getState(PLAYER_STATE_GOLD_UPKEEP_RATE)) * 0.01;
         const realIncome = Math.floor(income * upkeepMult);
         if (realIncome > 0) {
           player.setState(PLAYER_STATE_RESOURCE_GOLD, gold + realIncome);
