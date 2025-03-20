@@ -41,8 +41,8 @@ export const SIX: Wave = {
 
     const localPlayerId = GetPlayerId(GetLocalPlayer());
     PingMinimapEx(
-      GameMap.PLAYER_AREAS[localPlayerId].maxX - 100,
-      GameMap.PLAYER_AREAS[localPlayerId].minY + 100,
+      GameMap.PLAYER_AREAS[localPlayerId].maxX - 640,
+      GameMap.PLAYER_AREAS[localPlayerId].minY + 640,
       4,
       255,
       0,

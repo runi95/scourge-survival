@@ -127,8 +127,8 @@ export class Spawner {
     t.start(10, false, () => {
       const localPlayerId = GetPlayerId(GetLocalPlayer());
       PingMinimapEx(
-        GameMap.PLAYER_AREAS[localPlayerId].minX + 100,
-        GameMap.PLAYER_AREAS[localPlayerId].maxY - 100,
+        GameMap.PLAYER_AREAS[localPlayerId].minX + 640,
+        GameMap.PLAYER_AREAS[localPlayerId].maxY - 640,
         4,
         255,
         0,
@@ -227,11 +227,11 @@ export class Spawner {
         const playerId = GameMap.ONLINE_PLAYER_ID_LIST[i];
         const scourgePlayer = MapPlayer.fromIndex(playerId + 9);
         const x = isFirstPortal
-          ? GameMap.PLAYER_AREAS[playerId].minX + 150
-          : GameMap.PLAYER_AREAS[playerId].maxX - 150;
+          ? GameMap.PLAYER_AREAS[playerId].minX + 640
+          : GameMap.PLAYER_AREAS[playerId].maxX - 640;
         const y = isFirstPortal
-          ? GameMap.PLAYER_AREAS[playerId].maxY - 150
-          : GameMap.PLAYER_AREAS[playerId].minY + 150;
+          ? GameMap.PLAYER_AREAS[playerId].maxY - 640
+          : GameMap.PLAYER_AREAS[playerId].minY + 640;
         Effect.create(
           "AbilitiesSpellsDemonDarkPortalDarkPortalTarget.mdl",
           x,

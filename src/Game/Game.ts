@@ -107,31 +107,31 @@ export class Game {
 
   public start(): void {
     GameMap.PLAYER_AREAS.push(
-      Rectangle.create(-15232.0, 5248.0, -5504.0, 14976.0)
+      Rectangle.create(-14336.0, 6144.0, -6400.0, 14080.0)
     ); // Red
     GameMap.PLAYER_AREAS.push(
-      Rectangle.create(-4864.0, 5248.0, 4864.0, 14976.0)
+      Rectangle.create(-5120.0, 6144.0, 2816.0, 14080.0)
     ); // Blue
     GameMap.PLAYER_AREAS.push(
-      Rectangle.create(5504.0, 5248.0, 15232.0, 14976.0)
+      Rectangle.create(4096.0, 6144.0, 12032.0, 14080.0)
     ); // Teal
     GameMap.PLAYER_AREAS.push(
-      Rectangle.create(-15232.0, -5120.0, -5504.0, 4608.0)
+      Rectangle.create(-14336.0, -3072.0, -6400.0, 6144.0)
     ); // Purple
     GameMap.PLAYER_AREAS.push(
-      Rectangle.create(-4864.0, -5120.0, -4864.0, 4608.0)
+      Rectangle.create(-5120.0, -3072.0, 2816.0, 6144.0)
     ); // Yellow
     GameMap.PLAYER_AREAS.push(
-      Rectangle.create(5504.0, -5120.0, 15232.0, 4608.0)
+      Rectangle.create(4096.0, -3072.0, 12032.0, 6144.0)
     ); // Orange
     GameMap.PLAYER_AREAS.push(
-      Rectangle.create(-15232.0, -15488.0, -5504.0, -5760.0)
+      Rectangle.create(-14336.0, -12416.0, -6400.0, -4480.0)
     ); // Green
     GameMap.PLAYER_AREAS.push(
-      Rectangle.create(-4864.0, -15488.0, -4864.0, -5760.0)
+      Rectangle.create(-5120.0, -12416.0, 2816.0, -4480.0)
     ); // Pink
     GameMap.PLAYER_AREAS.push(
-      Rectangle.create(5504.0, -15488.0, 15232.0, -5760.0)
+      Rectangle.create(4096.0, -12416.0, 12032.0, -4480.0)
     ); // Grey
 
     const playerLeavesTrig: Trigger = Trigger.create();
@@ -195,8 +195,8 @@ export class Game {
 
         player.setState(PLAYER_STATE_RESOURCE_GOLD, 200);
 
-        const x = GameMap.PLAYER_AREAS[i].minX + 200;
-        const y = GameMap.PLAYER_AREAS[i].maxY - 200;
+        const x = GameMap.PLAYER_AREAS[i].minX + 700;
+        const y = GameMap.PLAYER_AREAS[i].maxY - 700;
         const vehicleUnit = Unit.create(
           player,
           this.vehicleUnitTypeId,
