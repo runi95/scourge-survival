@@ -1,10 +1,8 @@
-import { Sound } from "w3ts";
 import { CREEP_TYPE } from "../GameMap";
 import { Wave } from "./Wave";
 
 export const EIGHT: Wave = {
   portals: [
-    [],
     [
       {
         delay: 0.03,
@@ -19,5 +17,6 @@ export const EIGHT: Wave = {
         attackImmediately: true,
       },
     ],
+    [],
   ],
 };
