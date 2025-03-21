@@ -193,7 +193,7 @@ export class Game {
         GameMap.IS_PLAYER_ID_ONLINE.push(true);
         GameMap.IS_PLAYER_DEFEATED.push(false);
 
-        player.setState(PLAYER_STATE_RESOURCE_GOLD, 200);
+        player.setState(PLAYER_STATE_RESOURCE_GOLD, 500);
 
         const x = GameMap.PLAYER_AREAS[i].minX + 700;
         const y = GameMap.PLAYER_AREAS[i].maxY - 700;
