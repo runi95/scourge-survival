@@ -16,6 +16,7 @@ export class InnerFireDamageEvent implements DamageEvent {
   public event(damageInstance: ExtendedDamageInstance): void {
     if (damageInstance.damage < 1) return;
     if (damageInstance.targetOwningPlayerId > 8) return;
+    if (damageInstance.sourceOwningPlayerId < 9) return;
     if (InnerFireDamageEvent.READY_INSTANCES === 0) return;
 
     const vehicle =

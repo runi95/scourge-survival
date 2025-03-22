@@ -10,6 +10,7 @@ export class BerserkDamageEvent implements DamageEvent {
     if (BerserkDamageEvent.READY_INSTANCES === 0) return;
 
     if (damageInstance.sourceOwningPlayerId < 9) {
+      if (damageInstance.targetOwningPlayerId > 8) return;
       const vehicle =
         GameMap.PLAYER_VEHICLES[damageInstance.sourceOwningPlayerId];
       if (vehicle.unit == null) return;
@@ -20,6 +21,7 @@ export class BerserkDamageEvent implements DamageEvent {
 
       damageInstance.damage *= 1.5;
     } else {
+      if (damageInstance.targetOwningPlayerId > 8) return;
       const vehicle =
         GameMap.PLAYER_VEHICLES[damageInstance.sourceOwningPlayerId - 9];
       if (vehicle.unit == null) return;

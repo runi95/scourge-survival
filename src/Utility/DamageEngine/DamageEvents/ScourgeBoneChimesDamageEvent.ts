@@ -8,6 +8,7 @@ export class ScourgeBoneChimesDamageEvent implements DamageEvent {
   public event(damageInstance: ExtendedDamageInstance): void {
     if (damageInstance.damage < 1) return;
     if (damageInstance.targetOwningPlayerId < 9) return;
+    if (damageInstance.sourceOwningPlayerId > 8) return;
     if (ScourgeBoneChimesDamageEvent.READY_INSTANCES === 0) return;
     if (damageInstance.damageType === DAMAGE_TYPE_DEFENSIVE) return;
 

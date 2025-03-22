@@ -10,6 +10,7 @@ export class CriticalStrikeDamageEvent implements DamageEvent {
   public event(damageInstance: ExtendedDamageInstance): void {
     if (damageInstance.damage < 1) return;
     if (damageInstance.targetOwningPlayerId < 9) return;
+    if (damageInstance.sourceOwningPlayerId > 8) return;
     if (CriticalStrikeDamageEvent.READY_INSTANCES === 0) return;
 
     const vehicle =
