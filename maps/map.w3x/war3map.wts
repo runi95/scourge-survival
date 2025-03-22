@@ -2986,7 +2986,7 @@ STRING 563
 }
 
 STRING 565
-// Abilities: A01Q (Exhume Corpses), EditorSuffix (Editor Suffix)
+// Abilities: A019 (Exhume Corpses), EditorSuffix (Editor Suffix)
 {
 (Unholy Frenzy)
 }
@@ -3001,12 +3001,6 @@ STRING 567
 // Units: u00K (Deathless Necromancer), Name (Name)
 {
 Deathless Necromancer
-}
-
-STRING 568
-// Buffs/Effects: B003 (), Buffubertip (Tooltip - Extended)
-{
-This unit is under the effects of Unholy Aura; it has increased hit point regeneration and will negate any damage dealt to the Necromancer that holds the aura.
 }
 
 STRING 569
@@ -3187,5 +3181,11 @@ STRING 599
 // Buffs/Effects: B005 (), Buffubertip (Tooltip - Extended)
 {
 This unit has heard the Howl of Terror; its movement speed has been increased, but it takes damage if it doesn't keep moving.
+}
+
+STRING 600
+// Abilities: A01Q (Exhume Corpses), EditorSuffix (Editor Suffix)
+{
+(Howl of Terror)
 }
 

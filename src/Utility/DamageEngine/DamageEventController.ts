@@ -7,7 +7,6 @@ import { MagicSurgeDamageEvent } from "./DamageEvents/MagicSurgeDamageEvent";
 import { ScourgeBoneChimesDamageEvent } from "./DamageEvents/ScourgeBoneChimesDamageEvent";
 import { StrengthInNumbersDamageEvent } from "./DamageEvents/StrengthInNumbersDamageEvent";
 import { ThornsDamageEvent } from "./DamageEvents/ThornsDamageEvent";
-import { UnholyAuraDamageEvent } from "./DamageEvents/UnholyAuraDamageEvent";
 import { WarDrumsDamageEvent } from "./DamageEvents/WarDrumsDamageEvent";
 
 export interface ExtendedDamageInstance extends DamageInstance {
@@ -57,10 +56,6 @@ export class DamageEventController {
     );
     DamageEngine.register(
       new StrengthInNumbersDamageEvent(),
-      DamageEventType.OnDamageEvent
-    );
-    DamageEngine.register(
-      new UnholyAuraDamageEvent(),
       DamageEventType.OnDamageEvent
     );
     DamageEngine.register(

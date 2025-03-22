@@ -8,6 +8,7 @@ import { ManaLeech } from "./ManaLeech";
 import { PocketFactory } from "./PocketFactory";
 import { Runes } from "./Runes";
 import { HowlOfTerror } from "./HowlOfTerror";
+import { UnholyFrenzy } from "./UnholyFrenzy";
 
 export class Abilities {
   private readonly abilities: unknown[] = [];
@@ -22,5 +23,6 @@ export class Abilities {
     this.abilities.push(new AdeptTraining());
     this.abilities.push(new AntiMagicShell());
     this.abilities.push(new HowlOfTerror());
+    this.abilities.push(new UnholyFrenzy());
   }
 }
