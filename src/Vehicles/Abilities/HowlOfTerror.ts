@@ -2,18 +2,18 @@ import { Timer, Trigger, Unit } from "w3ts";
 import { TimerUtils } from "../../Utility/TimerUtils";
 import { GameMap } from "../../Game/GameMap";
 
-export class UnholyFrenzy {
-  private readonly unholyFrenzyTrig: Trigger;
-  private readonly unholyFrenzyTrigAbilityId = FourCC("A01Q");
-  private readonly unholyFrenzyAbilityId = FourCC("A01P");
+export class HowlOfTerror {
+  private readonly howlOfTerrorTrig: Trigger;
+  private readonly howlOfTerrorTrigAbilityId = FourCC("A01Q");
+  private readonly howlOfTerrorAbilityId = FourCC("A01P");
 
   private readonly playerTimers: Timer[] = [];
 
   constructor() {
-    this.unholyFrenzyTrig = Trigger.create();
-    this.unholyFrenzyTrig.addAction(() => {
+    this.howlOfTerrorTrig = Trigger.create();
+    this.howlOfTerrorTrig.addAction(() => {
       const ability = GetSpellAbilityId();
-      if (ability !== this.unholyFrenzyTrigAbilityId) return;
+      if (ability !== this.howlOfTerrorTrigAbilityId) return;
 
       const triggeringUnit = Unit.fromEvent();
       const { owner } = triggeringUnit;
@@ -23,7 +23,7 @@ export class UnholyFrenzy {
       const vehicle = GameMap.PLAYER_VEHICLES[playerId];
       if (vehicle.unit == null) return;
 
-      vehicle.unit.addAbility(this.unholyFrenzyAbilityId);
+      vehicle.unit.addAbility(this.howlOfTerrorAbilityId);
       const t: Timer = TimerUtils.newTimer();
       this.playerTimers[playerId] = t;
 
@@ -52,12 +52,12 @@ export class UnholyFrenzy {
         }
 
         if (--ticks <= 0) {
-          vehicle.unit.removeAbility(this.unholyFrenzyAbilityId);
+          vehicle.unit.removeAbility(this.howlOfTerrorAbilityId);
           TimerUtils.releaseTimer(t);
         }
       });
     });
 
-    this.unholyFrenzyTrig.registerAnyUnitEvent(EVENT_PLAYER_UNIT_SPELL_CAST);
+    this.howlOfTerrorTrig.registerAnyUnitEvent(EVENT_PLAYER_UNIT_SPELL_CAST);
   }
 }

@@ -2961,12 +2961,6 @@ STRING 558
  (Neutral Hostile)
 }
 
-STRING 559
-// Buffs/Effects: B005 (), Buffubertip (Tooltip - Extended)
-{
-This unit has Unholy Frenzy; its movement speed has been increased, but it takes damage if it doesn't keep moving.
-}
-
 STRING 560
 // Units: u00I (Ancient Skeletal Mage), EditorSuffix (Name - Editor Suffix)
 {
@@ -2989,12 +2983,6 @@ STRING 563
 // Abilities: S003 (Cargo Hold), EditorSuffix (Editor Suffix)
 {
 (Exhume Corpse Cooldowns)
-}
-
-STRING 564
-// Abilities: A01P (Slow Aura), EditorSuffix (Editor Suffix)
-{
- (Unholy Frenzy)
 }
 
 STRING 565
@@ -3181,5 +3169,23 @@ STRING 596
 // Abilities: A01J (Liquid Fire), Name (Name)
 {
 Liquid Fire
+}
+
+STRING 597
+// Buffs/Effects: B005 (), Bufftip (Tooltip)
+{
+Howl of Terror
+}
+
+STRING 598
+// Abilities: A01P (Slow Aura), EditorSuffix (Editor Suffix)
+{
+ (Howl of Terror)
+}
+
+STRING 599
+// Buffs/Effects: B005 (), Buffubertip (Tooltip - Extended)
+{
+This unit has heard the Howl of Terror; its movement speed has been increased, but it takes damage if it doesn't keep moving.
 }
 
