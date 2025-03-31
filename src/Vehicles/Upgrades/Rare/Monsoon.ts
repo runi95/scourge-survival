@@ -1,50 +1,51 @@
-import { Effect, MapPlayer, Timer, WeatherEffect } from "w3ts/index";
+import { Effect, Item, MapPlayer, Timer } from "w3ts/index";
 import { Vehicle } from "../../Vehicle";
-import { VehicleUpgrade } from "../../VehicleUpgrade";
 import { VehicleUpgradeRarity } from "../../VehicleUpgradeRarity";
 import { GameMap } from "../../../Game/GameMap";
 import { TimerUtils } from "../../../Utility/TimerUtils";
 import { Group } from "../../../Utility/Group";
-import { levelUpStr } from "../LevelUpStr";
+import { WeaponUpgrade } from "../../WeaponUpgrade";
+import { weaponDummyAbilityIds } from "../../../Utility/WeaponDummyAbilityIds";
 
-export class Monsoon extends VehicleUpgrade {
+export class Monsoon extends WeaponUpgrade {
   public readonly rarity = VehicleUpgradeRarity.RARE;
   public readonly icon = "ReplaceableTextures/CommandButtons/BTNMonsoon.blp";
   public readonly cost = 350;
-  public readonly maxLevel = 5;
-  public readonly isWeapon = true;
+  public readonly cooldown = 3;
+  public readonly itemTypeId = FourCC("I004");
   public readonly description = (
     level: number
   ) => `Creates a Monsoon that causes lighting to strike any random enemy. 
 
-Damage: ${levelUpStr(level, 180)}
+Damage: |cffffcc00180|r
 Cooldown: |cffffcc003s|r
 Area of effect: |cffffcc00global|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r`;
 
-  private readonly playerTimers: Timer[] = [];
+  private readonly timers = new Map<number, Timer>();
 
-  public applyUpgrade(vehicle: Vehicle): void {
-    const monsoonLevel = vehicle.upgradeMap.get(this.name);
-    if (monsoonLevel !== 1) return;
-
-    const owner = vehicle.unit.owner;
+  public onAcquire(
+    vehicle: Vehicle,
+    owner: MapPlayer,
+    _item: Item,
+    itemId: number,
+    weaponIndex: number
+  ): void {
+    const t: Timer = TimerUtils.newTimer();
+    this.timers.set(itemId, t);
     const playerId = owner.id;
     const area = GameMap.PLAYER_AREAS[playerId];
-    const lightRain = WeatherEffect.create(area, FourCC("RAlr"));
-    lightRain.enable(true);
-    vehicle.unit.addItemById(FourCC("I004"));
 
     const scourgePlayer = MapPlayer.fromIndex(playerId + 9);
-    const t: Timer = TimerUtils.newTimer();
-    this.playerTimers[playerId] = t;
     t.start(3, true, () => {
+      vehicle.unit.startAbilityCooldown(
+        weaponDummyAbilityIds[weaponIndex],
+        this.cooldown
+      );
+
       const grp: Group = Group.fromRectOfPlayer(area, scourgePlayer);
       let hasStruck = false;
-
-      const monsoonLevel = vehicle.upgradeMap.get(this.name);
-      const damage = monsoonLevel * 180;
 
       grp.for((u) => {
         if (hasStruck) return;
@@ -58,7 +59,7 @@ Damage type: |cffffcc00spell|r`;
         ).destroy();
         vehicle.unit.damageTarget(
           u.handle,
-          damage,
+          180,
           false,
           false,
           ATTACK_TYPE_NORMAL,
@@ -68,5 +69,17 @@ Damage type: |cffffcc00spell|r`;
       });
       grp.destroy();
     });
+  }
+
+  public onDrop(
+    _vehicle: Vehicle,
+    _owner: MapPlayer,
+    _item: Item,
+    itemId: number,
+    _weaponIndex: number
+  ): void {
+    const t = this.timers.get(itemId);
+    this.timers.delete(itemId);
+    TimerUtils.releaseTimer(t);
   }
 }

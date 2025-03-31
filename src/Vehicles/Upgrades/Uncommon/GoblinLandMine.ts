@@ -1,50 +1,61 @@
-import { Timer, Unit } from "w3ts/index";
+import { Item, MapPlayer, Timer, Unit } from "w3ts/index";
 import { TimerUtils } from "../../../Utility/TimerUtils";
 import { Vehicle } from "../../Vehicle";
-import { VehicleUpgrade } from "../../VehicleUpgrade";
 import { VehicleUpgradeRarity } from "../../VehicleUpgradeRarity";
 import { Globals } from "../../../Utility/Globals";
-import { levelUpStr } from "../LevelUpStr";
+import { WeaponUpgrade } from "../../WeaponUpgrade";
+import { weaponDummyAbilityIds } from "../../../Utility/WeaponDummyAbilityIds";
 
-export class GoblinLandMine extends VehicleUpgrade {
+export class GoblinLandMine extends WeaponUpgrade {
   public readonly name = "Goblin Land Mine";
   public readonly rarity = VehicleUpgradeRarity.UNCOMMON;
   public readonly icon =
     "ReplaceableTextures/CommandButtons/BTNGoblinLandMine.blp";
   public readonly cost = 200;
-  public readonly maxLevel = 5;
-  public readonly isWeapon = true;
+  public readonly cooldown = 3;
+  public readonly itemTypeId = FourCC("I003");
   public readonly description = (
     level: number
   ) => `Places Goblin Land Mines underneath your hero.
 
-Damage: ${levelUpStr(level, 150)}
+Damage: |cffffcc00150|r
 Cooldown: |cffffcc003s|r
 Targets: |cffffcc00ground only!|r
 Damage type: |cffffcc00spell|r
 Mine activation delay: |cffffcc004s|r`;
 
-  private readonly playerTimers: Timer[] = [];
-
+  private readonly timers = new Map<number, Timer>();
   private readonly landMineUnitTypeId: number = FourCC("n005");
-  private readonly explosionAbilityId: number = FourCC("A00D");
 
-  public applyUpgrade(vehicle: Vehicle): void {
-    if (vehicle.upgradeMap.get(this.name) !== 1) return;
-
-    vehicle.unit.addItemById(FourCC("I003"));
-
+  public onAcquire(
+    vehicle: Vehicle,
+    owner: MapPlayer,
+    _item: Item,
+    itemId: number,
+    weaponIndex: number
+  ): void {
     const t: Timer = TimerUtils.newTimer();
-    const owner = vehicle.unit.owner;
-    this.playerTimers[owner.id] = t;
+    this.timers.set(itemId, t);
     t.start(3, true, () => {
-      const landMineLevel = vehicle.upgradeMap.get(this.name);
       const { x, y } = vehicle.unit;
+      vehicle.unit.startAbilityCooldown(
+        weaponDummyAbilityIds[weaponIndex],
+        this.cooldown
+      );
       const dummy = Unit.create(owner, this.landMineUnitTypeId, x, y);
       dummy.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 180);
-      if (landMineLevel > 1) {
-        dummy.setAbilityLevel(this.explosionAbilityId, landMineLevel);
-      }
     });
+  }
+
+  public onDrop(
+    _vehicle: Vehicle,
+    _owner: MapPlayer,
+    _item: Item,
+    itemId: number,
+    _weaponIndex: number
+  ): void {
+    const t = this.timers.get(itemId);
+    this.timers.delete(itemId);
+    TimerUtils.releaseTimer(t);
   }
 }

@@ -15,7 +15,6 @@ import { Debugger } from "./Debugger";
 import type { Timer } from "w3ts";
 import { Commands } from "../Utility/Commands";
 import { VehicleUpgradeSystem } from "./VehicleUpgradeSystem";
-import { Vehicle } from "../Vehicles/Vehicle";
 import { Spawner } from "./Spawner";
 import { Sounds } from "../Utility/Sounds";
 import { RandomNumberGenerator } from "../Utility/RandomNumberGenerator";
@@ -26,6 +25,7 @@ import { CreepUpgrades } from "./CreepUpgrades/CreepUpgrades";
 import { CreepWaveUpgrade } from "./CreepUpgrades/CreepWaveUpgrade";
 import { waves } from "./Waves/index";
 import { CreepUpgradesFrameSystem } from "./CreepUpgrades/CreepUpgradesFrameSystem";
+import { WeaponUpgradeSystem } from "../Vehicles/WeaponUpgradeSystem";
 
 export class Game {
   private readonly damageEngine = new DamageEngine();
@@ -42,8 +42,8 @@ export class Game {
   private readonly vehicleDeathTriggers: Trigger[] = [];
   private readonly creepAbilityController: CreepAbilityController;
   private readonly creepUpgrades = new CreepUpgrades();
-  private readonly creepUpgradesFrameSystem: CreepUpgradesFrameSystem =
-    new CreepUpgradesFrameSystem();
+  private readonly creepUpgradesFrameSystem = new CreepUpgradesFrameSystem();
+  private readonly weaponUpgradeSystem = new WeaponUpgradeSystem();
 
   constructor() {
     this.debugger = new Debugger(this.gameOptions);
@@ -263,7 +263,6 @@ export class Game {
 
         const vehicle = GameMap.PLAYER_VEHICLES[i];
         vehicle.unit = vehicleUnit;
-        vehicle.weapons.push("Cannon");
         vehicle.upgradeMap.set("Cannon", 1);
 
         const playerName = player.name;

@@ -200,36 +200,6 @@ STRING 46
 |cffc3dbffRight-click to deactivate auto-casting.|r
 }
 
-STRING 50
-// Abilities: A000 (Phoenix Fire), EditorSuffix (Editor Suffix)
-{
-(1)
-}
-
-STRING 51
-// Abilities: A004 (Phoenix Fire), EditorSuffix (Editor Suffix)
-{
-(2)
-}
-
-STRING 52
-// Abilities: A006 (Phoenix Fire), EditorSuffix (Editor Suffix)
-{
-(3)
-}
-
-STRING 53
-// Abilities: A007 (Phoenix Fire), EditorSuffix (Editor Suffix)
-{
-(4)
-}
-
-STRING 54
-// Abilities: A008 (Phoenix Fire), EditorSuffix (Editor Suffix)
-{
-(5)
-}
-
 STRING 55
 // Abilities: A009 (Inventory), EditorSuffix (Editor Suffix)
 {
@@ -237,7 +207,7 @@ STRING 55
 }
 
 STRING 56
-// Items: I000 (Cannon), Name (Name)
+// Units: u00L (Cannon), Name (Name)
 {
 Cannon
 }
@@ -2859,24 +2829,6 @@ STRING 538
 Tranquility
 }
 
-STRING 541
-// Abilities: A001 (Exhume Corpses), EditorSuffix (Editor Suffix)
-{
-(Pocket Factory Cooldown)
-}
-
-STRING 542
-// Abilities: S002 (Cargo Hold), EditorSuffix (Editor Suffix)
-{
-(Pocket Factory Cooldown)
-}
-
-STRING 543
-// Abilities: A01I (Spell Book), EditorSuffix (Editor Suffix)
-{
-(Pocket Factory Cooldown)
-}
-
 STRING 544
 // Units: u00E (Shade), Name (Name)
 {
@@ -3187,5 +3139,59 @@ STRING 600
 // Abilities: A01Q (Exhume Corpses), EditorSuffix (Editor Suffix)
 {
 (Howl of Terror)
+}
+
+STRING 605
+// Abilities: A01V (Cluster Rockets), Name (Name)
+{
+Cluster Rockets
+}
+
+STRING 606
+// Abilities: A01V (Cluster Rockets), EditorSuffix (Editor Suffix)
+{
+(Cooldown)
+}
+
+STRING 614
+// Abilities: A022 (Channel), EditorSuffix (Editor Suffix)
+{
+(Do nothing 1)
+}
+
+STRING 615
+// Abilities: A023 (Channel), EditorSuffix (Editor Suffix)
+{
+(Do nothing 2)
+}
+
+STRING 616
+// Abilities: A024 (Channel), EditorSuffix (Editor Suffix)
+{
+(Do nothing 3)
+}
+
+STRING 617
+// Abilities: A025 (Channel), EditorSuffix (Editor Suffix)
+{
+(Do nothing 4)
+}
+
+STRING 618
+// Abilities: A026 (Channel), EditorSuffix (Editor Suffix)
+{
+(Do nothing 5)
+}
+
+STRING 619
+// Abilities: A027 (Channel), EditorSuffix (Editor Suffix)
+{
+(Do nothing 6)
+}
+
+STRING 621
+// Items: I000 (Cannon), Name (Name)
+{
+Cannon
 }
 

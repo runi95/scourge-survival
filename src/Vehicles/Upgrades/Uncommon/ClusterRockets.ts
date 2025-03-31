@@ -1,63 +1,55 @@
-import { Timer, Unit } from "w3ts";
+import { Item, MapPlayer, Timer, Unit } from "w3ts";
 import { TimerUtils } from "../../../Utility/TimerUtils";
 import { Vehicle } from "../../Vehicle";
-import { VehicleUpgrade } from "../../VehicleUpgrade";
+import { WeaponUpgrade } from "../../WeaponUpgrade";
 import { VehicleUpgradeRarity } from "../../VehicleUpgradeRarity";
 import { Globals } from "../../../Utility/Globals";
 import { RandomNumberGenerator } from "../../../Utility/RandomNumberGenerator";
+import { weaponDummyAbilityIds } from "../../../Utility/WeaponDummyAbilityIds";
 
 const MULT = Math.PI / 180;
 
-export class ClusterRockets extends VehicleUpgrade {
+export class ClusterRockets extends WeaponUpgrade {
   public readonly name = "Cluster Rockets";
   public readonly rarity = VehicleUpgradeRarity.UNCOMMON;
   public readonly icon =
     "ReplaceableTextures/CommandButtons/BTNClusterRockets.blp";
   public readonly cost = 250;
-  public readonly maxLevel = 5;
-  public readonly isWeapon = true;
+  public readonly cooldown = 2;
+  public readonly itemTypeId = FourCC("I00N");
   public readonly description = (
     level: number
   ) => `Sends Cluster Rockets firing off in a random area at a random direction.
 
-Damage: ${
-    level > 1
-      ? `|cff808080${(level - 1) * 6} x ${(level - 1) * 17.5} (max ${
-          (level - 1) * 210
-        })|r => |cffffcc00${level * 6} x ${level * 17.5} (max ${level * 210})|r`
-      : `|cffffcc00${level * 6} x ${level * 17.5} (max ${level * 210})|r`
-  }
+Damage: |cffffcc006 x 17.5 (max 210)|r
 Cooldown: |cffffcc002s|r
 Area of effect: |cffffcc00300|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
 Effect: stuns for |cffffcc001s|r`;
 
-  private readonly playerTimers: Timer[] = [];
-
+  private readonly timers = new Map<number, Timer>();
   private readonly dummyUnitId: number = FourCC("u000");
   private readonly clusterRocketsAbilityId: number = FourCC("A01B");
 
-  public applyUpgrade(vehicle: Vehicle): void {
-    if (vehicle.upgradeMap.get(this.name) !== 1) return;
-
-    vehicle.unit.addItemById(FourCC("I00N"));
-
+  public onAcquire(
+    vehicle: Vehicle,
+    owner: MapPlayer,
+    _item: Item,
+    itemId: number,
+    weaponIndex: number
+  ): void {
     const t: Timer = TimerUtils.newTimer();
-    const owner = vehicle.unit.owner;
-    this.playerTimers[owner.id] = t;
+    this.timers.set(itemId, t);
     t.start(2, true, () => {
-      const clusterRocketsLevel = vehicle.upgradeMap.get(this.name);
       const { x, y } = vehicle.unit;
+      vehicle.unit.startAbilityCooldown(
+        weaponDummyAbilityIds[weaponIndex],
+        this.cooldown
+      );
       const dummy = Unit.create(owner, this.dummyUnitId, x, y);
       dummy.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 4);
       dummy.addAbility(this.clusterRocketsAbilityId);
-      if (clusterRocketsLevel > 1) {
-        dummy.setAbilityLevel(
-          this.clusterRocketsAbilityId,
-          clusterRocketsLevel
-        );
-      }
 
       const radians = RandomNumberGenerator.random(0, 359) * MULT;
       dummy.issueOrderAt(
@@ -66,5 +58,17 @@ Effect: stuns for |cffffcc001s|r`;
         y + 400 * Math.sin(radians)
       );
     });
+  }
+
+  public onDrop(
+    _vehicle: Vehicle,
+    _owner: MapPlayer,
+    _item: Item,
+    itemId: number,
+    _weaponIndex: number
+  ): void {
+    const t = this.timers.get(itemId);
+    this.timers.delete(itemId);
+    TimerUtils.releaseTimer(t);
   }
 }

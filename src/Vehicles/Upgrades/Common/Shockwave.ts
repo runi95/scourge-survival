@@ -1,45 +1,49 @@
-import { Timer, Unit } from "w3ts/index";
+import { Item, MapPlayer, Timer, Unit } from "w3ts/index";
 import { TimerUtils } from "../../../Utility/TimerUtils";
 import { Vehicle } from "../../Vehicle";
-import { VehicleUpgrade } from "../../VehicleUpgrade";
 import { VehicleUpgradeRarity } from "../../VehicleUpgradeRarity";
 import { RandomNumberGenerator } from "../../../Utility/RandomNumberGenerator";
 import { Globals } from "../../../Utility/Globals";
-import { levelUpStr } from "../LevelUpStr";
+import { WeaponUpgrade } from "../../WeaponUpgrade";
+import { weaponDummyAbilityIds } from "../../../Utility/WeaponDummyAbilityIds";
 
 const MULT = Math.PI / 180;
 
-export class Shockwave extends VehicleUpgrade {
+export class Shockwave extends WeaponUpgrade {
   public readonly rarity = VehicleUpgradeRarity.COMMON;
   public readonly icon = "ReplaceableTextures/CommandButtons/BTNShockWave.blp";
   public readonly cost = 150;
-  public readonly maxLevel = 5;
-  public readonly isWeapon = true;
+  public readonly cooldown = 2.5;
+  public readonly itemTypeId = FourCC("I002");
   public readonly description = (
     level: number
   ) => `Sends 2 shockwaves in opposite directions.
 
-Damage: ${levelUpStr(level, 50)}
+Damage: |cffffcc0050|r
 Cooldown: |cffffcc002.5s|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r`;
 
-  private readonly playerTimers: Timer[] = [];
+  private readonly timers = new Map<number, Timer>();
 
   private readonly dummyUnitId: number = FourCC("u000");
   private readonly shockwaveAbilityId: number = FourCC("A00B");
 
-  public applyUpgrade(vehicle: Vehicle): void {
-    if (vehicle.upgradeMap.get(this.name) !== 1) return;
-
-    vehicle.unit.addItemById(FourCC("I002"));
-
+  public onAcquire(
+    vehicle: Vehicle,
+    owner: MapPlayer,
+    _item: Item,
+    itemId: number,
+    weaponIndex: number
+  ): void {
     const t: Timer = TimerUtils.newTimer();
-    const owner = vehicle.unit.owner;
-    this.playerTimers[owner.id] = t;
+    this.timers.set(itemId, t);
     t.start(2.5, true, () => {
-      const shockwaveLevel = vehicle.upgradeMap.get(this.name);
       const { x, y } = vehicle.unit;
+      vehicle.unit.startAbilityCooldown(
+        weaponDummyAbilityIds[weaponIndex],
+        this.cooldown
+      );
 
       const randomAngle = RandomNumberGenerator.random(0, 359);
       const radians = [randomAngle * MULT, ((randomAngle + 180) % 360) * MULT];
@@ -47,9 +51,6 @@ Damage type: |cffffcc00spell|r`;
         const dummy = Unit.create(owner, this.dummyUnitId, x, y);
         dummy.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 4);
         dummy.addAbility(this.shockwaveAbilityId);
-        if (shockwaveLevel > 1) {
-          dummy.setAbilityLevel(this.shockwaveAbilityId, shockwaveLevel);
-        }
 
         dummy.issueOrderAt(
           "shockwave",
@@ -58,5 +59,17 @@ Damage type: |cffffcc00spell|r`;
         );
       }
     });
+  }
+
+  public onDrop(
+    _vehicle: Vehicle,
+    _owner: MapPlayer,
+    _item: Item,
+    itemId: number,
+    _weaponIndex: number
+  ): void {
+    const t = this.timers.get(itemId);
+    this.timers.delete(itemId);
+    TimerUtils.releaseTimer(t);
   }
 }

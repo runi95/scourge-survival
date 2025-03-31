@@ -1,52 +1,63 @@
-import { Timer, Unit } from "w3ts";
+import { Item, MapPlayer, Timer, Unit } from "w3ts";
 import { Vehicle } from "../../Vehicle";
-import { VehicleUpgrade } from "../../VehicleUpgrade";
 import { VehicleUpgradeRarity } from "../../VehicleUpgradeRarity";
 import { TimerUtils } from "../../../Utility/TimerUtils";
 import { Globals } from "../../../Utility/Globals";
-import { levelUpStr } from "../LevelUpStr";
+import { WeaponUpgrade } from "../../WeaponUpgrade";
+import { weaponDummyAbilityIds } from "../../../Utility/WeaponDummyAbilityIds";
 
-export class StormHammers extends VehicleUpgrade {
+export class StormHammers extends WeaponUpgrade {
   public readonly name = "Storm Hammers";
   public readonly rarity = VehicleUpgradeRarity.LEGENDARY;
   public readonly icon =
     "ReplaceableTextures/CommandButtons/BTNStormHammer.blp";
   public readonly cost = 500;
-  public readonly maxLevel = 5;
-  public readonly isWeapon = true;
+  public readonly cooldown = 1;
+  public readonly itemTypeId = FourCC("I00M");
   public readonly description = (
     level: number
   ) => `Fires Storm Hammers at random enemy units within range.
 
-Damage: ${
-    level > 1 ? `${levelUpStr(level, 1, 0, true)} x ` : "|cffffcc00"
-  }180 - 224|r
+Damage: |cffffcc00180 - 224|r
 Cooldown: |cffffcc001s|r
 Range: |cffffcc00450|r
 Area of Effect (line splash): |cffffcc00250|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00piercing|r`;
 
-  private readonly playerTimers: Timer[] = [];
-
+  private readonly timers = new Map<number, Timer>();
   private readonly dummyUnitId: number = FourCC("u009");
 
-  public applyUpgrade(vehicle: Vehicle): void {
-    if (vehicle.upgradeMap.get(this.name) !== 1) return;
-
-    vehicle.unit.addItemById(FourCC("I00M"));
-
+  public onAcquire(
+    vehicle: Vehicle,
+    owner: MapPlayer,
+    _item: Item,
+    itemId: number,
+    weaponIndex: number
+  ): void {
     const t: Timer = TimerUtils.newTimer();
-    const owner = vehicle.unit.owner;
-    this.playerTimers[owner.id] = t;
+    this.timers.set(itemId, t);
     t.start(1, true, () => {
-      const stormHammersLevel = vehicle.upgradeMap.get(this.name);
       const { x, y } = vehicle.unit;
+      vehicle.unit.startAbilityCooldown(
+        weaponDummyAbilityIds[weaponIndex],
+        this.cooldown
+      );
 
-      for (let i = 0; i < stormHammersLevel; i++) {
-        const dummy = Unit.create(owner, this.dummyUnitId, x, y);
-        dummy.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 1);
-      }
+      const dummy = Unit.create(owner, this.dummyUnitId, x, y);
+      dummy.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 1);
     });
+  }
+
+  public onDrop(
+    _vehicle: Vehicle,
+    _owner: MapPlayer,
+    _item: Item,
+    itemId: number,
+    _weaponIndex: number
+  ): void {
+    const t = this.timers.get(itemId);
+    this.timers.delete(itemId);
+    TimerUtils.releaseTimer(t);
   }
 }

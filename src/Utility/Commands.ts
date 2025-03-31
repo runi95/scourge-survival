@@ -4,6 +4,7 @@ import type { MapPlayer } from "w3ts";
 import { Log, LogLevel } from "../lib/Serilog/Serilog";
 import { StringSink } from "../lib/Serilog/Sinks/StringSink";
 import { GameOptions } from "../Game/GameOptions";
+import { FourCCToString } from "./FourCCToString";
 
 const COMMAND_PREFIX = "-";
 
@@ -67,6 +68,49 @@ export class Commands {
         (() => {
           if (args.length !== 1) return;
           GameMap.CURRENT_WAVE = Number(args[0]);
+        })();
+        break;
+      case "ability":
+        (() => {
+          if (args.length !== 1) return;
+          const abilityId = FourCC(args[0]);
+
+          const vehicle = GameMap.PLAYER_VEHICLES[0];
+          if (vehicle.unit == null) return;
+
+          print(abilityId);
+          print(`Added ability? ${vehicle.unit.addAbility(abilityId)}`);
+        })();
+        break;
+      case "item":
+        (() => {
+          if (args.length !== 1) return;
+
+          const vehicle = GameMap.PLAYER_VEHICLES[0];
+          if (vehicle.unit == null) return;
+
+          vehicle.unit.addItemById(FourCC(args[0]));
+        })();
+        break;
+      case "itemabil":
+        (() => {
+          if (args.length !== 1) return;
+
+          const vehicle = GameMap.PLAYER_VEHICLES[0];
+          if (vehicle.unit == null) return;
+
+          const item = vehicle.unit.getItemInSlot(Number(args[0]));
+          const abilities = [];
+          for (let i = 0; i < 6; i++) {
+            const ability = item.getAbilityByIndex(i);
+            print(ability);
+            if (ability == null) continue;
+
+            // abilities.push(FourCCToString(BlzGetAbilityId(ability)));
+            abilities.push(BlzGetAbilityId(ability));
+          }
+
+          print(`${item.name} => ${abilities.join(", ")}`);
         })();
         break;
       case "debug":

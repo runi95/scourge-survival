@@ -19,7 +19,6 @@ import {
   WarDrums,
   StormHammers,
   FlakCannons,
-  Barrage,
 } from "./Upgrades/Legendary/index";
 import {
   Monsoon,
@@ -85,7 +84,6 @@ export const legendaryUpgrades: VehicleUpgrade[] = [
   new MagicSurge(),
   new WarDrums(),
   new StormHammers(),
-  new Barrage(),
 ];
 
 export const vehicleUpgrades: VehicleUpgrade[] = [

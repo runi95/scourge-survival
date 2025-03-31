@@ -153,14 +153,9 @@ export class VehicleUpgradeSystem {
       if (level >= upgrade.maxLevel) {
         costColor = "|cFFC3DBFF";
         cost = "MAX";
-      } else if (upgrade.isWeapon) {
-        if (
-          vehicle.weapons.length + 1 > vehicle.weaponLimit &&
-          !vehicle.weapons.some((weapons) => weapons === upgrade.name)
-        ) {
-          costColor = "|cFFC3DBFF";
-          cost = "MAX";
-        }
+      } else if (upgrade.isWeapon && vehicle.availableWeaponSlots < 1) {
+        costColor = "|cFFC3DBFF";
+        cost = "FULL";
       }
     }
 
@@ -417,16 +412,7 @@ export class VehicleUpgradeSystem {
         return;
       }
 
-      const isWeaponIncluded =
-        upgrade.isWeapon &&
-        vehicle.weapons.some((weapon) => weapon === upgrade.name);
-      if (
-        upgrade.isWeapon &&
-        vehicle.weapons.length + 1 > vehicle.weaponLimit &&
-        !isWeaponIncluded
-      ) {
-        return;
-      }
+      if (upgrade.isWeapon && vehicle.availableWeaponSlots < 1) return;
       if (playerCurrentGold < upgrade.cost) return;
 
       player.setState(
@@ -437,17 +423,6 @@ export class VehicleUpgradeSystem {
         upgrade.name,
         (vehicle.upgradeMap.get(upgrade.name) ?? 0) + 1
       );
-      let needsFullRefresh = false;
-      if (upgrade.isWeapon && !isWeaponIncluded) {
-        if (vehicle.weapons.length + 1 === vehicle.weaponLimit) {
-          needsFullRefresh = true;
-        }
-        vehicle.weapons.push(upgrade.name);
-      }
-
-      if (upgrade.name === "Barrage" && vehicle.weapons.length === 4) {
-        needsFullRefresh = true;
-      }
 
       const indexesToSkip = new Map<number, boolean>();
       for (let i = 0; i < 4; i++) {
@@ -470,12 +445,7 @@ export class VehicleUpgradeSystem {
         availableLegendaryUpgrades
       );
 
-      if (needsFullRefresh) {
-        this.refreshUpgradeIcons();
-      } else {
-        this.refreshUpgradeIcon(index);
-      }
-
+      this.refreshUpgradeIcon(index);
       upgrade.applyUpgrade(vehicle);
     });
     buttonTrig.triggerRegisterFrameEvent(buttonFrame, FRAMEEVENT_CONTROL_CLICK);
