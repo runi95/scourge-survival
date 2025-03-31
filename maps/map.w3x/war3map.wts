@@ -3141,18 +3141,6 @@ STRING 600
 (Howl of Terror)
 }
 
-STRING 605
-// Abilities: A01V (Cluster Rockets), Name (Name)
-{
-Cluster Rockets
-}
-
-STRING 606
-// Abilities: A01V (Cluster Rockets), EditorSuffix (Editor Suffix)
-{
-(Cooldown)
-}
-
 STRING 614
 // Abilities: A022 (Channel), EditorSuffix (Editor Suffix)
 {
@@ -3193,5 +3181,29 @@ STRING 621
 // Items: I000 (Cannon), Name (Name)
 {
 Cannon
+}
+
+STRING 622
+// Items: I00Q (Chain Lightning), Name (Name)
+{
+Chain Lightning
+}
+
+STRING 623
+// Items: I00Q (Chain Lightning), Tip (Tooltip - Basic)
+{
+Purchase Monsoon
+}
+
+STRING 626
+// Items: I00Q (Chain Lightning), Description (Description)
+{
+Calls a chain lightning every so often that hits any nearby enemy units.
+}
+
+STRING 627
+// Items: I00Q (Chain Lightning), Ubertip (Tooltip - Extended)
+{
+Calls a chain lightning every so often that hits any nearby enemy units.
 }
 
