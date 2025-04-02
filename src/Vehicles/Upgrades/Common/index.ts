@@ -11,3 +11,4 @@ export * from "./BeltOfGiantStrength";
 export * from "./BootsOfQuelThalas";
 export * from "./RobeOfTheMagi";
 export * from "./AdeptTraining";
+export * from "./DualCannons";

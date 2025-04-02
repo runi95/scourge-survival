@@ -3189,12 +3189,6 @@ STRING 622
 Chain Lightning
 }
 
-STRING 623
-// Items: I00Q (Chain Lightning), Tip (Tooltip - Basic)
-{
-Purchase Monsoon
-}
-
 STRING 626
 // Items: I00Q (Chain Lightning), Description (Description)
 {
@@ -3205,5 +3199,35 @@ STRING 627
 // Items: I00Q (Chain Lightning), Ubertip (Tooltip - Extended)
 {
 Calls a chain lightning every so often that hits any nearby enemy units.
+}
+
+STRING 628
+// Items: I00Q (Chain Lightning), Tip (Tooltip - Basic)
+{
+Purchase Chain Lightning
+}
+
+STRING 629
+// Items: I00R (Dual Cannons), Name (Name)
+{
+Dual Cannons
+}
+
+STRING 630
+// Items: I00R (Dual Cannons), Tip (Tooltip - Basic)
+{
+Purchase Dual Cannons
+}
+
+STRING 631
+// Items: I00R (Dual Cannons), Description (Description)
+{
+Fires two cannonballs at a random nearby enemy.
+}
+
+STRING 632
+// Items: I00R (Dual Cannons), Ubertip (Tooltip - Extended)
+{
+Fires two cannonballs at a random nearby enemy.
 }
 

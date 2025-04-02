@@ -34,6 +34,7 @@ export class Game {
   private readonly commands: Commands;
   private readonly gameMap = new GameMap();
   private readonly vehicleUnitTypeId: number = FourCC("H001");
+  private readonly recipeShopUnitTypeId: number = FourCC("n00E");
   private readonly zeppelinUnitTypeId: number = FourCC("n004");
   private readonly vehicleUpgradeSystem: VehicleUpgradeSystem;
   private readonly spawner: Spawner;
@@ -263,6 +264,13 @@ export class Game {
 
         const vehicle = GameMap.PLAYER_VEHICLES[i];
         vehicle.unit = vehicleUnit;
+        vehicle.weaponRecipeShop = Unit.create(
+          MapPlayer.fromIndex(PLAYER_NEUTRAL_PASSIVE),
+          this.recipeShopUnitTypeId,
+          GameMap.PLAYER_AREAS[i].maxX - 2176,
+          GameMap.PLAYER_AREAS[i].maxY - 896,
+          270.0
+        );
         vehicle.upgradeMap.set("Cannon", 1);
 
         const playerName = player.name;

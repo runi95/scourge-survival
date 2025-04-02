@@ -23,6 +23,7 @@ export class LinkedList<T> {
       this.size = 1;
     } else {
       this.head = { value, next: this.head as Node<T> };
+      this.head.next.previous = this.head;
       this.size++;
     }
   }
@@ -35,6 +36,7 @@ export class LinkedList<T> {
 
     const temp: Node<T> = this.head as Node<T>;
     this.head = (this.head as Node<T>).next;
+    this.head.previous = undefined;
     temp.next = undefined;
 
     this.size--;
@@ -43,5 +45,30 @@ export class LinkedList<T> {
 
   public getSize(): number {
     return this.size;
+  }
+
+  public removeItem(item: T): Node<T> {
+    let node = this.head;
+    if (node.value === item) {
+      return this.pop();
+    }
+
+    while (node != null && node.value !== item) {
+      node = node.next;
+    }
+
+    if (node.next != null) {
+      node.next.previous = undefined;
+    }
+
+    if (node.previous != null) {
+      node.previous = undefined;
+    }
+
+    return node;
+  }
+
+  public getFirst(): Node<T> | undefined {
+    return this.head;
   }
 }

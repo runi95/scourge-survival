@@ -113,6 +113,43 @@ export class Commands {
           print(`${item.name} => ${abilities.join(", ")}`);
         })();
         break;
+      case "stock":
+        (() => {
+          if (args.length !== 1) return;
+
+          const vehicle = GameMap.PLAYER_VEHICLES[0];
+          if (vehicle.unit == null) return;
+
+          print(GetUnitName(vehicle.weaponRecipeShop.handle));
+          AddItemToStock(
+            vehicle.weaponRecipeShop.handle,
+            FourCC(args[0]),
+            1,
+            1
+          );
+        })();
+        break;
+      case "rstock":
+        (() => {
+          if (args.length !== 1) return;
+
+          const vehicle = GameMap.PLAYER_VEHICLES[0];
+          if (vehicle.unit == null) return;
+
+          print(GetUnitName(vehicle.weaponRecipeShop.handle));
+          RemoveItemFromStock(vehicle.weaponRecipeShop.handle, FourCC(args[0]));
+        })();
+        break;
+      case "hide":
+        (() => {
+          const vehicle = GameMap.PLAYER_VEHICLES[0];
+          if (vehicle.unit == null) return;
+          ShowUnit(
+            vehicle.weaponRecipeShop.handle,
+            IsUnitHidden(vehicle.weaponRecipeShop.handle)
+          );
+        })();
+        break;
       case "debug":
         Log.Init([new StringSink(LogLevel.Debug, print)]);
     }
