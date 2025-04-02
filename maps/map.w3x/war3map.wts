@@ -3208,7 +3208,7 @@ Purchase Chain Lightning
 }
 
 STRING 629
-// Items: I00R (Dual Cannons), Name (Name)
+// Units: u00M (Dual Cannons), Name (Name)
 {
 Dual Cannons
 }
@@ -3229,5 +3229,47 @@ STRING 632
 // Items: I00R (Dual Cannons), Ubertip (Tooltip - Extended)
 {
 Fires two cannonballs at a random nearby enemy.
+}
+
+STRING 633
+// Items: I00R (Dual Cannons), Name (Name)
+{
+Dual Cannons
+}
+
+STRING 634
+// Items: I00S (Dual Cannons), Name (Name)
+{
+Dual Cannons
+}
+
+STRING 635
+// Items: I00S (Dual Cannons), Tip (Tooltip - Basic)
+{
+Purchase Dual Cannons
+}
+
+STRING 636
+// Items: I00S (Dual Cannons), Ubertip (Tooltip - Extended)
+{
+Fires two rockets at random enemy unit within range.
+
+Damage: |cffffcc002 x 32|r
+Cooldown: |cffffcc001s|r
+Range: |cffffcc00600|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00siege|r
+}
+
+STRING 637
+// Items: I00S (Dual Cannons), Description (Description)
+{
+Fires two rockets at random enemy unit within range.
+
+Damage: |cffffcc002 x 32|r
+Cooldown: |cffffcc001s|r
+Range: |cffffcc00600|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00siege|r
 }
 

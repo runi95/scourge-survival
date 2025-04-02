@@ -6,15 +6,19 @@ import { LinkedList } from "../Utility/LinkedList";
 import { weaponDummyAbilityIds } from "../Utility/WeaponDummyAbilityIds";
 import { WeaponUpgradeRecipe } from "./WeaponUpgradeRecipe";
 import { weaponRecipes } from "./WeaponUpgradeRecipes";
-import { FourCCToString } from "../Utility/FourCCToString";
 
 export class WeaponUpgradeSystem {
   private readonly playerWeaponIndex: LinkedList<number>[] = [];
   private readonly itemIdToIndex = new Map<number, number>();
   private readonly weaponUpgradesMap = new Map<number, WeaponUpgrade>();
   private readonly weaponRecipeMap = new Map<number, WeaponUpgradeRecipe[]>();
+  private readonly weaponRecipeMerchantItemMap = new Map<
+    number,
+    WeaponUpgradeRecipe
+  >();
   private dropItemTrig: Trigger;
   private acquireItemTrig: Trigger;
+  private itemSoldTrig: Trigger;
 
   constructor() {
     for (let i = 0; i < 9; i++) {
@@ -34,6 +38,12 @@ export class WeaponUpgradeSystem {
         arr.push(weaponRecipe);
         this.weaponRecipeMap.set(ingredient, arr);
       }
+
+      this.weaponRecipeMerchantItemMap.set(
+        weaponRecipe.merchantItemTypeId,
+        weaponRecipe
+      );
+      this.weaponUpgradesMap.set(weaponRecipe.itemTypeId, weaponRecipe);
     }
 
     this.acquireItemTrig = Trigger.create();
@@ -115,7 +125,7 @@ export class WeaponUpgradeSystem {
               weaponRecipe
             );
             vehicle.weaponRecipeShop.addItemToStock(
-              weaponRecipe.itemTypeId,
+              weaponRecipe.merchantItemTypeId,
               1,
               1
             );
@@ -183,12 +193,64 @@ export class WeaponUpgradeSystem {
 
             vehicle.availableWeaponRecipes.delete(weaponRecipe.itemTypeId);
             vehicle.weaponRecipeShop.removeItemFromStock(
-              weaponRecipe.itemTypeId
+              weaponRecipe.merchantItemTypeId
             );
           }
         }
       }
     });
     this.dropItemTrig.registerAnyUnitEvent(EVENT_PLAYER_UNIT_DROP_ITEM);
+
+    this.itemSoldTrig = Trigger.create();
+    this.itemSoldTrig.addAction(() => {
+      const item = Item.fromHandle(GetSoldItem());
+      const trig = Unit.fromHandle(GetBuyingUnit());
+
+      const { typeId } = item;
+      const weaponUpgrade = this.weaponRecipeMerchantItemMap.get(typeId);
+      if (weaponUpgrade == null) return;
+
+      const { owner } = trig;
+      const { id: ownerId } = owner;
+      const vehicle = GameMap.PLAYER_VEHICLES[ownerId];
+      if (vehicle == null) return;
+
+      const requiredRecipeItems: boolean[] = [];
+      const { recipe } = weaponUpgrade;
+      for (let i = 0; i < recipe.length; i++) {
+        requiredRecipeItems.push(false);
+      }
+
+      const itemsToDestroy: Item[] = [];
+      for (let i = 0; i < 6; i++) {
+        const itemInSlot = vehicle.unit.getItemInSlot(i);
+        if (itemInSlot == null) continue;
+        for (let k = 0; k < requiredRecipeItems.length; k++) {
+          if (requiredRecipeItems[k]) continue;
+          if (itemInSlot.typeId === recipe[k]) {
+            requiredRecipeItems[k] = true;
+            itemsToDestroy.push(itemInSlot);
+            break;
+          }
+        }
+      }
+
+      let hasAllItems = true;
+      for (let i = 0; i < requiredRecipeItems.length; i++) {
+        if (!requiredRecipeItems[i]) {
+          hasAllItems = false;
+          break;
+        }
+      }
+
+      if (!hasAllItems) return;
+
+      for (const itemToDestroy of itemsToDestroy) {
+        itemToDestroy.destroy();
+      }
+
+      vehicle.unit.addItemById(weaponUpgrade.itemTypeId);
+    });
+    this.itemSoldTrig.registerAnyUnitEvent(EVENT_PLAYER_UNIT_SELL_ITEM);
   }
 }

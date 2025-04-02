@@ -5,7 +5,6 @@ import { VehicleUpgradeRarity } from "../../VehicleUpgradeRarity";
 import { Globals } from "../../../Utility/Globals";
 import { weaponDummyAbilityIds } from "../../../Utility/WeaponDummyAbilityIds";
 import { WeaponUpgradeRecipe } from "../../WeaponUpgradeRecipe";
-import { Cannon } from "./Cannon";
 
 export class DualCannons extends WeaponUpgradeRecipe {
   public readonly name = "Dual Cannons";
@@ -15,19 +14,20 @@ export class DualCannons extends WeaponUpgradeRecipe {
   public readonly cost = 200;
   public readonly cooldown = 1;
   public readonly itemTypeId = FourCC("I00R");
+  public readonly merchantItemTypeId = FourCC("I00S");
   public readonly recipe: number[] = [FourCC("I000"), FourCC("I000")];
   public readonly description = (
     level: number
   ) => `Fires two rockets at random enemy unit within range.
 
-Damage: |cffffcc002 x 25|r
+Damage: |cffffcc002 x 32|r
 Cooldown: |cffffcc001s|r
 Range: |cffffcc00600|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00siege|r`;
 
   private readonly timers = new Map<number, Timer>();
-  private readonly dummyUnitId: number = FourCC("u00L");
+  private readonly dummyUnitId: number = FourCC("u00M");
 
   public onAcquire(
     vehicle: Vehicle,
