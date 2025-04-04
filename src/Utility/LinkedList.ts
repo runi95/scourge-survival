@@ -58,11 +58,11 @@ export class LinkedList<T> {
     }
 
     if (node.next != null) {
-      node.next.previous = undefined;
+      node.next.previous = node.previous;
     }
 
     if (node.previous != null) {
-      node.previous = undefined;
+      node.previous.next = node.next;
     }
 
     return node;
