@@ -10,6 +10,7 @@ addScriptHook(W3TS_HOOK.MAIN_AFTER, () => {
   xpcall(
     () => {
       BlzLoadTOCFile("war3mapImported/Templates.toc");
+      DisableTrigger(bj_stockItemPurchased);
       createQuests();
       new Game().start();
     },
