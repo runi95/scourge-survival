@@ -3,17 +3,19 @@ import { Vehicle } from "../../Vehicle";
 import { VehicleUpgradeRarity } from "../../VehicleUpgradeRarity";
 import { TimerUtils } from "../../../Utility/TimerUtils";
 import { Globals } from "../../../Utility/Globals";
-import { WeaponUpgrade } from "../../WeaponUpgrade";
 import { weaponDummyAbilityIds } from "../../../Utility/WeaponDummyAbilityIds";
+import { WeaponUpgradeRecipe } from "../../WeaponUpgradeRecipe";
 
-export class StormHammers extends WeaponUpgrade {
+export class StormHammers extends WeaponUpgradeRecipe {
   public readonly name = "Storm Hammers";
   public readonly rarity = VehicleUpgradeRarity.LEGENDARY;
   public readonly icon =
     "ReplaceableTextures/CommandButtons/BTNStormHammer.blp";
-  public readonly cost = 500;
+  public readonly cost = 600;
   public readonly cooldown = 1;
-  public readonly itemTypeId = FourCC("I00M");
+  public readonly itemTypeId = FourCC("I00U");
+  public readonly merchantItemTypeId = FourCC("I00T");
+  public readonly recipe: number[] = [FourCC("I000"), FourCC("I00Q")];
   public readonly description = (
     level: number
   ) => `Fires Storm Hammers at random enemy units within range.

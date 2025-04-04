@@ -1,3 +1,4 @@
 import { DualCannons } from "./Upgrades/Common/DualCannons";
+import { StormHammers } from "./Upgrades/Legendary/StormHammers";
 
-export const weaponRecipes = [new DualCannons()];
+export const weaponRecipes = [new DualCannons(), new StormHammers()];

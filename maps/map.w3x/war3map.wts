@@ -2152,25 +2152,25 @@ StormHammers
 }
 
 STRING 416
-// Items: I00M (Storm Hammers), Name (Name)
+// Items: I00T (Storm Hammers), Name (Name)
 {
 Storm Hammers
 }
 
 STRING 417
-// Items: I00M (Storm Hammers), Tip (Tooltip - Basic)
+// Items: I00T (Storm Hammers), Tip (Tooltip - Basic)
 {
 Purchase Storm Hammers
 }
 
 STRING 418
-// Items: I00M (Storm Hammers), Description (Description)
+// Items: I00U (Storm Hammers), Description (Description)
 {
 Throws a storm hammer with line damage at a random nearby enemy.
 }
 
 STRING 419
-// Items: I00M (Storm Hammers), Ubertip (Tooltip - Extended)
+// Items: I00U (Storm Hammers), Ubertip (Tooltip - Extended)
 {
 Throws a storm hammer with line damage at a random nearby enemy.
 }
@@ -3271,5 +3271,41 @@ Cooldown: |cffffcc001s|r
 Range: |cffffcc00600|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00siege|r
+}
+
+STRING 638
+// Items: I00T (Storm Hammers), Ubertip (Tooltip - Extended)
+{
+Fires two rockets at random enemy unit within range.
+
+Damage: |cffffcc002 x 32|r
+Cooldown: |cffffcc001s|r
+Range: |cffffcc00600|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00siege|r
+}
+
+STRING 639
+// Items: I00T (Storm Hammers), Description (Description)
+{
+Fires two rockets at random enemy unit within range.
+
+Damage: |cffffcc002 x 32|r
+Cooldown: |cffffcc001s|r
+Range: |cffffcc00600|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00siege|r
+}
+
+STRING 640
+// Items: I00U (Storm Hammers), Name (Name)
+{
+Storm Hammers
+}
+
+STRING 641
+// Items: I00U (Storm Hammers), Tip (Tooltip - Basic)
+{
+Purchase Storm Hammers
 }
 

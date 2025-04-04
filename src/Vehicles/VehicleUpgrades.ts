@@ -17,7 +17,6 @@ import {
   Glyph,
   MagicSurge,
   WarDrums,
-  StormHammers,
   FlakCannons,
   ChainLightning,
 } from "./Upgrades/Legendary/index";
@@ -84,7 +83,6 @@ export const legendaryUpgrades: VehicleUpgrade[] = [
   new Glyph(),
   new MagicSurge(),
   new WarDrums(),
-  new StormHammers(),
   new ChainLightning(),
 ];
 
