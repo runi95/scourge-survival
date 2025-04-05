@@ -1,10 +1,11 @@
-import { Trigger } from "w3ts";
+import { Trigger, Unit } from "w3ts";
 import { GameMap } from "../Game/GameMap";
 import type { MapPlayer } from "w3ts";
 import { Log, LogLevel } from "../lib/Serilog/Serilog";
 import { StringSink } from "../lib/Serilog/Sinks/StringSink";
 import { GameOptions } from "../Game/GameOptions";
 import { FourCCToString } from "./FourCCToString";
+import { Globals } from "./Globals";
 
 const COMMAND_PREFIX = "-";
 
@@ -148,6 +149,20 @@ export class Commands {
             vehicle.weaponRecipeShop.handle,
             IsUnitHidden(vehicle.weaponRecipeShop.handle)
           );
+        })();
+        break;
+      case "spawn":
+        (() => {
+          if (args.length !== 1) return;
+
+          const vehicle = GameMap.PLAYER_VEHICLES[0];
+          if (vehicle.unit == null) return;
+
+          const { x, y } = vehicle.unit;
+          const tmp = Unit.create(vehicle.unit.owner, FourCC(args[0]), x, y);
+          tmp.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 5);
+
+          print(`${x}, ${y} => ${tmp.x}, ${tmp.y}`);
         })();
         break;
       case "debug":

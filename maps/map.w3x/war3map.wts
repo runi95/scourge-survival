@@ -2716,25 +2716,25 @@ Sends Cluster Rockets in a random direction every 2 seconds.
 }
 
 STRING 512
-// Units: n001 (Pocket Factory), EditorSuffix (Name - Editor Suffix)
+// Units: n008 (Clockwerk Goblin), EditorSuffix (Name - Editor Suffix)
 {
  (Level 2)
 }
 
 STRING 513
-// Units: n002 (Pocket Factory), EditorSuffix (Name - Editor Suffix)
+// Units: n009 (Clockwerk Goblin), EditorSuffix (Name - Editor Suffix)
 {
  (Level 3)
 }
 
 STRING 514
-// Units: n003 (Pocket Factory), EditorSuffix (Name - Editor Suffix)
+// Units: n00A (Clockwerk Goblin), EditorSuffix (Name - Editor Suffix)
 {
  (Level 4)
 }
 
 STRING 515
-// Units: n006 (Pocket Factory), EditorSuffix (Name - Editor Suffix)
+// Units: n00B (Clockwerk Goblin), EditorSuffix (Name - Editor Suffix)
 {
  (Level 5)
 }
@@ -2743,30 +2743,6 @@ STRING 516
 // Units: n007 (Clockwerk Goblin), EditorSuffix (Name - Editor Suffix)
 {
  (Level 1)
-}
-
-STRING 517
-// Units: n008 (Clockwerk Goblin), EditorSuffix (Name - Editor Suffix)
-{
- (Level 2)
-}
-
-STRING 518
-// Units: n009 (Clockwerk Goblin), EditorSuffix (Name - Editor Suffix)
-{
- (Level 3)
-}
-
-STRING 519
-// Units: n00A (Clockwerk Goblin), EditorSuffix (Name - Editor Suffix)
-{
- (Level 4)
-}
-
-STRING 520
-// Units: n00B (Clockwerk Goblin), EditorSuffix (Name - Editor Suffix)
-{
- (Level 5)
 }
 
 STRING 521
