@@ -3309,3 +3309,27 @@ STRING 641
 Purchase Storm Hammers
 }
 
+STRING 642
+// Items: I00M (Water Elemental), Name (Name)
+{
+Water Elemental
+}
+
+STRING 643
+// Items: I00M (Water Elemental), Tip (Tooltip - Basic)
+{
+Purchase Air Support
+}
+
+STRING 644
+// Items: I00M (Water Elemental), Description (Description)
+{
+Summons a Water Elemental to fight for you every so often.
+}
+
+STRING 645
+// Items: I00M (Water Elemental), Ubertip (Tooltip - Extended)
+{
+Summons a Water Elemental to fight for you every so often.
+}
+

@@ -41,6 +41,7 @@ import {
   PermanentImmolation,
   ClusterRockets,
   LiquidFire,
+  WaterElemental,
 } from "./Upgrades/Weapons/Uncommon/index";
 import { VehicleUpgrade } from "./VehicleUpgrade";
 
@@ -70,6 +71,7 @@ export const uncommonUpgrades: VehicleUpgrade[] = [
   new ClusterRockets(),
   new LiquidFire(),
   new Berserk(),
+  new WaterElemental(),
 ];
 
 export const rareUpgrades: VehicleUpgrade[] = [
