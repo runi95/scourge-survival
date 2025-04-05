@@ -36,7 +36,11 @@ export class LinkedList<T> {
 
     const temp: Node<T> = this.head as Node<T>;
     this.head = (this.head as Node<T>).next;
-    this.head.previous = undefined;
+
+    if (this.head != null) {
+      this.head.previous = undefined;
+    }
+
     temp.next = undefined;
 
     this.size--;
@@ -57,11 +61,11 @@ export class LinkedList<T> {
       node = node.next;
     }
 
-    if (node.next != null) {
+    if (node?.next != null) {
       node.next.previous = node.previous;
     }
 
-    if (node.previous != null) {
+    if (node?.previous != null) {
       node.previous.next = node.next;
     }
 
