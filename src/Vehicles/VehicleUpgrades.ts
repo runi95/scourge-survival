@@ -28,7 +28,7 @@ import {
   Thorns,
   ScourgeBoneChimes,
 } from "./Upgrades/Misc/Rare/index";
-import { Monsoon, Impale, OrbOfFire } from "./Upgrades/Weapons/Rare/index";
+import { Impale, OrbOfFire } from "./Upgrades/Weapons/Rare/index";
 import {
   ManaLeech,
   Evasion,
@@ -76,7 +76,6 @@ export const uncommonUpgrades: VehicleUpgrade[] = [
 
 export const rareUpgrades: VehicleUpgrade[] = [
   new Impale(),
-  new Monsoon(),
   new CriticalStrike(),
   new MagicSentry(),
   new Thorns(),

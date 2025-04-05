@@ -1,27 +1,16 @@
 import { Effect, Item, MapPlayer, Timer } from "w3ts/index";
-import { Vehicle } from "../../../Vehicle";
-import { VehicleUpgradeRarity } from "../../../VehicleUpgradeRarity";
-import { GameMap } from "../../../../Game/GameMap";
-import { TimerUtils } from "../../../../Utility/TimerUtils";
-import { Group } from "../../../../Utility/Group";
-import { WeaponUpgrade } from "../../../WeaponUpgrade";
-import { weaponDummyAbilityIds } from "../../../../Utility/WeaponDummyAbilityIds";
+import { Vehicle } from "../../Vehicle";
+import { GameMap } from "../../../Game/GameMap";
+import { TimerUtils } from "../../../Utility/TimerUtils";
+import { Group } from "../../../Utility/Group";
+import { weaponDummyAbilityIds } from "../../../Utility/WeaponDummyAbilityIds";
+import { WeaponUpgradeRecipe } from "../../WeaponUpgradeRecipe";
 
-export class Monsoon extends WeaponUpgrade {
-  public readonly rarity = VehicleUpgradeRarity.RARE;
-  public readonly icon = "ReplaceableTextures/CommandButtons/BTNMonsoon.blp";
-  public readonly cost = 350;
+export class Monsoon extends WeaponUpgradeRecipe {
   public readonly cooldown = 3;
   public readonly itemTypeId = FourCC("I004");
-  public readonly description = (
-    level: number
-  ) => `Creates a Monsoon that causes lighting to strike any random enemy. 
-
-Damage: |cffffcc00180|r
-Cooldown: |cffffcc003s|r
-Area of effect: |cffffcc00global|r
-Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00spell|r`;
+  public readonly merchantItemTypeId = FourCC("I00W");
+  public readonly recipe: number[] = [FourCC("I00Q"), FourCC("I00Q")];
 
   private readonly timers = new Map<number, Timer>();
 
@@ -59,7 +48,7 @@ Damage type: |cffffcc00spell|r`;
         ).destroy();
         vehicle.unit.damageTarget(
           u.handle,
-          180,
+          375,
           false,
           false,
           ATTACK_TYPE_NORMAL,

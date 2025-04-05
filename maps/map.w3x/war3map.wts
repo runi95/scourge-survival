@@ -3339,3 +3339,39 @@ STRING 650
 Shoots a fireball with splash damage at a random nearby enemy.
 }
 
+STRING 651
+// Items: I00W (Monsoon), Name (Name)
+{
+Monsoon
+}
+
+STRING 652
+// Items: I00W (Monsoon), Tip (Tooltip - Basic)
+{
+Purchase Monsoon
+}
+
+STRING 657
+// Items: I00W (Monsoon), Ubertip (Tooltip - Extended)
+{
+Creates a Monsoon that causes lighting to strike any random enemy. 
+
+Damage: |cffffcc00375|r
+Cooldown: |cffffcc003s|r
+Area of effect: |cffffcc00global|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 658
+// Items: I00W (Monsoon), Description (Description)
+{
+Creates a Monsoon that causes lighting to strike any random enemy. 
+
+Damage: |cffffcc00375|r
+Cooldown: |cffffcc003s|r
+Area of effect: |cffffcc00global|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+}
+
