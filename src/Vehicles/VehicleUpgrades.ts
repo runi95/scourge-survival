@@ -15,12 +15,7 @@ import {
   AirSupport,
   PocketFactory,
 } from "./Upgrades/Weapons/Common/index";
-import {
-  Glyph,
-  MagicSurge,
-  WarDrums,
-  FlakCannons,
-} from "./Upgrades/Misc/Legendary/index";
+import { Glyph, MagicSurge, WarDrums } from "./Upgrades/Misc/Legendary/index";
 import { ChainLightning } from "./Upgrades/Weapons/Legendary/index";
 import {
   CriticalStrike,
@@ -84,7 +79,6 @@ export const rareUpgrades: VehicleUpgrade[] = [
 ];
 
 export const legendaryUpgrades: VehicleUpgrade[] = [
-  new FlakCannons(),
   new Glyph(),
   new MagicSurge(),
   new WarDrums(),
