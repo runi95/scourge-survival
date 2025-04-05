@@ -1,44 +1,47 @@
 import {
-  Cannon,
   AttributeBonus,
   Fortification,
-  Shockwave,
-  AirSupport,
   HardenedSkin,
   TrollRegeneration,
   SlowAura,
-  PocketFactory,
   BeltOfGiantStrength,
   BootsOfQuelThalas,
   RobeOfTheMagi,
   AdeptTraining,
-} from "./Upgrades/Common/index";
+} from "./Upgrades/Misc/Common/index";
+import {
+  Cannon,
+  Shockwave,
+  AirSupport,
+  PocketFactory,
+} from "./Upgrades/Weapons/Common/index";
 import {
   Glyph,
   MagicSurge,
   WarDrums,
   FlakCannons,
-  ChainLightning,
-} from "./Upgrades/Legendary/index";
+} from "./Upgrades/Misc/Legendary/index";
+import { ChainLightning } from "./Upgrades/Weapons/Legendary/index";
 import {
-  Monsoon,
   CriticalStrike,
   MagicSentry,
   Thorns,
-  Impale,
   ScourgeBoneChimes,
-} from "./Upgrades/Rare/index";
+} from "./Upgrades/Misc/Rare/index";
+import { Monsoon, Impale } from "./Upgrades/Weapons/Rare/index";
 import {
   ManaLeech,
-  GoblinLandMine,
   Evasion,
-  PermanentImmolation,
   EngineeringUpgrade,
   InnerFire,
+  Berserk,
+} from "./Upgrades/Misc/Uncommon/index";
+import {
+  GoblinLandMine,
+  PermanentImmolation,
   ClusterRockets,
   LiquidFire,
-  Berserk,
-} from "./Upgrades/Uncommon/index";
+} from "./Upgrades/Weapons/Uncommon/index";
 import { VehicleUpgrade } from "./VehicleUpgrade";
 
 export const commonUpgrades: VehicleUpgrade[] = [

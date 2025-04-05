@@ -1,5 +1,5 @@
 import { Item, Trigger, Unit } from "w3ts";
-import { WeaponUpgrade } from "./WeaponUpgrade";
+import { WeaponUpgrade, WeaponUpgradeI } from "./WeaponUpgrade";
 import { vehicleUpgrades } from "./VehicleUpgrades";
 import { GameMap } from "../Game/GameMap";
 import { LinkedList } from "../Utility/LinkedList";
@@ -10,7 +10,7 @@ import { weaponRecipes } from "./WeaponUpgradeRecipes";
 export class WeaponUpgradeSystem {
   private readonly playerWeaponIndex: LinkedList<number>[] = [];
   private readonly itemIdToIndex = new Map<number, number>();
-  private readonly weaponUpgradesMap = new Map<number, WeaponUpgrade>();
+  private readonly weaponUpgradesMap = new Map<number, WeaponUpgradeI>();
   private readonly weaponRecipeMap = new Map<number, WeaponUpgradeRecipe[]>();
   private readonly weaponRecipeMerchantItemMap = new Map<
     number,
