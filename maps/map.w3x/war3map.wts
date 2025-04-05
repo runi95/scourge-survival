@@ -3309,3 +3309,33 @@ STRING 645
 Summons a Water Elemental to fight for you every so often.
 }
 
+STRING 646
+// Units: u00N (Orb of Fire), Name (Name)
+{
+Orb of Fire
+}
+
+STRING 647
+// Items: I00V (Orb of Fire), Name (Name)
+{
+Orb of Fire
+}
+
+STRING 648
+// Items: I00V (Orb of Fire), Tip (Tooltip - Basic)
+{
+Purchase Orb of Fire
+}
+
+STRING 649
+// Items: I00V (Orb of Fire), Description (Description)
+{
+Shoots a fireball with splash damage at a random nearby enemy.
+}
+
+STRING 650
+// Items: I00V (Orb of Fire), Ubertip (Tooltip - Extended)
+{
+Shoots a fireball with splash damage at a random nearby enemy.
+}
+
