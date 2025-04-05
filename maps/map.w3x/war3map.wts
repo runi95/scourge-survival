@@ -3291,12 +3291,6 @@ STRING 642
 Water Elemental
 }
 
-STRING 643
-// Items: I00M (Water Elemental), Tip (Tooltip - Basic)
-{
-Purchase Air Support
-}
-
 STRING 644
 // Items: I00M (Water Elemental), Description (Description)
 {
@@ -3373,5 +3367,41 @@ Cooldown: |cffffcc003s|r
 Area of effect: |cffffcc00global|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
+}
+
+STRING 659
+// Items: I00M (Water Elemental), Tip (Tooltip - Basic)
+{
+Purchase Water Elemental
+}
+
+STRING 660
+// Items: I00X (Tornado), Name (Name)
+{
+Tornado
+}
+
+STRING 661
+// Items: I00X (Tornado), Tip (Tooltip - Basic)
+{
+Purchase Tornado
+}
+
+STRING 662
+// Items: I00X (Tornado), Description (Description)
+{
+Summons a fierce tornado that slows enemy units' movement, randomly tosses enemy ground units into the air and damages all nearby enemies.
+}
+
+STRING 663
+// Items: I00X (Tornado), Ubertip (Tooltip - Extended)
+{
+Summons a fierce tornado that slows enemy units' movement, randomly tosses enemy ground units into the air and damages all nearby enemies.
+}
+
+STRING 664
+// Abilities: A001 (Tornado Damage Aura), Name (Name)
+{
+Tornado Damage Aura
 }
 

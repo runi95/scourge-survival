@@ -16,7 +16,7 @@ import {
   PocketFactory,
 } from "./Upgrades/Weapons/Common/index";
 import { Glyph, MagicSurge, WarDrums } from "./Upgrades/Misc/Legendary/index";
-import { ChainLightning } from "./Upgrades/Weapons/Legendary/index";
+import { ChainLightning, Tornado } from "./Upgrades/Weapons/Legendary/index";
 import {
   CriticalStrike,
   MagicSentry,
@@ -83,6 +83,7 @@ export const legendaryUpgrades: VehicleUpgrade[] = [
   new MagicSurge(),
   new WarDrums(),
   new ChainLightning(),
+  new Tornado(),
 ];
 
 export const vehicleUpgrades: VehicleUpgrade[] = [

@@ -6,7 +6,7 @@ import { levelUpStr } from "../../LevelUpStr";
 export class SlowAura extends VehicleUpgrade {
   public readonly name = "Slow Aura";
   public readonly rarity = VehicleUpgradeRarity.COMMON;
-  public readonly icon = "ReplaceableTextures/CommandButtons/BTNTornado.blp";
+  public readonly icon = "ReplaceableTextures/CommandButtons/BTNCyclone.blp";
   public readonly cost = 150;
   public readonly maxLevel = 5;
   public readonly description = (level: number) =>
