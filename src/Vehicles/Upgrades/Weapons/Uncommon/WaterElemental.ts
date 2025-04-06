@@ -7,6 +7,8 @@ import { WeaponUpgrade } from "../../../WeaponUpgrade";
 import { weaponDummyAbilityIds } from "../../../../Utility/WeaponDummyAbilityIds";
 import { Globals } from "../../../../Utility/Globals";
 
+const MULT = Math.PI / 180;
+
 export class WaterElemental extends WeaponUpgrade {
   public readonly name = "Water Elemental";
   public readonly rarity = VehicleUpgradeRarity.COMMON;
@@ -50,13 +52,17 @@ Damage type: |cffffcc00piercing|r`;
 
       if (iterations === 0) {
         const { x, y } = vehicle.unit;
+        const randomAngle = RandomNumberGenerator.random(0, 359);
+        const radian = randomAngle * MULT;
         const waterElemental = Unit.create(
           owner,
           this.waterElementalUnitTypeId,
-          x + RandomNumberGenerator.random(-150, 150),
-          y + RandomNumberGenerator.random(-150, 150)
+          x + 300 * Math.cos(radian),
+          y + 300 * Math.sin(radian)
         );
         waterElemental.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 14);
+        waterElemental.setAnimation("birth");
+        waterElemental.queueAnimation("stand");
         this.itemWaterElementalMap.set(itemId, waterElemental);
 
         vehicle.unit.startAbilityCooldown(
