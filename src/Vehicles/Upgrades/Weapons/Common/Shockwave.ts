@@ -25,7 +25,6 @@ Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r`;
 
   private readonly timers = new Map<number, Timer>();
-
   private readonly dummyUnitId: number = FourCC("u000");
   private readonly shockwaveAbilityId: number = FourCC("A00B");
 

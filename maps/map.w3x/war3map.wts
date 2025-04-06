@@ -3585,3 +3585,67 @@ Targets (explosion): |cffffcc00ground only!|r
 Damage type: |cffffcc00piercing|r
 }
 
+STRING 701
+// Items: I013 (Focused Shockwave), Name (Name)
+{
+Focused Shockwave
+}
+
+STRING 702
+// Items: I013 (Focused Shockwave), Tip (Tooltip - Basic)
+{
+Purchase Focused Shockwave
+}
+
+STRING 705
+// Items: I014 (Focused Shockwave), Name (Name)
+{
+Focused Shockwave
+}
+
+STRING 709
+// Items: I014 (Focused Shockwave), Tip (Tooltip - Basic)
+{
+Purchase Focused Shockwave
+}
+
+STRING 710
+// Items: I013 (Focused Shockwave), Ubertip (Tooltip - Extended)
+{
+Sends 2 shockwaves towards 2 random enemy units within range.
+
+Damage: |cffffcc0075|r
+Cooldown: |cffffcc003s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 711
+// Items: I013 (Focused Shockwave), Description (Description)
+{
+Sends 2 shockwaves towards 2 random enemy units within range.
+
+Damage: |cffffcc0075|r
+Cooldown: |cffffcc003s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 712
+// Items: I014 (Focused Shockwave), Description (Description)
+{
+Sends 2 shockwaves towards 2 random enemy units within range.
+}
+
+STRING 713
+// Items: I014 (Focused Shockwave), Ubertip (Tooltip - Extended)
+{
+Sends 2 shockwaves towards 2 random enemy units within range.
+}
+
+STRING 714
+// Abilities: A008 (Focused Shockwave), Name (Name)
+{
+Focused Shockwave
+}
+
