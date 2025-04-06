@@ -362,18 +362,6 @@ STRING 95
 Purchase Goblin Land Mine
 }
 
-STRING 96
-// Items: I003 (Goblin Land Mine), Description (Description)
-{
-Places a goblin land mine onto the ground every 1.5 seconds.
-}
-
-STRING 97
-// Items: I003 (Goblin Land Mine), Ubertip (Tooltip - Extended)
-{
-Places a goblin land mine onto the ground every 1.5 seconds.
-}
-
 STRING 98
 // Items: I004 (Monsoon), Name (Name)
 {
@@ -3433,5 +3421,83 @@ STRING 672
 // Items: I00Y (Long Rifle), Ubertip (Tooltip - Extended)
 {
 Fire off a long rifle, dealing damage based on distance to the target.
+}
+
+STRING 673
+// Units: n002 (Giant Goblin Land Mine), Name (Name)
+{
+Giant Goblin Land Mine
+}
+
+STRING 674
+// Items: I00Z (Giant Goblin Land Mine), Tip (Tooltip - Basic)
+{
+Purchase Giant Goblin Land Mine
+}
+
+STRING 677
+// Items: I00Z (Giant Goblin Land Mine), Name (Name)
+{
+Giant Goblin Land Mine
+}
+
+STRING 678
+// Items: I010 (Giant Goblin Land Mine), Tip (Tooltip - Basic)
+{
+Purchase Giant Goblin Land Mine
+}
+
+STRING 681
+// Items: I010 (Giant Goblin Land Mine), Name (Name)
+{
+Giant Goblin Land Mine
+}
+
+STRING 682
+// Items: I00Z (Giant Goblin Land Mine), Ubertip (Tooltip - Extended)
+{
+Places Giant Goblin Land Mines underneath your hero.
+
+Damage: |cffffcc00350|r
+Cooldown: |cffffcc003s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell|r
+Mine activation delay: |cffffcc004s|r
+}
+
+STRING 683
+// Items: I00Z (Giant Goblin Land Mine), Description (Description)
+{
+Places Giant Goblin Land Mines underneath your hero.
+
+Damage: |cffffcc00350|r
+Cooldown: |cffffcc003s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell|r
+Mine activation delay: |cffffcc004s|r
+}
+
+STRING 686
+// Items: I003 (Goblin Land Mine), Description (Description)
+{
+Places a goblin land mine onto the ground every 3 seconds.
+}
+
+STRING 687
+// Items: I003 (Goblin Land Mine), Ubertip (Tooltip - Extended)
+{
+Places a goblin land mine onto the ground every 3 seconds.
+}
+
+STRING 688
+// Items: I010 (Giant Goblin Land Mine), Description (Description)
+{
+Places a gigantic goblin land mine onto the ground every 3 seconds.
+}
+
+STRING 689
+// Items: I010 (Giant Goblin Land Mine), Ubertip (Tooltip - Extended)
+{
+Places a gigantic goblin land mine onto the ground every 3 seconds.
 }
 
