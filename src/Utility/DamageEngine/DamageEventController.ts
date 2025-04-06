@@ -3,6 +3,7 @@ import { AntiMagicShellDamageEvent } from "./DamageEvents/AntiMagicShellDamageEv
 import { BerserkDamageEvent } from "./DamageEvents/BerserkDamageEvent";
 import { CriticalStrikeDamageEvent } from "./DamageEvents/CriticalStrikeDamageEvent";
 import { InnerFireDamageEvent } from "./DamageEvents/InnerFireDamageEvent";
+import { LongRifleDamageEvent } from "./DamageEvents/LongRifleDamageEvent";
 import { MagicSurgeDamageEvent } from "./DamageEvents/MagicSurgeDamageEvent";
 import { ScourgeBoneChimesDamageEvent } from "./DamageEvents/ScourgeBoneChimesDamageEvent";
 import { StrengthInNumbersDamageEvent } from "./DamageEvents/StrengthInNumbersDamageEvent";
@@ -38,6 +39,10 @@ export class DamageEventController {
     // Pre damage events
 
     // On damage events
+    DamageEngine.register(
+      new LongRifleDamageEvent(),
+      DamageEventType.OnDamageEvent
+    );
     DamageEngine.register(
       new MagicSurgeDamageEvent(),
       DamageEventType.OnDamageEvent

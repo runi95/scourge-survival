@@ -2781,12 +2781,6 @@ STRING 526
 Creates a Pocket Factory nearby every 60 seconds.
 }
 
-STRING 527
-// Units: u00D (Breath of Fire), Name (Name)
-{
-Breath of Fire
-}
-
 STRING 531
 // Items: I00P (Liquid Fire), Description (Description)
 {
@@ -3076,7 +3070,7 @@ rhpo
 }
 
 STRING 594
-// Items: I00P (Liquid Fire), Name (Name)
+// Units: u00D (Liquid Fire), Name (Name)
 {
 Liquid Fire
 }
@@ -3088,7 +3082,7 @@ Purchase Liquid Fire
 }
 
 STRING 596
-// Abilities: A01J (Liquid Fire), Name (Name)
+// Items: I00P (Liquid Fire), Name (Name)
 {
 Liquid Fire
 }
@@ -3403,5 +3397,41 @@ STRING 664
 // Abilities: A001 (Tornado Damage Aura), Name (Name)
 {
 Tornado Damage Aura
+}
+
+STRING 665
+// Abilities: A01J (Liquid Fire), Name (Name)
+{
+Liquid Fire
+}
+
+STRING 666
+// Units: u00O (Long Rifle), Name (Name)
+{
+Long Rifle
+}
+
+STRING 667
+// Items: I00Y (Long Rifle), Name (Name)
+{
+Long Rifle
+}
+
+STRING 668
+// Items: I00Y (Long Rifle), Tip (Tooltip - Basic)
+{
+Purchase Long Rifle
+}
+
+STRING 671
+// Items: I00Y (Long Rifle), Description (Description)
+{
+Fire off a long rifle, dealing damage based on distance to the target.
+}
+
+STRING 672
+// Items: I00Y (Long Rifle), Ubertip (Tooltip - Extended)
+{
+Fire off a long rifle, dealing damage based on distance to the target.
 }
 
