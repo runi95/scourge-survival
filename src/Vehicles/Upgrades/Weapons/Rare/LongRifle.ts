@@ -5,7 +5,6 @@ import { VehicleUpgradeRarity } from "../../../VehicleUpgradeRarity";
 import { RandomNumberGenerator } from "../../../../Utility/RandomNumberGenerator";
 import { WeaponUpgrade } from "../../../WeaponUpgrade";
 import { weaponDummyAbilityIds } from "../../../../Utility/WeaponDummyAbilityIds";
-import { LongRifleDamageEvent } from "../../../../Utility/DamageEngine/DamageEvents/LongRifleDamageEvent";
 
 const MULT = Math.PI / 180;
 
@@ -39,9 +38,6 @@ Damage type: |cffffcc00piercing|r`;
     itemId: number,
     weaponIndex: number
   ): void {
-    LongRifleDamageEvent.READY_INSTANCES++;
-    LongRifleDamageEvent.PLAYER_LONG_RIFLE_COUNT[owner.id]++;
-
     vehicle.unit.startAbilityCooldown(
       weaponDummyAbilityIds[weaponIndex],
       this.cooldown
@@ -111,13 +107,11 @@ Damage type: |cffffcc00piercing|r`;
 
   public onDrop(
     _vehicle: Vehicle,
-    owner: MapPlayer,
+    _owner: MapPlayer,
     _item: Item,
     itemId: number,
     _weaponIndex: number
   ): void {
-    LongRifleDamageEvent.READY_INSTANCES--;
-    LongRifleDamageEvent.PLAYER_LONG_RIFLE_COUNT[owner.id]--;
     const t = this.timers.get(itemId);
     this.timers.delete(itemId);
     TimerUtils.releaseTimer(t);
