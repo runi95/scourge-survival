@@ -3501,3 +3501,87 @@ STRING 689
 Places a gigantic goblin land mine onto the ground every 3 seconds.
 }
 
+STRING 690
+// Units: h003 (Explosive Water Elemental), Name (Name)
+{
+Explosive Water Elemental
+}
+
+STRING 691
+// Abilities: A004 (AOE damage upon death), EditorSuffix (Editor Suffix)
+{
+(Giant Goblin Mine)
+}
+
+STRING 692
+// Abilities: A007 (AOE damage upon death), EditorSuffix (Editor Suffix)
+{
+(Explosive Water Elemental)
+}
+
+STRING 693
+// Items: I011 (Explosive Water Elemental), Name (Name)
+{
+Explosive Water Elemental
+}
+
+STRING 694
+// Items: I011 (Explosive Water Elemental), Tip (Tooltip - Basic)
+{
+Purchase Explosive Water Elemental
+}
+
+STRING 695
+// Items: I011 (Explosive Water Elemental), Description (Description)
+{
+Summons a Water Elemental that explodes upon death and fights for you.
+}
+
+STRING 696
+// Items: I011 (Explosive Water Elemental), Ubertip (Tooltip - Extended)
+{
+Summons a Water Elemental that explodes upon death and fights for you.
+}
+
+STRING 697
+// Items: I012 (Explosive Water Elemental), Name (Name)
+{
+Explosive Water Elemental
+}
+
+STRING 698
+// Items: I012 (Explosive Water Elemental), Tip (Tooltip - Basic)
+{
+Purchase Explosive Water Elemental
+}
+
+STRING 699
+// Items: I012 (Explosive Water Elemental), Ubertip (Tooltip - Extended)
+{
+Spawns a static Water Elemental that attacks nearby enemy units within range and explodes upon death.
+
+Damage: |cffffcc028 - 35|r
+Damage (explosion): |cffffcc02150 - 375|r
+Cooldown (attack): |cffffcc000.5s|r
+Cooldown (spawn): |cffffcc0015s|r
+Range: |cffffcc00500|r
+Targets (attack): |cffffcc00air & ground|r
+Targets (explosion): |cffffcc00ground only!|r
+Damage type: |cffffcc00piercing|r
+}
+
+STRING 700
+// Items: I012 (Explosive Water Elemental), Description (Description)
+{
+Spawns a static Water Elemental that attacks nearby enemy units within range and explodes upon death.
+
+Damage: |cffffcc028 - 35|r
+Damage (explosion): |cffffcc02150 - 375|r
+Cooldown (attack): |cffffcc000.5s|r
+Cooldown (spawn): |cffffcc0015s|r
+Range: |cffffcc00500|r
+Targets (attack): |cffffcc00air & ground|r
+Targets (explosion): |cffffcc00ground only!|r
+Damage type: |cffffcc00piercing|r
+}
+
