@@ -103,6 +103,6 @@ export class ExplosiveElemental extends WeaponUpgradeRecipe {
     const waterElemental = this.itemWaterElementalMap.get(itemId);
     if (waterElemental == null) return;
 
-    waterElemental.kill();
+    waterElemental.destroy();
   }
 }
