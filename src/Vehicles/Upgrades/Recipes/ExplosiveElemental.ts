@@ -1,4 +1,4 @@
-import { Item, MapPlayer, Timer, Unit } from "w3ts";
+import { Item, MapPlayer, Timer, Trigger, Unit } from "w3ts";
 import { Vehicle } from "../../Vehicle";
 import { TimerUtils } from "../../../Utility/TimerUtils";
 import { Globals } from "../../../Utility/Globals";
@@ -18,6 +18,26 @@ export class ExplosiveElemental extends WeaponUpgradeRecipe {
   private readonly waterElementalUnitTypeId: number = FourCC("h003");
   private readonly itemWaterElementalMap = new Map<number, Unit>();
   private readonly itemIterations = new Map<number, number>();
+  private readonly onDeathTrigger = Trigger.create();
+
+  constructor() {
+    super();
+
+    this.onDeathTrigger.addAction(() => {
+      const dyingUnit = GetDyingUnit();
+      const typeId = GetUnitTypeId(dyingUnit);
+      if (typeId !== this.waterElementalUnitTypeId) return;
+
+      DestroyEffect(
+        AddSpecialEffectTarget(
+          "Abilities/Spells/Other/Incinerate/FireLordDeathExplode.mdl",
+          dyingUnit,
+          "origin"
+        )
+      );
+    });
+    this.onDeathTrigger.registerAnyUnitEvent(EVENT_PLAYER_UNIT_DEATH);
+  }
 
   public onAcquire(
     vehicle: Vehicle,

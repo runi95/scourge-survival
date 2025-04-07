@@ -3649,3 +3649,15 @@ STRING 714
 Focused Shockwave
 }
 
+STRING 715
+// Abilities: A01I (Explosive Water Elemental), Name (Name)
+{
+Explosive Water Elemental
+}
+
+STRING 716
+// Abilities: A01I (Explosive Water Elemental), EditorSuffix (Editor Suffix)
+{
+(Visual)
+}
+
