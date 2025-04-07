@@ -42,6 +42,7 @@ export class FocusedShockwave extends WeaponUpgradeRecipe {
         if (targetsHit >= 2) return;
         if (!u.isAlive()) return;
         if (!u.isVisible(owner)) return;
+        if (!u.isEnemy(owner)) return;
 
         targetsHit++;
         const dummy = Unit.create(owner, this.dummyUnitId, x, y);
