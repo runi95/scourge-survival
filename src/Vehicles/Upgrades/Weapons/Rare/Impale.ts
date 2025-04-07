@@ -7,6 +7,8 @@ import { Globals } from "../../../../Utility/Globals";
 import { WeaponUpgrade } from "../../../WeaponUpgrade";
 import { weaponDummyAbilityIds } from "../../../../Utility/WeaponDummyAbilityIds";
 
+const MULT = Math.PI / 180;
+
 export class Impale extends WeaponUpgrade {
   public readonly rarity = VehicleUpgradeRarity.RARE;
   public readonly icon = "ReplaceableTextures/CommandButtons/BTNImpale.blp";
@@ -25,7 +27,6 @@ Targets: |cffffcc00ground only!|r
 Damage type: |cffffcc00spell|r`;
 
   private readonly timers = new Map<number, Timer>();
-
   private readonly dummyUnitId: number = FourCC("u000");
   private readonly impaleAbilityId: number = FourCC("A00A");
 
@@ -45,14 +46,16 @@ Damage type: |cffffcc00spell|r`;
         weaponDummyAbilityIds[weaponIndex],
         this.cooldown
       );
+      const randomAngle = RandomNumberGenerator.random(0, 359);
+      const radian = randomAngle * MULT;
       const dummy = Unit.create(owner, this.dummyUnitId, x, y);
       dummy.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 4);
       dummy.addAbility(this.impaleAbilityId);
 
       dummy.issueOrderAt(
         "impale",
-        x + RandomNumberGenerator.random(-100, 100),
-        y + RandomNumberGenerator.random(-100, 100)
+        x + 200 * Math.cos(radian),
+        y + 200 * Math.sin(radian)
       );
     });
   }
