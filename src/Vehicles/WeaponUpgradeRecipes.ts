@@ -4,6 +4,7 @@ import { FocusedShockwave } from "./Upgrades/Recipes/FocusedShockwave";
 import { GiantGoblinLandMine } from "./Upgrades/Recipes/GiantGoblinLandMine";
 import { Monsoon } from "./Upgrades/Recipes/Monsoon";
 import { StormHammers } from "./Upgrades/Recipes/StormHammers";
+import { UnstableShockwave } from "./Upgrades/Recipes/UnstableShockwave";
 
 export const weaponRecipes = [
   new DualCannons(),
@@ -12,4 +13,5 @@ export const weaponRecipes = [
   new GiantGoblinLandMine(),
   new ExplosiveElemental(),
   new FocusedShockwave(),
+  new UnstableShockwave(),
 ];
