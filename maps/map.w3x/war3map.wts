@@ -2151,42 +2151,6 @@ STRING 419
 Throws a storm hammer with line damage at a random nearby enemy.
 }
 
-STRING 420
-// Upgrades: R005 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
-{
-Flying Machine
-}
-
-STRING 421
-// Upgrades: R005 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
-{
-Flying Machine
-}
-
-STRING 422
-// Upgrades: R005 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
-{
-Flying Machine
-}
-
-STRING 423
-// Upgrades: R005 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), class (Class)
-{
-ranged
-}
-
-STRING 424
-// Upgrades: R005 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), effect1 (Effect 1)
-{
-ratx
-}
-
-STRING 425
-// Upgrades: R005 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
-{
-Flying Machine
-}
-
 STRING 427
 // Abilities: S000 (Stone Form), Name (Name)
 {
@@ -3949,5 +3913,73 @@ STRING 776
 // Items: I01D (Flying Behemoth), Ubertip (Tooltip - Extended)
 {
 Summons a large flying behemoth to attack enemies from above.
+}
+
+STRING 777
+// Units: h005 (Phoenix), Name (Name)
+{
+Phoenix
+}
+
+STRING 778
+// Items: I01E (Phoenix), Name (Name)
+{
+Phoenix
+}
+
+STRING 779
+// Items: I01E (Phoenix), Tip (Tooltip - Basic)
+{
+Purchase Phoenix
+}
+
+STRING 780
+// Items: I01E (Phoenix), Description (Description)
+{
+Summons a phoenix to fight by your side.
+}
+
+STRING 781
+// Items: I01E (Phoenix), Ubertip (Tooltip - Extended)
+{
+Summons a phoenix to fight by your side.
+}
+
+STRING 782
+// Items: I01F (Phoenix), Name (Name)
+{
+Phoenix
+}
+
+STRING 783
+// Items: I01F (Phoenix), Tip (Tooltip - Basic)
+{
+Purchase Dual Cannons
+}
+
+STRING 784
+// Items: I01F (Phoenix), Ubertip (Tooltip - Extended)
+{
+Summons a phoenix to fight by your side.
+
+Damage: |cffffcc0061 - 75|r
+Cooldown: |cffffcc001.4s|r
+Damage (phoenix fire): |cffffcc0040|r
+Cooldown (phoenix fire): |cffffcc000.5s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00magic|r
+}
+
+STRING 785
+// Items: I01F (Phoenix), Description (Description)
+{
+Summons a phoenix to fight by your side.
+
+Damage: |cffffcc0061 - 75|r
+Cooldown: |cffffcc001.4s|r
+Damage (phoenix fire): |cffffcc0040|r
+Cooldown (phoenix fire): |cffffcc000.5s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00magic|r
 }
 

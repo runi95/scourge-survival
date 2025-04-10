@@ -6,6 +6,7 @@ import { FocusedShockwave } from "./Upgrades/Recipes/FocusedShockwave";
 import { GiantGoblinLandMine } from "./Upgrades/Recipes/GiantGoblinLandMine";
 import { LiquidFire } from "./Upgrades/Recipes/LiquidFire";
 import { Monsoon } from "./Upgrades/Recipes/Monsoon";
+import { Phoenix } from "./Upgrades/Recipes/Phoenix";
 import { ShockwaveStorm } from "./Upgrades/Recipes/ShockwaveStorm";
 import { StormHammers } from "./Upgrades/Recipes/StormHammers";
 import { UnstableShockwave } from "./Upgrades/Recipes/UnstableShockwave";
@@ -22,4 +23,5 @@ export const weaponRecipes = [
   new ShockwaveStorm(),
   new LiquidFire(),
   new FlyingBehemoth(),
+  new Phoenix(),
 ];
