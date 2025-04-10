@@ -2757,18 +2757,6 @@ STRING 526
 Creates a Pocket Factory nearby every 60 seconds.
 }
 
-STRING 531
-// Items: I00P (Liquid Fire), Description (Description)
-{
-Leaves a trail of fire behind the vehicle for as long as it's moving.
-}
-
-STRING 532
-// Items: I00P (Liquid Fire), Ubertip (Tooltip - Extended)
-{
-Leaves a trail of fire behind the vehicle for as long as it's moving.
-}
-
 STRING 538
 // Doodads: D001 (Tranquility), Name (Name)
 {
@@ -3052,13 +3040,13 @@ Liquid Fire
 }
 
 STRING 595
-// Items: I00P (Liquid Fire), Tip (Tooltip - Basic)
+// Items: I01B (Liquid Fire), Tip (Tooltip - Basic)
 {
 Purchase Liquid Fire
 }
 
 STRING 596
-// Items: I00P (Liquid Fire), Name (Name)
+// Items: I01B (Liquid Fire), Name (Name)
 {
 Liquid Fire
 }
@@ -3376,7 +3364,7 @@ Tornado Damage Aura
 }
 
 STRING 665
-// Abilities: A01J (Liquid Fire), Name (Name)
+// Items: I00P (Liquid Fire), Name (Name)
 {
 Liquid Fire
 }
@@ -3843,5 +3831,59 @@ STRING 753
 // Items: I01A (Shockwave Storm), Ubertip (Tooltip - Extended)
 {
 Rapidly fires shockwaves around in a counterclockwise direction.
+}
+
+STRING 756
+// Items: I00P (Liquid Fire), Tip (Tooltip - Basic)
+{
+Purchase Liquid Fire
+}
+
+STRING 757
+// Items: I00P (Liquid Fire), Description (Description)
+{
+Summons a Water Elemental that explodes upon death and fights for you.
+}
+
+STRING 758
+// Items: I00P (Liquid Fire), Ubertip (Tooltip - Extended)
+{
+Summons a Water Elemental that explodes upon death and fights for you.
+}
+
+STRING 759
+// Abilities: A01J (Liquid Fire), Name (Name)
+{
+Liquid Fire
+}
+
+STRING 760
+// Items: I01B (Liquid Fire), Ubertip (Tooltip - Extended)
+{
+Leaves a trail of fire that burns enemies behind you whenever your hero moves around.
+
+Damage: |cffffcc0025|r
+Cooldown: |cffffcc001s|r
+Area of effect: |cffffcc00125|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 761
+// Items: I01B (Liquid Fire), Description (Description)
+{
+Leaves a trail of fire that burns enemies behind you whenever your hero moves around.
+
+Damage: |cffffcc0025|r
+Cooldown: |cffffcc001s|r
+Area of effect: |cffffcc00125|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 762
+// Buffs/Effects: B003 (Liquid Fire Damage), EditorName (Name (Editor Only))
+{
+Liquid Fire Damage
 }
 

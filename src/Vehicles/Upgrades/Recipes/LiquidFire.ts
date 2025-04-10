@@ -1,31 +1,18 @@
 import { Item, MapPlayer, Timer, Unit } from "w3ts";
-import { TimerUtils } from "../../../../Utility/TimerUtils";
-import { Vehicle } from "../../../Vehicle";
-import { VehicleUpgradeRarity } from "../../../VehicleUpgradeRarity";
-import { Globals } from "../../../../Utility/Globals";
-import { WeaponUpgrade } from "../../../WeaponUpgrade";
-import { weaponDummyAbilityIds } from "../../../../Utility/WeaponDummyAbilityIds";
+import { TimerUtils } from "../../../Utility/TimerUtils";
+import { Vehicle } from "../../Vehicle";
+import { Globals } from "../../../Utility/Globals";
+import { weaponDummyAbilityIds } from "../../../Utility/WeaponDummyAbilityIds";
+import { WeaponUpgradeRecipe } from "../../WeaponUpgradeRecipe";
 
-export class LiquidFire extends WeaponUpgrade {
-  public readonly name = "Breath of Fire";
-  public readonly rarity = VehicleUpgradeRarity.UNCOMMON;
-  public readonly icon = "ReplaceableTextures/CommandButtons/BTNLiquidFire.blp";
-  public readonly cost = 200;
+export class LiquidFire extends WeaponUpgradeRecipe {
   public readonly cooldown = 0.5;
   public readonly itemTypeId = FourCC("I00P");
-  public readonly description = (
-    level: number
-  ) => `Leaves a trail of fire that burns enemies behind you whenever your hero moves around.
-
-Damage: |cffffcc0010|r
-Cooldown: |cffffcc001s|r
-Area of effect: |cffffcc00125|r
-Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00spell|r`;
+  public readonly merchantItemTypeId = FourCC("I01B");
+  public readonly recipe: number[] = [FourCC("I005"), FourCC("I003")];
 
   private readonly timers = new Map<number, Timer>();
   private readonly unitPositions = new Map<number, [number, number]>();
-
   private readonly dummyUnitId: number = FourCC("u00D");
 
   public onAcquire(
