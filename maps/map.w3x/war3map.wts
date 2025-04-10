@@ -3839,18 +3839,6 @@ STRING 756
 Purchase Liquid Fire
 }
 
-STRING 757
-// Items: I00P (Liquid Fire), Description (Description)
-{
-Summons a Water Elemental that explodes upon death and fights for you.
-}
-
-STRING 758
-// Items: I00P (Liquid Fire), Ubertip (Tooltip - Extended)
-{
-Summons a Water Elemental that explodes upon death and fights for you.
-}
-
 STRING 759
 // Abilities: A01J (Liquid Fire), Name (Name)
 {
@@ -3885,5 +3873,81 @@ STRING 762
 // Buffs/Effects: B003 (Liquid Fire Damage), EditorName (Name (Editor Only))
 {
 Liquid Fire Damage
+}
+
+STRING 763
+// Items: I00P (Liquid Fire), Description (Description)
+{
+Leaves a trail of fire that burns enemies behind you whenever your hero moves around.
+}
+
+STRING 764
+// Items: I00P (Liquid Fire), Ubertip (Tooltip - Extended)
+{
+Leaves a trail of fire that burns enemies behind you whenever your hero moves around.
+}
+
+STRING 765
+// Units: h004 (Flying Behemoth), Name (Name)
+{
+Flying Behemoth
+}
+
+STRING 766
+// Items: I01D (Flying Behemoth), Tip (Tooltip - Basic)
+{
+Purchase Liquid Fire
+}
+
+STRING 769
+// Items: I01C (Flying Behemoth), Name (Name)
+{
+Flying Behemoth
+}
+
+STRING 771
+// Items: I01C (Flying Behemoth), Tip (Tooltip - Basic)
+{
+Purchase Flying Behemoth
+}
+
+STRING 772
+// Items: I01C (Flying Behemoth), Ubertip (Tooltip - Extended)
+{
+Summons a large flying behemoth to attack enemies from above.
+
+Damage: |cffffcc00150|r
+Cooldown: |cffffcc002s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing|r
+}
+
+STRING 773
+// Items: I01C (Flying Behemoth), Description (Description)
+{
+Summons a large flying behemoth to attack enemies from above.
+
+Damage: |cffffcc00150|r
+Cooldown: |cffffcc002s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing|r
+}
+
+STRING 774
+// Items: I01D (Flying Behemoth), Name (Name)
+{
+Flying Behemoth
+}
+
+STRING 775
+// Items: I01D (Flying Behemoth), Description (Description)
+{
+Summons a large flying behemoth to attack enemies from above.
+}
+
+STRING 776
+// Items: I01D (Flying Behemoth), Ubertip (Tooltip - Extended)
+{
+Summons a large flying behemoth to attack enemies from above.
 }
 

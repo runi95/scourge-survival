@@ -21,7 +21,7 @@ export class AirSupport extends WeaponUpgrade {
 Damage: |cffffcc003 x 25|r
 Cooldown: |cffffcc002s|r
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00piercing|r`;
+Damage type: |cffffcc00siege|r`;
 
   private readonly timers = new Map<number, Timer>();
   private readonly flyingMachineUnitTypeId: number = FourCC("h000");
