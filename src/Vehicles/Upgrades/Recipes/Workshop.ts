@@ -29,7 +29,17 @@ export class Workshop extends WeaponUpgradeRecipe {
   ): void {
     const t: Timer = TimerUtils.newTimer();
     this.timers.set(itemId, t);
-    this.itemIterations.set(itemId, 30);
+
+    const existingIterations = this.itemIterations.get(itemId);
+    if (existingIterations == null) {
+      this.itemIterations.set(itemId, 30);
+    } else {
+      vehicle.unit.startAbilityCooldown(
+        weaponDummyAbilityIds[weaponIndex],
+        2 * existingIterations
+      );
+    }
+
     t.start(2, true, () => {
       const iterations = this.itemIterations.get(itemId);
       if (iterations == null) {
@@ -74,7 +84,7 @@ export class Workshop extends WeaponUpgradeRecipe {
     const t = this.timers.get(itemId);
     this.timers.delete(itemId);
     TimerUtils.releaseTimer(t);
-    this.itemIterations.delete(itemId);
+    // this.itemIterations.delete(itemId);
     this.itemCounters.delete(itemId);
   }
 }
