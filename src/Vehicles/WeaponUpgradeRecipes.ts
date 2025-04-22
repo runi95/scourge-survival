@@ -10,6 +10,7 @@ import { Phoenix } from "./Upgrades/Recipes/Phoenix";
 import { ShockwaveStorm } from "./Upgrades/Recipes/ShockwaveStorm";
 import { StormHammers } from "./Upgrades/Recipes/StormHammers";
 import { UnstableShockwave } from "./Upgrades/Recipes/UnstableShockwave";
+import { Workshop } from "./Upgrades/Recipes/Workshop";
 
 export const weaponRecipes = [
   new DualCannons(),
@@ -24,4 +25,5 @@ export const weaponRecipes = [
   new LiquidFire(),
   new FlyingBehemoth(),
   new Phoenix(),
+  new Workshop(),
 ];

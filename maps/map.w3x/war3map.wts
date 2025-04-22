@@ -2655,48 +2655,6 @@ STRING 511
 Sends Cluster Rockets in a random direction every 2 seconds.
 }
 
-STRING 512
-// Units: n008 (Clockwerk Goblin), EditorSuffix (Name - Editor Suffix)
-{
- (Level 2)
-}
-
-STRING 513
-// Units: n009 (Clockwerk Goblin), EditorSuffix (Name - Editor Suffix)
-{
- (Level 3)
-}
-
-STRING 514
-// Units: n00A (Clockwerk Goblin), EditorSuffix (Name - Editor Suffix)
-{
- (Level 4)
-}
-
-STRING 515
-// Units: n00B (Clockwerk Goblin), EditorSuffix (Name - Editor Suffix)
-{
- (Level 5)
-}
-
-STRING 516
-// Units: n007 (Clockwerk Goblin), EditorSuffix (Name - Editor Suffix)
-{
- (Level 1)
-}
-
-STRING 521
-// Abilities: A01D (Kaboom!), EditorSuffix (Editor Suffix)
-{
- (Clockwerk Goblin-Level 4)
-}
-
-STRING 522
-// Abilities: A01E (Kaboom!), EditorSuffix (Editor Suffix)
-{
- (Clockwerk Goblin-Level 5)
-}
-
 STRING 523
 // Items: I00O (Pocket Factory), Name (Name)
 {
@@ -3981,5 +3939,121 @@ Damage (phoenix fire): |cffffcc0040|r
 Cooldown (phoenix fire): |cffffcc000.5s|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00magic|r
+}
+
+STRING 787
+// Units: n003 (Workshop), Name (Name)
+{
+Workshop
+}
+
+STRING 788
+// Units: n003 (Workshop), EditorSuffix (Name - Editor Suffix)
+{
+(Pocket Factory)
+}
+
+STRING 789
+// Units: n006 (Siege Engine), EditorSuffix (Name - Editor Suffix)
+{
+(Workshop)
+}
+
+STRING 790
+// Units: n006 (Siege Engine), Name (Name)
+{
+Siege Engine
+}
+
+STRING 791
+// Units: n006 (Siege Engine), Tip (Tooltip - Basic)
+{
+Summon Siege Engine
+}
+
+STRING 792
+// Units: n006 (Siege Engine), Ubertip (Tooltip - Extended)
+{
+Heavily armored vehicle, effective at destroying buildings. Can be upgraded with the Barrage ability. |n|n|cffffcc00Attacks buildings.|r
+}
+
+STRING 793
+// Abilities: A01G (Kaboom!), EditorSuffix (Editor Suffix)
+{
+(Clockwerk Goblin)
+}
+
+STRING 794
+// Items: I01G (Workshop), Name (Name)
+{
+Workshop
+}
+
+STRING 795
+// Abilities: A01D (Workshop), EditorSuffix (Editor Suffix)
+{
+(Pocket Factory)
+}
+
+STRING 799
+// Items: I01H (Workshop), Name (Name)
+{
+Workshop
+}
+
+STRING 803
+// Abilities: A01D (Workshop), Name (Name)
+{
+Workshop
+}
+
+STRING 805
+// Items: I01G (Workshop), Ubertip (Tooltip - Extended)
+{
+Spawns a Workshop every 60 seconds. The Workshop spawns a Siege Engine every 5 seconds that attacks nearby ground enemies.
+
+Damage: |cffffcc0045 - 55 (attack)|r
+Cooldown: |cffffcc0060s (workshop) + 5s (siege engine)|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00siege|r
+Health: |cffffcc00 300 (workshop) + 125 (siege engine)|r
+Duration: |cffffcc0060s (workshop) + 12s (siege engine)|r
+}
+
+STRING 806
+// Items: I01G (Workshop), Tip (Tooltip - Basic)
+{
+Purchase Workshop
+}
+
+STRING 807
+// Items: I01G (Workshop), Description (Description)
+{
+Spawns a Workshop every 60 seconds. The Workshop spawns a Siege Engine every 5 seconds that attacks nearby ground enemies.
+
+Damage: |cffffcc0045 - 55 (attack)|r
+Cooldown: |cffffcc0060s (workshop) + 5s (siege engine)|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00siege|r
+Health: |cffffcc00 300 (workshop) + 125 (siege engine)|r
+Duration: |cffffcc0060s (workshop) + 12s (siege engine)|r
+}
+
+STRING 808
+// Items: I01H (Workshop), Tip (Tooltip - Basic)
+{
+Purchase Workshop
+}
+
+STRING 809
+// Items: I01H (Workshop), Description (Description)
+{
+Creates a Workshop nearby every 60 seconds.
+}
+
+STRING 810
+// Items: I01H (Workshop), Ubertip (Tooltip - Extended)
+{
+Creates a Workshop nearby every 60 seconds.
 }
 
