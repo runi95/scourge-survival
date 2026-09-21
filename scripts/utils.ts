@@ -23,7 +23,7 @@ interface IConfigFile {
 
 export class ProjectConfigurationLoader {
   private static PROJECT_CONFIG_FILE_NAME =
-    "project-config.json" || process.env.PROJECT_CONFIG_FILE_PATH;
+    process.env.PROJECT_CONFIG_FILE_PATH || "project-config.json";
   private static USER_CONFIG_FILE_NAME = "config.json";
 
   // Build configuration
