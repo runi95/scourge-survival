@@ -301,7 +301,7 @@ export function createMapFromFiles(
 const loggerFormatFunc: Format = format.printf(
   ({ level, message, timestamp }) => {
     return `[${
-      timestamp.replace("T", " ").split(".")[0]
+      String(timestamp).replace("T", " ").split(".")[0]
     }] ${level}: ${message}`;
   }
 );
