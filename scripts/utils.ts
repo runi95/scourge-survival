@@ -17,8 +17,11 @@ interface IConfigFile {
 
   gameExecutable?: string;
   launchArgs?: string[];
+  launchCwd?: string;
+  mapSymlink?: string;
   winePath?: string;
   winePrefix?: string;
+  launchEnv?: Record<string, string>;
 }
 
 export class ProjectConfigurationLoader {
@@ -34,8 +37,11 @@ export class ProjectConfigurationLoader {
 
   // Run configuration
   private _gameExecutable?: string;
+  private _launchCwd?: string;
+  private _mapSymlink?: string;
   private _winePath?: string;
   private _winePrefix?: string;
+  private _launchEnv: Record<string, string> = {};
   private _launchArgs: string[] = [];
 
   private constructor() {}
@@ -91,8 +97,11 @@ export class ProjectConfigurationLoader {
     if (json.minifyScript) this._minifyScript = json.minifyScript;
     if (json.gameExecutable) this._gameExecutable = json.gameExecutable;
     if (json.launchArgs) this._launchArgs = json.launchArgs;
+    if (json.launchCwd) this._launchCwd = json.launchCwd;
+    if (json.mapSymlink) this._mapSymlink = json.mapSymlink;
     if (json.winePath) this._winePath = json.winePath;
     if (json.winePrefix) this._winePrefix = json.winePrefix;
+    if (json.launchEnv) this._launchEnv = json.launchEnv;
   }
 
   public get mapPath(): string | undefined {
@@ -127,12 +136,38 @@ export class ProjectConfigurationLoader {
       : this._launchArgs;
   }
 
+  /**
+   * Working directory for the launch command. Battle.net's launcher must run
+   * from the Battle.net install directory ("Start In" on a Windows shortcut).
+   */
+  public get launchCwd(): string | undefined {
+    return process.env.PROJECT_LAUNCH_CWD ?? this._launchCwd;
+  }
+
+  /**
+   * When set, the built map is symlinked here before launching and the link is
+   * removed once the game has read it. Warcraft III cannot be handed a map on
+   * the command line when launching through Battle.net -- it only honours the
+   * -loadfile stored in Battle.net's own launch arguments -- so the fixed path
+   * those arguments point at is a symlink we repoint at each build.
+   */
+  public get mapSymlink(): string | undefined {
+    return process.env.PROJECT_MAP_SYMLINK ?? this._mapSymlink;
+  }
+
   public get winePath(): string | undefined {
     return process.env.PROJECT_WINE_PATH ?? this._winePath;
   }
 
   public get winePrefix(): string | undefined {
     return process.env.PROJECT_WINE_PREFIX ?? this._winePrefix;
+  }
+
+  /**
+   * Extra environment variables for the game process (e.g. GAMEID/PROTONPATH for umu-run).
+   */
+  public get launchEnv(): Record<string, string> {
+    return this._launchEnv;
   }
 }
 
