@@ -21,7 +21,7 @@ export class RandomNumberGenerator {
       return -1;
     }
 
-    return ModuloInteger(this.next() >>> 15, max + 1 - min) + min;
+    return ModuloInteger(Math.floor(this.next() / 0x8000), max + 1 - min) + min;
   }
 }
 
