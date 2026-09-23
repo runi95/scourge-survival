@@ -169,9 +169,10 @@ export class Spawner {
 
     if (GameMap.CURRENT_WAVE > 1) {
       for (let i = 0; i < GameMap.ONLINE_PLAYER_ID_LIST.length; i++) {
-        if (GameMap.IS_PLAYER_DEFEATED[i]) continue;
+        const playerId = GameMap.ONLINE_PLAYER_ID_LIST[i];
+        if (GameMap.IS_PLAYER_DEFEATED[playerId]) continue;
 
-        const player = MapPlayer.fromIndex(i);
+        const player = MapPlayer.fromIndex(playerId);
         const gold = player.getState(PLAYER_STATE_RESOURCE_GOLD);
         const income = Math.floor(0.1 * gold);
         if (income < 1) continue;
@@ -179,15 +180,15 @@ export class Spawner {
         const upkeepMult =
           (100 - player.getState(PLAYER_STATE_GOLD_UPKEEP_RATE)) * 0.01;
         const realIncome = Math.floor(income * upkeepMult);
-        if (realIncome > 0) {
-          player.setState(PLAYER_STATE_RESOURCE_GOLD, gold + realIncome);
-        }
-        if (GetPlayerId(GetLocalPlayer()) === i) {
+        if (realIncome < 1) continue;
+
+        player.setState(PLAYER_STATE_RESOURCE_GOLD, gold + realIncome);
+        if (GetPlayerId(GetLocalPlayer()) === playerId) {
           DisplayTextToPlayer(
             GetLocalPlayer(),
             0,
             0,
-            `Income: |cffffcc00+${income}|r`
+            `Income: |cffffcc00+${realIncome}|r`
           );
         }
       }
@@ -228,8 +229,8 @@ export class Spawner {
     }
     t.start(delay, true, () => {
       for (let i = 0; i < GameMap.ONLINE_PLAYER_ID_LIST.length; i++) {
-        if (GameMap.IS_PLAYER_DEFEATED[i]) continue;
         const playerId = GameMap.ONLINE_PLAYER_ID_LIST[i];
+        if (GameMap.IS_PLAYER_DEFEATED[playerId]) continue;
         const scourgePlayer = MapPlayer.fromIndex(playerId + 9);
         const x = isFirstPortal
           ? GameMap.PLAYER_AREAS[playerId].minX + 640
