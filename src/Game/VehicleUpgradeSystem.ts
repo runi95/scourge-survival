@@ -148,12 +148,16 @@ export class VehicleUpgradeSystem {
     icon = upgrade.icon;
     cost = upgrade.cost;
     const vehicle = GameMap.PLAYER_VEHICLES[this.localPlayerId];
-    const level = vehicle.upgradeMap.get(upgrade.name) ?? 0;
+    const level = vehicle?.upgradeMap.get(upgrade.name) ?? 0;
     if (upgrade.maxLevel != null) {
       if (level >= upgrade.maxLevel) {
         costColor = "|cFFC3DBFF";
         cost = "MAX";
-      } else if (upgrade.isWeapon && vehicle.availableWeaponSlots < 1) {
+      } else if (
+        upgrade.isWeapon &&
+        vehicle != null &&
+        vehicle.availableWeaponSlots < 1
+      ) {
         costColor = "|cFFC3DBFF";
         cost = "FULL";
       }
