@@ -51,8 +51,12 @@ export class LinkedList<T> {
     return this.size;
   }
 
-  public removeItem(item: T): Node<T> {
+  public removeItem(item: T): Node<T> | undefined {
     let node = this.head;
+    if (node === undefined) {
+      return undefined;
+    }
+
     if (node.value === item) {
       return this.pop();
     }
@@ -61,14 +65,22 @@ export class LinkedList<T> {
       node = node.next;
     }
 
-    if (node?.next != null) {
+    if (node == null) {
+      return undefined;
+    }
+
+    if (node.next != null) {
       node.next.previous = node.previous;
     }
 
-    if (node?.previous != null) {
+    if (node.previous != null) {
       node.previous.next = node.next;
     }
 
+    node.next = undefined;
+    node.previous = undefined;
+
+    this.size--;
     return node;
   }
 
