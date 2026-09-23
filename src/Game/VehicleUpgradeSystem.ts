@@ -11,6 +11,8 @@ import {
 import { VehicleUpgrade } from "../Vehicles/VehicleUpgrade";
 import { VehicleUpgradeRarity } from "../Vehicles/VehicleUpgradeRarity";
 
+const REROLL_COST = 50;
+
 export class VehicleUpgradeSystem {
   private readonly originFrameGameUi: Frame;
   private readonly menu: Frame;
@@ -88,10 +90,13 @@ export class VehicleUpgradeSystem {
       if (this.freeRerolls[playerId] > 0) {
         this.freeRerolls[playerId]--;
         this.refreshRerollCost();
-      } else if (playerCurrentGold < 100) {
+      } else if (playerCurrentGold < REROLL_COST) {
         return;
       } else {
-        player.setState(PLAYER_STATE_RESOURCE_GOLD, playerCurrentGold - 100);
+        player.setState(
+          PLAYER_STATE_RESOURCE_GOLD,
+          playerCurrentGold - REROLL_COST,
+        );
       }
 
       this.rollUpgrades(playerId);
@@ -136,7 +141,8 @@ export class VehicleUpgradeSystem {
 
   private refreshRerollCost() {
     const freeRerolls = this.freeRerolls[this.localPlayerId] ?? 0;
-    const cost = freeRerolls > 0 ? `${freeRerolls} free` : "100";
+    const cost =
+      freeRerolls > 0 ? `${freeRerolls} free` : REROLL_COST.toString();
     this.rerollCostFrame.setText(`|cffffcc00${cost}|r`);
   }
 
