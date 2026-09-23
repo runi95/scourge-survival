@@ -1,3 +1,4 @@
+/// <reference path="./types/luamin.d.ts" />
 import War3Map from "mdx-m3-viewer/dist/cjs/parsers/w3x/map";
 import {createLogger, format, transports} from "winston";
 import {createDiagnosticReporter, transpileProject} from "typescript-to-lua";

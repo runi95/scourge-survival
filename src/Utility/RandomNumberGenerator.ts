@@ -25,4 +25,4 @@ export class RandomNumberGenerator {
   }
 }
 
-RandomNumberGenerator.setSeed(GetRandomInt(1, Number.MAX_SAFE_INTEGER));
+RandomNumberGenerator.setSeed(GetRandomInt(1, 0x7fffffff));

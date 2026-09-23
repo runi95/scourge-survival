@@ -1,3 +1,4 @@
+/// <reference path="./types/war3tstlhelper.d.ts" />
 import { logger, ProjectConfigurationLoader } from "./utils";
 import War3TSTLHelper = require("war3tstlhelper");
 import * as fs from "fs-extra";

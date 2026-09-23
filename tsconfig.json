@@ -6,20 +6,22 @@
     ],
     "compilerOptions": {
       "skipLibCheck": true,
-      "module": "CommonJS",
-      "moduleResolution": "Node",
+      "module": "node16",
+      "moduleResolution": "node16",
       "types": [
         "node"
       ],
       "paths": {
         "w3ts": [
-          "../test/overrides/w3ts"
+          "./test/overrides/w3ts"
         ]
       }
     }
   },
   "compilerOptions": {
-    "baseUrl": "./src",
+    // TypeScript 6 turns `strict` on by default. The map source was written
+    // against the old default and does not type-check under it yet.
+    "strict": false,
     "allowJs": true,
     "skipLibCheck": true,
     "target": "es6",
@@ -29,11 +31,11 @@
     "moduleResolution": "bundler",
     "paths": {
       "*": [
-        "../node_modules/*/src/index",
-        "../node_modules/*/lib/index",
-        "../node_modules/*/index",
-        "../node_modules/*/dist/index",
-        "../node_modules/*"
+        "./node_modules/*/src/index",
+        "./node_modules/*/lib/index",
+        "./node_modules/*/index",
+        "./node_modules/*/dist/index",
+        "./node_modules/*"
       ]
     },
     "plugins": [
