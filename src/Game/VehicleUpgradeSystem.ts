@@ -408,7 +408,11 @@ export class VehicleUpgradeSystem {
       const playerId = player.id;
       const upgrade: VehicleUpgrade =
         vehicleUpgrades[this.upgradeIndexes[playerId][index]];
-      const vehicle = GameMap.PLAYER_VEHICLES[player.id];
+      if (upgrade == null) return;
+
+      const vehicle = GameMap.PLAYER_VEHICLES[playerId];
+      if (vehicle == null) return;
+
       if (
         upgrade.maxLevel != null &&
         (vehicle.upgradeMap.get(upgrade.name) ?? 0) >= upgrade.maxLevel
