@@ -263,7 +263,7 @@ export class VehicleUpgradeSystem {
     availableRareUpgrades: number[],
     availableLegendaryUpgrades: number[]
   ) {
-    const rarity = index === 0 ? 96 : RandomNumberGenerator.random(1, 100);
+    const rarity = RandomNumberGenerator.random(1, 100);
     if (rarity <= 70) {
       this.upgradeIndexes[playerId][index] =
         availableCommonUpgrades[
