@@ -125,16 +125,19 @@ export class Spawner {
     const t: Timer = TimerUtils.newTimer();
     this.waveTimer = t;
     t.start(10, false, () => {
-      const localPlayerId = GetPlayerId(GetLocalPlayer());
-      PingMinimapEx(
-        GameMap.PLAYER_AREAS[localPlayerId].minX + 640,
-        GameMap.PLAYER_AREAS[localPlayerId].maxY - 640,
-        4,
-        255,
-        0,
-        0,
-        true
-      );
+      const localPlayerArea =
+        GameMap.PLAYER_AREAS[GetPlayerId(GetLocalPlayer())];
+      if (localPlayerArea != null) {
+        PingMinimapEx(
+          localPlayerArea.minX + 640,
+          localPlayerArea.maxY - 640,
+          4,
+          255,
+          0,
+          0,
+          true
+        );
+      }
       this.startWave();
       TimerUtils.releaseTimer(t);
     });

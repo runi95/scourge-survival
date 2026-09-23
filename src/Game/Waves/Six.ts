@@ -39,10 +39,13 @@ export const SIX: Wave = {
     );
     spawnSkeletonSound.start();
 
-    const localPlayerId = GetPlayerId(GetLocalPlayer());
+    const localPlayerArea =
+      GameMap.PLAYER_AREAS[GetPlayerId(GetLocalPlayer())];
+    if (localPlayerArea == null) return;
+
     PingMinimapEx(
-      GameMap.PLAYER_AREAS[localPlayerId].maxX - 640,
-      GameMap.PLAYER_AREAS[localPlayerId].minY + 640,
+      localPlayerArea.maxX - 640,
+      localPlayerArea.minY + 640,
       4,
       255,
       0,
