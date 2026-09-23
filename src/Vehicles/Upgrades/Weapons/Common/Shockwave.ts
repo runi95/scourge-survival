@@ -1,4 +1,4 @@
-import { Item, MapPlayer, Timer, Unit } from "w3ts/index";
+import { Item, MapPlayer, Timer, Unit } from "w3ts";
 import { TimerUtils } from "../../../../Utility/TimerUtils";
 import { Vehicle } from "../../../Vehicle";
 import { VehicleUpgradeRarity } from "../../../VehicleUpgradeRarity";

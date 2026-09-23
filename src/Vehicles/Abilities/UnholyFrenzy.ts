@@ -1,6 +1,6 @@
 import { Trigger, Unit } from "w3ts";
 import { Globals } from "../../Utility/Globals";
-import { OrderId } from "../../../node_modules/w3ts/globals/order";
+import { OrderId } from "w3ts/globals/order";
 
 export class UnholyFrenzy {
   private readonly unholyFrenzyTrig: Trigger;

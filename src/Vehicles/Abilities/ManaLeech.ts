@@ -1,4 +1,4 @@
-import { Trigger, Unit } from "w3ts/index";
+import { Trigger, Unit } from "w3ts";
 import { GameMap } from "../../Game/GameMap";
 
 export class ManaLeech {

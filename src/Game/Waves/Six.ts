@@ -1,4 +1,4 @@
-import { Sound } from "../../../node_modules/w3ts/index";
+import { Sound } from "w3ts";
 import { Sounds } from "../../Utility/Sounds";
 import { MagicResistance } from "../CreepUpgrades/MagicResistance";
 import { CREEP_TYPE, GameMap } from "../GameMap";

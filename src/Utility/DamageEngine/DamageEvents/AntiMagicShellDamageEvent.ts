@@ -1,4 +1,4 @@
-import { TextTag } from "../../../../node_modules/w3ts/index";
+import { TextTag } from "w3ts";
 import { DamageEvent } from "../DamageEvent";
 import type { ExtendedDamageInstance } from "../DamageEventController";
 

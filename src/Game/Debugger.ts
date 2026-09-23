@@ -1,4 +1,4 @@
-import { Trigger } from "../../node_modules/w3ts/index";
+import { Trigger } from "w3ts";
 import { Log } from "../lib/Serilog/Serilog";
 import { GameOptions } from "./GameOptions";
 

@@ -1,4 +1,4 @@
-import { MapPlayer } from "w3ts/index";
+import { MapPlayer } from "w3ts";
 
 export abstract class CreepUpgrade {
   public readonly name: string = this.constructor.name;

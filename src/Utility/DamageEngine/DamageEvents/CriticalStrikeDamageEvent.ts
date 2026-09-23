@@ -1,4 +1,4 @@
-import { TextTag } from "w3ts/index";
+import { TextTag } from "w3ts";
 import { GameMap } from "../../../Game/GameMap";
 import { RandomNumberGenerator } from "../../RandomNumberGenerator";
 import { DamageEvent } from "../DamageEvent";

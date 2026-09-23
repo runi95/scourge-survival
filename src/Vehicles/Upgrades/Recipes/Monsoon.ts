@@ -1,4 +1,4 @@
-import { Effect, Item, MapPlayer, Timer } from "w3ts/index";
+import { Effect, Item, MapPlayer, Timer } from "w3ts";
 import { Vehicle } from "../../Vehicle";
 import { GameMap } from "../../../Game/GameMap";
 import { TimerUtils } from "../../../Utility/TimerUtils";

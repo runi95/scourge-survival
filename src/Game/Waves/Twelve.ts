@@ -1,4 +1,4 @@
-import { Sound } from "../../../node_modules/w3ts/index";
+import { Sound } from "w3ts";
 import { Sounds } from "../../Utility/Sounds";
 import { StrengthInNumbers } from "../CreepUpgrades/StrengthInNumbers";
 import { CREEP_TYPE, GameMap } from "../GameMap";

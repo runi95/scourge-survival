@@ -1,4 +1,4 @@
-import { Timer } from "w3ts/index";
+import { Timer } from "w3ts";
 import { TimerUtils } from "../../../../Utility/TimerUtils";
 import { Vehicle } from "../../../Vehicle";
 import { VehicleUpgrade } from "../../../VehicleUpgrade";
