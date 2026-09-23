@@ -29,7 +29,7 @@ export interface ILogSink {
 }
 
 export namespace Log {
-  let _sinks: ILogSink[];
+  let _sinks: ILogSink[] = [];
 
   export function Init(this: void, sinks: ILogSink[]): void {
     _sinks = sinks;
