@@ -18,7 +18,9 @@ export enum DamageEventType {
 
 interface DamageEventRegistry {
   minAOE: null | number;
-  filters: boolean[];
+  filters: {
+    [key: number]: boolean;
+  };
   targetClass: null | unittype;
   sourceClass: null | unittype;
   targetItem: null | itemtype; // ItemTypeId
@@ -79,6 +81,10 @@ interface RegisteredDamageEvent {
   };
   levelsDeep: number;
   damageEvent: DamageEvent;
+  trigFrozen: null | boolean;
+  configured: boolean;
+  minAOE: null | number;
+  inceptionTrig: boolean;
 }
 
 type MappedEventsObject = {
@@ -140,55 +146,55 @@ export class DamageEngine {
         GetUnitTypeId(this.current.source) !==
           (this.userIndex.sourceType as unknown as number)
       )
-        return true;
+        return false;
       else if (
         this.userIndex.targetType &&
         GetUnitTypeId(this.current.target) !==
           (this.userIndex.targetType as unknown as number)
       )
-        return true;
+        return false;
       else if (
         this.userIndex.sourceBuff &&
         GetUnitAbilityLevel(this.current.source, this.userIndex.sourceBuff) ===
           0
       )
-        return true;
+        return false;
       else if (
         this.userIndex.targetBuff &&
         GetUnitAbilityLevel(this.current.target, this.userIndex.targetBuff) ===
           0
       )
-        return true;
+        return false;
       else if (
         this.userIndex.failChance &&
         GetRandomReal(0.0, 1.0) <= this.userIndex.failChance
       )
-        return true;
+        return false;
       else if (
         this.userIndex.userType &&
         this.current.userType !== this.userIndex.userType
       )
-        return true;
+        return false;
       else if (
         this.userIndex.source &&
         this.userIndex.source !== this.current.source
       )
-        return true;
+        return false;
       else if (
         this.userIndex.target &&
         this.userIndex.target !== this.current.target
       )
-        return true;
+        return false;
       else if (
         this.userIndex.attackType &&
         this.userIndex.attackType !== this.current.attackType
       )
-        return true;
+        return false;
       else if (
         this.userIndex.damageType &&
         this.userIndex.damageType !== this.current.damageType
       )
-        return true;
+        return false;
       else if (
         this.userIndex.sourceItem &&
         !checkItem(
@@ -196,7 +202,7 @@ export class DamageEngine {
           this.userIndex.sourceItem as unknown as number
         )
       )
-        return true;
+        return false;
       else if (
         this.userIndex.targetItem &&
         !checkItem(
@@ -204,21 +210,20 @@ export class DamageEngine {
           this.userIndex.targetItem as unknown as number
         )
       )
-        return true;
+        return false;
       else if (
         this.userIndex.sourceClass &&
         !IsUnitType(this.current.source, this.userIndex.sourceClass)
       )
-        return true;
+        return false;
       else if (
         this.userIndex.targetClass &&
         !IsUnitType(this.current.target, this.userIndex.targetClass)
       )
-        return true;
-      else if (this.current.damage >= this.userIndex.damageMin) return true;
+        return false;
+      else if (this.current.damage < this.userIndex.damageMin) return false;
 
-      Log.Fatal("DamageEngine configuration failed!");
-      return false;
+      return true;
     };
 
     /*
@@ -308,15 +313,15 @@ export class DamageEngine {
       for (const event of events) {
         this.userIndex = event as any; // FIXME: Don't use any type here!
         if (check()) break;
+        const isAoe = damageEventType === DamageEventType.AoeDamageEvent;
         if (
-          (!this.userIndex.trigFrozen &&
-            this.userIndex.eFilter !== null &&
-            this.userIndex.filters[this.userIndex.eFilter] &&
-            this.checkConfig() &&
-            !DamageEngine.HAS_SOURCE) ||
-          damageEventType !== DamageEventType.AoeDamageEvent ||
-          !isFirstEvent ||
-          (this.userIndex.minAOE && this.sourceAOE > this.userIndex.minAOE)
+          !this.userIndex.trigFrozen &&
+          this.userIndex.filters[this.current.eFilter] &&
+          this.checkConfig() &&
+          (!isAoe ||
+            (isFirstEvent &&
+              (!this.userIndex.minAOE ||
+                this.sourceAOE >= this.userIndex.minAOE)))
         ) {
           this.userIndex.damageEvent.event(this.current);
         }
@@ -605,8 +610,8 @@ export class DamageEngine {
               this.afterDamage();
             }
             i += 1;
-          } while (i >= exit);
-        } while (i >= this.recursiveStack.length);
+          } while (i <= exit);
+        } while (i < this.recursiveStack.length);
       }
       for (let i = 0; i < this.recursiveStack.length; i++) {
         this.recursiveStack[i].recursiveFunc.trigFrozen = null;
@@ -907,6 +912,10 @@ export class DamageEngine {
       filters,
       levelsDeep: 0,
       damageEvent: damageEvent,
+      trigFrozen: null,
+      configured: false,
+      minAOE: null,
+      inceptionTrig: false,
     });
 
     Log.Debug(`Registered new event to ${damageEvent.constructor.name}`);
