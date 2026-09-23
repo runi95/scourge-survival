@@ -20,8 +20,9 @@ export class VehicleUpgradeSystem {
   private readonly upgradeCostFrames: Frame[] = [];
   private readonly upgradeIndexes: number[][] = [];
   private readonly localPlayerId: number = GetPlayerId(GetLocalPlayer());
+  private readonly rerollCostFrame: Frame;
 
-  private hasUsedFreeReroll: boolean[] = [];
+  private freeRerolls: number[] = [];
 
   constructor() {
     this.originFrameGameUi = Frame.fromOrigin(ORIGIN_FRAME_GAME_UI, 0);
@@ -31,7 +32,7 @@ export class VehicleUpgradeSystem {
     this.menu.setAbsPoint(FRAMEPOINT_CENTER, 0.4, 0.16);
 
     for (let i = 0; i < bj_MAX_PLAYERS; i++) {
-      this.hasUsedFreeReroll[i] = false;
+      this.freeRerolls[i] = 1;
       this.upgradeIndexes[i] = [];
       this.rollUpgrades(i);
     }
@@ -53,21 +54,21 @@ export class VehicleUpgradeSystem {
     );
     rerollIconFrame.setTexture("war3mapImported/Reroll.dds", 0, true);
 
-    const rerollCostFrame = Frame.createType(
+    this.rerollCostFrame = Frame.createType(
       "costFrame",
       rerollIconFrame,
       0,
       "TEXT",
       "",
     );
-    rerollCostFrame.setPoint(
+    this.rerollCostFrame.setPoint(
       FRAMEPOINT_CENTER,
       rerollIconFrame,
       FRAMEPOINT_CENTER,
       0,
       -0.0196875,
     );
-    rerollCostFrame.setText("|cffffcc001 free|r");
+    this.refreshRerollCost();
 
     const rerollButtonFrame = Frame.createType(
       "buttonFrame",
@@ -84,15 +85,9 @@ export class VehicleUpgradeSystem {
       const playerCurrentGold = player.getState(PLAYER_STATE_RESOURCE_GOLD);
       rerollButtonFrame.setEnabled(false);
       rerollButtonFrame.setEnabled(true);
-      const isFree = !this.hasUsedFreeReroll[playerId];
-      if (isFree) {
-        this.hasUsedFreeReroll[playerId] = true;
-        let cost = "1 free";
-        if (this.hasUsedFreeReroll[this.localPlayerId]) {
-          cost = "100";
-        }
-
-        rerollCostFrame.setText(`|cffffcc00${cost}|r`);
+      if (this.freeRerolls[playerId] > 0) {
+        this.freeRerolls[playerId]--;
+        this.refreshRerollCost();
       } else if (playerCurrentGold < 100) {
         return;
       } else {
@@ -132,6 +127,17 @@ export class VehicleUpgradeSystem {
     }
 
     this.menu.setFocus(false);
+  }
+
+  public addFreeRerolls(playerId: number, count: number) {
+    this.freeRerolls[playerId] += count;
+    this.refreshRerollCost();
+  }
+
+  private refreshRerollCost() {
+    const freeRerolls = this.freeRerolls[this.localPlayerId] ?? 0;
+    const cost = freeRerolls > 0 ? `${freeRerolls} free` : "100";
+    this.rerollCostFrame.setText(`|cffffcc00${cost}|r`);
   }
 
   private getUpgradeData(iconIndex: number) {

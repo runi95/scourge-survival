@@ -2,6 +2,7 @@ import { Sound } from "w3ts";
 import { Sounds } from "../../Utility/Sounds";
 import { MagicResistance } from "../CreepUpgrades/MagicResistance";
 import { CREEP_TYPE, GameMap } from "../GameMap";
+import { VehicleUpgradeSystem } from "../VehicleUpgradeSystem";
 import { Wave } from "./Wave";
 
 export const SIX: Wave = {
@@ -27,7 +28,13 @@ export const SIX: Wave = {
     ],
   ],
   bonusUpgrades: [new MagicResistance()],
-  before: () => {
+  before: (vehicleUpgradeSystem: VehicleUpgradeSystem) => {
+    for (const playerId of GameMap.ONLINE_PLAYER_ID_LIST) {
+      if (GameMap.IS_PLAYER_DEFEATED[playerId]) continue;
+
+      vehicleUpgradeSystem.addFreeRerolls(playerId, 3);
+    }
+
     const spawnSkeletonSound = Sound.create(
       Sounds.TOMB_OF_RELICS,
       false,
@@ -39,8 +46,13 @@ export const SIX: Wave = {
     );
     spawnSkeletonSound.start();
 
-    const localPlayerArea = GameMap.PLAYER_AREAS[GetPlayerId(GetLocalPlayer())];
+    const localPlayerId = GetPlayerId(GetLocalPlayer());
+    if (GameMap.IS_PLAYER_DEFEATED[localPlayerId]) return;
+
+    const localPlayerArea = GameMap.PLAYER_AREAS[localPlayerId];
     if (localPlayerArea == null) return;
+
+    DisplayTextToPlayer(GetLocalPlayer(), 0, 0, `Free rerolls: |cffffcc00+3|r`);
 
     PingMinimapEx(
       localPlayerArea.maxX - 640,

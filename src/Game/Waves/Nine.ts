@@ -2,6 +2,7 @@ import { Sound } from "w3ts";
 import { Sounds } from "../../Utility/Sounds";
 import { Bash } from "../CreepUpgrades/Bash";
 import { CREEP_TYPE, GameMap } from "../GameMap";
+import { VehicleUpgradeSystem } from "../VehicleUpgradeSystem";
 import { Wave } from "./Wave";
 
 export const NINE: Wave = {
@@ -28,7 +29,13 @@ export const NINE: Wave = {
     ],
   ],
   bonusUpgrades: [new Bash()],
-  before: () => {
+  before: (vehicleUpgradeSystem: VehicleUpgradeSystem) => {
+    for (const playerId of GameMap.ONLINE_PLAYER_ID_LIST) {
+      if (GameMap.IS_PLAYER_DEFEATED[playerId]) continue;
+
+      vehicleUpgradeSystem.addFreeRerolls(playerId, 3);
+    }
+
     print("|Cffff0000KEEP MOVING!|r");
 
     const spawnSkeletonSound = Sound.create(
@@ -42,8 +49,13 @@ export const NINE: Wave = {
     );
     spawnSkeletonSound.start();
 
-    const localPlayerArea = GameMap.PLAYER_AREAS[GetPlayerId(GetLocalPlayer())];
+    const localPlayerId = GetPlayerId(GetLocalPlayer());
+    if (GameMap.IS_PLAYER_DEFEATED[localPlayerId]) return;
+
+    const localPlayerArea = GameMap.PLAYER_AREAS[localPlayerId];
     if (localPlayerArea == null) return;
+
+    DisplayTextToPlayer(GetLocalPlayer(), 0, 0, `Free rerolls: |cffffcc00+3|r`);
 
     PingMinimapEx(
       localPlayerArea.maxX - 640,

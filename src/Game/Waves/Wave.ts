@@ -1,6 +1,7 @@
 import { CreepUpgrade } from "../CreepUpgrades/CreepUpgrade";
 import { CreepWaveUpgrade } from "../CreepUpgrades/CreepWaveUpgrade";
 import { CREEP_TYPE } from "../GameMap";
+import { VehicleUpgradeSystem } from "../VehicleUpgradeSystem";
 
 export type PortalWave = {
   delay: number;
@@ -12,7 +13,7 @@ export type PortalWave = {
 export type Wave = {
   bonusUpgrades?: CreepUpgrade[];
   portals: [PortalWave[], PortalWave[]];
-  before?: () => void;
+  before?: (vehicleUpgradeSystem: VehicleUpgradeSystem) => void;
 };
 
 export type WaveWithUpgrades = {

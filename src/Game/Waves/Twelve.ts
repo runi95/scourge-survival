@@ -2,6 +2,7 @@ import { Sound } from "w3ts";
 import { Sounds } from "../../Utility/Sounds";
 import { StrengthInNumbers } from "../CreepUpgrades/StrengthInNumbers";
 import { CREEP_TYPE, GameMap } from "../GameMap";
+import { VehicleUpgradeSystem } from "../VehicleUpgradeSystem";
 import { Wave } from "./Wave";
 
 export const TWELVE: Wave = {
@@ -31,7 +32,13 @@ export const TWELVE: Wave = {
     ],
   ],
   bonusUpgrades: [new StrengthInNumbers()],
-  before: () => {
+  before: (vehicleUpgradeSystem: VehicleUpgradeSystem) => {
+    for (const playerId of GameMap.ONLINE_PLAYER_ID_LIST) {
+      if (GameMap.IS_PLAYER_DEFEATED[playerId]) continue;
+
+      vehicleUpgradeSystem.addFreeRerolls(playerId, 3);
+    }
+
     const spawnSkeletonSound = Sound.create(
       Sounds.THEYLL_ALL_BE_MINE_IN_THE_END,
       false,
@@ -43,8 +50,13 @@ export const TWELVE: Wave = {
     );
     spawnSkeletonSound.start();
 
-    const localPlayerArea = GameMap.PLAYER_AREAS[GetPlayerId(GetLocalPlayer())];
+    const localPlayerId = GetPlayerId(GetLocalPlayer());
+    if (GameMap.IS_PLAYER_DEFEATED[localPlayerId]) return;
+
+    const localPlayerArea = GameMap.PLAYER_AREAS[localPlayerId];
     if (localPlayerArea == null) return;
+
+    DisplayTextToPlayer(GetLocalPlayer(), 0, 0, `Free rerolls: |cffffcc00+3|r`);
 
     PingMinimapEx(
       localPlayerArea.maxX - 640,

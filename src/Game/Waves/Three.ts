@@ -2,6 +2,7 @@ import { Sound } from "w3ts";
 import { Sounds } from "../../Utility/Sounds";
 import { CriticalStrike } from "../CreepUpgrades/CriticalStrike";
 import { CREEP_TYPE, GameMap } from "../GameMap";
+import { VehicleUpgradeSystem } from "../VehicleUpgradeSystem";
 import { Wave } from "./Wave";
 
 export const THREE: Wave = {
@@ -23,7 +24,13 @@ export const THREE: Wave = {
     ],
   ],
   bonusUpgrades: [new CriticalStrike()],
-  before: () => {
+  before: (vehicleUpgradeSystem: VehicleUpgradeSystem) => {
+    for (const playerId of GameMap.ONLINE_PLAYER_ID_LIST) {
+      if (GameMap.IS_PLAYER_DEFEATED[playerId]) continue;
+
+      vehicleUpgradeSystem.addFreeRerolls(playerId, 2);
+    }
+
     const spawnSkeletonSound = Sound.create(
       Sounds.SKELETON_WHAT,
       false,
@@ -35,8 +42,13 @@ export const THREE: Wave = {
     );
     spawnSkeletonSound.start();
 
-    const localPlayerArea = GameMap.PLAYER_AREAS[GetPlayerId(GetLocalPlayer())];
+    const localPlayerId = GetPlayerId(GetLocalPlayer());
+    if (GameMap.IS_PLAYER_DEFEATED[localPlayerId]) return;
+
+    const localPlayerArea = GameMap.PLAYER_AREAS[localPlayerId];
     if (localPlayerArea == null) return;
+
+    DisplayTextToPlayer(GetLocalPlayer(), 0, 0, `Free rerolls: |cffffcc00+2|r`);
 
     PingMinimapEx(
       localPlayerArea.maxX - 640,
