@@ -11,7 +11,7 @@ export class StrengthInNumbersDamageEvent implements DamageEvent {
     if (damageInstance.targetOwningPlayerId < 9) return;
 
     const remainingCreepCount = GameMap.REMAINING_PLAYER_CREEPS_COUNT.get(
-      damageInstance.targetOwningPlayerId
+      damageInstance.targetOwningPlayerId,
     );
     if (remainingCreepCount == null) return;
     if (remainingCreepCount < 2) return;

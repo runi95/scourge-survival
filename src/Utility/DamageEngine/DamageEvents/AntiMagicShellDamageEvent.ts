@@ -24,7 +24,7 @@ export class AntiMagicShellDamageEvent implements DamageEvent {
     txt.setPos(
       GetUnitX(damageInstance.target),
       GetUnitY(damageInstance.target),
-      BlzGetUnitZ(damageInstance.target)
+      BlzGetUnitZ(damageInstance.target),
     );
     txt.setColor(0.0, 255.0, 0.0, 255.0);
     txt.setPermanent(false);

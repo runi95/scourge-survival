@@ -32,8 +32,8 @@ export class ExplosiveElemental extends WeaponUpgradeRecipe {
         AddSpecialEffectTarget(
           "Abilities/Spells/Other/Incinerate/FireLordDeathExplode.mdl",
           dyingUnit,
-          "origin"
-        )
+          "origin",
+        ),
       );
     });
     this.onDeathTrigger.registerAnyUnitEvent(EVENT_PLAYER_UNIT_DEATH);
@@ -44,7 +44,7 @@ export class ExplosiveElemental extends WeaponUpgradeRecipe {
     owner: MapPlayer,
     _item: Item,
     itemId: number,
-    weaponIndex: number
+    weaponIndex: number,
   ): void {
     const t: Timer = TimerUtils.newTimer();
     this.timers.set(itemId, t);
@@ -65,7 +65,7 @@ export class ExplosiveElemental extends WeaponUpgradeRecipe {
           owner,
           this.waterElementalUnitTypeId,
           x + 300 * Math.cos(radian),
-          y + 300 * Math.sin(radian)
+          y + 300 * Math.sin(radian),
         );
         waterElemental.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 14);
         waterElemental.setAnimation("birth");
@@ -74,7 +74,7 @@ export class ExplosiveElemental extends WeaponUpgradeRecipe {
 
         vehicle.unit.startAbilityCooldown(
           weaponDummyAbilityIds[weaponIndex],
-          this.cooldown
+          this.cooldown,
         );
       }
 
@@ -93,7 +93,7 @@ export class ExplosiveElemental extends WeaponUpgradeRecipe {
     _owner: MapPlayer,
     _item: Item,
     itemId: number,
-    _weaponIndex: number
+    _weaponIndex: number,
   ): void {
     const t = this.timers.get(itemId);
     this.timers.delete(itemId);

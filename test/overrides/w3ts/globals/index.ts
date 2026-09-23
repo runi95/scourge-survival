@@ -4,6 +4,5 @@ export * from "./order";
 export const Players: MapPlayer[] = [];
 
 for (let i = 0; i < 24; i++) {
-    Players[i] = MapPlayer.fromIndex(i);
+  Players[i] = MapPlayer.fromIndex(i);
 }
-

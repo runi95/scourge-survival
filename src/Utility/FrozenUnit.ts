@@ -12,7 +12,7 @@ export class FrozenUnit {
     duration: number,
     permafrost: boolean,
     hasIceShards: boolean,
-    hasDeepFreeze: boolean
+    hasDeepFreeze: boolean,
   ) {
     this.permafrost = permafrost;
     this.hasIceShards = hasIceShards;

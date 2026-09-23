@@ -1,20 +1,13 @@
 {
   "ts-node": {
-    "require": [
-      "./test/overrides/index.ts",
-      "module-alias/register"
-    ],
+    "require": ["./test/overrides/index.ts", "module-alias/register"],
     "compilerOptions": {
       "skipLibCheck": true,
       "module": "node16",
       "moduleResolution": "node16",
-      "types": [
-        "node"
-      ],
+      "types": ["node"],
       "paths": {
-        "w3ts": [
-          "./test/overrides/w3ts"
-        ]
+        "w3ts": ["./test/overrides/w3ts"]
       }
     }
   },
@@ -25,9 +18,7 @@
     "allowJs": true,
     "skipLibCheck": true,
     "target": "es6",
-    "lib": [
-      "es6"
-    ],
+    "lib": ["es6"],
     "moduleResolution": "bundler",
     "paths": {
       "*": [
@@ -62,9 +53,7 @@
       "war3-types/special/w3ts"
     ]
   },
-  "include": [
-    "src"
-  ],
+  "include": ["src"],
   "exclude": [],
   "tstl": {
     "luaTarget": "5.3",

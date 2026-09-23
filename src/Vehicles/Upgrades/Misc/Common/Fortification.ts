@@ -13,11 +13,11 @@ export class Fortification extends VehicleUpgrade {
   public applyUpgrade(vehicle: Vehicle): void {
     BlzSetUnitArmor(
       vehicle.unit.handle,
-      BlzGetUnitArmor(vehicle.unit.handle) + 2
+      BlzGetUnitArmor(vehicle.unit.handle) + 2,
     );
     BlzSetUnitMaxHP(
       vehicle.unit.handle,
-      BlzGetUnitMaxHP(vehicle.unit.handle) + 125
+      BlzGetUnitMaxHP(vehicle.unit.handle) + 125,
     );
   }
 }

@@ -15,7 +15,7 @@ export class GoblinLandMine extends WeaponUpgrade {
   public readonly cooldown = 3;
   public readonly itemTypeId = FourCC("I003");
   public readonly description = (
-    level: number
+    level: number,
   ) => `Places Goblin Land Mines underneath your hero.
 
 Damage: |cffffcc00150|r
@@ -32,7 +32,7 @@ Mine activation delay: |cffffcc004s|r`;
     owner: MapPlayer,
     _item: Item,
     itemId: number,
-    weaponIndex: number
+    weaponIndex: number,
   ): void {
     const t: Timer = TimerUtils.newTimer();
     this.timers.set(itemId, t);
@@ -40,7 +40,7 @@ Mine activation delay: |cffffcc004s|r`;
       const { x, y } = vehicle.unit;
       vehicle.unit.startAbilityCooldown(
         weaponDummyAbilityIds[weaponIndex],
-        this.cooldown
+        this.cooldown,
       );
       const dummy = Unit.create(owner, this.landMineUnitTypeId, x, y);
       dummy.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 180);
@@ -52,7 +52,7 @@ Mine activation delay: |cffffcc004s|r`;
     _owner: MapPlayer,
     _item: Item,
     itemId: number,
-    _weaponIndex: number
+    _weaponIndex: number,
   ): void {
     const t = this.timers.get(itemId);
     this.timers.delete(itemId);

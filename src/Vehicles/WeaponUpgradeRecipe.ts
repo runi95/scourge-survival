@@ -15,14 +15,14 @@ export abstract class WeaponUpgradeRecipe implements WeaponUpgradeI {
     owner: MapPlayer,
     item: Item,
     itemId: number,
-    weaponIndex: number
+    weaponIndex: number,
   ): void;
   public abstract onDrop(
     vehicle: Vehicle,
     owner: MapPlayer,
     item: Item,
     itemId: number,
-    weaponIndex: number
+    weaponIndex: number,
   ): void;
 
   public applyUpgrade(vehicle: Vehicle): void {

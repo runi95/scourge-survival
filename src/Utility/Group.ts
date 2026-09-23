@@ -15,7 +15,7 @@ export class Group extends grp.Group {
 
   public static fromRectOfPlayer(r: Rectangle, whichPlayer: MapPlayer): Group {
     return Group.fromHandle(
-      GetUnitsInRectOfPlayer(r.handle, whichPlayer.handle)
+      GetUnitsInRectOfPlayer(r.handle, whichPlayer.handle),
     );
   }
 

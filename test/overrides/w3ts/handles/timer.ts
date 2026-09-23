@@ -3,7 +3,9 @@ export const timers: Timer[] = [];
 let timerIndex: number = 0;
 export class Timer {
   public readonly timerIndex;
-  private static ON_HANDLE_FUNC_CALLBACK: (t: Timer) => Promise<void> | undefined;
+  private static ON_HANDLE_FUNC_CALLBACK: (
+    t: Timer,
+  ) => Promise<void> | undefined;
   private isRunning = false;
 
   constructor() {
@@ -15,7 +17,11 @@ export class Timer {
     this.ON_HANDLE_FUNC_CALLBACK = cb;
   }
 
-  public start(timeout: number, periodic: boolean, handlerFunc: () => void): Timer {
+  public start(
+    timeout: number,
+    periodic: boolean,
+    handlerFunc: () => void,
+  ): Timer {
     this.isRunning = true;
     (async () => {
       while (this.isRunning) {

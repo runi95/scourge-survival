@@ -16,7 +16,7 @@ export class Shockwave extends WeaponUpgrade {
   public readonly cooldown = 2.5;
   public readonly itemTypeId = FourCC("I002");
   public readonly description = (
-    level: number
+    level: number,
   ) => `Sends 2 shockwaves in opposite directions.
 
 Damage: |cffffcc0050|r
@@ -33,7 +33,7 @@ Damage type: |cffffcc00spell|r`;
     owner: MapPlayer,
     _item: Item,
     itemId: number,
-    weaponIndex: number
+    weaponIndex: number,
   ): void {
     const t: Timer = TimerUtils.newTimer();
     this.timers.set(itemId, t);
@@ -41,7 +41,7 @@ Damage type: |cffffcc00spell|r`;
       const { x, y } = vehicle.unit;
       vehicle.unit.startAbilityCooldown(
         weaponDummyAbilityIds[weaponIndex],
-        this.cooldown
+        this.cooldown,
       );
 
       const randomAngle = RandomNumberGenerator.random(0, 359);
@@ -54,7 +54,7 @@ Damage type: |cffffcc00spell|r`;
         dummy.issueOrderAt(
           "shockwave",
           x + 400 * Math.cos(radians[i]),
-          y + 400 * Math.sin(radians[i])
+          y + 400 * Math.sin(radians[i]),
         );
       }
     });
@@ -65,7 +65,7 @@ Damage type: |cffffcc00spell|r`;
     _owner: MapPlayer,
     _item: Item,
     itemId: number,
-    _weaponIndex: number
+    _weaponIndex: number,
   ): void {
     const t = this.timers.get(itemId);
     this.timers.delete(itemId);

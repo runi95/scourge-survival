@@ -34,7 +34,7 @@ export class HowlOfTerror {
       t.start(0.1, true, () => {
         const { x, y } = vehicle.unit;
         const dist = Math.sqrt(
-          Math.pow(lastKnownX - x, 2) + Math.pow(lastKnownY - y, 2)
+          Math.pow(lastKnownX - x, 2) + Math.pow(lastKnownY - y, 2),
         );
         lastKnownX = x;
         lastKnownY = y;
@@ -47,7 +47,7 @@ export class HowlOfTerror {
             false,
             ATTACK_TYPE_NORMAL,
             DAMAGE_TYPE_NORMAL,
-            WEAPON_TYPE_WHOKNOWS
+            WEAPON_TYPE_WHOKNOWS,
           );
         }
 

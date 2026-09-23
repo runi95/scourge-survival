@@ -45,7 +45,7 @@ export class Runes {
       this.runesTrig.registerPlayerUnitEvent(
         MapPlayer.fromIndex(GameMap.ONLINE_PLAYER_ID_LIST[i] + 9),
         EVENT_PLAYER_UNIT_DEATH,
-        undefined
+        undefined,
       );
     }
   }

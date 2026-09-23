@@ -15,7 +15,7 @@ export class AirSupport extends WeaponUpgrade {
   public readonly itemTypeId = FourCC("I006");
   public readonly cost = 150;
   public readonly description = (
-    level: number
+    level: number,
   ) => `Spawns 3 Flying Machines that follows your hero around to attack nearby enemy units.
 
 Damage: |cffffcc003 x 25|r
@@ -33,7 +33,7 @@ Damage type: |cffffcc00siege|r`;
     owner: MapPlayer,
     _item: Item,
     itemId: number,
-    weaponIndex: number
+    weaponIndex: number,
   ): void {
     const t: Timer = TimerUtils.newTimer();
     this.timers.set(itemId, t);
@@ -55,7 +55,7 @@ Damage type: |cffffcc00siege|r`;
             owner,
             this.flyingMachineUnitTypeId,
             x + RandomNumberGenerator.random(-250, 250),
-            y + RandomNumberGenerator.random(-250, 250)
+            y + RandomNumberGenerator.random(-250, 250),
           );
           flyingMachine.issueTargetOrder("patrol", vehicle.unit);
           flyingMachines.push(flyingMachine);
@@ -63,7 +63,7 @@ Damage type: |cffffcc00siege|r`;
 
         vehicle.unit.startAbilityCooldown(
           weaponDummyAbilityIds[weaponIndex],
-          this.cooldown
+          this.cooldown,
         );
       }
 
@@ -89,19 +89,19 @@ Damage type: |cffffcc00siege|r`;
       if (flyingMachines == null) return;
       for (const flyingMachine of flyingMachines) {
         const dist = Math.sqrt(
-          Math.pow(flyingMachine.x - x, 2) + Math.pow(flyingMachine.y - y, 2)
+          Math.pow(flyingMachine.x - x, 2) + Math.pow(flyingMachine.y - y, 2),
         );
         if (dist < 1000) {
           flyingMachine.issueOrderAt(
             "attack",
             x + RandomNumberGenerator.random(-250, 250),
-            y + RandomNumberGenerator.random(-250, 250)
+            y + RandomNumberGenerator.random(-250, 250),
           );
         } else {
           flyingMachine.issueOrderAt(
             "move",
             x + RandomNumberGenerator.random(-250, 250),
-            y + RandomNumberGenerator.random(-250, 250)
+            y + RandomNumberGenerator.random(-250, 250),
           );
         }
       }
@@ -113,7 +113,7 @@ Damage type: |cffffcc00siege|r`;
     _owner: MapPlayer,
     _item: Item,
     itemId: number,
-    _weaponIndex: number
+    _weaponIndex: number,
   ): void {
     const t = this.timers.get(itemId);
     this.timers.delete(itemId);

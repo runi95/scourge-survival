@@ -2,7 +2,7 @@ export const levelUpStr = (
   level: number,
   mult: number = 1,
   baseValue: number = 0,
-  keepColor: boolean = false
+  keepColor: boolean = false,
 ) =>
   `${
     level > 1

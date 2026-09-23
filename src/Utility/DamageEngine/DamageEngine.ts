@@ -199,7 +199,7 @@ export class DamageEngine {
         this.userIndex.sourceItem &&
         !checkItem(
           this.current.source,
-          this.userIndex.sourceItem as unknown as number
+          this.userIndex.sourceItem as unknown as number,
         )
       )
         return false;
@@ -207,7 +207,7 @@ export class DamageEngine {
         this.userIndex.targetItem &&
         !checkItem(
           this.current.target,
-          this.userIndex.targetItem as unknown as number
+          this.userIndex.targetItem as unknown as number,
         )
       )
         return false;
@@ -359,7 +359,7 @@ export class DamageEngine {
     at: attacktype,
     dt: damagetype,
     wt: weapontype,
-    fromCode: boolean
+    fromCode: boolean,
   ): DamageInstance {
     const isAttack = a;
     const d: DamageInstance = {
@@ -418,7 +418,7 @@ export class DamageEngine {
    */
   private createFromEvent(
     eventDamage: number,
-    isCode: boolean
+    isCode: boolean,
   ): DamageInstance {
     const d = this.create(
       GetEventDamageSource(),
@@ -429,7 +429,7 @@ export class DamageEngine {
       BlzGetEventAttackType(),
       BlzGetEventDamageType(),
       BlzGetEventWeaponType(),
-      isCode
+      isCode,
     );
     if (!d.isCode) {
       if (d.damageType === DAMAGE_TYPE_NORMAL && d.isAttack) {
@@ -496,7 +496,7 @@ export class DamageEngine {
         // Changed condition thanks to bug reported by BLOKKADE
         BlzSetUnitArmor(
           this.current.target,
-          BlzGetUnitArmor(this.current.target) + pierce
+          BlzGetUnitArmor(this.current.target) + pierce,
         );
       }
       if (this.current.prevArmorT !== this.current.armorType) {
@@ -594,7 +594,7 @@ export class DamageEngine {
                   this.prepped.isRanged,
                   this.prepped.attackType,
                   this.prepped.damageType,
-                  this.prepped.weaponType
+                  this.prepped.weaponType,
                 );
               } else {
                 this.runEvent(DamageEventType.OnDamageEvent);
@@ -602,7 +602,7 @@ export class DamageEngine {
                   // No need for BlzSetEventDamage here
                   SetWidgetLife(
                     this.prepped.target,
-                    GetWidgetLife(this.prepped.target) - this.prepped.damage
+                    GetWidgetLife(this.prepped.target) - this.prepped.damage,
                   );
                 }
                 this.setArmor(true);
@@ -765,7 +765,7 @@ export class DamageEngine {
           !IsUnitType(d.target, UNIT_TYPE_MAGIC_IMMUNE);
 
         return false;
-      })
+      }),
     );
 
     TriggerRegisterAnyUnitEventBJ(this.t2, EVENT_PLAYER_UNIT_DAMAGED);
@@ -814,7 +814,7 @@ export class DamageEngine {
         if (d.damage === 0.0) this.finish();
 
         return false;
-      })
+      }),
     );
 
     TriggerRegisterAnyUnitEventBJ(this.t3, EVENT_PLAYER_UNIT_DAMAGING);
@@ -825,7 +825,7 @@ export class DamageEngine {
         BlzSetEventDamage(0.0);
 
         return false;
-      })
+      }),
     );
     DisableTrigger(this.t3);
   }
@@ -862,7 +862,7 @@ export class DamageEngine {
 
       this.recursiveStack.push(d);
       Log.Debug(
-        `recursiveStack: ${this.recursiveStack.length} levelsDeep: ${this.userIndex.levelsDeep} sleepLevel: ${this.sleepLevel}`
+        `recursiveStack: ${this.recursiveStack.length} levelsDeep: ${this.userIndex.levelsDeep} sleepLevel: ${this.sleepLevel}`,
       );
     }
   }
@@ -882,7 +882,7 @@ export class DamageEngine {
   public static register(
     damageEvent: DamageEvent,
     eventType: DamageEventType,
-    filt?: number
+    filt?: number,
   ): void {
     if (eventType === DamageEventType.AoeDamageEvent) {
       DamageEngine.HAS_SOURCE = true;

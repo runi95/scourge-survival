@@ -19,7 +19,7 @@ export class StormHammers extends WeaponUpgradeRecipe {
     owner: MapPlayer,
     _item: Item,
     itemId: number,
-    weaponIndex: number
+    weaponIndex: number,
   ): void {
     const t: Timer = TimerUtils.newTimer();
     this.timers.set(itemId, t);
@@ -27,7 +27,7 @@ export class StormHammers extends WeaponUpgradeRecipe {
       const { x, y } = vehicle.unit;
       vehicle.unit.startAbilityCooldown(
         weaponDummyAbilityIds[weaponIndex],
-        this.cooldown
+        this.cooldown,
       );
 
       const dummy = Unit.create(owner, this.dummyUnitId, x, y);
@@ -40,7 +40,7 @@ export class StormHammers extends WeaponUpgradeRecipe {
     _owner: MapPlayer,
     _item: Item,
     itemId: number,
-    _weaponIndex: number
+    _weaponIndex: number,
   ): void {
     const t = this.timers.get(itemId);
     this.timers.delete(itemId);

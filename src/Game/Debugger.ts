@@ -12,8 +12,8 @@ export class Debugger {
       const attacked = GetTriggerUnit();
       Log.Debug(
         `${GetUnitName(attacker)}(${GetHandleId(
-          attacker
-        )}) attacked ${GetUnitName(attacked)}(${GetHandleId(attacked)})`
+          attacker,
+        )}) attacked ${GetUnitName(attacked)}(${GetHandleId(attacked)})`,
       );
     });
     attackTrigger.registerAnyUnitEvent(EVENT_PLAYER_UNIT_ATTACKED);
@@ -33,19 +33,19 @@ export class Debugger {
       const ordered = GetOrderedUnit();
       Log.Debug(
         `${GetUnitName(ordered)}(${GetHandleId(
-          ordered
-        )}) was ordered to ${OrderId2String(order)}(${order})`
+          ordered,
+        )}) was ordered to ${OrderId2String(order)}(${order})`,
       );
     });
     issuedOrderTrigger.registerAnyUnitEvent(EVENT_PLAYER_UNIT_ISSUED_ORDER);
     issuedOrderTrigger.registerAnyUnitEvent(
-      EVENT_PLAYER_UNIT_ISSUED_POINT_ORDER
+      EVENT_PLAYER_UNIT_ISSUED_POINT_ORDER,
     );
     issuedOrderTrigger.registerAnyUnitEvent(
-      EVENT_PLAYER_UNIT_ISSUED_TARGET_ORDER
+      EVENT_PLAYER_UNIT_ISSUED_TARGET_ORDER,
     );
     issuedOrderTrigger.registerAnyUnitEvent(
-      EVENT_PLAYER_UNIT_ISSUED_UNIT_ORDER
+      EVENT_PLAYER_UNIT_ISSUED_UNIT_ORDER,
     );
 
     const acquiredTargetTrigger = Trigger.create();
@@ -54,8 +54,8 @@ export class Debugger {
       const target = GetEventTargetUnit();
       Log.Debug(
         `${GetUnitName(trigger)}(${GetHandleId(
-          trigger
-        )}) has acquired target ${GetUnitName(target)}(${GetHandleId(target)})`
+          trigger,
+        )}) has acquired target ${GetUnitName(target)}(${GetHandleId(target)})`,
       );
     });
   }

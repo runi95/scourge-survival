@@ -21,7 +21,7 @@ export class Phoenix extends WeaponUpgradeRecipe {
     owner: MapPlayer,
     _item: Item,
     itemId: number,
-    weaponIndex: number
+    weaponIndex: number,
   ): void {
     const t: Timer = TimerUtils.newTimer();
     this.timers.set(itemId, t);
@@ -40,14 +40,14 @@ export class Phoenix extends WeaponUpgradeRecipe {
           owner,
           this.phoenixUnitTypeId,
           x + RandomNumberGenerator.random(-250, 250),
-          y + RandomNumberGenerator.random(-250, 250)
+          y + RandomNumberGenerator.random(-250, 250),
         );
         phoenix.issueTargetOrder("patrol", vehicle.unit);
         this.playerPhoenix.set(itemId, phoenix);
 
         vehicle.unit.startAbilityCooldown(
           weaponDummyAbilityIds[weaponIndex],
-          this.cooldown
+          this.cooldown,
         );
       }
 
@@ -70,19 +70,19 @@ export class Phoenix extends WeaponUpgradeRecipe {
       const phoenix = this.playerPhoenix.get(itemId);
       if (phoenix == null) return;
       const dist = Math.sqrt(
-        Math.pow(phoenix.x - x, 2) + Math.pow(phoenix.y - y, 2)
+        Math.pow(phoenix.x - x, 2) + Math.pow(phoenix.y - y, 2),
       );
       if (dist < 1000) {
         phoenix.issueOrderAt(
           "attack",
           x + RandomNumberGenerator.random(-250, 250),
-          y + RandomNumberGenerator.random(-250, 250)
+          y + RandomNumberGenerator.random(-250, 250),
         );
       } else {
         phoenix.issueOrderAt(
           "move",
           x + RandomNumberGenerator.random(-250, 250),
-          y + RandomNumberGenerator.random(-250, 250)
+          y + RandomNumberGenerator.random(-250, 250),
         );
       }
     });
@@ -93,7 +93,7 @@ export class Phoenix extends WeaponUpgradeRecipe {
     _owner: MapPlayer,
     _item: Item,
     itemId: number,
-    _weaponIndex: number
+    _weaponIndex: number,
   ): void {
     const t = this.timers.get(itemId);
     this.timers.delete(itemId);

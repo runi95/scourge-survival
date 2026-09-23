@@ -34,7 +34,9 @@ function findGamePids(): string[] {
     .filter((entry) => /^\d+$/.test(entry))
     .filter((pid) => {
       const cmdline = readCmdline(pid);
-      return cmdline.includes("_retail_") && cmdline.includes("Warcraft III.exe");
+      return (
+        cmdline.includes("_retail_") && cmdline.includes("Warcraft III.exe")
+      );
     });
 }
 
@@ -52,7 +54,9 @@ function linkMap(symlinkPath: string, mapPath: string): void {
 function unlinkMap(symlinkPath: string, mapPath: string): void {
   try {
     if (fs.readlinkSync(symlinkPath) !== mapPath) {
-      logger.warn(`Leaving "${symlinkPath}", it no longer points at this build`);
+      logger.warn(
+        `Leaving "${symlinkPath}", it no longer points at this build`,
+      );
       return;
     }
     fs.unlinkSync(symlinkPath);
@@ -65,7 +69,9 @@ function unlinkMap(symlinkPath: string, mapPath: string): void {
 async function waitForGame(ignorePids: string[]): Promise<string | undefined> {
   const deadline = Date.now() + GAME_START_TIMEOUT_MS;
   while (Date.now() < deadline) {
-    const pid = findGamePids().find((candidate) => !ignorePids.includes(candidate));
+    const pid = findGamePids().find(
+      (candidate) => !ignorePids.includes(candidate),
+    );
     if (pid !== undefined) {
       logger.info(`Warcraft III started (pid ${pid})`);
       return pid;
@@ -84,7 +90,7 @@ async function waitForGame(ignorePids: string[]): Promise<string | undefined> {
 function removeLinkWhenGameExits(
   pid: string,
   symlinkPath: string,
-  mapPath: string
+  mapPath: string,
 ): void {
   const script =
     'while [ -e "/proc/$1" ]; do sleep 2; done; ' +
@@ -92,7 +98,7 @@ function removeLinkWhenGameExits(
   const watcher = spawn(
     "bash",
     ["-c", script, "wc3-link-cleanup", pid, symlinkPath, mapPath],
-    { detached: true, stdio: "ignore" }
+    { detached: true, stdio: "ignore" },
   );
   watcher.unref();
 }
@@ -100,7 +106,7 @@ function removeLinkWhenGameExits(
 async function launchThroughBattleNet(
   config: ProjectConfigurationLoader,
   mapPath: string,
-  env: NodeJS.ProcessEnv
+  env: NodeJS.ProcessEnv,
 ): Promise<void> {
   const symlinkPath = config.mapSymlink as string;
   linkMap(symlinkPath, mapPath);
@@ -117,10 +123,10 @@ async function launchThroughBattleNet(
     const launcher = spawn(
       config.winePath as string,
       [config.gameExecutable as string, ...config.launchArgs],
-      { cwd: config.launchCwd, env, stdio: "inherit", detached: true }
+      { cwd: config.launchCwd, env, stdio: "inherit", detached: true },
     );
     launcher.on("error", (err) =>
-      logger.error(`Failed to run "${config.winePath}": ${err.message}`)
+      logger.error(`Failed to run "${config.winePath}": ${err.message}`),
     );
     // The launcher only signals the running Battle.net client; the game is not
     // its child, so there is nothing useful to wait on here.
@@ -135,7 +141,7 @@ async function launchThroughBattleNet(
     const pid = await waitForGame(running);
     if (pid === undefined) {
       logger.warn(
-        "Warcraft III did not start. Is Battle.net running and logged in, and are its launch arguments set?"
+        "Warcraft III did not start. Is Battle.net running and logged in, and are its launch arguments set?",
       );
       return;
     }
@@ -154,12 +160,21 @@ async function main(): Promise<void> {
     throw new Error("Unable to compile map without the 'mapPath' configured");
   }
 
-  compileMap(config.mapPath, config.outDir, config.minifyScript, config.saveAsFolder);
+  compileMap(
+    config.mapPath,
+    config.outDir,
+    config.minifyScript,
+    config.saveAsFolder,
+  );
 
-  const filename = path.resolve(`${config.outDir}/${path.basename(config.mapPath)}`);
+  const filename = path.resolve(
+    `${config.outDir}/${path.basename(config.mapPath)}`,
+  );
 
   if (config.gameExecutable === undefined) {
-    throw new Error("Unable to start map without any 'gameExecutable' configured");
+    throw new Error(
+      "Unable to start map without any 'gameExecutable' configured",
+    );
   }
 
   const env = { ...process.env, ...config.launchEnv };
@@ -176,13 +191,23 @@ async function main(): Promise<void> {
     const wineFilename = `"Z:${filename}"`;
     // stdio is inherited so umu/proton errors reach the terminal; with 'ignore'
     // a failed or hanging launch looks identical to a successful one.
-    execSync(`${config.winePath} "${config.gameExecutable}" ${["-loadfile", wineFilename, ...config.launchArgs].join(' ')}`, { stdio: 'inherit', env });
+    execSync(
+      `${config.winePath} "${config.gameExecutable}" ${["-loadfile", wineFilename, ...config.launchArgs].join(" ")}`,
+      { stdio: "inherit", env },
+    );
   } else {
-    execFile(config.gameExecutable, ["-loadfile", filename, ...config.launchArgs], { env }, (err: any) => {
-      if (err) {
-        logger.error(`Failed to launch "${config.gameExecutable}" (${err.code ?? err.message}). Make sure gameExecutable is configured properly in config.json.`);
-      }
-    });
+    execFile(
+      config.gameExecutable,
+      ["-loadfile", filename, ...config.launchArgs],
+      { env },
+      (err: any) => {
+        if (err) {
+          logger.error(
+            `Failed to launch "${config.gameExecutable}" (${err.code ?? err.message}). Make sure gameExecutable is configured properly in config.json.`,
+          );
+        }
+      },
+    );
   }
 }
 

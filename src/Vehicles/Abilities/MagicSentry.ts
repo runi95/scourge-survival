@@ -21,7 +21,7 @@ export class MagicSentry {
       const abilityId = GetSpellAbilityId();
       const manaCost = BlzGetAbilityManaCost(
         abilityId,
-        GetUnitAbilityLevel(trig.handle, abilityId)
+        GetUnitAbilityLevel(trig.handle, abilityId),
       );
       if (manaCost < 1) return;
 

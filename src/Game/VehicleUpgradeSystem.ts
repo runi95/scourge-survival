@@ -41,7 +41,7 @@ export class VehicleUpgradeSystem {
       this.menu,
       0,
       "BACKDROP",
-      ""
+      "",
     );
     rerollIconFrame.setSize(0.02625, 0.02625);
     rerollIconFrame.setPoint(
@@ -49,7 +49,7 @@ export class VehicleUpgradeSystem {
       this.menu,
       FRAMEPOINT_CENTER,
       -0.1,
-      0.013
+      0.013,
     );
     rerollIconFrame.setTexture("war3mapImported/Reroll.dds", 0, true);
 
@@ -58,14 +58,14 @@ export class VehicleUpgradeSystem {
       rerollIconFrame,
       0,
       "TEXT",
-      ""
+      "",
     );
     rerollCostFrame.setPoint(
       FRAMEPOINT_CENTER,
       rerollIconFrame,
       FRAMEPOINT_CENTER,
       0,
-      -0.0196875
+      -0.0196875,
     );
     rerollCostFrame.setText("|cffffcc001 free|r");
 
@@ -74,7 +74,7 @@ export class VehicleUpgradeSystem {
       rerollIconFrame,
       0,
       "BUTTON",
-      ""
+      "",
     );
     rerollButtonFrame.setAllPoints(rerollIconFrame);
     const rerollTrig: Trigger = Trigger.create();
@@ -104,7 +104,7 @@ export class VehicleUpgradeSystem {
     });
     rerollTrig.triggerRegisterFrameEvent(
       rerollButtonFrame,
-      FRAMEEVENT_CONTROL_CLICK
+      FRAMEEVENT_CONTROL_CLICK,
     );
 
     for (let i = 0; i < 4; i++) {
@@ -118,7 +118,7 @@ export class VehicleUpgradeSystem {
           costColor,
           cost,
           icon,
-          borderIcon
+          borderIcon,
         );
 
       this.upgradeIconFrames.push(upgradeIconFrame);
@@ -210,7 +210,7 @@ export class VehicleUpgradeSystem {
   }
 
   private getShuffledUpgradeArrays(
-    upgradeIndexesToSkip?: Map<number, boolean>
+    upgradeIndexesToSkip?: Map<number, boolean>,
   ): [number[], number[], number[], number[]] {
     const availableCommonUpgrades = [];
     for (let i = 0; i < commonUpgrades.length; i++) {
@@ -261,7 +261,7 @@ export class VehicleUpgradeSystem {
     availableCommonUpgrades: number[],
     availableUncommonUpgrades: number[],
     availableRareUpgrades: number[],
-    availableLegendaryUpgrades: number[]
+    availableLegendaryUpgrades: number[],
   ) {
     const rarity = RandomNumberGenerator.random(1, 100);
     if (rarity <= 70) {
@@ -302,7 +302,7 @@ export class VehicleUpgradeSystem {
         availableCommonUpgrades,
         availableUncommonUpgrades,
         availableRareUpgrades,
-        availableLegendaryUpgrades
+        availableLegendaryUpgrades,
       );
     }
   }
@@ -314,7 +314,7 @@ export class VehicleUpgradeSystem {
     costColor: string = "|cFFFFCC00",
     cost: number | string = 0,
     texture = "UI/Widgets/EscMenu/Human/Quest-Unknown.dds",
-    borderTexture = "war3mapImported/CommonBorder.dds"
+    borderTexture = "war3mapImported/CommonBorder.dds",
   ): [Frame, Frame, Frame] {
     const iconFrame = Frame.createType("iconFrame", parent, 0, "BACKDROP", "");
     iconFrame.setSize(0.02625, 0.02625);
@@ -323,7 +323,7 @@ export class VehicleUpgradeSystem {
       parent,
       FRAMEPOINT_CENTER,
       offsetX,
-      offsetY
+      offsetY,
     );
     iconFrame.setTexture(texture, 0, true);
 
@@ -332,7 +332,7 @@ export class VehicleUpgradeSystem {
       parent,
       0,
       "BACKDROP",
-      ""
+      "",
     );
     iconBorderFrame.setSize(0.02625, 0.02625);
     iconBorderFrame.setPoint(
@@ -340,7 +340,7 @@ export class VehicleUpgradeSystem {
       parent,
       FRAMEPOINT_CENTER,
       offsetX,
-      offsetY
+      offsetY,
     );
     iconBorderFrame.setTexture(borderTexture, 0, true);
 
@@ -350,7 +350,7 @@ export class VehicleUpgradeSystem {
       iconFrame,
       FRAMEPOINT_CENTER,
       0,
-      -0.0196875
+      -0.0196875,
     );
     costFrame.setText(`${costColor}${cost}|r`);
 
@@ -363,7 +363,7 @@ export class VehicleUpgradeSystem {
       parent,
       0,
       "BUTTON",
-      ""
+      "",
     );
     buttonFrame.setAllPoints(parent);
 
@@ -373,7 +373,7 @@ export class VehicleUpgradeSystem {
       tooltipFrame,
       0,
       "TEXT",
-      ""
+      "",
     );
     textFrame.setSize(0.25, 0);
     tooltipFrame.setPoint(
@@ -381,14 +381,14 @@ export class VehicleUpgradeSystem {
       textFrame,
       FRAMEPOINT_BOTTOMLEFT,
       -0.01,
-      -0.01
+      -0.01,
     );
     tooltipFrame.setPoint(
       FRAMEPOINT_TOPRIGHT,
       textFrame,
       FRAMEPOINT_TOPRIGHT,
       0.01,
-      0.01
+      0.01,
     );
     buttonFrame.setTooltip(tooltipFrame);
     textFrame.setPoint(FRAMEPOINT_BOTTOM, buttonFrame, FRAMEPOINT_TOP, 0, 0.01);
@@ -425,11 +425,11 @@ export class VehicleUpgradeSystem {
 
       player.setState(
         PLAYER_STATE_RESOURCE_GOLD,
-        playerCurrentGold - upgrade.cost
+        playerCurrentGold - upgrade.cost,
       );
       vehicle.upgradeMap.set(
         upgrade.name,
-        (vehicle.upgradeMap.get(upgrade.name) ?? 0) + 1
+        (vehicle.upgradeMap.get(upgrade.name) ?? 0) + 1,
       );
 
       const indexesToSkip = new Map<number, boolean>();
@@ -450,7 +450,7 @@ export class VehicleUpgradeSystem {
         availableCommonUpgrades,
         availableUncommonUpgrades,
         availableRareUpgrades,
-        availableLegendaryUpgrades
+        availableLegendaryUpgrades,
       );
 
       this.refreshUpgradeIcon(index);

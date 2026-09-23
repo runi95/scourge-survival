@@ -33,7 +33,7 @@ export class StringSink implements ILogSink {
 
   constructor(
     private readonly logLevel: LogLevel,
-    private printer: (this: void, message: string) => void
+    private printer: (this: void, message: string) => void,
   ) {}
 
   LogLevel(): LogLevel {

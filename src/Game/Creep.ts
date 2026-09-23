@@ -11,7 +11,7 @@ export class Creep {
     unit: Unit,
     spawnX: number,
     spawnY: number,
-    attackMoveIndex: number
+    attackMoveIndex: number,
   ) {
     this.unit = unit;
     this.spawnX = spawnX;

@@ -16,7 +16,7 @@ export class LongRifle extends WeaponUpgrade {
   public readonly cooldown = 5;
   public readonly itemTypeId = FourCC("I00Y");
   public readonly description = (
-    level: number
+    level: number,
   ) => `Fire off a long rifle, dealing damage based on distance to the target.
 
 Damage: |cffffcc0075 - 750|r
@@ -36,11 +36,11 @@ Damage type: |cffffcc00piercing|r`;
     owner: MapPlayer,
     _item: Item,
     itemId: number,
-    weaponIndex: number
+    weaponIndex: number,
   ): void {
     vehicle.unit.startAbilityCooldown(
       weaponDummyAbilityIds[weaponIndex],
-      this.cooldown
+      this.cooldown,
     );
 
     const t: Timer = TimerUtils.newTimer();
@@ -66,7 +66,7 @@ Damage type: |cffffcc00piercing|r`;
 
         vehicle.unit.startAbilityCooldown(
           weaponDummyAbilityIds[weaponIndex],
-          this.cooldown
+          this.cooldown,
         );
 
         this.itemIterations.set(itemId, 0);
@@ -84,7 +84,7 @@ Damage type: |cffffcc00piercing|r`;
           Effect.create(
             "Abilities/Spells/NightElf/Blink/BlinkTarget.mdl",
             dx,
-            dy
+            dy,
           ).destroy();
         } else if (iterations === 2) {
           const rifleman = this.itemRiflemanMap.get(itemId);
@@ -93,7 +93,7 @@ Damage type: |cffffcc00piercing|r`;
             Effect.create(
               "Abilities/Spells/NightElf/Blink/BlinkCaster.mdl",
               x,
-              y
+              y,
             ).destroy();
             rifleman.destroy();
             this.itemRiflemanMap.delete(itemId);
@@ -110,7 +110,7 @@ Damage type: |cffffcc00piercing|r`;
     _owner: MapPlayer,
     _item: Item,
     itemId: number,
-    _weaponIndex: number
+    _weaponIndex: number,
   ): void {
     const t = this.timers.get(itemId);
     this.timers.delete(itemId);

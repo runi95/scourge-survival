@@ -20,7 +20,7 @@ export class AntiMagicShell {
       const effect = Effect.createAttachment(
         "Abilities/Spells/Undead/AntiMagicShell/AntiMagicShell.mdl",
         triggeringUnit,
-        "overhead"
+        "overhead",
       );
       const t: Timer = TimerUtils.newTimer();
       t.start(10, false, () => {

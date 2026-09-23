@@ -38,12 +38,11 @@ export const NINE: Wave = {
       true,
       10,
       10,
-      "DefaultEAXON"
+      "DefaultEAXON",
     );
     spawnSkeletonSound.start();
 
-    const localPlayerArea =
-      GameMap.PLAYER_AREAS[GetPlayerId(GetLocalPlayer())];
+    const localPlayerArea = GameMap.PLAYER_AREAS[GetPlayerId(GetLocalPlayer())];
     if (localPlayerArea == null) return;
 
     PingMinimapEx(
@@ -53,7 +52,7 @@ export const NINE: Wave = {
       255,
       0,
       0,
-      true
+      true,
     );
   },
 };

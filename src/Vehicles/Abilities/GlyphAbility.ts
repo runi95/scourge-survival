@@ -31,7 +31,7 @@ export class GlyphAbility {
       } else {
         vehicle.unit.setIntelligence(
           vehicle.unit.intelligence + glyphLevel,
-          true
+          true,
         );
       }
     });
@@ -41,7 +41,7 @@ export class GlyphAbility {
       this.runesTrig.registerPlayerUnitEvent(
         MapPlayer.fromIndex(playerId + 9),
         EVENT_PLAYER_UNIT_DEATH,
-        () => GlyphAbility.PLAYER_ID_UNLOCKS[playerId]
+        () => GlyphAbility.PLAYER_ID_UNLOCKS[playerId],
       );
     }
   }

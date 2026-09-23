@@ -18,7 +18,7 @@ export class ClusterRockets extends WeaponUpgrade {
   public readonly cooldown = 2;
   public readonly itemTypeId = FourCC("I00N");
   public readonly description = (
-    level: number
+    level: number,
   ) => `Sends Cluster Rockets firing off in a random area at a random direction.
 
 Damage: |cffffcc006 x 17.5 (max 210)|r
@@ -37,7 +37,7 @@ Effect: stuns for |cffffcc001s|r`;
     owner: MapPlayer,
     _item: Item,
     itemId: number,
-    weaponIndex: number
+    weaponIndex: number,
   ): void {
     const t: Timer = TimerUtils.newTimer();
     this.timers.set(itemId, t);
@@ -45,7 +45,7 @@ Effect: stuns for |cffffcc001s|r`;
       const { x, y } = vehicle.unit;
       vehicle.unit.startAbilityCooldown(
         weaponDummyAbilityIds[weaponIndex],
-        this.cooldown
+        this.cooldown,
       );
       const dummy = Unit.create(owner, this.dummyUnitId, x, y);
       dummy.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 4);
@@ -55,7 +55,7 @@ Effect: stuns for |cffffcc001s|r`;
       dummy.issueOrderAt(
         "clusterrockets",
         x + 400 * Math.cos(radians),
-        y + 400 * Math.sin(radians)
+        y + 400 * Math.sin(radians),
       );
     });
   }
@@ -65,7 +65,7 @@ Effect: stuns for |cffffcc001s|r`;
     _owner: MapPlayer,
     _item: Item,
     itemId: number,
-    _weaponIndex: number
+    _weaponIndex: number,
   ): void {
     const t = this.timers.get(itemId);
     this.timers.delete(itemId);

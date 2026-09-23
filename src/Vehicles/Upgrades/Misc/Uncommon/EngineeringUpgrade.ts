@@ -22,7 +22,7 @@ export class EngineeringUpgrade extends VehicleUpgrade {
     } else {
       vehicle.unit.setAbilityLevel(
         this.engeneeringUpgradeAbilityId,
-        engineeringUpgradeLevel
+        engineeringUpgradeLevel,
       );
     }
   }

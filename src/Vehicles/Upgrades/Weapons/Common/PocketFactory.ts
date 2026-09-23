@@ -18,7 +18,7 @@ export class PocketFactory extends WeaponUpgrade {
   public readonly itemTypeId = FourCC("I00O");
   public readonly cost = 150;
   public readonly description = (
-    level: number
+    level: number,
   ) => `Spawns a Pocket Factory every 60 seconds. The Pocket Factory spawns a Clockwerk Goblin every 5 seconds that explodes upon death.
 
 Damage: |cffffcc008 (attack) + 60 (explosion)|r
@@ -38,7 +38,7 @@ Duration: |cffffcc0060s (factory) + 12s (goblin)|r`;
     owner: MapPlayer,
     _item: Item,
     itemId: number,
-    weaponIndex: number
+    weaponIndex: number,
   ): void {
     const t: Timer = TimerUtils.newTimer();
     this.timers.set(itemId, t);
@@ -49,7 +49,7 @@ Duration: |cffffcc0060s (factory) + 12s (goblin)|r`;
     } else {
       vehicle.unit.startAbilityCooldown(
         weaponDummyAbilityIds[weaponIndex],
-        2 * existingIterations
+        2 * existingIterations,
       );
     }
 
@@ -69,7 +69,7 @@ Duration: |cffffcc0060s (factory) + 12s (goblin)|r`;
 
       vehicle.unit.startAbilityCooldown(
         weaponDummyAbilityIds[weaponIndex],
-        this.cooldown
+        this.cooldown,
       );
 
       const { x, y } = vehicle.unit;
@@ -81,7 +81,7 @@ Duration: |cffffcc0060s (factory) + 12s (goblin)|r`;
       dummy.issueOrderAt(
         "summonfactory",
         x + 400 * Math.cos(radians),
-        y + 400 * Math.sin(radians)
+        y + 400 * Math.sin(radians),
       );
     });
   }
@@ -91,7 +91,7 @@ Duration: |cffffcc0060s (factory) + 12s (goblin)|r`;
     _owner: MapPlayer,
     _item: Item,
     itemId: number,
-    _weaponIndex: number
+    _weaponIndex: number,
   ): void {
     const t = this.timers.get(itemId);
     this.timers.delete(itemId);

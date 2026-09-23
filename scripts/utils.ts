@@ -1,11 +1,11 @@
 /// <reference path="./types/luamin.d.ts" />
 import War3Map from "mdx-m3-viewer/dist/cjs/parsers/w3x/map";
-import {createLogger, format, transports} from "winston";
-import {createDiagnosticReporter, transpileProject} from "typescript-to-lua";
-import {DiagnosticCategory, ExitStatus} from "typescript";
-import {TextEncoder} from "util";
-import type {SourceFile} from "typescript";
-import type {Format} from "logform";
+import { createLogger, format, transports } from "winston";
+import { createDiagnosticReporter, transpileProject } from "typescript-to-lua";
+import { DiagnosticCategory, ExitStatus } from "typescript";
+import { TextEncoder } from "util";
+import type { SourceFile } from "typescript";
+import type { Format } from "logform";
 import * as luamin from "luamin";
 import * as fs from "fs-extra";
 import * as path from "path";
@@ -52,17 +52,17 @@ export class ProjectConfigurationLoader {
 
     try {
       const projectConfigFile = fs.readFileSync(
-        ProjectConfigurationLoader.PROJECT_CONFIG_FILE_NAME
+        ProjectConfigurationLoader.PROJECT_CONFIG_FILE_NAME,
       );
       const projectConfig = JSON.parse(projectConfigFile.toString());
       configurationLoader.setConfigFromJSON(projectConfig);
       logger.debug(
-        `${ProjectConfigurationLoader.PROJECT_CONFIG_FILE_NAME} loaded`
+        `${ProjectConfigurationLoader.PROJECT_CONFIG_FILE_NAME} loaded`,
       );
     } catch (err: any) {
       if (err?.code === "ENOENT") {
         logger.warn(
-          `Missing project configuration file: ${ProjectConfigurationLoader.PROJECT_CONFIG_FILE_NAME}`
+          `Missing project configuration file: ${ProjectConfigurationLoader.PROJECT_CONFIG_FILE_NAME}`,
         );
       } else {
         throw err;
@@ -71,17 +71,17 @@ export class ProjectConfigurationLoader {
 
     try {
       const configOverrideFile = fs.readFileSync(
-        ProjectConfigurationLoader.USER_CONFIG_FILE_NAME
+        ProjectConfigurationLoader.USER_CONFIG_FILE_NAME,
       );
       const configOverrides = JSON.parse(configOverrideFile.toString());
       configurationLoader.setConfigFromJSON(configOverrides);
       logger.debug(
-        `${ProjectConfigurationLoader.USER_CONFIG_FILE_NAME} loaded`
+        `${ProjectConfigurationLoader.USER_CONFIG_FILE_NAME} loaded`,
       );
     } catch (err: any) {
       if (err?.code === "ENOENT") {
         logger.debug(
-          `User configuration file ${ProjectConfigurationLoader.USER_CONFIG_FILE_NAME} does not exist`
+          `User configuration file ${ProjectConfigurationLoader.USER_CONFIG_FILE_NAME} does not exist`,
         );
       } else {
         throw err;
@@ -116,14 +116,14 @@ export class ProjectConfigurationLoader {
   public get saveAsFolder(): boolean {
     return process.env.PROJECT_SAVE_AS_FOLDER
       ? process.env.PROJECT_SAVE_AS_FOLDER.toLowerCase() === "true" ||
-      process.env.PROJECT_SAVE_AS_FOLDER === "1"
+          process.env.PROJECT_SAVE_AS_FOLDER === "1"
       : this._saveAsFolder;
   }
 
   public get minifyScript(): boolean {
     return process.env.PROJECT_MINIFY_SCRIPT
       ? process.env.PROJECT_MINIFY_SCRIPT.toLowerCase() === "true" ||
-      process.env.PROJECT_MINIFY_SCRIPT === "1"
+          process.env.PROJECT_MINIFY_SCRIPT === "1"
       : this._minifyScript;
   }
 
@@ -200,17 +200,17 @@ export function compileMap(
   mapPath: string,
   outDir: string,
   minifyScript: boolean,
-  saveAsFolder: boolean
+  saveAsFolder: boolean,
 ): void {
   logger.info(`Building "${mapPath}"...`);
   const war3mapLuaPath = `${mapPath}/war3map.lua`;
   if (fs.existsSync(`${mapPath}/war3map.j`))
     throw new Error(
-      `Detected an unexpected war3map.j file in map, please check map options and ensure that the "Script Language" is set to "Lua" and NOT "JASS"`
+      `Detected an unexpected war3map.j file in map, please check map options and ensure that the "Script Language" is set to "Lua" and NOT "JASS"`,
     );
   if (!fs.existsSync(war3mapLuaPath))
     throw new Error(
-      `Unable to find the original lua script file "${war3mapLuaPath}"`
+      `Unable to find the original lua script file "${war3mapLuaPath}"`,
     );
   const war3mapLua = fs.readFileSync(war3mapLuaPath);
 
@@ -233,7 +233,7 @@ export function compileMap(
       data: string,
       _writeByteOrderMark: boolean,
       _onError?: unknown,
-      _sourceFiles?: readonly SourceFile[]
+      _sourceFiles?: readonly SourceFile[],
     ) => {
       let mergedLuaFiles = war3mapLua.toString("utf8") + data;
       if (minifyScript) {
@@ -245,7 +245,7 @@ export function compileMap(
         filePath: path.basename(fileName),
         content: textEncoder.encode(mergedLuaFiles),
       });
-    }
+    },
   );
 
   result.diagnostics.forEach(reportDiagnostic);
@@ -256,14 +256,14 @@ export function compileMap(
     process.exit(
       result.emitSkipped
         ? ExitStatus.DiagnosticsPresent_OutputsSkipped
-        : ExitStatus.DiagnosticsPresent_OutputsGenerated
+        : ExitStatus.DiagnosticsPresent_OutputsGenerated,
     );
   }
 
   createMapFromFiles(
     `${outDir}/${path.basename(mapPath)}`,
     files,
-    saveAsFolder
+    saveAsFolder,
   );
 }
 
@@ -275,7 +275,7 @@ export function compileMap(
 export function createMapFromFiles(
   output: string,
   mapFiles: IMapFile[],
-  saveAsFolder: boolean
+  saveAsFolder: boolean,
 ): void {
   logger.info(`Saving map to "${output}"...`);
   if (saveAsFolder) {
@@ -283,7 +283,7 @@ export function createMapFromFiles(
       const stat = fs.lstatSync(output);
       if (!stat.isDirectory())
         throw new Error(
-          `Unable to save map as dir over existing file with same name: "${output}"`
+          `Unable to save map as dir over existing file with same name: "${output}"`,
         );
     } catch (err: any) {
       if (err?.code === "ENOENT") {
@@ -303,7 +303,7 @@ export function createMapFromFiles(
       const stat = fs.lstatSync(output);
       if (stat.isDirectory())
         throw new Error(
-          `Unable to save map as file over existing dir with same name: "${output}"`
+          `Unable to save map as file over existing dir with same name: "${output}"`,
         );
     } catch (err: any) {
       if (err?.code === "ENOENT") {
@@ -318,7 +318,7 @@ export function createMapFromFiles(
     for (const mapFile of mapFiles) {
       const imported = map.import(
         mapFile.filePath,
-        mapFile.content as unknown as ArrayBuffer
+        mapFile.content as unknown as ArrayBuffer,
       );
       if (!imported) {
         throw new Error(`Failed to import ${mapFile.filePath}`);
@@ -338,10 +338,11 @@ export function createMapFromFiles(
  * Formatter for log messages.
  */
 const loggerFormatFunc: Format = format.printf(
-  ({level, message, timestamp}) => {
-    return `[${String(timestamp).replace("T", " ").split(".")[0]
-      }] ${level}: ${message}`;
-  }
+  ({ level, message, timestamp }) => {
+    return `[${
+      String(timestamp).replace("T", " ").split(".")[0]
+    }] ${level}: ${message}`;
+  },
 );
 
 /**
@@ -353,7 +354,7 @@ export const logger = createLogger({
       format: format.combine(
         format.colorize(),
         format.timestamp(),
-        loggerFormatFunc
+        loggerFormatFunc,
       ),
     }),
     new transports.File({

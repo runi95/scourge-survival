@@ -41,45 +41,45 @@ export class DamageEventController {
     // On damage events
     DamageEngine.register(
       new LongRifleDamageEvent(),
-      DamageEventType.OnDamageEvent
+      DamageEventType.OnDamageEvent,
     );
     DamageEngine.register(
       new MagicSurgeDamageEvent(),
-      DamageEventType.OnDamageEvent
+      DamageEventType.OnDamageEvent,
     );
     DamageEngine.register(
       new WarDrumsDamageEvent(),
-      DamageEventType.OnDamageEvent
+      DamageEventType.OnDamageEvent,
     );
     DamageEngine.register(
       new BerserkDamageEvent(),
-      DamageEventType.OnDamageEvent
+      DamageEventType.OnDamageEvent,
     );
     DamageEngine.register(
       new AntiMagicShellDamageEvent(),
-      DamageEventType.OnDamageEvent
+      DamageEventType.OnDamageEvent,
     );
     DamageEngine.register(
       new StrengthInNumbersDamageEvent(),
-      DamageEventType.OnDamageEvent
+      DamageEventType.OnDamageEvent,
     );
     DamageEngine.register(
       new CriticalStrikeDamageEvent(),
-      DamageEventType.OnDamageEvent
+      DamageEventType.OnDamageEvent,
     );
 
     // After damage events
     DamageEngine.register(
       new InnerFireDamageEvent(),
-      DamageEventType.AfterDamageEvent
+      DamageEventType.AfterDamageEvent,
     );
     DamageEngine.register(
       new ScourgeBoneChimesDamageEvent(),
-      DamageEventType.AfterDamageEvent
+      DamageEventType.AfterDamageEvent,
     );
     DamageEngine.register(
       new ThornsDamageEvent(),
-      DamageEventType.AfterDamageEvent
+      DamageEventType.AfterDamageEvent,
     );
   }
 }

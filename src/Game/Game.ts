@@ -60,7 +60,7 @@ export class Game {
     const getAvailableUpgradeIndex = () => {
       const availableCreepUpgradeIndex = RandomNumberGenerator.random(
         0,
-        availableCreepUpgradeIndexes.length - 1
+        availableCreepUpgradeIndexes.length - 1,
       );
       const creepUpgradeIndex =
         availableCreepUpgradeIndexes[availableCreepUpgradeIndex];
@@ -95,7 +95,7 @@ export class Game {
           ...wave.bonusUpgrades.map((upgrade) => ({
             level: 1,
             upgrade,
-          }))
+          })),
         );
       }
 
@@ -108,31 +108,31 @@ export class Game {
 
   public start(): void {
     GameMap.PLAYER_AREAS.push(
-      Rectangle.create(-14336.0, 6144.0, -6400.0, 14080.0)
+      Rectangle.create(-14336.0, 6144.0, -6400.0, 14080.0),
     ); // Red
     GameMap.PLAYER_AREAS.push(
-      Rectangle.create(-5120.0, 6144.0, 2816.0, 14080.0)
+      Rectangle.create(-5120.0, 6144.0, 2816.0, 14080.0),
     ); // Blue
     GameMap.PLAYER_AREAS.push(
-      Rectangle.create(4096.0, 6144.0, 12032.0, 14080.0)
+      Rectangle.create(4096.0, 6144.0, 12032.0, 14080.0),
     ); // Teal
     GameMap.PLAYER_AREAS.push(
-      Rectangle.create(-14336.0, -3072.0, -6400.0, 6144.0)
+      Rectangle.create(-14336.0, -3072.0, -6400.0, 6144.0),
     ); // Purple
     GameMap.PLAYER_AREAS.push(
-      Rectangle.create(-5120.0, -3072.0, 2816.0, 6144.0)
+      Rectangle.create(-5120.0, -3072.0, 2816.0, 6144.0),
     ); // Yellow
     GameMap.PLAYER_AREAS.push(
-      Rectangle.create(4096.0, -3072.0, 12032.0, 6144.0)
+      Rectangle.create(4096.0, -3072.0, 12032.0, 6144.0),
     ); // Orange
     GameMap.PLAYER_AREAS.push(
-      Rectangle.create(-14336.0, -12416.0, -6400.0, -4480.0)
+      Rectangle.create(-14336.0, -12416.0, -6400.0, -4480.0),
     ); // Green
     GameMap.PLAYER_AREAS.push(
-      Rectangle.create(-5120.0, -12416.0, 2816.0, -4480.0)
+      Rectangle.create(-5120.0, -12416.0, 2816.0, -4480.0),
     ); // Pink
     GameMap.PLAYER_AREAS.push(
-      Rectangle.create(4096.0, -12416.0, 12032.0, -4480.0)
+      Rectangle.create(4096.0, -12416.0, 12032.0, -4480.0),
     ); // Grey
 
     const playerLeavesTrig: Trigger = Trigger.create();
@@ -149,8 +149,8 @@ export class Game {
         bj_FORCE_ALL_PLAYERS,
         5,
         `|c${GameMap.PLAYER_COLORS[playerId]}${GetPlayerName(
-          GetTriggerPlayer()
-        )}|r has left the game!`
+          GetTriggerPlayer(),
+        )}|r has left the game!`,
       );
     });
 
@@ -162,7 +162,7 @@ export class Game {
         FOG_OF_WAR_VISIBLE,
         Rectangle.fromHandle(GetPlayableMapRect()),
         false,
-        false
+        false,
       );
       fogModifier.start();
 
@@ -177,7 +177,7 @@ export class Game {
       true,
       10,
       10,
-      "DefaultEAXON"
+      "DefaultEAXON",
     );
     startOfGameSound.start();
 
@@ -203,7 +203,7 @@ export class Game {
           this.vehicleUnitTypeId,
           x,
           y,
-          315.0
+          315.0,
         );
         vehicleUnit.addItemById(FourCC("I000"));
 
@@ -217,7 +217,7 @@ export class Game {
           this.zeppelinUnitTypeId,
           x,
           y,
-          315.0
+          315.0,
         );
         zeppelinUnit.life = 110;
         zeppelinUnit.disableAbility(FourCC("Adro"), true, true);
@@ -234,13 +234,13 @@ export class Game {
             transportUnit,
             0,
             0,
-            false
+            false,
           );
           IssuePointOrder(
             transportUnit,
             "move",
             GameMap.PLAYER_AREAS[playerIndex].centerX,
-            GameMap.PLAYER_AREAS[playerIndex].centerY
+            GameMap.PLAYER_AREAS[playerIndex].centerY,
           );
           BlzUnitDisableAbility(transportUnit, FourCC("Amove"), false, true);
           SelectUnitForPlayerSingle(transportUnit, player.handle);
@@ -250,7 +250,7 @@ export class Game {
         loadTrigger.registerPlayerUnitEvent(
           player,
           EVENT_PLAYER_UNIT_LOADED,
-          undefined
+          undefined,
         );
         zeppelinUnit.issueTargetOrder("load", vehicleUnit);
 
@@ -269,7 +269,7 @@ export class Game {
           this.recipeShopUnitTypeId,
           GameMap.PLAYER_AREAS[i].maxX - 2176,
           GameMap.PLAYER_AREAS[i].maxY - 896,
-          270.0
+          270.0,
         );
         vehicle.upgradeMap.set("Cannon", 1);
 
@@ -278,7 +278,7 @@ export class Game {
         vehicleDeathTrig.addAction(() => {
           GameMap.IS_PLAYER_DEFEATED[playerIndex] = true;
           print(
-            `|c${GameMap.PLAYER_COLORS[playerIndex]}${playerName}|r has been defeated!`
+            `|c${GameMap.PLAYER_COLORS[playerIndex]}${playerName}|r has been defeated!`,
           );
         });
         vehicleDeathTrig.registerUnitEvent(vehicleUnit, EVENT_UNIT_DEATH);
@@ -290,7 +290,7 @@ export class Game {
           Effect.create(
             "Units/Demon/Infernal/InfernalBirth.mdl",
             zeppelinUnit.x + RandomNumberGenerator.random(-400, 400) + 270,
-            zeppelinUnit.y + RandomNumberGenerator.random(-400, 400) - 270
+            zeppelinUnit.y + RandomNumberGenerator.random(-400, 400) - 270,
           ).destroy();
 
           if (++infernoCount > 6) {

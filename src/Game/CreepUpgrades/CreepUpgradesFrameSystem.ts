@@ -36,7 +36,7 @@ export class CreepUpgradesFrameSystem {
             multiboardContainerFrame,
             0,
             "BACKDROP",
-            ""
+            "",
           );
 
           const upgradeHoverFrame = Frame.createType(
@@ -44,7 +44,7 @@ export class CreepUpgradesFrameSystem {
             upgradeFrame,
             0,
             "FRAME",
-            ""
+            "",
           );
 
           upgradeHoverFrame.setAllPoints(upgradeFrame);
@@ -55,7 +55,7 @@ export class CreepUpgradesFrameSystem {
             multiboardContainerFrame,
             FRAMEPOINT_TOPLEFT,
             xOffset + x * 0.0175,
-            yOffset - y * 0.0175
+            yOffset - y * 0.0175,
           );
 
           const tooltipFrame = Frame.create("BoxedText", upgradeFrame, 0, 0);
@@ -64,7 +64,7 @@ export class CreepUpgradesFrameSystem {
             tooltipFrame,
             0,
             "TEXT",
-            ""
+            "",
           );
           textFrame.setSize(0.25, 0);
 
@@ -72,24 +72,24 @@ export class CreepUpgradesFrameSystem {
             upgradeFrame.setTexture(
               waveUpgrade.upgrade.icon.replace(
                 "CommandButtons/",
-                "CommandButtonsDisabled/DIS"
+                "CommandButtonsDisabled/DIS",
               ),
               0,
-              true
+              true,
             );
             textFrame.setText(
               `${waveUpgrade.upgrade.name} (${
                 waveUpgrade.level
               })|n|n|cff808080(Unlocks after wave ${x})|r|n${waveUpgrade.upgrade.description(
-                waveUpgrade.level
-              )}`
+                waveUpgrade.level,
+              )}`,
             );
           } else {
             upgradeFrame.setTexture(waveUpgrade.upgrade.icon, 0, true);
             textFrame.setText(
               `${waveUpgrade.upgrade.name} (${
                 waveUpgrade.level
-              })|n|n${waveUpgrade.upgrade.description(waveUpgrade.level)}`
+              })|n|n${waveUpgrade.upgrade.description(waveUpgrade.level)}`,
             );
           }
 
@@ -98,14 +98,14 @@ export class CreepUpgradesFrameSystem {
             textFrame,
             FRAMEPOINT_BOTTOMLEFT,
             -0.01,
-            -0.01
+            -0.01,
           );
           tooltipFrame.setPoint(
             FRAMEPOINT_TOPRIGHT,
             textFrame,
             FRAMEPOINT_TOPRIGHT,
             0.01,
-            0.01
+            0.01,
           );
           upgradeHoverFrame.setTooltip(tooltipFrame);
 
@@ -114,7 +114,7 @@ export class CreepUpgradesFrameSystem {
             upgradeFrame,
             FRAMEPOINT_TOP,
             0,
-            0.01
+            0.01,
           );
 
           waveUpgradeFrames.push(upgradeFrame);
@@ -138,12 +138,12 @@ export class CreepUpgradesFrameSystem {
       this.upgradeFrames[waveIndex][y].setTexture(
         waveUpgrade.upgrade.icon,
         0,
-        true
+        true,
       );
       this.textFrames[waveIndex][y].setText(
         `${waveUpgrade.upgrade.name} (${
           waveUpgrade.level
-        })|n|n${waveUpgrade.upgrade.description(waveUpgrade.level)}`
+        })|n|n${waveUpgrade.upgrade.description(waveUpgrade.level)}`,
       );
     }
   }

@@ -13,16 +13,16 @@ export class LongRifleDamageEvent implements DamageEvent {
     const distance = Math.sqrt(
       Math.pow(
         GetUnitX(damageInstance.source) - GetUnitX(damageInstance.target),
-        2
+        2,
       ) +
         Math.pow(
           GetUnitY(damageInstance.source) - GetUnitY(damageInstance.target),
-          2
-        )
+          2,
+        ),
     );
     damageInstance.damage = Math.max(
       75,
-      Math.min(1500, Math.round(distance / 1500)) * damageInstance.damage
+      Math.min(1500, Math.round(distance / 1500)) * damageInstance.damage,
     );
   }
 }

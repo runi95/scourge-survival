@@ -13,7 +13,7 @@ export class PreloadSink implements ILogSink {
 
   constructor(
     private readonly logLevel: LogLevel,
-    public readonly FileName: string
+    public readonly FileName: string,
   ) {}
 
   LogLevel(): LogLevel {

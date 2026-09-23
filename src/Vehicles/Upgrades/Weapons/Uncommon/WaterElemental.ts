@@ -18,7 +18,7 @@ export class WaterElemental extends WeaponUpgrade {
   public readonly itemTypeId = FourCC("I00M");
   public readonly cost = 250;
   public readonly description = (
-    level: number
+    level: number,
   ) => `Spawns a static Water Elemental that attacks nearby enemy units within range.
 
 Damage: |cffffcc028 - 35|r
@@ -37,7 +37,7 @@ Damage type: |cffffcc00piercing|r`;
     owner: MapPlayer,
     _item: Item,
     itemId: number,
-    weaponIndex: number
+    weaponIndex: number,
   ): void {
     const t: Timer = TimerUtils.newTimer();
     this.timers.set(itemId, t);
@@ -58,7 +58,7 @@ Damage type: |cffffcc00piercing|r`;
           owner,
           this.waterElementalUnitTypeId,
           x + 300 * Math.cos(radian),
-          y + 300 * Math.sin(radian)
+          y + 300 * Math.sin(radian),
         );
         waterElemental.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 14);
         waterElemental.setAnimation("birth");
@@ -67,7 +67,7 @@ Damage type: |cffffcc00piercing|r`;
 
         vehicle.unit.startAbilityCooldown(
           weaponDummyAbilityIds[weaponIndex],
-          this.cooldown
+          this.cooldown,
         );
       }
 
@@ -86,7 +86,7 @@ Damage type: |cffffcc00piercing|r`;
     _owner: MapPlayer,
     _item: Item,
     itemId: number,
-    _weaponIndex: number
+    _weaponIndex: number,
   ): void {
     const t = this.timers.get(itemId);
     this.timers.delete(itemId);

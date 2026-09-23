@@ -12,7 +12,7 @@ export class SlowAura extends VehicleUpgrade {
   public readonly description = (level: number) =>
     `Slow nearby enemy units movement speed by -${levelUpStr(
       level,
-      6
+      6,
     )}% in a range of 600`;
 
   private readonly slowAuraAilityId: number = FourCC("A01A");

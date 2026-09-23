@@ -35,7 +35,7 @@ export class StunUtils {
       return;
     } else if (this.STUNNED_UNITS_MAP.has(handleId)) {
       (this.STUNNED_UNITS_MAP.get(handleId) as StunnedUnit).addDuration(
-        duration
+        duration,
       );
     } else {
       const stunnedUnit: StunnedUnit = new StunnedUnit(u, duration);
@@ -71,7 +71,7 @@ export class StunUtils {
     permafrost: boolean,
     refreeze: boolean,
     hasIceShards: boolean,
-    hasDeepFreeze: boolean
+    hasDeepFreeze: boolean,
   ): void {
     const handleId: number = u.id;
     const alreadyFrozenUnit = this.FROZEN_UNITS_MAP.get(handleId);
@@ -92,7 +92,7 @@ export class StunUtils {
       duration,
       permafrost,
       hasIceShards,
-      hasDeepFreeze
+      hasDeepFreeze,
     );
     this.FROZEN_UNITS_MAP.set(handleId, frozenUnit);
     frozenUnit.getUnit().addAbility(freezeAbilityId);
@@ -107,7 +107,7 @@ export class StunUtils {
             dummyUnitTypeId,
             frozenUnit.getUnit().x,
             frozenUnit.getUnit().y,
-            bj_UNIT_FACING
+            bj_UNIT_FACING,
           );
           dummy.addAbility(permafrostAbilityId);
           dummy.applyTimedLife(timedLifeBuffId, 1);
@@ -135,7 +135,7 @@ export class StunUtils {
 
   public static clearAllStuns(): void {
     this.STUNNED_UNITS_MAP.forEach((stunnedUnit: StunnedUnit) =>
-      stunnedUnit.setDuration(0)
+      stunnedUnit.setDuration(0),
     );
   }
 }

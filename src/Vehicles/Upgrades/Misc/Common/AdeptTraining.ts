@@ -24,7 +24,7 @@ export class AdeptTraining extends VehicleUpgrade {
       vehicle.unit.setAbilityCooldown(
         ability,
         abilityLevel - 1,
-        newAbilityCooldown
+        newAbilityCooldown,
       );
     }
   }

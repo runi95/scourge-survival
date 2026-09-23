@@ -13,8 +13,7 @@ export const FIFTEEN: Wave = {
     ],
   ],
   before: () => {
-    const localPlayerArea =
-      GameMap.PLAYER_AREAS[GetPlayerId(GetLocalPlayer())];
+    const localPlayerArea = GameMap.PLAYER_AREAS[GetPlayerId(GetLocalPlayer())];
     if (localPlayerArea == null) return;
 
     PingMinimapEx(
@@ -24,7 +23,7 @@ export const FIFTEEN: Wave = {
       255,
       0,
       0,
-      true
+      true,
     );
   },
 };

@@ -11,15 +11,15 @@ export class InnerFire extends VehicleUpgrade {
   public readonly cost = 250;
   public readonly maxLevel = 5;
   public readonly description = (
-    level: number
+    level: number,
   ) => `Applies Inner Fire to your hero whenever you take damage.
 Inner Fire increases attack damage by +${levelUpStr(
     level,
     2,
-    10
+    10,
   )}% and armor by +${levelUpStr(
     level,
-    5
+    5,
   )} for 10 seconds and has a 60 seconds cooldown.`;
 
   public applyUpgrade(vehicle: Vehicle): void {

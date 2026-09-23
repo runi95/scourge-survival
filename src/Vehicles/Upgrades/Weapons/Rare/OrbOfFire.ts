@@ -14,7 +14,7 @@ export class OrbOfFire extends WeaponUpgrade {
   public readonly cooldown = 1.5;
   public readonly itemTypeId = FourCC("I00V");
   public readonly description = (
-    level: number
+    level: number,
   ) => `Shoots a fireball with splash damage at a random enemy unit within range.
 
 Damage: |cffffcc00100|r
@@ -32,7 +32,7 @@ Damage type: |cffffcc00magic|r`;
     owner: MapPlayer,
     _item: Item,
     itemId: number,
-    weaponIndex: number
+    weaponIndex: number,
   ): void {
     const t: Timer = TimerUtils.newTimer();
     this.timers.set(itemId, t);
@@ -40,7 +40,7 @@ Damage type: |cffffcc00magic|r`;
       const { x, y } = vehicle.unit;
       vehicle.unit.startAbilityCooldown(
         weaponDummyAbilityIds[weaponIndex],
-        this.cooldown
+        this.cooldown,
       );
       const dummy = Unit.create(owner, this.dummyUnitId, x, y);
       dummy.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 1);
@@ -52,7 +52,7 @@ Damage type: |cffffcc00magic|r`;
     _owner: MapPlayer,
     _item: Item,
     itemId: number,
-    _weaponIndex: number
+    _weaponIndex: number,
   ): void {
     const t = this.timers.get(itemId);
     this.timers.delete(itemId);

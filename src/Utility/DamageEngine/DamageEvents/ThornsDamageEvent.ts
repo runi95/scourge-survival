@@ -31,7 +31,7 @@ export class ThornsDamageEvent implements DamageEvent {
       false,
       ATTACK_TYPE_MAGIC,
       DAMAGE_TYPE_DEFENSIVE,
-      WEAPON_TYPE_WHOKNOWS
+      WEAPON_TYPE_WHOKNOWS,
     );
   }
 }

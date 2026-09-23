@@ -22,7 +22,7 @@ export class UnholyFrenzy {
         this.dummyUnitId,
         triggeringUnit.x,
         triggeringUnit.y,
-        0
+        0,
       );
       UnitApplyTimedLife(dummy, Globals.TIMED_LIFE_BUFF_ID, 3);
       UnitAddAbility(dummy, this.unholyFrenzyAbilityId);

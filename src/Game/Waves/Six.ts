@@ -35,12 +35,11 @@ export const SIX: Wave = {
       true,
       10,
       10,
-      "DefaultEAXON"
+      "DefaultEAXON",
     );
     spawnSkeletonSound.start();
 
-    const localPlayerArea =
-      GameMap.PLAYER_AREAS[GetPlayerId(GetLocalPlayer())];
+    const localPlayerArea = GameMap.PLAYER_AREAS[GetPlayerId(GetLocalPlayer())];
     if (localPlayerArea == null) return;
 
     PingMinimapEx(
@@ -50,7 +49,7 @@ export const SIX: Wave = {
       255,
       0,
       0,
-      true
+      true,
     );
   },
 };

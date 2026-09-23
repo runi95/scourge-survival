@@ -15,7 +15,7 @@ export class CriticalStrike extends VehicleUpgrade {
     `Gives a 20% chance to increase any damage dealt by ${levelUpStr(
       level,
       1,
-      1
+      1,
     )} times the normal amount`;
 
   public applyUpgrade(vehicle: Vehicle): void {

@@ -24,7 +24,7 @@ export class FocusedImpale extends WeaponUpgradeRecipe {
     owner: MapPlayer,
     _item: Item,
     itemId: number,
-    weaponIndex: number
+    weaponIndex: number,
   ): void {
     const t: Timer = TimerUtils.newTimer();
     this.timers.set(itemId, t);
@@ -33,7 +33,7 @@ export class FocusedImpale extends WeaponUpgradeRecipe {
       const { x, y } = vehicle.unit;
       vehicle.unit.startAbilityCooldown(
         weaponDummyAbilityIds[weaponIndex],
-        this.cooldown
+        this.cooldown,
       );
 
       const grp: Group = Group.fromRange(400, vehicle.unit.point);
@@ -64,7 +64,7 @@ export class FocusedImpale extends WeaponUpgradeRecipe {
         dummy.issueOrderAt(
           "impale",
           x + 200 * Math.cos(radian),
-          y + 200 * Math.sin(radian)
+          y + 200 * Math.sin(radian),
         );
       }
     });
@@ -75,7 +75,7 @@ export class FocusedImpale extends WeaponUpgradeRecipe {
     _owner: MapPlayer,
     _item: Item,
     itemId: number,
-    _weaponIndex: number
+    _weaponIndex: number,
   ): void {
     const t = this.timers.get(itemId);
     this.timers.delete(itemId);

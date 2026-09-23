@@ -26,7 +26,7 @@ export class Blizzard {
     this.blizzardTrig.registerPlayerUnitEvent(
       MapPlayer.fromIndex(26),
       EVENT_PLAYER_UNIT_DEATH,
-      undefined
+      undefined,
     );
   }
 }

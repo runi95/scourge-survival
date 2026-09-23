@@ -16,7 +16,7 @@ addScriptHook(W3TS_HOOK.MAIN_AFTER, () => {
     },
     (err) => {
       Log.Fatal(err);
-    }
+    },
   );
 });
 

@@ -30,7 +30,7 @@ export class CriticalStrikeDamageEvent implements DamageEvent {
     txt.setPos(
       GetUnitX(damageInstance.source),
       GetUnitY(damageInstance.source),
-      BlzGetUnitZ(damageInstance.source)
+      BlzGetUnitZ(damageInstance.source),
     );
     txt.setColor(255.0, 0.0, 0.0, 255.0);
     txt.setPermanent(false);

@@ -25,7 +25,7 @@ export class Workshop extends WeaponUpgradeRecipe {
     owner: MapPlayer,
     _item: Item,
     itemId: number,
-    weaponIndex: number
+    weaponIndex: number,
   ): void {
     const t: Timer = TimerUtils.newTimer();
     this.timers.set(itemId, t);
@@ -36,7 +36,7 @@ export class Workshop extends WeaponUpgradeRecipe {
     } else {
       vehicle.unit.startAbilityCooldown(
         weaponDummyAbilityIds[weaponIndex],
-        2 * existingIterations
+        2 * existingIterations,
       );
     }
 
@@ -57,7 +57,7 @@ export class Workshop extends WeaponUpgradeRecipe {
 
       vehicle.unit.startAbilityCooldown(
         weaponDummyAbilityIds[weaponIndex],
-        this.cooldown
+        this.cooldown,
       );
 
       const { x, y } = vehicle.unit;
@@ -69,7 +69,7 @@ export class Workshop extends WeaponUpgradeRecipe {
       dummy.issueOrderAt(
         "summonfactory",
         x + 400 * Math.cos(radians),
-        y + 400 * Math.sin(radians)
+        y + 400 * Math.sin(radians),
       );
     });
   }
@@ -79,7 +79,7 @@ export class Workshop extends WeaponUpgradeRecipe {
     _owner: MapPlayer,
     _item: Item,
     itemId: number,
-    _weaponIndex: number
+    _weaponIndex: number,
   ): void {
     const t = this.timers.get(itemId);
     this.timers.delete(itemId);

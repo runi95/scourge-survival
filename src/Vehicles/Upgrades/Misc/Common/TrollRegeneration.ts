@@ -14,7 +14,7 @@ export class TrollRegeneration extends VehicleUpgrade {
   public readonly description = (level: number) =>
     `Regenerates ${levelUpStr(
       level,
-      10
+      10,
     )} hit points per second while not moving`;
 
   private readonly playerTimers: Timer[] = [];

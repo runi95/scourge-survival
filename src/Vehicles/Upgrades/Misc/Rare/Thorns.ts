@@ -11,7 +11,7 @@ export class Thorns extends VehicleUpgrade {
   public readonly description = (level: number) =>
     `Deal ${levelUpStr(
       level,
-      6
+      6,
     )}% of all damage taken back to the source (including spell and ranged damage)`;
 
   public applyUpgrade(vehicle: Vehicle): void {

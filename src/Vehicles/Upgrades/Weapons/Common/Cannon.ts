@@ -14,7 +14,7 @@ export class Cannon extends WeaponUpgrade {
   public readonly cooldown = 1;
   public readonly itemTypeId = FourCC("I000");
   public readonly description = (
-    level: number
+    level: number,
   ) => `Fires a rocket at a random enemy unit within range.
 
 Damage: |cffffcc0025|r
@@ -31,7 +31,7 @@ Damage type: |cffffcc00siege|r`;
     owner: MapPlayer,
     _item: Item,
     itemId: number,
-    weaponIndex: number
+    weaponIndex: number,
   ): void {
     const t: Timer = TimerUtils.newTimer();
     this.timers.set(itemId, t);
@@ -39,7 +39,7 @@ Damage type: |cffffcc00siege|r`;
       const { x, y } = vehicle.unit;
       vehicle.unit.startAbilityCooldown(
         weaponDummyAbilityIds[weaponIndex],
-        this.cooldown
+        this.cooldown,
       );
       const dummy = Unit.create(owner, this.dummyUnitId, x, y);
       dummy.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 1);
@@ -51,7 +51,7 @@ Damage type: |cffffcc00siege|r`;
     _owner: MapPlayer,
     _item: Item,
     itemId: number,
-    _weaponIndex: number
+    _weaponIndex: number,
   ): void {
     const t = this.timers.get(itemId);
     this.timers.delete(itemId);

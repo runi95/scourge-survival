@@ -10,7 +10,7 @@ export class Glyph extends VehicleUpgrade {
   public readonly cost = 500;
   public readonly description = (level: number) =>
     `Gain +${levelUpStr(
-      level
+      level,
     )} to a random attribute whenever an enemy unit dies`;
 
   public applyUpgrade(vehicle: Vehicle): void {

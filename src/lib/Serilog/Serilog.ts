@@ -19,7 +19,7 @@ export class LogEvent {
   constructor(
     public readonly Type: LogEventType,
     public readonly Text: string,
-    public readonly Value: any
+    public readonly Value: any,
   ) {}
 }
 

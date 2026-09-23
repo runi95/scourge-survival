@@ -23,7 +23,7 @@ export class AdeptTraining {
 
       const originalCooldown = BlzGetAbilityCooldown(
         learnedSkill,
-        skillLevel - 1
+        skillLevel - 1,
       );
       if (originalCooldown <= 0) return;
 
@@ -32,7 +32,7 @@ export class AdeptTraining {
       vehicle.unit.setAbilityCooldown(
         learnedSkill,
         skillLevel - 1,
-        newAbilityCooldown
+        newAbilityCooldown,
       );
     });
 

@@ -19,7 +19,7 @@ export class Monsoon extends WeaponUpgradeRecipe {
     owner: MapPlayer,
     _item: Item,
     itemId: number,
-    weaponIndex: number
+    weaponIndex: number,
   ): void {
     const t: Timer = TimerUtils.newTimer();
     this.timers.set(itemId, t);
@@ -30,7 +30,7 @@ export class Monsoon extends WeaponUpgradeRecipe {
     t.start(3, true, () => {
       vehicle.unit.startAbilityCooldown(
         weaponDummyAbilityIds[weaponIndex],
-        this.cooldown
+        this.cooldown,
       );
 
       const grp: Group = Group.fromRectOfPlayer(area, scourgePlayer);
@@ -44,7 +44,7 @@ export class Monsoon extends WeaponUpgradeRecipe {
         Effect.create(
           "Abilities/Spells/Other/Monsoon/MonsoonBoltTarget.mdl",
           u.x,
-          u.y
+          u.y,
         ).destroy();
         vehicle.unit.damageTarget(
           u.handle,
@@ -53,7 +53,7 @@ export class Monsoon extends WeaponUpgradeRecipe {
           false,
           ATTACK_TYPE_NORMAL,
           DAMAGE_TYPE_NORMAL,
-          WEAPON_TYPE_WHOKNOWS
+          WEAPON_TYPE_WHOKNOWS,
         );
       });
       grp.destroy();
@@ -65,7 +65,7 @@ export class Monsoon extends WeaponUpgradeRecipe {
     _owner: MapPlayer,
     _item: Item,
     itemId: number,
-    _weaponIndex: number
+    _weaponIndex: number,
   ): void {
     const t = this.timers.get(itemId);
     this.timers.delete(itemId);

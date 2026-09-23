@@ -14,7 +14,7 @@ export class Tornado extends WeaponUpgrade {
   public readonly cooldown = 10;
   public readonly itemTypeId = FourCC("I00X");
   public readonly description = (
-    level: number
+    level: number,
   ) => `Summons a fierce tornado that slows enemy units' movement, randomly tosses enemy ground units into the air and damages all nearby enemies.
 
 Damage: |cffffcc0025 - 180|r
@@ -34,7 +34,7 @@ Damage type: |cffffcc00spell|r`;
     owner: MapPlayer,
     _item: Item,
     itemId: number,
-    weaponIndex: number
+    weaponIndex: number,
   ): void {
     const t: Timer = TimerUtils.newTimer();
     this.timers.set(itemId, t);
@@ -51,7 +51,7 @@ Damage type: |cffffcc00spell|r`;
     _owner: MapPlayer,
     _item: Item,
     itemId: number,
-    _weaponIndex: number
+    _weaponIndex: number,
   ): void {
     const t = this.timers.get(itemId);
     this.timers.delete(itemId);
@@ -67,7 +67,7 @@ Damage type: |cffffcc00spell|r`;
     vehicle: Vehicle,
     owner: MapPlayer,
     itemId: number,
-    weaponIndex: number
+    weaponIndex: number,
   ) {
     const { x, y } = vehicle.unit;
     const tornado = Unit.create(owner, this.tornadoUnitTypeId, x, y);
@@ -77,12 +77,12 @@ Damage type: |cffffcc00spell|r`;
     tornado.issueOrderAt(
       "move",
       x + RandomNumberGenerator.random(-500, 500),
-      y + RandomNumberGenerator.random(-500, 500)
+      y + RandomNumberGenerator.random(-500, 500),
     );
 
     vehicle.unit.startAbilityCooldown(
       weaponDummyAbilityIds[weaponIndex],
-      this.cooldown
+      this.cooldown,
     );
   }
 }

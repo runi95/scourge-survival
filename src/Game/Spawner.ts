@@ -46,12 +46,12 @@ export class Spawner {
         GameMap.REMAINING_PLAYER_CREEPS_COUNT.get(creepPlayerId) - 1;
       GameMap.REMAINING_PLAYER_CREEPS_COUNT.set(
         creepPlayerId,
-        newPlayerCreepCount
+        newPlayerCreepCount,
       );
       SetPlayerState(
         Player(creepPlayerId - 9),
         PLAYER_STATE_RESOURCE_FOOD_USED,
-        newPlayerCreepCount
+        newPlayerCreepCount,
       );
 
       if (newPlayerCreepCount < 1 && !this.isCreepSpawnerRunning) {
@@ -65,12 +65,12 @@ export class Spawner {
         new Map<number, Creep>();
       GameMap.REMAINING_PLAYER_CREEPS_COUNT.set(
         GameMap.ONLINE_PLAYER_ID_LIST[i] + 9,
-        0
+        0,
       );
       this.deathTrigger.registerPlayerUnitEvent(
         MapPlayer.fromIndex(GameMap.ONLINE_PLAYER_ID_LIST[i] + 9),
         EVENT_PLAYER_UNIT_DEATH,
-        undefined
+        undefined,
       );
     }
 
@@ -107,7 +107,7 @@ export class Spawner {
           } else {
             const dist = Math.sqrt(
               Math.pow(creep.attackOrderPosition[0] - vehicle.lastKnownX, 2) +
-                Math.pow(creep.attackOrderPosition[1] - vehicle.lastKnownY, 2)
+                Math.pow(creep.attackOrderPosition[1] - vehicle.lastKnownY, 2),
             );
             if (dist < 500) continue;
           }
@@ -135,7 +135,7 @@ export class Spawner {
           255,
           0,
           0,
-          true
+          true,
         );
       }
       this.startWave();
@@ -188,7 +188,7 @@ export class Spawner {
             GetLocalPlayer(),
             0,
             0,
-            `Income: |cffffcc00+${realIncome}|r`
+            `Income: |cffffcc00+${realIncome}|r`,
           );
         }
       }
@@ -216,7 +216,7 @@ export class Spawner {
   private spawnPortal(
     portalWaves: PortalWave[],
     index: number,
-    isFirstPortal: boolean
+    isFirstPortal: boolean,
   ) {
     if (portalWaves.length === 0) return;
     let { count } = portalWaves[index];
@@ -241,20 +241,20 @@ export class Spawner {
         Effect.create(
           "AbilitiesSpellsDemonDarkPortalDarkPortalTarget.mdl",
           x,
-          y
+          y,
         ).destroy();
         const scourgeUnit = Unit.create(
           scourgePlayer,
           unitTypeId,
           x,
           y,
-          isFirstPortal ? 315.0 : 135.0
+          isFirstPortal ? 315.0 : 135.0,
         );
 
         const creep = new Creep(scourgeUnit, x, y, count);
         GameMap.REMAINING_PLAYER_CREEPS[playerId + 9].set(
           scourgeUnit.id,
-          creep
+          creep,
         );
         const newCreepCount =
           GameMap.REMAINING_PLAYER_CREEPS_COUNT.get(playerId + 9) + 1;
@@ -262,7 +262,7 @@ export class Spawner {
         SetPlayerState(
           Player(playerId),
           PLAYER_STATE_RESOURCE_FOOD_USED,
-          newCreepCount
+          newCreepCount,
         );
 
         if (!attackImmediately) continue;

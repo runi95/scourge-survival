@@ -15,7 +15,7 @@ export class PermanentImmolation extends WeaponUpgrade {
   public readonly cooldown = 1;
   public readonly itemTypeId = FourCC("I005");
   public readonly description = (
-    level: number
+    level: number,
   ) => `Engulfs your hero in flames that deal damage to nearby enemy units.
 
 Damage: |cffffcc0010|r
@@ -30,7 +30,7 @@ Damage type: |cffffcc00spell|r`;
     owner: MapPlayer,
     _item: Item,
     itemId: number,
-    weaponIndex: number
+    weaponIndex: number,
   ): void {
     const t: Timer = TimerUtils.newTimer();
     this.timers.set(itemId, t);
@@ -38,7 +38,7 @@ Damage type: |cffffcc00spell|r`;
     t.start(1, true, () => {
       vehicle.unit.startAbilityCooldown(
         weaponDummyAbilityIds[weaponIndex],
-        this.cooldown
+        this.cooldown,
       );
 
       const { point } = vehicle.unit;
@@ -49,7 +49,7 @@ Damage type: |cffffcc00spell|r`;
         Effect.createAttachment(
           "Abilities/Spells/NightElf/Immolation/ImmolationDamage.mdl",
           u,
-          "head"
+          "head",
         ).destroy();
         vehicle.unit.damageTarget(
           u.handle,
@@ -58,7 +58,7 @@ Damage type: |cffffcc00spell|r`;
           false,
           ATTACK_TYPE_NORMAL,
           DAMAGE_TYPE_NORMAL,
-          WEAPON_TYPE_WHOKNOWS
+          WEAPON_TYPE_WHOKNOWS,
         );
       });
     });
@@ -69,7 +69,7 @@ Damage type: |cffffcc00spell|r`;
     _owner: MapPlayer,
     _item: Item,
     itemId: number,
-    _weaponIndex: number
+    _weaponIndex: number,
   ): void {
     const t = this.timers.get(itemId);
     this.timers.delete(itemId);

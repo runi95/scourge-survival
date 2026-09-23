@@ -24,7 +24,7 @@ Attacks cannot be reduced below 2 damage.`;
     } else {
       vehicle.unit.setAbilityLevel(
         this.hardenedSkinAbilityId,
-        hardenedSkinLevel
+        hardenedSkinLevel,
       );
     }
   }

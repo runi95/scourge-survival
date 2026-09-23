@@ -126,7 +126,7 @@ export class Commands {
             vehicle.weaponRecipeShop.handle,
             FourCC(args[0]),
             1,
-            1
+            1,
           );
         })();
         break;
@@ -147,7 +147,7 @@ export class Commands {
           if (vehicle.unit == null) return;
           ShowUnit(
             vehicle.weaponRecipeShop.handle,
-            IsUnitHidden(vehicle.weaponRecipeShop.handle)
+            IsUnitHidden(vehicle.weaponRecipeShop.handle),
           );
         })();
         break;

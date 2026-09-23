@@ -1,6 +1,6 @@
-import {LinkedList} from "./LinkedList";
-import {Timer} from "w3ts";
-import type {Node} from "./Node";
+import { LinkedList } from "./LinkedList";
+import { Timer } from "w3ts";
+import type { Node } from "./Node";
 
 export class TimerUtils {
   // Settings

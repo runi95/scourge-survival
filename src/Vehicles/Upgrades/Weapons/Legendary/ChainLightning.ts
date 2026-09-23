@@ -16,7 +16,7 @@ export class ChainLightning extends WeaponUpgrade {
   public readonly cooldown = 2;
   public readonly itemTypeId = FourCC("I00Q");
   public readonly description = (
-    level: number
+    level: number,
   ) => `Calls a chain lightning every so often that hits any nearby enemy units.
 
 Damage: |cffffcc00180|r
@@ -36,7 +36,7 @@ Damage type: |cffffcc00spell|r`;
     owner: MapPlayer,
     _item: Item,
     itemId: number,
-    weaponIndex: number
+    weaponIndex: number,
   ): void {
     const t: Timer = TimerUtils.newTimer();
     this.timers.set(itemId, t);
@@ -45,7 +45,7 @@ Damage type: |cffffcc00spell|r`;
     t.start(2, true, () => {
       vehicle.unit.startAbilityCooldown(
         weaponDummyAbilityIds[weaponIndex],
-        this.cooldown
+        this.cooldown,
       );
 
       const { point } = vehicle.unit;
@@ -74,7 +74,7 @@ Damage type: |cffffcc00spell|r`;
     _owner: MapPlayer,
     _item: Item,
     itemId: number,
-    _weaponIndex: number
+    _weaponIndex: number,
   ): void {
     const t = this.timers.get(itemId);
     this.timers.delete(itemId);

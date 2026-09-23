@@ -28,7 +28,14 @@ export class Frame {
   private _relativePoint: framepointtype;
   private _tooltip: Frame;
 
-  constructor(name: string, owner: Frame, priority: number, createContext?: number, typeName?: string, inherits?: string) {
+  constructor(
+    name: string,
+    owner: Frame,
+    priority: number,
+    createContext?: number,
+    typeName?: string,
+    inherits?: string,
+  ) {
     this.name = name;
     this.parent = owner;
     this.priority = priority;
@@ -39,8 +46,22 @@ export class Frame {
     frames.push(this);
   }
 
-  public static fromHandle(handle: { name: string, owner: Frame, priority: number, createContext?: number, typeName?: string, inherits?: string }): Frame {
-    return new this(handle.name, handle.owner, handle.priority, handle.createContext, handle.typeName, handle.inherits);
+  public static fromHandle(handle: {
+    name: string;
+    owner: Frame;
+    priority: number;
+    createContext?: number;
+    typeName?: string;
+    inherits?: string;
+  }): Frame {
+    return new this(
+      handle.name,
+      handle.owner,
+      handle.priority,
+      handle.createContext,
+      handle.typeName,
+      handle.inherits,
+    );
   }
 
   public setSize(width: number, height: number) {
@@ -97,7 +118,13 @@ export class Frame {
     return this;
   }
 
-  public setPoint(point: framepointtype, relative: Frame, relativePoint: framepointtype, x: number, y: number) {
+  public setPoint(
+    point: framepointtype,
+    relative: Frame,
+    relativePoint: framepointtype,
+    x: number,
+    y: number,
+  ) {
     this._point = point;
     this._relative = relative;
     this._relativePoint = relativePoint;

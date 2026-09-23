@@ -10,14 +10,14 @@ export interface WeaponUpgradeI {
     owner: MapPlayer,
     item: Item,
     itemId: number,
-    weaponIndex: number
+    weaponIndex: number,
   ): void;
   onDrop(
     vehicle: Vehicle,
     owner: MapPlayer,
     item: Item,
     itemId: number,
-    weaponIndex: number
+    weaponIndex: number,
   ): void;
   applyUpgrade(vehicle: Vehicle): void;
 }
@@ -35,14 +35,14 @@ export abstract class WeaponUpgrade
     owner: MapPlayer,
     item: Item,
     itemId: number,
-    weaponIndex: number
+    weaponIndex: number,
   ): void;
   public abstract onDrop(
     vehicle: Vehicle,
     owner: MapPlayer,
     item: Item,
     itemId: number,
-    weaponIndex: number
+    weaponIndex: number,
   ): void;
 
   public applyUpgrade(vehicle: Vehicle): void {

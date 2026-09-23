@@ -31,7 +31,7 @@ export class CreepAbilityController {
                 this.dummyUnitId,
                 GetUnitX(attacker),
                 GetUnitY(attacker),
-                0
+                0,
               );
               UnitApplyTimedLife(dummy, Globals.TIMED_LIFE_BUFF_ID, 1);
               UnitAddAbility(dummy, this.crippleAbilityId);
@@ -53,7 +53,7 @@ export class CreepAbilityController {
               this.blizzardUnitTypeId,
               x,
               y,
-              0
+              0,
             );
             UnitApplyTimedLife(blizzardDummy, Globals.TIMED_LIFE_BUFF_ID, 1.5);
           })();

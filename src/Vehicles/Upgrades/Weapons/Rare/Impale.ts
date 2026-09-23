@@ -16,7 +16,7 @@ export class Impale extends WeaponUpgrade {
   public readonly cooldown = 1.5;
   public readonly itemTypeId = FourCC("I001");
   public readonly description = (
-    level: number
+    level: number,
   ) => `Impales the ground in a random direction, hurting and stunning enemy units that are hit.
 
 Damage: |cffffcc0075|r
@@ -35,7 +35,7 @@ Damage type: |cffffcc00spell|r`;
     owner: MapPlayer,
     _item: Item,
     itemId: number,
-    weaponIndex: number
+    weaponIndex: number,
   ): void {
     const t: Timer = TimerUtils.newTimer();
     this.timers.set(itemId, t);
@@ -44,7 +44,7 @@ Damage type: |cffffcc00spell|r`;
       const { x, y } = vehicle.unit;
       vehicle.unit.startAbilityCooldown(
         weaponDummyAbilityIds[weaponIndex],
-        this.cooldown
+        this.cooldown,
       );
       const randomAngle = RandomNumberGenerator.random(0, 359);
       const radian = randomAngle * MULT;
@@ -55,7 +55,7 @@ Damage type: |cffffcc00spell|r`;
       dummy.issueOrderAt(
         "impale",
         x + 200 * Math.cos(radian),
-        y + 200 * Math.sin(radian)
+        y + 200 * Math.sin(radian),
       );
     });
   }
@@ -65,7 +65,7 @@ Damage type: |cffffcc00spell|r`;
     _owner: MapPlayer,
     _item: Item,
     itemId: number,
-    _weaponIndex: number
+    _weaponIndex: number,
   ): void {
     const t = this.timers.get(itemId);
     this.timers.delete(itemId);

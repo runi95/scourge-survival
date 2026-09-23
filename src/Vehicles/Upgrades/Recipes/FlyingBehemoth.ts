@@ -21,7 +21,7 @@ export class FlyingBehemoth extends WeaponUpgradeRecipe {
     owner: MapPlayer,
     _item: Item,
     itemId: number,
-    weaponIndex: number
+    weaponIndex: number,
   ): void {
     const t: Timer = TimerUtils.newTimer();
     this.timers.set(itemId, t);
@@ -40,14 +40,14 @@ export class FlyingBehemoth extends WeaponUpgradeRecipe {
           owner,
           this.flyingMachineUnitTypeId,
           x + RandomNumberGenerator.random(-250, 250),
-          y + RandomNumberGenerator.random(-250, 250)
+          y + RandomNumberGenerator.random(-250, 250),
         );
         flyingBehemoth.issueTargetOrder("patrol", vehicle.unit);
         this.playerFlyingBehemoth.set(itemId, flyingBehemoth);
 
         vehicle.unit.startAbilityCooldown(
           weaponDummyAbilityIds[weaponIndex],
-          this.cooldown
+          this.cooldown,
         );
       }
 
@@ -70,19 +70,19 @@ export class FlyingBehemoth extends WeaponUpgradeRecipe {
       const flyingBehemoth = this.playerFlyingBehemoth.get(itemId);
       if (flyingBehemoth == null) return;
       const dist = Math.sqrt(
-        Math.pow(flyingBehemoth.x - x, 2) + Math.pow(flyingBehemoth.y - y, 2)
+        Math.pow(flyingBehemoth.x - x, 2) + Math.pow(flyingBehemoth.y - y, 2),
       );
       if (dist < 1000) {
         flyingBehemoth.issueOrderAt(
           "attack",
           x + RandomNumberGenerator.random(-250, 250),
-          y + RandomNumberGenerator.random(-250, 250)
+          y + RandomNumberGenerator.random(-250, 250),
         );
       } else {
         flyingBehemoth.issueOrderAt(
           "move",
           x + RandomNumberGenerator.random(-250, 250),
-          y + RandomNumberGenerator.random(-250, 250)
+          y + RandomNumberGenerator.random(-250, 250),
         );
       }
     });
@@ -93,7 +93,7 @@ export class FlyingBehemoth extends WeaponUpgradeRecipe {
     _owner: MapPlayer,
     _item: Item,
     itemId: number,
-    _weaponIndex: number
+    _weaponIndex: number,
   ): void {
     const t = this.timers.get(itemId);
     this.timers.delete(itemId);

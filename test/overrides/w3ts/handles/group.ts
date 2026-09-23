@@ -1,5 +1,5 @@
 export class Group {
-  constructor() { }
+  constructor() {}
 
   public fromPlayerAndType(player: player, unitId: number) {
     return this;

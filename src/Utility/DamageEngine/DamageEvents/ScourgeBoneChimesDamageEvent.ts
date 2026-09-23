@@ -17,7 +17,7 @@ export class ScourgeBoneChimesDamageEvent implements DamageEvent {
     if (vehicle.unit == null) return;
 
     const scourgeBoneChimesLevel = vehicle.upgradeMap.get(
-      "Scourge Bone Chimes"
+      "Scourge Bone Chimes",
     );
     if (scourgeBoneChimesLevel == null) return;
     if (scourgeBoneChimesLevel < 1) return;

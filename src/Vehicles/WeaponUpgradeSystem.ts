@@ -41,7 +41,7 @@ export class WeaponUpgradeSystem {
 
       this.weaponRecipeMerchantItemMap.set(
         weaponRecipe.merchantItemTypeId,
-        weaponRecipe
+        weaponRecipe,
       );
       this.weaponUpgradesMap.set(weaponRecipe.itemTypeId, weaponRecipe);
     }
@@ -70,12 +70,12 @@ export class WeaponUpgradeSystem {
         item.getAbility(weaponDummyAbilityId),
         ABILITY_RLF_COOLDOWN,
         0,
-        upgrade.cooldown
+        upgrade.cooldown,
       );
       BlzSetItemIntegerField(
         item.handle,
         ITEM_IF_COOLDOWN_GROUP,
-        weaponDummyAbilityId
+        weaponDummyAbilityId,
       );
 
       const itemId = item.id;
@@ -85,7 +85,7 @@ export class WeaponUpgradeSystem {
         owner,
         item,
         itemId,
-        weaponCooldownIndex.value
+        weaponCooldownIndex.value,
       );
 
       const weaponRecipes = this.weaponRecipeMap.get(typeId);
@@ -122,12 +122,12 @@ export class WeaponUpgradeSystem {
 
             vehicle.availableWeaponRecipes.set(
               weaponRecipe.itemTypeId,
-              weaponRecipe
+              weaponRecipe,
             );
             vehicle.weaponRecipeShop.addItemToStock(
               weaponRecipe.merchantItemTypeId,
               1,
-              1
+              1,
             );
           }
         }
@@ -193,7 +193,7 @@ export class WeaponUpgradeSystem {
 
             vehicle.availableWeaponRecipes.delete(weaponRecipe.itemTypeId);
             vehicle.weaponRecipeShop.removeItemFromStock(
-              weaponRecipe.merchantItemTypeId
+              weaponRecipe.merchantItemTypeId,
             );
           }
         }
