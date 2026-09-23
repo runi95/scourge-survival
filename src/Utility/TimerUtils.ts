@@ -1,6 +1,6 @@
-import { LinkedList } from "./LinkedList";
-import { Timer } from "w3ts";
-import type { Node } from "./Node";
+import {LinkedList} from "./LinkedList";
+import {Timer} from "w3ts";
+import type {Node} from "./Node";
 
 export class TimerUtils {
   // Settings
@@ -15,7 +15,8 @@ export class TimerUtils {
   protected constructor() {}
 
   static {
-    for (let i = 0; i < this.QUANTITY - this.TIMER_QUEUE.getSize(); i++) {
+    const missing = this.QUANTITY - this.TIMER_QUEUE.getSize();
+    for (let i = 0; i < missing; i++) {
       this.TIMER_QUEUE.add(Timer.create());
     }
   }
