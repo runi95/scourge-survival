@@ -74,18 +74,10 @@ export class StunUtils {
     hasDeepFreeze: boolean
   ): void {
     const handleId: number = u.id;
-    if (this.FROZEN_UNITS_MAP.has(handleId)) {
-      if (refreeze) {
-        const frozenUnit: FrozenUnit = new FrozenUnit(
-          u,
-          duration,
-          permafrost,
-          hasIceShards,
-          hasDeepFreeze
-        );
-        if (frozenUnit.getDuration() < duration) {
-          frozenUnit.setDuration(duration);
-        }
+    const alreadyFrozenUnit = this.FROZEN_UNITS_MAP.get(handleId);
+    if (alreadyFrozenUnit !== undefined) {
+      if (refreeze && alreadyFrozenUnit.getDuration() < duration) {
+        alreadyFrozenUnit.setDuration(duration);
       }
 
       return;
