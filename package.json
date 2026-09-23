@@ -1,5 +1,5 @@
 {
-  "name": "horde-survival",
+  "name": "scourge-survival",
   "version": "0.1.0",
   "description": "A warcraft III survival map",
   "main": "src/main.ts",
