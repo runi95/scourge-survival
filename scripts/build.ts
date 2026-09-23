@@ -12,7 +12,7 @@ function main(): void {
 try {
   main();
   logger.info("Build completed successfully!");
-} catch (err) {
+} catch (err: any) {
   logger.error(err.toString());
   process.exit(1);
 }

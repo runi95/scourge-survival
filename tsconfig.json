@@ -26,7 +26,7 @@
     "lib": [
       "es6"
     ],
-    "moduleResolution": "classic",
+    "moduleResolution": "bundler",
     "paths": {
       "*": [
         "../node_modules/*/src/index",

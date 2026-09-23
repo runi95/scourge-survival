@@ -1,5 +1,5 @@
 import { logger, ProjectConfigurationLoader } from "./utils";
-import * as War3TSTLHelper from "war3tstlhelper";
+import War3TSTLHelper = require("war3tstlhelper");
 import * as fs from "fs-extra";
 
 function main(): void {
@@ -19,7 +19,7 @@ function main(): void {
 try {
     main();
     logger.info("Definitions successfully created!");
-} catch (err) {
+} catch (err: any) {
     logger.error(err.toString());
     process.exit(1);
 }

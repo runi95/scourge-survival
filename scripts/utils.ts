@@ -1,10 +1,10 @@
 import War3Map from "mdx-m3-viewer/dist/cjs/parsers/w3x/map";
-import { createLogger, format, transports } from "winston";
-import { createDiagnosticReporter, transpileProject } from "typescript-to-lua";
-import { DiagnosticCategory, ExitStatus } from "typescript";
-import { TextEncoder } from "util";
-import type { SourceFile } from "typescript";
-import type { Format } from "logform";
+import {createLogger, format, transports} from "winston";
+import {createDiagnosticReporter, transpileProject} from "typescript-to-lua";
+import {DiagnosticCategory, ExitStatus} from "typescript";
+import {TextEncoder} from "util";
+import type {SourceFile} from "typescript";
+import type {Format} from "logform";
 import * as luamin from "luamin";
 import * as fs from "fs-extra";
 import * as path from "path";
@@ -58,7 +58,7 @@ export class ProjectConfigurationLoader {
       logger.debug(
         `${ProjectConfigurationLoader.PROJECT_CONFIG_FILE_NAME} loaded`
       );
-    } catch (err) {
+    } catch (err: any) {
       if (err?.code === "ENOENT") {
         logger.warn(
           `Missing project configuration file: ${ProjectConfigurationLoader.PROJECT_CONFIG_FILE_NAME}`
@@ -77,7 +77,7 @@ export class ProjectConfigurationLoader {
       logger.debug(
         `${ProjectConfigurationLoader.USER_CONFIG_FILE_NAME} loaded`
       );
-    } catch (err) {
+    } catch (err: any) {
       if (err?.code === "ENOENT") {
         logger.debug(
           `User configuration file ${ProjectConfigurationLoader.USER_CONFIG_FILE_NAME} does not exist`
@@ -115,14 +115,14 @@ export class ProjectConfigurationLoader {
   public get saveAsFolder(): boolean {
     return process.env.PROJECT_SAVE_AS_FOLDER
       ? process.env.PROJECT_SAVE_AS_FOLDER.toLowerCase() === "true" ||
-          process.env.PROJECT_SAVE_AS_FOLDER === "1"
+      process.env.PROJECT_SAVE_AS_FOLDER === "1"
       : this._saveAsFolder;
   }
 
   public get minifyScript(): boolean {
     return process.env.PROJECT_MINIFY_SCRIPT
       ? process.env.PROJECT_MINIFY_SCRIPT.toLowerCase() === "true" ||
-          process.env.PROJECT_MINIFY_SCRIPT === "1"
+      process.env.PROJECT_MINIFY_SCRIPT === "1"
       : this._minifyScript;
   }
 
@@ -193,7 +193,7 @@ function getFilesInDirectory(dir: string): string[] {
 
 interface IMapFile {
   filePath: string;
-  content: ArrayBuffer;
+  content: Uint8Array;
 }
 export function compileMap(
   mapPath: string,
@@ -284,7 +284,7 @@ export function createMapFromFiles(
         throw new Error(
           `Unable to save map as dir over existing file with same name: "${output}"`
         );
-    } catch (err) {
+    } catch (err: any) {
       if (err?.code === "ENOENT") {
         fs.mkdirsSync(output);
       } else {
@@ -304,7 +304,7 @@ export function createMapFromFiles(
         throw new Error(
           `Unable to save map as file over existing dir with same name: "${output}"`
         );
-    } catch (err) {
+    } catch (err: any) {
       if (err?.code === "ENOENT") {
         fs.mkdirsSync(path.dirname(output));
       } else {
@@ -315,7 +315,10 @@ export function createMapFromFiles(
     const map = new War3Map();
     map.archive.resizeHashtable(mapFiles.length);
     for (const mapFile of mapFiles) {
-      const imported = map.import(mapFile.filePath, mapFile.content);
+      const imported = map.import(
+        mapFile.filePath,
+        mapFile.content as unknown as ArrayBuffer
+      );
       if (!imported) {
         throw new Error(`Failed to import ${mapFile.filePath}`);
       }
@@ -334,10 +337,9 @@ export function createMapFromFiles(
  * Formatter for log messages.
  */
 const loggerFormatFunc: Format = format.printf(
-  ({ level, message, timestamp }) => {
-    return `[${
-      String(timestamp).replace("T", " ").split(".")[0]
-    }] ${level}: ${message}`;
+  ({level, message, timestamp}) => {
+    return `[${String(timestamp).replace("T", " ").split(".")[0]
+      }] ${level}: ${message}`;
   }
 );
 
