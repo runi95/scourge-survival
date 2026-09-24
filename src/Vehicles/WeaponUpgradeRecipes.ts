@@ -8,6 +8,7 @@ import { FocusedShockwave } from "./Upgrades/Recipes/FocusedShockwave";
 import { GiantGoblinLandMine } from "./Upgrades/Recipes/GiantGoblinLandMine";
 import { LiquidFire } from "./Upgrades/Recipes/LiquidFire";
 import { Monsoon } from "./Upgrades/Recipes/Monsoon";
+import { MortarTeam } from "./Upgrades/Recipes/MortarTeam";
 import { Phoenix } from "./Upgrades/Recipes/Phoenix";
 import { ShockwaveStorm } from "./Upgrades/Recipes/ShockwaveStorm";
 import { StormHammers } from "./Upgrades/Recipes/StormHammers";
@@ -30,4 +31,5 @@ export const weaponRecipes = [
   new Workshop(),
   new BoulderBarrage(),
   new Firebolt(),
+  new MortarTeam(),
 ];
