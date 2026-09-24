@@ -1,4 +1,4 @@
-import { Item, MapPlayer, Timer, Unit } from "w3ts";
+import { Item, MapPlayer, Timer, Trigger, Unit } from "w3ts";
 import { Vehicle } from "../../Vehicle";
 import { TimerUtils } from "../../../Utility/TimerUtils";
 import { Globals } from "../../../Utility/Globals";
@@ -19,6 +19,20 @@ export class Workshop extends WeaponUpgradeRecipe {
   private readonly pocketFactoryAbilityId: number = FourCC("A01D");
   private readonly itemIterations = new Map<number, number>();
   private readonly itemCounters = new Map<number, number>();
+  private readonly workshopUnitTypeId: number = FourCC("n003");
+  private readonly onSummonTrigger = Trigger.create();
+
+  constructor() {
+    super();
+
+    this.onSummonTrigger.addAction(() => {
+      const summonedUnit = GetSummonedUnit();
+      if (GetUnitTypeId(summonedUnit) !== this.workshopUnitTypeId) return;
+
+      SetUnitAnimation(summonedUnit, "stand");
+    });
+    this.onSummonTrigger.registerAnyUnitEvent(EVENT_PLAYER_UNIT_SUMMON);
+  }
 
   public onAcquire(
     vehicle: Vehicle,

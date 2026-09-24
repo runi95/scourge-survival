@@ -4012,3 +4012,287 @@ STRING 821
 Boulder Barrage
 }
 
+STRING 822
+// Units: u00Q (Firebolt), Name (Name)
+{
+Firebolt
+}
+
+STRING 823
+// Units: n008 (Whirlpool), Name (Name)
+{
+Whirlpool
+}
+
+STRING 824
+// Units: n009 (Tesla Coil), Name (Name)
+{
+Tesla Coil
+}
+
+STRING 825
+// Items: I01K (Firebolt), Name (Name)
+{
+Firebolt
+}
+
+STRING 826
+// Items: I01K (Firebolt), Tip (Tooltip - Basic)
+{
+Purchase Firebolt
+}
+
+STRING 827
+// Items: I01K (Firebolt), Description (Description)
+{
+Shoots a firebolt with splash damage at a random enemy unit within range, setting the targets on fire.
+}
+
+STRING 828
+// Items: I01K (Firebolt), Ubertip (Tooltip - Extended)
+{
+Shoots a firebolt with splash damage at a random enemy unit within range, setting the targets on fire.
+}
+
+STRING 829
+// Items: I01L (Firebolt), Name (Name)
+{
+Firebolt
+}
+
+STRING 830
+// Items: I01L (Firebolt), Tip (Tooltip - Basic)
+{
+Purchase Firebolt
+}
+
+STRING 831
+// Items: I01L (Firebolt), Ubertip (Tooltip - Extended)
+{
+Shoots a firebolt with splash damage at a random enemy unit within range, setting the targets on fire.
+
+Damage: |cffffcc0060|r
+Burn damage: |cffffcc0015 per second for 3s|r
+Cooldown: |cffffcc001s|r
+Area of Effect (splash): |cffffcc00125|r
+Range: |cffffcc00650|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00magic|r
+}
+
+STRING 832
+// Items: I01L (Firebolt), Description (Description)
+{
+Shoots a firebolt with splash damage at a random enemy unit within range, setting the targets on fire.
+
+Damage: |cffffcc0060|r
+Burn damage: |cffffcc0015 per second for 3s|r
+Cooldown: |cffffcc001s|r
+Area of Effect (splash): |cffffcc00125|r
+Range: |cffffcc00650|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00magic|r
+}
+
+STRING 833
+// Items: I01M (Mortar Team), Name (Name)
+{
+Mortar Team
+}
+
+STRING 834
+// Items: I01M (Mortar Team), Tip (Tooltip - Basic)
+{
+Purchase Mortar Team
+}
+
+STRING 835
+// Items: I01M (Mortar Team), Description (Description)
+{
+Summons a Mortar Team to fight for you every so often.
+}
+
+STRING 836
+// Items: I01M (Mortar Team), Ubertip (Tooltip - Extended)
+{
+Summons a Mortar Team to fight for you every so often.
+}
+
+STRING 837
+// Items: I01N (Mortar Team), Name (Name)
+{
+Mortar Team
+}
+
+STRING 838
+// Items: I01N (Mortar Team), Tip (Tooltip - Basic)
+{
+Purchase Mortar Team
+}
+
+STRING 839
+// Items: I01N (Mortar Team), Ubertip (Tooltip - Extended)
+{
+Spawns a static Mortar Team that bombards nearby enemy ground units within range.
+
+Damage: |cffffcc0040 - 50|r
+Cooldown (attack): |cffffcc001s|r
+Cooldown (summon): |cffffcc0015s|r
+Area of Effect (splash): |cffffcc00100|r
+Range: |cffffcc00750|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00siege|r
+}
+
+STRING 840
+// Items: I01N (Mortar Team), Description (Description)
+{
+Spawns a static Mortar Team that bombards nearby enemy ground units within range.
+
+Damage: |cffffcc0040 - 50|r
+Cooldown (attack): |cffffcc001s|r
+Cooldown (summon): |cffffcc0015s|r
+Area of Effect (splash): |cffffcc00100|r
+Range: |cffffcc00750|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00siege|r
+}
+
+STRING 841
+// Items: I01O (Whirlpool), Name (Name)
+{
+Whirlpool
+}
+
+STRING 842
+// Items: I01O (Whirlpool), Tip (Tooltip - Basic)
+{
+Purchase Whirlpool
+}
+
+STRING 843
+// Items: I01O (Whirlpool), Description (Description)
+{
+Summons a whirlpool that slows enemy units' movement, damages all nearby enemies and makes water erupt underneath them.
+}
+
+STRING 844
+// Items: I01O (Whirlpool), Ubertip (Tooltip - Extended)
+{
+Summons a whirlpool that slows enemy units' movement, damages all nearby enemies and makes water erupt underneath them.
+}
+
+STRING 845
+// Items: I01P (Whirlpool), Name (Name)
+{
+Whirlpool
+}
+
+STRING 846
+// Items: I01P (Whirlpool), Tip (Tooltip - Basic)
+{
+Purchase Whirlpool
+}
+
+STRING 847
+// Items: I01P (Whirlpool), Ubertip (Tooltip - Extended)
+{
+Summons a whirlpool that slows enemy units' movement and damages all nearby enemies. Every second water erupts underneath a random nearby enemy unit.
+
+Damage: |cffffcc0025 - 180|r
+Damage (eruption): |cffffcc00150|r
+Cooldown (damage): |cffffcc001s|r
+Cooldown (eruption): |cffffcc001s|r
+Cooldown (summon): |cffffcc0010s|r
+Area of Effect (damage): |cffffcc00650|r
+Range (eruption): |cffffcc00650|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 848
+// Items: I01P (Whirlpool), Description (Description)
+{
+Summons a whirlpool that slows enemy units' movement and damages all nearby enemies. Every second water erupts underneath a random nearby enemy unit.
+
+Damage: |cffffcc0025 - 180|r
+Damage (eruption): |cffffcc00150|r
+Cooldown (damage): |cffffcc001s|r
+Cooldown (eruption): |cffffcc001s|r
+Cooldown (summon): |cffffcc0010s|r
+Area of Effect (damage): |cffffcc00650|r
+Range (eruption): |cffffcc00650|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 849
+// Items: I01Q (Tesla Coil), Name (Name)
+{
+Tesla Coil
+}
+
+STRING 850
+// Items: I01Q (Tesla Coil), Tip (Tooltip - Basic)
+{
+Purchase Tesla Coil
+}
+
+STRING 851
+// Items: I01Q (Tesla Coil), Description (Description)
+{
+Creates a Tesla Coil nearby every 60 seconds that strikes nearby enemies with chain lightning.
+}
+
+STRING 852
+// Items: I01Q (Tesla Coil), Ubertip (Tooltip - Extended)
+{
+Creates a Tesla Coil nearby every 60 seconds that strikes nearby enemies with chain lightning.
+}
+
+STRING 853
+// Items: I01R (Tesla Coil), Name (Name)
+{
+Tesla Coil
+}
+
+STRING 854
+// Items: I01R (Tesla Coil), Tip (Tooltip - Basic)
+{
+Purchase Tesla Coil
+}
+
+STRING 855
+// Items: I01R (Tesla Coil), Ubertip (Tooltip - Extended)
+{
+Spawns a Tesla Coil every 60 seconds that casts chain lightning at a nearby enemy unit every 3 seconds.
+
+Damage: |cffffcc00120|r
+Damage reduction (jump): |cffffcc00-15%|r
+Cooldown: |cffffcc0060s (coil) + 3s (lightning)|r
+Range: |cffffcc00500|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+Duration: |cffffcc0060s|r
+}
+
+STRING 856
+// Items: I01R (Tesla Coil), Description (Description)
+{
+Spawns a Tesla Coil every 60 seconds that casts chain lightning at a nearby enemy unit every 3 seconds.
+
+Damage: |cffffcc00120|r
+Damage reduction (jump): |cffffcc00-15%|r
+Cooldown: |cffffcc0060s (coil) + 3s (lightning)|r
+Range: |cffffcc00500|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+Duration: |cffffcc0060s|r
+}
+
+STRING 857
+// Abilities: A029 (Tesla Coil), Name (Name)
+{
+Tesla Coil
+}
+
