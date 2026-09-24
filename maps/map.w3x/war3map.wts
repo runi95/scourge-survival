@@ -3932,3 +3932,9 @@ STRING 810
 Creates a Workshop nearby every 60 seconds.
 }
 
+STRING 811
+// Abilities: A01E (Anti-magic Shell), Name (Name)
+{
+Anti-magic Shell
+}
+

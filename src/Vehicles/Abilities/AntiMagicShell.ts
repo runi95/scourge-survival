@@ -5,6 +5,7 @@ import { TimerUtils } from "../../Utility/TimerUtils";
 export class AntiMagicShell {
   private readonly antiMagicShellTrig: Trigger;
   private readonly antiMagicShellAbilityId = FourCC("A01N");
+  private readonly antiMagicShellEffectAbilityId = FourCC("A01E");
 
   constructor() {
     this.antiMagicShellTrig = Trigger.create();
@@ -17,16 +18,18 @@ export class AntiMagicShell {
       const ownerId = owner.id;
       AntiMagicShellDamageEvent.UNIT_ID[ownerId] = triggeringUnit.id;
 
-      const effect = Effect.createAttachment(
-        "Abilities/Spells/Undead/AntiMagicShell/AntiMagicShell.mdl",
-        triggeringUnit,
-        "overhead",
-      );
+      // const effect = Effect.createAttachment(
+      //   "Abilities/Spells/Undead/AntiMagicShell/AntiMagicShell.mdl",
+      //   triggeringUnit,
+      //   "overhead",
+      // );
+      triggeringUnit.addAbility(this.antiMagicShellEffectAbilityId);
       const t: Timer = TimerUtils.newTimer();
       t.start(10, false, () => {
         TimerUtils.releaseTimer(t);
         AntiMagicShellDamageEvent.UNIT_ID[ownerId] = null;
-        effect.destroy();
+        // effect.destroy();
+        triggeringUnit.removeAbility(this.antiMagicShellEffectAbilityId);
       });
     });
 
