@@ -1,4 +1,4 @@
-import { Frame, Trigger, MapPlayer } from "w3ts";
+import { Frame, Trigger, MapPlayer, Timer } from "w3ts";
 import { GameMap } from "./GameMap";
 import { RandomNumberGenerator } from "../Utility/RandomNumberGenerator";
 import {
@@ -12,6 +12,8 @@ import { VehicleUpgrade } from "../Vehicles/VehicleUpgrade";
 import { VehicleUpgradeRarity } from "../Vehicles/VehicleUpgradeRarity";
 
 const REROLL_COST = 50;
+const ICON_SIZE = 0.02625;
+const PURCHASE_FLASH_TICKS = 20;
 
 export class VehicleUpgradeSystem {
   private readonly originFrameGameUi: Frame;
@@ -20,6 +22,9 @@ export class VehicleUpgradeSystem {
   private readonly upgradeIconFrames: Frame[] = [];
   private readonly upgradeTextFrames: Frame[] = [];
   private readonly upgradeCostFrames: Frame[] = [];
+  private readonly purchaseFlashFrames: Frame[] = [];
+  // Local-only animation state, never read by game logic
+  private readonly purchaseFlashTicksLeft: number[] = [0, 0, 0, 0];
   private readonly upgradeIndexes: number[][] = [];
   private readonly localPlayerId: number = GetPlayerId(GetLocalPlayer());
   private readonly rerollCostFrame: Frame;
@@ -129,7 +134,12 @@ export class VehicleUpgradeSystem {
       this.upgradeTextFrames.push(textFrame);
       this.createUpgradeButtonTrigger(buttonFrame, i);
       textFrame.setText(text);
+      this.purchaseFlashFrames.push(
+        this.createPurchaseFlashFrame(this.menu, upgradeIconFrame),
+      );
     }
+
+    Timer.create().start(0.02, true, () => this.updatePurchaseFlashes());
 
     this.menu.setFocus(false);
   }
@@ -329,7 +339,7 @@ export class VehicleUpgradeSystem {
     borderTexture = "war3mapImported/CommonBorder.dds",
   ): [Frame, Frame, Frame] {
     const iconFrame = Frame.createType("iconFrame", parent, 0, "BACKDROP", "");
-    iconFrame.setSize(0.02625, 0.02625);
+    iconFrame.setSize(ICON_SIZE, ICON_SIZE);
     iconFrame.setPoint(
       FRAMEPOINT_CENTER,
       parent,
@@ -346,7 +356,7 @@ export class VehicleUpgradeSystem {
       "BACKDROP",
       "",
     );
-    iconBorderFrame.setSize(0.02625, 0.02625);
+    iconBorderFrame.setSize(ICON_SIZE, ICON_SIZE);
     iconBorderFrame.setPoint(
       FRAMEPOINT_CENTER,
       parent,
@@ -367,6 +377,58 @@ export class VehicleUpgradeSystem {
     costFrame.setText(`${costColor}${cost}|r`);
 
     return [iconFrame, iconBorderFrame, costFrame];
+  }
+
+  private createPurchaseFlashFrame(parent: Frame, iconFrame: Frame): Frame {
+    const flashFrame = Frame.createType(
+      "purchaseFlashFrame",
+      parent,
+      0,
+      "BACKDROP",
+      "",
+    );
+    flashFrame.setPoint(FRAMEPOINT_CENTER, iconFrame, FRAMEPOINT_CENTER, 0, 0);
+    flashFrame.setSize(ICON_SIZE, ICON_SIZE);
+    flashFrame.setTexture(
+      "UI/Widgets/Console/Human/CommandButton/human-activebutton.blp",
+      0,
+      true,
+    );
+    flashFrame.visible = false;
+
+    return flashFrame;
+  }
+
+  private updatePurchaseFlashes() {
+    for (let i = 0; i < 4; i++) {
+      if (this.purchaseFlashTicksLeft[i] <= 0) continue;
+
+      this.purchaseFlashTicksLeft[i]--;
+      const progress = this.purchaseFlashTicksLeft[i] / PURCHASE_FLASH_TICKS;
+      const size = ICON_SIZE * (1 + 0.3 * progress);
+      this.upgradeIconFrames[i].setSize(size, size);
+      this.upgradeIconBorderFrames[i].setSize(size, size);
+      this.purchaseFlashFrames[i].setSize(size, size);
+      this.purchaseFlashFrames[i].setAlpha(Math.floor(255 * progress));
+      this.purchaseFlashFrames[i].visible = progress > 0;
+    }
+  }
+
+  private playPurchaseEffect(playerId: number, index: number) {
+    const vehicle = GameMap.PLAYER_VEHICLES[playerId];
+    if (vehicle?.unit != null) {
+      DestroyEffect(
+        AddSpecialEffectTarget(
+          "Abilities/Spells/Items/AIlm/AIlmTarget.mdl",
+          vehicle.unit.handle,
+          "origin",
+        ),
+      );
+    }
+
+    if (playerId === this.localPlayerId) {
+      this.purchaseFlashTicksLeft[index] = PURCHASE_FLASH_TICKS;
+    }
   }
 
   private createUpgradeButtonFrame(parent: Frame): [Frame, Frame] {
@@ -466,6 +528,7 @@ export class VehicleUpgradeSystem {
       );
 
       this.refreshUpgradeIcon(index);
+      this.playPurchaseEffect(playerId, index);
       upgrade.applyUpgrade(vehicle);
     });
     buttonTrig.triggerRegisterFrameEvent(buttonFrame, FRAMEEVENT_CONTROL_CLICK);
