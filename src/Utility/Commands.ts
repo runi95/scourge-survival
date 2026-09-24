@@ -4,7 +4,6 @@ import type { MapPlayer } from "w3ts";
 import { Log, LogLevel } from "../lib/Serilog/Serilog";
 import { StringSink } from "../lib/Serilog/Sinks/StringSink";
 import { GameOptions } from "../Game/GameOptions";
-import { FourCCToString } from "./FourCCToString";
 import { Globals } from "./Globals";
 
 const COMMAND_PREFIX = "-";
