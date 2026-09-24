@@ -13,6 +13,7 @@ import { Phoenix } from "./Upgrades/Recipes/Phoenix";
 import { ShockwaveStorm } from "./Upgrades/Recipes/ShockwaveStorm";
 import { StormHammers } from "./Upgrades/Recipes/StormHammers";
 import { UnstableShockwave } from "./Upgrades/Recipes/UnstableShockwave";
+import { Whirlpool } from "./Upgrades/Recipes/Whirlpool";
 import { Workshop } from "./Upgrades/Recipes/Workshop";
 
 export const weaponRecipes = [
@@ -32,4 +33,5 @@ export const weaponRecipes = [
   new BoulderBarrage(),
   new Firebolt(),
   new MortarTeam(),
+  new Whirlpool(),
 ];
