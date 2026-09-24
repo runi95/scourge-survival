@@ -1,6 +1,7 @@
 import { BoulderBarrage } from "./Upgrades/Recipes/BoulderBarrage";
 import { DualCannons } from "./Upgrades/Recipes/DualCannons";
 import { ExplosiveElemental } from "./Upgrades/Recipes/ExplosiveElemental";
+import { Firebolt } from "./Upgrades/Recipes/Firebolt";
 import { FlyingBehemoth } from "./Upgrades/Recipes/FlyingBehemoth";
 import { FocusedImpale } from "./Upgrades/Recipes/FocusedImpale";
 import { FocusedShockwave } from "./Upgrades/Recipes/FocusedShockwave";
@@ -28,4 +29,5 @@ export const weaponRecipes = [
   new Phoenix(),
   new Workshop(),
   new BoulderBarrage(),
+  new Firebolt(),
 ];

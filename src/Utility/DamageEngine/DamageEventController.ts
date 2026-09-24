@@ -2,6 +2,7 @@ import { DamageEngine, DamageEventType, DamageInstance } from "./DamageEngine";
 import { AntiMagicShellDamageEvent } from "./DamageEvents/AntiMagicShellDamageEvent";
 import { BerserkDamageEvent } from "./DamageEvents/BerserkDamageEvent";
 import { CriticalStrikeDamageEvent } from "./DamageEvents/CriticalStrikeDamageEvent";
+import { FireboltDamageEvent } from "./DamageEvents/FireboltDamageEvent";
 import { InnerFireDamageEvent } from "./DamageEvents/InnerFireDamageEvent";
 import { LongRifleDamageEvent } from "./DamageEvents/LongRifleDamageEvent";
 import { MagicSurgeDamageEvent } from "./DamageEvents/MagicSurgeDamageEvent";
@@ -69,6 +70,10 @@ export class DamageEventController {
     );
 
     // After damage events
+    DamageEngine.register(
+      new FireboltDamageEvent(),
+      DamageEventType.AfterDamageEvent,
+    );
     DamageEngine.register(
       new InnerFireDamageEvent(),
       DamageEventType.AfterDamageEvent,
