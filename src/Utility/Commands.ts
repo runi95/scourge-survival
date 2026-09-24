@@ -8,6 +8,8 @@ import { Globals } from "./Globals";
 
 const COMMAND_PREFIX = "-";
 
+let isDebugLoggingEnabled = false;
+
 export class Commands {
   private readonly gameOptions: GameOptions;
   private readonly player: MapPlayer;
@@ -165,7 +167,16 @@ export class Commands {
         })();
         break;
       case "debug":
-        Log.Init([new StringSink(LogLevel.Debug, print)]);
+        isDebugLoggingEnabled = !isDebugLoggingEnabled;
+        Log.Init([
+          new StringSink(
+            isDebugLoggingEnabled ? LogLevel.Debug : LogLevel.Information,
+            print,
+          ),
+        ]);
+        print(
+          `Debug logging ${isDebugLoggingEnabled ? "|cff00ff00enabled|r" : "|cffff0000disabled|r"}`,
+        );
     }
   }
 }
