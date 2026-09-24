@@ -18,4 +18,10 @@ export enum Sounds {
   LET_BLOOD_DROWN_THE_WEAK = "Units/Undead/Acolyte/AcolytePissed4.flac",
   VICTORY_DRAWS_NEAR_HASTEN_THE_ATTACK = "Sound/Dialogue/UndeadExpCamp/Undead06x/L06Varimathras42.flac",
   FROST_WYRM_WAR_CRY = "Units/Undead/FrostWyrm/FrostWyrmWarcry1.flac",
+
+  // Upgrade purchase chimes
+  COMMON_PURCHASE = "war3mapImported/CommonPurchase.wav",
+  UNCOMMON_PURCHASE = "war3mapImported/UncommonPurchase.wav",
+  RARE_PURCHASE = "war3mapImported/RarePurchase.wav",
+  LEGENDARY_PURCHASE = "war3mapImported/LegendaryPurchase.wav",
 }

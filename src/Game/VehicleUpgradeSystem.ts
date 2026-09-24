@@ -1,6 +1,7 @@
-import { Frame, Trigger, MapPlayer, Timer } from "w3ts";
+import { Frame, Trigger, MapPlayer, Timer, Sound } from "w3ts";
 import { GameMap } from "./GameMap";
 import { RandomNumberGenerator } from "../Utility/RandomNumberGenerator";
+import { Sounds } from "../Utility/Sounds";
 import {
   commonUpgrades,
   legendaryUpgrades,
@@ -14,6 +15,28 @@ import { VehicleUpgradeRarity } from "../Vehicles/VehicleUpgradeRarity";
 const REROLL_COST = 50;
 const ICON_SIZE = 0.02625;
 const PURCHASE_FLASH_TICKS = 20;
+
+const PURCHASE_EFFECTS: Record<
+  VehicleUpgradeRarity,
+  { model: string; sound: Sounds }
+> = {
+  [VehicleUpgradeRarity.COMMON]: {
+    model: "war3mapImported/CommonTarget.mdx",
+    sound: Sounds.COMMON_PURCHASE,
+  },
+  [VehicleUpgradeRarity.UNCOMMON]: {
+    model: "war3mapImported/UncommonTarget.mdx",
+    sound: Sounds.UNCOMMON_PURCHASE,
+  },
+  [VehicleUpgradeRarity.RARE]: {
+    model: "war3mapImported/RareTarget.mdx",
+    sound: Sounds.RARE_PURCHASE,
+  },
+  [VehicleUpgradeRarity.LEGENDARY]: {
+    model: "war3mapImported/LegendaryTarget.mdx",
+    sound: Sounds.LEGENDARY_PURCHASE,
+  },
+};
 
 export class VehicleUpgradeSystem {
   private readonly originFrameGameUi: Frame;
@@ -421,22 +444,28 @@ export class VehicleUpgradeSystem {
   ) {
     const vehicle = GameMap.PLAYER_VEHICLES[playerId];
     if (vehicle?.unit != null) {
-      let rarityModel = "war3mapImported/CommonTarget.mdx";
-      switch (rarity) {
-        case VehicleUpgradeRarity.UNCOMMON:
-          rarityModel = "war3mapImported/UncommonTarget.mdx";
-          break;
-        case VehicleUpgradeRarity.RARE:
-          rarityModel = "war3mapImported/RareTarget.mdx";
-          break;
-        case VehicleUpgradeRarity.LEGENDARY:
-          rarityModel = "war3mapImported/LegendaryTarget.mdx";
-          break;
-      }
-
+      const effect = PURCHASE_EFFECTS[rarity];
       DestroyEffect(
-        AddSpecialEffectTarget(rarityModel, vehicle.unit.handle, "origin"),
+        AddSpecialEffectTarget(effect.model, vehicle.unit.handle, "origin"),
       );
+
+      // 3D at the vehicle, with the same range as the spell sounds it replaces
+      const sound = Sound.create(
+        effect.sound,
+        false,
+        true,
+        true,
+        10,
+        10,
+        "SpellsEAX",
+      );
+      if (sound != null) {
+        sound.setDistances(600, 3500);
+        sound.setDistanceCutoff(3000);
+        sound.setPosition(vehicle.unit.x, vehicle.unit.y, 0);
+        sound.start();
+        sound.killWhenDone();
+      }
     }
 
     if (playerId === this.localPlayerId) {
