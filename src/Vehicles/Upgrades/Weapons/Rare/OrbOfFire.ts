@@ -36,7 +36,7 @@ Damage type: |cffffcc00magic|r`;
   ): void {
     const t: Timer = TimerUtils.newTimer();
     this.timers.set(itemId, t);
-    t.start(1, true, () => {
+    t.start(this.cooldown, true, () => {
       const { x, y } = vehicle.unit;
       vehicle.unit.startAbilityCooldown(
         weaponDummyAbilityIds[weaponIndex],
