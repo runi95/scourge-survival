@@ -414,15 +414,28 @@ export class VehicleUpgradeSystem {
     }
   }
 
-  private playPurchaseEffect(playerId: number, index: number) {
+  private playPurchaseEffect(
+    playerId: number,
+    index: number,
+    rarity: VehicleUpgradeRarity,
+  ) {
     const vehicle = GameMap.PLAYER_VEHICLES[playerId];
     if (vehicle?.unit != null) {
+      let rarityModel = "war3mapImported/CommonTarget.mdx";
+      switch (rarity) {
+        case VehicleUpgradeRarity.UNCOMMON:
+          rarityModel = "war3mapImported/UncommonTarget.mdx";
+          break;
+        case VehicleUpgradeRarity.RARE:
+          rarityModel = "war3mapImported/RareTarget.mdx";
+          break;
+        case VehicleUpgradeRarity.LEGENDARY:
+          rarityModel = "war3mapImported/LegendaryTarget.mdx";
+          break;
+      }
+
       DestroyEffect(
-        AddSpecialEffectTarget(
-          "Abilities/Spells/Items/AIlm/AIlmTarget.mdl",
-          vehicle.unit.handle,
-          "origin",
-        ),
+        AddSpecialEffectTarget(rarityModel, vehicle.unit.handle, "origin"),
       );
     }
 
@@ -528,7 +541,7 @@ export class VehicleUpgradeSystem {
       );
 
       this.refreshUpgradeIcon(index);
-      this.playPurchaseEffect(playerId, index);
+      this.playPurchaseEffect(playerId, index, upgrade.rarity);
       upgrade.applyUpgrade(vehicle);
     });
     buttonTrig.triggerRegisterFrameEvent(buttonFrame, FRAMEEVENT_CONTROL_CLICK);
