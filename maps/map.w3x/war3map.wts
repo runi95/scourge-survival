@@ -1,77 +1,7 @@
-﻿STRING 1
-{
-Player 1
-}
-
-STRING 2
-{
-Player 2
-}
-
-STRING 3
-{
-Player 3
-}
-
-STRING 4
-{
-Player 4
-}
-
-STRING 5
-{
-Player 5
-}
-
-STRING 6
-{
-Player 6
-}
-
-STRING 7
-{
-Player 7
-}
-
-STRING 8
-{
-Player 8
-}
-
-STRING 9
-{
-Player 9
-}
-
-STRING 11
-{
-Scourge Survival
-}
-
-STRING 12
-{
-4 - 9
-}
-
-STRING 13
-{
-Survive the onslaught of enemies while upgrading your customizable vehicle to fight the horde!
-}
-
-STRING 14
-{
-runi95#2202
-}
-
-STRING 15
+﻿STRING 15
 // Units: H001 (Siege Engine), Name (Name)
 {
 Siege Engine
-}
-
-STRING 17
-{
-Players
 }
 
 STRING 20
@@ -708,61 +638,6 @@ STRING 161
 // Items: I006 (Air Support), Ubertip (Tooltip - Extended)
 {
 Spawns 3 drones to permanently fight for you.
-}
-
-STRING 164
-{
-Weapons
-}
-
-STRING 179
-{
-Scourge 1
-}
-
-STRING 180
-{
-Scourge 2
-}
-
-STRING 181
-{
-Scourge 3
-}
-
-STRING 182
-{
-Scourge 4
-}
-
-STRING 183
-{
-Scourge 5
-}
-
-STRING 184
-{
-Scourge 6
-}
-
-STRING 185
-{
-Scourge 7
-}
-
-STRING 186
-{
-Scourge 8
-}
-
-STRING 187
-{
-Scourge 9
-}
-
-STRING 188
-{
-Scourge
 }
 
 STRING 189
