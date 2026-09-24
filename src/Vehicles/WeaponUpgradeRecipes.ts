@@ -1,3 +1,4 @@
+import { BoulderBarrage } from "./Upgrades/Recipes/BoulderBarrage";
 import { DualCannons } from "./Upgrades/Recipes/DualCannons";
 import { ExplosiveElemental } from "./Upgrades/Recipes/ExplosiveElemental";
 import { FlyingBehemoth } from "./Upgrades/Recipes/FlyingBehemoth";
@@ -26,4 +27,5 @@ export const weaponRecipes = [
   new FlyingBehemoth(),
   new Phoenix(),
   new Workshop(),
+  new BoulderBarrage(),
 ];

@@ -3938,3 +3938,77 @@ STRING 811
 Anti-magic Shell
 }
 
+STRING 812
+// Units: u00P (Boulder Barrage), Name (Name)
+{
+Boulder Barrage
+}
+
+STRING 813
+// Items: I01I (Boulder Barrage), Name (Name)
+{
+Boulder Barrage
+}
+
+STRING 814
+// Items: I01I (Boulder Barrage), Tip (Tooltip - Basic)
+{
+Purchase Boulder Barrage
+}
+
+STRING 815
+// Items: I01I (Boulder Barrage), Description (Description)
+{
+Hurls a volley of homing boulders at up to 4 different random enemy units within range, stunning them.
+}
+
+STRING 816
+// Items: I01I (Boulder Barrage), Ubertip (Tooltip - Extended)
+{
+Hurls a volley of homing boulders at up to 4 different random enemy units within range, stunning them.
+}
+
+STRING 817
+// Items: I01J (Boulder Barrage), Name (Name)
+{
+Boulder Barrage
+}
+
+STRING 818
+// Items: I01J (Boulder Barrage), Tip (Tooltip - Basic)
+{
+Purchase Boulder Barrage
+}
+
+STRING 819
+// Items: I01J (Boulder Barrage), Ubertip (Tooltip - Extended)
+{
+Hurls a volley of homing boulders at up to 4 different random enemy units within range, stunning them.
+
+Damage: |cffffcc004 x 45|r
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00700|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00siege|r
+Effect: stuns for |cffffcc000.5s|r
+}
+
+STRING 820
+// Items: I01J (Boulder Barrage), Description (Description)
+{
+Hurls a volley of homing boulders at up to 4 different random enemy units within range, stunning them.
+
+Damage: |cffffcc004 x 45|r
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00700|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00siege|r
+Effect: stuns for |cffffcc000.5s|r
+}
+
+STRING 821
+// Abilities: A028 (Boulder Barrage), Name (Name)
+{
+Boulder Barrage
+}
+
