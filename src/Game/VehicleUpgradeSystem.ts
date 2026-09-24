@@ -16,6 +16,14 @@ const REROLL_COST = 50;
 const ICON_SIZE = 0.02625;
 const PURCHASE_FLASH_TICKS = 20;
 
+// Rarity odds (common/uncommon/rare/legendary, summing to 100)
+const RARITY_ODDS_BY_WAVE: { fromWave: number; odds: number[] }[] = [
+  { fromWave: 0, odds: [70, 22, 5, 3] },
+  { fromWave: 5, odds: [60, 27, 9, 4] },
+  { fromWave: 10, odds: [48, 32, 14, 6] },
+  { fromWave: 13, odds: [38, 35, 18, 9] },
+];
+
 const PURCHASE_EFFECTS: Record<
   VehicleUpgradeRarity,
   { model: string; sound: Sounds }
@@ -308,18 +316,23 @@ export class VehicleUpgradeSystem {
     availableRareUpgrades: number[],
     availableLegendaryUpgrades: number[],
   ) {
+    let odds = RARITY_ODDS_BY_WAVE[0].odds;
+    for (const tier of RARITY_ODDS_BY_WAVE) {
+      if (GameMap.CURRENT_WAVE >= tier.fromWave) odds = tier.odds;
+    }
+    const [common, uncommon, rare] = odds;
     const rarity = RandomNumberGenerator.random(1, 100);
-    if (rarity <= 70) {
+    if (rarity <= common) {
       this.upgradeIndexes[playerId][index] =
         availableCommonUpgrades[
           Math.min(index, availableCommonUpgrades.length - 1)
         ];
-    } else if (rarity <= 92) {
+    } else if (rarity <= common + uncommon) {
       this.upgradeIndexes[playerId][index] =
         availableUncommonUpgrades[
           Math.min(index, availableUncommonUpgrades.length - 1)
         ];
-    } else if (rarity <= 97) {
+    } else if (rarity <= common + uncommon + rare) {
       this.upgradeIndexes[playerId][index] =
         availableRareUpgrades[
           Math.min(index, availableRareUpgrades.length - 1)
