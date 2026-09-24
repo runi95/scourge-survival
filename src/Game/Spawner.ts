@@ -11,7 +11,8 @@ export class Spawner {
   private readonly creepUpgradeFrameSystem: CreepUpgradesFrameSystem;
   private readonly vehicleUpgradeSystem: VehicleUpgradeSystem;
 
-  private waveTimer: Timer;
+  private waveTimer: Timer | undefined;
+  private isWaveTimerPaused = false;
   private firstPortalTimer: Timer;
   private secondPortalTimer: Timer;
   private readonly positionTimer: Timer;
@@ -60,7 +61,11 @@ export class Spawner {
         newPlayerCreepCount,
       );
 
-      if (newPlayerCreepCount < 1 && !this.isCreepSpawnerRunning) {
+      if (
+        newPlayerCreepCount < 1 &&
+        !this.isCreepSpawnerRunning &&
+        !this.isWaveTimerPaused
+      ) {
         TimerUtils.releaseTimer(this.waveTimer);
         this.startWave();
       }
@@ -144,9 +149,22 @@ export class Spawner {
           true,
         );
       }
-      this.startWave();
       TimerUtils.releaseTimer(t);
+      this.waveTimer = undefined;
+      this.startWave();
     });
+  }
+
+  public toggleWaveTimerPause(): boolean {
+    this.isWaveTimerPaused = !this.isWaveTimerPaused;
+    if (this.waveTimer != null) {
+      if (this.isWaveTimerPaused) {
+        this.waveTimer.pause();
+      } else {
+        this.waveTimer.resume();
+      }
+    }
+    return this.isWaveTimerPaused;
   }
 
   private startWave() {
@@ -208,6 +226,7 @@ export class Spawner {
     this.waveTimer = t;
     t.start(60, false, () => {
       TimerUtils.releaseTimer(t);
+      this.waveTimer = undefined;
 
       this.isCreepSpawnerRunning = true;
 

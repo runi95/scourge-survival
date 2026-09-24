@@ -5,6 +5,7 @@ import { Log, LogLevel } from "../lib/Serilog/Serilog";
 import { StringSink } from "../lib/Serilog/Sinks/StringSink";
 import { GameOptions } from "../Game/GameOptions";
 import { Globals } from "./Globals";
+import type { Spawner } from "../Game/Spawner";
 
 const COMMAND_PREFIX = "-";
 
@@ -13,10 +14,12 @@ let isDebugLoggingEnabled = false;
 export class Commands {
   private readonly gameOptions: GameOptions;
   private readonly player: MapPlayer;
+  private readonly spawner: Spawner;
 
-  constructor(gameOptions: GameOptions, player: MapPlayer) {
+  constructor(gameOptions: GameOptions, player: MapPlayer, spawner: Spawner) {
     this.gameOptions = gameOptions;
     this.player = player;
+    this.spawner = spawner;
 
     const trig = Trigger.create();
     trig.addAction(() => this.handleCommand());
@@ -71,6 +74,11 @@ export class Commands {
           if (args.length !== 1) return;
           GameMap.CURRENT_WAVE = Number(args[0]);
         })();
+        break;
+      case "pause":
+        print(
+          `Wave timer ${this.spawner.toggleWaveTimerPause() ? "|cffff0000paused|r" : "|cff00ff00resumed|r"}`,
+        );
         break;
       case "ability":
         (() => {

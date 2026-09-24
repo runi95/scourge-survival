@@ -186,7 +186,7 @@ export class Game {
 
     for (let i = 0; i < 9; i++) {
       const player = MapPlayer.fromIndex(i);
-      new Commands(this.gameOptions, player);
+      new Commands(this.gameOptions, player, this.spawner);
 
       playerLeavesTrig.registerPlayerEvent(player, EVENT_PLAYER_LEAVE);
       if (
