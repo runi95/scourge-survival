@@ -9,7 +9,7 @@ import { RandomNumberGenerator } from "../../../Utility/RandomNumberGenerator";
 const MULT = Math.PI / 180;
 
 export class Workshop extends WeaponUpgradeRecipe {
-  public readonly cooldown = 3;
+  public readonly cooldown = 60;
   public readonly itemTypeId = FourCC("I01H");
   public readonly merchantItemTypeId = FourCC("I01G");
   public readonly recipe: number[] = [FourCC("I000"), FourCC("I00O")];
@@ -36,7 +36,7 @@ export class Workshop extends WeaponUpgradeRecipe {
     } else {
       vehicle.unit.startAbilityCooldown(
         weaponDummyAbilityIds[weaponIndex],
-        2 * existingIterations,
+        2 * (30 - existingIterations),
       );
     }
 

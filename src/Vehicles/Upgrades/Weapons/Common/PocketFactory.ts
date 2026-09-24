@@ -49,7 +49,7 @@ Duration: |cffffcc0060s (factory) + 12s (goblin)|r`;
     } else {
       vehicle.unit.startAbilityCooldown(
         weaponDummyAbilityIds[weaponIndex],
-        2 * existingIterations,
+        2 * (30 - existingIterations),
       );
     }
 
