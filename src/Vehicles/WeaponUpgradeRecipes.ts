@@ -7,6 +7,7 @@ import { FocusedImpale } from "./Upgrades/Recipes/FocusedImpale";
 import { FocusedShockwave } from "./Upgrades/Recipes/FocusedShockwave";
 import { GiantGoblinLandMine } from "./Upgrades/Recipes/GiantGoblinLandMine";
 import { LiquidFire } from "./Upgrades/Recipes/LiquidFire";
+import { LocustSwarm } from "./Upgrades/Recipes/LocustSwarm";
 import { Monsoon } from "./Upgrades/Recipes/Monsoon";
 import { MortarTeam } from "./Upgrades/Recipes/MortarTeam";
 import { Phoenix } from "./Upgrades/Recipes/Phoenix";
@@ -42,4 +43,5 @@ export const weaponRecipes = [
   new VortexTrap(),
   new StormElemental(),
   new ScatterMines(),
+  new LocustSwarm(),
 ];
