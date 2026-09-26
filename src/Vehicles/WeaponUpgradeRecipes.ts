@@ -3,6 +3,7 @@ import { DualCannons } from "./Upgrades/Recipes/DualCannons";
 import { ExplosiveElemental } from "./Upgrades/Recipes/ExplosiveElemental";
 import { Firebolt } from "./Upgrades/Recipes/Firebolt";
 import { FlyingBehemoth } from "./Upgrades/Recipes/FlyingBehemoth";
+import { FragmentationBurst } from "./Upgrades/Recipes/FragmentationBurst";
 import { FocusedImpale } from "./Upgrades/Recipes/FocusedImpale";
 import { FocusedShockwave } from "./Upgrades/Recipes/FocusedShockwave";
 import { GiantGoblinLandMine } from "./Upgrades/Recipes/GiantGoblinLandMine";
@@ -44,4 +45,5 @@ export const weaponRecipes = [
   new StormElemental(),
   new ScatterMines(),
   new LocustSwarm(),
+  new FragmentationBurst(),
 ];
