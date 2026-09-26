@@ -12,6 +12,7 @@ import { LocustSwarm } from "./Upgrades/Recipes/LocustSwarm";
 import { Monsoon } from "./Upgrades/Recipes/Monsoon";
 import { MortarTeam } from "./Upgrades/Recipes/MortarTeam";
 import { Phoenix } from "./Upgrades/Recipes/Phoenix";
+import { PocketCyclone } from "./Upgrades/Recipes/PocketCyclone";
 import { ScatterMines } from "./Upgrades/Recipes/ScatterMines";
 import { ShockwaveStorm } from "./Upgrades/Recipes/ShockwaveStorm";
 import { StormElemental } from "./Upgrades/Recipes/StormElemental";
@@ -46,4 +47,5 @@ export const weaponRecipes = [
   new ScatterMines(),
   new LocustSwarm(),
   new FragmentationBurst(),
+  new PocketCyclone(),
 ];

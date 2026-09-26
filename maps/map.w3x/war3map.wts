@@ -4690,3 +4690,73 @@ STRING 908
 Fragmentation Burst
 }
 
+STRING 909
+// Items: I022 (Pocket Cyclone), Tip (Tooltip - Basic)
+{
+Purchase Pocket Cyclone
+}
+
+STRING 910
+// Items: I022 (Pocket Cyclone), Description (Description)
+{
+Summons a small cyclone that follows your hero and flings enemies around.
+}
+
+STRING 911
+// Items: I022 (Pocket Cyclone), Ubertip (Tooltip - Extended)
+{
+Summons a small cyclone that follows your hero and flings enemies around.
+}
+
+STRING 912
+// Items: I022 (Pocket Cyclone), Name (Name)
+{
+Pocket Cyclone
+}
+
+STRING 913
+// Items: I023 (Pocket Cyclone), Tip (Tooltip - Basic)
+{
+Purchase Pocket Cyclone
+}
+
+STRING 914
+// Items: I023 (Pocket Cyclone), Ubertip (Tooltip - Extended)
+{
+Summons a small cyclone every 60 seconds that follows your hero around for 45 seconds. Every 3 seconds it snatches a nearby enemy unit, whirling it around in the air for 1.5 seconds while dealing constant damage, before flinging it away.
+
+Damage: |cffffcc00120 per second (180 per fling)|r
+Cooldown: |cffffcc0060s (cyclone) + 3s (fling)|r
+Range: |cffffcc00300|r
+Duration: |cffffcc0045s (cyclone) + 1.5s (fling)|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+Effect: stuns while flung
+}
+
+STRING 915
+// Items: I023 (Pocket Cyclone), Description (Description)
+{
+Summons a small cyclone every 60 seconds that follows your hero around for 45 seconds. Every 3 seconds it snatches a nearby enemy unit, whirling it around in the air for 1.5 seconds while dealing constant damage, before flinging it away.
+
+Damage: |cffffcc00120 per second (180 per fling)|r
+Cooldown: |cffffcc0060s (cyclone) + 3s (fling)|r
+Range: |cffffcc00300|r
+Duration: |cffffcc0045s (cyclone) + 1.5s (fling)|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+Effect: stuns while flung
+}
+
+STRING 916
+// Items: I023 (Pocket Cyclone), Name (Name)
+{
+Pocket Cyclone
+}
+
+STRING 917
+// Units: n00H (Pocket Cyclone), Name (Name)
+{
+Pocket Cyclone
+}
+
