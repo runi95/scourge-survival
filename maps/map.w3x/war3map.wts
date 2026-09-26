@@ -4296,3 +4296,103 @@ STRING 857
 Tesla Coil
 }
 
+STRING 858
+// Units: n00F (Vortex Trap), Name (Name)
+{
+Vortex Trap
+}
+
+STRING 859
+// Items: I01S (Vortex Trap), Name (Name)
+{
+Vortex Trap
+}
+
+STRING 860
+// Items: I01S (Vortex Trap), Tip (Tooltip - Basic)
+{
+Purchase Vortex Trap
+}
+
+STRING 861
+// Items: I01S (Vortex Trap), Description (Description)
+{
+Places Vortex Traps underneath your hero that pull nearby enemies together before detonating.
+}
+
+STRING 862
+// Items: I01S (Vortex Trap), Ubertip (Tooltip - Extended)
+{
+Places Vortex Traps underneath your hero that pull nearby enemies together before detonating.
+}
+
+STRING 863
+// Items: I01T (Vortex Trap), Name (Name)
+{
+Vortex Trap
+}
+
+STRING 864
+// Items: I01T (Vortex Trap), Tip (Tooltip - Basic)
+{
+Purchase Vortex Trap
+}
+
+STRING 865
+// Items: I01T (Vortex Trap), Ubertip (Tooltip - Extended)
+{
+Places a Vortex Trap underneath your hero every 5 seconds. When an enemy ground unit steps on it, the trap sucks all nearby enemy ground units into its center before it detonates.
+
+Damage: |cffffcc00150|r
+Cooldown: |cffffcc005s|r
+Area of Effect (pull): |cffffcc00400|r
+Area of Effect (explosion): |cffffcc00250|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell|r
+Trap activation delay: |cffffcc004s|r
+}
+
+STRING 866
+// Items: I01T (Vortex Trap), Description (Description)
+{
+Places a Vortex Trap underneath your hero every 5 seconds. When an enemy ground unit steps on it, the trap sucks all nearby enemy ground units into its center before it detonates.
+
+Damage: |cffffcc00150|r
+Cooldown: |cffffcc005s|r
+Area of Effect (pull): |cffffcc00400|r
+Area of Effect (explosion): |cffffcc00250|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell|r
+Trap activation delay: |cffffcc004s|r
+}
+
+STRING 867
+// Abilities: A02A (Stunned), Name (Name)
+{
+Stunned
+}
+
+STRING 868
+// Abilities: A02B (Frozen), Name (Name)
+{
+Frozen
+}
+
+STRING 869
+// Buffs: B006 (permafrostBuff), Tip (Tooltip)
+{
+Permafrost
+}
+
+STRING 870
+// Buffs: B006 (permafrostBuff), Ubertip (Tooltip - Extended)
+{
+This unit is slowed; its movement speed is reduced.
+}
+
+STRING 871
+// Abilities: A02C (Permafrost), Name (Name)
+{
+Permafrost
+}
+

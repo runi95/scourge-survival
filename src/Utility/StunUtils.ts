@@ -5,11 +5,14 @@ import { MapPlayer, Unit } from "w3ts";
 import { OrderId } from "w3ts/globals/order";
 import type { Timer } from "w3ts";
 
-const dummyUnitTypeId: number = FourCC("u007");
+// Objects copied from Eternal-TD, where this file comes from
+const dummyUnitTypeId: number = FourCC("u000");
 const timedLifeBuffId: number = FourCC("BTLF");
-const permafrostAbilityId: number = FourCC("A00A");
-const stunAbilityId: number = FourCC("A003");
-const freezeAbilityId: number = FourCC("A009");
+// Permafrost: 50% slow cast by a dummy when a unit thaws
+const permafrostAbilityId: number = FourCC("A02C");
+// "Stunned" and "Frozen" markers (Sphere) that only show the stun stars or ice
+const stunAbilityId: number = FourCC("A02A");
+const freezeAbilityId: number = FourCC("A02B");
 export class StunUtils {
   private static readonly STUNNED_UNITS_MAP: Map<number, StunnedUnit> = new Map<
     number,
