@@ -4760,3 +4760,73 @@ STRING 917
 Pocket Cyclone
 }
 
+STRING 918
+// Items: I024 (Shock Mines), Tip (Tooltip - Basic)
+{
+Purchase Shock Mines
+}
+
+STRING 919
+// Items: I024 (Shock Mines), Description (Description)
+{
+Places mines that send shockwaves tearing outward when they explode.
+}
+
+STRING 920
+// Items: I024 (Shock Mines), Ubertip (Tooltip - Extended)
+{
+Places mines that send shockwaves tearing outward when they explode.
+}
+
+STRING 921
+// Items: I024 (Shock Mines), Name (Name)
+{
+Shock Mines
+}
+
+STRING 922
+// Items: I025 (Shock Mines), Tip (Tooltip - Basic)
+{
+Purchase Shock Mines
+}
+
+STRING 923
+// Items: I025 (Shock Mines), Ubertip (Tooltip - Extended)
+{
+Places a Shock Mine underneath your hero every 2.5 seconds. When an enemy ground unit steps on it, the mine explodes and sends 4 shockwaves tearing outward in a cross.
+
+Damage: |cffffcc00100 (explosion) + 4 x 50 (shockwaves)|r
+Area of Effect (explosion): |cffffcc00150|r
+Cooldown: |cffffcc002.5s|r
+Targets: |cffffcc00ground only (explosion), air & ground (shockwaves)|r
+Damage type: |cffffcc00spell|r
+Mine activation delay: |cffffcc004s|r
+Duration: |cffffcc00120s|r
+}
+
+STRING 924
+// Items: I025 (Shock Mines), Description (Description)
+{
+Places a Shock Mine underneath your hero every 2.5 seconds. When an enemy ground unit steps on it, the mine explodes and sends 4 shockwaves tearing outward in a cross.
+
+Damage: |cffffcc00100 (explosion) + 4 x 50 (shockwaves)|r
+Area of Effect (explosion): |cffffcc00150|r
+Cooldown: |cffffcc002.5s|r
+Targets: |cffffcc00ground only (explosion), air & ground (shockwaves)|r
+Damage type: |cffffcc00spell|r
+Mine activation delay: |cffffcc004s|r
+Duration: |cffffcc00120s|r
+}
+
+STRING 925
+// Items: I025 (Shock Mines), Name (Name)
+{
+Shock Mines
+}
+
+STRING 926
+// Units: n00I (Shock Mine), Name (Name)
+{
+Shock Mine
+}
+
