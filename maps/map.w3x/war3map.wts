@@ -4379,19 +4379,19 @@ Frozen
 }
 
 STRING 869
-// Buffs: B006 (permafrostBuff), Tip (Tooltip)
+// Abilities: A02C (Permafrost), Name (Name)
 {
 Permafrost
 }
 
 STRING 870
-// Buffs: B006 (permafrostBuff), Ubertip (Tooltip - Extended)
+// Buffs/Effects: B006 (), Buffubertip (Tooltip - Extended)
 {
 This unit is slowed; its movement speed is reduced.
 }
 
 STRING 871
-// Abilities: A02C (Permafrost), Name (Name)
+// Buffs/Effects: B006 (), Bufftip (Tooltip)
 {
 Permafrost
 }
@@ -4415,7 +4415,7 @@ Summons a Storm Elemental whose lightning bolts bounce between enemies.
 }
 
 STRING 875
-// Items: I01U (Storm Elemental), Name (Name)
+// Units: h007 (Storm Elemental), Name (Name)
 {
 Storm Elemental
 }
@@ -4457,7 +4457,7 @@ Duration: |cffffcc0014s|r
 }
 
 STRING 879
-// Items: I01V (Storm Elemental), Name (Name)
+// Items: I01U (Storm Elemental), Name (Name)
 {
 Storm Elemental
 }
@@ -4469,7 +4469,7 @@ Storm
 }
 
 STRING 881
-// Units: h007 (Storm Elemental), Name (Name)
+// Items: I01V (Storm Elemental), Name (Name)
 {
 Storm Elemental
 }
@@ -4709,7 +4709,7 @@ Summons a small cyclone that follows your hero and flings enemies around.
 }
 
 STRING 912
-// Items: I022 (Pocket Cyclone), Name (Name)
+// Units: n00H (Pocket Cyclone), Name (Name)
 {
 Pocket Cyclone
 }
@@ -4749,13 +4749,13 @@ Effect: stuns while flung
 }
 
 STRING 916
-// Items: I023 (Pocket Cyclone), Name (Name)
+// Items: I022 (Pocket Cyclone), Name (Name)
 {
 Pocket Cyclone
 }
 
 STRING 917
-// Units: n00H (Pocket Cyclone), Name (Name)
+// Items: I023 (Pocket Cyclone), Name (Name)
 {
 Pocket Cyclone
 }
@@ -4828,5 +4828,11 @@ STRING 926
 // Units: n00I (Shock Mine), Name (Name)
 {
 Shock Mine
+}
+
+STRING 927
+// Abilities: A02C (Permafrost), EditorSuffix (Editor Suffix)
+{
+(Slow)
 }
 
