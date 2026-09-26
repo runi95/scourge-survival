@@ -4396,3 +4396,81 @@ STRING 871
 Permafrost
 }
 
+STRING 872
+// Items: I01U (Storm Elemental), Tip (Tooltip - Basic)
+{
+Purchase Storm Elemental
+}
+
+STRING 873
+// Items: I01U (Storm Elemental), Description (Description)
+{
+Summons a Storm Elemental whose lightning bolts bounce between enemies.
+}
+
+STRING 874
+// Items: I01U (Storm Elemental), Ubertip (Tooltip - Extended)
+{
+Summons a Storm Elemental whose lightning bolts bounce between enemies.
+}
+
+STRING 875
+// Items: I01U (Storm Elemental), Name (Name)
+{
+Storm Elemental
+}
+
+STRING 876
+// Items: I01V (Storm Elemental), Tip (Tooltip - Basic)
+{
+Purchase Storm Elemental
+}
+
+STRING 877
+// Items: I01V (Storm Elemental), Ubertip (Tooltip - Extended)
+{
+Spawns a static Storm Elemental every 15 seconds. It hurls bolts of lightning that bounce between up to 5 nearby enemy units, losing 15% damage with each bounce.
+
+Damage: |cffffcc0040 - 50|r
+Damage reduction (bounce): |cffffcc00-15%|r
+Targets hit (bounce): |cffffcc005|r
+Cooldown: |cffffcc0015s (elemental) + 1s (attack)|r
+Range: |cffffcc00600|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00magic|r
+Duration: |cffffcc0014s|r
+}
+
+STRING 878
+// Items: I01V (Storm Elemental), Description (Description)
+{
+Spawns a static Storm Elemental every 15 seconds. It hurls bolts of lightning that bounce between up to 5 nearby enemy units, losing 15% damage with each bounce.
+
+Damage: |cffffcc0040 - 50|r
+Damage reduction (bounce): |cffffcc00-15%|r
+Targets hit (bounce): |cffffcc005|r
+Cooldown: |cffffcc0015s (elemental) + 1s (attack)|r
+Range: |cffffcc00600|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00magic|r
+Duration: |cffffcc0014s|r
+}
+
+STRING 879
+// Items: I01V (Storm Elemental), Name (Name)
+{
+Storm Elemental
+}
+
+STRING 880
+// Abilities: A02D (Storm), Name (Name)
+{
+Storm
+}
+
+STRING 881
+// Units: h007 (Storm Elemental), Name (Name)
+{
+Storm Elemental
+}
+

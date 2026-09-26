@@ -11,6 +11,7 @@ import { Monsoon } from "./Upgrades/Recipes/Monsoon";
 import { MortarTeam } from "./Upgrades/Recipes/MortarTeam";
 import { Phoenix } from "./Upgrades/Recipes/Phoenix";
 import { ShockwaveStorm } from "./Upgrades/Recipes/ShockwaveStorm";
+import { StormElemental } from "./Upgrades/Recipes/StormElemental";
 import { StormHammers } from "./Upgrades/Recipes/StormHammers";
 import { TeslaCoil } from "./Upgrades/Recipes/TeslaCoil";
 import { UnstableShockwave } from "./Upgrades/Recipes/UnstableShockwave";
@@ -38,4 +39,5 @@ export const weaponRecipes = [
   new Whirlpool(),
   new TeslaCoil(),
   new VortexTrap(),
+  new StormElemental(),
 ];
