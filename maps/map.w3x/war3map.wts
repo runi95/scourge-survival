@@ -4474,3 +4474,77 @@ STRING 881
 Storm Elemental
 }
 
+STRING 882
+// Items: I01W (Scatter Mines), Tip (Tooltip - Basic)
+{
+Purchase Scatter Mines
+}
+
+STRING 883
+// Items: I01W (Scatter Mines), Description (Description)
+{
+Flings a volley of small goblin land mines all around your hero.
+}
+
+STRING 884
+// Items: I01W (Scatter Mines), Ubertip (Tooltip - Extended)
+{
+Flings a volley of small goblin land mines all around your hero.
+}
+
+STRING 885
+// Items: I01W (Scatter Mines), Name (Name)
+{
+Scatter Mines
+}
+
+STRING 886
+// Items: I01X (Scatter Mines), Tip (Tooltip - Basic)
+{
+Purchase Scatter Mines
+}
+
+STRING 887
+// Items: I01X (Scatter Mines), Ubertip (Tooltip - Extended)
+{
+Flings 6 small Goblin Land Mines out of your hero every 7 seconds, scattering them all around it. The mines explode when enemy ground units come near.
+
+Damage: |cffffcc0080 (full) + 30 (partial)|r
+Area of Effect: |cffffcc00125 (full) + 250 (partial)|r
+Mines: |cffffcc006|r
+Cooldown: |cffffcc007s|r
+Scatter range: |cffffcc00200 - 500|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell|r
+Mine activation delay: |cffffcc002s|r
+Duration: |cffffcc0060s|r
+}
+
+STRING 888
+// Items: I01X (Scatter Mines), Description (Description)
+{
+Flings 6 small Goblin Land Mines out of your hero every 7 seconds, scattering them all around it. The mines explode when enemy ground units come near.
+
+Damage: |cffffcc0080 (full) + 30 (partial)|r
+Area of Effect: |cffffcc00125 (full) + 250 (partial)|r
+Mines: |cffffcc006|r
+Cooldown: |cffffcc007s|r
+Scatter range: |cffffcc00200 - 500|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell|r
+Mine activation delay: |cffffcc002s|r
+Duration: |cffffcc0060s|r
+}
+
+STRING 889
+// Items: I01X (Scatter Mines), Name (Name)
+{
+Scatter Mines
+}
+
+STRING 890
+// Units: n00G (Scatter Mine), Name (Name)
+{
+Scatter Mine
+}
+

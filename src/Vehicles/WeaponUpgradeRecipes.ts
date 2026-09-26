@@ -10,6 +10,7 @@ import { LiquidFire } from "./Upgrades/Recipes/LiquidFire";
 import { Monsoon } from "./Upgrades/Recipes/Monsoon";
 import { MortarTeam } from "./Upgrades/Recipes/MortarTeam";
 import { Phoenix } from "./Upgrades/Recipes/Phoenix";
+import { ScatterMines } from "./Upgrades/Recipes/ScatterMines";
 import { ShockwaveStorm } from "./Upgrades/Recipes/ShockwaveStorm";
 import { StormElemental } from "./Upgrades/Recipes/StormElemental";
 import { StormHammers } from "./Upgrades/Recipes/StormHammers";
@@ -40,4 +41,5 @@ export const weaponRecipes = [
   new TeslaCoil(),
   new VortexTrap(),
   new StormElemental(),
+  new ScatterMines(),
 ];
