@@ -23,6 +23,7 @@ import { UnstableShockwave } from "./Upgrades/Recipes/UnstableShockwave";
 import { VortexTrap } from "./Upgrades/Recipes/VortexTrap";
 import { Whirlpool } from "./Upgrades/Recipes/Whirlpool";
 import { Workshop } from "./Upgrades/Recipes/Workshop";
+import { GoblinLaboratory } from "./Upgrades/Recipes/GoblinLaboratory";
 
 export const weaponRecipes = [
   new DualCannons(),
@@ -50,4 +51,5 @@ export const weaponRecipes = [
   new FragmentationBurst(),
   new PocketCyclone(),
   new ShockMines(),
+  new GoblinLaboratory(),
 ];

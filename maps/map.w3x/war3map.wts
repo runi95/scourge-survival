@@ -3565,62 +3565,88 @@ STRING 1132
 }
 
 STRING 1133
-// Abilities: A00F (artillery), Ubertip (Tooltip - Learn - Extended)
+// Units: n00A (Goblin Laboratory), Name (Name)
 {
-Calls down a barrage of 20 mortar shells on the target area. Each shell deals 52 - 64 siege damage where it lands and splashes onto nearby ground units.|n|n|cffffcc00Level 1|r - 60 second cooldown.|n|cffffcc00Level 2|r - 55 second cooldown.|n|cffffcc00Level 3|r - 50 second cooldown.
+Goblin Laboratory
 }
 
 STRING 1134
-// Abilities: A00F (artillery), Ubertip (Tooltip - Normal - Extended)
+// Units: n00B (Super Clockwerk Goblin), Name (Name)
 {
-Calls down an artillery barrage on the target area: 20 mortar shells land at random spots within 300 over 1.6 seconds. Each shell deals 52 - 64 siege damage where it lands, half as much within 150 and a quarter within 250. Hits ground units only.|n|n|cffffcc00Cooldown:|r 60 seconds.
+Super Clockwerk Goblin
 }
 
 STRING 1135
-// Abilities: A00F (artillery), Ubertip (Tooltip - Normal - Extended)
+// Items: I026 (Goblin Laboratory), Name (Name)
 {
-Calls down an artillery barrage on the target area: 20 mortar shells land at random spots within 300 over 1.6 seconds. Each shell deals 52 - 64 siege damage where it lands, half as much within 150 and a quarter within 250. Hits ground units only.|n|n|cffffcc00Cooldown:|r 55 seconds.
+Goblin Laboratory
 }
 
 STRING 1136
-// Abilities: A00F (artillery), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A00K (Kaboom!), EditorSuffix (Editor Suffix)
 {
-Calls down an artillery barrage on the target area: 20 mortar shells land at random spots within 300 over 1.6 seconds. Each shell deals 52 - 64 siege damage where it lands, half as much within 150 and a quarter within 250. Hits ground units only.|n|n|cffffcc00Cooldown:|r 50 seconds.
+(Super Clockwerk Goblin)
 }
 
 STRING 1137
-// Abilities: A00G (stampede), Ubertip (Tooltip - Learn - Extended)
+// Items: I026 (Goblin Laboratory), Tip (Tooltip - Basic)
 {
-Sends a stampede of exploding beasts charging ahead of the War Kodo for 5 seconds. Each beast explodes when it runs into an enemy, damaging ground units around it.|n|n|cffffcc00Level 1|r - 40 damage per beast.|n|cffffcc00Level 2|r - 80 damage per beast.|n|cffffcc00Level 3|r - 120 damage per beast.|n|cffffcc00Level 4|r - 160 damage per beast.|n|cffffcc00Level 5|r - 200 damage per beast.
+Purchase Goblin Laboratory
 }
 
 STRING 1138
-// Abilities: A00G (stampede), Ubertip (Tooltip - Normal - Extended)
+// Items: I026 (Goblin Laboratory), Description (Description)
 {
-Sends a stampede charging ahead of the War Kodo for 5 seconds: 4 beasts a second run across a 600 wide area in front of it, each exploding when it runs into an enemy for 40 damage to ground units within 275.|n|n|cffffcc00Cooldown:|r 30 seconds.
+Creates a Goblin Laboratory nearby every 60 seconds.
 }
 
 STRING 1139
-// Abilities: A00G (stampede), Ubertip (Tooltip - Normal - Extended)
+// Items: I026 (Goblin Laboratory), Ubertip (Tooltip - Extended)
 {
-Sends a stampede charging ahead of the War Kodo for 5 seconds: 4 beasts a second run across a 600 wide area in front of it, each exploding when it runs into an enemy for 80 damage to ground units within 275.|n|n|cffffcc00Cooldown:|r 30 seconds.
+Creates a Goblin Laboratory nearby every 60 seconds.
 }
 
 STRING 1140
-// Abilities: A00G (stampede), Ubertip (Tooltip - Normal - Extended)
+// Items: I027 (Goblin Laboratory), Name (Name)
 {
-Sends a stampede charging ahead of the War Kodo for 5 seconds: 4 beasts a second run across a 600 wide area in front of it, each exploding when it runs into an enemy for 120 damage to ground units within 275.|n|n|cffffcc00Cooldown:|r 30 seconds.
+Goblin Laboratory
 }
 
 STRING 1141
-// Abilities: A00G (stampede), Ubertip (Tooltip - Normal - Extended)
+// Items: I027 (Goblin Laboratory), Tip (Tooltip - Basic)
 {
-Sends a stampede charging ahead of the War Kodo for 5 seconds: 4 beasts a second run across a 600 wide area in front of it, each exploding when it runs into an enemy for 160 damage to ground units within 275.|n|n|cffffcc00Cooldown:|r 30 seconds.
+Purchase Goblin Laboratory
 }
 
 STRING 1142
-// Abilities: A00G (stampede), Ubertip (Tooltip - Normal - Extended)
+// Items: I027 (Goblin Laboratory), Ubertip (Tooltip - Extended)
 {
-Sends a stampede charging ahead of the War Kodo for 5 seconds: 4 beasts a second run across a 600 wide area in front of it, each exploding when it runs into an enemy for 200 damage to ground units within 275.|n|n|cffffcc00Cooldown:|r 30 seconds.
+Spawns a Goblin Laboratory every 60 seconds. The Goblin Laboratory spawns a Super Clockwerk Goblin every 2.5 seconds that explodes upon death.
+
+Damage: |cffffcc008 (attack) + 90 (explosion)|r
+Cooldown: |cffffcc0060s (factory) + 2.5s (goblin)|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00normal (attack) + spell (explosion)|r
+Health: |cffffcc00 600 (factory) + 125 (goblin)|r
+Duration: |cffffcc0090s (factory) + 12s (goblin)|r
+}
+
+STRING 1143
+// Items: I027 (Goblin Laboratory), Description (Description)
+{
+Spawns a Goblin Laboratory every 60 seconds. The Goblin Laboratory spawns a Super Clockwerk Goblin every 2.5 seconds that explodes upon death.
+
+Damage: |cffffcc008 (attack) + 90 (explosion)|r
+Cooldown: |cffffcc0060s (factory) + 2.5s (goblin)|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00normal (attack) + spell (explosion)|r
+Health: |cffffcc00 600 (factory) + 125 (goblin)|r
+Duration: |cffffcc0090s (factory) + 12s (goblin)|r
+}
+
+STRING 1144
+// Abilities: A00J (Goblin Laboratory), Name (Name)
+{
+Goblin Laboratory
 }
 
