@@ -5,8 +5,6 @@ export class Stampede {
   private readonly stampedeAbilityId: number = FourCC("A00G");
   private readonly dummyUnitId: number = FourCC("u000");
   private readonly stampedeDummyAbilityId: number = FourCC("A00H");
-  // How far in front of the caster the stampede is aimed
-  private readonly castDistance = 200;
 
   constructor() {
     const trig = Trigger.create();
@@ -23,8 +21,8 @@ export class Stampede {
       dummy.setAbilityLevel(this.stampedeDummyAbilityId, level);
       dummy.issueOrderAt(
         "stampede",
-        x + this.castDistance * Math.cos(radians),
-        y + this.castDistance * Math.sin(radians),
+        x + 200 * Math.cos(radians),
+        y + 200 * Math.sin(radians),
       );
     });
     trig.registerAnyUnitEvent(EVENT_PLAYER_UNIT_SPELL_EFFECT);

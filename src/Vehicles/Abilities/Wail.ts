@@ -14,8 +14,7 @@ export class Wail {
       const level = banshee.getAbilityLevel(this.wailAbilityId);
       const damage = this.baseDamage[level - 1] + banshee.getIntelligence(true);
 
-      const loc = Point.create(banshee.x, banshee.y);
-      const grp = Group.fromRange(450, loc);
+      const grp = Group.fromRange(450, banshee.point);
       grp.for((u) => {
         if (!u.isAlive() || !u.isEnemy(banshee.owner)) return;
         banshee.damageTarget(
@@ -29,7 +28,6 @@ export class Wail {
         );
       });
       grp.destroy();
-      loc.destroy();
     });
     trig.registerAnyUnitEvent(EVENT_PLAYER_UNIT_SPELL_EFFECT);
   }

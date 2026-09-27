@@ -24,6 +24,7 @@ import { VortexTrap } from "./Upgrades/Recipes/VortexTrap";
 import { Whirlpool } from "./Upgrades/Recipes/Whirlpool";
 import { Workshop } from "./Upgrades/Recipes/Workshop";
 import { GoblinLaboratory } from "./Upgrades/Recipes/GoblinLaboratory";
+import { RocketFactory } from "./Upgrades/Recipes/RocketFactory";
 
 export const weaponRecipes = [
   new DualCannons(),
@@ -52,4 +53,5 @@ export const weaponRecipes = [
   new PocketCyclone(),
   new ShockMines(),
   new GoblinLaboratory(),
+  new RocketFactory(),
 ];

@@ -3650,3 +3650,69 @@ STRING 1144
 Goblin Laboratory
 }
 
+STRING 1145
+// Items: I028 (Rocket Factory), Name (Name)
+{
+Rocket Factory
+}
+
+STRING 1146
+// Items: I028 (Rocket Factory), Tip (Tooltip - Basic)
+{
+Purchase Rocket Factory
+}
+
+STRING 1149
+// Items: I029 (Rocket Factory), Name (Name)
+{
+Rocket Factory
+}
+
+STRING 1150
+// Items: I029 (Rocket Factory), Tip (Tooltip - Basic)
+{
+Purchase Rocket Factory
+}
+
+STRING 1151
+// Items: I029 (Rocket Factory), Description (Description)
+{
+Sends Cluster Rockets flying around in front of you.
+}
+
+STRING 1152
+// Items: I029 (Rocket Factory), Ubertip (Tooltip - Extended)
+{
+Sends Cluster Rockets flying around in front of you.
+}
+
+STRING 1155
+// Units: u00T (Rocket), Name (Name)
+{
+Rocket
+}
+
+STRING 1156
+// Items: I028 (Rocket Factory), Ubertip (Tooltip - Extended)
+{
+Builds up stacks over time that are then used to fire rockets whenever enemy units are nearby.
+
+Damage: |cffffcc0052|r
+Maximum stacks: |cffffcc0030|r
+Cooldown: |cffffcc002s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00siege|r
+}
+
+STRING 1157
+// Items: I028 (Rocket Factory), Description (Description)
+{
+Builds up stacks over time that are then used to fire rockets whenever enemy units are nearby.
+
+Damage: |cffffcc0052|r
+Maximum stacks: |cffffcc0030|r
+Cooldown: |cffffcc002s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00siege|r
+}
+
