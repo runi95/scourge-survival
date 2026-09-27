@@ -12,7 +12,7 @@ export class StormElemental extends WeaponUpgradeRecipe {
   public readonly cooldown = 15;
   public readonly itemTypeId = FourCC("I01U");
   public readonly merchantItemTypeId = FourCC("I01V");
-  public readonly recipe: number[] = [FourCC("I00M"), FourCC("I00Q")];
+  public readonly recipe: number[] = [FourCC("I00M"), FourCC("I00M")];
 
   private readonly timers = new Map<number, Timer>();
   private readonly stormElementalUnitTypeId: number = FourCC("h007");

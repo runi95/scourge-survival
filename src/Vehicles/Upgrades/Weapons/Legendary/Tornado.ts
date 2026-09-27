@@ -6,9 +6,11 @@ import { Globals } from "../../../../Utility/Globals";
 import { WeaponUpgrade } from "../../../WeaponUpgrade";
 import { weaponDummyAbilityIds } from "../../../../Utility/WeaponDummyAbilityIds";
 import { RandomNumberGenerator } from "../../../../Utility/RandomNumberGenerator";
+import { Race } from "../../../../Game/Race";
 
 export class Tornado extends WeaponUpgrade {
   public readonly rarity = VehicleUpgradeRarity.LEGENDARY;
+  public readonly race = Race.NIGHT_ELF;
   public readonly icon = "ReplaceableTextures/CommandButtons/BTNTornado.blp";
   public readonly cost = 500;
   public readonly cooldown = 10;

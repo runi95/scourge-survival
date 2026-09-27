@@ -3,10 +3,12 @@ import { Vehicle } from "../../../Vehicle";
 import { VehicleUpgrade } from "../../../VehicleUpgrade";
 import { VehicleUpgradeRarity } from "../../../VehicleUpgradeRarity";
 import { levelUpStr } from "../../LevelUpStr";
+import { Race } from "../../../../Game/Race";
 
 export class WarDrums extends VehicleUpgrade {
   public readonly name = "War Drums";
   public readonly rarity = VehicleUpgradeRarity.LEGENDARY;
+  public readonly race = Race.ORC;
   public readonly icon = "ReplaceableTextures/CommandButtons/BTNDrum.blp";
   public readonly cost = 500;
   public readonly maxLevel = 3;

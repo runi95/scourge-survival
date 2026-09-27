@@ -6,11 +6,13 @@ import { RandomNumberGenerator } from "../../../../Utility/RandomNumberGenerator
 import { Globals } from "../../../../Utility/Globals";
 import { WeaponUpgrade } from "../../../WeaponUpgrade";
 import { weaponDummyAbilityIds } from "../../../../Utility/WeaponDummyAbilityIds";
+import { Race } from "../../../../Game/Race";
 
 const MULT = Math.PI / 180;
 
 export class Shockwave extends WeaponUpgrade {
   public readonly rarity = VehicleUpgradeRarity.COMMON;
+  public readonly race = Race.ORC;
   public readonly icon = "ReplaceableTextures/CommandButtons/BTNShockWave.blp";
   public readonly cost = 150;
   public readonly cooldown = 2.5;

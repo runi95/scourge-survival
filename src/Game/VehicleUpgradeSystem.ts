@@ -175,6 +175,11 @@ export class VehicleUpgradeSystem {
     this.menu.setFocus(false);
   }
 
+  public rerollFree(playerId: number): void {
+    this.rollUpgrades(playerId);
+    this.refreshUpgradeIcons();
+  }
+
   public addFreeRerolls(playerId: number, count: number) {
     this.freeRerolls[playerId] += count;
     this.refreshRerollCost();
@@ -262,106 +267,74 @@ export class VehicleUpgradeSystem {
     return arr;
   }
 
+  private isOfferedTo(playerId: number, upgradeIndex: number): boolean {
+    const { race } = vehicleUpgrades[upgradeIndex];
+    return race == null || race === GameMap.PLAYER_RACES[playerId];
+  }
+
   private getShuffledUpgradeArrays(
+    playerId: number,
     upgradeIndexesToSkip?: Map<number, boolean>,
-  ): [number[], number[], number[], number[]] {
-    const availableCommonUpgrades = [];
-    for (let i = 0; i < commonUpgrades.length; i++) {
-      if (upgradeIndexesToSkip?.has(i)) continue;
-      availableCommonUpgrades.push(i);
-    }
-    this.shuffleUpgradeArray(availableCommonUpgrades);
-
-    const availableUncommonUpgrades = [];
-    for (let i = 0; i < uncommonUpgrades.length; i++) {
-      const index = i + commonUpgrades.length;
-      if (upgradeIndexesToSkip?.has(index)) continue;
-      availableUncommonUpgrades.push(index);
-    }
-    this.shuffleUpgradeArray(availableUncommonUpgrades);
-
-    const availableRareUpgrades = [];
-    for (let i = 0; i < rareUpgrades.length; i++) {
-      const index = i + commonUpgrades.length + uncommonUpgrades.length;
-      if (upgradeIndexesToSkip?.has(index)) continue;
-      availableRareUpgrades.push(index);
-    }
-    this.shuffleUpgradeArray(availableRareUpgrades);
-
-    const availableLegendaryUpgrades = [];
-    for (let i = 0; i < legendaryUpgrades.length; i++) {
-      const index =
-        i +
-        commonUpgrades.length +
-        uncommonUpgrades.length +
-        rareUpgrades.length;
-      if (upgradeIndexesToSkip?.has(index)) continue;
-      availableLegendaryUpgrades.push(index);
-    }
-    this.shuffleUpgradeArray(availableLegendaryUpgrades);
-
-    return [
-      availableCommonUpgrades,
-      availableUncommonUpgrades,
-      availableRareUpgrades,
-      availableLegendaryUpgrades,
+  ): number[][] {
+    const rarities = [
+      commonUpgrades,
+      uncommonUpgrades,
+      rareUpgrades,
+      legendaryUpgrades,
     ];
+    const arrays: number[][] = [];
+    let offset = 0;
+    for (const upgrades of rarities) {
+      const available: number[] = [];
+      for (let i = 0; i < upgrades.length; i++) {
+        const index = i + offset;
+        if (upgradeIndexesToSkip?.has(index)) continue;
+        if (!this.isOfferedTo(playerId, index)) continue;
+        available.push(index);
+      }
+      arrays.push(this.shuffleUpgradeArray(available));
+      offset += upgrades.length;
+    }
+
+    return arrays;
   }
 
   private rollUpgrade(
     playerId: number,
     index: number,
-    availableCommonUpgrades: number[],
-    availableUncommonUpgrades: number[],
-    availableRareUpgrades: number[],
-    availableLegendaryUpgrades: number[],
+    availableUpgrades: number[][],
+    shown: Map<number, boolean>,
   ) {
     let odds = RARITY_ODDS_BY_WAVE[0].odds;
     for (const tier of RARITY_ODDS_BY_WAVE) {
       if (GameMap.CURRENT_WAVE >= tier.fromWave) odds = tier.odds;
     }
-    const [common, uncommon, rare] = odds;
-    const rarity = RandomNumberGenerator.random(1, 100);
-    if (rarity <= common) {
-      this.upgradeIndexes[playerId][index] =
-        availableCommonUpgrades[
-          Math.min(index, availableCommonUpgrades.length - 1)
-        ];
-    } else if (rarity <= common + uncommon) {
-      this.upgradeIndexes[playerId][index] =
-        availableUncommonUpgrades[
-          Math.min(index, availableUncommonUpgrades.length - 1)
-        ];
-    } else if (rarity <= common + uncommon + rare) {
-      this.upgradeIndexes[playerId][index] =
-        availableRareUpgrades[
-          Math.min(index, availableRareUpgrades.length - 1)
-        ];
-    } else {
-      this.upgradeIndexes[playerId][index] =
-        availableLegendaryUpgrades[
-          Math.min(index, availableLegendaryUpgrades.length - 1)
-        ];
+    const roll = RandomNumberGenerator.random(1, 100);
+    let rarity = 0;
+    let total = odds[0];
+    while (rarity < odds.length - 1 && roll > total) {
+      rarity++;
+      total += odds[rarity];
+    }
+
+    const order = [rarity];
+    for (let r = rarity - 1; r >= 0; r--) order.push(r);
+    for (let r = rarity + 1; r < availableUpgrades.length; r++) order.push(r);
+    for (const r of order) {
+      for (const upgradeIndex of availableUpgrades[r]) {
+        if (shown.has(upgradeIndex)) continue;
+        this.upgradeIndexes[playerId][index] = upgradeIndex;
+        shown.set(upgradeIndex, true);
+        return;
+      }
     }
   }
 
   private rollUpgrades(playerId: number) {
-    const [
-      availableCommonUpgrades,
-      availableUncommonUpgrades,
-      availableRareUpgrades,
-      availableLegendaryUpgrades,
-    ] = this.getShuffledUpgradeArrays();
-
+    const availableUpgrades = this.getShuffledUpgradeArrays(playerId);
+    const shown = new Map<number, boolean>();
     for (let i = 0; i < 4; i++) {
-      this.rollUpgrade(
-        playerId,
-        i,
-        availableCommonUpgrades,
-        availableUncommonUpgrades,
-        availableRareUpgrades,
-        availableLegendaryUpgrades,
-      );
+      this.rollUpgrade(playerId, i, availableUpgrades, shown);
     }
   }
 
@@ -567,19 +540,11 @@ export class VehicleUpgradeSystem {
         indexesToSkip.set(this.upgradeIndexes[playerId][i], true);
       }
 
-      const [
-        availableCommonUpgrades,
-        availableUncommonUpgrades,
-        availableRareUpgrades,
-        availableLegendaryUpgrades,
-      ] = this.getShuffledUpgradeArrays(indexesToSkip);
       this.rollUpgrade(
         playerId,
         index,
-        availableCommonUpgrades,
-        availableUncommonUpgrades,
-        availableRareUpgrades,
-        availableLegendaryUpgrades,
+        this.getShuffledUpgradeArrays(playerId, indexesToSkip),
+        indexesToSkip,
       );
 
       this.refreshUpgradeIcon(index);

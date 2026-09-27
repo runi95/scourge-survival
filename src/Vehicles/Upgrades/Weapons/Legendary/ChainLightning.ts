@@ -6,10 +6,12 @@ import { Globals } from "../../../../Utility/Globals";
 import { WeaponUpgrade } from "../../../WeaponUpgrade";
 import { weaponDummyAbilityIds } from "../../../../Utility/WeaponDummyAbilityIds";
 import { Group } from "../../../../Utility/Group";
+import { Race } from "../../../../Game/Race";
 
 export class ChainLightning extends WeaponUpgrade {
   public readonly name = "Chain Lightning";
   public readonly rarity = VehicleUpgradeRarity.LEGENDARY;
+  public readonly race = Race.ORC;
   public readonly icon =
     "ReplaceableTextures/CommandButtons/BTNChainLightning.blp";
   public readonly cost = 500;

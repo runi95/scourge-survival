@@ -9,7 +9,7 @@ export class StormHammers extends WeaponUpgradeRecipe {
   public readonly cooldown = 1;
   public readonly itemTypeId = FourCC("I00U");
   public readonly merchantItemTypeId = FourCC("I00T");
-  public readonly recipe: number[] = [FourCC("I000"), FourCC("I00Q")];
+  public readonly recipe: number[] = [FourCC("I00M"), FourCC("I00Y")];
 
   private readonly timers = new Map<number, Timer>();
   private readonly dummyUnitId: number = FourCC("u009");

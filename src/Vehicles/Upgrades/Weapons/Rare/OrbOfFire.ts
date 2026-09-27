@@ -5,10 +5,12 @@ import { TimerUtils } from "../../../../Utility/TimerUtils";
 import { WeaponUpgrade } from "../../../WeaponUpgrade";
 import { weaponDummyAbilityIds } from "../../../../Utility/WeaponDummyAbilityIds";
 import { Globals } from "../../../../Utility/Globals";
+import { Race } from "../../../../Game/Race";
 
 export class OrbOfFire extends WeaponUpgrade {
   public readonly name = "Orb of Fire";
   public readonly rarity = VehicleUpgradeRarity.RARE;
+  public readonly race = Race.HUMAN;
   public readonly icon = "ReplaceableTextures/CommandButtons/BTNOrbOfFire.blp";
   public readonly cost = 400;
   public readonly cooldown = 1.5;

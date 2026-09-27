@@ -21,6 +21,7 @@ interface IConfigFile {
   winePath?: string;
   winePrefix?: string;
   launchEnv?: Record<string, string>;
+  devRace?: string;
 }
 
 export class ProjectConfigurationLoader {
@@ -40,6 +41,7 @@ export class ProjectConfigurationLoader {
   private _winePrefix?: string;
   private _launchEnv: Record<string, string> = {};
   private _launchArgs: string[] = [];
+  private _devRace: string | undefined;
 
   private constructor() {}
 
@@ -97,6 +99,7 @@ export class ProjectConfigurationLoader {
     if (json.winePath) this._winePath = json.winePath;
     if (json.winePrefix) this._winePrefix = json.winePrefix;
     if (json.launchEnv) this._launchEnv = json.launchEnv;
+    if (json.devRace) this._devRace = json.devRace;
   }
 
   public get mapPath(): string | undefined {
@@ -112,6 +115,10 @@ export class ProjectConfigurationLoader {
       ? process.env.PROJECT_SAVE_AS_FOLDER.toLowerCase() === "true" ||
           process.env.PROJECT_SAVE_AS_FOLDER === "1"
       : this._saveAsFolder;
+  }
+
+  public get devRace(): string | undefined {
+    return process.env.PROJECT_DEV_RACE ?? this._devRace;
   }
 
   public get minifyScript(): boolean {
@@ -176,6 +183,7 @@ export function compileMap(
   outDir: string,
   minifyScript: boolean,
   saveAsFolder: boolean,
+  luaPrelude = "",
 ): void {
   logger.info(`Building "${mapPath}"...`);
   const war3mapLuaPath = `${mapPath}/war3map.lua`;
@@ -210,7 +218,7 @@ export function compileMap(
       _onError?: unknown,
       _sourceFiles?: readonly SourceFile[],
     ) => {
-      let mergedLuaFiles = war3mapLua.toString("utf8") + data;
+      let mergedLuaFiles = luaPrelude + war3mapLua.toString("utf8") + data;
       if (minifyScript) {
         logger.info(`Minifying lua script...`);
         mergedLuaFiles = luamin.minify(mergedLuaFiles);

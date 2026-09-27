@@ -27,7 +27,6 @@ import { Impale, LongRifle, OrbOfFire } from "./Upgrades/Weapons/Rare/index";
 import {
   ManaLeech,
   Evasion,
-  EngineeringUpgrade,
   InnerFire,
   Berserk,
 } from "./Upgrades/Misc/Uncommon/index";
@@ -60,7 +59,6 @@ export const uncommonUpgrades: VehicleUpgrade[] = [
   new PermanentImmolation(),
   new GoblinLandMine(),
   new ManaLeech(),
-  new EngineeringUpgrade(),
   new InnerFire(),
   new ClusterRockets(),
   new Berserk(),

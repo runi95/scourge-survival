@@ -6,12 +6,14 @@ import { RandomNumberGenerator } from "../../../../Utility/RandomNumberGenerator
 import { WeaponUpgrade } from "../../../WeaponUpgrade";
 import { weaponDummyAbilityIds } from "../../../../Utility/WeaponDummyAbilityIds";
 import { Globals } from "../../../../Utility/Globals";
+import { Race } from "../../../../Game/Race";
 
 const MULT = Math.PI / 180;
 
 export class WaterElemental extends WeaponUpgrade {
   public readonly name = "Water Elemental";
   public readonly rarity = VehicleUpgradeRarity.COMMON;
+  public readonly race = Race.HUMAN;
   public readonly icon =
     "ReplaceableTextures/CommandButtons/BTNSummonWaterElemental.blp";
   public readonly cooldown = 15;

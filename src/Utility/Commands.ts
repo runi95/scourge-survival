@@ -6,6 +6,7 @@ import { StringSink } from "../lib/Serilog/Sinks/StringSink";
 import { GameOptions } from "../Game/GameOptions";
 import { Globals } from "./Globals";
 import type { Spawner } from "../Game/Spawner";
+import { parseRace, Race } from "../Game/Race";
 
 const COMMAND_PREFIX = "-";
 
@@ -15,11 +16,18 @@ export class Commands {
   private readonly gameOptions: GameOptions;
   private readonly player: MapPlayer;
   private readonly spawner: Spawner;
+  private readonly changeRace: (this: void, race: Race) => void;
 
-  constructor(gameOptions: GameOptions, player: MapPlayer, spawner: Spawner) {
+  constructor(
+    gameOptions: GameOptions,
+    player: MapPlayer,
+    spawner: Spawner,
+    changeRace: (this: void, race: Race) => void,
+  ) {
     this.gameOptions = gameOptions;
     this.player = player;
     this.spawner = spawner;
+    this.changeRace = changeRace;
 
     const trig = Trigger.create();
     trig.addAction(() => this.handleCommand());
@@ -59,6 +67,16 @@ export class Commands {
     if (!this.gameOptions.isDebugModeEnabled) return;
 
     switch (command) {
+      case "race":
+        (() => {
+          const race = args.length === 1 ? parseRace(args[0]) : undefined;
+          if (race == null) {
+            print("Usage: -race human|orc|undead|nightelf");
+            return;
+          }
+          this.changeRace(race);
+        })();
+        break;
       case "level":
         (() => {
           if (args.length !== 1) return;

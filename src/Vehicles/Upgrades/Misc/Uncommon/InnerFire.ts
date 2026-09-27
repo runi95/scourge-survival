@@ -3,10 +3,12 @@ import { Vehicle } from "../../../Vehicle";
 import { VehicleUpgrade } from "../../../VehicleUpgrade";
 import { VehicleUpgradeRarity } from "../../../VehicleUpgradeRarity";
 import { levelUpStr } from "../../LevelUpStr";
+import { Race } from "../../../../Game/Race";
 
 export class InnerFire extends VehicleUpgrade {
   public readonly name = "Inner Fire";
   public readonly rarity = VehicleUpgradeRarity.UNCOMMON;
+  public readonly race = Race.HUMAN;
   public readonly icon = "ReplaceableTextures/CommandButtons/BTNInnerFire.blp";
   public readonly cost = 250;
   public readonly maxLevel = 5;

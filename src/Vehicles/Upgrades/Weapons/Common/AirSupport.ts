@@ -5,10 +5,12 @@ import { TimerUtils } from "../../../../Utility/TimerUtils";
 import { RandomNumberGenerator } from "../../../../Utility/RandomNumberGenerator";
 import { WeaponUpgrade } from "../../../WeaponUpgrade";
 import { weaponDummyAbilityIds } from "../../../../Utility/WeaponDummyAbilityIds";
+import { Race } from "../../../../Game/Race";
 
 export class AirSupport extends WeaponUpgrade {
   public readonly name = "Air Support";
   public readonly rarity = VehicleUpgradeRarity.COMMON;
+  public readonly race = Race.HUMAN;
   public readonly icon =
     "ReplaceableTextures/CommandButtons/BTNFlyingMachine.blp";
   public readonly cooldown = 60;

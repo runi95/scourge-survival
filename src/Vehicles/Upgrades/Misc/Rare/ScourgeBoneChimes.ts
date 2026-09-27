@@ -2,10 +2,12 @@ import { ScourgeBoneChimesDamageEvent } from "../../../../Utility/DamageEngine/D
 import { Vehicle } from "../../../Vehicle";
 import { VehicleUpgrade } from "../../../VehicleUpgrade";
 import { VehicleUpgradeRarity } from "../../../VehicleUpgradeRarity";
+import { Race } from "../../../../Game/Race";
 
 export class ScourgeBoneChimes extends VehicleUpgrade {
   public readonly name = "Scourge Bone Chimes";
   public readonly rarity = VehicleUpgradeRarity.RARE;
+  public readonly race = Race.UNDEAD;
   public readonly icon = "ReplaceableTextures/CommandButtons/BTNBoneChimes.blp";
   public readonly cost = 400;
   public readonly maxLevel = 1;

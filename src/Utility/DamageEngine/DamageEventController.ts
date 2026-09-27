@@ -1,4 +1,6 @@
 import { DamageEngine, DamageEventType, DamageInstance } from "./DamageEngine";
+import { BansheeShellDamageEvent } from "./DamageEvents/BansheeShellDamageEvent";
+import { OverdriveDamageEvent } from "./DamageEvents/OverdriveDamageEvent";
 import { AntiMagicShellDamageEvent } from "./DamageEvents/AntiMagicShellDamageEvent";
 import { BerserkDamageEvent } from "./DamageEvents/BerserkDamageEvent";
 import { CriticalStrikeDamageEvent } from "./DamageEvents/CriticalStrikeDamageEvent";
@@ -67,6 +69,14 @@ export class DamageEventController {
     );
     DamageEngine.register(
       new CriticalStrikeDamageEvent(),
+      DamageEventType.OnDamageEvent,
+    );
+    DamageEngine.register(
+      new OverdriveDamageEvent(),
+      DamageEventType.OnDamageEvent,
+    );
+    DamageEngine.register(
+      new BansheeShellDamageEvent(),
       DamageEventType.OnDamageEvent,
     );
 

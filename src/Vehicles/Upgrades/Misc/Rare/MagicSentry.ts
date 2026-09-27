@@ -1,10 +1,12 @@
 import { Vehicle } from "../../../Vehicle";
 import { VehicleUpgrade } from "../../../VehicleUpgrade";
 import { VehicleUpgradeRarity } from "../../../VehicleUpgradeRarity";
+import { Race } from "../../../../Game/Race";
 
 export class MagicSentry extends VehicleUpgrade {
   public readonly name = "Magic Sentry";
   public readonly rarity = VehicleUpgradeRarity.RARE;
+  public readonly race = Race.HUMAN;
   public readonly icon =
     "ReplaceableTextures/CommandButtons/BTNMagicalSentry.blp";
   public readonly cost = 350;

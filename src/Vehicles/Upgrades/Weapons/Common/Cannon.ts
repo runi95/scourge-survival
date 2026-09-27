@@ -5,9 +5,11 @@ import { VehicleUpgradeRarity } from "../../../VehicleUpgradeRarity";
 import { WeaponUpgrade } from "../../../WeaponUpgrade";
 import { Globals } from "../../../../Utility/Globals";
 import { weaponDummyAbilityIds } from "../../../../Utility/WeaponDummyAbilityIds";
+import { Race } from "../../../../Game/Race";
 
 export class Cannon extends WeaponUpgrade {
   public readonly rarity = VehicleUpgradeRarity.COMMON;
+  public readonly race = Race.HUMAN;
   public readonly icon =
     "ReplaceableTextures/CommandButtons/BTNHumanArtilleryUpOne.blp";
   public readonly cost = 100;

@@ -1,6 +1,7 @@
 import { VehicleAbility } from "./VehicleAbility";
 import { Vehicle } from "./Vehicle";
 import { VehicleUpgradeRarity } from "./VehicleUpgradeRarity";
+import type { Race } from "../Game/Race";
 
 export abstract class VehicleUpgrade {
   // Required
@@ -14,6 +15,7 @@ export abstract class VehicleUpgrade {
   public abstract applyUpgrade(vehicle: Vehicle): void;
 
   // Optional
+  public readonly race?: Race = undefined;
   public readonly newUnitTypeId?: number = undefined;
   public readonly newUnitSkinTypeId?: number = undefined;
   public readonly ability?: VehicleAbility = undefined;

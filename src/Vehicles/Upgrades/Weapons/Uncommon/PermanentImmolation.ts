@@ -5,10 +5,12 @@ import { VehicleUpgradeRarity } from "../../../VehicleUpgradeRarity";
 import { WeaponUpgrade } from "../../../WeaponUpgrade";
 import { weaponDummyAbilityIds } from "../../../../Utility/WeaponDummyAbilityIds";
 import { Group } from "../../../../Utility/Group";
+import { Race } from "../../../../Game/Race";
 
 export class PermanentImmolation extends WeaponUpgrade {
   public readonly name = "Permanent Immolation";
   public readonly rarity = VehicleUpgradeRarity.UNCOMMON;
+  public readonly race = Race.NIGHT_ELF;
   public readonly icon =
     "ReplaceableTextures/CommandButtons/BTNImmolationOn.blp";
   public readonly cost = 250;

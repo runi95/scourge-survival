@@ -1,3 +1,4 @@
+import type { Race } from "./Race";
 import { Rectangle } from "w3ts";
 import { Vehicle } from "../Vehicles/Vehicle";
 import { Creep } from "./Creep";
@@ -46,6 +47,7 @@ export class GameMap {
     new Vehicle(),
   ];
   public static CURRENT_WAVE: number = 0;
+  public static readonly PLAYER_RACES: Race[] = [];
   public static readonly REMAINING_PLAYER_CREEPS: Map<number, Creep>[] = [];
   public static readonly REMAINING_PLAYER_CREEPS_COUNT: Map<number, number> =
     new Map();

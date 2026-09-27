@@ -26,6 +26,9 @@ import { CreepWaveUpgrade } from "./CreepUpgrades/CreepWaveUpgrade";
 import { waves } from "./Waves/index";
 import { CreepUpgradesFrameSystem } from "./CreepUpgrades/CreepUpgradesFrameSystem";
 import { WeaponUpgradeSystem } from "../Vehicles/WeaponUpgradeSystem";
+import { initializePlayerRaces, Race, RACE_SETUPS } from "./Race";
+import { OverdriveDamageEvent } from "../Utility/DamageEngine/DamageEvents/OverdriveDamageEvent";
+import { BansheeShellDamageEvent } from "../Utility/DamageEngine/DamageEvents/BansheeShellDamageEvent";
 
 export class Game {
   private readonly damageEngine = new DamageEngine();
@@ -33,13 +36,12 @@ export class Game {
   private readonly debugger: Debugger;
   private readonly commands: Commands;
   private readonly gameMap = new GameMap();
-  private readonly vehicleUnitTypeId: number = FourCC("H001");
   private readonly recipeShopUnitTypeId: number = FourCC("n00E");
-  private readonly zeppelinUnitTypeId: number = FourCC("n004");
   private readonly vehicleUpgradeSystem: VehicleUpgradeSystem;
   private readonly spawner: Spawner;
   private readonly abilities: Abilities;
   private readonly damageEventController: DamageEventController;
+  // By player id, so a replaced hero (-race) can be registered too
   private readonly vehicleDeathTriggers: Trigger[] = [];
   private readonly creepAbilityController: CreepAbilityController;
   private readonly creepUpgrades = new CreepUpgrades();
@@ -48,6 +50,7 @@ export class Game {
 
   constructor() {
     this.debugger = new Debugger(this.gameOptions);
+    initializePlayerRaces();
     this.vehicleUpgradeSystem = new VehicleUpgradeSystem();
     this.spawner = new Spawner(
       this.creepUpgradesFrameSystem,
@@ -186,7 +189,9 @@ export class Game {
 
     for (let i = 0; i < 9; i++) {
       const player = MapPlayer.fromIndex(i);
-      new Commands(this.gameOptions, player, this.spawner);
+      new Commands(this.gameOptions, player, this.spawner, (race) =>
+        this.changeRace(player.id, race),
+      );
 
       playerLeavesTrig.registerPlayerEvent(player, EVENT_PLAYER_LEAVE);
       if (
@@ -201,14 +206,17 @@ export class Game {
 
         const x = GameMap.PLAYER_AREAS[i].minX + 700;
         const y = GameMap.PLAYER_AREAS[i].maxY - 700;
+        const raceSetup = RACE_SETUPS[GameMap.PLAYER_RACES[i]];
         const vehicleUnit = Unit.create(
           player,
-          this.vehicleUnitTypeId,
+          raceSetup.heroUnitTypeId,
           x,
           y,
           315.0,
         );
-        vehicleUnit.addItemById(FourCC("I000"));
+        if (raceSetup.startingWeapon != null) {
+          vehicleUnit.addItemById(raceSetup.startingWeapon.itemTypeId);
+        }
 
         vehicleUnit.disableAbility(FourCC("A004"), true, true);
         vehicleUnit.disableAbility(FourCC("A006"), true, true);
@@ -217,7 +225,7 @@ export class Game {
 
         const zeppelinUnit = Unit.create(
           player,
-          this.zeppelinUnitTypeId,
+          raceSetup.transportUnitTypeId,
           x,
           y,
           315.0,
@@ -274,7 +282,9 @@ export class Game {
           GameMap.PLAYER_AREAS[i].maxY - 896,
           270.0,
         );
-        vehicle.upgradeMap.set("Cannon", 1);
+        if (raceSetup.startingWeapon != null) {
+          vehicle.upgradeMap.set(raceSetup.startingWeapon.upgradeName, 1);
+        }
 
         const playerName = player.name;
         const vehicleDeathTrig = Trigger.create();
@@ -285,7 +295,7 @@ export class Game {
           );
         });
         vehicleDeathTrig.registerUnitEvent(vehicleUnit, EVENT_UNIT_DEATH);
-        this.vehicleDeathTriggers.push(vehicleDeathTrig);
+        this.vehicleDeathTriggers[playerIndex] = vehicleDeathTrig;
 
         let infernoCount = 0;
         const t: Timer = TimerUtils.newTimer();
@@ -309,5 +319,49 @@ export class Game {
     this.abilities.initialize();
     this.creepAbilityController.initialize();
     this.spawner.initializeAI();
+  }
+
+  public changeRace(playerId: number, race: Race): void {
+    const vehicle = GameMap.PLAYER_VEHICLES[playerId];
+    const oldHero = vehicle.unit;
+    if (oldHero == null || !oldHero.isAlive()) return;
+
+    for (let slot = 0; slot < 6; slot++) {
+      const item = oldHero.getItemInSlot(slot);
+      if (item == null) continue;
+      oldHero.removeItem(item);
+      item.destroy();
+    }
+
+    GameMap.PLAYER_RACES[playerId] = race;
+    const setup = RACE_SETUPS[race];
+    const hero = Unit.create(
+      oldHero.owner,
+      setup.heroUnitTypeId,
+      oldHero.x,
+      oldHero.y,
+      oldHero.facing,
+    );
+    const level = GetHeroLevel(oldHero.handle);
+    if (level > 1) hero.setHeroLevel(level, false);
+
+    vehicle.unit = hero;
+    vehicle.upgradeMap.clear();
+    vehicle.skillMap.clear();
+    OverdriveDamageEvent.ACTIVE[playerId] = false;
+    BansheeShellDamageEvent.REMAINING[playerId] = 0;
+    if (setup.startingWeapon != null) {
+      hero.addItemById(setup.startingWeapon.itemTypeId);
+      vehicle.upgradeMap.set(setup.startingWeapon.upgradeName, 1);
+    }
+
+    this.vehicleDeathTriggers[playerId]?.registerUnitEvent(
+      hero,
+      EVENT_UNIT_DEATH,
+    );
+    oldHero.destroy();
+    SelectUnitForPlayerSingle(hero.handle, hero.owner.handle);
+    this.vehicleUpgradeSystem.rerollFree(playerId);
+    print(`${GetPlayerName(hero.owner.handle)} is now playing ${race}.`);
   }
 }

@@ -4,10 +4,12 @@ import { Vehicle } from "../../../Vehicle";
 import { VehicleUpgrade } from "../../../VehicleUpgrade";
 import { VehicleUpgradeRarity } from "../../../VehicleUpgradeRarity";
 import { levelUpStr } from "../../LevelUpStr";
+import { Race } from "../../../../Game/Race";
 
 export class TrollRegeneration extends VehicleUpgrade {
   public readonly name = "Troll Regeneration";
   public readonly rarity = VehicleUpgradeRarity.COMMON;
+  public readonly race = Race.ORC;
   public readonly icon = "ReplaceableTextures/CommandButtons/BTNRegenerate.blp";
   public readonly cost = 150;
   public readonly maxLevel = 5;

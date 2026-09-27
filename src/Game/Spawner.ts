@@ -32,6 +32,35 @@ export class Spawner {
     this.attackTimer = TimerUtils.newTimer();
   }
 
+  // A creep died and no longer counts towards finishing the wave
+  private removeCreep(creepUnit: unit): void {
+    const creepPlayerId = GetPlayerId(GetOwningPlayer(creepUnit));
+    const handleId = GetHandleId(creepUnit);
+    const creeps = GameMap.REMAINING_PLAYER_CREEPS[creepPlayerId];
+    if (creeps == null || creeps.get(handleId) == null) return;
+    GameMap.REMAINING_PLAYER_CREEPS[creepPlayerId].delete(handleId);
+    const newPlayerCreepCount =
+      GameMap.REMAINING_PLAYER_CREEPS_COUNT.get(creepPlayerId) - 1;
+    GameMap.REMAINING_PLAYER_CREEPS_COUNT.set(
+      creepPlayerId,
+      newPlayerCreepCount,
+    );
+    SetPlayerState(
+      Player(creepPlayerId - 9),
+      PLAYER_STATE_RESOURCE_FOOD_USED,
+      newPlayerCreepCount,
+    );
+
+    if (
+      newPlayerCreepCount < 1 &&
+      !this.isCreepSpawnerRunning &&
+      !this.isWaveTimerPaused
+    ) {
+      TimerUtils.releaseTimer(this.waveTimer);
+      this.startWave();
+    }
+  }
+
   public initializeAI() {
     // for (let i = 0; i < GameMap.ONLINE_PLAYER_ID_LIST.length; i++) {
     //   StartCampaignAI(
@@ -44,31 +73,7 @@ export class Spawner {
       const dyingUnit = GetTriggerUnit();
       if (dyingUnit == null) return;
 
-      const creepPlayerId = GetPlayerId(GetOwningPlayer(dyingUnit));
-      const handleId = GetHandleId(dyingUnit);
-      if (GameMap.REMAINING_PLAYER_CREEPS[creepPlayerId].get(handleId) == null)
-        return;
-      GameMap.REMAINING_PLAYER_CREEPS[creepPlayerId].delete(handleId);
-      const newPlayerCreepCount =
-        GameMap.REMAINING_PLAYER_CREEPS_COUNT.get(creepPlayerId) - 1;
-      GameMap.REMAINING_PLAYER_CREEPS_COUNT.set(
-        creepPlayerId,
-        newPlayerCreepCount,
-      );
-      SetPlayerState(
-        Player(creepPlayerId - 9),
-        PLAYER_STATE_RESOURCE_FOOD_USED,
-        newPlayerCreepCount,
-      );
-
-      if (
-        newPlayerCreepCount < 1 &&
-        !this.isCreepSpawnerRunning &&
-        !this.isWaveTimerPaused
-      ) {
-        TimerUtils.releaseTimer(this.waveTimer);
-        this.startWave();
-      }
+      this.removeCreep(dyingUnit);
     });
 
     for (let i = 0; i < GameMap.ONLINE_PLAYER_ID_LIST.length; i++) {

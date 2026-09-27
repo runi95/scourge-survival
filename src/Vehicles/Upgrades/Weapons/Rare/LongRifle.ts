@@ -5,11 +5,13 @@ import { VehicleUpgradeRarity } from "../../../VehicleUpgradeRarity";
 import { RandomNumberGenerator } from "../../../../Utility/RandomNumberGenerator";
 import { WeaponUpgrade } from "../../../WeaponUpgrade";
 import { weaponDummyAbilityIds } from "../../../../Utility/WeaponDummyAbilityIds";
+import { Race } from "../../../../Game/Race";
 
 const MULT = Math.PI / 180;
 
 export class LongRifle extends WeaponUpgrade {
   public readonly rarity = VehicleUpgradeRarity.RARE;
+  public readonly race = Race.HUMAN;
   public readonly icon =
     "ReplaceableTextures/CommandButtons/BTNDwarvenLongRifle.blp";
   public readonly cost = 300;

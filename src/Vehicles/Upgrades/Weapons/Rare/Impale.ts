@@ -6,11 +6,13 @@ import { RandomNumberGenerator } from "../../../../Utility/RandomNumberGenerator
 import { Globals } from "../../../../Utility/Globals";
 import { WeaponUpgrade } from "../../../WeaponUpgrade";
 import { weaponDummyAbilityIds } from "../../../../Utility/WeaponDummyAbilityIds";
+import { Race } from "../../../../Game/Race";
 
 const MULT = Math.PI / 180;
 
 export class Impale extends WeaponUpgrade {
   public readonly rarity = VehicleUpgradeRarity.RARE;
+  public readonly race = Race.UNDEAD;
   public readonly icon = "ReplaceableTextures/CommandButtons/BTNImpale.blp";
   public readonly cost = 300;
   public readonly cooldown = 1.5;

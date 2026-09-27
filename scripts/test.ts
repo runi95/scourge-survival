@@ -8,11 +8,25 @@ function main(): void {
     throw new Error("Unable to compile map without the 'mapPath' configured");
   }
 
+  const devRaces = ["human", "orc", "undead", "nightelf"];
+  let luaPrelude = "";
+  if (config.devRace) {
+    const race = config.devRace.toLowerCase();
+    if (!devRaces.includes(race)) {
+      throw new Error(
+        `Unknown devRace "${config.devRace}", use one of: ${devRaces.join(", ")}`,
+      );
+    }
+    logger.info(`Starting as ${race} (devRace)`);
+    luaPrelude = `DEV_RACE = "${race}"\n`;
+  }
+
   compileMap(
     config.mapPath,
     config.outDir,
     config.minifyScript,
     config.saveAsFolder,
+    luaPrelude,
   );
 
   const filename = path.resolve(

@@ -1,4 +1,3 @@
-import { GameMap } from "../../Game/GameMap";
 import { AdeptTraining } from "./AdeptTraining";
 import { AntiMagicShell } from "./AntiMagicShell";
 import { Blizzard } from "./Blizzard";
@@ -8,6 +7,12 @@ import { ManaLeech } from "./ManaLeech";
 import { Runes } from "./Runes";
 import { HowlOfTerror } from "./HowlOfTerror";
 import { UnholyFrenzy } from "./UnholyFrenzy";
+import { Overdrive } from "./Overdrive";
+import { BansheeShell } from "./BansheeShell";
+import { MoonGlaive } from "./MoonGlaive";
+import { Wail } from "./Wail";
+import { ArtilleryStrike } from "./ArtilleryStrike";
+import { Stampede } from "./Stampede";
 
 export class Abilities {
   private readonly abilities: unknown[] = [];
@@ -22,5 +27,13 @@ export class Abilities {
     this.abilities.push(new AntiMagicShell());
     this.abilities.push(new HowlOfTerror());
     this.abilities.push(new UnholyFrenzy());
+
+    // Race hero abilities
+    this.abilities.push(new Overdrive());
+    this.abilities.push(new ArtilleryStrike());
+    this.abilities.push(new BansheeShell());
+    this.abilities.push(new MoonGlaive());
+    this.abilities.push(new Wail());
+    this.abilities.push(new Stampede());
   }
 }
