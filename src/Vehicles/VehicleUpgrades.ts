@@ -37,6 +37,7 @@ import {
   WaterElemental,
 } from "./Upgrades/Weapons/Uncommon/index";
 import { VehicleUpgrade } from "./VehicleUpgrade";
+import { SpiritTower } from "./Upgrades/Weapons/Common/SpiritTower";
 
 export const commonUpgrades: VehicleUpgrade[] = [
   new Cannon(),
@@ -52,6 +53,7 @@ export const commonUpgrades: VehicleUpgrade[] = [
   new BootsOfQuelThalas(),
   new RobeOfTheMagi(),
   new AdeptTraining(),
+  new SpiritTower(),
 ];
 
 export const uncommonUpgrades: VehicleUpgrade[] = [

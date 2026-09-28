@@ -4068,3 +4068,33 @@ STRING 1221
 (Ice Elemental)
 }
 
+STRING 1222
+// Units: u00V (Spirit Tower), Name (Name)
+{
+Spirit Tower
+}
+
+STRING 1223
+// Items: I02K (Spirit Tower), Name (Name)
+{
+Spirit Tower
+}
+
+STRING 1224
+// Items: I02K (Spirit Tower), Tip (Tooltip - Basic)
+{
+Purchase Spirit Tower
+}
+
+STRING 1225
+// Items: I02K (Spirit Tower), Description (Description)
+{
+Fires a spirit missile at a random nearby enemy.
+}
+
+STRING 1226
+// Items: I02K (Spirit Tower), Ubertip (Tooltip - Extended)
+{
+Fires a spirit missile at a random nearby enemy.
+}
+
