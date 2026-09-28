@@ -3784,3 +3784,83 @@ STRING 1169
 Overloaded Cluster Rockets
 }
 
+STRING 1170
+// Units: n00M (Trojan Mine), Name (Name)
+{
+Trojan Mine
+}
+
+STRING 1171
+// Items: I02C (Trojan Mine), Name (Name)
+{
+Trojan Mine
+}
+
+STRING 1172
+// Items: I02C (Trojan Mine), Tip (Tooltip - Basic)
+{
+Purchase Trojan Mine
+}
+
+STRING 1175
+// Items: I02D (Trojan Mine), Name (Name)
+{
+Trojan Mine
+}
+
+STRING 1176
+// Items: I02D (Trojan Mine), Tip (Tooltip - Basic)
+{
+Purchase Trojan Mine
+}
+
+STRING 1177
+// Items: I02D (Trojan Mine), Description (Description)
+{
+Leaves a mine with goblins inside.
+}
+
+STRING 1178
+// Items: I02D (Trojan Mine), Ubertip (Tooltip - Extended)
+{
+Leaves a mine with goblins inside.
+}
+
+STRING 1181
+// Abilities: A00N (Trojan Horse), Name (Name)
+{
+Trojan Horse
+}
+
+STRING 1182
+// Abilities: A00N (Trojan Horse), EditorSuffix (Editor Suffix)
+{
+(Visual Effect)
+}
+
+STRING 1183
+// Items: I02C (Trojan Mine), Ubertip (Tooltip - Extended)
+{
+Places Trojan Mines underneath your hero.
+
+Damage: |cffffcc00150|r
+Cooldown: |cffffcc003s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell|r
+Mine activation delay: |cffffcc004s|r
+Mine activation: |cffffcc00spawns 3 Clockwerk Goblins|r
+}
+
+STRING 1184
+// Items: I02C (Trojan Mine), Description (Description)
+{
+Places Trojan Mines underneath your hero.
+
+Damage: |cffffcc00150|r
+Cooldown: |cffffcc003s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell|r
+Mine activation delay: |cffffcc004s|r
+Mine activation: |cffffcc00spawns 3 Clockwerk Goblins|r
+}
+
