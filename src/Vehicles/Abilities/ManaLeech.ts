@@ -12,7 +12,7 @@ export class ManaLeech {
 
       const trig = Unit.fromHandle(killingUnit);
       const vehicle = GameMap.PLAYER_VEHICLES[trig.owner.id];
-      if (vehicle.unit == null) return;
+      if (vehicle?.unit == null) return;
 
       const manaLeechLevel = vehicle.upgradeMap.get("Mana Leech");
       if (manaLeechLevel == null) return;
