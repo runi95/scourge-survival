@@ -29,6 +29,7 @@ import { OverloadedClusterRockets } from "./Upgrades/Recipes/OverloadedClusterRo
 import { TrojanMine } from "./Upgrades/Recipes/TrojanMine";
 import { ExtraLargeRifle } from "./Upgrades/Recipes/ExtraLargeRifle";
 import { MassRifles } from "./Upgrades/Recipes/MassRifles";
+import { ElementalTwins } from "./Upgrades/Recipes/ElementalTwins";
 
 export const weaponRecipes = [
   new DualCannons(),
@@ -62,4 +63,5 @@ export const weaponRecipes = [
   new TrojanMine(),
   new ExtraLargeRifle(),
   new MassRifles(),
+  new ElementalTwins(),
 ];

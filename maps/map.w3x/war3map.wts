@@ -3990,3 +3990,81 @@ STRING 1208
 Fire off a long rifle, dealing damage based on distance to the target.
 }
 
+STRING 1209
+// Units: h008 (Fire Elemental), Name (Name)
+{
+Fire Elemental
+}
+
+STRING 1210
+// Items: I02I (Elemental Twins), Name (Name)
+{
+Elemental Twins
+}
+
+STRING 1211
+// Items: I02I (Elemental Twins), Tip (Tooltip - Basic)
+{
+Purchase Elemental Twins
+}
+
+STRING 1214
+// Items: I02J (Elemental Twins), Name (Name)
+{
+Elemental Twins
+}
+
+STRING 1215
+// Items: I02J (Elemental Twins), Tip (Tooltip - Basic)
+{
+Purchase Elemental Twins
+}
+
+STRING 1216
+// Items: I02J (Elemental Twins), Description (Description)
+{
+Summons a fire and water elemental to fight for you.
+}
+
+STRING 1217
+// Items: I02J (Elemental Twins), Ubertip (Tooltip - Extended)
+{
+Summons a fire and water elemental to fight for you.
+}
+
+STRING 1218
+// Units: h009 (Ice Elemental), Name (Name)
+{
+Ice Elemental
+}
+
+STRING 1219
+// Items: I02I (Elemental Twins), Ubertip (Tooltip - Extended)
+{
+Summons a fire and water elemental to fight for you.
+
+Damage: |cffffcc0075 - 125|r
+Cooldown: |cffffcc0015s|r
+Range: |cffffcc00500|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00magic|r
+}
+
+STRING 1220
+// Items: I02I (Elemental Twins), Description (Description)
+{
+Summons a fire and water elemental to fight for you.
+
+Damage: |cffffcc0075 - 125|r
+Cooldown: |cffffcc0015s|r
+Range: |cffffcc00500|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00magic|r
+}
+
+STRING 1221
+// Abilities: A00M (Frost Attack), EditorSuffix (Editor Suffix)
+{
+(Ice Elemental)
+}
+
