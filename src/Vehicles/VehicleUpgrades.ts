@@ -14,6 +14,7 @@ import {
   Shockwave,
   AirSupport,
   PocketFactory,
+  SpiritTower,
 } from "./Upgrades/Weapons/Common/index";
 import { Glyph, MagicSurge, WarDrums } from "./Upgrades/Misc/Legendary/index";
 import { ChainLightning, Tornado } from "./Upgrades/Weapons/Legendary/index";
@@ -37,7 +38,6 @@ import {
   WaterElemental,
 } from "./Upgrades/Weapons/Uncommon/index";
 import { VehicleUpgrade } from "./VehicleUpgrade";
-import { SpiritTower } from "./Upgrades/Weapons/Common/SpiritTower";
 
 export const commonUpgrades: VehicleUpgrade[] = [
   new Cannon(),
