@@ -4098,3 +4098,33 @@ STRING 1226
 Fires a spirit missile at a random nearby enemy.
 }
 
+STRING 1227
+// Units: u00W (Burrow), Name (Name)
+{
+Burrow
+}
+
+STRING 1228
+// Items: I02L (Burrow), Name (Name)
+{
+Burrow
+}
+
+STRING 1229
+// Items: I02L (Burrow), Tip (Tooltip - Basic)
+{
+Purchase Burrow
+}
+
+STRING 1230
+// Items: I02L (Burrow), Description (Description)
+{
+Automatically fires at nearby enemey units.
+}
+
+STRING 1231
+// Items: I02L (Burrow), Ubertip (Tooltip - Extended)
+{
+Automatically fires at nearby enemey units.
+}
+
