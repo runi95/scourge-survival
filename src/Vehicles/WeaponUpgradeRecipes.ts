@@ -27,6 +27,7 @@ import { GoblinLaboratory } from "./Upgrades/Recipes/GoblinLaboratory";
 import { RocketFactory } from "./Upgrades/Recipes/RocketFactory";
 import { OverloadedClusterRockets } from "./Upgrades/Recipes/OverloadedClusterRockets";
 import { TrojanMine } from "./Upgrades/Recipes/TrojanMine";
+import { ExtraLargeRifle } from "./Upgrades/Recipes/ExtraLargeRifle";
 
 export const weaponRecipes = [
   new DualCannons(),
@@ -58,4 +59,5 @@ export const weaponRecipes = [
   new RocketFactory(),
   new OverloadedClusterRockets(),
   new TrojanMine(),
+  new ExtraLargeRifle(),
 ];

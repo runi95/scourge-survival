@@ -3864,3 +3864,69 @@ Mine activation delay: |cffffcc004s|r
 Mine activation: |cffffcc00spawns 3 Clockwerk Goblins|r
 }
 
+STRING 1192
+// Items: I02F (Extra Large Rifle), Description (Description)
+{
+Fires two cannonballs at a random nearby enemy.
+}
+
+STRING 1193
+// Items: I02F (Extra Large Rifle), Ubertip (Tooltip - Extended)
+{
+Fires two cannonballs at a random nearby enemy.
+}
+
+STRING 1194
+// Units: u00U (Extra Large Rifle), Name (Name)
+{
+Extra Large Rifle
+}
+
+STRING 1195
+// Items: I02E (Extra Large Rifle), Name (Name)
+{
+Extra Large Rifle
+}
+
+STRING 1196
+// Items: I02E (Extra Large Rifle), Tip (Tooltip - Basic)
+{
+Purchase Extra Large Rifle
+}
+
+STRING 1197
+// Items: I02E (Extra Large Rifle), Ubertip (Tooltip - Extended)
+{
+Fire off a large rifle, dealing massive damage to a single target.
+
+Damage: |cffffcc00500|r
+Cooldown: |cffffcc0010s|r
+Range: |cffffcc001500|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00siege|r
+}
+
+STRING 1198
+// Items: I02E (Extra Large Rifle), Description (Description)
+{
+Fire off a large rifle, dealing massive damage to a single target.
+
+Damage: |cffffcc00500|r
+Cooldown: |cffffcc0010s|r
+Range: |cffffcc001500|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00siege|r
+}
+
+STRING 1199
+// Items: I02F (Extra Large Rifle), Name (Name)
+{
+Extra Large Rifle
+}
+
+STRING 1200
+// Items: I02F (Extra Large Rifle), Tip (Tooltip - Basic)
+{
+Purchase Extra Large Rifle
+}
+
