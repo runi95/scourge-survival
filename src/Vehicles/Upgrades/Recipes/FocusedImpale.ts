@@ -13,7 +13,7 @@ export class FocusedImpale extends WeaponUpgradeRecipe {
   public readonly cooldown = 3;
   public readonly itemTypeId = FourCC("I018");
   public readonly merchantItemTypeId = FourCC("I017");
-  public readonly recipe: number[] = [FourCC("I000"), FourCC("I001")];
+  public readonly recipe: number[] = [FourCC("I02K"), FourCC("I001")];
 
   private readonly timers = new Map<number, Timer>();
   private readonly dummyUnitId: number = FourCC("u000");
