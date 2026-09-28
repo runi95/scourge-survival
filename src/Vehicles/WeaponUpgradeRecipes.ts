@@ -28,6 +28,7 @@ import { RocketFactory } from "./Upgrades/Recipes/RocketFactory";
 import { OverloadedClusterRockets } from "./Upgrades/Recipes/OverloadedClusterRockets";
 import { TrojanMine } from "./Upgrades/Recipes/TrojanMine";
 import { ExtraLargeRifle } from "./Upgrades/Recipes/ExtraLargeRifle";
+import { MassRifles } from "./Upgrades/Recipes/MassRifles";
 
 export const weaponRecipes = [
   new DualCannons(),
@@ -60,4 +61,5 @@ export const weaponRecipes = [
   new OverloadedClusterRockets(),
   new TrojanMine(),
   new ExtraLargeRifle(),
+  new MassRifles(),
 ];

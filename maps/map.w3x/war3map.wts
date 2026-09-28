@@ -3930,3 +3930,63 @@ STRING 1200
 Purchase Extra Large Rifle
 }
 
+STRING 1201
+// Items: I02G (Mass Rifles), Name (Name)
+{
+Mass Rifles
+}
+
+STRING 1202
+// Items: I02G (Mass Rifles), Tip (Tooltip - Basic)
+{
+Purchase Mass Rifles
+}
+
+STRING 1203
+// Items: I02G (Mass Rifles), Ubertip (Tooltip - Extended)
+{
+Fire off 3 long rifles, dealing damage based on distance to the target.
+
+Damage: |cffffcc0075 - 750 (x3)|r
+Cooldown: |cffffcc005s|r
+Range: |cffffcc001500|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing|r
+}
+
+STRING 1204
+// Items: I02G (Mass Rifles), Description (Description)
+{
+Fire off 3 long rifles, dealing damage based on distance to the target.
+
+Damage: |cffffcc0075 - 750 (x3)|r
+Cooldown: |cffffcc005s|r
+Range: |cffffcc001500|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing|r
+}
+
+STRING 1205
+// Items: I02H (Mass Rifles), Name (Name)
+{
+Mass Rifles
+}
+
+STRING 1206
+// Items: I02H (Mass Rifles), Tip (Tooltip - Basic)
+{
+Purchase Mass Rifles
+}
+
+STRING 1207
+// Items: I02H (Mass Rifles), Description (Description)
+{
+Fire off a long rifle, dealing damage based on distance to the target.
+}
+
+STRING 1208
+// Items: I02H (Mass Rifles), Ubertip (Tooltip - Extended)
+{
+Fire off a long rifle, dealing damage based on distance to the target.
+}
+
