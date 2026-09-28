@@ -268,11 +268,11 @@ export class Spawner {
         const y = isFirstPortal
           ? GameMap.PLAYER_AREAS[playerId].maxY - 640
           : GameMap.PLAYER_AREAS[playerId].minY + 640;
-        Effect.create(
-          "AbilitiesSpellsDemonDarkPortalDarkPortalTarget.mdl",
-          x,
-          y,
-        ).destroy();
+        // Effect.create(
+        //   "Abilities\\Spells\\Demon\\DarkPortal\\DarkPortalTarget.mdl",
+        //   x,
+        //   y,
+        // ).destroy();
         const scourgeUnit = Unit.create(
           scourgePlayer,
           unitTypeId,
