@@ -3674,18 +3674,6 @@ STRING 1150
 Purchase Rocket Factory
 }
 
-STRING 1151
-// Items: I029 (Rocket Factory), Description (Description)
-{
-Sends Cluster Rockets flying around in front of you.
-}
-
-STRING 1152
-// Items: I029 (Rocket Factory), Ubertip (Tooltip - Extended)
-{
-Sends Cluster Rockets flying around in front of you.
-}
-
 STRING 1155
 // Units: u00T (Rocket), Name (Name)
 {
@@ -3714,5 +3702,85 @@ Maximum stacks: |cffffcc0030|r
 Cooldown: |cffffcc002s|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00siege|r
+}
+
+STRING 1159
+// Items: I029 (Rocket Factory), Description (Description)
+{
+Fires large rockets at nearby enemies.
+}
+
+STRING 1160
+// Items: I029 (Rocket Factory), Ubertip (Tooltip - Extended)
+{
+Fires large rockets at nearby enemies.
+}
+
+STRING 1161
+// Items: I02A (Overloaded Cluster Rockets), Name (Name)
+{
+Overloaded Cluster Rockets
+}
+
+STRING 1162
+// Items: I02A (Overloaded Cluster Rockets), Tip (Tooltip - Basic)
+{
+Purchase Overloaded Cluster Rockets
+}
+
+STRING 1163
+// Items: I02A (Overloaded Cluster Rockets), Ubertip (Tooltip - Extended)
+{
+Sends 2 bursts of Cluster Rockets firing off in two opposite directions.
+
+Damage: |cffffcc006 x 26.25 (max 315)|r
+Cooldown: |cffffcc002s|r
+Area of effect: |cffffcc00300|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+Effect: stuns for |cffffcc001s|r
+}
+
+STRING 1164
+// Items: I02A (Overloaded Cluster Rockets), Description (Description)
+{
+Sends 2 bursts of Cluster Rockets firing off in two opposite directions.
+
+Damage: |cffffcc006 x 26.25 (max 315)|r
+Cooldown: |cffffcc002s|r
+Area of effect: |cffffcc00300|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+Effect: stuns for |cffffcc001s|r
+}
+
+STRING 1165
+// Items: I02B (Overloaded Cluster Rockets), Name (Name)
+{
+Overloaded Cluster Rockets
+}
+
+STRING 1166
+// Items: I02B (Overloaded Cluster Rockets), Tip (Tooltip - Basic)
+{
+Purchase Overloaded Cluster Rockets
+}
+
+STRING 1167
+// Items: I02B (Overloaded Cluster Rockets), Description (Description)
+{
+Sends Cluster Rockets flying around in multiple directions.
+}
+
+STRING 1168
+// Items: I02B (Overloaded Cluster Rockets), Ubertip (Tooltip - Extended)
+{
+Sends Cluster Rockets flying around in multiple directions.
+}
+
+STRING 1169
+// Abilities: A00L (Overloaded Cluster Rockets), Name (Name)
+{
+Overloaded Cluster Rockets
 }
 
