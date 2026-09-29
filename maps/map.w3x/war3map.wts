@@ -4904,3 +4904,83 @@ STRING 1342
 Flame Strike
 }
 
+STRING 1343
+// Items: I037 (Dragonbreath Shot), Tip (Tooltip - Basic)
+{
+Purchase Dragonbreath Shot
+}
+
+STRING 1344
+// Items: I037 (Dragonbreath Shot), Description (Description)
+{
+The drunken dwarf may now set units on fire when attacking them.
+}
+
+STRING 1345
+// Items: I037 (Dragonbreath Shot), Ubertip (Tooltip - Extended)
+{
+The drunken dwarf may now set units on fire when attacking them.
+}
+
+STRING 1346
+// Items: I037 (Dragonbreath Shot), Name (Name)
+{
+Dragonbreath Shot
+}
+
+STRING 1347
+// Items: I038 (Dragonbreath Shot), Tip (Tooltip - Basic)
+{
+Purchase Dragonbreath Shot
+}
+
+STRING 1348
+// Items: I038 (Dragonbreath Shot), Ubertip (Tooltip - Extended)
+{
+The drunken dwarf may now sets units on fire when attacking them.
+
+Damage: |cffffcc00150 (shot) + 25 per second (fire)|r
+Cooldown: |cffffcc005s|r
+Range: |cffffcc001500|r
+Duration (fire): |cffffcc004s|r
+Targets: |cffffcc00air & ground (shot), ground only! (fire)|r
+Damage type: |cffffcc00piercing (shot) + magic (fire)|r
+}
+
+STRING 1349
+// Items: I038 (Dragonbreath Shot), Description (Description)
+{
+The drunken dwarf may now sets units on fire when attacking them.
+
+Damage: |cffffcc00150 (shot) + 25 per second (fire)|r
+Cooldown: |cffffcc005s|r
+Range: |cffffcc001500|r
+Duration (fire): |cffffcc004s|r
+Targets: |cffffcc00air & ground (shot), ground only! (fire)|r
+Damage type: |cffffcc00piercing (shot) + magic (fire)|r
+}
+
+STRING 1350
+// Items: I038 (Dragonbreath Shot), Name (Name)
+{
+Dragonbreath Shot
+}
+
+STRING 1351
+// Abilities: A02W (Dragonbreath Shot Drunken Haze), Name (Name)
+{
+Dragonbreath Shot Drunken Haze
+}
+
+STRING 1352
+// Abilities: A02X (Dragonbreath Shot Breath of Fire), Name (Name)
+{
+Dragonbreath Shot Breath of Fire
+}
+
+STRING 1353
+// Units: u010 (Dragonbreath Shot), Name (Name)
+{
+Dragonbreath Shot
+}
+
