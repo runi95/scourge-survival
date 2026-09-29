@@ -4678,3 +4678,83 @@ STRING 1312
 Cannon Tower Mine
 }
 
+STRING 1313
+// Items: I031 (Lava Spawn Forge), Tip (Tooltip - Basic)
+{
+Purchase Lava Spawn Forge
+}
+
+STRING 1314
+// Items: I031 (Lava Spawn Forge), Description (Description)
+{
+Spawns a Lava Spawn Forge every 60 seconds that spawns Lava Spawns, which split in two when they die.
+}
+
+STRING 1315
+// Items: I031 (Lava Spawn Forge), Ubertip (Tooltip - Extended)
+{
+Spawns a Lava Spawn Forge every 60 seconds that spawns Lava Spawns, which split in two when they die.
+}
+
+STRING 1316
+// Items: I031 (Lava Spawn Forge), Name (Name)
+{
+Lava Spawn Forge
+}
+
+STRING 1317
+// Items: I032 (Lava Spawn Forge), Tip (Tooltip - Basic)
+{
+Purchase Lava Spawn Forge
+}
+
+STRING 1318
+// Items: I032 (Lava Spawn Forge), Ubertip (Tooltip - Extended)
+{
+Spawns a Lava Spawn Forge every 60 seconds. The Forge spawns a Lava Spawn every 5 seconds. When a Lava Spawn dies, it splits into 2 smaller ones.
+
+Damage: |cffffcc0020 - 25 (large) + 10 - 12 (small)|r
+Cooldown: |cffffcc0060s (forge) + 5s (lava spawn)|r
+Health: |cffffcc00300 (large) + 120 (small)|r
+Duration: |cffffcc0060s (forge) + 15s (lava spawn)|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00magic|r
+}
+
+STRING 1319
+// Items: I032 (Lava Spawn Forge), Description (Description)
+{
+Spawns a Lava Spawn Forge every 60 seconds. The Forge spawns a Lava Spawn every 5 seconds. When a Lava Spawn dies, it splits into 2 smaller ones.
+
+Damage: |cffffcc0020 - 25 (large) + 10 - 12 (small)|r
+Cooldown: |cffffcc0060s (forge) + 5s (lava spawn)|r
+Health: |cffffcc00300 (large) + 120 (small)|r
+Duration: |cffffcc0060s (forge) + 15s (lava spawn)|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00magic|r
+}
+
+STRING 1320
+// Items: I032 (Lava Spawn Forge), Name (Name)
+{
+Lava Spawn Forge
+}
+
+STRING 1321
+// Units: n00O (Small Lava Spawn), Name (Name)
+{
+Small Lava Spawn
+}
+
+STRING 1322
+// Units: n00P (Lava Spawn), Name (Name)
+{
+Lava Spawn
+}
+
+STRING 1323
+// Units: n00Q (Lava Spawn Forge), Name (Name)
+{
+Lava Spawn Forge
+}
+
