@@ -9,6 +9,7 @@ import { InnerFireDamageEvent } from "./DamageEvents/InnerFireDamageEvent";
 import { LocustSwarmDamageEvent } from "./DamageEvents/LocustSwarmDamageEvent";
 import { LongRifleDamageEvent } from "./DamageEvents/LongRifleDamageEvent";
 import { MagicSurgeDamageEvent } from "./DamageEvents/MagicSurgeDamageEvent";
+import { MarksmanDamageEvent } from "./DamageEvents/MarksmanDamageEvent";
 import { ScourgeBoneChimesDamageEvent } from "./DamageEvents/ScourgeBoneChimesDamageEvent";
 import { StrengthInNumbersDamageEvent } from "./DamageEvents/StrengthInNumbersDamageEvent";
 import { ThornsDamageEvent } from "./DamageEvents/ThornsDamageEvent";
@@ -77,6 +78,10 @@ export class DamageEventController {
     );
     DamageEngine.register(
       new BansheeShellDamageEvent(),
+      DamageEventType.OnDamageEvent,
+    );
+    DamageEngine.register(
+      new MarksmanDamageEvent(),
       DamageEventType.OnDamageEvent,
     );
 

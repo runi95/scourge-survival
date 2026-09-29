@@ -4428,3 +4428,99 @@ STRING 1278
 Gryphon Rider
 }
 
+STRING 1279
+// Items: I02V (Marksman), Tip (Tooltip - Basic)
+{
+Purchase Marksman
+}
+
+STRING 1280
+// Items: I02V (Marksman), Description (Description)
+{
+Launches a flare at the farthest enemy unit, burning and marking the enemies around it.
+}
+
+STRING 1281
+// Items: I02V (Marksman), Ubertip (Tooltip - Extended)
+{
+Launches a flare at the farthest enemy unit, burning and marking the enemies around it.
+}
+
+STRING 1282
+// Items: I02V (Marksman), Name (Name)
+{
+Marksman
+}
+
+STRING 1283
+// Items: I02W (Marksman), Tip (Tooltip - Basic)
+{
+Purchase Marksman
+}
+
+STRING 1284
+// Items: I02W (Marksman), Ubertip (Tooltip - Extended)
+{
+Launch a flare at the farthest enemy unit. Flares deal a small amount of damage and temporarily increases the damage taken.
+
+Damage: |cffffcc0010/s|r
+Bonus damage taken: |cffffcc0025%|r
+Cooldown: |cffffcc004s|r
+Duration: |cffffcc004s|r
+Range: |cffffcc001500|r
+Area of effect: |cffffcc00200|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00magic|r
+}
+
+STRING 1285
+// Items: I02W (Marksman), Description (Description)
+{
+Launch a flare at the farthest enemy unit. Flares deal a small amount of damage and temporarily increases the damage taken.
+
+Damage: |cffffcc0010/s|r
+Bonus damage taken: |cffffcc0025%|r
+Cooldown: |cffffcc004s|r
+Duration: |cffffcc004s|r
+Range: |cffffcc001500|r
+Area of effect: |cffffcc00200|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00magic|r
+}
+
+STRING 1286
+// Items: I02W (Marksman), Name (Name)
+{
+Marksman
+}
+
+STRING 1287
+// Buffs: B007 (buff), Name (Name)
+{
+Marked
+}
+
+STRING 1288
+// Buffs: B007 (buff), Tip (Tooltip)
+{
+Marked
+}
+
+STRING 1289
+// Buffs: B007 (buff), Ubertip (Tooltip - Extended)
+{
+This unit has been marked by a flare; it takes 25% more damage.
+}
+
+STRING 1290
+// Abilities: A02R (Marksman Flare), Name (Name)
+{
+Marksman Flare
+}
+
+STRING 1291
+// Units: u00Y (Marksman Flare), Name (Name)
+{
+Marksman Flare
+}
+
