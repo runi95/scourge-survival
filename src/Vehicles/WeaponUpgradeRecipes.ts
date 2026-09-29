@@ -47,6 +47,7 @@ import { MarksmansTrap } from "./Upgrades/Recipes/MarksmansTrap";
 import { Tremor } from "./Upgrades/Recipes/Tremor";
 import { EnvenomedSpears } from "./Upgrades/Recipes/EnvenomedSpears";
 import { BerserkerRage } from "./Upgrades/Recipes/BerserkerRage";
+import { JavelinVolley } from "./Upgrades/Recipes/JavelinVolley";
 
 export const weaponRecipes = [
   new DualCannons(),
@@ -98,4 +99,5 @@ export const weaponRecipes = [
   new Tremor(),
   new EnvenomedSpears(),
   new BerserkerRage(),
+  new JavelinVolley(),
 ];

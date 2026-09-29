@@ -5402,3 +5402,69 @@ STRING 1409
 Berserker Rage
 }
 
+STRING 1410
+// Items: I03L (Javelin Volley), Tip (Tooltip - Basic)
+{
+Purchase Javelin Volley
+}
+
+STRING 1411
+// Items: I03L (Javelin Volley), Description (Description)
+{
+Throws a volley of javelins at up to 3 different enemy units at once.
+}
+
+STRING 1412
+// Items: I03L (Javelin Volley), Ubertip (Tooltip - Extended)
+{
+Throws a volley of javelins at up to 3 different enemy units at once.
+}
+
+STRING 1413
+// Items: I03L (Javelin Volley), Name (Name)
+{
+Javelin Volley
+}
+
+STRING 1414
+// Items: I03M (Javelin Volley), Tip (Tooltip - Basic)
+{
+Purchase Javelin Volley
+}
+
+STRING 1415
+// Items: I03M (Javelin Volley), Ubertip (Tooltip - Extended)
+{
+Throws a volley of javelins at up to 3 different enemy units at once.
+
+Damage: |cffffcc003 x 25|r
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00600|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing|r
+}
+
+STRING 1416
+// Items: I03M (Javelin Volley), Description (Description)
+{
+Throws a volley of javelins at up to 3 different enemy units at once.
+
+Damage: |cffffcc003 x 25|r
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00600|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing|r
+}
+
+STRING 1417
+// Items: I03M (Javelin Volley), Name (Name)
+{
+Javelin Volley
+}
+
+STRING 1418
+// Units: u013 (Javelin Volley), Name (Name)
+{
+Javelin Volley
+}
+
