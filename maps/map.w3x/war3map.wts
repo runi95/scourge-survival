@@ -4158,3 +4158,71 @@ STRING 1241
 Throws a light javelin at nearby enemey unit.
 }
 
+STRING 1242
+// Units: h00A (Machine Gunner), Name (Name)
+{
+Machine Gunner
+}
+
+STRING 1243
+// Items: I02N (Machine Gunner), Name (Name)
+{
+Machine Gunner
+}
+
+STRING 1244
+// Items: I02N (Machine Gunner), Tip (Tooltip - Basic)
+{
+Purchase Machine Gunner
+}
+
+STRING 1245
+// Items: I02N (Machine Gunner), Ubertip (Tooltip - Extended)
+{
+Spawns a static Machine Gunner that attacks nearby enemy units within range.
+
+Damage: |cffffcc045 - 52|r
+Cooldown (attack): |cffffcc001s|r
+Cooldown (spawn): |cffffcc0015s|r
+Range: |cffffcc00500|r
+Targets (attack): |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing|r
+}
+
+STRING 1246
+// Items: I02N (Machine Gunner), Description (Description)
+{
+Spawns a static Machine Gunner that attacks nearby enemy units within range.
+
+Damage: |cffffcc045 - 52|r
+Cooldown (attack): |cffffcc001s|r
+Cooldown (spawn): |cffffcc0015s|r
+Range: |cffffcc00500|r
+Targets (attack): |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing|r
+}
+
+STRING 1247
+// Items: I02O (Machine Gunner), Tip (Tooltip - Basic)
+{
+Purchase Machine Gunner
+}
+
+STRING 1248
+// Items: I02O (Machine Gunner), Description (Description)
+{
+Spawns a static Machine Gunner that attacks nearby enemy units within range.
+}
+
+STRING 1249
+// Items: I02O (Machine Gunner), Ubertip (Tooltip - Extended)
+{
+Spawns a static Machine Gunner that attacks nearby enemy units within range.
+}
+
+STRING 1250
+// Items: I02O (Machine Gunner), Name (Name)
+{
+Machine Gunner
+}
+

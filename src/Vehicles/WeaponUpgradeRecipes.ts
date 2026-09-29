@@ -30,6 +30,7 @@ import { TrojanMine } from "./Upgrades/Recipes/TrojanMine";
 import { ExtraLargeRifle } from "./Upgrades/Recipes/ExtraLargeRifle";
 import { MassRifles } from "./Upgrades/Recipes/MassRifles";
 import { ElementalTwins } from "./Upgrades/Recipes/ElementalTwins";
+import { MachineGunner } from "./Upgrades/Recipes/MachineGunner";
 
 export const weaponRecipes = [
   new DualCannons(),
@@ -64,4 +65,5 @@ export const weaponRecipes = [
   new ExtraLargeRifle(),
   new MassRifles(),
   new ElementalTwins(),
+  new MachineGunner(),
 ];
