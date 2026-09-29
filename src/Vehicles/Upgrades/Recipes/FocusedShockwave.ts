@@ -13,7 +13,7 @@ export class FocusedShockwave extends WeaponUpgradeRecipe {
   public readonly cooldown = 3;
   public readonly itemTypeId = FourCC("I014");
   public readonly merchantItemTypeId = FourCC("I013");
-  public readonly recipe: number[] = [FourCC("I000"), FourCC("I002")];
+  public readonly recipe: number[] = [FourCC("I02M"), FourCC("I002")];
 
   private readonly timers = new Map<number, Timer>();
   private readonly dummyUnitId: number = FourCC("u000");
