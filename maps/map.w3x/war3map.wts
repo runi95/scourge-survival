@@ -4362,3 +4362,69 @@ STRING 1269
 Kamikaze Gyros
 }
 
+STRING 1270
+// Items: I02T (Gryphon Aviary), Tip (Tooltip - Basic)
+{
+Purchase Gryphon Aviary
+}
+
+STRING 1271
+// Items: I02T (Gryphon Aviary), Description (Description)
+{
+Summons 2 Gryphon Riders that follow your hero around, their storm hammers hitting enemies behind the target.
+}
+
+STRING 1272
+// Items: I02T (Gryphon Aviary), Ubertip (Tooltip - Extended)
+{
+Summons 2 Gryphon Riders that follow your hero around, their storm hammers hitting enemies behind the target.
+}
+
+STRING 1273
+// Items: I02T (Gryphon Aviary), Name (Name)
+{
+Gryphon Aviary
+}
+
+STRING 1274
+// Items: I02U (Gryphon Aviary), Tip (Tooltip - Basic)
+{
+Purchase Gryphon Aviary
+}
+
+STRING 1275
+// Items: I02U (Gryphon Aviary), Ubertip (Tooltip - Extended)
+{
+Summons 2 Gryphon Riders that follow your hero around. Their storm hammers pass through the target and hit an enemy behind it.
+
+Damage: |cffffcc002 x 60|r
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00450|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00magic|r
+}
+
+STRING 1276
+// Items: I02U (Gryphon Aviary), Description (Description)
+{
+Summons 2 Gryphon Riders that follow your hero around. Their storm hammers pass through the target and hit an enemy behind it.
+
+Damage: |cffffcc002 x 60|r
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00450|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00magic|r
+}
+
+STRING 1277
+// Items: I02U (Gryphon Aviary), Name (Name)
+{
+Gryphon Aviary
+}
+
+STRING 1278
+// Units: h00C (Gryphon Rider), Name (Name)
+{
+Gryphon Rider
+}
+
