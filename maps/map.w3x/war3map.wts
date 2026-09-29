@@ -5468,3 +5468,77 @@ STRING 1418
 Javelin Volley
 }
 
+STRING 1419
+// Items: I03N (Purging Spear), Tip (Tooltip - Basic)
+{
+Purchase Purging Spear
+}
+
+STRING 1420
+// Items: I03N (Purging Spear), Description (Description)
+{
+Throws a spear imbued with Purge at a nearby enemy unit, slowing it and dealing heavy damage to summoned units.
+}
+
+STRING 1421
+// Items: I03N (Purging Spear), Ubertip (Tooltip - Extended)
+{
+Throws a spear imbued with Purge at a nearby enemy unit, slowing it and dealing heavy damage to summoned units.
+}
+
+STRING 1422
+// Items: I03N (Purging Spear), Name (Name)
+{
+Purging Spear
+}
+
+STRING 1423
+// Items: I03O (Purging Spear), Tip (Tooltip - Basic)
+{
+Purchase Purging Spear
+}
+
+STRING 1424
+// Items: I03O (Purging Spear), Ubertip (Tooltip - Extended)
+{
+Throws a spear imbued with Purge at a nearby enemy unit, slowing it to a crawl before it recovers over a few seconds. Summoned units take heavy damage.
+
+Damage: |cffffcc0030 (spear) + 300 (summoned units)|r
+Slow: |cffffcc00-100% movement speed, fading over 3s|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00600|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing (spear) + spell (purge)|r
+}
+
+STRING 1425
+// Items: I03O (Purging Spear), Description (Description)
+{
+Throws a spear imbued with Purge at a nearby enemy unit, slowing it to a crawl before it recovers over a few seconds. Summoned units take heavy damage.
+
+Damage: |cffffcc0030 (spear) + 300 (summoned units)|r
+Slow: |cffffcc00-100% movement speed, fading over 3s|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00600|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing (spear) + spell (purge)|r
+}
+
+STRING 1426
+// Items: I03O (Purging Spear), Name (Name)
+{
+Purging Spear
+}
+
+STRING 1427
+// Abilities: A032 (Purging Spear), Name (Name)
+{
+Purging Spear
+}
+
+STRING 1428
+// Units: u014 (Purging Spear), Name (Name)
+{
+Purging Spear
+}
+

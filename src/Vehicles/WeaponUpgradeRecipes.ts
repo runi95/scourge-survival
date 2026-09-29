@@ -48,6 +48,7 @@ import { Tremor } from "./Upgrades/Recipes/Tremor";
 import { EnvenomedSpears } from "./Upgrades/Recipes/EnvenomedSpears";
 import { BerserkerRage } from "./Upgrades/Recipes/BerserkerRage";
 import { JavelinVolley } from "./Upgrades/Recipes/JavelinVolley";
+import { PurgingSpear } from "./Upgrades/Recipes/PurgingSpear";
 
 export const weaponRecipes = [
   new DualCannons(),
@@ -100,4 +101,5 @@ export const weaponRecipes = [
   new EnvenomedSpears(),
   new BerserkerRage(),
   new JavelinVolley(),
+  new PurgingSpear(),
 ];
