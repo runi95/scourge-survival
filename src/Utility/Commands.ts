@@ -112,12 +112,15 @@ export class Commands {
         break;
       case "item":
         (() => {
-          if (args.length !== 1) return;
+          const itemIds = args.filter((arg) => arg !== "");
+          if (itemIds.length === 0) return;
 
           const vehicle = GameMap.PLAYER_VEHICLES[0];
           if (vehicle.unit == null) return;
 
-          vehicle.unit.addItemById(FourCC(args[0]));
+          for (const itemId of itemIds) {
+            vehicle.unit.addItemById(FourCC(itemId));
+          }
         })();
         break;
       case "itemabil":
