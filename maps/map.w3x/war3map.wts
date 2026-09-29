@@ -5542,3 +5542,77 @@ STRING 1428
 Purging Spear
 }
 
+STRING 1429
+// Items: I03P (Batrider Raid), Tip (Tooltip - Basic)
+{
+Purchase Batrider Raid
+}
+
+STRING 1430
+// Items: I03P (Batrider Raid), Description (Description)
+{
+Sends Troll Batriders after enemy air units, leaving liquid fire on their way before crashing into their target.
+}
+
+STRING 1431
+// Items: I03P (Batrider Raid), Ubertip (Tooltip - Extended)
+{
+Sends Troll Batriders after enemy air units, leaving liquid fire on their way before crashing into their target.
+}
+
+STRING 1432
+// Items: I03P (Batrider Raid), Name (Name)
+{
+Batrider Raid
+}
+
+STRING 1433
+// Items: I03Q (Batrider Raid), Tip (Tooltip - Basic)
+{
+Purchase Batrider Raid
+}
+
+STRING 1434
+// Items: I03Q (Batrider Raid), Ubertip (Tooltip - Extended)
+{
+Sends a Troll Batrider after the nearest enemy air unit every 6 seconds. It hurls liquid fire on its way and crashes into its target with an Unstable Concoction.
+
+Damage: |cffffcc0025 per second (liquid fire) + 350 (concoction)|r
+Cooldown: |cffffcc006s|r
+Range: |cffffcc001200|r
+Area of effect (concoction): |cffffcc00250|r
+Targets: |cffffcc00air & ground (concoction), ground only! (liquid fire)|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 1435
+// Items: I03Q (Batrider Raid), Description (Description)
+{
+Sends a Troll Batrider after the nearest enemy air unit every 6 seconds. It hurls liquid fire on its way and crashes into its target with an Unstable Concoction.
+
+Damage: |cffffcc0025 per second (liquid fire) + 350 (concoction)|r
+Cooldown: |cffffcc006s|r
+Range: |cffffcc001200|r
+Area of effect (concoction): |cffffcc00250|r
+Targets: |cffffcc00air & ground (concoction), ground only! (liquid fire)|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 1436
+// Items: I03Q (Batrider Raid), Name (Name)
+{
+Batrider Raid
+}
+
+STRING 1437
+// Abilities: A033 (Batrider Raid), Name (Name)
+{
+Batrider Raid
+}
+
+STRING 1438
+// Units: o000 (Troll Batrider), Name (Name)
+{
+Troll Batrider
+}
+

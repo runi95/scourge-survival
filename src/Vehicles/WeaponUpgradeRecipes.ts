@@ -49,6 +49,7 @@ import { EnvenomedSpears } from "./Upgrades/Recipes/EnvenomedSpears";
 import { BerserkerRage } from "./Upgrades/Recipes/BerserkerRage";
 import { JavelinVolley } from "./Upgrades/Recipes/JavelinVolley";
 import { PurgingSpear } from "./Upgrades/Recipes/PurgingSpear";
+import { BatriderRaid } from "./Upgrades/Recipes/BatriderRaid";
 
 export const weaponRecipes = [
   new DualCannons(),
@@ -102,4 +103,5 @@ export const weaponRecipes = [
   new BerserkerRage(),
   new JavelinVolley(),
   new PurgingSpear(),
+  new BatriderRaid(),
 ];
