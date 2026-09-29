@@ -5126,3 +5126,85 @@ STRING 1372
 Scattergun
 }
 
+STRING 1373
+// Items: I03D (Marksman's Trap), Tip (Tooltip - Basic)
+{
+Purchase Marksman's Trap
+}
+
+STRING 1374
+// Items: I03D (Marksman's Trap), Description (Description)
+{
+Shoots the farthest enemy unit with a long rifle. A killing shot leaves a Goblin Land Mine where it stood, otherwise the target is caught in a net.
+}
+
+STRING 1375
+// Items: I03D (Marksman's Trap), Ubertip (Tooltip - Extended)
+{
+Shoots the farthest enemy unit with a long rifle. A killing shot leaves a Goblin Land Mine where it stood, otherwise the target is caught in a net.
+}
+
+STRING 1376
+// Items: I03D (Marksman's Trap), Name (Name)
+{
+Marksman's Trap
+}
+
+STRING 1377
+// Items: I03E (Marksman's Trap), Tip (Tooltip - Basic)
+{
+Purchase Marksman's Trap
+}
+
+STRING 1378
+// Items: I03E (Marksman's Trap), Ubertip (Tooltip - Extended)
+{
+Fire off a long rifle at the enemy unit farthest from your hero. If the shot kills it, a Goblin Land Mine is dropped where the target stood for the ones following it, otherwise a net is thrown over the target.
+
+Damage: |cffffcc0075 - 750 (shot, based on distance) + 150 (mine)|r
+Cooldown: |cffffcc005s|r
+Range: |cffffcc001500|r
+Net duration: |cffffcc003s|r
+Mine activation delay: |cffffcc001s|r
+Targets: |cffffcc00air & ground (shot, net), ground only! (mine)|r
+Damage type: |cffffcc00piercing (shot) + spell (mine)|r
+}
+
+STRING 1379
+// Items: I03E (Marksman's Trap), Description (Description)
+{
+Fire off a long rifle at the enemy unit farthest from your hero. If the shot kills it, a Goblin Land Mine is dropped where the target stood for the ones following it, otherwise a net is thrown over the target.
+
+Damage: |cffffcc0075 - 750 (shot, based on distance) + 150 (mine)|r
+Cooldown: |cffffcc005s|r
+Range: |cffffcc001500|r
+Net duration: |cffffcc003s|r
+Mine activation delay: |cffffcc001s|r
+Targets: |cffffcc00air & ground (shot, net), ground only! (mine)|r
+Damage type: |cffffcc00piercing (shot) + spell (mine)|r
+}
+
+STRING 1380
+// Items: I03E (Marksman's Trap), Name (Name)
+{
+Marksman's Trap
+}
+
+STRING 1381
+// Abilities: A02Z (Marksman's Trap Mine), Name (Name)
+{
+Marksman's Trap Mine
+}
+
+STRING 1382
+// Units: n00T (Marksman's Trap Mine), Name (Name)
+{
+Marksman's Trap Mine
+}
+
+STRING 1383
+// Abilities: A030 (Marksman's Trap Net), Name (Name)
+{
+Marksman's Trap Net
+}
+
