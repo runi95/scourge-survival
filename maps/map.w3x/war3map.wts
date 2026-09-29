@@ -4758,3 +4758,79 @@ STRING 1323
 Lava Spawn Forge
 }
 
+STRING 1324
+// Items: I033 (Rifleman Barracks), Tip (Tooltip - Basic)
+{
+Purchase Rifleman Barracks
+}
+
+STRING 1325
+// Items: I033 (Rifleman Barracks), Description (Description)
+{
+Spawns a Barracks every 60 seconds that trains Dwarven Riflemen, who hold their position and shoot enemies from afar.
+}
+
+STRING 1326
+// Items: I033 (Rifleman Barracks), Ubertip (Tooltip - Extended)
+{
+Spawns a Barracks every 60 seconds that trains Dwarven Riflemen, who hold their position and shoot enemies from afar.
+}
+
+STRING 1327
+// Items: I033 (Rifleman Barracks), Name (Name)
+{
+Rifleman Barracks
+}
+
+STRING 1328
+// Items: I034 (Rifleman Barracks), Tip (Tooltip - Basic)
+{
+Purchase Rifleman Barracks
+}
+
+STRING 1329
+// Items: I034 (Rifleman Barracks), Ubertip (Tooltip - Extended)
+{
+Spawns a Barracks every 60 seconds. The Barracks trains a Dwarven Rifleman every 5 seconds that holds its position and shoots enemies from afar.
+
+Damage: |cffffcc0025 - 30|r
+Cooldown: |cffffcc0060s (barracks) + 5s (rifleman)|r
+Range: |cffffcc00700|r
+Health: |cffffcc001000 (barracks) + 300 (rifleman)|r
+Duration: |cffffcc0060s (barracks) + 20s (rifleman)|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing|r
+}
+
+STRING 1330
+// Items: I034 (Rifleman Barracks), Description (Description)
+{
+Spawns a Barracks every 60 seconds. The Barracks trains a Dwarven Rifleman every 5 seconds that holds its position and shoots enemies from afar.
+
+Damage: |cffffcc0025 - 30|r
+Cooldown: |cffffcc0060s (barracks) + 5s (rifleman)|r
+Range: |cffffcc00700|r
+Health: |cffffcc001000 (barracks) + 300 (rifleman)|r
+Duration: |cffffcc0060s (barracks) + 20s (rifleman)|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing|r
+}
+
+STRING 1331
+// Items: I034 (Rifleman Barracks), Name (Name)
+{
+Rifleman Barracks
+}
+
+STRING 1332
+// Units: h00D (Dwarven Rifleman), Name (Name)
+{
+Dwarven Rifleman
+}
+
+STRING 1333
+// Units: n00R (Rifleman Barracks), Name (Name)
+{
+Rifleman Barracks
+}
+
