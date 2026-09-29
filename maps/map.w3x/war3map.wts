@@ -5342,3 +5342,63 @@ STRING 1401
 Envenomed Spears
 }
 
+STRING 1402
+// Items: I03J (Berserker Rage), Tip (Tooltip - Basic)
+{
+Purchase Berserker Rage
+}
+
+STRING 1403
+// Items: I03J (Berserker Rage), Description (Description)
+{
+Throws javelins at nearby enemies, faster the more wounded your hero is.
+}
+
+STRING 1404
+// Items: I03J (Berserker Rage), Ubertip (Tooltip - Extended)
+{
+Throws javelins at nearby enemies, faster the more wounded your hero is.
+}
+
+STRING 1405
+// Items: I03J (Berserker Rage), Name (Name)
+{
+Berserker Rage
+}
+
+STRING 1406
+// Items: I03K (Berserker Rage), Tip (Tooltip - Basic)
+{
+Purchase Berserker Rage
+}
+
+STRING 1407
+// Items: I03K (Berserker Rage), Ubertip (Tooltip - Extended)
+{
+Throws javelins at nearby enemies, faster the more wounded your hero is.
+
+Damage: |cffffcc0019 - 23|r
+Cooldown: |cffffcc002s (full health) - 0.5s (low health)|r
+Range: |cffffcc00450|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing|r
+}
+
+STRING 1408
+// Items: I03K (Berserker Rage), Description (Description)
+{
+Throws javelins at nearby enemies, faster the more wounded your hero is.
+
+Damage: |cffffcc0019 - 23|r
+Cooldown: |cffffcc002s (full health) - 0.5s (low health)|r
+Range: |cffffcc00450|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing|r
+}
+
+STRING 1409
+// Items: I03K (Berserker Rage), Name (Name)
+{
+Berserker Rage
+}
+

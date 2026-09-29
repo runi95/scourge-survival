@@ -46,6 +46,7 @@ import { Scattergun } from "./Upgrades/Recipes/Scattergun";
 import { MarksmansTrap } from "./Upgrades/Recipes/MarksmansTrap";
 import { Tremor } from "./Upgrades/Recipes/Tremor";
 import { EnvenomedSpears } from "./Upgrades/Recipes/EnvenomedSpears";
+import { BerserkerRage } from "./Upgrades/Recipes/BerserkerRage";
 
 export const weaponRecipes = [
   new DualCannons(),
@@ -96,4 +97,5 @@ export const weaponRecipes = [
   new MarksmansTrap(),
   new Tremor(),
   new EnvenomedSpears(),
+  new BerserkerRage(),
 ];
