@@ -15,6 +15,7 @@ import {
   AirSupport,
   PocketFactory,
   SpiritTower,
+  LightJavelin,
 } from "./Upgrades/Weapons/Common/index";
 import { Glyph, MagicSurge, WarDrums } from "./Upgrades/Misc/Legendary/index";
 import { ChainLightning, Tornado } from "./Upgrades/Weapons/Legendary/index";
@@ -55,6 +56,7 @@ export const commonUpgrades: VehicleUpgrade[] = [
   new RobeOfTheMagi(),
   new AdeptTraining(),
   new SpiritTower(),
+  new LightJavelin(),
 ];
 
 export const uncommonUpgrades: VehicleUpgrade[] = [

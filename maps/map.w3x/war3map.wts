@@ -4128,3 +4128,33 @@ STRING 1231
 Automatically fires at nearby enemey units.
 }
 
+STRING 1237
+// Units: u00X (Light Javelin), Name (Name)
+{
+Light Javelin
+}
+
+STRING 1238
+// Items: I02M (Light Javelin), Name (Name)
+{
+Light Javelin
+}
+
+STRING 1239
+// Items: I02M (Light Javelin), Tip (Tooltip - Basic)
+{
+Purchase Light Javelin
+}
+
+STRING 1240
+// Items: I02M (Light Javelin), Description (Description)
+{
+Throws a light javelin at nearby enemey unit.
+}
+
+STRING 1241
+// Items: I02M (Light Javelin), Ubertip (Tooltip - Extended)
+{
+Throws a light javelin at nearby enemey unit.
+}
+
