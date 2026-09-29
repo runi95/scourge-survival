@@ -32,6 +32,7 @@ import { MassRifles } from "./Upgrades/Recipes/MassRifles";
 import { ElementalTwins } from "./Upgrades/Recipes/ElementalTwins";
 import { MachineGunner } from "./Upgrades/Recipes/MachineGunner";
 import { CallToArms } from "./Upgrades/Recipes/CallToArms";
+import { KamikazeGyros } from "./Upgrades/Recipes/KamikazeGyros";
 
 export const weaponRecipes = [
   new DualCannons(),
@@ -68,4 +69,5 @@ export const weaponRecipes = [
   new ElementalTwins(),
   new MachineGunner(),
   new CallToArms(),
+  new KamikazeGyros(),
 ];

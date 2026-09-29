@@ -4302,3 +4302,63 @@ STRING 1261
 Call to Arms
 }
 
+STRING 1262
+// Items: I02R (Kamikaze Gyros), Tip (Tooltip - Basic)
+{
+Purchase Kamikaze Gyros
+}
+
+STRING 1263
+// Items: I02R (Kamikaze Gyros), Description (Description)
+{
+Spawns 3 Flying Machines that follow your hero around and take turns diving into enemy units.
+}
+
+STRING 1264
+// Items: I02R (Kamikaze Gyros), Ubertip (Tooltip - Extended)
+{
+Spawns 3 Flying Machines that follow your hero around and take turns diving into enemy units.
+}
+
+STRING 1265
+// Items: I02R (Kamikaze Gyros), Name (Name)
+{
+Kamikaze Gyros
+}
+
+STRING 1266
+// Items: I02S (Kamikaze Gyros), Tip (Tooltip - Basic)
+{
+Purchase Kamikaze Gyros
+}
+
+STRING 1267
+// Items: I02S (Kamikaze Gyros), Ubertip (Tooltip - Extended)
+{
+Spawns 3 Flying Machines that follow your hero around. Every 6 seconds one of them dives into a random enemy unit and explodes, and a new one takes off from your hero.
+
+Damage: |cffffcc003 x 25 (attack) + 250 (crash)|r
+Cooldown: |cffffcc002s (attack) + 6s (crash)|r
+Area of effect (crash): |cffffcc00250|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00siege|r
+}
+
+STRING 1268
+// Items: I02S (Kamikaze Gyros), Description (Description)
+{
+Spawns 3 Flying Machines that follow your hero around. Every 6 seconds one of them dives into a random enemy unit and explodes, and a new one takes off from your hero.
+
+Damage: |cffffcc003 x 25 (attack) + 250 (crash)|r
+Cooldown: |cffffcc002s (attack) + 6s (crash)|r
+Area of effect (crash): |cffffcc00250|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00siege|r
+}
+
+STRING 1269
+// Items: I02S (Kamikaze Gyros), Name (Name)
+{
+Kamikaze Gyros
+}
+
