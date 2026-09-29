@@ -5774,3 +5774,77 @@ STRING 1459
 Stasis Ward
 }
 
+STRING 1460
+// Items: I03V (Serpent Ward), Tip (Tooltip - Basic)
+{
+Purchase Serpent Ward
+}
+
+STRING 1461
+// Items: I03V (Serpent Ward), Description (Description)
+{
+Plants Serpent Wards next to your hero that attack nearby enemy units.
+}
+
+STRING 1462
+// Items: I03V (Serpent Ward), Ubertip (Tooltip - Extended)
+{
+Plants Serpent Wards next to your hero that attack nearby enemy units.
+}
+
+STRING 1463
+// Items: I03V (Serpent Ward), Name (Name)
+{
+Serpent Ward
+}
+
+STRING 1464
+// Items: I03W (Serpent Ward), Tip (Tooltip - Basic)
+{
+Purchase Serpent Ward
+}
+
+STRING 1465
+// Items: I03W (Serpent Ward), Ubertip (Tooltip - Extended)
+{
+Plants a Serpent Ward next to your hero every 8 seconds. The totem attacks nearby enemy units.
+
+Damage: |cffffcc0090|r
+Cooldown: |cffffcc008s (totem)|r
+Range: |cffffcc00600|r
+Duration: |cffffcc0020s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 1466
+// Items: I03W (Serpent Ward), Description (Description)
+{
+Plants a Serpent Ward next to your hero every 8 seconds. The totem attacks nearby enemy units.
+
+Damage: |cffffcc0090|r
+Cooldown: |cffffcc008s (totem)|r
+Range: |cffffcc00600|r
+Duration: |cffffcc0020s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 1467
+// Items: I03W (Serpent Ward), Name (Name)
+{
+Serpent Ward
+}
+
+STRING 1468
+// Units: o002 (Serpent Ward), Name (Name)
+{
+Serpent Ward
+}
+
+STRING 1469
+// Abilities: A037 (Serpent Ward), Name (Name)
+{
+Serpent Ward
+}
+
