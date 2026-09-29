@@ -45,6 +45,7 @@ import { FireTrap } from "./Upgrades/Recipes/FireTrap";
 import { Scattergun } from "./Upgrades/Recipes/Scattergun";
 import { MarksmansTrap } from "./Upgrades/Recipes/MarksmansTrap";
 import { Tremor } from "./Upgrades/Recipes/Tremor";
+import { EnvenomedSpears } from "./Upgrades/Recipes/EnvenomedSpears";
 
 export const weaponRecipes = [
   new DualCannons(),
@@ -94,4 +95,5 @@ export const weaponRecipes = [
   new Scattergun(),
   new MarksmansTrap(),
   new Tremor(),
+  new EnvenomedSpears(),
 ];

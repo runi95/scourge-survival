@@ -5266,3 +5266,79 @@ STRING 1391
 Tremor
 }
 
+STRING 1392
+// Items: I03H (Envenomed Spears), Tip (Tooltip - Basic)
+{
+Purchase Envenomed Spears
+}
+
+STRING 1393
+// Items: I03H (Envenomed Spears), Description (Description)
+{
+Throws poisoned javelins that slow enemy units and damage them over time.
+}
+
+STRING 1394
+// Items: I03H (Envenomed Spears), Ubertip (Tooltip - Extended)
+{
+Throws poisoned javelins that slow enemy units and damage them over time.
+}
+
+STRING 1395
+// Items: I03H (Envenomed Spears), Name (Name)
+{
+Envenomed Spears
+}
+
+STRING 1396
+// Items: I03I (Envenomed Spears), Tip (Tooltip - Basic)
+{
+Purchase Envenomed Spears
+}
+
+STRING 1397
+// Items: I03I (Envenomed Spears), Ubertip (Tooltip - Extended)
+{
+Throws a poisoned javelin at a nearby enemy unit. Poisoned units are slowed and take damage over time.
+
+Damage: |cffffcc0019 - 23 (javelin) + 10 per second (poison)|r
+Slow: |cffffcc00-30% movement speed|r
+Cooldown: |cffffcc001.5s|r
+Poison duration: |cffffcc005s|r
+Range: |cffffcc00450|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing (javelin) + magic (poison)|r
+}
+
+STRING 1398
+// Items: I03I (Envenomed Spears), Description (Description)
+{
+Throws a poisoned javelin at a nearby enemy unit. Poisoned units are slowed and take damage over time.
+
+Damage: |cffffcc0019 - 23 (javelin) + 10 per second (poison)|r
+Slow: |cffffcc00-30% movement speed|r
+Cooldown: |cffffcc001.5s|r
+Poison duration: |cffffcc005s|r
+Range: |cffffcc00450|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing (javelin) + magic (poison)|r
+}
+
+STRING 1399
+// Items: I03I (Envenomed Spears), Name (Name)
+{
+Envenomed Spears
+}
+
+STRING 1400
+// Abilities: A031 (Envenomed Spears), Name (Name)
+{
+Envenomed Spears
+}
+
+STRING 1401
+// Units: u012 (Envenomed Spears), Name (Name)
+{
+Envenomed Spears
+}
+
