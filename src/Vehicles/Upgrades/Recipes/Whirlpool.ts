@@ -11,7 +11,7 @@ export class Whirlpool extends WeaponUpgradeRecipe {
   public readonly cooldown = 10;
   public readonly itemTypeId = FourCC("I01O");
   public readonly merchantItemTypeId = FourCC("I01P");
-  public readonly recipe: number[] = [FourCC("I00M"), FourCC("I00X")];
+  public readonly recipe: number[] = [FourCC("I00X"), FourCC("I00X")];
 
   private readonly timers = new Map<number, Timer>();
   private readonly geyserTimers = new Map<number, Timer>();
