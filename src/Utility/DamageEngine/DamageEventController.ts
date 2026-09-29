@@ -14,6 +14,7 @@ import { ScattergunDamageEvent } from "./DamageEvents/ScattergunDamageEvent";
 import { ScourgeBoneChimesDamageEvent } from "./DamageEvents/ScourgeBoneChimesDamageEvent";
 import { StrengthInNumbersDamageEvent } from "./DamageEvents/StrengthInNumbersDamageEvent";
 import { ThornsDamageEvent } from "./DamageEvents/ThornsDamageEvent";
+import { ThunderSpearsDamageEvent } from "./DamageEvents/ThunderSpearsDamageEvent";
 import { WarDrumsDamageEvent } from "./DamageEvents/WarDrumsDamageEvent";
 
 export interface ExtendedDamageInstance extends DamageInstance {
@@ -109,6 +110,10 @@ export class DamageEventController {
     );
     DamageEngine.register(
       new LocustSwarmDamageEvent(),
+      DamageEventType.AfterDamageEvent,
+    );
+    DamageEngine.register(
+      new ThunderSpearsDamageEvent(),
       DamageEventType.AfterDamageEvent,
     );
   }

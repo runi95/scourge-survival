@@ -5928,3 +5928,75 @@ STRING 1480
 Orb of Lightning
 }
 
+STRING 1481
+// Items: I03Z (Thunder Spears), Tip (Tooltip - Basic)
+{
+Purchase Thunder Spears
+}
+
+STRING 1482
+// Items: I03Z (Thunder Spears), Description (Description)
+{
+Throws increasingly rapid lightning-charged spears when standing still, each arcing lightning to more enemies.
+}
+
+STRING 1483
+// Items: I03Z (Thunder Spears), Ubertip (Tooltip - Extended)
+{
+Throws increasingly rapid lightning-charged spears when standing still, each arcing lightning to more enemies.
+}
+
+STRING 1484
+// Items: I03Z (Thunder Spears), Name (Name)
+{
+Thunder Spears
+}
+
+STRING 1485
+// Items: I040 (Thunder Spears), Tip (Tooltip - Basic)
+{
+Purchase Thunder Spears
+}
+
+STRING 1486
+// Items: I040 (Thunder Spears), Ubertip (Tooltip - Extended)
+{
+Throws spears at nearby enemies when standing still, faster the longer your hero stays put. Every spear arcs lightning to 2 more enemies.
+
+Damage: |cffffcc0020 - 30 (spear) + 25 (lightning)|r
+Cooldown: |cffffcc001/0.5/0.25s|r
+Range: |cffffcc00800|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing (spear) + spell (lightning)|r
+}
+
+STRING 1487
+// Items: I040 (Thunder Spears), Description (Description)
+{
+Throws spears at nearby enemies when standing still, faster the longer your hero stays put. Every spear arcs lightning to 2 more enemies.
+
+Damage: |cffffcc0020 - 30 (spear) + 25 (lightning)|r
+Cooldown: |cffffcc001/0.5/0.25s|r
+Range: |cffffcc00800|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing (spear) + spell (lightning)|r
+}
+
+STRING 1488
+// Items: I040 (Thunder Spears), Name (Name)
+{
+Thunder Spears
+}
+
+STRING 1489
+// Abilities: A03A (Thunder Spears), Name (Name)
+{
+Thunder Spears
+}
+
+STRING 1490
+// Units: u015 (Thunder Spears), Name (Name)
+{
+Thunder Spears
+}
+
