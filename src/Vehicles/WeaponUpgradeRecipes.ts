@@ -39,6 +39,7 @@ import { CarpetBombing } from "./Upgrades/Recipes/CarpetBombing";
 import { CannonTower } from "./Upgrades/Recipes/CannonTower";
 import { LavaSpawnForge } from "./Upgrades/Recipes/LavaSpawnForge";
 import { RiflemanBarracks } from "./Upgrades/Recipes/RiflemanBarracks";
+import { FlameStrike } from "./Upgrades/Recipes/FlameStrike";
 
 export const weaponRecipes = [
   new DualCannons(),
@@ -82,4 +83,5 @@ export const weaponRecipes = [
   new CannonTower(),
   new LavaSpawnForge(),
   new RiflemanBarracks(),
+  new FlameStrike(),
 ];

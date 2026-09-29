@@ -4834,3 +4834,73 @@ STRING 1333
 Rifleman Barracks
 }
 
+STRING 1334
+// Items: I035 (Flame Strike), Tip (Tooltip - Basic)
+{
+Purchase Flame Strike
+}
+
+STRING 1335
+// Items: I035 (Flame Strike), Description (Description)
+{
+Calls down pillars of fire on the largest groups of enemy ground units, leaving the ground burning.
+}
+
+STRING 1336
+// Items: I035 (Flame Strike), Ubertip (Tooltip - Extended)
+{
+Calls down pillars of fire on the largest groups of enemy ground units, leaving the ground burning.
+}
+
+STRING 1337
+// Items: I035 (Flame Strike), Name (Name)
+{
+Flame Strike
+}
+
+STRING 1338
+// Items: I036 (Flame Strike), Tip (Tooltip - Basic)
+{
+Purchase Flame Strike
+}
+
+STRING 1339
+// Items: I036 (Flame Strike), Ubertip (Tooltip - Extended)
+{
+Calls down a pillar of fire on the largest group of enemy ground units within range. The ground keeps burning for a few seconds.
+
+Damage: |cffffcc00120 (strike) + 30 per second (burn)|r
+Cooldown: |cffffcc004s|r
+Range: |cffffcc00700|r
+Area of effect: |cffffcc00200|r
+Duration (burn): |cffffcc004s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00magic|r
+}
+
+STRING 1340
+// Items: I036 (Flame Strike), Description (Description)
+{
+Calls down a pillar of fire on the largest group of enemy ground units within range. The ground keeps burning for a few seconds.
+
+Damage: |cffffcc00120 (strike) + 30 per second (burn)|r
+Cooldown: |cffffcc004s|r
+Range: |cffffcc00700|r
+Area of effect: |cffffcc00200|r
+Duration (burn): |cffffcc004s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00magic|r
+}
+
+STRING 1341
+// Items: I036 (Flame Strike), Name (Name)
+{
+Flame Strike
+}
+
+STRING 1342
+// Abilities: A02V (Flame Strike), Name (Name)
+{
+Flame Strike
+}
+
