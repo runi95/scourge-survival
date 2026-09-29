@@ -10,6 +10,7 @@ import { LocustSwarmDamageEvent } from "./DamageEvents/LocustSwarmDamageEvent";
 import { LongRifleDamageEvent } from "./DamageEvents/LongRifleDamageEvent";
 import { MagicSurgeDamageEvent } from "./DamageEvents/MagicSurgeDamageEvent";
 import { MarksmanDamageEvent } from "./DamageEvents/MarksmanDamageEvent";
+import { ScattergunDamageEvent } from "./DamageEvents/ScattergunDamageEvent";
 import { ScourgeBoneChimesDamageEvent } from "./DamageEvents/ScourgeBoneChimesDamageEvent";
 import { StrengthInNumbersDamageEvent } from "./DamageEvents/StrengthInNumbersDamageEvent";
 import { ThornsDamageEvent } from "./DamageEvents/ThornsDamageEvent";
@@ -46,6 +47,10 @@ export class DamageEventController {
     // On damage events
     DamageEngine.register(
       new LongRifleDamageEvent(),
+      DamageEventType.OnDamageEvent,
+    );
+    DamageEngine.register(
+      new ScattergunDamageEvent(),
       DamageEventType.OnDamageEvent,
     );
     DamageEngine.register(

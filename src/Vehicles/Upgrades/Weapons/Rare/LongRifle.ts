@@ -13,7 +13,7 @@ export class LongRifle extends WeaponUpgrade {
   public readonly rarity = VehicleUpgradeRarity.RARE;
   public readonly race = Race.HUMAN;
   public readonly icon =
-    "ReplaceableTextures/CommandButtons/BTNDwarvenLongRifle.blp";
+    "ReplaceableTextures/CommandButtons/BTNHumanMissileUpOne.blp";
   public readonly cost = 300;
   public readonly cooldown = 5;
   public readonly itemTypeId = FourCC("I00Y");

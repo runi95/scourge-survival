@@ -5058,3 +5058,71 @@ STRING 1363
 Fire Trap
 }
 
+STRING 1364
+// Items: I03B (Scattergun), Tip (Tooltip - Basic)
+{
+Purchase Scattergun
+}
+
+STRING 1365
+// Items: I03B (Scattergun), Description (Description)
+{
+A dwarf with a scattergun shoots enemies up close, hitting everything around the target.
+}
+
+STRING 1366
+// Items: I03B (Scattergun), Ubertip (Tooltip - Extended)
+{
+A dwarf with a scattergun shoots enemies up close, hitting everything around the target.
+}
+
+STRING 1367
+// Items: I03B (Scattergun), Name (Name)
+{
+Scattergun
+}
+
+STRING 1368
+// Items: I03C (Scattergun), Tip (Tooltip - Basic)
+{
+Purchase Scattergun
+}
+
+STRING 1369
+// Items: I03C (Scattergun), Ubertip (Tooltip - Extended)
+{
+Shoots at a random enemy unit, hitting the target as well as any enemy around it. The closer the targets are the more damage they take.
+
+Damage: |cffffcc0015 - 90 (based on distance)|r
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00500|r
+Area of effect: |cffffcc00150|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing|r
+}
+
+STRING 1370
+// Items: I03C (Scattergun), Description (Description)
+{
+Shoots at a random enemy unit, hitting the target as well as any enemy around it. The closer the targets are the more damage they take.
+
+Damage: |cffffcc0015 - 90 (based on distance)|r
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00500|r
+Area of effect: |cffffcc00150|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing|r
+}
+
+STRING 1371
+// Items: I03C (Scattergun), Name (Name)
+{
+Scattergun
+}
+
+STRING 1372
+// Units: u011 (Scattergun), Name (Name)
+{
+Scattergun
+}
+

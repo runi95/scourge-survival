@@ -42,6 +42,7 @@ import { RiflemanBarracks } from "./Upgrades/Recipes/RiflemanBarracks";
 import { FlameStrike } from "./Upgrades/Recipes/FlameStrike";
 import { DragonbreathShot } from "./Upgrades/Recipes/DragonbreathShot";
 import { FireTrap } from "./Upgrades/Recipes/FireTrap";
+import { Scattergun } from "./Upgrades/Recipes/Scattergun";
 
 export const weaponRecipes = [
   new DualCannons(),
@@ -88,4 +89,5 @@ export const weaponRecipes = [
   new FlameStrike(),
   new DragonbreathShot(),
   new FireTrap(),
+  new Scattergun(),
 ];
