@@ -50,6 +50,7 @@ import { BerserkerRage } from "./Upgrades/Recipes/BerserkerRage";
 import { JavelinVolley } from "./Upgrades/Recipes/JavelinVolley";
 import { PurgingSpear } from "./Upgrades/Recipes/PurgingSpear";
 import { BatriderRaid } from "./Upgrades/Recipes/BatriderRaid";
+import { NetTrap } from "./Upgrades/Recipes/NetTrap";
 
 export const weaponRecipes = [
   new DualCannons(),
@@ -104,4 +105,5 @@ export const weaponRecipes = [
   new JavelinVolley(),
   new PurgingSpear(),
   new BatriderRaid(),
+  new NetTrap(),
 ];
