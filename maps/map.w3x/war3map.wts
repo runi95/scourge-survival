@@ -5208,3 +5208,61 @@ STRING 1383
 Marksman's Trap Net
 }
 
+STRING 1384
+// Items: I03F (Tremor), Tip (Tooltip - Basic)
+{
+Purchase Tremor
+}
+
+STRING 1385
+// Items: I03F (Tremor), Description (Description)
+{
+Sends shockwaves in random directions, faster and faster the longer your hero stands still.
+}
+
+STRING 1386
+// Items: I03F (Tremor), Ubertip (Tooltip - Extended)
+{
+Sends shockwaves in random directions, faster and faster the longer your hero stands still.
+}
+
+STRING 1387
+// Items: I03F (Tremor), Name (Name)
+{
+Tremor
+}
+
+STRING 1388
+// Items: I03G (Tremor), Tip (Tooltip - Basic)
+{
+Purchase Tremor
+}
+
+STRING 1389
+// Items: I03G (Tremor), Ubertip (Tooltip - Extended)
+{
+Sends shockwaves in random directions while standing still, faster and faster the longer your hero stays put.
+
+Damage: |cffffcc0050|r
+Cooldown: |cffffcc002/1/0.5s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 1390
+// Items: I03G (Tremor), Description (Description)
+{
+Sends shockwaves in random directions while standing still, faster and faster the longer your hero stays put.
+
+Damage: |cffffcc0050|r
+Cooldown: |cffffcc002/1/0.5s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 1391
+// Items: I03G (Tremor), Name (Name)
+{
+Tremor
+}
+
