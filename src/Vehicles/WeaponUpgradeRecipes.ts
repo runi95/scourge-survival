@@ -53,6 +53,7 @@ import { BatriderRaid } from "./Upgrades/Recipes/BatriderRaid";
 import { NetTrap } from "./Upgrades/Recipes/NetTrap";
 import { StasisWard } from "./Upgrades/Recipes/StasisWard";
 import { SerpentWard } from "./Upgrades/Recipes/SerpentWard";
+import { OrbOfLightning } from "./Upgrades/Recipes/OrbOfLightning";
 
 export const weaponRecipes = [
   new DualCannons(),
@@ -110,4 +111,5 @@ export const weaponRecipes = [
   new NetTrap(),
   new StasisWard(),
   new SerpentWard(),
+  new OrbOfLightning(),
 ];

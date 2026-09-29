@@ -5848,3 +5848,83 @@ STRING 1469
 Serpent Ward
 }
 
+STRING 1470
+// Items: I03X (Orb of Lightning), Tip (Tooltip - Basic)
+{
+Purchase Orb of Lightning
+}
+
+STRING 1471
+// Items: I03X (Orb of Lightning), Description (Description)
+{
+Places static fields underneath your hero that shock every enemy inside them once triggered.
+}
+
+STRING 1472
+// Items: I03X (Orb of Lightning), Ubertip (Tooltip - Extended)
+{
+Places static fields underneath your hero that shock every enemy inside them once triggered.
+}
+
+STRING 1473
+// Items: I03X (Orb of Lightning), Name (Name)
+{
+Orb of Lightning
+}
+
+STRING 1474
+// Items: I03Y (Orb of Lightning), Tip (Tooltip - Basic)
+{
+Purchase Orb of Lightning
+}
+
+STRING 1475
+// Items: I03Y (Orb of Lightning), Ubertip (Tooltip - Extended)
+{
+Places a static field underneath your hero. When an enemy ground unit steps in, it crackles for 4 seconds, shocking every enemy inside it each second.
+
+Damage: |cffffcc00100 (activation) + 40 per second|r
+Cooldown: |cffffcc004s|r
+Area of effect: |cffffcc00250|r
+Mine activation delay: |cffffcc003s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 1476
+// Items: I03Y (Orb of Lightning), Description (Description)
+{
+Places a static field underneath your hero. When an enemy ground unit steps in, it crackles for 4 seconds, shocking every enemy inside it each second.
+
+Damage: |cffffcc00100 (activation) + 40 per second|r
+Cooldown: |cffffcc004s|r
+Area of effect: |cffffcc00250|r
+Mine activation delay: |cffffcc003s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 1477
+// Items: I03Y (Orb of Lightning), Name (Name)
+{
+Orb of Lightning
+}
+
+STRING 1478
+// Abilities: A038 (Orb of Lightning Activation), Name (Name)
+{
+Orb of Lightning Activation
+}
+
+STRING 1479
+// Abilities: A039 (Orb of Lightning), Name (Name)
+{
+Orb of Lightning
+}
+
+STRING 1480
+// Units: n00V (Orb of Lightning), Name (Name)
+{
+Orb of Lightning
+}
+
