@@ -5698,3 +5698,79 @@ STRING 1449
 Net Trap
 }
 
+STRING 1450
+// Items: I03T (Stasis Ward), Tip (Tooltip - Basic)
+{
+Purchase Stasis Ward
+}
+
+STRING 1451
+// Items: I03T (Stasis Ward), Description (Description)
+{
+Plants Stasis Wards underneath your hero that stun nearby enemies and pelt them with javelins.
+}
+
+STRING 1452
+// Items: I03T (Stasis Ward), Ubertip (Tooltip - Extended)
+{
+Plants Stasis Wards underneath your hero that stun nearby enemies and pelt them with javelins.
+}
+
+STRING 1453
+// Items: I03T (Stasis Ward), Name (Name)
+{
+Stasis Ward
+}
+
+STRING 1454
+// Items: I03U (Stasis Ward), Tip (Tooltip - Basic)
+{
+Purchase Stasis Ward
+}
+
+STRING 1455
+// Items: I03U (Stasis Ward), Ubertip (Tooltip - Extended)
+{
+Plants a Witch Doctor's Stasis Ward underneath your hero. When an enemy comes near, it stuns every enemy ground unit around it and a volley of javelins hits the stunned units.
+
+Damage: |cffffcc004 x 25|r
+Cooldown: |cffffcc0010s|r
+Area of effect: |cffffcc00400|r
+Stun duration: |cffffcc003s|r
+Activation delay: |cffffcc003s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00piercing|r
+}
+
+STRING 1456
+// Items: I03U (Stasis Ward), Description (Description)
+{
+Plants a Witch Doctor's Stasis Ward underneath your hero. When an enemy comes near, it stuns every enemy ground unit around it and a volley of javelins hits the stunned units.
+
+Damage: |cffffcc004 x 25|r
+Cooldown: |cffffcc0010s|r
+Area of effect: |cffffcc00400|r
+Stun duration: |cffffcc003s|r
+Activation delay: |cffffcc003s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00piercing|r
+}
+
+STRING 1457
+// Items: I03U (Stasis Ward), Name (Name)
+{
+Stasis Ward
+}
+
+STRING 1458
+// Units: o001 (Stasis Ward), Name (Name)
+{
+Stasis Ward
+}
+
+STRING 1459
+// Abilities: A036 (Stasis Ward), Name (Name)
+{
+Stasis Ward
+}
+
