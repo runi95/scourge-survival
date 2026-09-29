@@ -4984,3 +4984,77 @@ STRING 1353
 Dragonbreath Shot
 }
 
+STRING 1354
+// Items: I039 (Fire Trap), Tip (Tooltip - Basic)
+{
+Purchase Fire Trap
+}
+
+STRING 1355
+// Items: I039 (Fire Trap), Description (Description)
+{
+Places Fire Traps underneath your hero that erupt into burning pillars of fire.
+}
+
+STRING 1356
+// Items: I039 (Fire Trap), Ubertip (Tooltip - Extended)
+{
+Places Fire Traps underneath your hero that erupt into burning pillars of fire.
+}
+
+STRING 1357
+// Items: I039 (Fire Trap), Name (Name)
+{
+Fire Trap
+}
+
+STRING 1358
+// Items: I03A (Fire Trap), Tip (Tooltip - Basic)
+{
+Purchase Fire Trap
+}
+
+STRING 1359
+// Items: I03A (Fire Trap), Ubertip (Tooltip - Extended)
+{
+Places a Fire Trap underneath your hero. When an enemy ground unit steps on it, a pillar of fire erupts and keeps burning for 4 seconds.
+
+Damage: |cffffcc00100 (eruption) + 35 per second (burn)|r
+Cooldown: |cffffcc003s|r
+Area of effect: |cffffcc00200|r
+Mine activation delay: |cffffcc004s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell (eruption) + magic (burn)|r
+}
+
+STRING 1360
+// Items: I03A (Fire Trap), Description (Description)
+{
+Places a Fire Trap underneath your hero. When an enemy ground unit steps on it, a pillar of fire erupts and keeps burning for 4 seconds.
+
+Damage: |cffffcc00100 (eruption) + 35 per second (burn)|r
+Cooldown: |cffffcc003s|r
+Area of effect: |cffffcc00200|r
+Mine activation delay: |cffffcc004s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell (eruption) + magic (burn)|r
+}
+
+STRING 1361
+// Items: I03A (Fire Trap), Name (Name)
+{
+Fire Trap
+}
+
+STRING 1362
+// Abilities: A02Y (Fire Trap Eruption), Name (Name)
+{
+Fire Trap Eruption
+}
+
+STRING 1363
+// Units: n00S (Fire Trap), Name (Name)
+{
+Fire Trap
+}
+

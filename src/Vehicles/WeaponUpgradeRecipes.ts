@@ -41,6 +41,7 @@ import { LavaSpawnForge } from "./Upgrades/Recipes/LavaSpawnForge";
 import { RiflemanBarracks } from "./Upgrades/Recipes/RiflemanBarracks";
 import { FlameStrike } from "./Upgrades/Recipes/FlameStrike";
 import { DragonbreathShot } from "./Upgrades/Recipes/DragonbreathShot";
+import { FireTrap } from "./Upgrades/Recipes/FireTrap";
 
 export const weaponRecipes = [
   new DualCannons(),
@@ -86,4 +87,5 @@ export const weaponRecipes = [
   new RiflemanBarracks(),
   new FlameStrike(),
   new DragonbreathShot(),
+  new FireTrap(),
 ];
