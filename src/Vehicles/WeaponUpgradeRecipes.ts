@@ -35,6 +35,7 @@ import { CallToArms } from "./Upgrades/Recipes/CallToArms";
 import { KamikazeGyros } from "./Upgrades/Recipes/KamikazeGyros";
 import { GryphonAviary } from "./Upgrades/Recipes/GryphonAviary";
 import { Marksman } from "./Upgrades/Recipes/Marksman";
+import { CarpetBombing } from "./Upgrades/Recipes/CarpetBombing";
 
 export const weaponRecipes = [
   new DualCannons(),
@@ -74,4 +75,5 @@ export const weaponRecipes = [
   new KamikazeGyros(),
   new GryphonAviary(),
   new Marksman(),
+  new CarpetBombing(),
 ];

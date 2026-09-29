@@ -4524,3 +4524,77 @@ STRING 1291
 Marksman Flare
 }
 
+STRING 1292
+// Items: I02X (Carpet Bombing), Tip (Tooltip - Basic)
+{
+Purchase Carpet Bombing
+}
+
+STRING 1293
+// Items: I02X (Carpet Bombing), Description (Description)
+{
+Every 10 seconds a squadron of Flying Machines flies across your area, bombing everything along its path.
+}
+
+STRING 1294
+// Items: I02X (Carpet Bombing), Ubertip (Tooltip - Extended)
+{
+Every 10 seconds a squadron of Flying Machines flies across your area, bombing everything along its path.
+}
+
+STRING 1295
+// Items: I02X (Carpet Bombing), Name (Name)
+{
+Carpet Bombing
+}
+
+STRING 1296
+// Items: I02Y (Carpet Bombing), Tip (Tooltip - Basic)
+{
+Purchase Carpet Bombing
+}
+
+STRING 1297
+// Items: I02Y (Carpet Bombing), Ubertip (Tooltip - Extended)
+{
+Every 10 seconds a squadron of 3 Flying Machines flies straight across your area in the direction of a random enemy unit, bombing everything along its path.
+
+Damage: |cffffcc0040 per bomb|r
+Cooldown: |cffffcc0010s|r
+Bombs: |cffffcc001 every 100 distance|r
+Area of effect (bomb): |cffffcc00200|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00siege|r
+}
+
+STRING 1298
+// Items: I02Y (Carpet Bombing), Description (Description)
+{
+Every 10 seconds a squadron of 3 Flying Machines flies straight across your area in the direction of a random enemy unit, bombing everything along its path.
+
+Damage: |cffffcc0040 per bomb|r
+Cooldown: |cffffcc0010s|r
+Bombs: |cffffcc001 every 100 distance|r
+Area of effect (bomb): |cffffcc00200|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00siege|r
+}
+
+STRING 1299
+// Items: I02Y (Carpet Bombing), Name (Name)
+{
+Carpet Bombing
+}
+
+STRING 1300
+// Abilities: A02S (Carpet Bomb), Name (Name)
+{
+Carpet Bomb
+}
+
+STRING 1301
+// Units: u00Z (Carpet Bomb), Name (Name)
+{
+Carpet Bomb
+}
+
