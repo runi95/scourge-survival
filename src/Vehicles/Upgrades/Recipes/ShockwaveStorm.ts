@@ -11,7 +11,7 @@ export class ShockwaveStorm extends WeaponUpgradeRecipe {
   public readonly cooldown = 0.25;
   public readonly itemTypeId = FourCC("I01A");
   public readonly merchantItemTypeId = FourCC("I019");
-  public readonly recipe: number[] = [FourCC("I00X"), FourCC("I002")];
+  public readonly recipe: number[] = [FourCC("I00Q"), FourCC("I002")];
 
   private readonly timers = new Map<number, Timer>();
   private readonly dummyUnitId: number = FourCC("u000");
