@@ -31,6 +31,7 @@ import { ExtraLargeRifle } from "./Upgrades/Recipes/ExtraLargeRifle";
 import { MassRifles } from "./Upgrades/Recipes/MassRifles";
 import { ElementalTwins } from "./Upgrades/Recipes/ElementalTwins";
 import { MachineGunner } from "./Upgrades/Recipes/MachineGunner";
+import { CallToArms } from "./Upgrades/Recipes/CallToArms";
 
 export const weaponRecipes = [
   new DualCannons(),
@@ -66,4 +67,5 @@ export const weaponRecipes = [
   new MassRifles(),
   new ElementalTwins(),
   new MachineGunner(),
+  new CallToArms(),
 ];

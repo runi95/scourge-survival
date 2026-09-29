@@ -4226,3 +4226,79 @@ STRING 1250
 Machine Gunner
 }
 
+STRING 1251
+// Units: h00B (Call to Arms), Name (Name)
+{
+Call to Arms
+}
+
+STRING 1252
+// Items: I02P (Call to Arms), Name (Name)
+{
+Call to Arms
+}
+
+STRING 1253
+// Abilities: A00O (Call to Arms), EditorSuffix (Editor Suffix)
+{
+(Locust Swarm)
+}
+
+STRING 1254
+// Items: I02P (Call to Arms), Tip (Tooltip - Basic)
+{
+Purchase Call to Arms
+}
+
+STRING 1255
+// Items: I02P (Call to Arms), Description (Description)
+{
+Summons several air support gunners to your aid.
+}
+
+STRING 1256
+// Items: I02P (Call to Arms), Ubertip (Tooltip - Extended)
+{
+Summons several air support gunners to your aid.
+}
+
+STRING 1257
+// Items: I02Q (Call to Arms), Name (Name)
+{
+Call to Arms
+}
+
+STRING 1258
+// Items: I02Q (Call to Arms), Tip (Tooltip - Basic)
+{
+Purchase Call to Arms
+}
+
+STRING 1259
+// Items: I02Q (Call to Arms), Ubertip (Tooltip - Extended)
+{
+Summons several air support gunners to your aid.
+
+Damage: |cffffcc0011|r
+Cooldown: |cffffcc0060s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 1260
+// Items: I02Q (Call to Arms), Description (Description)
+{
+Summons several air support gunners to your aid.
+
+Damage: |cffffcc0011|r
+Cooldown: |cffffcc0060s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 1261
+// Abilities: A00O (Call to Arms), Name (Name)
+{
+Call to Arms
+}
+
