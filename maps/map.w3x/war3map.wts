@@ -6030,3 +6030,77 @@ STRING 1495
 Frost Nova
 }
 
+STRING 1496
+// Items: I042 (Crypt), Tip (Tooltip - Basic)
+{
+Purchase Crypt
+}
+
+STRING 1497
+// Items: I042 (Crypt), Description (Description)
+{
+Raises a Crypt every 60 seconds that sends out Ghouls to rush the nearest enemy.
+}
+
+STRING 1498
+// Items: I042 (Crypt), Ubertip (Tooltip - Extended)
+{
+Raises a Crypt every 60 seconds that sends out Ghouls to rush the nearest enemy.
+}
+
+STRING 1499
+// Items: I042 (Crypt), Name (Name)
+{
+Crypt
+}
+
+STRING 1500
+// Items: I043 (Crypt), Tip (Tooltip - Basic)
+{
+Purchase Crypt
+}
+
+STRING 1501
+// Items: I043 (Crypt), Ubertip (Tooltip - Extended)
+{
+Raises a Crypt every 60 seconds that sends out a Ghoul every 5 seconds. Ghouls rush the nearest enemy and claw it apart.
+
+Damage: |cffffcc0016 - 20|r
+Cooldown: |cffffcc0060s (crypt) + 5s (ghoul)|r
+Health: |cffffcc001000 (crypt) + 340 (ghoul)|r
+Duration: |cffffcc0060s (crypt) + 20s (ghoul)|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00normal|r
+}
+
+STRING 1502
+// Items: I043 (Crypt), Description (Description)
+{
+Raises a Crypt every 60 seconds that sends out a Ghoul every 5 seconds. Ghouls rush the nearest enemy and claw it apart.
+
+Damage: |cffffcc0016 - 20|r
+Cooldown: |cffffcc0060s (crypt) + 5s (ghoul)|r
+Health: |cffffcc001000 (crypt) + 340 (ghoul)|r
+Duration: |cffffcc0060s (crypt) + 20s (ghoul)|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00normal|r
+}
+
+STRING 1503
+// Items: I043 (Crypt), Name (Name)
+{
+Crypt
+}
+
+STRING 1504
+// Units: u016 (Ghoul), Name (Name)
+{
+Ghoul
+}
+
+STRING 1505
+// Units: n00W (Crypt), Name (Name)
+{
+Crypt
+}
+

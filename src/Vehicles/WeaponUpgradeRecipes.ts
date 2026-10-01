@@ -55,6 +55,7 @@ import { StasisWard } from "./Upgrades/Recipes/StasisWard";
 import { SerpentWard } from "./Upgrades/Recipes/SerpentWard";
 import { OrbOfLightning } from "./Upgrades/Recipes/OrbOfLightning";
 import { ThunderSpears } from "./Upgrades/Recipes/ThunderSpears";
+import { Crypt } from "./Upgrades/Recipes/Crypt";
 
 export const weaponRecipes = [
   new DualCannons(),
@@ -114,4 +115,5 @@ export const weaponRecipes = [
   new SerpentWard(),
   new OrbOfLightning(),
   new ThunderSpears(),
+  new Crypt(),
 ];
