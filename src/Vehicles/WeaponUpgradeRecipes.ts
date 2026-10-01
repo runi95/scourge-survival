@@ -58,6 +58,7 @@ import { ThunderSpears } from "./Upgrades/Recipes/ThunderSpears";
 import { Crypt } from "./Upgrades/Recipes/Crypt";
 import { CarrionBeetleNest } from "./Upgrades/Recipes/CarrionBeetleNest";
 import { DeathCoil } from "./Upgrades/Recipes/DeathCoil";
+import { DeathAndDecay } from "./Upgrades/Recipes/DeathAndDecay";
 
 export const weaponRecipes = [
   new DualCannons(),
@@ -120,4 +121,5 @@ export const weaponRecipes = [
   new Crypt(),
   new CarrionBeetleNest(),
   new DeathCoil(),
+  new DeathAndDecay(),
 ];

@@ -6250,3 +6250,73 @@ STRING 1525
 Death Coil Totem
 }
 
+STRING 1526
+// Items: I048 (Death and Decay), Tip (Tooltip - Basic)
+{
+Purchase Death and Decay
+}
+
+STRING 1527
+// Items: I048 (Death and Decay), Description (Description)
+{
+Rots the ground around an enemy unit, dealing a percentage of every unit's maximum health each second.
+}
+
+STRING 1528
+// Items: I048 (Death and Decay), Ubertip (Tooltip - Extended)
+{
+Rots the ground around an enemy unit, dealing a percentage of every unit's maximum health each second.
+}
+
+STRING 1529
+// Items: I048 (Death and Decay), Name (Name)
+{
+Death and Decay
+}
+
+STRING 1530
+// Items: I049 (Death and Decay), Tip (Tooltip - Basic)
+{
+Purchase Death and Decay
+}
+
+STRING 1531
+// Items: I049 (Death and Decay), Ubertip (Tooltip - Extended)
+{
+Every 15 seconds the Lich's Death and Decay rots a random area around an enemy unit for 3 seconds, dealing a percentage of every unit's maximum health each second.
+
+Damage: |cffffcc002% of maximum health per second|r
+Cooldown: |cffffcc0015s|r
+Range: |cffffcc00800|r
+Area of effect: |cffffcc00300|r
+Duration: |cffffcc003s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 1532
+// Items: I049 (Death and Decay), Description (Description)
+{
+Every 15 seconds the Lich's Death and Decay rots a random area around an enemy unit for 3 seconds, dealing a percentage of every unit's maximum health each second.
+
+Damage: |cffffcc002% of maximum health per second|r
+Cooldown: |cffffcc0015s|r
+Range: |cffffcc00800|r
+Area of effect: |cffffcc00300|r
+Duration: |cffffcc003s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 1533
+// Items: I049 (Death and Decay), Name (Name)
+{
+Death and Decay
+}
+
+STRING 1534
+// Abilities: A03E (Death and Decay), Name (Name)
+{
+Death and Decay
+}
+
