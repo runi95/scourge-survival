@@ -6176,3 +6176,77 @@ STRING 1515
 Carrion Beetle Nest
 }
 
+STRING 1516
+// Items: I046 (Death Coil), Tip (Tooltip - Basic)
+{
+Purchase Death Coil
+}
+
+STRING 1517
+// Items: I046 (Death Coil), Description (Description)
+{
+Raises a graveyard totem that strikes a random enemy with Death Coil and heals your hero.
+}
+
+STRING 1518
+// Items: I046 (Death Coil), Ubertip (Tooltip - Extended)
+{
+Raises a graveyard totem that strikes a random enemy with Death Coil and heals your hero.
+}
+
+STRING 1519
+// Items: I046 (Death Coil), Name (Name)
+{
+Death Coil
+}
+
+STRING 1520
+// Items: I047 (Death Coil), Tip (Tooltip - Basic)
+{
+Purchase Death Coil
+}
+
+STRING 1521
+// Items: I047 (Death Coil), Ubertip (Tooltip - Extended)
+{
+Every 3 seconds the Death Knight's Death Coil strikes a random enemy unit and heals your hero.
+
+Damage: |cffffcc0050|r
+Healing: |cffffcc0050|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00800|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 1522
+// Items: I047 (Death Coil), Description (Description)
+{
+Every 3 seconds the Death Knight's Death Coil strikes a random enemy unit and heals your hero.
+
+Damage: |cffffcc0050|r
+Healing: |cffffcc0050|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00800|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 1523
+// Items: I047 (Death Coil), Name (Name)
+{
+Death Coil
+}
+
+STRING 1524
+// Abilities: A03D (Death Coil), Name (Name)
+{
+Death Coil
+}
+
+STRING 1525
+// Units: u018 (Death Coil Totem), Name (Name)
+{
+Death Coil Totem
+}
+
