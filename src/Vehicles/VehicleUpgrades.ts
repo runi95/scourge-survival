@@ -38,6 +38,7 @@ import {
   ClusterRockets,
   WaterElemental,
   Burrow,
+  FrostNova,
 } from "./Upgrades/Weapons/Uncommon/index";
 import { VehicleUpgrade } from "./VehicleUpgrade";
 
@@ -69,6 +70,7 @@ export const uncommonUpgrades: VehicleUpgrade[] = [
   new Berserk(),
   new WaterElemental(),
   new Burrow(),
+  new FrostNova(),
 ];
 
 export const rareUpgrades: VehicleUpgrade[] = [

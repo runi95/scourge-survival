@@ -6000,3 +6000,33 @@ STRING 1490
 Thunder Spears
 }
 
+STRING 1491
+// Items: I041 (Frost Nova), Name (Name)
+{
+Frost Nova
+}
+
+STRING 1492
+// Items: I041 (Frost Nova), Tip (Tooltip - Basic)
+{
+Purchase Frost Nova
+}
+
+STRING 1493
+// Items: I041 (Frost Nova), Description (Description)
+{
+Blasts a random nearby enemy with a Frost Nova.
+}
+
+STRING 1494
+// Items: I041 (Frost Nova), Ubertip (Tooltip - Extended)
+{
+Blasts a random nearby enemy with a Frost Nova.
+}
+
+STRING 1495
+// Abilities: A03B (Frost Nova), Name (Name)
+{
+Frost Nova
+}
+
