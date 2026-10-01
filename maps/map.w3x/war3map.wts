@@ -6320,3 +6320,73 @@ STRING 1534
 Death and Decay
 }
 
+STRING 1535
+// Items: I04A (Frost Nova Barrage), Tip (Tooltip - Basic)
+{
+Purchase Frost Nova Barrage
+}
+
+STRING 1536
+// Items: I04A (Frost Nova Barrage), Description (Description)
+{
+Blasts 3 random enemy units with Frost Nova, damaging and slowing every enemy around them.
+}
+
+STRING 1537
+// Items: I04A (Frost Nova Barrage), Ubertip (Tooltip - Extended)
+{
+Blasts 3 random enemy units with Frost Nova, damaging and slowing every enemy around them.
+}
+
+STRING 1538
+// Items: I04A (Frost Nova Barrage), Name (Name)
+{
+Frost Nova Barrage
+}
+
+STRING 1539
+// Items: I04B (Frost Nova Barrage), Tip (Tooltip - Basic)
+{
+Purchase Frost Nova Barrage
+}
+
+STRING 1540
+// Items: I04B (Frost Nova Barrage), Ubertip (Tooltip - Extended)
+{
+Blasts 3 random enemy units with Frost Nova, damaging and slowing every enemy around them.
+
+Damage: |cffffcc0075 (target) + 50 (area)|r
+Slow: |cffffcc00-50% movement speed for 3s|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00700|r
+Area of effect: |cffffcc00200|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 1541
+// Items: I04B (Frost Nova Barrage), Description (Description)
+{
+Blasts 3 random enemy units with Frost Nova, damaging and slowing every enemy around them.
+
+Damage: |cffffcc0075 (target) + 50 (area)|r
+Slow: |cffffcc00-50% movement speed for 3s|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00700|r
+Area of effect: |cffffcc00200|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 1542
+// Items: I04B (Frost Nova Barrage), Name (Name)
+{
+Frost Nova Barrage
+}
+
+STRING 1543
+// Abilities: A03F (Frost Nova Barrage), Name (Name)
+{
+Frost Nova Barrage
+}
+
