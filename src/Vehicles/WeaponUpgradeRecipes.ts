@@ -64,6 +64,7 @@ import { PlagueMine } from "./Upgrades/Recipes/PlagueMine";
 import { GraveTrap } from "./Upgrades/Recipes/GraveTrap";
 import { AncientOfWind } from "./Upgrades/Recipes/AncientOfWind";
 import { VolcanicEruption } from "./Upgrades/Recipes/VolcanicEruption";
+import { Starfall } from "./Upgrades/Recipes/Starfall";
 
 export const weaponRecipes = [
   new DualCannons(),
@@ -132,4 +133,5 @@ export const weaponRecipes = [
   new GraveTrap(),
   new AncientOfWind(),
   new VolcanicEruption(),
+  new Starfall(),
 ];

@@ -6720,3 +6720,71 @@ STRING 1587
 Volcanic Eruption
 }
 
+STRING 1588
+// Items: I04K (Starfall), Tip (Tooltip - Basic)
+{
+Purchase Starfall
+}
+
+STRING 1589
+// Items: I04K (Starfall), Description (Description)
+{
+Rains stars down on the enemies around your hero every 12 seconds.
+}
+
+STRING 1590
+// Items: I04K (Starfall), Ubertip (Tooltip - Extended)
+{
+Rains stars down on the enemies around your hero every 12 seconds.
+}
+
+STRING 1591
+// Items: I04K (Starfall), Name (Name)
+{
+Starfall
+}
+
+STRING 1592
+// Items: I04L (Starfall), Tip (Tooltip - Basic)
+{
+Purchase Starfall
+}
+
+STRING 1593
+// Items: I04L (Starfall), Ubertip (Tooltip - Extended)
+{
+Every 12 seconds the Priestess of the Moon's Starfall rains stars down on the enemies around your hero for 6 seconds.
+
+Damage: |cffffcc0050 per wave|r
+Cooldown: |cffffcc0012s|r
+Duration: |cffffcc006s|r
+Area of effect: |cffffcc00700|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 1594
+// Items: I04L (Starfall), Description (Description)
+{
+Every 12 seconds the Priestess of the Moon's Starfall rains stars down on the enemies around your hero for 6 seconds.
+
+Damage: |cffffcc0050 per wave|r
+Cooldown: |cffffcc0012s|r
+Duration: |cffffcc006s|r
+Area of effect: |cffffcc00700|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 1595
+// Items: I04L (Starfall), Name (Name)
+{
+Starfall
+}
+
+STRING 1596
+// Abilities: A03K (Starfall), Name (Name)
+{
+Starfall
+}
+
