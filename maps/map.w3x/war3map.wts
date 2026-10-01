@@ -6502,3 +6502,79 @@ STRING 1559
 Plague Mine
 }
 
+STRING 1560
+// Items: I04E (Grave Trap), Tip (Tooltip - Basic)
+{
+Purchase Grave Trap
+}
+
+STRING 1561
+// Items: I04E (Grave Trap), Description (Description)
+{
+Places graves underneath your hero that raise Skeleton Warriors when an enemy steps on them.
+}
+
+STRING 1562
+// Items: I04E (Grave Trap), Ubertip (Tooltip - Extended)
+{
+Places graves underneath your hero that raise Skeleton Warriors when an enemy steps on them.
+}
+
+STRING 1563
+// Items: I04E (Grave Trap), Name (Name)
+{
+Grave Trap
+}
+
+STRING 1564
+// Items: I04F (Grave Trap), Tip (Tooltip - Basic)
+{
+Purchase Grave Trap
+}
+
+STRING 1565
+// Items: I04F (Grave Trap), Ubertip (Tooltip - Extended)
+{
+Places a grave underneath your hero. When an enemy steps on it, 2 Skeleton Warriors claw their way out and fight for you.
+
+Damage: |cffffcc0024 - 28|r
+Cooldown: |cffffcc005s|r
+Health (skeleton): |cffffcc00200|r
+Duration (skeleton): |cffffcc0015s|r
+Mine activation delay: |cffffcc003s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00normal|r
+}
+
+STRING 1566
+// Items: I04F (Grave Trap), Description (Description)
+{
+Places a grave underneath your hero. When an enemy steps on it, 2 Skeleton Warriors claw their way out and fight for you.
+
+Damage: |cffffcc0024 - 28|r
+Cooldown: |cffffcc005s|r
+Health (skeleton): |cffffcc00200|r
+Duration (skeleton): |cffffcc0015s|r
+Mine activation delay: |cffffcc003s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00normal|r
+}
+
+STRING 1567
+// Items: I04F (Grave Trap), Name (Name)
+{
+Grave Trap
+}
+
+STRING 1568
+// Units: u01A (Skeleton Warrior), Name (Name)
+{
+Skeleton Warrior
+}
+
+STRING 1569
+// Units: u01B (Grave), Name (Name)
+{
+Grave
+}
+
