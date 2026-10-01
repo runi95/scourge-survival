@@ -6390,3 +6390,115 @@ STRING 1543
 Frost Nova Barrage
 }
 
+STRING 1544
+// Items: I04C (Plague Mine), Tip (Tooltip - Basic)
+{
+Purchase Plague Mine
+}
+
+STRING 1545
+// Items: I04C (Plague Mine), Description (Description)
+{
+Places Plague Mines underneath your hero that leave a cloud of disease behind when they explode.
+}
+
+STRING 1546
+// Items: I04C (Plague Mine), Ubertip (Tooltip - Extended)
+{
+Places Plague Mines underneath your hero that leave a cloud of disease behind when they explode.
+}
+
+STRING 1547
+// Items: I04C (Plague Mine), Name (Name)
+{
+Plague Mine
+}
+
+STRING 1548
+// Items: I04D (Plague Mine), Tip (Tooltip - Basic)
+{
+Purchase Plague Mine
+}
+
+STRING 1549
+// Items: I04D (Plague Mine), Ubertip (Tooltip - Extended)
+{
+Places a Plague Mine underneath your hero. When it explodes, it leaves a cloud of disease behind that keeps hurting every enemy inside it.
+
+Damage: |cffffcc00100 (explosion) + 20 per second (disease)|r
+Cooldown: |cffffcc004s|r
+Area of effect: |cffffcc00250|r
+Disease duration: |cffffcc008s|r
+Mine activation delay: |cffffcc003s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 1550
+// Items: I04D (Plague Mine), Description (Description)
+{
+Places a Plague Mine underneath your hero. When it explodes, it leaves a cloud of disease behind that keeps hurting every enemy inside it.
+
+Damage: |cffffcc00100 (explosion) + 20 per second (disease)|r
+Cooldown: |cffffcc004s|r
+Area of effect: |cffffcc00250|r
+Disease duration: |cffffcc008s|r
+Mine activation delay: |cffffcc003s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 1551
+// Items: I04D (Plague Mine), Name (Name)
+{
+Plague Mine
+}
+
+STRING 1552
+// Buffs: B008 (buff), Name (Name)
+{
+Disease Cloud
+}
+
+STRING 1553
+// Buffs: B008 (buff), Tip (Tooltip)
+{
+Disease Cloud
+}
+
+STRING 1554
+// Buffs: B008 (buff), Ubertip (Tooltip - Extended)
+{
+This unit is in a cloud of disease; it takes damage over time.
+}
+
+STRING 1555
+// Abilities: A03G (Plague Mine Disease), Name (Name)
+{
+Plague Mine Disease
+}
+
+STRING 1556
+// Units: u019 (Disease Cloud), Name (Name)
+{
+Disease Cloud
+}
+
+STRING 1557
+// Abilities: A03H (Plague Mine Explosion), Name (Name)
+{
+Plague Mine Explosion
+}
+
+STRING 1558
+// Abilities: A03I (Plague Mine), Name (Name)
+{
+Plague Mine
+}
+
+STRING 1559
+// Units: n00X (Plague Mine), Name (Name)
+{
+Plague Mine
+}
+

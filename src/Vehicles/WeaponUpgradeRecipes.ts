@@ -60,6 +60,7 @@ import { CarrionBeetleNest } from "./Upgrades/Recipes/CarrionBeetleNest";
 import { DeathCoil } from "./Upgrades/Recipes/DeathCoil";
 import { DeathAndDecay } from "./Upgrades/Recipes/DeathAndDecay";
 import { FrostNovaBarrage } from "./Upgrades/Recipes/FrostNovaBarrage";
+import { PlagueMine } from "./Upgrades/Recipes/PlagueMine";
 
 export const weaponRecipes = [
   new DualCannons(),
@@ -124,4 +125,5 @@ export const weaponRecipes = [
   new DeathCoil(),
   new DeathAndDecay(),
   new FrostNovaBarrage(),
+  new PlagueMine(),
 ];
