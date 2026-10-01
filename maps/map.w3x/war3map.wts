@@ -6648,3 +6648,75 @@ STRING 1578
 Ancient of Wind
 }
 
+STRING 1579
+// Items: I04I (Volcanic Eruption), Tip (Tooltip - Basic)
+{
+Purchase Volcanic Eruption
+}
+
+STRING 1580
+// Items: I04I (Volcanic Eruption), Description (Description)
+{
+Summons a volcano underneath an enemy every 60 seconds that hurls burning rocks around it.
+}
+
+STRING 1581
+// Items: I04I (Volcanic Eruption), Ubertip (Tooltip - Extended)
+{
+Summons a volcano underneath an enemy every 60 seconds that hurls burning rocks around it.
+}
+
+STRING 1582
+// Items: I04I (Volcanic Eruption), Name (Name)
+{
+Volcanic Eruption
+}
+
+STRING 1583
+// Items: I04J (Volcanic Eruption), Tip (Tooltip - Basic)
+{
+Purchase Volcanic Eruption
+}
+
+STRING 1584
+// Items: I04J (Volcanic Eruption), Ubertip (Tooltip - Extended)
+{
+Summons a volcano underneath a random enemy unit every 60 seconds. For 10 seconds it hurls burning rocks around it, damaging and stunning the enemies they land on.
+
+Damage: |cffffcc00100 per rock (50 at the edges)|r
+Cooldown: |cffffcc0060s|r
+Duration: |cffffcc0010s|r
+Range: |cffffcc00800|r
+Area of effect: |cffffcc00500|r
+Stun duration: |cffffcc001s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 1585
+// Items: I04J (Volcanic Eruption), Description (Description)
+{
+Summons a volcano underneath a random enemy unit every 60 seconds. For 10 seconds it hurls burning rocks around it, damaging and stunning the enemies they land on.
+
+Damage: |cffffcc00100 per rock (50 at the edges)|r
+Cooldown: |cffffcc0060s|r
+Duration: |cffffcc0010s|r
+Range: |cffffcc00800|r
+Area of effect: |cffffcc00500|r
+Stun duration: |cffffcc001s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 1586
+// Items: I04J (Volcanic Eruption), Name (Name)
+{
+Volcanic Eruption
+}
+
+STRING 1587
+// Abilities: A03J (Volcanic Eruption), Name (Name)
+{
+Volcanic Eruption
+}
+
