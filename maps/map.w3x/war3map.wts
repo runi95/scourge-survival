@@ -6104,3 +6104,75 @@ STRING 1505
 Crypt
 }
 
+STRING 1506
+// Items: I044 (Carrion Beetle Nest), Tip (Tooltip - Basic)
+{
+Purchase Carrion Beetle Nest
+}
+
+STRING 1507
+// Items: I044 (Carrion Beetle Nest), Description (Description)
+{
+Spawns Carrion Beetles from nearby corpses.
+}
+
+STRING 1508
+// Items: I044 (Carrion Beetle Nest), Ubertip (Tooltip - Extended)
+{
+Spawns Carrion Beetles from nearby corpses.
+}
+
+STRING 1509
+// Items: I044 (Carrion Beetle Nest), Name (Name)
+{
+Carrion Beetle Nest
+}
+
+STRING 1510
+// Items: I045 (Carrion Beetle Nest), Tip (Tooltip - Basic)
+{
+Purchase Carrion Beetle Nest
+}
+
+STRING 1511
+// Items: I045 (Carrion Beetle Nest), Ubertip (Tooltip - Extended)
+{
+Spawns Carrion Beetles from any nearby corpse.
+
+Damage: |cffffcc0012 - 15|r
+Cooldown: |cffffcc003s|r
+Duration: |cffffcc0030s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00normal|r
+}
+
+STRING 1512
+// Items: I045 (Carrion Beetle Nest), Description (Description)
+{
+Spawns Carrion Beetles from any nearby corpse.
+
+Damage: |cffffcc0012 - 15|r
+Cooldown: |cffffcc003s|r
+Duration: |cffffcc0030s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00normal|r
+}
+
+STRING 1513
+// Items: I045 (Carrion Beetle Nest), Name (Name)
+{
+Carrion Beetle Nest
+}
+
+STRING 1514
+// Units: u017 (Carrion Beetle), Name (Name)
+{
+Carrion Beetle
+}
+
+STRING 1515
+// Abilities: A03C (Carrion Beetle Nest), Name (Name)
+{
+Carrion Beetle Nest
+}
+
