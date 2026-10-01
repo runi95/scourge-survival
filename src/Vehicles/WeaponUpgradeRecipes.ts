@@ -62,6 +62,7 @@ import { DeathAndDecay } from "./Upgrades/Recipes/DeathAndDecay";
 import { FrostNovaBarrage } from "./Upgrades/Recipes/FrostNovaBarrage";
 import { PlagueMine } from "./Upgrades/Recipes/PlagueMine";
 import { GraveTrap } from "./Upgrades/Recipes/GraveTrap";
+import { AncientOfWind } from "./Upgrades/Recipes/AncientOfWind";
 
 export const weaponRecipes = [
   new DualCannons(),
@@ -128,4 +129,5 @@ export const weaponRecipes = [
   new FrostNovaBarrage(),
   new PlagueMine(),
   new GraveTrap(),
+  new AncientOfWind(),
 ];

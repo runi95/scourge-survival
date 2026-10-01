@@ -6578,3 +6578,73 @@ STRING 1569
 Grave
 }
 
+STRING 1570
+// Items: I04G (Ancient of Wind), Tip (Tooltip - Basic)
+{
+Purchase Ancient of Wind
+}
+
+STRING 1571
+// Items: I04G (Ancient of Wind), Description (Description)
+{
+Uproots an Ancient of Wind next to your hero every 60 seconds that pounds enemies with slow, heavy blows.
+}
+
+STRING 1572
+// Items: I04G (Ancient of Wind), Ubertip (Tooltip - Extended)
+{
+Uproots an Ancient of Wind next to your hero every 60 seconds that pounds enemies with slow, heavy blows.
+}
+
+STRING 1573
+// Items: I04G (Ancient of Wind), Name (Name)
+{
+Ancient of Wind
+}
+
+STRING 1574
+// Items: I04H (Ancient of Wind), Tip (Tooltip - Basic)
+{
+Purchase Ancient of Wind
+}
+
+STRING 1575
+// Items: I04H (Ancient of Wind), Ubertip (Tooltip - Extended)
+{
+Uproots an Ancient of Wind next to your hero every 60 seconds.
+
+Damage: |cffffcc00120 - 160|r
+Cooldown: |cffffcc0060s|r
+Range: |cffffcc00600|r
+Health: |cffffcc001000|r
+Duration: |cffffcc0045s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00siege|r
+}
+
+STRING 1576
+// Items: I04H (Ancient of Wind), Description (Description)
+{
+Uproots an Ancient of Wind next to your hero every 60 seconds.
+
+Damage: |cffffcc00120 - 160|r
+Cooldown: |cffffcc0060s|r
+Range: |cffffcc00600|r
+Health: |cffffcc001000|r
+Duration: |cffffcc0045s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00siege|r
+}
+
+STRING 1577
+// Items: I04H (Ancient of Wind), Name (Name)
+{
+Ancient of Wind
+}
+
+STRING 1578
+// Units: e000 (Ancient of Wind), Name (Name)
+{
+Ancient of Wind
+}
+
