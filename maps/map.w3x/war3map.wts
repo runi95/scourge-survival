@@ -6788,3 +6788,83 @@ STRING 1596
 Starfall
 }
 
+STRING 1597
+// Items: I04M (Metamorphosis), Tip (Tooltip - Basic)
+{
+Purchase Metamorphosis
+}
+
+STRING 1598
+// Items: I04M (Metamorphosis), Description (Description)
+{
+Summons a Demon Hunter that transforms into a demon and attacks nearby enemy units.
+}
+
+STRING 1599
+// Items: I04M (Metamorphosis), Ubertip (Tooltip - Extended)
+{
+Summons a Demon Hunter that transforms into a demon and attacks nearby enemy units.
+}
+
+STRING 1600
+// Items: I04M (Metamorphosis), Name (Name)
+{
+Metamorphosis
+}
+
+STRING 1601
+// Items: I04N (Metamorphosis), Tip (Tooltip - Basic)
+{
+Purchase Metamorphosis
+}
+
+STRING 1602
+// Items: I04N (Metamorphosis), Ubertip (Tooltip - Extended)
+{
+Summons a morphed Demon Hunter that attacks nearby enemy units.
+
+Damage: |cffffcc0060|r
+Cooldown: |cffffcc0060s|r
+Duration: |cffffcc0015s|r
+Range: |cffffcc00600|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00chaos|r
+}
+
+STRING 1603
+// Items: I04N (Metamorphosis), Description (Description)
+{
+Summons a morphed Demon Hunter that attacks nearby enemy units.
+
+Damage: |cffffcc0060|r
+Cooldown: |cffffcc0060s|r
+Duration: |cffffcc0015s|r
+Range: |cffffcc00600|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00chaos|r
+}
+
+STRING 1604
+// Items: I04N (Metamorphosis), Name (Name)
+{
+Metamorphosis
+}
+
+STRING 1605
+// Units: e001 (Demon Hunter (Demon Form)), Name (Name)
+{
+Demon Hunter (Demon Form)
+}
+
+STRING 1606
+// Units: e002 (Demon Hunter), Name (Name)
+{
+Demon Hunter
+}
+
+STRING 1607
+// Abilities: A03L (Metamorphosis), Name (Name)
+{
+Metamorphosis
+}
+
