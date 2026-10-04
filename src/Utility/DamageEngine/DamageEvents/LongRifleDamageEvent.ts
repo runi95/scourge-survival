@@ -22,7 +22,7 @@ export class LongRifleDamageEvent implements DamageEvent {
     );
     damageInstance.damage = Math.max(
       75,
-      Math.min(1500, Math.round(distance / 1500)) * damageInstance.damage,
+      Math.min(1, distance / 1500) * damageInstance.damage,
     );
   }
 }
