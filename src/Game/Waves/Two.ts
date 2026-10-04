@@ -6,7 +6,7 @@ export const TWO: Wave = {
     [
       {
         delay: 0.1,
-        count: 12,
+        count: 15,
         unitTypeId: CREEP_TYPE.SKELETON_WARRIOR,
       },
     ],
