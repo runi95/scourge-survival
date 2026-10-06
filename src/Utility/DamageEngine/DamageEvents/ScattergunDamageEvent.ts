@@ -20,6 +20,6 @@ export class ScattergunDamageEvent implements DamageEvent {
           2,
         ),
     );
-    damageInstance.damage = 90 - 75 * Math.min(1, distance / 500);
+    damageInstance.damage = 400 - 334 * Math.min(1, distance / 500);
   }
 }

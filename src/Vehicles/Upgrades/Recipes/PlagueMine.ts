@@ -21,11 +21,9 @@ export class PlagueMine extends WeaponUpgradeRecipe {
   private readonly itemElapsed = new Map<number, number>();
   private readonly trapUnitTypeId: number = FourCC("n00X");
   private readonly diseaseCloudUnitTypeId: number = FourCC("u019");
-  private readonly diseaseTrigger: Trigger;
+  private diseaseTrigger: Trigger;
 
-  constructor() {
-    super();
-
+  public onInitialize(): void {
     this.diseaseTrigger = Trigger.create();
     this.diseaseTrigger.registerAnyUnitEvent(EVENT_PLAYER_UNIT_DEATH);
     this.diseaseTrigger.addAction(() => {

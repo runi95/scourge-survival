@@ -51,7 +51,7 @@ export class DeathAndDecay extends WeaponUpgradeRecipe {
       const target =
         enemies[RandomNumberGenerator.random(0, enemies.length - 1)];
       const dummy = Unit.create(owner, this.dummyUnitId, x, y);
-      dummy.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 4);
+      dummy.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 6);
       dummy.addAbility(this.deathAndDecayAbilityId);
       dummy.issueOrderAt("deathanddecay", target.x, target.y);
     });

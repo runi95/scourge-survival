@@ -20,11 +20,10 @@ export class LavaSpawnForge extends WeaponUpgradeRecipe {
   private readonly forgeUnitTypeId: number = FourCC("n00Q");
   private readonly lavaSpawnUnitTypeId: number = FourCC("n00P");
   private readonly smallLavaSpawnUnitTypeId: number = FourCC("n00O");
-  private readonly onDeathTrigger = Trigger.create();
+  private onDeathTrigger: Trigger;
 
-  constructor() {
-    super();
-
+  public onInitialize(): void {
+    this.onDeathTrigger = Trigger.create();
     this.onDeathTrigger.addAction(() => {
       const lavaSpawn = Unit.fromEvent();
       if (lavaSpawn.typeId !== this.lavaSpawnUnitTypeId) return;

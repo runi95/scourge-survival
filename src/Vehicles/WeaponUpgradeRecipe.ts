@@ -24,6 +24,7 @@ export abstract class WeaponUpgradeRecipe implements WeaponUpgradeI {
     itemId: number,
     weaponIndex: number,
   ): void;
+  public onInitialize(): void {}
 
   public applyUpgrade(vehicle: Vehicle): void {
     vehicle.unit.addItemById(this.itemTypeId);

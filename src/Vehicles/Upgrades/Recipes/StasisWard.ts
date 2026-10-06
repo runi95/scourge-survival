@@ -14,15 +14,12 @@ export class StasisWard extends WeaponUpgradeRecipe {
 
   private readonly timers = new Map<number, Timer>();
   private readonly dummyUnitId: number = FourCC("u000");
-  private readonly javelinUnitId: number = FourCC("u013");
   private readonly stasisAbilityId: number = FourCC("A036");
   private readonly stasisWardUnitTypeId: number = FourCC("o001");
-  private readonly stasisBuffId: number = FourCC("Bsta");
-  private readonly detonationTrigger: Trigger;
+  private readonly chainLightningAbilityTypeId: number = FourCC("A000");
+  private detonationTrigger: Trigger;
 
-  constructor() {
-    super();
-
+  public onInitialize(): void {
     this.detonationTrigger = Trigger.create();
     this.detonationTrigger.registerAnyUnitEvent(EVENT_PLAYER_UNIT_DEATH);
     this.detonationTrigger.addAction(() => {
@@ -30,11 +27,7 @@ export class StasisWard extends WeaponUpgradeRecipe {
       if (ward.typeId !== this.stasisWardUnitTypeId) return;
 
       const { owner, x, y } = ward;
-      const t = TimerUtils.newTimer();
-      t.start(0.1, false, () => {
-        TimerUtils.releaseTimer(t);
-        this.throwJavelins(owner, x, y);
-      });
+      this.callChainLightning(owner, x, y);
     });
   }
 
@@ -73,26 +66,23 @@ export class StasisWard extends WeaponUpgradeRecipe {
     TimerUtils.releaseTimer(t);
   }
 
-  private throwJavelins(owner: MapPlayer, x: number, y: number): void {
-    const stunned: Unit[] = [];
+  private callChainLightning(owner: MapPlayer, x: number, y: number): void {
     const loc = Point.create(x, y);
     const grp = Group.fromRange(400, loc);
+    let targets = 0;
     grp.for((u) => {
+      if (targets > 3) return;
       if (!u.isAlive()) return;
       if (!u.isEnemy(owner)) return;
-      if (u.getAbilityLevel(this.stasisBuffId) === 0) return;
+      if (!u.isVisible(owner)) return;
+      targets++;
 
-      stunned.push(u);
+      const dummy = Unit.create(owner, this.dummyUnitId, x, y);
+      dummy.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 1);
+      dummy.addAbility(this.chainLightningAbilityTypeId);
+      dummy.issueTargetOrder("chainlightning", u);
     });
     grp.destroy();
     loc.destroy();
-
-    if (stunned.length === 0) return;
-
-    for (let i = 0; i < 4; i++) {
-      const javelin = Unit.create(owner, this.javelinUnitId, x, y);
-      javelin.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 1);
-      javelin.issueTargetOrder("attack", stunned[i % stunned.length]);
-    }
   }
 }

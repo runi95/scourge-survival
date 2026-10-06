@@ -25,7 +25,7 @@ Damage: |cffffcc008 (attack) + 60 (explosion)|r
 Cooldown: |cffffcc0060s (factory) + 5s (goblin)|r
 Targets: |cffffcc00ground only!|r
 Damage type: |cffffcc00normal (attack) + spell (explosion)|r
-Health: |cffffcc00 300 (factory) + 125 (goblin)|r
+Health: |cffffcc00500 (factory) + 125 (goblin)|r
 Duration: |cffffcc0060s (factory) + 12s (goblin)|r`;
 
   private readonly timers = new Map<number, Timer>();

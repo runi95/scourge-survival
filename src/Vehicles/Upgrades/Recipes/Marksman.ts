@@ -75,7 +75,7 @@ export class Marksman extends WeaponUpgradeRecipe {
 
       source.damageTarget(
         u.handle,
-        10,
+        68,
         false,
         false,
         ATTACK_TYPE_MAGIC,

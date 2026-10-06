@@ -23,11 +23,9 @@ export class NetTrap extends WeaponUpgradeRecipe {
   private readonly trapUnitTypeId: number = FourCC("n00U");
   private readonly dummyUnitTypeId: number = FourCC("u000");
   private readonly netAbilityId: number = FourCC("A030");
-  private readonly netTrigger: Trigger;
+  private netTrigger: Trigger;
 
-  constructor() {
-    super();
-
+  public onInitialize(): void {
     this.netTrigger = Trigger.create();
     this.netTrigger.registerAnyUnitEvent(EVENT_PLAYER_UNIT_DEATH);
     this.netTrigger.addAction(() => {

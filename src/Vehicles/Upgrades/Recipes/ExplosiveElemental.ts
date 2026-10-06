@@ -18,11 +18,10 @@ export class ExplosiveElemental extends WeaponUpgradeRecipe {
   private readonly waterElementalUnitTypeId: number = FourCC("h003");
   private readonly itemWaterElementalMap = new Map<number, Unit>();
   private readonly itemIterations = new Map<number, number>();
-  private readonly onDeathTrigger = Trigger.create();
+  private onDeathTrigger: Trigger;
 
-  constructor() {
-    super();
-
+  public onInitialize(): void {
+    this.onDeathTrigger = Trigger.create();
     this.onDeathTrigger.addAction(() => {
       const dyingUnit = GetDyingUnit();
       const typeId = GetUnitTypeId(dyingUnit);

@@ -13,7 +13,7 @@ export class BerserkerRage extends WeaponUpgradeRecipe {
 
   private readonly timers = new Map<number, Timer>();
   private readonly itemElapsed = new Map<number, number>();
-  private readonly dummyUnitId: number = FourCC("u00X");
+  private readonly dummyUnitId: number = FourCC("u01C");
 
   public onAcquire(
     vehicle: Vehicle,

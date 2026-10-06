@@ -11,7 +11,7 @@ import { Group } from "../../../Utility/Group";
 const MULT = Math.PI / 180;
 
 export class DeathCoil extends WeaponUpgradeRecipe {
-  public readonly cooldown = 3;
+  public readonly cooldown = 1.5;
   public readonly itemTypeId = FourCC("I046");
   public readonly merchantItemTypeId = FourCC("I047");
   public readonly recipe: number[] = [FourCC("I02K"), FourCC("I02K")];

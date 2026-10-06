@@ -9,7 +9,7 @@ import { RandomNumberGenerator } from "../../../Utility/RandomNumberGenerator";
 const MULT = Math.PI / 180;
 
 export class SerpentWard extends WeaponUpgradeRecipe {
-  public readonly cooldown = 8;
+  public readonly cooldown = 12;
   public readonly itemTypeId = FourCC("I03V");
   public readonly merchantItemTypeId = FourCC("I03W");
   public readonly recipe: number[] = [FourCC("I02M"), FourCC("I003")];

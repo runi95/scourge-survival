@@ -1,4 +1,4 @@
-import { Effect, MapPlayer, Timer, Trigger, Unit } from "w3ts";
+import { MapPlayer, Timer, Trigger, Unit } from "w3ts";
 import { OrderId } from "w3ts/globals/order";
 import { TimerUtils } from "../Utility/TimerUtils";
 import { GameMap } from "./GameMap";
@@ -268,11 +268,6 @@ export class Spawner {
         const y = isFirstPortal
           ? GameMap.PLAYER_AREAS[playerId].maxY - 640
           : GameMap.PLAYER_AREAS[playerId].minY + 640;
-        // Effect.create(
-        //   "Abilities\\Spells\\Demon\\DarkPortal\\DarkPortalTarget.mdl",
-        //   x,
-        //   y,
-        // ).destroy();
         const scourgeUnit = Unit.create(
           scourgePlayer,
           unitTypeId,

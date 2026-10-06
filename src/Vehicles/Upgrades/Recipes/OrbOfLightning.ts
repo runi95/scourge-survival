@@ -22,11 +22,9 @@ export class OrbOfLightning extends WeaponUpgradeRecipe {
   private readonly itemElapsed = new Map<number, number>();
   private readonly trapUnitTypeId: number = FourCC("n00V");
   private readonly dummyUnitTypeId: number = FourCC("u000");
-  private readonly crackleTrigger: Trigger;
+  private crackleTrigger: Trigger;
 
-  constructor() {
-    super();
-
+  public onInitialize(): void {
     this.crackleTrigger = Trigger.create();
     this.crackleTrigger.registerAnyUnitEvent(EVENT_PLAYER_UNIT_DEATH);
     this.crackleTrigger.addAction(() => {
@@ -126,7 +124,7 @@ export class OrbOfLightning extends WeaponUpgradeRecipe {
       ).destroy();
       source.damageTarget(
         u.handle,
-        40,
+        250,
         false,
         false,
         ATTACK_TYPE_NORMAL,

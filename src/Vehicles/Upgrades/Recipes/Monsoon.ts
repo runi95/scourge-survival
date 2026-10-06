@@ -7,7 +7,7 @@ import { weaponDummyAbilityIds } from "../../../Utility/WeaponDummyAbilityIds";
 import { WeaponUpgradeRecipe } from "../../WeaponUpgradeRecipe";
 
 export class Monsoon extends WeaponUpgradeRecipe {
-  public readonly cooldown = 3;
+  public readonly cooldown = 2;
   public readonly itemTypeId = FourCC("I004");
   public readonly merchantItemTypeId = FourCC("I00W");
   public readonly recipe: number[] = [FourCC("I00Q"), FourCC("I00Q")];
@@ -27,20 +27,20 @@ export class Monsoon extends WeaponUpgradeRecipe {
     const area = GameMap.PLAYER_AREAS[playerId];
 
     const scourgePlayer = MapPlayer.fromIndex(playerId + 9);
-    t.start(3, true, () => {
+    t.start(this.cooldown, true, () => {
       vehicle.unit.startAbilityCooldown(
         weaponDummyAbilityIds[weaponIndex],
         this.cooldown,
       );
 
       const grp: Group = Group.fromRectOfPlayer(area, scourgePlayer);
-      let hasStruck = false;
+      let targets = 0;
 
       grp.for((u) => {
-        if (hasStruck) return;
+        if (targets > 1) return;
         if (!u.isAlive()) return;
 
-        hasStruck = true;
+        targets++;
         Effect.create(
           "Abilities/Spells/Other/Monsoon/MonsoonBoltTarget.mdl",
           u.x,
@@ -48,7 +48,7 @@ export class Monsoon extends WeaponUpgradeRecipe {
         ).destroy();
         vehicle.unit.damageTarget(
           u.handle,
-          375,
+          425,
           false,
           false,
           ATTACK_TYPE_NORMAL,

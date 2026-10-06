@@ -17,7 +17,7 @@ export class DeathCoilDamageEvent implements DamageEvent {
       GameMap.PLAYER_VEHICLES[damageInstance.sourceOwningPlayerId]?.unit;
     if (hero == null || !hero.isAlive()) return;
 
-    hero.life = hero.life + 50;
+    hero.life = hero.life + 75;
     Effect.createAttachment(
       "Abilities/Spells/Undead/DeathCoil/DeathCoilSpecialArt.mdl",
       hero,

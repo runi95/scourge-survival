@@ -19,7 +19,7 @@ export class Tremor extends WeaponUpgradeRecipe {
   private readonly itemSpeedMultipliers = new Map<number, number>();
   private readonly itemIterations = new Map<number, number>();
   private readonly dummyUnitId: number = FourCC("u000");
-  private readonly shockwaveAbilityId: number = FourCC("A00B");
+  private readonly shockwaveAbilityId: number = FourCC("A00P");
 
   public onAcquire(
     vehicle: Vehicle,

@@ -22,11 +22,9 @@ export class FireTrap extends WeaponUpgradeRecipe {
   private readonly itemElapsed = new Map<number, number>();
   private readonly trapUnitTypeId: number = FourCC("n00S");
   private readonly dummyUnitTypeId: number = FourCC("u000");
-  private readonly eruptionTrigger: Trigger;
+  private eruptionTrigger: Trigger;
 
-  constructor() {
-    super();
-
+  public onInitialize(): void {
     this.eruptionTrigger = Trigger.create();
     this.eruptionTrigger.registerAnyUnitEvent(EVENT_PLAYER_UNIT_DEATH);
     this.eruptionTrigger.addAction(() => {

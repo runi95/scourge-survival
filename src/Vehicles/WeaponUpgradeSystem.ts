@@ -33,6 +33,7 @@ export class WeaponUpgradeSystem {
     }
 
     for (const weaponRecipe of weaponRecipes) {
+      weaponRecipe.onInitialize();
       for (const ingredient of weaponRecipe.recipe) {
         const arr = this.weaponRecipeMap.get(ingredient) ?? [];
         arr.push(weaponRecipe);

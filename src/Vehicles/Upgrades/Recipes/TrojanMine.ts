@@ -6,19 +6,17 @@ import { weaponDummyAbilityIds } from "../../../Utility/WeaponDummyAbilityIds";
 import { WeaponUpgradeRecipe } from "../../WeaponUpgradeRecipe";
 
 export class TrojanMine extends WeaponUpgradeRecipe {
-  public readonly cooldown = 2;
+  public readonly cooldown = 3;
   public readonly itemTypeId = FourCC("I02D");
   public readonly merchantItemTypeId = FourCC("I02C");
   public readonly recipe: number[] = [FourCC("I00O"), FourCC("I003")];
 
   private readonly timers = new Map<number, Timer>();
-  private readonly trojanMineTrigger: Trigger;
+  private trojanMineTrigger: Trigger;
   private readonly trojanMineUnitTypeId: number = FourCC("n00M");
   private readonly clockwerkGoblinUnitTypeId: number = FourCC("n007");
 
-  constructor() {
-    super();
-
+  public onInitialize(): void {
     this.trojanMineTrigger = Trigger.create();
     this.trojanMineTrigger.registerAnyUnitEvent(EVENT_PLAYER_UNIT_DEATH);
     this.trojanMineTrigger.addAction(() => {
@@ -26,7 +24,7 @@ export class TrojanMine extends WeaponUpgradeRecipe {
       if (mine.typeId !== this.trojanMineUnitTypeId) return;
 
       const { owner, x, y } = mine;
-      for (let i = 0; i < 3; i++) {
+      for (let i = 0; i < 2; i++) {
         const dummy = Unit.create(owner, this.clockwerkGoblinUnitTypeId, x, y);
         dummy.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 12);
       }

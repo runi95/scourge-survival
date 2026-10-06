@@ -7,6 +7,8 @@ import { WeaponUpgradeRecipe } from "../../WeaponUpgradeRecipe";
 import { RandomNumberGenerator } from "../../../Utility/RandomNumberGenerator";
 import { Group } from "../../../Utility/Group";
 
+const MULT = Math.PI / 180;
+
 interface Bomber {
   unit: Unit;
   lastBombX: number;
@@ -14,7 +16,7 @@ interface Bomber {
 }
 
 export class CarpetBombing extends WeaponUpgradeRecipe {
-  public readonly cooldown = 10;
+  public readonly cooldown = 14;
   public readonly itemTypeId = FourCC("I02X");
   public readonly merchantItemTypeId = FourCC("I02Y");
   public readonly recipe: number[] = [FourCC("I006"), FourCC("I003")];
@@ -33,14 +35,18 @@ export class CarpetBombing extends WeaponUpgradeRecipe {
     const t: Timer = TimerUtils.newTimer();
     this.timers.set(itemId, t);
     t.start(this.cooldown, true, () => {
-      const target = this.randomEnemy(vehicle.unit, owner);
-      if (target == null) return;
-
       vehicle.unit.startAbilityCooldown(
         weaponDummyAbilityIds[weaponIndex],
         this.cooldown,
       );
-      this.flyOver(vehicle.unit, owner, target);
+
+      const { x, y } = vehicle.unit;
+      const target = this.randomEnemy(vehicle.unit, owner);
+      const angle =
+        target != null
+          ? Math.atan2(target.y - y, target.x - x)
+          : RandomNumberGenerator.random(0, 359) * MULT;
+      this.flyOver(vehicle.unit, owner, angle);
     });
   }
 
@@ -56,9 +62,8 @@ export class CarpetBombing extends WeaponUpgradeRecipe {
     TimerUtils.releaseTimer(t);
   }
 
-  private flyOver(hero: Unit, owner: MapPlayer, target: Unit): void {
+  private flyOver(hero: Unit, owner: MapPlayer, angle: number): void {
     const { x, y } = hero;
-    const angle = Math.atan2(target.y - y, target.x - x);
     const cos = Math.cos(angle);
     const sin = Math.sin(angle);
 
@@ -77,8 +82,8 @@ export class CarpetBombing extends WeaponUpgradeRecipe {
       );
       flyingMachine.issueOrderAt(
         "move",
-        x + 1600 * cos + offsetX,
-        y + 1600 * sin + offsetY,
+        x + 1000 * cos + offsetX,
+        y + 1000 * sin + offsetY,
       );
       bombers.push({
         unit: flyingMachine,
@@ -87,8 +92,8 @@ export class CarpetBombing extends WeaponUpgradeRecipe {
       });
     }
 
-    const endX = x + 1600 * cos;
-    const endY = y + 1600 * sin;
+    const endX = x + 850 * cos;
+    const endY = y + 850 * sin;
     let elapsed = 0;
     const t = TimerUtils.newTimer();
     t.start(0.1, true, () => {
@@ -122,7 +127,7 @@ export class CarpetBombing extends WeaponUpgradeRecipe {
 
   private randomEnemy(source: Unit, owner: MapPlayer): Unit | undefined {
     const enemies: Unit[] = [];
-    const grp = Group.fromRange(1200, source.point);
+    const grp = Group.fromRange(750, source.point);
     grp.for((u) => {
       if (!u.isAlive()) return;
       if (!u.isVisible(owner)) return;

@@ -161,7 +161,7 @@ export class PocketCyclone extends WeaponUpgradeRecipe {
       if (--damageTicks <= 0) {
         cyclone.damageTarget(
           unit.handle,
-          30,
+          104,
           false,
           false,
           ATTACK_TYPE_NORMAL,

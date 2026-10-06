@@ -14,14 +14,12 @@ export class ShockMines extends WeaponUpgradeRecipe {
   public readonly recipe: number[] = [FourCC("I002"), FourCC("I003")];
 
   private readonly timers = new Map<number, Timer>();
-  private readonly shockMinesTrigger: Trigger;
+  private shockMinesTrigger: Trigger;
   private readonly shockMineUnitTypeId: number = FourCC("n00I");
   private readonly dummyUnitTypeId: number = FourCC("u000");
   private readonly shockwaveAbilityId: number = FourCC("A00B");
 
-  constructor() {
-    super();
-
+  public onInitialize(): void {
     this.shockMinesTrigger = Trigger.create();
     this.shockMinesTrigger.registerAnyUnitEvent(EVENT_PLAYER_UNIT_DEATH);
     this.shockMinesTrigger.addAction(() => {

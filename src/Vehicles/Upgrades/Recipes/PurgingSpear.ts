@@ -7,7 +7,7 @@ import { WeaponUpgradeRecipe } from "../../WeaponUpgradeRecipe";
 import { Group } from "../../../Utility/Group";
 
 export class PurgingSpear extends WeaponUpgradeRecipe {
-  public readonly cooldown = 3;
+  public readonly cooldown = 1.5;
   public readonly itemTypeId = FourCC("I03N");
   public readonly merchantItemTypeId = FourCC("I03O");
   public readonly recipe: number[] = [FourCC("I02M"), FourCC("I00Q")];

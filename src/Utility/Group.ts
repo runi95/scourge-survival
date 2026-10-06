@@ -19,8 +19,12 @@ export class Group extends grp.Group {
     );
   }
 
+  // Not GetUnitsInRangeOfLocAll: it calls DestroyBoolExpr(null), which breaks
+  // every event registered with a null filter (TriggerRegisterAnyUnitEventBJ)
   public static fromRange(radius: number, point: Point): Group {
-    return Group.fromHandle(GetUnitsInRangeOfLocAll(radius, point.handle));
+    const g = CreateGroup();
+    GroupEnumUnitsInRangeOfLoc(g, point.handle, radius, null);
+    return Group.fromHandle(g);
   }
 
   public static fromPlayerAndType(player: player, unitId: number): Group {

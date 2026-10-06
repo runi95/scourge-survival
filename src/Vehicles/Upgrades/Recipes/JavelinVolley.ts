@@ -35,7 +35,7 @@ export class JavelinVolley extends WeaponUpgradeRecipe {
 
       let javelinsThrown = 0;
       grp.for((u) => {
-        if (javelinsThrown >= 3) return;
+        if (javelinsThrown >= 4) return;
         if (!u.isAlive()) return;
         if (!u.isVisible(owner)) return;
         if (!u.isEnemy(owner)) return;

@@ -25,7 +25,7 @@ export class RocketFactory extends WeaponUpgradeRecipe {
     const t: Timer = TimerUtils.newTimer();
     this.timers.set(itemId, t);
 
-    let ticks = 4;
+    let ticks = 3;
     t.start(0.5, true, () => {
       const { charges } = item;
       if (charges > 0) {
@@ -52,7 +52,7 @@ export class RocketFactory extends WeaponUpgradeRecipe {
       }
 
       if (ticks <= 0) {
-        ticks = 4;
+        ticks = 3;
         if (charges < 30) {
           item.charges = charges + 1;
         }

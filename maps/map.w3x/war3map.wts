@@ -1981,7 +1981,7 @@ Workshop
 }
 
 STRING 795
-// Abilities: A01D (Workshop), EditorSuffix (Editor Suffix)
+// Units: n00Q (Lava Spawn Forge), EditorSuffix (Name - Editor Suffix)
 {
 (Pocket Factory)
 }
@@ -2545,31 +2545,31 @@ Purchase Storm Elemental
 STRING 877
 // Items: I01V (Storm Elemental), Ubertip (Tooltip - Extended)
 {
-Spawns a static Storm Elemental every 15 seconds. It hurls bolts of lightning that bounce between up to 5 nearby enemy units, losing 15% damage with each bounce.
+Spawns a static Storm Elemental every 5 seconds. It hurls bolts of lightning that bounce between up to 5 nearby enemy units, losing 15% damage with each bounce.
 
 Damage: |cffffcc0040 - 50|r
 Damage reduction (bounce): |cffffcc00-15%|r
 Targets hit (bounce): |cffffcc005|r
-Cooldown: |cffffcc0015s (elemental) + 1s (attack)|r
+Cooldown: |cffffcc005s (elemental) + 1s (attack)|r
 Range: |cffffcc00600|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00magic|r
-Duration: |cffffcc0014s|r
+Duration: |cffffcc0015s|r
 }
 
 STRING 878
 // Items: I01V (Storm Elemental), Description (Description)
 {
-Spawns a static Storm Elemental every 15 seconds. It hurls bolts of lightning that bounce between up to 5 nearby enemy units, losing 15% damage with each bounce.
+Spawns a static Storm Elemental every 5 seconds. It hurls bolts of lightning that bounce between up to 5 nearby enemy units, losing 15% damage with each bounce.
 
 Damage: |cffffcc0040 - 50|r
 Damage reduction (bounce): |cffffcc00-15%|r
 Targets hit (bounce): |cffffcc005|r
-Cooldown: |cffffcc0015s (elemental) + 1s (attack)|r
+Cooldown: |cffffcc005s (elemental) + 1s (attack)|r
 Range: |cffffcc00600|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00magic|r
-Duration: |cffffcc0014s|r
+Duration: |cffffcc0015s|r
 }
 
 STRING 879
@@ -3680,30 +3680,6 @@ STRING 1155
 Rocket
 }
 
-STRING 1156
-// Items: I028 (Rocket Factory), Ubertip (Tooltip - Extended)
-{
-Builds up stacks over time that are then used to fire rockets whenever enemy units are nearby.
-
-Damage: |cffffcc0052|r
-Maximum stacks: |cffffcc0030|r
-Cooldown: |cffffcc002s|r
-Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00siege|r
-}
-
-STRING 1157
-// Items: I028 (Rocket Factory), Description (Description)
-{
-Builds up stacks over time that are then used to fire rockets whenever enemy units are nearby.
-
-Damage: |cffffcc0052|r
-Maximum stacks: |cffffcc0030|r
-Cooldown: |cffffcc002s|r
-Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00siege|r
-}
-
 STRING 1159
 // Items: I029 (Rocket Factory), Description (Description)
 {
@@ -3836,32 +3812,6 @@ STRING 1182
 // Abilities: A00N (Trojan Horse), EditorSuffix (Editor Suffix)
 {
 (Visual Effect)
-}
-
-STRING 1183
-// Items: I02C (Trojan Mine), Ubertip (Tooltip - Extended)
-{
-Places Trojan Mines underneath your hero.
-
-Damage: |cffffcc00150|r
-Cooldown: |cffffcc003s|r
-Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00spell|r
-Mine activation delay: |cffffcc004s|r
-Mine activation: |cffffcc00spawns 3 Clockwerk Goblins|r
-}
-
-STRING 1184
-// Items: I02C (Trojan Mine), Description (Description)
-{
-Places Trojan Mines underneath your hero.
-
-Damage: |cffffcc00150|r
-Cooldown: |cffffcc003s|r
-Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00spell|r
-Mine activation delay: |cffffcc004s|r
-Mine activation: |cffffcc00spawns 3 Clockwerk Goblins|r
 }
 
 STRING 1192
@@ -4458,36 +4408,6 @@ STRING 1283
 Purchase Marksman
 }
 
-STRING 1284
-// Items: I02W (Marksman), Ubertip (Tooltip - Extended)
-{
-Launch a flare at the farthest enemy unit. Flares deal a small amount of damage and temporarily increases the damage taken.
-
-Damage: |cffffcc0010/s|r
-Bonus damage taken: |cffffcc0025%|r
-Cooldown: |cffffcc004s|r
-Duration: |cffffcc004s|r
-Range: |cffffcc001500|r
-Area of effect: |cffffcc00200|r
-Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00magic|r
-}
-
-STRING 1285
-// Items: I02W (Marksman), Description (Description)
-{
-Launch a flare at the farthest enemy unit. Flares deal a small amount of damage and temporarily increases the damage taken.
-
-Damage: |cffffcc0010/s|r
-Bonus damage taken: |cffffcc0025%|r
-Cooldown: |cffffcc004s|r
-Duration: |cffffcc004s|r
-Range: |cffffcc001500|r
-Area of effect: |cffffcc00200|r
-Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00magic|r
-}
-
 STRING 1286
 // Items: I02W (Marksman), Name (Name)
 {
@@ -4495,31 +4415,31 @@ Marksman
 }
 
 STRING 1287
-// Buffs: B007 (buff), Name (Name)
+// Buffs/Effects: B007 (Marked), EditorName (Name (Editor Only))
 {
 Marked
 }
 
 STRING 1288
-// Buffs: B007 (buff), Tip (Tooltip)
+// Buffs/Effects: B007 (Marked), Bufftip (Tooltip)
 {
 Marked
 }
 
 STRING 1289
-// Buffs: B007 (buff), Ubertip (Tooltip - Extended)
+// Buffs/Effects: B007 (Marked), Buffubertip (Tooltip - Extended)
 {
 This unit has been marked by a flare; it takes 25% more damage.
 }
 
 STRING 1290
-// Abilities: A02R (Marksman Flare), Name (Name)
+// Units: u00Y (Marksman Flare), Name (Name)
 {
 Marksman Flare
 }
 
 STRING 1291
-// Units: u00Y (Marksman Flare), Name (Name)
+// Abilities: A02R (Marksman Flare), Name (Name)
 {
 Marksman Flare
 }
@@ -4554,32 +4474,6 @@ STRING 1296
 Purchase Carpet Bombing
 }
 
-STRING 1297
-// Items: I02Y (Carpet Bombing), Ubertip (Tooltip - Extended)
-{
-Every 10 seconds a squadron of 3 Flying Machines flies straight across your area in the direction of a random enemy unit, bombing everything along its path.
-
-Damage: |cffffcc0040 per bomb|r
-Cooldown: |cffffcc0010s|r
-Bombs: |cffffcc001 every 100 distance|r
-Area of effect (bomb): |cffffcc00200|r
-Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00siege|r
-}
-
-STRING 1298
-// Items: I02Y (Carpet Bombing), Description (Description)
-{
-Every 10 seconds a squadron of 3 Flying Machines flies straight across your area in the direction of a random enemy unit, bombing everything along its path.
-
-Damage: |cffffcc0040 per bomb|r
-Cooldown: |cffffcc0010s|r
-Bombs: |cffffcc001 every 100 distance|r
-Area of effect (bomb): |cffffcc00200|r
-Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00siege|r
-}
-
 STRING 1299
 // Items: I02Y (Carpet Bombing), Name (Name)
 {
@@ -4587,13 +4481,13 @@ Carpet Bombing
 }
 
 STRING 1300
-// Abilities: A02S (Carpet Bomb), Name (Name)
+// Units: u00Z (Carpet Bomb), Name (Name)
 {
 Carpet Bomb
 }
 
 STRING 1301
-// Units: u00Z (Carpet Bomb), Name (Name)
+// Abilities: A02S (Carpet Bomb), Name (Name)
 {
 Carpet Bomb
 }
@@ -4667,13 +4561,13 @@ Cannon Tower Mine Explosion
 }
 
 STRING 1311
-// Abilities: A02U (Cannon Tower Mine), Name (Name)
+// Units: n00N (Cannon Tower Mine), Name (Name)
 {
 Cannon Tower Mine
 }
 
 STRING 1312
-// Units: n00N (Cannon Tower Mine), Name (Name)
+// Abilities: A02U (Cannon Tower Mine), Name (Name)
 {
 Cannon Tower Mine
 }
@@ -4697,7 +4591,7 @@ Spawns a Lava Spawn Forge every 60 seconds that spawns Lava Spawns, which split 
 }
 
 STRING 1316
-// Items: I031 (Lava Spawn Forge), Name (Name)
+// Units: n00Q (Lava Spawn Forge), Name (Name)
 {
 Lava Spawn Forge
 }
@@ -4735,7 +4629,7 @@ Damage type: |cffffcc00magic|r
 }
 
 STRING 1320
-// Items: I032 (Lava Spawn Forge), Name (Name)
+// Items: I031 (Lava Spawn Forge), Name (Name)
 {
 Lava Spawn Forge
 }
@@ -4753,7 +4647,7 @@ Lava Spawn
 }
 
 STRING 1323
-// Units: n00Q (Lava Spawn Forge), Name (Name)
+// Items: I032 (Lava Spawn Forge), Name (Name)
 {
 Lava Spawn Forge
 }
@@ -4777,7 +4671,7 @@ Spawns a Barracks every 60 seconds that trains Dwarven Riflemen, who hold their 
 }
 
 STRING 1327
-// Items: I033 (Rifleman Barracks), Name (Name)
+// Units: n00R (Rifleman Barracks), Name (Name)
 {
 Rifleman Barracks
 }
@@ -4817,7 +4711,7 @@ Damage type: |cffffcc00piercing|r
 }
 
 STRING 1331
-// Items: I034 (Rifleman Barracks), Name (Name)
+// Items: I033 (Rifleman Barracks), Name (Name)
 {
 Rifleman Barracks
 }
@@ -4829,7 +4723,7 @@ Dwarven Rifleman
 }
 
 STRING 1333
-// Units: n00R (Rifleman Barracks), Name (Name)
+// Items: I034 (Rifleman Barracks), Name (Name)
 {
 Rifleman Barracks
 }
@@ -4923,7 +4817,7 @@ The drunken dwarf may now set units on fire when attacking them.
 }
 
 STRING 1346
-// Items: I037 (Dragonbreath Shot), Name (Name)
+// Units: u010 (Dragonbreath Shot), Name (Name)
 {
 Dragonbreath Shot
 }
@@ -4934,34 +4828,8 @@ STRING 1347
 Purchase Dragonbreath Shot
 }
 
-STRING 1348
-// Items: I038 (Dragonbreath Shot), Ubertip (Tooltip - Extended)
-{
-The drunken dwarf may now sets units on fire when attacking them.
-
-Damage: |cffffcc00150 (shot) + 25 per second (fire)|r
-Cooldown: |cffffcc005s|r
-Range: |cffffcc001500|r
-Duration (fire): |cffffcc004s|r
-Targets: |cffffcc00air & ground (shot), ground only! (fire)|r
-Damage type: |cffffcc00piercing (shot) + magic (fire)|r
-}
-
-STRING 1349
-// Items: I038 (Dragonbreath Shot), Description (Description)
-{
-The drunken dwarf may now sets units on fire when attacking them.
-
-Damage: |cffffcc00150 (shot) + 25 per second (fire)|r
-Cooldown: |cffffcc005s|r
-Range: |cffffcc001500|r
-Duration (fire): |cffffcc004s|r
-Targets: |cffffcc00air & ground (shot), ground only! (fire)|r
-Damage type: |cffffcc00piercing (shot) + magic (fire)|r
-}
-
 STRING 1350
-// Items: I038 (Dragonbreath Shot), Name (Name)
+// Items: I037 (Dragonbreath Shot), Name (Name)
 {
 Dragonbreath Shot
 }
@@ -4979,7 +4847,7 @@ Dragonbreath Shot Breath of Fire
 }
 
 STRING 1353
-// Units: u010 (Dragonbreath Shot), Name (Name)
+// Items: I038 (Dragonbreath Shot), Name (Name)
 {
 Dragonbreath Shot
 }
@@ -5003,7 +4871,7 @@ Places Fire Traps underneath your hero that erupt into burning pillars of fire.
 }
 
 STRING 1357
-// Items: I039 (Fire Trap), Name (Name)
+// Units: n00S (Fire Trap), Name (Name)
 {
 Fire Trap
 }
@@ -5041,7 +4909,7 @@ Damage type: |cffffcc00spell (eruption) + magic (burn)|r
 }
 
 STRING 1361
-// Items: I03A (Fire Trap), Name (Name)
+// Items: I039 (Fire Trap), Name (Name)
 {
 Fire Trap
 }
@@ -5053,7 +4921,7 @@ Fire Trap Eruption
 }
 
 STRING 1363
-// Units: n00S (Fire Trap), Name (Name)
+// Items: I03A (Fire Trap), Name (Name)
 {
 Fire Trap
 }
@@ -5077,7 +4945,7 @@ A dwarf with a scattergun shoots enemies up close, hitting everything around the
 }
 
 STRING 1367
-// Items: I03B (Scattergun), Name (Name)
+// Units: u011 (Scattergun), Name (Name)
 {
 Scattergun
 }
@@ -5115,13 +4983,13 @@ Damage type: |cffffcc00piercing|r
 }
 
 STRING 1371
-// Items: I03C (Scattergun), Name (Name)
+// Items: I03B (Scattergun), Name (Name)
 {
 Scattergun
 }
 
 STRING 1372
-// Units: u011 (Scattergun), Name (Name)
+// Items: I03C (Scattergun), Name (Name)
 {
 Scattergun
 }
@@ -5191,13 +5059,13 @@ Marksman's Trap
 }
 
 STRING 1381
-// Abilities: A02Z (Marksman's Trap Mine), Name (Name)
+// Units: n00T (Marksman's Trap Mine), Name (Name)
 {
 Marksman's Trap Mine
 }
 
 STRING 1382
-// Units: n00T (Marksman's Trap Mine), Name (Name)
+// Abilities: A02Z (Marksman's Trap Mine), Name (Name)
 {
 Marksman's Trap Mine
 }
@@ -5285,7 +5153,7 @@ Throws poisoned javelins that slow enemy units and damage them over time.
 }
 
 STRING 1395
-// Items: I03H (Envenomed Spears), Name (Name)
+// Units: u012 (Envenomed Spears), Name (Name)
 {
 Envenomed Spears
 }
@@ -5325,19 +5193,19 @@ Damage type: |cffffcc00piercing (javelin) + magic (poison)|r
 }
 
 STRING 1399
-// Items: I03I (Envenomed Spears), Name (Name)
+// Items: I03H (Envenomed Spears), Name (Name)
 {
 Envenomed Spears
 }
 
 STRING 1400
-// Abilities: A031 (Envenomed Spears), Name (Name)
+// Items: I03I (Envenomed Spears), Name (Name)
 {
 Envenomed Spears
 }
 
 STRING 1401
-// Units: u012 (Envenomed Spears), Name (Name)
+// Abilities: A031 (Envenomed Spears), Name (Name)
 {
 Envenomed Spears
 }
@@ -5361,7 +5229,7 @@ Throws javelins at nearby enemies, faster the more wounded your hero is.
 }
 
 STRING 1405
-// Items: I03J (Berserker Rage), Name (Name)
+// Units: u01C (Berserker Rage), Name (Name)
 {
 Berserker Rage
 }
@@ -5397,7 +5265,7 @@ Damage type: |cffffcc00piercing|r
 }
 
 STRING 1409
-// Items: I03K (Berserker Rage), Name (Name)
+// Items: I03J (Berserker Rage), Name (Name)
 {
 Berserker Rage
 }
@@ -5421,7 +5289,7 @@ Throws a volley of javelins at up to 3 different enemy units at once.
 }
 
 STRING 1413
-// Items: I03L (Javelin Volley), Name (Name)
+// Units: u013 (Javelin Volley), Name (Name)
 {
 Javelin Volley
 }
@@ -5457,13 +5325,13 @@ Damage type: |cffffcc00piercing|r
 }
 
 STRING 1417
-// Items: I03M (Javelin Volley), Name (Name)
+// Items: I03L (Javelin Volley), Name (Name)
 {
 Javelin Volley
 }
 
 STRING 1418
-// Units: u013 (Javelin Volley), Name (Name)
+// Items: I03M (Javelin Volley), Name (Name)
 {
 Javelin Volley
 }
@@ -5487,7 +5355,7 @@ Throws a spear imbued with Purge at a nearby enemy unit, slowing it and dealing 
 }
 
 STRING 1422
-// Items: I03N (Purging Spear), Name (Name)
+// Units: u014 (Purging Spear), Name (Name)
 {
 Purging Spear
 }
@@ -5525,19 +5393,19 @@ Damage type: |cffffcc00piercing (spear) + spell (purge)|r
 }
 
 STRING 1426
-// Items: I03O (Purging Spear), Name (Name)
+// Items: I03N (Purging Spear), Name (Name)
 {
 Purging Spear
 }
 
 STRING 1427
-// Abilities: A032 (Purging Spear), Name (Name)
+// Items: I03O (Purging Spear), Name (Name)
 {
 Purging Spear
 }
 
 STRING 1428
-// Units: u014 (Purging Spear), Name (Name)
+// Abilities: A032 (Purging Spear), Name (Name)
 {
 Purging Spear
 }
@@ -5635,7 +5503,7 @@ Places traps underneath your hero that explode and throw nets over every enemy a
 }
 
 STRING 1442
-// Items: I03R (Net Trap), Name (Name)
+// Units: n00U (Net Trap), Name (Name)
 {
 Net Trap
 }
@@ -5675,7 +5543,7 @@ Damage type: |cffffcc00spell|r
 }
 
 STRING 1446
-// Items: I03S (Net Trap), Name (Name)
+// Items: I03R (Net Trap), Name (Name)
 {
 Net Trap
 }
@@ -5687,13 +5555,13 @@ Net Trap Explosion
 }
 
 STRING 1448
-// Abilities: A035 (Net Trap), Name (Name)
+// Items: I03S (Net Trap), Name (Name)
 {
 Net Trap
 }
 
 STRING 1449
-// Units: n00U (Net Trap), Name (Name)
+// Abilities: A035 (Net Trap), Name (Name)
 {
 Net Trap
 }
@@ -5717,7 +5585,7 @@ Plants Stasis Wards underneath your hero that stun nearby enemies and pelt them 
 }
 
 STRING 1453
-// Items: I03T (Stasis Ward), Name (Name)
+// Units: o001 (Stasis Ward), Name (Name)
 {
 Stasis Ward
 }
@@ -5757,13 +5625,13 @@ Damage type: |cffffcc00piercing|r
 }
 
 STRING 1457
-// Items: I03U (Stasis Ward), Name (Name)
+// Items: I03T (Stasis Ward), Name (Name)
 {
 Stasis Ward
 }
 
 STRING 1458
-// Units: o001 (Stasis Ward), Name (Name)
+// Items: I03U (Stasis Ward), Name (Name)
 {
 Stasis Ward
 }
@@ -5793,7 +5661,7 @@ Plants Serpent Wards next to your hero that attack nearby enemy units.
 }
 
 STRING 1463
-// Items: I03V (Serpent Ward), Name (Name)
+// Units: o002 (Serpent Ward), Name (Name)
 {
 Serpent Ward
 }
@@ -5831,13 +5699,13 @@ Damage type: |cffffcc00spell|r
 }
 
 STRING 1467
-// Items: I03W (Serpent Ward), Name (Name)
+// Items: I03V (Serpent Ward), Name (Name)
 {
 Serpent Ward
 }
 
 STRING 1468
-// Units: o002 (Serpent Ward), Name (Name)
+// Items: I03W (Serpent Ward), Name (Name)
 {
 Serpent Ward
 }
@@ -5867,7 +5735,7 @@ Places static fields underneath your hero that shock every enemy inside them onc
 }
 
 STRING 1473
-// Items: I03X (Orb of Lightning), Name (Name)
+// Units: n00V (Orb of Lightning), Name (Name)
 {
 Orb of Lightning
 }
@@ -5905,7 +5773,7 @@ Damage type: |cffffcc00spell|r
 }
 
 STRING 1477
-// Items: I03Y (Orb of Lightning), Name (Name)
+// Items: I03X (Orb of Lightning), Name (Name)
 {
 Orb of Lightning
 }
@@ -5917,13 +5785,13 @@ Orb of Lightning Activation
 }
 
 STRING 1479
-// Abilities: A039 (Orb of Lightning), Name (Name)
+// Items: I03Y (Orb of Lightning), Name (Name)
 {
 Orb of Lightning
 }
 
 STRING 1480
-// Units: n00V (Orb of Lightning), Name (Name)
+// Abilities: A039 (Orb of Lightning), Name (Name)
 {
 Orb of Lightning
 }
@@ -5947,7 +5815,7 @@ Throws increasingly rapid lightning-charged spears when standing still, each arc
 }
 
 STRING 1484
-// Items: I03Z (Thunder Spears), Name (Name)
+// Units: u015 (Thunder Spears), Name (Name)
 {
 Thunder Spears
 }
@@ -5983,19 +5851,19 @@ Damage type: |cffffcc00piercing (spear) + spell (lightning)|r
 }
 
 STRING 1488
-// Items: I040 (Thunder Spears), Name (Name)
+// Items: I03Z (Thunder Spears), Name (Name)
 {
 Thunder Spears
 }
 
 STRING 1489
-// Abilities: A03A (Thunder Spears), Name (Name)
+// Items: I040 (Thunder Spears), Name (Name)
 {
 Thunder Spears
 }
 
 STRING 1490
-// Units: u015 (Thunder Spears), Name (Name)
+// Abilities: A03A (Thunder Spears), Name (Name)
 {
 Thunder Spears
 }
@@ -6049,7 +5917,7 @@ Raises a Crypt every 60 seconds that sends out Ghouls to rush the nearest enemy.
 }
 
 STRING 1499
-// Items: I042 (Crypt), Name (Name)
+// Units: n00W (Crypt), Name (Name)
 {
 Crypt
 }
@@ -6087,7 +5955,7 @@ Damage type: |cffffcc00normal|r
 }
 
 STRING 1503
-// Items: I043 (Crypt), Name (Name)
+// Items: I042 (Crypt), Name (Name)
 {
 Crypt
 }
@@ -6099,7 +5967,7 @@ Ghoul
 }
 
 STRING 1505
-// Units: n00W (Crypt), Name (Name)
+// Items: I043 (Crypt), Name (Name)
 {
 Crypt
 }
@@ -6409,7 +6277,7 @@ Places Plague Mines underneath your hero that leave a cloud of disease behind wh
 }
 
 STRING 1547
-// Items: I04C (Plague Mine), Name (Name)
+// Units: n00X (Plague Mine), Name (Name)
 {
 Plague Mine
 }
@@ -6449,25 +6317,25 @@ Damage type: |cffffcc00spell|r
 }
 
 STRING 1551
-// Items: I04D (Plague Mine), Name (Name)
+// Items: I04C (Plague Mine), Name (Name)
 {
 Plague Mine
 }
 
 STRING 1552
-// Buffs: B008 (buff), Name (Name)
+// Units: u019 (Disease Cloud), Name (Name)
 {
 Disease Cloud
 }
 
 STRING 1553
-// Buffs: B008 (buff), Tip (Tooltip)
+// Buffs/Effects: B008 (Disease Cloud), EditorName (Name (Editor Only))
 {
 Disease Cloud
 }
 
 STRING 1554
-// Buffs: B008 (buff), Ubertip (Tooltip - Extended)
+// Buffs/Effects: B008 (Disease Cloud), Buffubertip (Tooltip - Extended)
 {
 This unit is in a cloud of disease; it takes damage over time.
 }
@@ -6479,7 +6347,7 @@ Plague Mine Disease
 }
 
 STRING 1556
-// Units: u019 (Disease Cloud), Name (Name)
+// Buffs/Effects: B008 (Disease Cloud), Bufftip (Tooltip)
 {
 Disease Cloud
 }
@@ -6491,13 +6359,13 @@ Plague Mine Explosion
 }
 
 STRING 1558
-// Abilities: A03I (Plague Mine), Name (Name)
+// Items: I04D (Plague Mine), Name (Name)
 {
 Plague Mine
 }
 
 STRING 1559
-// Units: n00X (Plague Mine), Name (Name)
+// Abilities: A03I (Plague Mine), Name (Name)
 {
 Plague Mine
 }
@@ -6597,7 +6465,7 @@ Uproots an Ancient of Wind next to your hero every 60 seconds that pounds enemie
 }
 
 STRING 1573
-// Items: I04G (Ancient of Wind), Name (Name)
+// Units: e000 (Ancient of Wind), Name (Name)
 {
 Ancient of Wind
 }
@@ -6637,13 +6505,13 @@ Damage type: |cffffcc00siege|r
 }
 
 STRING 1577
-// Items: I04H (Ancient of Wind), Name (Name)
+// Items: I04G (Ancient of Wind), Name (Name)
 {
 Ancient of Wind
 }
 
 STRING 1578
-// Units: e000 (Ancient of Wind), Name (Name)
+// Items: I04H (Ancient of Wind), Name (Name)
 {
 Ancient of Wind
 }
@@ -6866,5 +6734,398 @@ STRING 1607
 // Abilities: A03L (Metamorphosis), Name (Name)
 {
 Metamorphosis
+}
+
+STRING 1608
+// Units: n00R (Rifleman Barracks), EditorSuffix (Name - Editor Suffix)
+{
+(Pocket Factory)
+}
+
+STRING 1609
+// Units: n00W (Crypt), EditorSuffix (Name - Editor Suffix)
+{
+(Pocket Factory)
+}
+
+STRING 1612
+// Abilities: A01D (Workshop), EditorSuffix (Editor Suffix)
+{
+(Pocket Factory)
+}
+
+STRING 1615
+// Items: I038 (Dragonbreath Shot), Ubertip (Tooltip - Extended)
+{
+That drunken dwarf now sets units on fire when attacking them.
+
+Damage: |cffffcc00150 (shot) + 25 per second (fire)|r
+Cooldown: |cffffcc005s|r
+Range: |cffffcc001500|r
+Duration (fire): |cffffcc004s|r
+Targets: |cffffcc00air & ground (shot), ground only! (fire)|r
+Damage type: |cffffcc00piercing (shot) + magic (fire)|r
+}
+
+STRING 1616
+// Items: I038 (Dragonbreath Shot), Description (Description)
+{
+That drunken dwarf now sets units on fire when attacking them.
+
+Damage: |cffffcc00150 (shot) + 25 per second (fire)|r
+Cooldown: |cffffcc005s|r
+Range: |cffffcc001500|r
+Duration (fire): |cffffcc004s|r
+Targets: |cffffcc00air & ground (shot), ground only! (fire)|r
+Damage type: |cffffcc00piercing (shot) + magic (fire)|r
+}
+
+STRING 1617
+// Items: I02W (Marksman), Ubertip (Tooltip - Extended)
+{
+Launch a flare at the farthest enemy unit. Flares deal a small amount of damage and temporarily increases the damage taken.
+
+Damage: |cffffcc0040/s|r
+Bonus damage taken: |cffffcc0025%|r
+Cooldown: |cffffcc004s|r
+Duration: |cffffcc004s|r
+Range: |cffffcc001500|r
+Area of effect: |cffffcc00200|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00magic|r
+}
+
+STRING 1618
+// Items: I02W (Marksman), Description (Description)
+{
+Launch a flare at the farthest enemy unit. Flares deal a small amount of damage and temporarily increases the damage taken.
+
+Damage: |cffffcc0040/s|r
+Bonus damage taken: |cffffcc0025%|r
+Cooldown: |cffffcc004s|r
+Duration: |cffffcc004s|r
+Range: |cffffcc001500|r
+Area of effect: |cffffcc00200|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00magic|r
+}
+
+STRING 1619
+// Items: I028 (Rocket Factory), Ubertip (Tooltip - Extended)
+{
+Builds up stacks over time that are then used to fire rockets whenever enemy units are nearby.
+
+Damage: |cffffcc0091|r
+Maximum stacks: |cffffcc0030|r
+Cooldown: |cffffcc002s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00siege|r
+}
+
+STRING 1620
+// Items: I028 (Rocket Factory), Description (Description)
+{
+Builds up stacks over time that are then used to fire rockets whenever enemy units are nearby.
+
+Damage: |cffffcc0091|r
+Maximum stacks: |cffffcc0030|r
+Cooldown: |cffffcc002s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00siege|r
+}
+
+STRING 1668
+// Items: I02Y (Carpet Bombing), Ubertip (Tooltip - Extended)
+{
+Every 14 seconds a squadron of 3 Flying Machines flies straight across your area in the direction of a random enemy unit, bombing everything along its path.
+
+Damage: |cffffcc0018 - 50 per bomb|r
+Cooldown: |cffffcc0014s|r
+Bombs: |cffffcc001 every 100 distance|r
+Area of effect (bomb): |cffffcc0075 (max damage) - 200 (min damage)|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00siege|r
+}
+
+STRING 1669
+// Items: I02Y (Carpet Bombing), Description (Description)
+{
+Every 14 seconds a squadron of 3 Flying Machines flies straight across your area in the direction of a random enemy unit, bombing everything along its path.
+
+Damage: |cffffcc0018 - 50 per bomb|r
+Cooldown: |cffffcc0014s|r
+Bombs: |cffffcc001 every 100 distance|r
+Area of effect (bomb): |cffffcc0075 (max damage) - 200 (min damage)|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00siege|r
+}
+
+STRING 1670
+// Items: I02C (Trojan Mine), Ubertip (Tooltip - Extended)
+{
+Places Trojan Mines underneath your hero.
+
+Damage: |cffffcc0040 - 100|r
+Cooldown: |cffffcc003s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell|r
+Mine activation delay: |cffffcc004s|r
+Mine activation: |cffffcc00spawns 3 Clockwerk Goblins|r
+}
+
+STRING 1671
+// Items: I02C (Trojan Mine), Description (Description)
+{
+Places Trojan Mines underneath your hero.
+
+Damage: |cffffcc0040 - 100|r
+Cooldown: |cffffcc003s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell|r
+Mine activation delay: |cffffcc004s|r
+Mine activation: |cffffcc00spawns 3 Clockwerk Goblins|r
+}
+
+STRING 1672
+{
+Fortified armor takes this much damage:|n|cffff4040+25%|r from Siege attacks and Hero attacks|n|cff40ff40-15%|r from Normal attacks, Piercing attacks and Magic attacks|nFull damage from everything else.
+}
+
+STRING 1673
+{
+Heroes take this much damage:|n|cff40ff40-5%|r from Piercing attacks|n|cff40ff40-25%|r from Magic attacks and Spells|nFull damage from everything else.
+}
+
+STRING 1674
+{
+Heavy armor takes this much damage:|n|cffff4040+25%|r from Magic attacks|n|cffff4040+10%|r from Hero attacks|nFull damage from everything else.
+}
+
+STRING 1675
+{
+Medium armor takes this much damage:|n|cffff4040+25%|r from Normal attacks|n|cffff4040+5%|r from Hero attacks|n|cff40ff40-5%|r from Magic attacks|n|cff40ff40-15%|r from Piercing attacks|n|cff40ff40-25%|r from Siege attacks|nFull damage from everything else.
+}
+
+STRING 1676
+{
+Normal armor takes this much damage:|n|cffff4040+5%|r from Piercing attacks and Magic attacks|n|cff40ff40-10%|r from Hero attacks|n|cff40ff40-20%|r from Siege attacks|nFull damage from everything else.
+}
+
+STRING 1677
+{
+Light armor takes this much damage:|n|cffff4040+25%|r from Piercing attacks and Magic attacks|n|cff40ff40-5%|r from Hero attacks|nFull damage from everything else.
+}
+
+STRING 1678
+{
+Divine beings take full damage from all attack types.
+}
+
+STRING 1679
+{
+Unarmored units take this much damage:|n|cffff4040+20%|r from Siege attacks|n|cffff4040+15%|r from Piercing attacks|n|cff40ff40-25%|r from Hero attacks|nFull damage from everything else.
+}
+
+STRING 1680
+{
+Fortified armor takes this much damage:|n|cffff4040+25%|r from Siege attacks and Hero attacks|n|cff40ff40-15%|r from Normal attacks, Piercing attacks and Magic attacks|nFull damage from everything else.
+}
+
+STRING 1681
+{
+Heroes take this much damage:|n|cff40ff40-5%|r from Piercing attacks|n|cff40ff40-25%|r from Magic attacks and Spells|nFull damage from everything else.
+}
+
+STRING 1682
+{
+Heavy armor takes this much damage:|n|cffff4040+25%|r from Magic attacks|n|cffff4040+10%|r from Hero attacks|nFull damage from everything else.
+}
+
+STRING 1683
+{
+Medium armor takes this much damage:|n|cffff4040+25%|r from Normal attacks|n|cffff4040+5%|r from Hero attacks|n|cff40ff40-5%|r from Magic attacks|n|cff40ff40-15%|r from Piercing attacks|n|cff40ff40-25%|r from Siege attacks|nFull damage from everything else.
+}
+
+STRING 1684
+{
+Normal armor takes this much damage:|n|cffff4040+5%|r from Piercing attacks and Magic attacks|n|cff40ff40-10%|r from Hero attacks|n|cff40ff40-20%|r from Siege attacks|nFull damage from everything else.
+}
+
+STRING 1685
+{
+Light armor takes this much damage:|n|cffff4040+25%|r from Piercing attacks and Magic attacks|n|cff40ff40-5%|r from Hero attacks|nFull damage from everything else.
+}
+
+STRING 1686
+{
+Divine beings take full damage from all attack types.
+}
+
+STRING 1687
+{
+Unarmored units take this much damage:|n|cffff4040+20%|r from Siege attacks|n|cffff4040+15%|r from Piercing attacks|n|cff40ff40-25%|r from Hero attacks|nFull damage from everything else.
+}
+
+STRING 1688
+{
+Fortified armor takes this much damage:|n|cffff4040+25%|r from Siege attacks and Hero attacks|n|cff40ff40-15%|r from Normal attacks, Piercing attacks and Magic attacks|nFull damage from everything else.
+}
+
+STRING 1689
+{
+Heroes take this much damage:|n|cff40ff40-5%|r from Piercing attacks|n|cff40ff40-25%|r from Magic attacks and Spells|nFull damage from everything else.
+}
+
+STRING 1690
+{
+Heavy armor takes this much damage:|n|cffff4040+25%|r from Magic attacks|n|cffff4040+10%|r from Hero attacks|nFull damage from everything else.
+}
+
+STRING 1691
+{
+Medium armor takes this much damage:|n|cffff4040+25%|r from Normal attacks|n|cffff4040+5%|r from Hero attacks|n|cff40ff40-5%|r from Magic attacks|n|cff40ff40-15%|r from Piercing attacks|n|cff40ff40-25%|r from Siege attacks|nFull damage from everything else.
+}
+
+STRING 1692
+{
+Normal armor takes this much damage:|n|cffff4040+5%|r from Piercing attacks and Magic attacks|n|cff40ff40-10%|r from Hero attacks|n|cff40ff40-20%|r from Siege attacks|nFull damage from everything else.
+}
+
+STRING 1693
+{
+Light armor takes this much damage:|n|cffff4040+25%|r from Piercing attacks and Magic attacks|n|cff40ff40-5%|r from Hero attacks|nFull damage from everything else.
+}
+
+STRING 1694
+{
+Divine beings take full damage from all attack types.
+}
+
+STRING 1695
+{
+Unarmored units take this much damage:|n|cffff4040+20%|r from Siege attacks|n|cffff4040+15%|r from Piercing attacks|n|cff40ff40-25%|r from Hero attacks|nFull damage from everything else.
+}
+
+STRING 1696
+{
+Hero attacks deal:|n|cff40ff40+25%|r against Fortified armor|n|cff40ff40+10%|r against Heavy armor|n|cff40ff40+5%|r against Medium armor|n|cffff4040-5%|r against Light armor|n|cffff4040-10%|r against Normal armor|n|cffff4040-25%|r against Unarmored units|nFul
+}
+
+STRING 1697
+{
+Normal attacks deal:|n|cff40ff40+25%|r against Medium armor|n|cffff4040-15%|r against Fortified armor|nFull damage against everything else.
+}
+
+STRING 1698
+{
+Normal attacks deal:|n|cff40ff40+25%|r against Medium armor|n|cffff4040-15%|r against Fortified armor|nFull damage against everything else.
+}
+
+STRING 1699
+{
+Magic attacks deal:|n|cff40ff40+25%|r against Light armor and Heavy armor|n|cff40ff40+5%|r against Normal armor|n|cffff4040-5%|r against Medium armor|n|cffff4040-15%|r against Fortified armor|n|cffff4040-25%|r against Heroes|nFull damage against everything el
+}
+
+STRING 1700
+{
+Piercing attacks deal:|n|cff40ff40+25%|r against Light armor|n|cff40ff40+15%|r against Unarmored units|n|cff40ff40+5%|r against Normal armor|n|cffff4040-5%|r against Heroes|n|cffff4040-15%|r against Medium armor and Fortified armor|nFull damage against everyt
+}
+
+STRING 1701
+{
+Chaos attacks deal full damage to all armor types.
+}
+
+STRING 1702
+{
+Siege attacks deal:|n|cff40ff40+25%|r against Fortified armor|n|cff40ff40+20%|r against Unarmored units|n|cffff4040-20%|r against Normal armor|n|cffff4040-25%|r against Medium armor|nFull damage against everything else.
+}
+
+STRING 1703
+{
+Hero attacks deal:|n|cff40ff40+25%|r against Fortified armor|n|cff40ff40+10%|r against Heavy armor|n|cff40ff40+5%|r against Medium armor|n|cffff4040-5%|r against Light armor|n|cffff4040-10%|r against Normal armor|n|cffff4040-25%|r against Unarmored units|nFul
+}
+
+STRING 1704
+{
+Normal attacks deal:|n|cff40ff40+25%|r against Medium armor|n|cffff4040-15%|r against Fortified armor|nFull damage against everything else.
+}
+
+STRING 1705
+{
+Normal attacks deal:|n|cff40ff40+25%|r against Medium armor|n|cffff4040-15%|r against Fortified armor|nFull damage against everything else.
+}
+
+STRING 1706
+{
+Magic attacks deal:|n|cff40ff40+25%|r against Light armor and Heavy armor|n|cff40ff40+5%|r against Normal armor|n|cffff4040-5%|r against Medium armor|n|cffff4040-15%|r against Fortified armor|n|cffff4040-25%|r against Heroes|nFull damage against everything el
+}
+
+STRING 1707
+{
+Piercing attacks deal:|n|cff40ff40+25%|r against Light armor|n|cff40ff40+15%|r against Unarmored units|n|cff40ff40+5%|r against Normal armor|n|cffff4040-5%|r against Heroes|n|cffff4040-15%|r against Medium armor and Fortified armor|nFull damage against everyt
+}
+
+STRING 1708
+{
+Chaos attacks deal full damage to all armor types.
+}
+
+STRING 1709
+{
+Siege attacks deal:|n|cff40ff40+25%|r against Fortified armor|n|cff40ff40+20%|r against Unarmored units|n|cffff4040-20%|r against Normal armor|n|cffff4040-25%|r against Medium armor|nFull damage against everything else.
+}
+
+STRING 1710
+{
+Hero attacks deal:|n|cff40ff40+25%|r against Fortified armor|n|cff40ff40+10%|r against Heavy armor|n|cff40ff40+5%|r against Medium armor|n|cffff4040-5%|r against Light armor|n|cffff4040-10%|r against Normal armor|n|cffff4040-25%|r against Unarmored units|nFul
+}
+
+STRING 1711
+{
+Normal attacks deal:|n|cff40ff40+25%|r against Medium armor|n|cffff4040-15%|r against Fortified armor|nFull damage against everything else.
+}
+
+STRING 1712
+{
+Normal attacks deal:|n|cff40ff40+25%|r against Medium armor|n|cffff4040-15%|r against Fortified armor|nFull damage against everything else.
+}
+
+STRING 1713
+{
+Magic attacks deal:|n|cff40ff40+25%|r against Light armor and Heavy armor|n|cff40ff40+5%|r against Normal armor|n|cffff4040-5%|r against Medium armor|n|cffff4040-15%|r against Fortified armor|n|cffff4040-25%|r against Heroes|nFull damage against everything el
+}
+
+STRING 1714
+{
+Piercing attacks deal:|n|cff40ff40+25%|r against Light armor|n|cff40ff40+15%|r against Unarmored units|n|cff40ff40+5%|r against Normal armor|n|cffff4040-5%|r against Heroes|n|cffff4040-15%|r against Medium armor and Fortified armor|nFull damage against everyt
+}
+
+STRING 1715
+{
+Chaos attacks deal full damage to all armor types.
+}
+
+STRING 1716
+{
+Siege attacks deal:|n|cff40ff40+25%|r against Fortified armor|n|cff40ff40+20%|r against Unarmored units|n|cffff4040-20%|r against Normal armor|n|cffff4040-25%|r against Medium armor|nFull damage against everything else.
+}
+
+STRING 1717
+// Abilities: A00P (Shockwave), EditorSuffix (Editor Suffix)
+{
+(Tremor)
+}
+
+STRING 1718
+// Items: I03K (Berserker Rage), Name (Name)
+{
+Berserker Rage
+}
+
+STRING 1719
+// Units: u016 (Ghoul), EditorSuffix (Name - Editor Suffix)
+{
+(Crypt)
 }
 

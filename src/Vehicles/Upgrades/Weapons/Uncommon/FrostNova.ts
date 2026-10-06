@@ -55,12 +55,12 @@ Damage type: |cffffcc00spell|r`;
       });
       grp.destroy();
 
-      if (enemies.length === 0) return;
-
       vehicle.unit.startAbilityCooldown(
         weaponDummyAbilityIds[weaponIndex],
         this.cooldown,
       );
+
+      if (enemies.length === 0) return;
 
       const { x, y } = vehicle.unit;
       const target =

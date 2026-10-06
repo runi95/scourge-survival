@@ -20,11 +20,10 @@ export class Workshop extends WeaponUpgradeRecipe {
   private readonly itemIterations = new Map<number, number>();
   private readonly itemCounters = new Map<number, number>();
   private readonly workshopUnitTypeId: number = FourCC("n003");
-  private readonly onSummonTrigger = Trigger.create();
+  private onSummonTrigger: Trigger;
 
-  constructor() {
-    super();
-
+  public onInitialize(): void {
+    this.onSummonTrigger = Trigger.create();
     this.onSummonTrigger.addAction(() => {
       const summonedUnit = GetSummonedUnit();
       if (GetUnitTypeId(summonedUnit) !== this.workshopUnitTypeId) return;

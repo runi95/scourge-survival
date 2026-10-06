@@ -9,14 +9,13 @@ import { RandomNumberGenerator } from "../../../Utility/RandomNumberGenerator";
 const MULT = Math.PI / 180;
 
 export class StormElemental extends WeaponUpgradeRecipe {
-  public readonly cooldown = 15;
+  public readonly cooldown = 5;
   public readonly itemTypeId = FourCC("I01U");
   public readonly merchantItemTypeId = FourCC("I01V");
   public readonly recipe: number[] = [FourCC("I00M"), FourCC("I00M")];
 
   private readonly timers = new Map<number, Timer>();
   private readonly stormElementalUnitTypeId: number = FourCC("h007");
-  private readonly itemStormElementalMap = new Map<number, Unit>();
   private readonly itemIterations = new Map<number, number>();
 
   public onAcquire(
@@ -29,42 +28,46 @@ export class StormElemental extends WeaponUpgradeRecipe {
     const t: Timer = TimerUtils.newTimer();
     this.timers.set(itemId, t);
 
-    this.itemIterations.set(itemId, 0);
-    t.start(2, true, () => {
+    const existingIterations = this.itemIterations.get(itemId);
+    if (existingIterations == null) {
+      this.itemIterations.set(itemId, 5);
+    } else {
+      vehicle.unit.startAbilityCooldown(
+        weaponDummyAbilityIds[weaponIndex],
+        5 - existingIterations,
+      );
+    }
+
+    t.start(1, true, () => {
       const iterations = this.itemIterations.get(itemId);
       if (iterations == null) {
         TimerUtils.releaseTimer(t);
         return;
       }
 
-      if (iterations === 0) {
-        const { x, y } = vehicle.unit;
-        const randomAngle = RandomNumberGenerator.random(0, 359);
-        const radian = randomAngle * MULT;
-        const stormElemental = Unit.create(
-          owner,
-          this.stormElementalUnitTypeId,
-          x + 300 * Math.cos(radian),
-          y + 300 * Math.sin(radian),
-        );
-        stormElemental.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 14);
-        stormElemental.setAnimation("birth");
-        stormElemental.queueAnimation("stand");
-        this.itemStormElementalMap.set(itemId, stormElemental);
-
-        vehicle.unit.startAbilityCooldown(
-          weaponDummyAbilityIds[weaponIndex],
-          this.cooldown,
-        );
-      }
-
-      this.itemIterations.set(itemId, iterations + 1);
-      if (iterations === 6) {
-        this.itemStormElementalMap.delete(itemId);
+      if (iterations < 4) {
+        this.itemIterations.set(itemId, iterations + 1);
         return;
-      } else if (iterations >= 7) {
-        this.itemIterations.set(itemId, 0);
       }
+
+      this.itemIterations.set(itemId, 0);
+
+      vehicle.unit.startAbilityCooldown(
+        weaponDummyAbilityIds[weaponIndex],
+        this.cooldown,
+      );
+
+      const { x, y } = vehicle.unit;
+      const radians = RandomNumberGenerator.random(0, 359) * MULT;
+      const stormElemental = Unit.create(
+        owner,
+        this.stormElementalUnitTypeId,
+        x + 300 * Math.cos(radians),
+        y + 300 * Math.sin(radians),
+      );
+      stormElemental.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 15);
+      stormElemental.setAnimation("birth");
+      stormElemental.queueAnimation("stand");
     });
   }
 
@@ -78,11 +81,5 @@ export class StormElemental extends WeaponUpgradeRecipe {
     const t = this.timers.get(itemId);
     this.timers.delete(itemId);
     TimerUtils.releaseTimer(t);
-    this.itemIterations.delete(itemId);
-
-    const stormElemental = this.itemStormElementalMap.get(itemId);
-    if (stormElemental == null) return;
-
-    stormElemental.kill();
   }
 }

@@ -185,7 +185,7 @@ export class VortexTrap extends WeaponUpgradeRecipe {
     for (const u of this.getEnemies(owner, x, y, 250)) {
       dummy.damageTarget(
         u.handle,
-        150,
+        600,
         false,
         false,
         ATTACK_TYPE_NORMAL,
