@@ -6,6 +6,12 @@ export const FOUR: Wave = {
     [
       {
         delay: 0.15,
+        count: 1,
+        unitTypeId: CREEP_TYPE.MEAT_WAGON,
+        attackImmediately: true,
+      },
+      {
+        delay: 0.15,
         count: 5,
         unitTypeId: CREEP_TYPE.SKELETAL_MAGE,
       },
