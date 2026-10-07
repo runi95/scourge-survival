@@ -14,6 +14,7 @@ import { Wail } from "./Wail";
 import { ArtilleryStrike } from "./ArtilleryStrike";
 import { Stampede } from "./Stampede";
 import { FaerieFire } from "./FaerieFire";
+import { Sentinel } from "./Sentinel";
 
 export class Abilities {
   private readonly abilities: unknown[] = [];
@@ -37,5 +38,6 @@ export class Abilities {
     this.abilities.push(new MoonGlaive());
     this.abilities.push(new Wail());
     this.abilities.push(new Stampede());
+    this.abilities.push(new Sentinel());
   }
 }

@@ -328,18 +328,6 @@ STRING 117
 W
 }
 
-STRING 128
-// Abilities: A02O (Moon Glaive), Hotkey (Hotkey - Normal)
-{
-Q
-}
-
-STRING 129
-// Abilities: A02O (Moon Glaive), Researchhotkey (Hotkey - Learn)
-{
-Q
-}
-
 STRING 136
 // Upgrades: R000 (Creature Attack,Improved Creature Attack,Advanced Creature Attack), Name (Name)
 {
@@ -7127,5 +7115,149 @@ STRING 1719
 // Units: u016 (Ghoul), EditorSuffix (Name - Editor Suffix)
 {
 (Crypt)
+}
+
+STRING 1720
+// Abilities: A02O (Moon Glaive), Researchhotkey (Hotkey - Learn)
+{
+W
+}
+
+STRING 1721
+// Abilities: A00R (Sentinel), Researchhotkey (Hotkey - Learn)
+{
+E
+}
+
+STRING 1723
+// Abilities: A00R (Sentinel), Researchtip (Tooltip - Learn)
+{
+Learn Sentinel - [|cffffcc00Level %d|r]
+}
+
+STRING 1724
+// Abilities: A00R (Sentinel), Researchubertip (Tooltip - Learn - Extended)
+{
+Overclocks the Siege Engine's weapons, doubling their damage for a few seconds. Afterwards the engine overheats and moves at half speed for 3 seconds.|n|n|cffffcc00Level 1|r - 4 seconds.|n|cffffcc00Level 2|r - 5 seconds.|n|cffffcc00Level 3|r - 6 seconds.|n|cffffcc00Level 4|r - 7 seconds.|n|cffffcc00Level 5|r - 8 seconds.
+}
+
+STRING 1725
+// Abilities: A00R (Sentinel), Tip (Tooltip - Normal)
+{
+Sentinel - [|cffffcc00Level 1|r]
+}
+
+STRING 1726
+// Abilities: A00R (Sentinel), Ubertip (Tooltip - Normal - Extended)
+{
+Overclocks the Siege Engine's weapons, doubling the damage they deal for 4 seconds. Afterwards the engine overheats and moves at half speed for 3 seconds.|n|n|cffffcc00Cooldown:|r 60 seconds.
+}
+
+STRING 1727
+// Abilities: A00R (Sentinel), Tip (Tooltip - Normal)
+{
+Sentinel - [|cffffcc00Level 2|r]
+}
+
+STRING 1729
+// Abilities: A00R (Sentinel), Tip (Tooltip - Normal)
+{
+Sentinel - [|cffffcc00Level 3|r]
+}
+
+STRING 1731
+// Abilities: A00R (Sentinel), Tip (Tooltip - Normal)
+{
+Sentinel - [|cffffcc00Level 4|r]
+}
+
+STRING 1733
+// Abilities: A00R (Sentinel), Tip (Tooltip - Normal)
+{
+Sentinel - [|cffffcc00Level 5|r]
+}
+
+STRING 1735
+// Units: u01D (Sentinel), Name (Name)
+{
+Sentinel
+}
+
+STRING 1736
+// Units: u01D (Sentinel), EditorSuffix (Name - Editor Suffix)
+{
+(Level 1)
+}
+
+STRING 1737
+// Units: u01E (Sentinel), Name (Name)
+{
+Sentinel
+}
+
+STRING 1738
+// Units: u01E (Sentinel), EditorSuffix (Name - Editor Suffix)
+{
+(Level 2)
+}
+
+STRING 1739
+// Units: u01F (Sentinel), Name (Name)
+{
+Sentinel
+}
+
+STRING 1740
+// Units: u01F (Sentinel), EditorSuffix (Name - Editor Suffix)
+{
+(Level 3)
+}
+
+STRING 1741
+// Units: u01G (Sentinel), Name (Name)
+{
+Sentinel
+}
+
+STRING 1742
+// Units: u01G (Sentinel), EditorSuffix (Name - Editor Suffix)
+{
+(Level 4)
+}
+
+STRING 1743
+// Units: u01H (Sentinel), Name (Name)
+{
+Sentinel
+}
+
+STRING 1744
+// Units: u01H (Sentinel), EditorSuffix (Name - Editor Suffix)
+{
+(Level 5)
+}
+
+STRING 1753
+// Abilities: A00R (Sentinel), Ubertip (Tooltip - Normal - Extended)
+{
+Overclocks the Siege Engine's weapons, doubling the damage they deal for 4 seconds. Afterwards the engine overheats and moves at half speed for 3 seconds.|n|n|cffffcc00Cooldown:|r 60 seconds.
+}
+
+STRING 1754
+// Abilities: A00R (Sentinel), Ubertip (Tooltip - Normal - Extended)
+{
+Overclocks the Siege Engine's weapons, doubling the damage they deal for 4 seconds. Afterwards the engine overheats and moves at half speed for 3 seconds.|n|n|cffffcc00Cooldown:|r 60 seconds.
+}
+
+STRING 1755
+// Abilities: A00R (Sentinel), Ubertip (Tooltip - Normal - Extended)
+{
+Overclocks the Siege Engine's weapons, doubling the damage they deal for 4 seconds. Afterwards the engine overheats and moves at half speed for 3 seconds.|n|n|cffffcc00Cooldown:|r 60 seconds.
+}
+
+STRING 1756
+// Abilities: A00R (Sentinel), Ubertip (Tooltip - Normal - Extended)
+{
+Overclocks the Siege Engine's weapons, doubling the damage they deal for 4 seconds. Afterwards the engine overheats and moves at half speed for 3 seconds.|n|n|cffffcc00Cooldown:|r 60 seconds.
 }
 
