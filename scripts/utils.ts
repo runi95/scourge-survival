@@ -299,8 +299,10 @@ export function createMapFromFiles(
     const map = new War3Map();
     map.archive.resizeHashtable(mapFiles.length);
     for (const mapFile of mapFiles) {
+      // MPQ names use backslashes; the game finds nothing in a subfolder
+      // stored as war3mapImported/Templates.toc
       const imported = map.import(
-        mapFile.filePath,
+        mapFile.filePath.replace(/\//g, "\\"),
         mapFile.content as unknown as ArrayBuffer,
       );
       if (!imported) {
@@ -308,7 +310,9 @@ export function createMapFromFiles(
       }
     }
 
-    const result = map.save();
+    // Not map.save(): it parses war3map.w3i to decide on the pre-1.31 map
+    // header, and can't read the current format. Maps from 1.31 on need none.
+    const result = map.archive.save();
     if (!result) {
       throw new Error("Failed to save archive.");
     }

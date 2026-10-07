@@ -52,11 +52,13 @@ function main(): void {
     execFile(
       config.gameExecutable,
       ["-loadfile", filename, ...config.launchArgs],
-      (err: any) => {
+      (err: any, stdout: string, stderr: string) => {
         if (err && err.code === "ENOENT") {
           logger.error(
             `No such file or directory "${config.gameExecutable}". Make sure gameExecutable is configured properly in config.json.`,
           );
+        } else if (err) {
+          logger.error(`${config.gameExecutable} failed: ${stderr || stdout}`);
         }
       },
     );
