@@ -214,6 +214,7 @@ export class Game {
           y,
           315.0,
         );
+        GameMap.PLAYER_VEHICLES[i].isArriving = true;
         if (raceSetup.startingWeapon != null) {
           vehicleUnit.addItemById(raceSetup.startingWeapon.itemTypeId);
         }
@@ -269,6 +270,7 @@ export class Game {
         zeppelinDeathTrigger.addAction(() => {
           StopCameraForPlayerBJ(player.handle);
           SelectUnitForPlayerSingle(vehicleUnit.handle, player.handle);
+          this.weaponUpgradeSystem.land(playerIndex);
           zeppelinDeathTrigger.destroy();
         });
         zeppelinDeathTrigger.registerUnitEvent(zeppelinUnit, EVENT_UNIT_DEATH);

@@ -16,4 +16,7 @@ export class Vehicle {
   public availableWeaponSlots: number = 6;
   public lastKnownX: number = 0;
   public lastKnownY: number = 0;
+  // Still in the intro transport: a loaded unit keeps the position it was picked
+  // up at, so weapons wait until it lands
+  public isArriving: boolean = false;
 }

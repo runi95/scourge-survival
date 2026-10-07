@@ -1,4 +1,4 @@
-import { Item, Trigger, Unit } from "w3ts";
+import { Item, MapPlayer, Trigger, Unit } from "w3ts";
 import { WeaponUpgrade, WeaponUpgradeI } from "./WeaponUpgrade";
 import { vehicleUpgrades } from "./VehicleUpgrades";
 import { GameMap } from "../Game/GameMap";
@@ -6,6 +6,13 @@ import { LinkedList } from "../Utility/LinkedList";
 import { weaponDummyAbilityIds } from "../Utility/WeaponDummyAbilityIds";
 import { WeaponUpgradeRecipe } from "./WeaponUpgradeRecipe";
 import { weaponRecipes } from "./WeaponUpgradeRecipes";
+
+interface PendingWeapon {
+  upgrade: WeaponUpgradeI;
+  item: Item;
+  itemId: number;
+  weaponIndex: number;
+}
 
 export class WeaponUpgradeSystem {
   private readonly playerWeaponIndex: LinkedList<number>[] = [];
@@ -16,6 +23,7 @@ export class WeaponUpgradeSystem {
     number,
     WeaponUpgradeRecipe
   >();
+  private readonly pendingWeapons = new Map<number, PendingWeapon[]>();
   private dropItemTrig: Trigger;
   private acquireItemTrig: Trigger;
   private itemSoldTrig: Trigger;
@@ -81,13 +89,24 @@ export class WeaponUpgradeSystem {
 
       const itemId = item.id;
       this.itemIdToIndex.set(itemId, weaponCooldownIndex.value);
-      upgrade.onAcquire(
-        vehicle,
-        owner,
-        item,
-        itemId,
-        weaponCooldownIndex.value,
-      );
+      if (vehicle.isArriving) {
+        const pending = this.pendingWeapons.get(ownerId) ?? [];
+        pending.push({
+          upgrade,
+          item,
+          itemId,
+          weaponIndex: weaponCooldownIndex.value,
+        });
+        this.pendingWeapons.set(ownerId, pending);
+      } else {
+        upgrade.onAcquire(
+          vehicle,
+          owner,
+          item,
+          itemId,
+          weaponCooldownIndex.value,
+        );
+      }
 
       const weaponRecipes = this.weaponRecipeMap.get(typeId);
       if (weaponRecipes != null) {
@@ -158,7 +177,13 @@ export class WeaponUpgradeSystem {
 
       this.playerWeaponIndex[ownerId].add(weaponCooldownIndex);
       this.itemIdToIndex.delete(itemId);
-      upgrade.onDrop(vehicle, owner, item, itemId, weaponCooldownIndex);
+      const pending = this.pendingWeapons.get(ownerId);
+      const pendingIndex = pending?.findIndex((p) => p.itemId === itemId) ?? -1;
+      if (pendingIndex >= 0) {
+        pending.splice(pendingIndex, 1);
+      } else {
+        upgrade.onDrop(vehicle, owner, item, itemId, weaponCooldownIndex);
+      }
 
       const weaponRecipes = this.weaponRecipeMap.get(typeId);
       if (weaponRecipes != null) {
@@ -253,5 +278,18 @@ export class WeaponUpgradeSystem {
       vehicle.unit.addItemById(weaponUpgrade.itemTypeId);
     });
     this.itemSoldTrig.registerAnyUnitEvent(EVENT_PLAYER_UNIT_SELL_ITEM);
+  }
+
+  // The hero left its intro transport: start the weapons it got on the way
+  public land(playerId: number): void {
+    const vehicle = GameMap.PLAYER_VEHICLES[playerId];
+    vehicle.isArriving = false;
+
+    const pending = this.pendingWeapons.get(playerId) ?? [];
+    this.pendingWeapons.delete(playerId);
+    const owner = MapPlayer.fromIndex(playerId);
+    for (const { upgrade, item, itemId, weaponIndex } of pending) {
+      upgrade.onAcquire(vehicle, owner, item, itemId, weaponIndex);
+    }
   }
 }
