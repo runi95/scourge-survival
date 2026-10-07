@@ -96,7 +96,11 @@ export class Spawner {
         const vehicle = GameMap.PLAYER_VEHICLES[playerId];
         if (vehicle.unit == null) continue;
 
-        const { x, y } = vehicle.unit;
+        const tracked =
+          vehicle.isArriving && vehicle.transport != null
+            ? vehicle.transport
+            : vehicle.unit;
+        const { x, y } = tracked;
         vehicle.lastKnownX = x;
         vehicle.lastKnownY = y;
       }
@@ -140,7 +144,7 @@ export class Spawner {
 
     const t: Timer = TimerUtils.newTimer();
     this.waveTimer = t;
-    t.start(10, false, () => {
+    t.start(1, false, () => {
       const localPlayerArea =
         GameMap.PLAYER_AREAS[GetPlayerId(GetLocalPlayer())];
       if (localPlayerArea != null) {

@@ -19,4 +19,5 @@ export class Vehicle {
   // Still in the intro transport: a loaded unit keeps the position it was picked
   // up at, so weapons wait until it lands
   public isArriving: boolean = false;
+  public transport: Unit | null = null;
 }

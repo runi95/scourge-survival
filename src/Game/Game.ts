@@ -277,6 +277,7 @@ export class Game {
 
         const vehicle = GameMap.PLAYER_VEHICLES[i];
         vehicle.unit = vehicleUnit;
+        vehicle.transport = zeppelinUnit;
         vehicle.weaponRecipeShop = Unit.create(
           MapPlayer.fromIndex(PLAYER_NEUTRAL_PASSIVE),
           this.recipeShopUnitTypeId,
