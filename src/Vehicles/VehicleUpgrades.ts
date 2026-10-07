@@ -17,7 +17,12 @@ import {
   SpiritTower,
   LightJavelin,
 } from "./Upgrades/Weapons/Common/index";
-import { Glyph, MagicSurge, WarDrums } from "./Upgrades/Misc/Legendary/index";
+import {
+  Glyph,
+  MagicSurge,
+  WarDrums,
+  FaerieFire,
+} from "./Upgrades/Misc/Legendary/index";
 import { ChainLightning, Tornado } from "./Upgrades/Weapons/Legendary/index";
 import {
   CriticalStrike,
@@ -87,6 +92,7 @@ export const legendaryUpgrades: VehicleUpgrade[] = [
   new Glyph(),
   new MagicSurge(),
   new WarDrums(),
+  new FaerieFire(),
   new ChainLightning(),
   new Tornado(),
 ];

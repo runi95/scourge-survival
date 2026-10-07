@@ -13,6 +13,7 @@ import { MoonGlaive } from "./MoonGlaive";
 import { Wail } from "./Wail";
 import { ArtilleryStrike } from "./ArtilleryStrike";
 import { Stampede } from "./Stampede";
+import { FaerieFire } from "./FaerieFire";
 
 export class Abilities {
   private readonly abilities: unknown[] = [];
@@ -27,6 +28,7 @@ export class Abilities {
     this.abilities.push(new AntiMagicShell());
     this.abilities.push(new HowlOfTerror());
     this.abilities.push(new UnholyFrenzy());
+    this.abilities.push(new FaerieFire());
 
     // Race hero abilities
     this.abilities.push(new Overdrive());
