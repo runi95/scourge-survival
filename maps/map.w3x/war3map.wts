@@ -7423,3 +7423,51 @@ STRING 1805
 Ironhide
 }
 
+STRING 1806
+// Abilities: A00W (Devour), Name (Name)
+{
+Devour
+}
+
+STRING 1807
+// Abilities: A00W (Devour), Researchtip (Tooltip - Learn)
+{
+Learn Devour - [|cffffcc00Level %d|r]
+}
+
+STRING 1808
+// Abilities: A00W (Devour), Tip (Tooltip - Normal)
+{
+Devour - [|cffffcc00Level 1|r]
+}
+
+STRING 1809
+// Abilities: A00W (Devour), Tip (Tooltip - Normal)
+{
+Devour - [|cffffcc00Level 2|r]
+}
+
+STRING 1810
+// Abilities: A00W (Devour), Tip (Tooltip - Normal)
+{
+Devour - [|cffffcc00Level 3|r]
+}
+
+STRING 1811
+// Abilities: A00W (Devour), Tip (Tooltip - Normal)
+{
+Devour - [|cffffcc00Level 4|r]
+}
+
+STRING 1812
+// Abilities: A00W (Devour), Tip (Tooltip - Normal)
+{
+Devour - [|cffffcc00Level 5|r]
+}
+
+STRING 1814
+// Abilities: A00W (Devour), Researchhotkey (Hotkey - Learn)
+{
+W
+}
+
