@@ -7285,12 +7285,6 @@ STRING 1761
 Elune's Veil
 }
 
-STRING 1762
-// Abilities: A00Q (Elune's Veil), Researchtip (Tooltip - Learn)
-{
-Learn Elune's Veil
-}
-
 STRING 1763
 // Abilities: A00Q (Elune's Veil), Tip (Tooltip - Normal)
 {
@@ -7307,5 +7301,95 @@ STRING 1765
 // Abilities: A00Q (Elune's Veil), Tip (Tooltip - Normal)
 {
 Elune's Veil - [|cffffcc00Level 3|r]
+}
+
+STRING 1766
+// Abilities: A00Q (Elune's Veil), Researchtip (Tooltip - Learn)
+{
+Learn Elune's Veil - [|cffffcc00Level %d|r]
+}
+
+STRING 1767
+// Units: u01I (Wrath of Elune), Name (Name)
+{
+Wrath of Elune
+}
+
+STRING 1768
+// Abilities: A00S (Wrath of Elune), Hotkey (Hotkey - Normal)
+{
+Q
+}
+
+STRING 1769
+// Abilities: A00S (Wrath of Elune), Researchhotkey (Hotkey - Learn)
+{
+Q
+}
+
+STRING 1770
+// Abilities: A00S (Wrath of Elune), Researchtip (Tooltip - Learn)
+{
+Learn Wrath of Elune - [|cffffcc00Level %d|r]
+}
+
+STRING 1771
+// Abilities: A00S (Wrath of Elune), Tip (Tooltip - Normal)
+{
+Wrath of Elune - [|cffffcc00Level 1|r]
+}
+
+STRING 1772
+// Abilities: A00S (Wrath of Elune), Tip (Tooltip - Normal)
+{
+Wrath of Elune - [|cffffcc00Level 2|r]
+}
+
+STRING 1773
+// Abilities: A00S (Wrath of Elune), Tip (Tooltip - Normal)
+{
+Wrath of Elune - [|cffffcc00Level 3|r]
+}
+
+STRING 1774
+// Abilities: A00S (Wrath of Elune), Tip (Tooltip - Normal)
+{
+Wrath of Elune - [|cffffcc00Level 4|r]
+}
+
+STRING 1775
+// Abilities: A00S (Wrath of Elune), Tip (Tooltip - Normal)
+{
+Wrath of Elune - [|cffffcc00Level 5|r]
+}
+
+STRING 1776
+// Units: u01I (Wrath of Elune), EditorSuffix (Name - Editor Suffix)
+{
+(Level 1)
+}
+
+STRING 1777
+// Abilities: A00S (Wrath of Elune), Name (Name)
+{
+Wrath of Elune
+}
+
+STRING 1778
+// Abilities: A03N (Shift), Name (Name)
+{
+Shift
+}
+
+STRING 1779
+// Abilities: A03N (Shift), Hotkey (Hotkey - Normal)
+{
+Q
+}
+
+STRING 1780
+// Abilities: A03N (Shift), Tip (Tooltip - Normal)
+{
+Shift
 }
 

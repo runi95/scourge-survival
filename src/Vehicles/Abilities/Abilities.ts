@@ -14,6 +14,7 @@ import { Wail } from "./Wail";
 import { ArtilleryStrike } from "./ArtilleryStrike";
 import { Stampede } from "./Stampede";
 import { FaerieFire } from "./FaerieFire";
+import { WrathOfElune } from "./WrathOfElune";
 import { Sentinel } from "./Sentinel";
 
 export class Abilities {
@@ -36,6 +37,7 @@ export class Abilities {
     this.abilities.push(new ArtilleryStrike());
     this.abilities.push(new BansheeShell());
     this.abilities.push(new MoonGlaive());
+    this.abilities.push(new WrathOfElune());
     this.abilities.push(new Wail());
     this.abilities.push(new Stampede());
     this.abilities.push(new Sentinel());
