@@ -17,6 +17,7 @@ import { StrengthInNumbersDamageEvent } from "./DamageEvents/StrengthInNumbersDa
 import { ThornsDamageEvent } from "./DamageEvents/ThornsDamageEvent";
 import { ThunderSpearsDamageEvent } from "./DamageEvents/ThunderSpearsDamageEvent";
 import { WarDrumsDamageEvent } from "./DamageEvents/WarDrumsDamageEvent";
+import { ElunesVeilDamageEvent } from "./DamageEvents/ElunesVeilDamageEvent";
 
 export interface ExtendedDamageInstance extends DamageInstance {
   sourceOwningPlayer: player;
@@ -84,11 +85,15 @@ export class DamageEventController {
       DamageEventType.OnDamageEvent,
     );
     DamageEngine.register(
-      new BansheeShellDamageEvent(),
+      new MarksmanDamageEvent(),
       DamageEventType.OnDamageEvent,
     );
     DamageEngine.register(
-      new MarksmanDamageEvent(),
+      new ElunesVeilDamageEvent(),
+      DamageEventType.OnDamageEvent,
+    );
+    DamageEngine.register(
+      new BansheeShellDamageEvent(),
       DamageEventType.OnDamageEvent,
     );
 

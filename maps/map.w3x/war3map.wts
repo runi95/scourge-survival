@@ -7261,3 +7261,51 @@ STRING 1756
 Overclocks the Siege Engine's weapons, doubling the damage they deal for 4 seconds. Afterwards the engine overheats and moves at half speed for 3 seconds.|n|n|cffffcc00Cooldown:|r 60 seconds.
 }
 
+STRING 1757
+// Abilities: A02O (Moon Glaive), Hotkey (Hotkey - Normal)
+{
+W
+}
+
+STRING 1758
+// Abilities: A00Q (Elune's Veil), Hotkey (Hotkey - Normal)
+{
+R
+}
+
+STRING 1759
+// Abilities: A00Q (Elune's Veil), Researchhotkey (Hotkey - Learn)
+{
+R
+}
+
+STRING 1761
+// Abilities: A00Q (Elune's Veil), Name (Name)
+{
+Elune's Veil
+}
+
+STRING 1762
+// Abilities: A00Q (Elune's Veil), Researchtip (Tooltip - Learn)
+{
+Learn Elune's Veil
+}
+
+STRING 1763
+// Abilities: A00Q (Elune's Veil), Tip (Tooltip - Normal)
+{
+Elune's Veil - [|cffffcc00Level 1|r]
+}
+
+STRING 1764
+// Abilities: A00Q (Elune's Veil), Tip (Tooltip - Normal)
+{
+Elune's Veil - [|cffffcc00Level 2|r]
+}
+
+STRING 1765
+// Abilities: A00Q (Elune's Veil), Tip (Tooltip - Normal)
+{
+Elune's Veil - [|cffffcc00Level 3|r]
+}
+
