@@ -7393,3 +7393,33 @@ STRING 1800
 Blink Drive
 }
 
+STRING 1801
+// Abilities: A00V (Ironhide), Unhotkey (Hotkey - Turn Off)
+{
+F
+}
+
+STRING 1802
+// Abilities: A00V (Ironhide), Hotkey (Hotkey - Normal)
+{
+F
+}
+
+STRING 1803
+// Abilities: A00V (Ironhide), Tip (Tooltip - Normal)
+{
+Ironhide
+}
+
+STRING 1804
+// Abilities: A00V (Ironhide), Untip (Tooltip - Turn Off)
+{
+Stop Ironhide
+}
+
+STRING 1805
+// Abilities: A00V (Ironhide), Name (Name)
+{
+Ironhide
+}
+

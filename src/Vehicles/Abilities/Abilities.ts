@@ -13,6 +13,7 @@ import { MoonGlaive } from "./MoonGlaive";
 import { Wail } from "./Wail";
 import { ArtilleryStrike } from "./ArtilleryStrike";
 import { Stampede } from "./Stampede";
+import { Ironhide } from "./Ironhide";
 import { FaerieFire } from "./FaerieFire";
 import { WrathOfElune } from "./WrathOfElune";
 import { SheepOMatic } from "./SheepOMatic";
@@ -44,6 +45,7 @@ export class Abilities {
     this.abilities.push(new WrathOfElune());
     this.abilities.push(new Wail());
     this.abilities.push(new Stampede());
+    this.abilities.push(new Ironhide());
     this.abilities.push(new Sentinel());
   }
 }
