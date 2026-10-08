@@ -35,13 +35,13 @@ STRING 24
 }
 
 STRING 27
-// Abilities: A005 (Repair), Name (Name)
+// Abilities: A005 (Repair), Tip (Tooltip - Normal)
 {
 Repair
 }
 
 STRING 28
-// Buffs/Effects: B000 (), Bufftip (Tooltip)
+// Abilities: A005 (Repair), Name (Name)
 {
 Repair
 }
@@ -52,82 +52,10 @@ STRING 30
 This unit is being repaired; lost hit points are being restored.
 }
 
-STRING 32
-// Abilities: A005 (Repair), Ubertip (Tooltip - Normal - Extended)
-{
-Repairs a target, damaged friendly mechanical tank for <A005,DataA2> hit points.
-}
-
-STRING 33
-// Abilities: A005 (Repair), Ubertip (Tooltip - Normal - Extended)
-{
-Repairs a target, damaged friendly mechanical tank for <A005,DataA3> hit points.
-}
-
-STRING 34
-// Abilities: A005 (Repair), Untip (Tooltip - Turn Off)
-{
-|cffc3dbffRight-click to activate auto-casting.|r
-}
-
-STRING 35
-// Abilities: A005 (Repair), Untip (Tooltip - Turn Off)
-{
-|cffc3dbffRight-click to activate auto-casting.|r
-}
-
-STRING 36
-// Abilities: A005 (Repair), Unubertip (Tooltip - Turn Off - Extended)
-{
-|cffc3dbffRight-click to deactivate auto-casting.|r
-}
-
-STRING 37
-// Abilities: A005 (Repair), Unubertip (Tooltip - Turn Off - Extended)
-{
-|cffc3dbffRight-click to deactivate auto-casting.|r
-}
-
 STRING 38
 // Abilities: A005 (Repair), Ubertip (Tooltip - Normal - Extended)
 {
 Repairs a target, damaged friendly mechanical tank for <A005,DataA1> hit points.
-}
-
-STRING 41
-// Abilities: A005 (Repair), Ubertip (Tooltip - Normal - Extended)
-{
-Repairs a target, damaged friendly mechanical tank for <A005,DataA4> hit points.
-}
-
-STRING 42
-// Abilities: A005 (Repair), Ubertip (Tooltip - Normal - Extended)
-{
-Repairs a target, damaged friendly mechanical tank for <A005,DataA5> hit points.
-}
-
-STRING 43
-// Abilities: A005 (Repair), Untip (Tooltip - Turn Off)
-{
-|cffc3dbffRight-click to activate auto-casting.|r
-}
-
-STRING 44
-// Abilities: A005 (Repair), Untip (Tooltip - Turn Off)
-{
-|cffc3dbffRight-click to activate auto-casting.|r
-}
-
-STRING 45
-// Abilities: A005 (Repair), Unubertip (Tooltip - Turn Off - Extended)
-{
-|cffc3dbffRight-click to deactivate auto-casting.|r
-}
-
-STRING 46
-// Abilities: A005 (Repair), Unubertip (Tooltip - Turn Off - Extended)
-{
-|cffc3dbffRight-click to deactivate auto-casting.|r
 }
 
 STRING 55
@@ -304,14 +232,8 @@ STRING 101
 Creates a permanent thunderstorm that strikes enemies with lightning every so often.
 }
 
-STRING 109
-// Abilities: A005 (Repair), Researchtip (Tooltip - Learn)
-{
-Learn Repair - [|cffffcc00Level %d|r]
-}
-
 STRING 110
-// Abilities: A005 (Repair), Researchhotkey (Hotkey - Learn)
+// Abilities: A02Q (Wail), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -394,36 +316,6 @@ STRING 150
 _
 }
 
-STRING 151
-// Abilities: A005 (Repair), Tip (Tooltip - Normal)
-{
-Repair - [|cffffcc00Level 1|r]
-}
-
-STRING 152
-// Abilities: A005 (Repair), Tip (Tooltip - Normal)
-{
-Repair - [|cffffcc00Level 2|r]
-}
-
-STRING 153
-// Abilities: A005 (Repair), Tip (Tooltip - Normal)
-{
-Repair - [|cffffcc00Level 3|r]
-}
-
-STRING 154
-// Abilities: A005 (Repair), Tip (Tooltip - Normal)
-{
-Repair - [|cffffcc00Level 4|r]
-}
-
-STRING 155
-// Abilities: A005 (Repair), Tip (Tooltip - Normal)
-{
-Repair - [|cffffcc00Level 5|r]
-}
-
 STRING 156
 // Items: I005 (Permanent Immolation), Tip (Tooltip - Basic)
 {
@@ -460,20 +352,14 @@ STRING 161
 Spawns 3 drones to permanently fight for you.
 }
 
-STRING 189
-// Abilities: A005 (Repair), Researchubertip (Tooltip - Learn - Extended)
-{
-Repairs a target, damaged friendly mechanical tank.|n|n|cffffcc00Level 1|r - Repairs for <A005,DataA1> hit points.|n|cffffcc00Level 2|r - Repairs for <A005,DataA2> hit points.|n|cffffcc00Level 3|r - Repairs for <A005,DataA3> hit points.|n|cffffcc00Level 4|r - Repairs for <A005,DataA4> hit points.|n|cffffcc00Level 5|r - Repairs for <A005,DataA5> hit points.
-}
-
 STRING 266
-// Abilities: A02Q (Wail), Hotkey (Hotkey - Normal)
+// Abilities: A02Q (Wail), Researchhotkey (Hotkey - Learn)
 {
 E
 }
 
 STRING 289
-// Abilities: A02Q (Wail), Researchhotkey (Hotkey - Learn)
+// Abilities: A00G (Stampede), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -3457,13 +3343,13 @@ Artillery Strike
 }
 
 STRING 1117
-// Abilities: A00G (Stampede), Hotkey (Hotkey - Normal)
+// Abilities: A00G (Stampede), Researchhotkey (Hotkey - Learn)
 {
 E
 }
 
 STRING 1118
-// Abilities: A00G (Stampede), Researchhotkey (Hotkey - Learn)
+// Abilities: A00R (Sentinel), Researchhotkey (Hotkey - Learn)
 {
 E
 }
@@ -7123,12 +7009,6 @@ STRING 1720
 W
 }
 
-STRING 1721
-// Abilities: A00R (Sentinel), Researchhotkey (Hotkey - Learn)
-{
-E
-}
-
 STRING 1723
 // Abilities: A00R (Sentinel), Researchtip (Tooltip - Learn)
 {
@@ -7391,5 +7271,71 @@ STRING 1780
 // Abilities: A03N (Shift), Tip (Tooltip - Normal)
 {
 Shift
+}
+
+STRING 1781
+// Abilities: A005 (Repair), Unhotkey (Hotkey - Turn Off)
+{
+F
+}
+
+STRING 1782
+// Abilities: A005 (Repair), Hotkey (Hotkey - Normal)
+{
+F
+}
+
+STRING 1783
+// Buffs/Effects: B000 (), Bufftip (Tooltip)
+{
+Repair
+}
+
+STRING 1784
+// Abilities: A00U (Sheep-o-Matic), Name (Name)
+{
+Sheep-o-Matic
+}
+
+STRING 1785
+// Abilities: A00U (Sheep-o-Matic), Researchtip (Tooltip - Learn)
+{
+Learn Sheep-o-Matic - [|cffffcc00Level %d|r]
+}
+
+STRING 1786
+// Abilities: A00U (Sheep-o-Matic), Tip (Tooltip - Normal)
+{
+Sheep-o-Matic - [|cffffcc00Level 1|r]
+}
+
+STRING 1787
+// Abilities: A00U (Sheep-o-Matic), Tip (Tooltip - Normal)
+{
+Sheep-o-Matic - [|cffffcc00Level 2|r]
+}
+
+STRING 1788
+// Abilities: A00U (Sheep-o-Matic), Tip (Tooltip - Normal)
+{
+Sheep-o-Matic - [|cffffcc00Level 3|r]
+}
+
+STRING 1789
+// Abilities: A00U (Sheep-o-Matic), Tip (Tooltip - Normal)
+{
+Sheep-o-Matic - [|cffffcc00Level 4|r]
+}
+
+STRING 1790
+// Abilities: A00U (Sheep-o-Matic), Tip (Tooltip - Normal)
+{
+Sheep-o-Matic - [|cffffcc00Level 5|r]
+}
+
+STRING 1791
+// Abilities: A00U (Sheep-o-Matic), Researchhotkey (Hotkey - Learn)
+{
+E
 }
 
