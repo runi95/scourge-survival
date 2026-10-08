@@ -16,6 +16,7 @@ import { Stampede } from "./Stampede";
 import { FaerieFire } from "./FaerieFire";
 import { WrathOfElune } from "./WrathOfElune";
 import { SheepOMatic } from "./SheepOMatic";
+import { BlinkDrive } from "./BlinkDrive";
 import { Sentinel } from "./Sentinel";
 
 export class Abilities {
@@ -37,6 +38,7 @@ export class Abilities {
     this.abilities.push(new Overdrive());
     this.abilities.push(new ArtilleryStrike());
     this.abilities.push(new SheepOMatic());
+    this.abilities.push(new BlinkDrive());
     this.abilities.push(new BansheeShell());
     this.abilities.push(new MoonGlaive());
     this.abilities.push(new WrathOfElune());

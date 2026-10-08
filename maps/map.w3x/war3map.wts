@@ -7339,3 +7339,57 @@ STRING 1791
 E
 }
 
+STRING 1792
+// Abilities: A03O (Blink Drive), Hotkey (Hotkey - Normal)
+{
+Q
+}
+
+STRING 1793
+// Abilities: A03O (Blink Drive), Researchhotkey (Hotkey - Learn)
+{
+Q
+}
+
+STRING 1794
+// Abilities: A03O (Blink Drive), Researchtip (Tooltip - Learn)
+{
+Learn Blink Drive - [|cffffcc00Level %d|r]
+}
+
+STRING 1795
+// Abilities: A03O (Blink Drive), Tip (Tooltip - Normal)
+{
+Blink Drive - [|cffffcc00Level 1|r]
+}
+
+STRING 1796
+// Abilities: A03O (Blink Drive), Tip (Tooltip - Normal)
+{
+Blink Drive - [|cffffcc00Level 2|r]
+}
+
+STRING 1797
+// Abilities: A03O (Blink Drive), Tip (Tooltip - Normal)
+{
+Blink Drive - [|cffffcc00Level 3|r]
+}
+
+STRING 1798
+// Abilities: A03O (Blink Drive), Tip (Tooltip - Normal)
+{
+Blink Drive - [|cffffcc00Level 4|r]
+}
+
+STRING 1799
+// Abilities: A03O (Blink Drive), Tip (Tooltip - Normal)
+{
+Blink Drive - [|cffffcc00Level 5|r]
+}
+
+STRING 1800
+// Abilities: A03O (Blink Drive), Name (Name)
+{
+Blink Drive
+}
+
