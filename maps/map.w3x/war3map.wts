@@ -11295,3 +11295,65 @@ STRING 2335
 Headhunter Hut
 }
 
+STRING 2336
+// Items: I07S (Raider Camp), Tip (Tooltip - Basic)
+{
+Purchase Raider Camp
+}
+
+STRING 2337
+// Items: I07S (Raider Camp), Description (Description)
+{
+Sends out 2 Raiders every 30 seconds that fight by your side.
+}
+
+STRING 2338
+// Items: I07S (Raider Camp), Ubertip (Tooltip - Extended)
+{
+Sends out 2 Raiders every 30 seconds that fight by your side.
+}
+
+STRING 2339
+// Items: I07S (Raider Camp), Name (Name)
+{
+Raider Camp
+}
+
+STRING 2340
+// Items: I07T (Raider Camp), Tip (Tooltip - Basic)
+{
+Purchase Raider Camp
+}
+
+STRING 2341
+// Items: I07T (Raider Camp), Ubertip (Tooltip - Extended)
+{
+Sends out 2 Raiders every 30 seconds that fight by your side.
+
+Damage: |cffffcc002 x 23 - 27|r
+Cooldown: |cffffcc0030s|r
+Health: |cffffcc00610|r
+Duration: |cffffcc0020s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00siege|r
+}
+
+STRING 2342
+// Items: I07T (Raider Camp), Description (Description)
+{
+Sends out 2 Raiders every 30 seconds that fight by your side.
+
+Damage: |cffffcc002 x 23 - 27|r
+Cooldown: |cffffcc0030s|r
+Health: |cffffcc00610|r
+Duration: |cffffcc0020s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00siege|r
+}
+
+STRING 2343
+// Items: I07T (Raider Camp), Name (Name)
+{
+Raider Camp
+}
+

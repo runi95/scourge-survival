@@ -118,4 +118,5 @@ export const weaponRecipes = [
   new Recipes.KodoPen(),
   new Recipes.SpiritLodge(),
   new Recipes.HeadhunterHut(),
+  new Recipes.RaiderCamp(),
 ];
