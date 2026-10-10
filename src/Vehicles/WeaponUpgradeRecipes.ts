@@ -131,4 +131,5 @@ export const weaponRecipes = [
   new Recipes.LightningBoulder(),
   new Recipes.EarthquakeShot(),
   new Recipes.WolfCatapult(),
+  new Recipes.RocketCatapult(),
 ];

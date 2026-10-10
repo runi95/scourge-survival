@@ -12117,3 +12117,67 @@ STRING 2440
 Wolf Catapult
 }
 
+STRING 2441
+// Items: I08I (Rocket Catapult), Tip (Tooltip - Basic)
+{
+Purchase Rocket Catapult
+}
+
+STRING 2442
+// Items: I08I (Rocket Catapult), Description (Description)
+{
+Lobs a boulder and fires Cluster Rockets at a random enemy unit within range.
+}
+
+STRING 2443
+// Items: I08I (Rocket Catapult), Ubertip (Tooltip - Extended)
+{
+Lobs a boulder and fires Cluster Rockets at a random enemy unit within range.
+}
+
+STRING 2444
+// Items: I08I (Rocket Catapult), Name (Name)
+{
+Rocket Catapult
+}
+
+STRING 2445
+// Items: I08J (Rocket Catapult), Tip (Tooltip - Basic)
+{
+Purchase Rocket Catapult
+}
+
+STRING 2446
+// Items: I08J (Rocket Catapult), Ubertip (Tooltip - Extended)
+{
+Lobs a boulder and fires Cluster Rockets at a random enemy unit within range.
+
+Damage: |cffffcc0045 (boulder) + 6 x 17.5 (rockets)|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00800|r
+Area of effect: |cffffcc00150 (boulder) + 300 (rockets)|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00siege + spell|r
+Effect: |cffffcc00stuns for 1s|r
+}
+
+STRING 2447
+// Items: I08J (Rocket Catapult), Description (Description)
+{
+Lobs a boulder and fires Cluster Rockets at a random enemy unit within range.
+
+Damage: |cffffcc0045 (boulder) + 6 x 17.5 (rockets)|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00800|r
+Area of effect: |cffffcc00150 (boulder) + 300 (rockets)|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00siege + spell|r
+Effect: |cffffcc00stuns for 1s|r
+}
+
+STRING 2448
+// Items: I08J (Rocket Catapult), Name (Name)
+{
+Rocket Catapult
+}
+

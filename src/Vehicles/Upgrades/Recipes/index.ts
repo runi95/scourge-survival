@@ -126,3 +126,4 @@ export * from "./TwinCatapults";
 export * from "./LightningBoulder";
 export * from "./EarthquakeShot";
 export * from "./WolfCatapult";
+export * from "./RocketCatapult";
