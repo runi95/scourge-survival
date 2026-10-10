@@ -14219,3 +14219,65 @@ STRING 2702
 Corpse Mine
 }
 
+STRING 2703
+// Items: I0AA (Crippling Bolt), Tip (Tooltip - Basic)
+{
+Purchase Crippling Bolt
+}
+
+STRING 2704
+// Items: I0AA (Crippling Bolt), Description (Description)
+{
+Fires a shadow bolt at a random enemy unit within range and cripples it.
+}
+
+STRING 2705
+// Items: I0AA (Crippling Bolt), Ubertip (Tooltip - Extended)
+{
+Fires a shadow bolt at a random enemy unit within range and cripples it.
+}
+
+STRING 2706
+// Items: I0AA (Crippling Bolt), Name (Name)
+{
+Crippling Bolt
+}
+
+STRING 2707
+// Items: I0AB (Crippling Bolt), Tip (Tooltip - Basic)
+{
+Purchase Crippling Bolt
+}
+
+STRING 2708
+// Items: I0AB (Crippling Bolt), Ubertip (Tooltip - Extended)
+{
+Fires a shadow bolt at a random enemy unit within range and cripples it.
+
+Damage: |cffffcc0020 - 24 (bolt) + 75 (cripple)|r
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00600|r
+Duration: |cffffcc003s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00magic + spell|r
+}
+
+STRING 2709
+// Items: I0AB (Crippling Bolt), Description (Description)
+{
+Fires a shadow bolt at a random enemy unit within range and cripples it.
+
+Damage: |cffffcc0020 - 24 (bolt) + 75 (cripple)|r
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00600|r
+Duration: |cffffcc003s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00magic + spell|r
+}
+
+STRING 2710
+// Items: I0AB (Crippling Bolt), Name (Name)
+{
+Crippling Bolt
+}
+
