@@ -13499,3 +13499,65 @@ STRING 2612
 Snare Mine
 }
 
+STRING 2613
+// Items: I09O (Hunter's Spear), Tip (Tooltip - Basic)
+{
+Purchase Hunter's Spear
+}
+
+STRING 2614
+// Items: I09O (Hunter's Spear), Description (Description)
+{
+Hurls a spear and throws a net at a random enemy unit within range, holding it in place.
+}
+
+STRING 2615
+// Items: I09O (Hunter's Spear), Ubertip (Tooltip - Extended)
+{
+Hurls a spear and throws a net at a random enemy unit within range, holding it in place.
+}
+
+STRING 2616
+// Items: I09O (Hunter's Spear), Name (Name)
+{
+Hunter's Spear
+}
+
+STRING 2617
+// Items: I09P (Hunter's Spear), Tip (Tooltip - Basic)
+{
+Purchase Hunter's Spear
+}
+
+STRING 2618
+// Items: I09P (Hunter's Spear), Ubertip (Tooltip - Extended)
+{
+Hurls a spear and throws a net at a random enemy unit within range, holding it in place.
+
+Damage: |cffffcc0020 - 30 (spear) + 40 (net)|r
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00800|r
+Duration: |cffffcc003s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing + spell|r
+}
+
+STRING 2619
+// Items: I09P (Hunter's Spear), Description (Description)
+{
+Hurls a spear and throws a net at a random enemy unit within range, holding it in place.
+
+Damage: |cffffcc0020 - 30 (spear) + 40 (net)|r
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00800|r
+Duration: |cffffcc003s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing + spell|r
+}
+
+STRING 2620
+// Items: I09P (Hunter's Spear), Name (Name)
+{
+Hunter's Spear
+}
+
