@@ -13297,3 +13297,67 @@ STRING 2587
 Hunting Pack
 }
 
+STRING 2588
+// Items: I09I (Rocket Spears), Tip (Tooltip - Basic)
+{
+Purchase Rocket Spears
+}
+
+STRING 2589
+// Items: I09I (Rocket Spears), Description (Description)
+{
+Hurls spears and fires Cluster Rockets at 2 random enemy units within range.
+}
+
+STRING 2590
+// Items: I09I (Rocket Spears), Ubertip (Tooltip - Extended)
+{
+Hurls spears and fires Cluster Rockets at 2 random enemy units within range.
+}
+
+STRING 2591
+// Items: I09I (Rocket Spears), Name (Name)
+{
+Rocket Spears
+}
+
+STRING 2592
+// Items: I09J (Rocket Spears), Tip (Tooltip - Basic)
+{
+Purchase Rocket Spears
+}
+
+STRING 2593
+// Items: I09J (Rocket Spears), Ubertip (Tooltip - Extended)
+{
+Hurls spears and fires Cluster Rockets at 2 random enemy units within range.
+
+Damage: |cffffcc002 x 20 - 30 (spear) + 2 x 6 x 17.5 (rockets)|r
+Cooldown: |cffffcc002.5s|r
+Range: |cffffcc00800|r
+Area of effect: |cffffcc00300|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing + spell|r
+Effect: |cffffcc00stuns for 1s|r
+}
+
+STRING 2594
+// Items: I09J (Rocket Spears), Description (Description)
+{
+Hurls spears and fires Cluster Rockets at 2 random enemy units within range.
+
+Damage: |cffffcc002 x 20 - 30 (spear) + 2 x 6 x 17.5 (rockets)|r
+Cooldown: |cffffcc002.5s|r
+Range: |cffffcc00800|r
+Area of effect: |cffffcc00300|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing + spell|r
+Effect: |cffffcc00stuns for 1s|r
+}
+
+STRING 2595
+// Items: I09J (Rocket Spears), Name (Name)
+{
+Rocket Spears
+}
+
