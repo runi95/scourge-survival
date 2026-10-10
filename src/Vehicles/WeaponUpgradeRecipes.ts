@@ -162,4 +162,5 @@ export const weaponRecipes = [
   new Recipes.BatStorm(),
   new Recipes.BoneSpikes(),
   new Recipes.BoneSwarm(),
+  new Recipes.CorpseMine(),
 ];

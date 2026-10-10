@@ -14147,3 +14147,75 @@ STRING 2693
 Bone Swarm
 }
 
+STRING 2694
+// Items: I0A8 (Corpse Mine), Tip (Tooltip - Basic)
+{
+Purchase Corpse Mine
+}
+
+STRING 2695
+// Items: I0A8 (Corpse Mine), Description (Description)
+{
+Places corpse-filled land mines underneath your hero. When an enemy steps on one, it explodes and 2 Skeleton Warriors rise from it.
+}
+
+STRING 2696
+// Items: I0A8 (Corpse Mine), Ubertip (Tooltip - Extended)
+{
+Places corpse-filled land mines underneath your hero. When an enemy steps on one, it explodes and 2 Skeleton Warriors rise from it.
+}
+
+STRING 2697
+// Items: I0A8 (Corpse Mine), Name (Name)
+{
+Corpse Mine
+}
+
+STRING 2698
+// Items: I0A9 (Corpse Mine), Tip (Tooltip - Basic)
+{
+Purchase Corpse Mine
+}
+
+STRING 2699
+// Items: I0A9 (Corpse Mine), Ubertip (Tooltip - Extended)
+{
+Places corpse-filled land mines underneath your hero. When an enemy steps on one, it explodes and 2 Skeleton Warriors rise from it.
+
+Damage: |cffffcc00100 (explosion) + 2 x 26 - 42 (skeletons)|r
+Cooldown: |cffffcc003s|r
+Area of effect: |cffffcc00300|r
+Health: |cffffcc00200|r
+Duration: |cffffcc0012s|r
+Mine activation delay: |cffffcc004s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell + normal|r
+}
+
+STRING 2700
+// Items: I0A9 (Corpse Mine), Description (Description)
+{
+Places corpse-filled land mines underneath your hero. When an enemy steps on one, it explodes and 2 Skeleton Warriors rise from it.
+
+Damage: |cffffcc00100 (explosion) + 2 x 26 - 42 (skeletons)|r
+Cooldown: |cffffcc003s|r
+Area of effect: |cffffcc00300|r
+Health: |cffffcc00200|r
+Duration: |cffffcc0012s|r
+Mine activation delay: |cffffcc004s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell + normal|r
+}
+
+STRING 2701
+// Items: I0A9 (Corpse Mine), Name (Name)
+{
+Corpse Mine
+}
+
+STRING 2702
+// Units: n01D (Corpse Mine), Name (Name)
+{
+Corpse Mine
+}
+

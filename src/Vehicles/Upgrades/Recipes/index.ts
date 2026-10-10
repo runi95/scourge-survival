@@ -157,3 +157,4 @@ export * from "./BatRockets";
 export * from "./BatStorm";
 export * from "./BoneSpikes";
 export * from "./BoneSwarm";
+export * from "./CorpseMine";
