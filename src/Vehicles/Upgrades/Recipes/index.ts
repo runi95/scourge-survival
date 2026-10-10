@@ -143,3 +143,4 @@ export * from "./SpiritPack";
 export * from "./RocketWolves";
 export * from "./WolfDen";
 export * from "./SpiritHunters";
+export * from "./HuntingPack";

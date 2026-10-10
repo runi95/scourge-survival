@@ -13233,3 +13233,67 @@ STRING 2579
 Spirit Hunters
 }
 
+STRING 2580
+// Items: I09G (Hunting Pack), Tip (Tooltip - Basic)
+{
+Purchase Hunting Pack
+}
+
+STRING 2581
+// Items: I09G (Hunting Pack), Description (Description)
+{
+Throws a net at a random enemy unit within range, holding it in place, and a Spirit Wolf pounces on it.
+}
+
+STRING 2582
+// Items: I09G (Hunting Pack), Ubertip (Tooltip - Extended)
+{
+Throws a net at a random enemy unit within range, holding it in place, and a Spirit Wolf pounces on it.
+}
+
+STRING 2583
+// Items: I09G (Hunting Pack), Name (Name)
+{
+Hunting Pack
+}
+
+STRING 2584
+// Items: I09H (Hunting Pack), Tip (Tooltip - Basic)
+{
+Purchase Hunting Pack
+}
+
+STRING 2585
+// Items: I09H (Hunting Pack), Ubertip (Tooltip - Extended)
+{
+Throws a net at a random enemy unit within range, holding it in place, and a Spirit Wolf pounces on it.
+
+Damage: |cffffcc0040 (net) + 16 - 17 (wolf)|r
+Cooldown: |cffffcc004s|r
+Range: |cffffcc00600|r
+Duration: |cffffcc003s (net) + 10s (wolf)|r
+Health: |cffffcc00350|r
+Targets: |cffffcc00air & ground (net), ground (wolf)|r
+Damage type: |cffffcc00spell + normal|r
+}
+
+STRING 2586
+// Items: I09H (Hunting Pack), Description (Description)
+{
+Throws a net at a random enemy unit within range, holding it in place, and a Spirit Wolf pounces on it.
+
+Damage: |cffffcc0040 (net) + 16 - 17 (wolf)|r
+Cooldown: |cffffcc004s|r
+Range: |cffffcc00600|r
+Duration: |cffffcc003s (net) + 10s (wolf)|r
+Health: |cffffcc00350|r
+Targets: |cffffcc00air & ground (net), ground (wolf)|r
+Damage type: |cffffcc00spell + normal|r
+}
+
+STRING 2587
+// Items: I09H (Hunting Pack), Name (Name)
+{
+Hunting Pack
+}
+
