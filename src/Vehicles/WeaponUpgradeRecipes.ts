@@ -94,6 +94,7 @@ import { EternalWinter } from "./Upgrades/Recipes/EternalWinter";
 import { Frostfire } from "./Upgrades/Recipes/Frostfire";
 import { FrostbiteRifle } from "./Upgrades/Recipes/FrostbiteRifle";
 import { IceRockets } from "./Upgrades/Recipes/IceRockets";
+import { FrostClap } from "./Upgrades/Recipes/FrostClap";
 
 export const weaponRecipes = [
   new DualCannons(),
@@ -192,4 +193,5 @@ export const weaponRecipes = [
   new Frostfire(),
   new FrostbiteRifle(),
   new IceRockets(),
+  new FrostClap(),
 ];
