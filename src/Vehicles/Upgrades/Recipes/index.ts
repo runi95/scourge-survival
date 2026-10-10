@@ -98,3 +98,4 @@ export * from "./FrostClap";
 export * from "./IceHammer";
 export * from "./SearingClap";
 export * from "./MoltenHammer";
+export * from "./ThunderRifle";

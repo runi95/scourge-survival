@@ -10329,3 +10329,67 @@ STRING 2212
 Molten Hammer
 }
 
+STRING 2213
+// Items: I06Y (Thunder Rifle), Tip (Tooltip - Basic)
+{
+Purchase Thunder Rifle
+}
+
+STRING 2214
+// Items: I06Y (Thunder Rifle), Description (Description)
+{
+Shoots a random enemy unit within range with a thundering bullet that hurts and slows every enemy around it.
+}
+
+STRING 2215
+// Items: I06Y (Thunder Rifle), Ubertip (Tooltip - Extended)
+{
+Shoots a random enemy unit within range with a thundering bullet that hurts and slows every enemy around it.
+}
+
+STRING 2216
+// Items: I06Y (Thunder Rifle), Name (Name)
+{
+Thunder Rifle
+}
+
+STRING 2217
+// Items: I06Z (Thunder Rifle), Tip (Tooltip - Basic)
+{
+Purchase Thunder Rifle
+}
+
+STRING 2218
+// Items: I06Z (Thunder Rifle), Ubertip (Tooltip - Extended)
+{
+Shoots a random enemy unit within range with a thundering bullet that hurts and slows every enemy around it.
+
+Damage: |cffffcc00750 (bullet) + 60 (thunderclap)|r
+Slow: |cffffcc00-50% movement and attack speed for 3s|r
+Cooldown: |cffffcc005s|r
+Range: |cffffcc001500|r
+Area of effect: |cffffcc00300|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00piercing + spell|r
+}
+
+STRING 2219
+// Items: I06Z (Thunder Rifle), Description (Description)
+{
+Shoots a random enemy unit within range with a thundering bullet that hurts and slows every enemy around it.
+
+Damage: |cffffcc00750 (bullet) + 60 (thunderclap)|r
+Slow: |cffffcc00-50% movement and attack speed for 3s|r
+Cooldown: |cffffcc005s|r
+Range: |cffffcc001500|r
+Area of effect: |cffffcc00300|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00piercing + spell|r
+}
+
+STRING 2220
+// Items: I06Z (Thunder Rifle), Name (Name)
+{
+Thunder Rifle
+}
+

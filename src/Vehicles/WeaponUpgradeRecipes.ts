@@ -103,4 +103,5 @@ export const weaponRecipes = [
   new Recipes.IceHammer(),
   new Recipes.SearingClap(),
   new Recipes.MoltenHammer(),
+  new Recipes.ThunderRifle(),
 ];
