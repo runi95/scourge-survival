@@ -169,4 +169,5 @@ export const weaponRecipes = [
   new Recipes.DeathBolt(),
   new Recipes.FreezingBreath(),
   new Recipes.FrostBats(),
+  new Recipes.FrostBolt(),
 ];

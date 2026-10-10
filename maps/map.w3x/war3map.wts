@@ -14603,3 +14603,77 @@ STRING 2750
 Frost Bats
 }
 
+STRING 2751
+// Items: I0AM (Frost Bolt), Tip (Tooltip - Basic)
+{
+Purchase Frost Bolt
+}
+
+STRING 2752
+// Items: I0AM (Frost Bolt), Description (Description)
+{
+Fires a freezing bolt at a random enemy unit within range, slowing it.
+}
+
+STRING 2753
+// Items: I0AM (Frost Bolt), Ubertip (Tooltip - Extended)
+{
+Fires a freezing bolt at a random enemy unit within range, slowing it.
+}
+
+STRING 2754
+// Items: I0AM (Frost Bolt), Name (Name)
+{
+Frost Bolt
+}
+
+STRING 2755
+// Items: I0AN (Frost Bolt), Tip (Tooltip - Basic)
+{
+Purchase Frost Bolt
+}
+
+STRING 2756
+// Items: I0AN (Frost Bolt), Ubertip (Tooltip - Extended)
+{
+Fires a freezing bolt at a random enemy unit within range, slowing it.
+
+Damage: |cffffcc0028 - 32|r
+Slow: |cffffcc00-50% movement and attack speed for 3s|r
+Cooldown: |cffffcc001.5s|r
+Range: |cffffcc00600|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00magic|r
+}
+
+STRING 2757
+// Items: I0AN (Frost Bolt), Description (Description)
+{
+Fires a freezing bolt at a random enemy unit within range, slowing it.
+
+Damage: |cffffcc0028 - 32|r
+Slow: |cffffcc00-50% movement and attack speed for 3s|r
+Cooldown: |cffffcc001.5s|r
+Range: |cffffcc00600|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00magic|r
+}
+
+STRING 2758
+// Items: I0AN (Frost Bolt), Name (Name)
+{
+Frost Bolt
+}
+
+STRING 2759
+// Units: u01V (Frost Bolt), Name (Name)
+{
+Frost Bolt
+}
+
+STRING 2760
+// Abilities: A04I (Frost Bolt Slow), Name (Name)
+{
+Frost Bolt Slow
+}
+
