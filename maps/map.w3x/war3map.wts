@@ -13683,3 +13683,67 @@ STRING 2636
 Spear Volley
 }
 
+STRING 2637
+// Items: I09U (Bat Bolts), Tip (Tooltip - Basic)
+{
+Purchase Bat Bolts
+}
+
+STRING 2638
+// Items: I09U (Bat Bolts), Description (Description)
+{
+Fires a shadow bolt at a random enemy unit within range and sends a horde of bats after it.
+}
+
+STRING 2639
+// Items: I09U (Bat Bolts), Ubertip (Tooltip - Extended)
+{
+Fires a shadow bolt at a random enemy unit within range and sends a horde of bats after it.
+}
+
+STRING 2640
+// Items: I09U (Bat Bolts), Name (Name)
+{
+Bat Bolts
+}
+
+STRING 2641
+// Items: I09V (Bat Bolts), Tip (Tooltip - Basic)
+{
+Purchase Bat Bolts
+}
+
+STRING 2642
+// Items: I09V (Bat Bolts), Ubertip (Tooltip - Extended)
+{
+Fires a shadow bolt at a random enemy unit within range and sends a horde of bats after it.
+
+Damage: |cffffcc0020 - 24 (bolt) + 75 (bats)|r
+Cooldown: |cffffcc002.5s|r
+Range: |cffffcc00600|r
+Distance: |cffffcc00800|r
+Area of effect: |cffffcc00100 - 300|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00magic + spell|r
+}
+
+STRING 2643
+// Items: I09V (Bat Bolts), Description (Description)
+{
+Fires a shadow bolt at a random enemy unit within range and sends a horde of bats after it.
+
+Damage: |cffffcc0020 - 24 (bolt) + 75 (bats)|r
+Cooldown: |cffffcc002.5s|r
+Range: |cffffcc00600|r
+Distance: |cffffcc00800|r
+Area of effect: |cffffcc00100 - 300|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00magic + spell|r
+}
+
+STRING 2644
+// Items: I09V (Bat Bolts), Name (Name)
+{
+Bat Bolts
+}
+

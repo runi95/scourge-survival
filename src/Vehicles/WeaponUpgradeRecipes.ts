@@ -155,4 +155,5 @@ export const weaponRecipes = [
   new Recipes.HuntersSpear(),
   new Recipes.NetVolley(),
   new Recipes.SpearVolley(),
+  new Recipes.BatBolts(),
 ];
