@@ -93,6 +93,7 @@ import { LightningElemental } from "./Upgrades/Recipes/LightningElemental";
 import { EternalWinter } from "./Upgrades/Recipes/EternalWinter";
 import { Frostfire } from "./Upgrades/Recipes/Frostfire";
 import { FrostbiteRifle } from "./Upgrades/Recipes/FrostbiteRifle";
+import { IceRockets } from "./Upgrades/Recipes/IceRockets";
 
 export const weaponRecipes = [
   new DualCannons(),
@@ -190,4 +191,5 @@ export const weaponRecipes = [
   new EternalWinter(),
   new Frostfire(),
   new FrostbiteRifle(),
+  new IceRockets(),
 ];

@@ -9993,3 +9993,67 @@ STRING 2169
 Frostbite Rifle
 }
 
+STRING 2170
+// Items: I06O (Ice Rockets), Tip (Tooltip - Basic)
+{
+Purchase Ice Rockets
+}
+
+STRING 2171
+// Items: I06O (Ice Rockets), Description (Description)
+{
+Fires Cluster Rockets at a random enemy unit within range and calls down a Blizzard where they land.
+}
+
+STRING 2172
+// Items: I06O (Ice Rockets), Ubertip (Tooltip - Extended)
+{
+Fires Cluster Rockets at a random enemy unit within range and calls down a Blizzard where they land.
+}
+
+STRING 2173
+// Items: I06O (Ice Rockets), Name (Name)
+{
+Ice Rockets
+}
+
+STRING 2174
+// Items: I06P (Ice Rockets), Tip (Tooltip - Basic)
+{
+Purchase Ice Rockets
+}
+
+STRING 2175
+// Items: I06P (Ice Rockets), Ubertip (Tooltip - Extended)
+{
+Fires Cluster Rockets at a random enemy unit within range and calls down a Blizzard where they land.
+
+Damage: |cffffcc006 x 17.5 (rockets) + 6 x 50 (blizzard)|r
+Cooldown: |cffffcc004s|r
+Range: |cffffcc00800|r
+Area of effect: |cffffcc00300 (rockets) + 200 (blizzard)|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+Effect: |cffffcc00stuns for 1s|r
+}
+
+STRING 2176
+// Items: I06P (Ice Rockets), Description (Description)
+{
+Fires Cluster Rockets at a random enemy unit within range and calls down a Blizzard where they land.
+
+Damage: |cffffcc006 x 17.5 (rockets) + 6 x 50 (blizzard)|r
+Cooldown: |cffffcc004s|r
+Range: |cffffcc00800|r
+Area of effect: |cffffcc00300 (rockets) + 200 (blizzard)|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+Effect: |cffffcc00stuns for 1s|r
+}
+
+STRING 2177
+// Items: I06P (Ice Rockets), Name (Name)
+{
+Ice Rockets
+}
+
