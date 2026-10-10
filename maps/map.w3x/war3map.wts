@@ -16637,3 +16637,77 @@ STRING 3007
 Archer Barracks
 }
 
+STRING 3008
+// Items: I0CC (Blade Cyclone), Tip (Tooltip - Basic)
+{
+Purchase Blade Cyclone
+}
+
+STRING 3009
+// Items: I0CC (Blade Cyclone), Description (Description)
+{
+Summons a tornado full of knives every 10 seconds that wanders around, tossing enemies into the air and cutting everything around it.
+}
+
+STRING 3010
+// Items: I0CC (Blade Cyclone), Ubertip (Tooltip - Extended)
+{
+Summons a tornado full of knives every 10 seconds that wanders around, tossing enemies into the air and cutting everything around it.
+}
+
+STRING 3011
+// Items: I0CC (Blade Cyclone), Name (Name)
+{
+Blade Cyclone
+}
+
+STRING 3012
+// Items: I0CD (Blade Cyclone), Tip (Tooltip - Basic)
+{
+Purchase Blade Cyclone
+}
+
+STRING 3013
+// Items: I0CD (Blade Cyclone), Ubertip (Tooltip - Extended)
+{
+Summons a tornado full of knives every 10 seconds that wanders around, tossing enemies into the air and cutting everything around it.
+
+Damage: |cffffcc0040 - 180|r
+Cooldown: |cffffcc0010s|r
+Area of effect: |cffffcc00650|r
+Duration: |cffffcc0010s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 3014
+// Items: I0CD (Blade Cyclone), Description (Description)
+{
+Summons a tornado full of knives every 10 seconds that wanders around, tossing enemies into the air and cutting everything around it.
+
+Damage: |cffffcc0040 - 180|r
+Cooldown: |cffffcc0010s|r
+Area of effect: |cffffcc00650|r
+Duration: |cffffcc0010s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 3015
+// Items: I0CD (Blade Cyclone), Name (Name)
+{
+Blade Cyclone
+}
+
+STRING 3016
+// Abilities: A04L (Blade Cyclone Damage), Name (Name)
+{
+Blade Cyclone Damage
+}
+
+STRING 3017
+// Units: n01H (Blade Cyclone), Name (Name)
+{
+Blade Cyclone
+}
+
