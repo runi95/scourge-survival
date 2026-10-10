@@ -85,6 +85,7 @@ import { ConcussionShells } from "./Upgrades/Recipes/ConcussionShells";
 import { HammerCannon } from "./Upgrades/Recipes/HammerCannon";
 import { ElementalFoundry } from "./Upgrades/Recipes/ElementalFoundry";
 import { FrostClockwerks } from "./Upgrades/Recipes/FrostClockwerks";
+import { KnightStables } from "./Upgrades/Recipes/KnightStables";
 
 export const weaponRecipes = [
   new DualCannons(),
@@ -174,4 +175,5 @@ export const weaponRecipes = [
   new HammerCannon(),
   new ElementalFoundry(),
   new FrostClockwerks(),
+  new KnightStables(),
 ];

@@ -9455,3 +9455,65 @@ STRING 2101
 Frost Clockwerk Slow
 }
 
+STRING 2102
+// Items: I068 (Knight Stables), Tip (Tooltip - Basic)
+{
+Purchase Knight Stables
+}
+
+STRING 2103
+// Items: I068 (Knight Stables), Description (Description)
+{
+Sends out 2 Knights every 30 seconds that fight by your side.
+}
+
+STRING 2104
+// Items: I068 (Knight Stables), Ubertip (Tooltip - Extended)
+{
+Sends out 2 Knights every 30 seconds that fight by your side.
+}
+
+STRING 2105
+// Items: I068 (Knight Stables), Name (Name)
+{
+Knight Stables
+}
+
+STRING 2106
+// Items: I069 (Knight Stables), Tip (Tooltip - Basic)
+{
+Purchase Knight Stables
+}
+
+STRING 2107
+// Items: I069 (Knight Stables), Ubertip (Tooltip - Extended)
+{
+Sends out 2 Knights every 30 seconds that fight by your side.
+
+Damage: |cffffcc002 x 30 - 38|r
+Cooldown: |cffffcc0030s|r
+Health: |cffffcc00885|r
+Duration: |cffffcc0020s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00normal|r
+}
+
+STRING 2108
+// Items: I069 (Knight Stables), Description (Description)
+{
+Sends out 2 Knights every 30 seconds that fight by your side.
+
+Damage: |cffffcc002 x 30 - 38|r
+Cooldown: |cffffcc0030s|r
+Health: |cffffcc00885|r
+Duration: |cffffcc0020s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00normal|r
+}
+
+STRING 2109
+// Items: I069 (Knight Stables), Name (Name)
+{
+Knight Stables
+}
+
