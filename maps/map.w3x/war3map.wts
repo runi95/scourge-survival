@@ -7841,3 +7841,69 @@ STRING 1872
 Necromancer's Grasp
 }
 
+STRING 1873
+// Items: I04W (Sacrifice), Tip (Tooltip - Basic)
+{
+Purchase Sacrifice
+}
+
+STRING 1874
+// Items: I04W (Sacrifice), Description (Description)
+{
+Fires rapid spectral missiles at random enemy units. Every 8th missile cripples its target.
+}
+
+STRING 1875
+// Items: I04W (Sacrifice), Ubertip (Tooltip - Extended)
+{
+Fires rapid spectral missiles at random enemy units. Every 8th missile cripples its target.
+}
+
+STRING 1876
+// Items: I04W (Sacrifice), Name (Name)
+{
+Sacrifice
+}
+
+STRING 1877
+// Items: I04X (Sacrifice), Tip (Tooltip - Basic)
+{
+Purchase Sacrifice
+}
+
+STRING 1878
+// Items: I04X (Sacrifice), Ubertip (Tooltip - Extended)
+{
+Fires rapid spectral missiles at random enemy units. Every 8th missile cripples its target.
+
+Damage: |cffffcc00100|r
+Cooldown: |cffffcc001s|r
+Range: |cffffcc00800|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00chaos|r
+}
+
+STRING 1879
+// Items: I04X (Sacrifice), Description (Description)
+{
+Fires rapid spectral missiles at random enemy units. Every 8th missile cripples its target.
+
+Damage: |cffffcc00100|r
+Cooldown: |cffffcc001s|r
+Range: |cffffcc00800|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00chaos|r
+}
+
+STRING 1880
+// Items: I04X (Sacrifice), Name (Name)
+{
+Sacrifice
+}
+
+STRING 1881
+// Units: u01L (Sacrifice), Name (Name)
+{
+Sacrifice
+}
+
