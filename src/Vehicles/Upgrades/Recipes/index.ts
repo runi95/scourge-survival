@@ -224,3 +224,4 @@ export * from "./RootedTreants";
 export * from "./SaplingMine";
 export * from "./SearingMine";
 export * from "./SearingSpear";
+export * from "./SearingStrike";

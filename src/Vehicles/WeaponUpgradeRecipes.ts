@@ -229,4 +229,5 @@ export const weaponRecipes = [
   new Recipes.SaplingMine(),
   new Recipes.SearingMine(),
   new Recipes.SearingSpear(),
+  new Recipes.SearingStrike(),
 ];

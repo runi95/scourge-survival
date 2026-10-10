@@ -18525,3 +18525,67 @@ STRING 3249
 Searing Spear
 }
 
+STRING 3250
+// Items: I0DY (Searing Strike), Tip (Tooltip - Basic)
+{
+Purchase Searing Strike
+}
+
+STRING 3251
+// Items: I0DY (Searing Strike), Description (Description)
+{
+Throws a burning, poisoned dagger at a random enemy unit within range that bursts into flames, burning every enemy around it.
+}
+
+STRING 3252
+// Items: I0DY (Searing Strike), Ubertip (Tooltip - Extended)
+{
+Throws a burning, poisoned dagger at a random enemy unit within range that bursts into flames, burning every enemy around it.
+}
+
+STRING 3253
+// Items: I0DY (Searing Strike), Name (Name)
+{
+Searing Strike
+}
+
+STRING 3254
+// Items: I0DZ (Searing Strike), Tip (Tooltip - Basic)
+{
+Purchase Searing Strike
+}
+
+STRING 3255
+// Items: I0DZ (Searing Strike), Ubertip (Tooltip - Extended)
+{
+Throws a burning, poisoned dagger at a random enemy unit within range that bursts into flames, burning every enemy around it.
+
+Damage: |cffffcc00100 + 30 every 3s for 9s (dagger) + 40 (flames)|r
+Slow: |cffffcc00-50% movement speed for 9s|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00700|r
+Area of effect: |cffffcc00200|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 3256
+// Items: I0DZ (Searing Strike), Description (Description)
+{
+Throws a burning, poisoned dagger at a random enemy unit within range that bursts into flames, burning every enemy around it.
+
+Damage: |cffffcc00100 + 30 every 3s for 9s (dagger) + 40 (flames)|r
+Slow: |cffffcc00-50% movement speed for 9s|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00700|r
+Area of effect: |cffffcc00200|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 3257
+// Items: I0DZ (Searing Strike), Name (Name)
+{
+Searing Strike
+}
+
