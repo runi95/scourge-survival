@@ -25,7 +25,11 @@ import {
   WarDrums,
   FaerieFire,
 } from "./Upgrades/Misc/Legendary/index";
-import { ChainLightning, Tornado } from "./Upgrades/Weapons/Legendary/index";
+import {
+  ChainLightning,
+  Tornado,
+  Blizzard,
+} from "./Upgrades/Weapons/Legendary/index";
 import {
   CriticalStrike,
   MagicSentry,
@@ -107,6 +111,7 @@ export const legendaryUpgrades: VehicleUpgrade[] = [
   new FaerieFire(),
   new ChainLightning(),
   new Tornado(),
+  new Blizzard(),
 ];
 
 export const vehicleUpgrades: VehicleUpgrade[] = [

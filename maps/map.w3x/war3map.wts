@@ -8513,3 +8513,33 @@ STRING 1964
 Storm Bolt
 }
 
+STRING 1965
+// Items: I05E (Blizzard), Name (Name)
+{
+Blizzard
+}
+
+STRING 1966
+// Items: I05E (Blizzard), Tip (Tooltip - Basic)
+{
+Purchase Blizzard
+}
+
+STRING 1967
+// Items: I05E (Blizzard), Description (Description)
+{
+Calls down waves of freezing ice shards on a random group of enemies.
+}
+
+STRING 1968
+// Items: I05E (Blizzard), Ubertip (Tooltip - Extended)
+{
+Calls down waves of freezing ice shards on a random group of enemies.
+}
+
+STRING 1969
+// Abilities: A041 (Blizzard), Name (Name)
+{
+Blizzard
+}
+
