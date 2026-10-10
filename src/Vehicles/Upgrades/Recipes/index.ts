@@ -175,3 +175,4 @@ export * from "./FrostbiteCurse";
 export * from "./FrozenCurse";
 export * from "./FrozenDead";
 export * from "./FrozenImpale";
+export * from "./FrozenSpikes";
