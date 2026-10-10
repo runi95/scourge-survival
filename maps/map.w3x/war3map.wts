@@ -11733,3 +11733,69 @@ STRING 2391
 Javelin Stomp
 }
 
+STRING 2392
+// Items: I086 (Spirit Javelins), Tip (Tooltip - Basic)
+{
+Purchase Spirit Javelins
+}
+
+STRING 2393
+// Items: I086 (Spirit Javelins), Description (Description)
+{
+Throws ghostly javelins at 2 random enemy units within range.
+}
+
+STRING 2394
+// Items: I086 (Spirit Javelins), Ubertip (Tooltip - Extended)
+{
+Throws ghostly javelins at 2 random enemy units within range.
+}
+
+STRING 2395
+// Items: I086 (Spirit Javelins), Name (Name)
+{
+Spirit Javelins
+}
+
+STRING 2396
+// Items: I087 (Spirit Javelins), Tip (Tooltip - Basic)
+{
+Purchase Spirit Javelins
+}
+
+STRING 2397
+// Items: I087 (Spirit Javelins), Ubertip (Tooltip - Extended)
+{
+Throws ghostly javelins at 2 random enemy units within range.
+
+Damage: |cffffcc002 x 30 - 36|r
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00600|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00chaos|r
+}
+
+STRING 2398
+// Items: I087 (Spirit Javelins), Description (Description)
+{
+Throws ghostly javelins at 2 random enemy units within range.
+
+Damage: |cffffcc002 x 30 - 36|r
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00600|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00chaos|r
+}
+
+STRING 2399
+// Items: I087 (Spirit Javelins), Name (Name)
+{
+Spirit Javelins
+}
+
+STRING 2400
+// Units: u01U (Spirit Javelin), Name (Name)
+{
+Spirit Javelin
+}
+

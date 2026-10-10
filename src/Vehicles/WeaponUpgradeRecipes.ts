@@ -125,4 +125,5 @@ export const weaponRecipes = [
   new Recipes.SnareWave(),
   new Recipes.BarrageWagon(),
   new Recipes.JavelinStomp(),
+  new Recipes.SpiritJavelins(),
 ];
