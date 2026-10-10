@@ -8543,3 +8543,33 @@ STRING 1969
 Blizzard
 }
 
+STRING 1970
+// Items: I05F (Demolisher), Name (Name)
+{
+Demolisher
+}
+
+STRING 1971
+// Items: I05F (Demolisher), Tip (Tooltip - Basic)
+{
+Purchase Demolisher
+}
+
+STRING 1972
+// Items: I05F (Demolisher), Description (Description)
+{
+Lobs a flaming boulder at a random nearby enemy.
+}
+
+STRING 1973
+// Items: I05F (Demolisher), Ubertip (Tooltip - Extended)
+{
+Lobs a flaming boulder at a random nearby enemy.
+}
+
+STRING 1974
+// Units: u01P (Demolisher), Name (Name)
+{
+Demolisher
+}
+

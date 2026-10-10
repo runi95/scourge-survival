@@ -6,3 +6,4 @@ export * from "./SpiritTower";
 export * from "./LightJavelin";
 export * from "./SearingArrow";
 export * from "./WaterElemental";
+export * from "./Demolisher";
