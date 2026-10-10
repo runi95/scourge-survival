@@ -10843,3 +10843,73 @@ STRING 2277
 Frost Mine
 }
 
+STRING 2278
+// Items: I07E (Thunder Mine), Tip (Tooltip - Basic)
+{
+Purchase Thunder Mine
+}
+
+STRING 2279
+// Items: I07E (Thunder Mine), Description (Description)
+{
+Places thundering land mines underneath your hero. When an enemy steps on one, it explodes with a thunderclap that hurts and slows everything around it.
+}
+
+STRING 2280
+// Items: I07E (Thunder Mine), Ubertip (Tooltip - Extended)
+{
+Places thundering land mines underneath your hero. When an enemy steps on one, it explodes with a thunderclap that hurts and slows everything around it.
+}
+
+STRING 2281
+// Items: I07E (Thunder Mine), Name (Name)
+{
+Thunder Mine
+}
+
+STRING 2282
+// Items: I07F (Thunder Mine), Tip (Tooltip - Basic)
+{
+Purchase Thunder Mine
+}
+
+STRING 2283
+// Items: I07F (Thunder Mine), Ubertip (Tooltip - Extended)
+{
+Places thundering land mines underneath your hero. When an enemy steps on one, it explodes with a thunderclap that hurts and slows everything around it.
+
+Damage: |cffffcc00100 (explosion) + 60 (thunderclap)|r
+Slow: |cffffcc00-50% movement and attack speed for 3s|r
+Cooldown: |cffffcc003s|r
+Area of effect: |cffffcc00300|r
+Mine activation delay: |cffffcc004s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 2284
+// Items: I07F (Thunder Mine), Description (Description)
+{
+Places thundering land mines underneath your hero. When an enemy steps on one, it explodes with a thunderclap that hurts and slows everything around it.
+
+Damage: |cffffcc00100 (explosion) + 60 (thunderclap)|r
+Slow: |cffffcc00-50% movement and attack speed for 3s|r
+Cooldown: |cffffcc003s|r
+Area of effect: |cffffcc00300|r
+Mine activation delay: |cffffcc004s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 2285
+// Items: I07F (Thunder Mine), Name (Name)
+{
+Thunder Mine
+}
+
+STRING 2286
+// Units: n017 (Thunder Mine), Name (Name)
+{
+Thunder Mine
+}
+
