@@ -30,7 +30,12 @@ import {
   Thorns,
   ScourgeBoneChimes,
 } from "./Upgrades/Misc/Rare/index";
-import { Impale, LongRifle, OrbOfFire } from "./Upgrades/Weapons/Rare/index";
+import {
+  Impale,
+  LongRifle,
+  OrbOfFire,
+  Cripple,
+} from "./Upgrades/Weapons/Rare/index";
 import {
   ManaLeech,
   Evasion,
@@ -86,6 +91,7 @@ export const rareUpgrades: VehicleUpgrade[] = [
   new ScourgeBoneChimes(),
   new OrbOfFire(),
   new LongRifle(),
+  new Cripple(),
 ];
 
 export const legendaryUpgrades: VehicleUpgrade[] = [

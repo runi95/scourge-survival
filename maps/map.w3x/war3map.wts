@@ -7585,3 +7585,33 @@ STRING 1837
 This unit has been hit by Charge; its movement speed and attack rate are reduced.
 }
 
+STRING 1838
+// Items: I04O (Cripple), Name (Name)
+{
+Cripple
+}
+
+STRING 1839
+// Items: I04O (Cripple), Tip (Tooltip - Basic)
+{
+Purchase Cripple
+}
+
+STRING 1840
+// Items: I04O (Cripple), Description (Description)
+{
+Cripples a nearby enemy unit.
+}
+
+STRING 1841
+// Items: I04O (Cripple), Ubertip (Tooltip - Extended)
+{
+Cripples a nearby enemy unit.
+}
+
+STRING 1842
+// Abilities: A03P (Cripple), Name (Name)
+{
+Cripple
+}
+
