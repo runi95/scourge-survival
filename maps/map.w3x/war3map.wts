@@ -8633,3 +8633,27 @@ STRING 1984
 War Stomp
 }
 
+STRING 1985
+// Items: I05I (Feral Spirit), Name (Name)
+{
+Feral Spirit
+}
+
+STRING 1986
+// Items: I05I (Feral Spirit), Tip (Tooltip - Basic)
+{
+Purchase Feral Spirit
+}
+
+STRING 1987
+// Items: I05I (Feral Spirit), Description (Description)
+{
+Summons Spirit Wolves to fight by your side.
+}
+
+STRING 1988
+// Items: I05I (Feral Spirit), Ubertip (Tooltip - Extended)
+{
+Summons Spirit Wolves to fight by your side.
+}
+
