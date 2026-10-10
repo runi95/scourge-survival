@@ -14347,3 +14347,65 @@ STRING 2718
 Crippling Rockets
 }
 
+STRING 2719
+// Items: I0AE (Crypt Fiend Den), Tip (Tooltip - Basic)
+{
+Purchase Crypt Fiend Den
+}
+
+STRING 2720
+// Items: I0AE (Crypt Fiend Den), Description (Description)
+{
+Sends out 2 Crypt Fiends every 30 seconds that spit at enemies from afar.
+}
+
+STRING 2721
+// Items: I0AE (Crypt Fiend Den), Ubertip (Tooltip - Extended)
+{
+Sends out 2 Crypt Fiends every 30 seconds that spit at enemies from afar.
+}
+
+STRING 2722
+// Items: I0AE (Crypt Fiend Den), Name (Name)
+{
+Crypt Fiend Den
+}
+
+STRING 2723
+// Items: I0AF (Crypt Fiend Den), Tip (Tooltip - Basic)
+{
+Purchase Crypt Fiend Den
+}
+
+STRING 2724
+// Items: I0AF (Crypt Fiend Den), Ubertip (Tooltip - Extended)
+{
+Sends out 2 Crypt Fiends every 30 seconds that spit at enemies from afar.
+
+Damage: |cffffcc002 x 26 - 31|r
+Cooldown: |cffffcc0030s|r
+Health: |cffffcc00550|r
+Duration: |cffffcc0020s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00piercing|r
+}
+
+STRING 2725
+// Items: I0AF (Crypt Fiend Den), Description (Description)
+{
+Sends out 2 Crypt Fiends every 30 seconds that spit at enemies from afar.
+
+Damage: |cffffcc002 x 26 - 31|r
+Cooldown: |cffffcc0030s|r
+Health: |cffffcc00550|r
+Duration: |cffffcc0020s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00piercing|r
+}
+
+STRING 2726
+// Items: I0AF (Crypt Fiend Den), Name (Name)
+{
+Crypt Fiend Den
+}
+
