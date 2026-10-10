@@ -133,3 +133,4 @@ export * from "./NetCatapult";
 export * from "./ThunderStomp";
 export * from "./StormWolves";
 export * from "./LightningNet";
+export * from "./SeismicStomp";
