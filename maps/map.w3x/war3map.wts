@@ -15483,3 +15483,65 @@ STRING 2860
 Gargoyle Spire
 }
 
+STRING 2861
+// Items: I0BC (Ghoul Pit), Tip (Tooltip - Basic)
+{
+Purchase Ghoul Pit
+}
+
+STRING 2862
+// Items: I0BC (Ghoul Pit), Description (Description)
+{
+Digs up 3 Ghouls every 30 seconds that fight by your side.
+}
+
+STRING 2863
+// Items: I0BC (Ghoul Pit), Ubertip (Tooltip - Extended)
+{
+Digs up 3 Ghouls every 30 seconds that fight by your side.
+}
+
+STRING 2864
+// Items: I0BC (Ghoul Pit), Name (Name)
+{
+Ghoul Pit
+}
+
+STRING 2865
+// Items: I0BD (Ghoul Pit), Tip (Tooltip - Basic)
+{
+Purchase Ghoul Pit
+}
+
+STRING 2866
+// Items: I0BD (Ghoul Pit), Ubertip (Tooltip - Extended)
+{
+Digs up 3 Ghouls every 30 seconds that fight by your side.
+
+Damage: |cffffcc003 x 12 - 14|r
+Cooldown: |cffffcc0030s|r
+Health: |cffffcc00340|r
+Duration: |cffffcc0020s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00normal|r
+}
+
+STRING 2867
+// Items: I0BD (Ghoul Pit), Description (Description)
+{
+Digs up 3 Ghouls every 30 seconds that fight by your side.
+
+Damage: |cffffcc003 x 12 - 14|r
+Cooldown: |cffffcc0030s|r
+Health: |cffffcc00340|r
+Duration: |cffffcc0020s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00normal|r
+}
+
+STRING 2868
+// Items: I0BD (Ghoul Pit), Name (Name)
+{
+Ghoul Pit
+}
+

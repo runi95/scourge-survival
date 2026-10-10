@@ -177,3 +177,4 @@ export * from "./FrozenDead";
 export * from "./FrozenImpale";
 export * from "./FrozenSpikes";
 export * from "./GargoyleSpire";
+export * from "./GhoulPit";
