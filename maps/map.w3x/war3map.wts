@@ -15733,3 +15733,73 @@ STRING 2892
 Necromancer Academy
 }
 
+STRING 2893
+// Items: I0BK (Nova Mine), Tip (Tooltip - Basic)
+{
+Purchase Nova Mine
+}
+
+STRING 2894
+// Items: I0BK (Nova Mine), Description (Description)
+{
+Places freezing land mines underneath your hero. When an enemy steps on one, it explodes and blasts it with a Frost Nova.
+}
+
+STRING 2895
+// Items: I0BK (Nova Mine), Ubertip (Tooltip - Extended)
+{
+Places freezing land mines underneath your hero. When an enemy steps on one, it explodes and blasts it with a Frost Nova.
+}
+
+STRING 2896
+// Items: I0BK (Nova Mine), Name (Name)
+{
+Nova Mine
+}
+
+STRING 2897
+// Items: I0BL (Nova Mine), Tip (Tooltip - Basic)
+{
+Purchase Nova Mine
+}
+
+STRING 2898
+// Items: I0BL (Nova Mine), Ubertip (Tooltip - Extended)
+{
+Places freezing land mines underneath your hero. When an enemy steps on one, it explodes and blasts it with a Frost Nova.
+
+Damage: |cffffcc00100 (explosion) + 60 (target) + 40 (nova)|r
+Slow: |cffffcc00-50% movement speed for 3s|r
+Cooldown: |cffffcc003s|r
+Area of effect: |cffffcc00300|r
+Mine activation delay: |cffffcc004s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 2899
+// Items: I0BL (Nova Mine), Description (Description)
+{
+Places freezing land mines underneath your hero. When an enemy steps on one, it explodes and blasts it with a Frost Nova.
+
+Damage: |cffffcc00100 (explosion) + 60 (target) + 40 (nova)|r
+Slow: |cffffcc00-50% movement speed for 3s|r
+Cooldown: |cffffcc003s|r
+Area of effect: |cffffcc00300|r
+Mine activation delay: |cffffcc004s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 2900
+// Items: I0BL (Nova Mine), Name (Name)
+{
+Nova Mine
+}
+
+STRING 2901
+// Units: n01E (Nova Mine), Name (Name)
+{
+Nova Mine
+}
+

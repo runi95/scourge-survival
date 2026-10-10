@@ -186,4 +186,5 @@ export const weaponRecipes = [
   new Recipes.GraveCurse(),
   new Recipes.HauntedGraveyard(),
   new Recipes.NecromancerAcademy(),
+  new Recipes.NovaMine(),
 ];

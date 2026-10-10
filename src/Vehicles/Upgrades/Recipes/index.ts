@@ -181,3 +181,4 @@ export * from "./GhoulPit";
 export * from "./GraveCurse";
 export * from "./HauntedGraveyard";
 export * from "./NecromancerAcademy";
+export * from "./NovaMine";
