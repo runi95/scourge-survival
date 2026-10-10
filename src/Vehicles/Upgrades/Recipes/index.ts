@@ -165,3 +165,4 @@ export * from "./DeathBolt";
 export * from "./FreezingBreath";
 export * from "./FrostBats";
 export * from "./FrostBolt";
+export * from "./FrostBrood";

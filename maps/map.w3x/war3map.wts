@@ -14677,3 +14677,69 @@ STRING 2760
 Frost Bolt Slow
 }
 
+STRING 2761
+// Items: I0AO (Frost Brood), Tip (Tooltip - Basic)
+{
+Purchase Frost Brood
+}
+
+STRING 2762
+// Items: I0AO (Frost Brood), Description (Description)
+{
+Summons 2 Frost Wyrms every 60 seconds that fight by your side. Their frozen breath hits every enemy around their target and slows them.
+}
+
+STRING 2763
+// Items: I0AO (Frost Brood), Ubertip (Tooltip - Extended)
+{
+Summons 2 Frost Wyrms every 60 seconds that fight by your side. Their frozen breath hits every enemy around their target and slows them.
+}
+
+STRING 2764
+// Items: I0AO (Frost Brood), Name (Name)
+{
+Frost Brood
+}
+
+STRING 2765
+// Items: I0AP (Frost Brood), Tip (Tooltip - Basic)
+{
+Purchase Frost Brood
+}
+
+STRING 2766
+// Items: I0AP (Frost Brood), Ubertip (Tooltip - Extended)
+{
+Summons 2 Frost Wyrms every 60 seconds that fight by your side. Their frozen breath hits every enemy around their target and slows them.
+
+Damage: |cffffcc002 x 93 - 115|r
+Slow: |cffffcc00-50% movement and attack speed for 10s|r
+Cooldown: |cffffcc0060s|r
+Area of effect: |cffffcc00200|r
+Health: |cffffcc001350|r
+Duration: |cffffcc0045s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00magic|r
+}
+
+STRING 2767
+// Items: I0AP (Frost Brood), Description (Description)
+{
+Summons 2 Frost Wyrms every 60 seconds that fight by your side. Their frozen breath hits every enemy around their target and slows them.
+
+Damage: |cffffcc002 x 93 - 115|r
+Slow: |cffffcc00-50% movement and attack speed for 10s|r
+Cooldown: |cffffcc0060s|r
+Area of effect: |cffffcc00200|r
+Health: |cffffcc001350|r
+Duration: |cffffcc0045s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00magic|r
+}
+
+STRING 2768
+// Items: I0AP (Frost Brood), Name (Name)
+{
+Frost Brood
+}
+
