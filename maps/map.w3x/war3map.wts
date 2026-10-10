@@ -8453,3 +8453,33 @@ STRING 1954
 Scalding Steam
 }
 
+STRING 1955
+// Items: I05C (Thunder Clap), Name (Name)
+{
+Thunder Clap
+}
+
+STRING 1956
+// Items: I05C (Thunder Clap), Tip (Tooltip - Basic)
+{
+Purchase Thunder Clap
+}
+
+STRING 1957
+// Items: I05C (Thunder Clap), Description (Description)
+{
+Slams the ground around your hero, hurting and slowing nearby enemies.
+}
+
+STRING 1958
+// Items: I05C (Thunder Clap), Ubertip (Tooltip - Extended)
+{
+Slams the ground around your hero, hurting and slowing nearby enemies.
+}
+
+STRING 1959
+// Abilities: A03Z (Thunder Clap), Name (Name)
+{
+Thunder Clap
+}
+
