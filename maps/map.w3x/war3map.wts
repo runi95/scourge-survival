@@ -12437,3 +12437,71 @@ STRING 2480
 Thunder Stomp
 }
 
+STRING 2481
+// Items: I08S (Storm Wolves), Tip (Tooltip - Basic)
+{
+Purchase Storm Wolves
+}
+
+STRING 2482
+// Items: I08S (Storm Wolves), Description (Description)
+{
+Calls a chain lightning on a random enemy unit within range, and a Spirit Wolf charges out of the storm.
+}
+
+STRING 2483
+// Items: I08S (Storm Wolves), Ubertip (Tooltip - Extended)
+{
+Calls a chain lightning on a random enemy unit within range, and a Spirit Wolf charges out of the storm.
+}
+
+STRING 2484
+// Items: I08S (Storm Wolves), Name (Name)
+{
+Storm Wolves
+}
+
+STRING 2485
+// Items: I08T (Storm Wolves), Tip (Tooltip - Basic)
+{
+Purchase Storm Wolves
+}
+
+STRING 2486
+// Items: I08T (Storm Wolves), Ubertip (Tooltip - Extended)
+{
+Calls a chain lightning on a random enemy unit within range, and a Spirit Wolf charges out of the storm.
+
+Damage: |cffffcc00180 (lightning) + 16 - 17 (wolf)|r
+Damage reduction jump: |cffffcc00-15%|r
+Cooldown: |cffffcc004s|r
+Range: |cffffcc00500|r
+Area of effect: |cffffcc00500|r
+Health: |cffffcc00350|r
+Duration: |cffffcc0010s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell + normal|r
+}
+
+STRING 2487
+// Items: I08T (Storm Wolves), Description (Description)
+{
+Calls a chain lightning on a random enemy unit within range, and a Spirit Wolf charges out of the storm.
+
+Damage: |cffffcc00180 (lightning) + 16 - 17 (wolf)|r
+Damage reduction jump: |cffffcc00-15%|r
+Cooldown: |cffffcc004s|r
+Range: |cffffcc00500|r
+Area of effect: |cffffcc00500|r
+Health: |cffffcc00350|r
+Duration: |cffffcc0010s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell + normal|r
+}
+
+STRING 2488
+// Items: I08T (Storm Wolves), Name (Name)
+{
+Storm Wolves
+}
+
