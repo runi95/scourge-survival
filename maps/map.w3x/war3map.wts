@@ -19755,3 +19755,67 @@ STRING 3404
 Whirling Blades
 }
 
+STRING 3405
+// Items: I0F0 (Wild Growth), Tip (Tooltip - Basic)
+{
+Purchase Wild Growth
+}
+
+STRING 3406
+// Items: I0F0 (Wild Growth), Description (Description)
+{
+Fires a searing arrow at a random enemy unit within range, and a Treant sprouts where it hits.
+}
+
+STRING 3407
+// Items: I0F0 (Wild Growth), Ubertip (Tooltip - Extended)
+{
+Fires a searing arrow at a random enemy unit within range, and a Treant sprouts where it hits.
+}
+
+STRING 3408
+// Items: I0F0 (Wild Growth), Name (Name)
+{
+Wild Growth
+}
+
+STRING 3409
+// Items: I0F1 (Wild Growth), Tip (Tooltip - Basic)
+{
+Purchase Wild Growth
+}
+
+STRING 3410
+// Items: I0F1 (Wild Growth), Ubertip (Tooltip - Extended)
+{
+Fires a searing arrow at a random enemy unit within range, and a Treant sprouts where it hits.
+
+Damage: |cffffcc0020 (arrow) + 15 - 17 (treant)|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00600|r
+Health: |cffffcc00300|r
+Duration: |cffffcc008s|r
+Targets: |cffffcc00air & ground (arrow), ground (treant)|r
+Damage type: |cffffcc00piercing + normal|r
+}
+
+STRING 3411
+// Items: I0F1 (Wild Growth), Description (Description)
+{
+Fires a searing arrow at a random enemy unit within range, and a Treant sprouts where it hits.
+
+Damage: |cffffcc0020 (arrow) + 15 - 17 (treant)|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00600|r
+Health: |cffffcc00300|r
+Duration: |cffffcc008s|r
+Targets: |cffffcc00air & ground (arrow), ground (treant)|r
+Damage type: |cffffcc00piercing + normal|r
+}
+
+STRING 3412
+// Items: I0F1 (Wild Growth), Name (Name)
+{
+Wild Growth
+}
+

@@ -243,3 +243,4 @@ export * from "./VenomCyclone";
 export * from "./VenomRockets";
 export * from "./VenomSpear";
 export * from "./WhirlingBlades";
+export * from "./WildGrowth";
