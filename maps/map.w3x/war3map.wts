@@ -9183,3 +9183,67 @@ STRING 2066
 Frost Cannon Slow
 }
 
+STRING 2067
+// Items: I060 (Concussion Shells), Tip (Tooltip - Basic)
+{
+Purchase Concussion Shells
+}
+
+STRING 2068
+// Items: I060 (Concussion Shells), Description (Description)
+{
+Fires a cannonball at a random enemy unit within range. It lands with a thunderclap, hurting and slowing every enemy around it.
+}
+
+STRING 2069
+// Items: I060 (Concussion Shells), Ubertip (Tooltip - Extended)
+{
+Fires a cannonball at a random enemy unit within range. It lands with a thunderclap, hurting and slowing every enemy around it.
+}
+
+STRING 2070
+// Items: I060 (Concussion Shells), Name (Name)
+{
+Concussion Shells
+}
+
+STRING 2071
+// Items: I061 (Concussion Shells), Tip (Tooltip - Basic)
+{
+Purchase Concussion Shells
+}
+
+STRING 2072
+// Items: I061 (Concussion Shells), Ubertip (Tooltip - Extended)
+{
+Fires a cannonball at a random enemy unit within range. It lands with a thunderclap, hurting and slowing every enemy around it.
+
+Damage: |cffffcc0025 + 60 (thunderclap)|r
+Slow: |cffffcc00-50% movement and attack speed for 3s|r
+Cooldown: |cffffcc001.5s|r
+Range: |cffffcc00600|r
+Area of effect: |cffffcc00300|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00siege + spell|r
+}
+
+STRING 2073
+// Items: I061 (Concussion Shells), Description (Description)
+{
+Fires a cannonball at a random enemy unit within range. It lands with a thunderclap, hurting and slowing every enemy around it.
+
+Damage: |cffffcc0025 + 60 (thunderclap)|r
+Slow: |cffffcc00-50% movement and attack speed for 3s|r
+Cooldown: |cffffcc001.5s|r
+Range: |cffffcc00600|r
+Area of effect: |cffffcc00300|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00siege + spell|r
+}
+
+STRING 2074
+// Items: I061 (Concussion Shells), Name (Name)
+{
+Concussion Shells
+}
+
