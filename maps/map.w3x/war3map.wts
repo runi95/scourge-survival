@@ -13427,3 +13427,75 @@ STRING 2603
 Net Rockets
 }
 
+STRING 2604
+// Items: I09M (Snare Mine), Tip (Tooltip - Basic)
+{
+Purchase Snare Mine
+}
+
+STRING 2605
+// Items: I09M (Snare Mine), Description (Description)
+{
+Places land mines underneath your hero. When an enemy steps on one, it explodes and throws nets at 3 enemy units nearby.
+}
+
+STRING 2606
+// Items: I09M (Snare Mine), Ubertip (Tooltip - Extended)
+{
+Places land mines underneath your hero. When an enemy steps on one, it explodes and throws nets at 3 enemy units nearby.
+}
+
+STRING 2607
+// Items: I09M (Snare Mine), Name (Name)
+{
+Snare Mine
+}
+
+STRING 2608
+// Items: I09N (Snare Mine), Tip (Tooltip - Basic)
+{
+Purchase Snare Mine
+}
+
+STRING 2609
+// Items: I09N (Snare Mine), Ubertip (Tooltip - Extended)
+{
+Places land mines underneath your hero. When an enemy steps on one, it explodes and throws nets at 3 enemy units nearby.
+
+Damage: |cffffcc00100 (explosion) + 3 x 40 (nets)|r
+Cooldown: |cffffcc003s|r
+Area of effect: |cffffcc00300 (explosion)|r
+Range: |cffffcc00400 (nets)|r
+Duration: |cffffcc003s|r
+Mine activation delay: |cffffcc004s|r
+Targets: |cffffcc00ground (explosion), air & ground (nets)|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 2610
+// Items: I09N (Snare Mine), Description (Description)
+{
+Places land mines underneath your hero. When an enemy steps on one, it explodes and throws nets at 3 enemy units nearby.
+
+Damage: |cffffcc00100 (explosion) + 3 x 40 (nets)|r
+Cooldown: |cffffcc003s|r
+Area of effect: |cffffcc00300 (explosion)|r
+Range: |cffffcc00400 (nets)|r
+Duration: |cffffcc003s|r
+Mine activation delay: |cffffcc004s|r
+Targets: |cffffcc00ground (explosion), air & ground (nets)|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 2611
+// Items: I09N (Snare Mine), Name (Name)
+{
+Snare Mine
+}
+
+STRING 2612
+// Units: n01B (Snare Mine), Name (Name)
+{
+Snare Mine
+}
+

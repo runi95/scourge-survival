@@ -146,3 +146,4 @@ export * from "./SpiritHunters";
 export * from "./HuntingPack";
 export * from "./RocketSpears";
 export * from "./NetRockets";
+export * from "./SnareMine";
