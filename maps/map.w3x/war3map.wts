@@ -9315,3 +9315,67 @@ STRING 2083
 Hammer Cannon
 }
 
+STRING 2084
+// Items: I064 (Elemental Foundry), Tip (Tooltip - Basic)
+{
+Purchase Elemental Foundry
+}
+
+STRING 2085
+// Items: I064 (Elemental Foundry), Description (Description)
+{
+Pumps out 2 Water Elementals every 20 seconds that fight by your side.
+}
+
+STRING 2086
+// Items: I064 (Elemental Foundry), Ubertip (Tooltip - Extended)
+{
+Pumps out 2 Water Elementals every 20 seconds that fight by your side.
+}
+
+STRING 2087
+// Items: I064 (Elemental Foundry), Name (Name)
+{
+Elemental Foundry
+}
+
+STRING 2088
+// Items: I065 (Elemental Foundry), Tip (Tooltip - Basic)
+{
+Purchase Elemental Foundry
+}
+
+STRING 2089
+// Items: I065 (Elemental Foundry), Ubertip (Tooltip - Extended)
+{
+Pumps out 2 Water Elementals every 20 seconds that fight by your side.
+
+Damage: |cffffcc002 x 29 - 43|r
+Cooldown: |cffffcc0020s|r
+Range: |cffffcc00500|r
+Health: |cffffcc00450|r
+Duration: |cffffcc0015s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing|r
+}
+
+STRING 2090
+// Items: I065 (Elemental Foundry), Description (Description)
+{
+Pumps out 2 Water Elementals every 20 seconds that fight by your side.
+
+Damage: |cffffcc002 x 29 - 43|r
+Cooldown: |cffffcc0020s|r
+Range: |cffffcc00500|r
+Health: |cffffcc00450|r
+Duration: |cffffcc0015s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing|r
+}
+
+STRING 2091
+// Items: I065 (Elemental Foundry), Name (Name)
+{
+Elemental Foundry
+}
+

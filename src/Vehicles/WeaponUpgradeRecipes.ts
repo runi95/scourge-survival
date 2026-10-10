@@ -83,6 +83,7 @@ import { HammerSquadron } from "./Upgrades/Recipes/HammerSquadron";
 import { FrostCannon } from "./Upgrades/Recipes/FrostCannon";
 import { ConcussionShells } from "./Upgrades/Recipes/ConcussionShells";
 import { HammerCannon } from "./Upgrades/Recipes/HammerCannon";
+import { ElementalFoundry } from "./Upgrades/Recipes/ElementalFoundry";
 
 export const weaponRecipes = [
   new DualCannons(),
@@ -170,4 +171,5 @@ export const weaponRecipes = [
   new FrostCannon(),
   new ConcussionShells(),
   new HammerCannon(),
+  new ElementalFoundry(),
 ];
