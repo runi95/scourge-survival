@@ -11669,3 +11669,67 @@ STRING 2383
 Barrage Wagon
 }
 
+STRING 2384
+// Items: I084 (Javelin Stomp), Tip (Tooltip - Basic)
+{
+Purchase Javelin Stomp
+}
+
+STRING 2385
+// Items: I084 (Javelin Stomp), Description (Description)
+{
+Throws a javelin at a random enemy unit within range, then stomps the ground where it lands, stunning everything around it.
+}
+
+STRING 2386
+// Items: I084 (Javelin Stomp), Ubertip (Tooltip - Extended)
+{
+Throws a javelin at a random enemy unit within range, then stomps the ground where it lands, stunning everything around it.
+}
+
+STRING 2387
+// Items: I084 (Javelin Stomp), Name (Name)
+{
+Javelin Stomp
+}
+
+STRING 2388
+// Items: I085 (Javelin Stomp), Tip (Tooltip - Basic)
+{
+Purchase Javelin Stomp
+}
+
+STRING 2389
+// Items: I085 (Javelin Stomp), Ubertip (Tooltip - Extended)
+{
+Throws a javelin at a random enemy unit within range, then stomps the ground where it lands, stunning everything around it.
+
+Damage: |cffffcc0019 - 23 (javelin) + 90 (stomp)|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00450|r
+Area of effect: |cffffcc00300|r
+Stun duration: |cffffcc001.5s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00piercing + spell|r
+}
+
+STRING 2390
+// Items: I085 (Javelin Stomp), Description (Description)
+{
+Throws a javelin at a random enemy unit within range, then stomps the ground where it lands, stunning everything around it.
+
+Damage: |cffffcc0019 - 23 (javelin) + 90 (stomp)|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00450|r
+Area of effect: |cffffcc00300|r
+Stun duration: |cffffcc001.5s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00piercing + spell|r
+}
+
+STRING 2391
+// Items: I085 (Javelin Stomp), Name (Name)
+{
+Javelin Stomp
+}
+

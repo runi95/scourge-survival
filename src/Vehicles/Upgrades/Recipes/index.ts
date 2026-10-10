@@ -119,3 +119,4 @@ export * from "./Earthsplitter";
 export * from "./SpiritWave";
 export * from "./SnareWave";
 export * from "./BarrageWagon";
+export * from "./JavelinStomp";
