@@ -137,4 +137,5 @@ export const weaponRecipes = [
   new Recipes.NetCatapult(),
   new Recipes.ThunderStomp(),
   new Recipes.StormWolves(),
+  new Recipes.LightningNet(),
 ];

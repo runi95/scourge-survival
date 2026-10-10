@@ -132,3 +132,4 @@ export * from "./SiegeSpears";
 export * from "./NetCatapult";
 export * from "./ThunderStomp";
 export * from "./StormWolves";
+export * from "./LightningNet";
