@@ -19233,3 +19233,73 @@ STRING 3338
 Thorn Spear
 }
 
+STRING 3339
+// Items: I0EK (Thorned Treants), Tip (Tooltip - Basic)
+{
+Purchase Thorned Treants
+}
+
+STRING 3340
+// Items: I0EK (Thorned Treants), Description (Description)
+{
+Summons 2 Thorned Treants every 15 seconds. Their poisoned branches slow every enemy they hit.
+}
+
+STRING 3341
+// Items: I0EK (Thorned Treants), Ubertip (Tooltip - Extended)
+{
+Summons 2 Thorned Treants every 15 seconds. Their poisoned branches slow every enemy they hit.
+}
+
+STRING 3342
+// Items: I0EK (Thorned Treants), Name (Name)
+{
+Thorned Treants
+}
+
+STRING 3343
+// Items: I0EL (Thorned Treants), Tip (Tooltip - Basic)
+{
+Purchase Thorned Treants
+}
+
+STRING 3344
+// Items: I0EL (Thorned Treants), Ubertip (Tooltip - Extended)
+{
+Summons 2 Thorned Treants every 15 seconds. Their poisoned branches slow every enemy they hit.
+
+Damage: |cffffcc002 x 15 - 17|r
+Slow: |cffffcc00-25% movement speed for 2s|r
+Cooldown: |cffffcc0015s|r
+Health: |cffffcc00300|r
+Duration: |cffffcc0015s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00normal|r
+}
+
+STRING 3345
+// Items: I0EL (Thorned Treants), Description (Description)
+{
+Summons 2 Thorned Treants every 15 seconds. Their poisoned branches slow every enemy they hit.
+
+Damage: |cffffcc002 x 15 - 17|r
+Slow: |cffffcc00-25% movement speed for 2s|r
+Cooldown: |cffffcc0015s|r
+Health: |cffffcc00300|r
+Duration: |cffffcc0015s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00normal|r
+}
+
+STRING 3346
+// Items: I0EL (Thorned Treants), Name (Name)
+{
+Thorned Treants
+}
+
+STRING 3347
+// Units: n01Q (Thorned Treant), Name (Name)
+{
+Thorned Treant
+}
+
