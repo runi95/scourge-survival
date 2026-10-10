@@ -10647,3 +10647,69 @@ STRING 2252
 Aftershock
 }
 
+STRING 2253
+// Items: I078 (Mountain King), Tip (Tooltip - Basic)
+{
+Purchase Mountain King
+}
+
+STRING 2254
+// Items: I078 (Mountain King), Description (Description)
+{
+Throws a magical hammer at a random enemy unit within range and slams the ground, hurting and slowing every enemy around your hero.
+}
+
+STRING 2255
+// Items: I078 (Mountain King), Ubertip (Tooltip - Extended)
+{
+Throws a magical hammer at a random enemy unit within range and slams the ground, hurting and slowing every enemy around your hero.
+}
+
+STRING 2256
+// Items: I078 (Mountain King), Name (Name)
+{
+Mountain King
+}
+
+STRING 2257
+// Items: I079 (Mountain King), Tip (Tooltip - Basic)
+{
+Purchase Mountain King
+}
+
+STRING 2258
+// Items: I079 (Mountain King), Ubertip (Tooltip - Extended)
+{
+Throws a magical hammer at a random enemy unit within range and slams the ground, hurting and slowing every enemy around your hero.
+
+Damage: |cffffcc00100 (hammer) + 60 (thunderclap)|r
+Slow: |cffffcc00-50% movement and attack speed for 3s|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00600|r
+Area of effect: |cffffcc00300|r
+Stun duration: |cffffcc001s|r
+Targets: |cffffcc00air & ground (hammer), ground (thunderclap)|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 2259
+// Items: I079 (Mountain King), Description (Description)
+{
+Throws a magical hammer at a random enemy unit within range and slams the ground, hurting and slowing every enemy around your hero.
+
+Damage: |cffffcc00100 (hammer) + 60 (thunderclap)|r
+Slow: |cffffcc00-50% movement and attack speed for 3s|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00600|r
+Area of effect: |cffffcc00300|r
+Stun duration: |cffffcc001s|r
+Targets: |cffffcc00air & ground (hammer), ground (thunderclap)|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 2260
+// Items: I079 (Mountain King), Name (Name)
+{
+Mountain King
+}
+
