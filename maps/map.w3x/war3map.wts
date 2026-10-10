@@ -13623,3 +13623,63 @@ STRING 2628
 Net Volley
 }
 
+STRING 2629
+// Items: I09S (Spear Volley), Tip (Tooltip - Basic)
+{
+Purchase Spear Volley
+}
+
+STRING 2630
+// Items: I09S (Spear Volley), Description (Description)
+{
+Hurls spears at 3 random enemy units within range.
+}
+
+STRING 2631
+// Items: I09S (Spear Volley), Ubertip (Tooltip - Extended)
+{
+Hurls spears at 3 random enemy units within range.
+}
+
+STRING 2632
+// Items: I09S (Spear Volley), Name (Name)
+{
+Spear Volley
+}
+
+STRING 2633
+// Items: I09T (Spear Volley), Tip (Tooltip - Basic)
+{
+Purchase Spear Volley
+}
+
+STRING 2634
+// Items: I09T (Spear Volley), Ubertip (Tooltip - Extended)
+{
+Hurls spears at 3 random enemy units within range.
+
+Damage: |cffffcc003 x 20 - 30|r
+Cooldown: |cffffcc001.5s|r
+Range: |cffffcc00800|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing|r
+}
+
+STRING 2635
+// Items: I09T (Spear Volley), Description (Description)
+{
+Hurls spears at 3 random enemy units within range.
+
+Damage: |cffffcc003 x 20 - 30|r
+Cooldown: |cffffcc001.5s|r
+Range: |cffffcc00800|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing|r
+}
+
+STRING 2636
+// Items: I09T (Spear Volley), Name (Name)
+{
+Spear Volley
+}
+

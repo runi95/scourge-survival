@@ -149,3 +149,4 @@ export * from "./NetRockets";
 export * from "./SnareMine";
 export * from "./HuntersSpear";
 export * from "./NetVolley";
+export * from "./SpearVolley";
