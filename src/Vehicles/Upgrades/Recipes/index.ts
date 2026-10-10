@@ -107,3 +107,4 @@ export * from "./MountainKing";
 export * from "./HammerStorm";
 export * from "./FrostMines";
 export * from "./ThunderMine";
+export * from "./HammerMine";

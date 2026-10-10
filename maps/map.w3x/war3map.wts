@@ -10913,3 +10913,75 @@ STRING 2286
 Thunder Mine
 }
 
+STRING 2287
+// Items: I07G (Hammer Mine), Tip (Tooltip - Basic)
+{
+Purchase Hammer Mine
+}
+
+STRING 2288
+// Items: I07G (Hammer Mine), Description (Description)
+{
+Places land mines underneath your hero. When an enemy steps on one, it explodes and hurls magical hammers at 3 enemy units nearby.
+}
+
+STRING 2289
+// Items: I07G (Hammer Mine), Ubertip (Tooltip - Extended)
+{
+Places land mines underneath your hero. When an enemy steps on one, it explodes and hurls magical hammers at 3 enemy units nearby.
+}
+
+STRING 2290
+// Items: I07G (Hammer Mine), Name (Name)
+{
+Hammer Mine
+}
+
+STRING 2291
+// Items: I07H (Hammer Mine), Tip (Tooltip - Basic)
+{
+Purchase Hammer Mine
+}
+
+STRING 2292
+// Items: I07H (Hammer Mine), Ubertip (Tooltip - Extended)
+{
+Places land mines underneath your hero. When an enemy steps on one, it explodes and hurls magical hammers at 3 enemy units nearby.
+
+Damage: |cffffcc00100 (explosion) + 3 x 100 (hammers)|r
+Cooldown: |cffffcc003s|r
+Area of effect: |cffffcc00300 (explosion)|r
+Range: |cffffcc00500 (hammers)|r
+Stun duration: |cffffcc001s|r
+Mine activation delay: |cffffcc004s|r
+Targets: |cffffcc00ground (explosion), air & ground (hammers)|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 2293
+// Items: I07H (Hammer Mine), Description (Description)
+{
+Places land mines underneath your hero. When an enemy steps on one, it explodes and hurls magical hammers at 3 enemy units nearby.
+
+Damage: |cffffcc00100 (explosion) + 3 x 100 (hammers)|r
+Cooldown: |cffffcc003s|r
+Area of effect: |cffffcc00300 (explosion)|r
+Range: |cffffcc00500 (hammers)|r
+Stun duration: |cffffcc001s|r
+Mine activation delay: |cffffcc004s|r
+Targets: |cffffcc00ground (explosion), air & ground (hammers)|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 2294
+// Items: I07H (Hammer Mine), Name (Name)
+{
+Hammer Mine
+}
+
+STRING 2295
+// Units: n018 (Hammer Mine), Name (Name)
+{
+Hammer Mine
+}
+
