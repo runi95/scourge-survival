@@ -8771,3 +8771,27 @@ STRING 2007
 Frost Wyrm
 }
 
+STRING 2008
+// Items: I05N (Treants), Name (Name)
+{
+Treants
+}
+
+STRING 2009
+// Items: I05N (Treants), Tip (Tooltip - Basic)
+{
+Purchase Treants
+}
+
+STRING 2010
+// Items: I05N (Treants), Description (Description)
+{
+Summons Treants to fight by your side.
+}
+
+STRING 2011
+// Items: I05N (Treants), Ubertip (Tooltip - Extended)
+{
+Summons Treants to fight by your side.
+}
+

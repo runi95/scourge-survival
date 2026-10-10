@@ -9,3 +9,4 @@ export * from "./WaterElemental";
 export * from "./Demolisher";
 export * from "./ShadowBolt";
 export * from "./RaiseDead";
+export * from "./Treants";

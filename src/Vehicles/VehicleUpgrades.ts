@@ -21,6 +21,7 @@ import {
   Demolisher,
   ShadowBolt,
   RaiseDead,
+  Treants,
 } from "./Upgrades/Weapons/Common/index";
 import {
   Glyph,
@@ -88,6 +89,7 @@ export const commonUpgrades: VehicleUpgrade[] = [
   new Demolisher(),
   new ShadowBolt(),
   new RaiseDead(),
+  new Treants(),
 ];
 
 export const uncommonUpgrades: VehicleUpgrade[] = [
