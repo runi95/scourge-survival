@@ -8983,3 +8983,67 @@ STRING 2040
 Frost Bombers
 }
 
+STRING 2041
+// Items: I05U (Thunder Bombs), Tip (Tooltip - Basic)
+{
+Purchase Thunder Bombs
+}
+
+STRING 2042
+// Items: I05U (Thunder Bombs), Description (Description)
+{
+Flying Machines drop thundering bombs on 2 random enemy units within range, hurting and slowing everything around them.
+}
+
+STRING 2043
+// Items: I05U (Thunder Bombs), Ubertip (Tooltip - Extended)
+{
+Flying Machines drop thundering bombs on 2 random enemy units within range, hurting and slowing everything around them.
+}
+
+STRING 2044
+// Items: I05U (Thunder Bombs), Name (Name)
+{
+Thunder Bombs
+}
+
+STRING 2045
+// Items: I05V (Thunder Bombs), Tip (Tooltip - Basic)
+{
+Purchase Thunder Bombs
+}
+
+STRING 2046
+// Items: I05V (Thunder Bombs), Ubertip (Tooltip - Extended)
+{
+Flying Machines drop thundering bombs on 2 random enemy units within range, hurting and slowing everything around them.
+
+Damage: |cffffcc002 x 60|r
+Slow: |cffffcc00-50% movement and attack speed for 3s|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00800|r
+Area of effect: |cffffcc00300|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 2047
+// Items: I05V (Thunder Bombs), Description (Description)
+{
+Flying Machines drop thundering bombs on 2 random enemy units within range, hurting and slowing everything around them.
+
+Damage: |cffffcc002 x 60|r
+Slow: |cffffcc00-50% movement and attack speed for 3s|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00800|r
+Area of effect: |cffffcc00300|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 2048
+// Items: I05V (Thunder Bombs), Name (Name)
+{
+Thunder Bombs
+}
+

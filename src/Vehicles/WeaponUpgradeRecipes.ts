@@ -78,6 +78,7 @@ import { BlastFurnace } from "./Upgrades/Recipes/BlastFurnace";
 import { MeteorShower } from "./Upgrades/Recipes/MeteorShower";
 import { SteamRockets } from "./Upgrades/Recipes/SteamRockets";
 import { FrostBombers } from "./Upgrades/Recipes/FrostBombers";
+import { ThunderBombs } from "./Upgrades/Recipes/ThunderBombs";
 
 export const weaponRecipes = [
   new DualCannons(),
@@ -160,4 +161,5 @@ export const weaponRecipes = [
   new MeteorShower(),
   new SteamRockets(),
   new FrostBombers(),
+  new ThunderBombs(),
 ];
