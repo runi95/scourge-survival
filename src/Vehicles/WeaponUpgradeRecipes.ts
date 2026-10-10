@@ -82,6 +82,7 @@ import { ThunderBombs } from "./Upgrades/Recipes/ThunderBombs";
 import { HammerSquadron } from "./Upgrades/Recipes/HammerSquadron";
 import { FrostCannon } from "./Upgrades/Recipes/FrostCannon";
 import { ConcussionShells } from "./Upgrades/Recipes/ConcussionShells";
+import { HammerCannon } from "./Upgrades/Recipes/HammerCannon";
 
 export const weaponRecipes = [
   new DualCannons(),
@@ -168,4 +169,5 @@ export const weaponRecipes = [
   new HammerSquadron(),
   new FrostCannon(),
   new ConcussionShells(),
+  new HammerCannon(),
 ];

@@ -9247,3 +9247,71 @@ STRING 2074
 Concussion Shells
 }
 
+STRING 2075
+// Items: I062 (Hammer Cannon), Tip (Tooltip - Basic)
+{
+Purchase Hammer Cannon
+}
+
+STRING 2076
+// Items: I062 (Hammer Cannon), Description (Description)
+{
+Fires a heavy hammer-shaped shell at a random enemy unit within range, damaging and stunning it.
+}
+
+STRING 2077
+// Items: I062 (Hammer Cannon), Ubertip (Tooltip - Extended)
+{
+Fires a heavy hammer-shaped shell at a random enemy unit within range, damaging and stunning it.
+}
+
+STRING 2078
+// Items: I062 (Hammer Cannon), Name (Name)
+{
+Hammer Cannon
+}
+
+STRING 2079
+// Items: I063 (Hammer Cannon), Tip (Tooltip - Basic)
+{
+Purchase Hammer Cannon
+}
+
+STRING 2080
+// Items: I063 (Hammer Cannon), Ubertip (Tooltip - Extended)
+{
+Fires a heavy hammer-shaped shell at a random enemy unit within range, damaging and stunning it.
+
+Damage: |cffffcc00120|r
+Cooldown: |cffffcc001.5s|r
+Range: |cffffcc00700|r
+Stun duration: |cffffcc000.5s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 2081
+// Items: I063 (Hammer Cannon), Description (Description)
+{
+Fires a heavy hammer-shaped shell at a random enemy unit within range, damaging and stunning it.
+
+Damage: |cffffcc00120|r
+Cooldown: |cffffcc001.5s|r
+Range: |cffffcc00700|r
+Stun duration: |cffffcc000.5s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 2082
+// Items: I063 (Hammer Cannon), Name (Name)
+{
+Hammer Cannon
+}
+
+STRING 2083
+// Abilities: A04A (Hammer Cannon), Name (Name)
+{
+Hammer Cannon
+}
+
