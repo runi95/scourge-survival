@@ -11047,3 +11047,65 @@ STRING 2303
 Tauren Totem
 }
 
+STRING 2304
+// Items: I07K (Siege Workshop), Tip (Tooltip - Basic)
+{
+Purchase Siege Workshop
+}
+
+STRING 2305
+// Items: I07K (Siege Workshop), Description (Description)
+{
+Builds 2 Demolishers every 30 seconds that bombard enemies from afar.
+}
+
+STRING 2306
+// Items: I07K (Siege Workshop), Ubertip (Tooltip - Extended)
+{
+Builds 2 Demolishers every 30 seconds that bombard enemies from afar.
+}
+
+STRING 2307
+// Items: I07K (Siege Workshop), Name (Name)
+{
+Siege Workshop
+}
+
+STRING 2308
+// Items: I07L (Siege Workshop), Tip (Tooltip - Basic)
+{
+Purchase Siege Workshop
+}
+
+STRING 2309
+// Items: I07L (Siege Workshop), Ubertip (Tooltip - Extended)
+{
+Builds 2 Demolishers every 30 seconds that bombard enemies from afar.
+
+Damage: |cffffcc002 x 72 - 89|r
+Cooldown: |cffffcc0030s|r
+Health: |cffffcc00425|r
+Duration: |cffffcc0020s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00siege|r
+}
+
+STRING 2310
+// Items: I07L (Siege Workshop), Description (Description)
+{
+Builds 2 Demolishers every 30 seconds that bombard enemies from afar.
+
+Damage: |cffffcc002 x 72 - 89|r
+Cooldown: |cffffcc0030s|r
+Health: |cffffcc00425|r
+Duration: |cffffcc0020s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00siege|r
+}
+
+STRING 2311
+// Items: I07L (Siege Workshop), Name (Name)
+{
+Siege Workshop
+}
+
