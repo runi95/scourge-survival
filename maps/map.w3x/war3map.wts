@@ -19303,3 +19303,71 @@ STRING 3347
 Thorned Treant
 }
 
+STRING 3348
+// Items: I0EM (Treant Drop), Tip (Tooltip - Basic)
+{
+Purchase Treant Drop
+}
+
+STRING 3349
+// Items: I0EM (Treant Drop), Description (Description)
+{
+Fires Cluster Rockets at a random enemy unit within range, and 2 Treants sprout where they land.
+}
+
+STRING 3350
+// Items: I0EM (Treant Drop), Ubertip (Tooltip - Extended)
+{
+Fires Cluster Rockets at a random enemy unit within range, and 2 Treants sprout where they land.
+}
+
+STRING 3351
+// Items: I0EM (Treant Drop), Name (Name)
+{
+Treant Drop
+}
+
+STRING 3352
+// Items: I0EN (Treant Drop), Tip (Tooltip - Basic)
+{
+Purchase Treant Drop
+}
+
+STRING 3353
+// Items: I0EN (Treant Drop), Ubertip (Tooltip - Extended)
+{
+Fires Cluster Rockets at a random enemy unit within range, and 2 Treants sprout where they land.
+
+Damage: |cffffcc006 x 17.5 (rockets) + 2 x 15 - 17 (treants)|r
+Cooldown: |cffffcc004s|r
+Range: |cffffcc00700|r
+Area of effect: |cffffcc00300|r
+Health: |cffffcc00300|r
+Duration: |cffffcc008s|r
+Targets: |cffffcc00air & ground (rockets), ground (treants)|r
+Damage type: |cffffcc00spell + normal|r
+Effect: |cffffcc00stuns for 1s|r
+}
+
+STRING 3354
+// Items: I0EN (Treant Drop), Description (Description)
+{
+Fires Cluster Rockets at a random enemy unit within range, and 2 Treants sprout where they land.
+
+Damage: |cffffcc006 x 17.5 (rockets) + 2 x 15 - 17 (treants)|r
+Cooldown: |cffffcc004s|r
+Range: |cffffcc00700|r
+Area of effect: |cffffcc00300|r
+Health: |cffffcc00300|r
+Duration: |cffffcc008s|r
+Targets: |cffffcc00air & ground (rockets), ground (treants)|r
+Damage type: |cffffcc00spell + normal|r
+Effect: |cffffcc00stuns for 1s|r
+}
+
+STRING 3355
+// Items: I0EN (Treant Drop), Name (Name)
+{
+Treant Drop
+}
+

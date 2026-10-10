@@ -236,3 +236,4 @@ export * from "./ThornBurst";
 export * from "./ThornFan";
 export * from "./ThornSpear";
 export * from "./ThornedTreants";
+export * from "./TreantDrop";
