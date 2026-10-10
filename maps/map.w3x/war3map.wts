@@ -18119,3 +18119,75 @@ STRING 3198
 Poisoned Arrow
 }
 
+STRING 3199
+// Items: I0DM (Root Mine), Tip (Tooltip - Basic)
+{
+Purchase Root Mine
+}
+
+STRING 3200
+// Items: I0DM (Root Mine), Description (Description)
+{
+Places land mines underneath your hero. When an enemy steps on one, it explodes and roots 3 enemy units nearby in place.
+}
+
+STRING 3201
+// Items: I0DM (Root Mine), Ubertip (Tooltip - Extended)
+{
+Places land mines underneath your hero. When an enemy steps on one, it explodes and roots 3 enemy units nearby in place.
+}
+
+STRING 3202
+// Items: I0DM (Root Mine), Name (Name)
+{
+Root Mine
+}
+
+STRING 3203
+// Items: I0DN (Root Mine), Tip (Tooltip - Basic)
+{
+Purchase Root Mine
+}
+
+STRING 3204
+// Items: I0DN (Root Mine), Ubertip (Tooltip - Extended)
+{
+Places land mines underneath your hero. When an enemy steps on one, it explodes and roots 3 enemy units nearby in place.
+
+Damage: |cffffcc00100 (explosion) + 3 x 15 per second (roots)|r
+Cooldown: |cffffcc003s|r
+Area of effect: |cffffcc00300|r
+Range: |cffffcc00400 (roots)|r
+Duration: |cffffcc002.5s|r
+Mine activation delay: |cffffcc004s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 3205
+// Items: I0DN (Root Mine), Description (Description)
+{
+Places land mines underneath your hero. When an enemy steps on one, it explodes and roots 3 enemy units nearby in place.
+
+Damage: |cffffcc00100 (explosion) + 3 x 15 per second (roots)|r
+Cooldown: |cffffcc003s|r
+Area of effect: |cffffcc00300|r
+Range: |cffffcc00400 (roots)|r
+Duration: |cffffcc002.5s|r
+Mine activation delay: |cffffcc004s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 3206
+// Items: I0DN (Root Mine), Name (Name)
+{
+Root Mine
+}
+
+STRING 3207
+// Units: n01M (Root Mine), Name (Name)
+{
+Root Mine
+}
+

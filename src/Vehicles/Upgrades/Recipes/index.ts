@@ -218,3 +218,4 @@ export * from "./Overgrowth";
 export * from "./PoisonMine";
 export * from "./PoisonRockets";
 export * from "./PoisonedArrow";
+export * from "./RootMine";

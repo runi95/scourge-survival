@@ -223,4 +223,5 @@ export const weaponRecipes = [
   new Recipes.PoisonMine(),
   new Recipes.PoisonRockets(),
   new Recipes.PoisonedArrow(),
+  new Recipes.RootMine(),
 ];
