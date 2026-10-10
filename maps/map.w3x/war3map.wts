@@ -13097,3 +13097,75 @@ STRING 2562
 Rocket Wolves
 }
 
+STRING 2563
+// Items: I09C (Wolf Den), Tip (Tooltip - Basic)
+{
+Purchase Wolf Den
+}
+
+STRING 2564
+// Items: I09C (Wolf Den), Description (Description)
+{
+Places spirit traps underneath your hero. When an enemy steps on one, it explodes and 2 Spirit Wolves leap out.
+}
+
+STRING 2565
+// Items: I09C (Wolf Den), Ubertip (Tooltip - Extended)
+{
+Places spirit traps underneath your hero. When an enemy steps on one, it explodes and 2 Spirit Wolves leap out.
+}
+
+STRING 2566
+// Items: I09C (Wolf Den), Name (Name)
+{
+Wolf Den
+}
+
+STRING 2567
+// Items: I09D (Wolf Den), Tip (Tooltip - Basic)
+{
+Purchase Wolf Den
+}
+
+STRING 2568
+// Items: I09D (Wolf Den), Ubertip (Tooltip - Extended)
+{
+Places spirit traps underneath your hero. When an enemy steps on one, it explodes and 2 Spirit Wolves leap out.
+
+Damage: |cffffcc00100 (explosion) + 2 x 16 - 17 (wolves)|r
+Cooldown: |cffffcc003s|r
+Area of effect: |cffffcc00300|r
+Health: |cffffcc00350|r
+Duration: |cffffcc0010s|r
+Mine activation delay: |cffffcc004s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell + normal|r
+}
+
+STRING 2569
+// Items: I09D (Wolf Den), Description (Description)
+{
+Places spirit traps underneath your hero. When an enemy steps on one, it explodes and 2 Spirit Wolves leap out.
+
+Damage: |cffffcc00100 (explosion) + 2 x 16 - 17 (wolves)|r
+Cooldown: |cffffcc003s|r
+Area of effect: |cffffcc00300|r
+Health: |cffffcc00350|r
+Duration: |cffffcc0010s|r
+Mine activation delay: |cffffcc004s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell + normal|r
+}
+
+STRING 2570
+// Items: I09D (Wolf Den), Name (Name)
+{
+Wolf Den
+}
+
+STRING 2571
+// Units: n01A (Spirit Trap), Name (Name)
+{
+Spirit Trap
+}
+
