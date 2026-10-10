@@ -242,4 +242,5 @@ export const weaponRecipes = [
   new Recipes.ThornSpear(),
   new Recipes.ThornedTreants(),
   new Recipes.TreantDrop(),
+  new Recipes.TreantGrove(),
 ];

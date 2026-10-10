@@ -19371,3 +19371,65 @@ STRING 3355
 Treant Drop
 }
 
+STRING 3356
+// Items: I0EO (Treant Grove), Tip (Tooltip - Basic)
+{
+Purchase Treant Grove
+}
+
+STRING 3357
+// Items: I0EO (Treant Grove), Description (Description)
+{
+Summons 4 Treants every 20 seconds that fight by your side.
+}
+
+STRING 3358
+// Items: I0EO (Treant Grove), Ubertip (Tooltip - Extended)
+{
+Summons 4 Treants every 20 seconds that fight by your side.
+}
+
+STRING 3359
+// Items: I0EO (Treant Grove), Name (Name)
+{
+Treant Grove
+}
+
+STRING 3360
+// Items: I0EP (Treant Grove), Tip (Tooltip - Basic)
+{
+Purchase Treant Grove
+}
+
+STRING 3361
+// Items: I0EP (Treant Grove), Ubertip (Tooltip - Extended)
+{
+Summons 4 Treants every 20 seconds that fight by your side.
+
+Damage: |cffffcc004 x 15 - 17|r
+Cooldown: |cffffcc0020s|r
+Health: |cffffcc00300|r
+Duration: |cffffcc0015s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00normal|r
+}
+
+STRING 3362
+// Items: I0EP (Treant Grove), Description (Description)
+{
+Summons 4 Treants every 20 seconds that fight by your side.
+
+Damage: |cffffcc004 x 15 - 17|r
+Cooldown: |cffffcc0020s|r
+Health: |cffffcc00300|r
+Duration: |cffffcc0015s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00normal|r
+}
+
+STRING 3363
+// Items: I0EP (Treant Grove), Name (Name)
+{
+Treant Grove
+}
+
