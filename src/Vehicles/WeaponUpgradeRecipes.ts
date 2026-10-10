@@ -121,4 +121,5 @@ export const weaponRecipes = [
   new Recipes.RaiderCamp(),
   new Recipes.SeismicBoulder(),
   new Recipes.Earthsplitter(),
+  new Recipes.SpiritWave(),
 ];

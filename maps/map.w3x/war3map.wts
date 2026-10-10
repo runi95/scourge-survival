@@ -11481,3 +11481,67 @@ STRING 2359
 Earthsplitter
 }
 
+STRING 2360
+// Items: I07Y (Spirit Wave), Tip (Tooltip - Basic)
+{
+Purchase Spirit Wave
+}
+
+STRING 2361
+// Items: I07Y (Spirit Wave), Description (Description)
+{
+Sends a shockwave towards a random enemy unit within range, and a Spirit Wolf leaps out of it to fight by your side.
+}
+
+STRING 2362
+// Items: I07Y (Spirit Wave), Ubertip (Tooltip - Extended)
+{
+Sends a shockwave towards a random enemy unit within range, and a Spirit Wolf leaps out of it to fight by your side.
+}
+
+STRING 2363
+// Items: I07Y (Spirit Wave), Name (Name)
+{
+Spirit Wave
+}
+
+STRING 2364
+// Items: I07Z (Spirit Wave), Tip (Tooltip - Basic)
+{
+Purchase Spirit Wave
+}
+
+STRING 2365
+// Items: I07Z (Spirit Wave), Ubertip (Tooltip - Extended)
+{
+Sends a shockwave towards a random enemy unit within range, and a Spirit Wolf leaps out of it to fight by your side.
+
+Damage: |cffffcc0050 (shockwave) + 16 - 17 (wolf)|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00700|r
+Health: |cffffcc00350|r
+Duration: |cffffcc008s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell + normal|r
+}
+
+STRING 2366
+// Items: I07Z (Spirit Wave), Description (Description)
+{
+Sends a shockwave towards a random enemy unit within range, and a Spirit Wolf leaps out of it to fight by your side.
+
+Damage: |cffffcc0050 (shockwave) + 16 - 17 (wolf)|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00700|r
+Health: |cffffcc00350|r
+Duration: |cffffcc008s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell + normal|r
+}
+
+STRING 2367
+// Items: I07Z (Spirit Wave), Name (Name)
+{
+Spirit Wave
+}
+
