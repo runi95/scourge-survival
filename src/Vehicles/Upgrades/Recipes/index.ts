@@ -130,3 +130,4 @@ export * from "./RocketCatapult";
 export * from "./MineLauncher";
 export * from "./SiegeSpears";
 export * from "./NetCatapult";
+export * from "./ThunderStomp";

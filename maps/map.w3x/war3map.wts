@@ -12371,3 +12371,69 @@ STRING 2472
 Net Catapult
 }
 
+STRING 2473
+// Items: I08Q (Thunder Stomp), Tip (Tooltip - Basic)
+{
+Purchase Thunder Stomp
+}
+
+STRING 2474
+// Items: I08Q (Thunder Stomp), Description (Description)
+{
+Calls a chain lightning on a random enemy unit within range and stomps the ground, stunning every enemy around your hero.
+}
+
+STRING 2475
+// Items: I08Q (Thunder Stomp), Ubertip (Tooltip - Extended)
+{
+Calls a chain lightning on a random enemy unit within range and stomps the ground, stunning every enemy around your hero.
+}
+
+STRING 2476
+// Items: I08Q (Thunder Stomp), Name (Name)
+{
+Thunder Stomp
+}
+
+STRING 2477
+// Items: I08R (Thunder Stomp), Tip (Tooltip - Basic)
+{
+Purchase Thunder Stomp
+}
+
+STRING 2478
+// Items: I08R (Thunder Stomp), Ubertip (Tooltip - Extended)
+{
+Calls a chain lightning on a random enemy unit within range and stomps the ground, stunning every enemy around your hero.
+
+Damage: |cffffcc00180 (lightning) + 90 (stomp)|r
+Damage reduction jump: |cffffcc00-15%|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00500|r
+Area of effect: |cffffcc00500 (chain) + 300 (stomp)|r
+Stun duration: |cffffcc001.5s|r
+Targets: |cffffcc00air & ground (lightning), ground (stomp)|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 2479
+// Items: I08R (Thunder Stomp), Description (Description)
+{
+Calls a chain lightning on a random enemy unit within range and stomps the ground, stunning every enemy around your hero.
+
+Damage: |cffffcc00180 (lightning) + 90 (stomp)|r
+Damage reduction jump: |cffffcc00-15%|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00500|r
+Area of effect: |cffffcc00500 (chain) + 300 (stomp)|r
+Stun duration: |cffffcc001.5s|r
+Targets: |cffffcc00air & ground (lightning), ground (stomp)|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 2480
+// Items: I08R (Thunder Stomp), Name (Name)
+{
+Thunder Stomp
+}
+

@@ -135,4 +135,5 @@ export const weaponRecipes = [
   new Recipes.MineLauncher(),
   new Recipes.SiegeSpears(),
   new Recipes.NetCatapult(),
+  new Recipes.ThunderStomp(),
 ];
