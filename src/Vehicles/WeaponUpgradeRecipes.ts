@@ -144,4 +144,5 @@ export const weaponRecipes = [
   new Recipes.TremorMine(),
   new Recipes.EarthSpikes(),
   new Recipes.HuntersStomp(),
+  new Recipes.SpiritPack(),
 ];

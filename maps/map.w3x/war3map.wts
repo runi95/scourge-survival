@@ -12967,3 +12967,65 @@ STRING 2546
 Hunter's Stomp
 }
 
+STRING 2547
+// Items: I098 (Spirit Pack), Tip (Tooltip - Basic)
+{
+Purchase Spirit Pack
+}
+
+STRING 2548
+// Items: I098 (Spirit Pack), Description (Description)
+{
+Calls 3 Shadow Wolves every 30 seconds that fight by your side. They strike critically and turn invisible.
+}
+
+STRING 2549
+// Items: I098 (Spirit Pack), Ubertip (Tooltip - Extended)
+{
+Calls 3 Shadow Wolves every 30 seconds that fight by your side. They strike critically and turn invisible.
+}
+
+STRING 2550
+// Items: I098 (Spirit Pack), Name (Name)
+{
+Spirit Pack
+}
+
+STRING 2551
+// Items: I099 (Spirit Pack), Tip (Tooltip - Basic)
+{
+Purchase Spirit Pack
+}
+
+STRING 2552
+// Items: I099 (Spirit Pack), Ubertip (Tooltip - Extended)
+{
+Calls 3 Shadow Wolves every 30 seconds that fight by your side. They strike critically and turn invisible.
+
+Damage: |cffffcc003 x 21 - 22|r
+Cooldown: |cffffcc0030s|r
+Health: |cffffcc00500|r
+Duration: |cffffcc0025s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00normal|r
+}
+
+STRING 2553
+// Items: I099 (Spirit Pack), Description (Description)
+{
+Calls 3 Shadow Wolves every 30 seconds that fight by your side. They strike critically and turn invisible.
+
+Damage: |cffffcc003 x 21 - 22|r
+Cooldown: |cffffcc0030s|r
+Health: |cffffcc00500|r
+Duration: |cffffcc0025s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00normal|r
+}
+
+STRING 2554
+// Items: I099 (Spirit Pack), Name (Name)
+{
+Spirit Pack
+}
+
