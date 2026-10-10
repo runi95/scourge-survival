@@ -8065,3 +8065,77 @@ STRING 1902
 Plague Trap
 }
 
+STRING 1903
+// Items: I052 (Nerubian Tower), Tip (Tooltip - Basic)
+{
+Purchase Nerubian Tower
+}
+
+STRING 1904
+// Items: I052 (Nerubian Tower), Description (Description)
+{
+Fires slowing missiles at random enemy units within range.
+}
+
+STRING 1905
+// Items: I052 (Nerubian Tower), Ubertip (Tooltip - Extended)
+{
+Fires slowing missiles at random enemy units within range.
+}
+
+STRING 1906
+// Items: I052 (Nerubian Tower), Name (Name)
+{
+Nerubian Tower
+}
+
+STRING 1907
+// Items: I053 (Nerubian Tower), Tip (Tooltip - Basic)
+{
+Purchase Nerubian Tower
+}
+
+STRING 1908
+// Items: I053 (Nerubian Tower), Ubertip (Tooltip - Extended)
+{
+Fires slowing missiles at random enemy units within range.
+
+Damage: |cffffcc0010 - 14|r
+Slow: |cffffcc00-30% movement speed for 2s|r
+Cooldown: |cffffcc000.3s|r
+Range: |cffffcc00550|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing|r
+}
+
+STRING 1909
+// Items: I053 (Nerubian Tower), Description (Description)
+{
+Fires slowing missiles at random enemy units within range.
+
+Damage: |cffffcc0010 - 14|r
+Slow: |cffffcc00-30% movement speed for 2s|r
+Cooldown: |cffffcc000.3s|r
+Range: |cffffcc00550|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing|r
+}
+
+STRING 1910
+// Items: I053 (Nerubian Tower), Name (Name)
+{
+Nerubian Tower
+}
+
+STRING 1911
+// Abilities: A03T (Nerubian Tower Slow), Name (Name)
+{
+Nerubian Tower Slow
+}
+
+STRING 1912
+// Units: u01N (Nerubian Tower), Name (Name)
+{
+Nerubian Tower
+}
+
