@@ -12903,3 +12903,67 @@ STRING 2538
 Earth Spikes
 }
 
+STRING 2539
+// Items: I096 (Hunter's Stomp), Tip (Tooltip - Basic)
+{
+Purchase Hunter's Stomp
+}
+
+STRING 2540
+// Items: I096 (Hunter's Stomp), Description (Description)
+{
+Throws a net at a random enemy unit within range and stomps the ground, stunning every enemy around your hero.
+}
+
+STRING 2541
+// Items: I096 (Hunter's Stomp), Ubertip (Tooltip - Extended)
+{
+Throws a net at a random enemy unit within range and stomps the ground, stunning every enemy around your hero.
+}
+
+STRING 2542
+// Items: I096 (Hunter's Stomp), Name (Name)
+{
+Hunter's Stomp
+}
+
+STRING 2543
+// Items: I097 (Hunter's Stomp), Tip (Tooltip - Basic)
+{
+Purchase Hunter's Stomp
+}
+
+STRING 2544
+// Items: I097 (Hunter's Stomp), Ubertip (Tooltip - Extended)
+{
+Throws a net at a random enemy unit within range and stomps the ground, stunning every enemy around your hero.
+
+Damage: |cffffcc0040 (net) + 90 (stomp)|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00600|r
+Area of effect: |cffffcc00300|r
+Duration: |cffffcc003s (net) + 1.5s (stun)|r
+Targets: |cffffcc00air & ground (net), ground (stomp)|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 2545
+// Items: I097 (Hunter's Stomp), Description (Description)
+{
+Throws a net at a random enemy unit within range and stomps the ground, stunning every enemy around your hero.
+
+Damage: |cffffcc0040 (net) + 90 (stomp)|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00600|r
+Area of effect: |cffffcc00300|r
+Duration: |cffffcc003s (net) + 1.5s (stun)|r
+Targets: |cffffcc00air & ground (net), ground (stomp)|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 2546
+// Items: I097 (Hunter's Stomp), Name (Name)
+{
+Hunter's Stomp
+}
+
