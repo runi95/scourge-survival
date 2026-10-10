@@ -77,6 +77,7 @@ import { DragonWhelpForge } from "./Upgrades/Recipes/DragonWhelpForge";
 import { BlastFurnace } from "./Upgrades/Recipes/BlastFurnace";
 import { MeteorShower } from "./Upgrades/Recipes/MeteorShower";
 import { SteamRockets } from "./Upgrades/Recipes/SteamRockets";
+import { FrostBombers } from "./Upgrades/Recipes/FrostBombers";
 
 export const weaponRecipes = [
   new DualCannons(),
@@ -158,4 +159,5 @@ export const weaponRecipes = [
   new BlastFurnace(),
   new MeteorShower(),
   new SteamRockets(),
+  new FrostBombers(),
 ];
