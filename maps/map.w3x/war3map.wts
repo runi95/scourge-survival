@@ -13885,3 +13885,69 @@ STRING 2661
 Bat Mine
 }
 
+STRING 2662
+// Items: I0A0 (Bat Rockets), Tip (Tooltip - Basic)
+{
+Purchase Bat Rockets
+}
+
+STRING 2663
+// Items: I0A0 (Bat Rockets), Description (Description)
+{
+Fires Cluster Rockets and sends a horde of bats towards a random enemy unit within range.
+}
+
+STRING 2664
+// Items: I0A0 (Bat Rockets), Ubertip (Tooltip - Extended)
+{
+Fires Cluster Rockets and sends a horde of bats towards a random enemy unit within range.
+}
+
+STRING 2665
+// Items: I0A0 (Bat Rockets), Name (Name)
+{
+Bat Rockets
+}
+
+STRING 2666
+// Items: I0A1 (Bat Rockets), Tip (Tooltip - Basic)
+{
+Purchase Bat Rockets
+}
+
+STRING 2667
+// Items: I0A1 (Bat Rockets), Ubertip (Tooltip - Extended)
+{
+Fires Cluster Rockets and sends a horde of bats towards a random enemy unit within range.
+
+Damage: |cffffcc006 x 17.5 (rockets) + 75 (bats)|r
+Cooldown: |cffffcc002.5s|r
+Range: |cffffcc00600|r
+Area of effect: |cffffcc00300 (rockets) + 100 - 300 (bats)|r
+Distance: |cffffcc00800|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+Effect: |cffffcc00stuns for 1s|r
+}
+
+STRING 2668
+// Items: I0A1 (Bat Rockets), Description (Description)
+{
+Fires Cluster Rockets and sends a horde of bats towards a random enemy unit within range.
+
+Damage: |cffffcc006 x 17.5 (rockets) + 75 (bats)|r
+Cooldown: |cffffcc002.5s|r
+Range: |cffffcc00600|r
+Area of effect: |cffffcc00300 (rockets) + 100 - 300 (bats)|r
+Distance: |cffffcc00800|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+Effect: |cffffcc00stuns for 1s|r
+}
+
+STRING 2669
+// Items: I0A1 (Bat Rockets), Name (Name)
+{
+Bat Rockets
+}
+
