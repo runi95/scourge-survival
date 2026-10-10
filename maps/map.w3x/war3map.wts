@@ -12769,3 +12769,73 @@ STRING 2521
 Rocket Stomp
 }
 
+STRING 2522
+// Items: I092 (Tremor Mine), Tip (Tooltip - Basic)
+{
+Purchase Tremor Mine
+}
+
+STRING 2523
+// Items: I092 (Tremor Mine), Description (Description)
+{
+Places land mines underneath your hero. When an enemy steps on one, it explodes with a stomp that stuns everything around it.
+}
+
+STRING 2524
+// Items: I092 (Tremor Mine), Ubertip (Tooltip - Extended)
+{
+Places land mines underneath your hero. When an enemy steps on one, it explodes with a stomp that stuns everything around it.
+}
+
+STRING 2525
+// Items: I092 (Tremor Mine), Name (Name)
+{
+Tremor Mine
+}
+
+STRING 2526
+// Items: I093 (Tremor Mine), Tip (Tooltip - Basic)
+{
+Purchase Tremor Mine
+}
+
+STRING 2527
+// Items: I093 (Tremor Mine), Ubertip (Tooltip - Extended)
+{
+Places land mines underneath your hero. When an enemy steps on one, it explodes with a stomp that stuns everything around it.
+
+Damage: |cffffcc00100 (explosion) + 90 (stomp)|r
+Cooldown: |cffffcc003s|r
+Area of effect: |cffffcc00300|r
+Stun duration: |cffffcc001.5s|r
+Mine activation delay: |cffffcc004s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 2528
+// Items: I093 (Tremor Mine), Description (Description)
+{
+Places land mines underneath your hero. When an enemy steps on one, it explodes with a stomp that stuns everything around it.
+
+Damage: |cffffcc00100 (explosion) + 90 (stomp)|r
+Cooldown: |cffffcc003s|r
+Area of effect: |cffffcc00300|r
+Stun duration: |cffffcc001.5s|r
+Mine activation delay: |cffffcc004s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 2529
+// Items: I093 (Tremor Mine), Name (Name)
+{
+Tremor Mine
+}
+
+STRING 2530
+// Units: n019 (Tremor Mine), Name (Name)
+{
+Tremor Mine
+}
+

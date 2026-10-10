@@ -141,4 +141,5 @@ export const weaponRecipes = [
   new Recipes.SeismicStomp(),
   new Recipes.SpiritStomp(),
   new Recipes.RocketStomp(),
+  new Recipes.TremorMine(),
 ];
