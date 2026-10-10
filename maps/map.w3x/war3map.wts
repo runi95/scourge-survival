@@ -18715,3 +18715,75 @@ STRING 3273
 Shadow Cyclone
 }
 
+STRING 3274
+// Items: I0E4 (Shadow Trap), Tip (Tooltip - Basic)
+{
+Purchase Shadow Trap
+}
+
+STRING 3275
+// Items: I0E4 (Shadow Trap), Description (Description)
+{
+Places land mines underneath your hero. When an enemy steps on one, it explodes and throws poisoned daggers at 2 enemy units nearby.
+}
+
+STRING 3276
+// Items: I0E4 (Shadow Trap), Ubertip (Tooltip - Extended)
+{
+Places land mines underneath your hero. When an enemy steps on one, it explodes and throws poisoned daggers at 2 enemy units nearby.
+}
+
+STRING 3277
+// Items: I0E4 (Shadow Trap), Name (Name)
+{
+Shadow Trap
+}
+
+STRING 3278
+// Items: I0E5 (Shadow Trap), Tip (Tooltip - Basic)
+{
+Purchase Shadow Trap
+}
+
+STRING 3279
+// Items: I0E5 (Shadow Trap), Ubertip (Tooltip - Extended)
+{
+Places land mines underneath your hero. When an enemy steps on one, it explodes and throws poisoned daggers at 2 enemy units nearby.
+
+Damage: |cffffcc00100 (explosion) + 2 x (100 + 30 every 3s for 9s) (daggers)|r
+Slow: |cffffcc00-50% movement speed for 9s|r
+Cooldown: |cffffcc003s|r
+Area of effect: |cffffcc00300|r
+Range: |cffffcc00500 (daggers)|r
+Mine activation delay: |cffffcc004s|r
+Targets: |cffffcc00ground (explosion), air & ground (daggers)|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 3280
+// Items: I0E5 (Shadow Trap), Description (Description)
+{
+Places land mines underneath your hero. When an enemy steps on one, it explodes and throws poisoned daggers at 2 enemy units nearby.
+
+Damage: |cffffcc00100 (explosion) + 2 x (100 + 30 every 3s for 9s) (daggers)|r
+Slow: |cffffcc00-50% movement speed for 9s|r
+Cooldown: |cffffcc003s|r
+Area of effect: |cffffcc00300|r
+Range: |cffffcc00500 (daggers)|r
+Mine activation delay: |cffffcc004s|r
+Targets: |cffffcc00ground (explosion), air & ground (daggers)|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 3281
+// Items: I0E5 (Shadow Trap), Name (Name)
+{
+Shadow Trap
+}
+
+STRING 3282
+// Units: n01P (Shadow Trap), Name (Name)
+{
+Shadow Trap
+}
+
