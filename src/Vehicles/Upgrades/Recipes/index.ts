@@ -231,3 +231,4 @@ export * from "./ShadowTrap";
 export * from "./ShadowTreants";
 export * from "./StranglingStrike";
 export * from "./StranglingWinds";
+export * from "./ThornArrow";

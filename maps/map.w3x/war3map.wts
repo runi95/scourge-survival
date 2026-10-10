@@ -18981,3 +18981,65 @@ STRING 3306
 Strangling Winds
 }
 
+STRING 3307
+// Items: I0EC (Thorn Arrow), Tip (Tooltip - Basic)
+{
+Purchase Thorn Arrow
+}
+
+STRING 3308
+// Items: I0EC (Thorn Arrow), Description (Description)
+{
+Fires a searing arrow at a random enemy unit within range and roots it in place.
+}
+
+STRING 3309
+// Items: I0EC (Thorn Arrow), Ubertip (Tooltip - Extended)
+{
+Fires a searing arrow at a random enemy unit within range and roots it in place.
+}
+
+STRING 3310
+// Items: I0EC (Thorn Arrow), Name (Name)
+{
+Thorn Arrow
+}
+
+STRING 3311
+// Items: I0ED (Thorn Arrow), Tip (Tooltip - Basic)
+{
+Purchase Thorn Arrow
+}
+
+STRING 3312
+// Items: I0ED (Thorn Arrow), Ubertip (Tooltip - Extended)
+{
+Fires a searing arrow at a random enemy unit within range and roots it in place.
+
+Damage: |cffffcc0020 (arrow) + 15 per second (roots)|r
+Cooldown: |cffffcc002.5s|r
+Range: |cffffcc00600|r
+Duration: |cffffcc002.5s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00piercing + spell|r
+}
+
+STRING 3313
+// Items: I0ED (Thorn Arrow), Description (Description)
+{
+Fires a searing arrow at a random enemy unit within range and roots it in place.
+
+Damage: |cffffcc0020 (arrow) + 15 per second (roots)|r
+Cooldown: |cffffcc002.5s|r
+Range: |cffffcc00600|r
+Duration: |cffffcc002.5s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00piercing + spell|r
+}
+
+STRING 3314
+// Items: I0ED (Thorn Arrow), Name (Name)
+{
+Thorn Arrow
+}
+
