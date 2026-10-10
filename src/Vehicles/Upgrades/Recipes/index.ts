@@ -134,3 +134,4 @@ export * from "./ThunderStomp";
 export * from "./StormWolves";
 export * from "./LightningNet";
 export * from "./SeismicStomp";
+export * from "./SpiritStomp";

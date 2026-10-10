@@ -12639,3 +12639,69 @@ STRING 2505
 Seismic Stomp
 }
 
+STRING 2506
+// Items: I08Y (Spirit Stomp), Tip (Tooltip - Basic)
+{
+Purchase Spirit Stomp
+}
+
+STRING 2507
+// Items: I08Y (Spirit Stomp), Description (Description)
+{
+Stomps the ground, stunning every enemy unit around your hero, and calls a Spirit Wolf to fight by your side.
+}
+
+STRING 2508
+// Items: I08Y (Spirit Stomp), Ubertip (Tooltip - Extended)
+{
+Stomps the ground, stunning every enemy unit around your hero, and calls a Spirit Wolf to fight by your side.
+}
+
+STRING 2509
+// Items: I08Y (Spirit Stomp), Name (Name)
+{
+Spirit Stomp
+}
+
+STRING 2510
+// Items: I08Z (Spirit Stomp), Tip (Tooltip - Basic)
+{
+Purchase Spirit Stomp
+}
+
+STRING 2511
+// Items: I08Z (Spirit Stomp), Ubertip (Tooltip - Extended)
+{
+Stomps the ground, stunning every enemy unit around your hero, and calls a Spirit Wolf to fight by your side.
+
+Damage: |cffffcc0090 (stomp) + 16 - 17 (wolf)|r
+Cooldown: |cffffcc004s|r
+Area of effect: |cffffcc00300|r
+Stun duration: |cffffcc001.5s|r
+Health: |cffffcc00350|r
+Duration: |cffffcc0010s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell + normal|r
+}
+
+STRING 2512
+// Items: I08Z (Spirit Stomp), Description (Description)
+{
+Stomps the ground, stunning every enemy unit around your hero, and calls a Spirit Wolf to fight by your side.
+
+Damage: |cffffcc0090 (stomp) + 16 - 17 (wolf)|r
+Cooldown: |cffffcc004s|r
+Area of effect: |cffffcc00300|r
+Stun duration: |cffffcc001.5s|r
+Health: |cffffcc00350|r
+Duration: |cffffcc0010s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell + normal|r
+}
+
+STRING 2513
+// Items: I08Z (Spirit Stomp), Name (Name)
+{
+Spirit Stomp
+}
+

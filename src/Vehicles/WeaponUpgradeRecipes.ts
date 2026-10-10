@@ -139,4 +139,5 @@ export const weaponRecipes = [
   new Recipes.StormWolves(),
   new Recipes.LightningNet(),
   new Recipes.SeismicStomp(),
+  new Recipes.SpiritStomp(),
 ];
