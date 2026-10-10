@@ -18853,3 +18853,67 @@ STRING 3290
 Shadow Treants
 }
 
+STRING 3291
+// Items: I0E8 (Strangling Strike), Tip (Tooltip - Basic)
+{
+Purchase Strangling Strike
+}
+
+STRING 3292
+// Items: I0E8 (Strangling Strike), Description (Description)
+{
+Throws a poisoned dagger at a random enemy unit within range and roots it in place.
+}
+
+STRING 3293
+// Items: I0E8 (Strangling Strike), Ubertip (Tooltip - Extended)
+{
+Throws a poisoned dagger at a random enemy unit within range and roots it in place.
+}
+
+STRING 3294
+// Items: I0E8 (Strangling Strike), Name (Name)
+{
+Strangling Strike
+}
+
+STRING 3295
+// Items: I0E9 (Strangling Strike), Tip (Tooltip - Basic)
+{
+Purchase Strangling Strike
+}
+
+STRING 3296
+// Items: I0E9 (Strangling Strike), Ubertip (Tooltip - Extended)
+{
+Throws a poisoned dagger at a random enemy unit within range and roots it in place.
+
+Damage: |cffffcc00100 + 30 every 3s for 9s (dagger) + 15 per second (roots)|r
+Slow: |cffffcc00-50% movement speed for 9s|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00700|r
+Duration: |cffffcc002.5s (roots)|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 3297
+// Items: I0E9 (Strangling Strike), Description (Description)
+{
+Throws a poisoned dagger at a random enemy unit within range and roots it in place.
+
+Damage: |cffffcc00100 + 30 every 3s for 9s (dagger) + 15 per second (roots)|r
+Slow: |cffffcc00-50% movement speed for 9s|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00700|r
+Duration: |cffffcc002.5s (roots)|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 3298
+// Items: I0E9 (Strangling Strike), Name (Name)
+{
+Strangling Strike
+}
+
