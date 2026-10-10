@@ -7651,3 +7651,65 @@ STRING 1848
 Searing Arrow
 }
 
+STRING 1849
+// Items: I04Q (Impaling Cross), Tip (Tooltip - Basic)
+{
+Purchase Impaling Cross
+}
+
+STRING 1850
+// Items: I04Q (Impaling Cross), Description (Description)
+{
+Impales the ground in 4 directions at once, forming a cross of spikes around your hero.
+}
+
+STRING 1851
+// Items: I04Q (Impaling Cross), Ubertip (Tooltip - Extended)
+{
+Impales the ground in 4 directions at once, forming a cross of spikes around your hero.
+}
+
+STRING 1852
+// Items: I04Q (Impaling Cross), Name (Name)
+{
+Impaling Cross
+}
+
+STRING 1853
+// Items: I04R (Impaling Cross), Tip (Tooltip - Basic)
+{
+Purchase Impaling Cross
+}
+
+STRING 1854
+// Items: I04R (Impaling Cross), Ubertip (Tooltip - Extended)
+{
+Impales the ground in 4 directions at once, forming a cross of spikes around your hero.
+
+Damage: |cffffcc004 x 75|r
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00400|r
+Stun duration: |cffffcc001s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 1855
+// Items: I04R (Impaling Cross), Description (Description)
+{
+Impales the ground in 4 directions at once, forming a cross of spikes around your hero.
+
+Damage: |cffffcc004 x 75|r
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00400|r
+Stun duration: |cffffcc001s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 1856
+// Items: I04R (Impaling Cross), Name (Name)
+{
+Impaling Cross
+}
+

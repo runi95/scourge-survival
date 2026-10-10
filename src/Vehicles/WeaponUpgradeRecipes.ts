@@ -66,6 +66,7 @@ import { AncientOfWind } from "./Upgrades/Recipes/AncientOfWind";
 import { VolcanicEruption } from "./Upgrades/Recipes/VolcanicEruption";
 import { Starfall } from "./Upgrades/Recipes/Starfall";
 import { Metamorphosis } from "./Upgrades/Recipes/Metamorphosis";
+import { ImpalingCross } from "./Upgrades/Recipes/ImpalingCross";
 
 export const weaponRecipes = [
   new DualCannons(),
@@ -136,4 +137,5 @@ export const weaponRecipes = [
   new VolcanicEruption(),
   new Starfall(),
   new Metamorphosis(),
+  new ImpalingCross(),
 ];
