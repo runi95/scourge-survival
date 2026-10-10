@@ -70,6 +70,7 @@ import { ImpalingCross } from "./Upgrades/Recipes/ImpalingCross";
 import { Shatter } from "./Upgrades/Recipes/Shatter";
 import { NecromancersGrasp } from "./Upgrades/Recipes/NecromancersGrasp";
 import { Sacrifice } from "./Upgrades/Recipes/Sacrifice";
+import { GraspOfTheDead } from "./Upgrades/Recipes/GraspOfTheDead";
 
 export const weaponRecipes = [
   new DualCannons(),
@@ -144,4 +145,5 @@ export const weaponRecipes = [
   new Shatter(),
   new NecromancersGrasp(),
   new Sacrifice(),
+  new GraspOfTheDead(),
 ];

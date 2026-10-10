@@ -7907,3 +7907,79 @@ STRING 1881
 Sacrifice
 }
 
+STRING 1882
+// Items: I04Y (Grasp of the Dead), Tip (Tooltip - Basic)
+{
+Purchase Grasp of the Dead
+}
+
+STRING 1883
+// Items: I04Y (Grasp of the Dead), Description (Description)
+{
+Skeletal hands burst out of the ground along a line, holding every enemy in place and crippling them after they break free.
+}
+
+STRING 1884
+// Items: I04Y (Grasp of the Dead), Ubertip (Tooltip - Extended)
+{
+Skeletal hands burst out of the ground along a line, holding every enemy in place and crippling them after they break free.
+}
+
+STRING 1885
+// Items: I04Y (Grasp of the Dead), Name (Name)
+{
+Grasp of the Dead
+}
+
+STRING 1886
+// Items: I04Z (Grasp of the Dead), Tip (Tooltip - Basic)
+{
+Purchase Grasp of the Dead
+}
+
+STRING 1887
+// Items: I04Z (Grasp of the Dead), Ubertip (Tooltip - Extended)
+{
+Skeletal hands burst out of the ground along a line, holding every enemy in place and crippling them after they break free.
+
+Damage: |cffffcc0060|r
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00450|r
+Hold: |cffffcc001.5s|r
+Cripple: |cffffcc002s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 1888
+// Items: I04Z (Grasp of the Dead), Description (Description)
+{
+Skeletal hands burst out of the ground along a line, holding every enemy in place and crippling them after they break free.
+
+Damage: |cffffcc0060|r
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00450|r
+Hold: |cffffcc001.5s|r
+Cripple: |cffffcc002s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 1889
+// Items: I04Z (Grasp of the Dead), Name (Name)
+{
+Grasp of the Dead
+}
+
+STRING 1890
+// Abilities: A03Q (Grasp of the Dead), Name (Name)
+{
+Grasp of the Dead
+}
+
+STRING 1891
+// Abilities: A03R (Cripple (Grasp of the Dead)), Name (Name)
+{
+Cripple (Grasp of the Dead)
+}
+
