@@ -89,6 +89,7 @@ import { KnightStables } from "./Upgrades/Recipes/KnightStables";
 import { GryphonRoost } from "./Upgrades/Recipes/GryphonRoost";
 import { IceElemental } from "./Upgrades/Recipes/IceElemental";
 import { WaterSlam } from "./Upgrades/Recipes/WaterSlam";
+import { LightningElemental } from "./Upgrades/Recipes/LightningElemental";
 
 export const weaponRecipes = [
   new DualCannons(),
@@ -182,4 +183,5 @@ export const weaponRecipes = [
   new GryphonRoost(),
   new IceElemental(),
   new WaterSlam(),
+  new LightningElemental(),
 ];

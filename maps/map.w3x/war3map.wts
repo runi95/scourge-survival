@@ -9725,3 +9725,81 @@ STRING 2135
 Water Slam
 }
 
+STRING 2136
+// Items: I06G (Lightning Elemental), Tip (Tooltip - Basic)
+{
+Purchase Lightning Elemental
+}
+
+STRING 2137
+// Items: I06G (Lightning Elemental), Description (Description)
+{
+Summons a Lightning Elemental every 15 seconds. Its bolts sometimes stun their target.
+}
+
+STRING 2138
+// Items: I06G (Lightning Elemental), Ubertip (Tooltip - Extended)
+{
+Summons a Lightning Elemental every 15 seconds. Its bolts sometimes stun their target.
+}
+
+STRING 2139
+// Items: I06G (Lightning Elemental), Name (Name)
+{
+Lightning Elemental
+}
+
+STRING 2140
+// Items: I06H (Lightning Elemental), Tip (Tooltip - Basic)
+{
+Purchase Lightning Elemental
+}
+
+STRING 2141
+// Items: I06H (Lightning Elemental), Ubertip (Tooltip - Extended)
+{
+Summons a Lightning Elemental every 15 seconds. Its bolts sometimes stun their target.
+
+Damage: |cffffcc0029 - 43|r
+Stun: |cffffcc0020% chance for 1s|r
+Cooldown: |cffffcc0015s|r
+Range: |cffffcc00500|r
+Health: |cffffcc00450|r
+Duration: |cffffcc0014s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing|r
+}
+
+STRING 2142
+// Items: I06H (Lightning Elemental), Description (Description)
+{
+Summons a Lightning Elemental every 15 seconds. Its bolts sometimes stun their target.
+
+Damage: |cffffcc0029 - 43|r
+Stun: |cffffcc0020% chance for 1s|r
+Cooldown: |cffffcc0015s|r
+Range: |cffffcc00500|r
+Health: |cffffcc00450|r
+Duration: |cffffcc0014s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing|r
+}
+
+STRING 2143
+// Items: I06H (Lightning Elemental), Name (Name)
+{
+Lightning Elemental
+}
+
+STRING 2144
+// Units: n015 (Lightning Elemental), Name (Name)
+{
+Lightning Elemental
+}
+
+STRING 2145
+// Abilities: A04D (Lightning Elemental Bash), Name (Name)
+{
+Lightning Elemental Bash
+}
+
