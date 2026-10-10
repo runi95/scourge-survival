@@ -11607,3 +11607,65 @@ STRING 2375
 Snare Wave
 }
 
+STRING 2376
+// Items: I082 (Barrage Wagon), Tip (Tooltip - Basic)
+{
+Purchase Barrage Wagon
+}
+
+STRING 2377
+// Items: I082 (Barrage Wagon), Description (Description)
+{
+Lobs boulders and throws javelins at 2 random enemy units within range.
+}
+
+STRING 2378
+// Items: I082 (Barrage Wagon), Ubertip (Tooltip - Extended)
+{
+Lobs boulders and throws javelins at 2 random enemy units within range.
+}
+
+STRING 2379
+// Items: I082 (Barrage Wagon), Name (Name)
+{
+Barrage Wagon
+}
+
+STRING 2380
+// Items: I083 (Barrage Wagon), Tip (Tooltip - Basic)
+{
+Purchase Barrage Wagon
+}
+
+STRING 2381
+// Items: I083 (Barrage Wagon), Ubertip (Tooltip - Extended)
+{
+Lobs boulders and throws javelins at 2 random enemy units within range.
+
+Damage: |cffffcc002 x 45 (boulder) + 2 x 19 - 23 (javelin)|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00450|r
+Area of effect: |cffffcc00150|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00siege + piercing|r
+}
+
+STRING 2382
+// Items: I083 (Barrage Wagon), Description (Description)
+{
+Lobs boulders and throws javelins at 2 random enemy units within range.
+
+Damage: |cffffcc002 x 45 (boulder) + 2 x 19 - 23 (javelin)|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00450|r
+Area of effect: |cffffcc00150|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00siege + piercing|r
+}
+
+STRING 2383
+// Items: I083 (Barrage Wagon), Name (Name)
+{
+Barrage Wagon
+}
+

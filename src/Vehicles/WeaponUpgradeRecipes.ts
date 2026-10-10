@@ -123,4 +123,5 @@ export const weaponRecipes = [
   new Recipes.Earthsplitter(),
   new Recipes.SpiritWave(),
   new Recipes.SnareWave(),
+  new Recipes.BarrageWagon(),
 ];
