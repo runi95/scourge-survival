@@ -16837,3 +16837,63 @@ STRING 3033
 Blazing Arrows
 }
 
+STRING 3034
+// Items: I0CI (Burning Knives), Tip (Tooltip - Basic)
+{
+Purchase Burning Knives
+}
+
+STRING 3035
+// Items: I0CI (Burning Knives), Description (Description)
+{
+Flings a fan of burning knives at every enemy unit around your hero.
+}
+
+STRING 3036
+// Items: I0CI (Burning Knives), Ubertip (Tooltip - Extended)
+{
+Flings a fan of burning knives at every enemy unit around your hero.
+}
+
+STRING 3037
+// Items: I0CI (Burning Knives), Name (Name)
+{
+Burning Knives
+}
+
+STRING 3038
+// Items: I0CJ (Burning Knives), Tip (Tooltip - Basic)
+{
+Purchase Burning Knives
+}
+
+STRING 3039
+// Items: I0CJ (Burning Knives), Ubertip (Tooltip - Extended)
+{
+Flings a fan of burning knives at every enemy unit around your hero.
+
+Damage: |cffffcc0075 (knives) + 30 (flames)|r
+Cooldown: |cffffcc003s|r
+Area of effect: |cffffcc00400|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 3040
+// Items: I0CJ (Burning Knives), Description (Description)
+{
+Flings a fan of burning knives at every enemy unit around your hero.
+
+Damage: |cffffcc0075 (knives) + 30 (flames)|r
+Cooldown: |cffffcc003s|r
+Area of effect: |cffffcc00400|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 3041
+// Items: I0CJ (Burning Knives), Name (Name)
+{
+Burning Knives
+}
+
