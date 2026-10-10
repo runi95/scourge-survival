@@ -14743,3 +14743,79 @@ STRING 2768
 Frost Brood
 }
 
+STRING 2769
+// Items: I0AQ (Frost Revenants), Tip (Tooltip - Basic)
+{
+Purchase Frost Revenants
+}
+
+STRING 2770
+// Items: I0AQ (Frost Revenants), Description (Description)
+{
+Raises 2 Frost Revenants every 15 seconds. Their icy blades slow every enemy they hit.
+}
+
+STRING 2771
+// Items: I0AQ (Frost Revenants), Ubertip (Tooltip - Extended)
+{
+Raises 2 Frost Revenants every 15 seconds. Their icy blades slow every enemy they hit.
+}
+
+STRING 2772
+// Items: I0AQ (Frost Revenants), Name (Name)
+{
+Frost Revenants
+}
+
+STRING 2773
+// Items: I0AR (Frost Revenants), Tip (Tooltip - Basic)
+{
+Purchase Frost Revenants
+}
+
+STRING 2774
+// Items: I0AR (Frost Revenants), Ubertip (Tooltip - Extended)
+{
+Raises 2 Frost Revenants every 15 seconds. Their icy blades slow every enemy they hit.
+
+Damage: |cffffcc002 x 26 - 42|r
+Slow: |cffffcc00-50% movement and attack speed for 3s|r
+Cooldown: |cffffcc0015s|r
+Health: |cffffcc00300|r
+Duration: |cffffcc0015s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00normal|r
+}
+
+STRING 2775
+// Items: I0AR (Frost Revenants), Description (Description)
+{
+Raises 2 Frost Revenants every 15 seconds. Their icy blades slow every enemy they hit.
+
+Damage: |cffffcc002 x 26 - 42|r
+Slow: |cffffcc00-50% movement and attack speed for 3s|r
+Cooldown: |cffffcc0015s|r
+Health: |cffffcc00300|r
+Duration: |cffffcc0015s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00normal|r
+}
+
+STRING 2776
+// Items: I0AR (Frost Revenants), Name (Name)
+{
+Frost Revenants
+}
+
+STRING 2777
+// Units: u01W (Frost Revenant), Name (Name)
+{
+Frost Revenant
+}
+
+STRING 2778
+// Abilities: A04J (Frost Revenant Slow), Name (Name)
+{
+Frost Revenant Slow
+}
+
