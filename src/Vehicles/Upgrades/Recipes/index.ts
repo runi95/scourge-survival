@@ -215,3 +215,4 @@ export * from "./KnifeRockets";
 export * from "./KnifeStorm";
 export * from "./NaturesWrath";
 export * from "./Overgrowth";
+export * from "./PoisonMine";

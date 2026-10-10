@@ -17919,3 +17919,75 @@ STRING 3173
 Overgrowth
 }
 
+STRING 3174
+// Items: I0DG (Poison Mine), Tip (Tooltip - Basic)
+{
+Purchase Poison Mine
+}
+
+STRING 3175
+// Items: I0DG (Poison Mine), Description (Description)
+{
+Places land mines underneath your hero. When an enemy steps on one, it explodes and throws poisoned spears at 3 enemy units nearby.
+}
+
+STRING 3176
+// Items: I0DG (Poison Mine), Ubertip (Tooltip - Extended)
+{
+Places land mines underneath your hero. When an enemy steps on one, it explodes and throws poisoned spears at 3 enemy units nearby.
+}
+
+STRING 3177
+// Items: I0DG (Poison Mine), Name (Name)
+{
+Poison Mine
+}
+
+STRING 3178
+// Items: I0DH (Poison Mine), Tip (Tooltip - Basic)
+{
+Purchase Poison Mine
+}
+
+STRING 3179
+// Items: I0DH (Poison Mine), Ubertip (Tooltip - Extended)
+{
+Places land mines underneath your hero. When an enemy steps on one, it explodes and throws poisoned spears at 3 enemy units nearby.
+
+Damage: |cffffcc00100 (explosion) + 3 x 15 (spears)|r
+Slow: |cffffcc00-25% movement speed for 2s|r
+Cooldown: |cffffcc003s|r
+Area of effect: |cffffcc00300|r
+Range: |cffffcc00500 (spears)|r
+Mine activation delay: |cffffcc004s|r
+Targets: |cffffcc00ground (explosion), air & ground (spears)|r
+Damage type: |cffffcc00spell + piercing|r
+}
+
+STRING 3180
+// Items: I0DH (Poison Mine), Description (Description)
+{
+Places land mines underneath your hero. When an enemy steps on one, it explodes and throws poisoned spears at 3 enemy units nearby.
+
+Damage: |cffffcc00100 (explosion) + 3 x 15 (spears)|r
+Slow: |cffffcc00-25% movement speed for 2s|r
+Cooldown: |cffffcc003s|r
+Area of effect: |cffffcc00300|r
+Range: |cffffcc00500 (spears)|r
+Mine activation delay: |cffffcc004s|r
+Targets: |cffffcc00ground (explosion), air & ground (spears)|r
+Damage type: |cffffcc00spell + piercing|r
+}
+
+STRING 3181
+// Items: I0DH (Poison Mine), Name (Name)
+{
+Poison Mine
+}
+
+STRING 3182
+// Units: n01L (Poison Mine), Name (Name)
+{
+Poison Mine
+}
+
