@@ -105,4 +105,5 @@ export const weaponRecipes = [
   new Recipes.MoltenHammer(),
   new Recipes.ThunderRifle(),
   new Recipes.StunningShot(),
+  new Recipes.ThunderRockets(),
 ];

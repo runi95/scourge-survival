@@ -10455,3 +10455,69 @@ STRING 2228
 Stunning Shot
 }
 
+STRING 2229
+// Items: I072 (Thunder Rockets), Tip (Tooltip - Basic)
+{
+Purchase Thunder Rockets
+}
+
+STRING 2230
+// Items: I072 (Thunder Rockets), Description (Description)
+{
+Fires Cluster Rockets at a random enemy unit within range. A thunderclap follows where they land, hurting and slowing every enemy around it.
+}
+
+STRING 2231
+// Items: I072 (Thunder Rockets), Ubertip (Tooltip - Extended)
+{
+Fires Cluster Rockets at a random enemy unit within range. A thunderclap follows where they land, hurting and slowing every enemy around it.
+}
+
+STRING 2232
+// Items: I072 (Thunder Rockets), Name (Name)
+{
+Thunder Rockets
+}
+
+STRING 2233
+// Items: I073 (Thunder Rockets), Tip (Tooltip - Basic)
+{
+Purchase Thunder Rockets
+}
+
+STRING 2234
+// Items: I073 (Thunder Rockets), Ubertip (Tooltip - Extended)
+{
+Fires Cluster Rockets at a random enemy unit within range. A thunderclap follows where they land, hurting and slowing every enemy around it.
+
+Damage: |cffffcc006 x 17.5 (rockets) + 60 (thunderclap)|r
+Slow: |cffffcc00-50% movement and attack speed for 3s|r
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00700|r
+Area of effect: |cffffcc00300|r
+Targets: |cffffcc00air & ground (rockets), ground (thunderclap)|r
+Damage type: |cffffcc00spell|r
+Effect: |cffffcc00stuns for 1s|r
+}
+
+STRING 2235
+// Items: I073 (Thunder Rockets), Description (Description)
+{
+Fires Cluster Rockets at a random enemy unit within range. A thunderclap follows where they land, hurting and slowing every enemy around it.
+
+Damage: |cffffcc006 x 17.5 (rockets) + 60 (thunderclap)|r
+Slow: |cffffcc00-50% movement and attack speed for 3s|r
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00700|r
+Area of effect: |cffffcc00300|r
+Targets: |cffffcc00air & ground (rockets), ground (thunderclap)|r
+Damage type: |cffffcc00spell|r
+Effect: |cffffcc00stuns for 1s|r
+}
+
+STRING 2236
+// Items: I073 (Thunder Rockets), Name (Name)
+{
+Thunder Rockets
+}
+
