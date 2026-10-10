@@ -17413,3 +17413,67 @@ STRING 3108
 Flaming Rockets
 }
 
+STRING 3109
+// Items: I0D0 (Flaming Spear), Tip (Tooltip - Basic)
+{
+Purchase Flaming Spear
+}
+
+STRING 3110
+// Items: I0D0 (Flaming Spear), Description (Description)
+{
+Throws a burning spear at a random enemy unit within range that bursts into flames, burning every enemy around it.
+}
+
+STRING 3111
+// Items: I0D0 (Flaming Spear), Ubertip (Tooltip - Extended)
+{
+Throws a burning spear at a random enemy unit within range that bursts into flames, burning every enemy around it.
+}
+
+STRING 3112
+// Items: I0D0 (Flaming Spear), Name (Name)
+{
+Flaming Spear
+}
+
+STRING 3113
+// Items: I0D1 (Flaming Spear), Tip (Tooltip - Basic)
+{
+Purchase Flaming Spear
+}
+
+STRING 3114
+// Items: I0D1 (Flaming Spear), Ubertip (Tooltip - Extended)
+{
+Throws a burning spear at a random enemy unit within range that bursts into flames, burning every enemy around it.
+
+Damage: |cffffcc0015 (spear) + 25 (flames)|r
+Slow: |cffffcc00-25% movement speed for 2s|r
+Cooldown: |cffffcc001.5s|r
+Range: |cffffcc00600|r
+Area of effect: |cffffcc00150|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing + spell|r
+}
+
+STRING 3115
+// Items: I0D1 (Flaming Spear), Description (Description)
+{
+Throws a burning spear at a random enemy unit within range that bursts into flames, burning every enemy around it.
+
+Damage: |cffffcc0015 (spear) + 25 (flames)|r
+Slow: |cffffcc00-25% movement speed for 2s|r
+Cooldown: |cffffcc001.5s|r
+Range: |cffffcc00600|r
+Area of effect: |cffffcc00150|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing + spell|r
+}
+
+STRING 3116
+// Items: I0D1 (Flaming Spear), Name (Name)
+{
+Flaming Spear
+}
+

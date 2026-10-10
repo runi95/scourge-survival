@@ -212,4 +212,5 @@ export const weaponRecipes = [
   new Recipes.FanOfArrows(),
   new Recipes.Firestorm(),
   new Recipes.FlamingRockets(),
+  new Recipes.FlamingSpear(),
 ];
