@@ -12051,3 +12051,69 @@ STRING 2432
 Earthquake Shot
 }
 
+STRING 2433
+// Items: I08G (Wolf Catapult), Tip (Tooltip - Basic)
+{
+Purchase Wolf Catapult
+}
+
+STRING 2434
+// Items: I08G (Wolf Catapult), Description (Description)
+{
+Lobs a boulder at a random enemy unit within range, and a Spirit Wolf leaps out where it lands.
+}
+
+STRING 2435
+// Items: I08G (Wolf Catapult), Ubertip (Tooltip - Extended)
+{
+Lobs a boulder at a random enemy unit within range, and a Spirit Wolf leaps out where it lands.
+}
+
+STRING 2436
+// Items: I08G (Wolf Catapult), Name (Name)
+{
+Wolf Catapult
+}
+
+STRING 2437
+// Items: I08H (Wolf Catapult), Tip (Tooltip - Basic)
+{
+Purchase Wolf Catapult
+}
+
+STRING 2438
+// Items: I08H (Wolf Catapult), Ubertip (Tooltip - Extended)
+{
+Lobs a boulder at a random enemy unit within range, and a Spirit Wolf leaps out where it lands.
+
+Damage: |cffffcc0045 (boulder) + 16 - 17 (wolf)|r
+Cooldown: |cffffcc004s|r
+Range: |cffffcc00800|r
+Area of effect: |cffffcc00150|r
+Health: |cffffcc00350|r
+Duration: |cffffcc0010s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00siege + normal|r
+}
+
+STRING 2439
+// Items: I08H (Wolf Catapult), Description (Description)
+{
+Lobs a boulder at a random enemy unit within range, and a Spirit Wolf leaps out where it lands.
+
+Damage: |cffffcc0045 (boulder) + 16 - 17 (wolf)|r
+Cooldown: |cffffcc004s|r
+Range: |cffffcc00800|r
+Area of effect: |cffffcc00150|r
+Health: |cffffcc00350|r
+Duration: |cffffcc0010s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00siege + normal|r
+}
+
+STRING 2440
+// Items: I08H (Wolf Catapult), Name (Name)
+{
+Wolf Catapult
+}
+
