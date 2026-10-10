@@ -9109,3 +9109,77 @@ STRING 2056
 Hammer Squadron
 }
 
+STRING 2057
+// Items: I05Y (Frost Cannon), Tip (Tooltip - Basic)
+{
+Purchase Frost Cannon
+}
+
+STRING 2058
+// Items: I05Y (Frost Cannon), Description (Description)
+{
+Fires an ice-cold cannonball at a random enemy unit within range, slowing it.
+}
+
+STRING 2059
+// Items: I05Y (Frost Cannon), Ubertip (Tooltip - Extended)
+{
+Fires an ice-cold cannonball at a random enemy unit within range, slowing it.
+}
+
+STRING 2060
+// Items: I05Y (Frost Cannon), Name (Name)
+{
+Frost Cannon
+}
+
+STRING 2061
+// Items: I05Z (Frost Cannon), Tip (Tooltip - Basic)
+{
+Purchase Frost Cannon
+}
+
+STRING 2062
+// Items: I05Z (Frost Cannon), Ubertip (Tooltip - Extended)
+{
+Fires an ice-cold cannonball at a random enemy unit within range, slowing it.
+
+Damage: |cffffcc0040|r
+Slow: |cffffcc00-50% movement and attack speed for 5s|r
+Cooldown: |cffffcc001s|r
+Range: |cffffcc00600|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00siege|r
+}
+
+STRING 2063
+// Items: I05Z (Frost Cannon), Description (Description)
+{
+Fires an ice-cold cannonball at a random enemy unit within range, slowing it.
+
+Damage: |cffffcc0040|r
+Slow: |cffffcc00-50% movement and attack speed for 5s|r
+Cooldown: |cffffcc001s|r
+Range: |cffffcc00600|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00siege|r
+}
+
+STRING 2064
+// Items: I05Z (Frost Cannon), Name (Name)
+{
+Frost Cannon
+}
+
+STRING 2065
+// Units: u01T (Frost Cannon), Name (Name)
+{
+Frost Cannon
+}
+
+STRING 2066
+// Abilities: A049 (Frost Cannon Slow), Name (Name)
+{
+Frost Cannon Slow
+}
+
