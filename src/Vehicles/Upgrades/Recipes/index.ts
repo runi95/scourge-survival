@@ -202,3 +202,4 @@ export * from "./BurningKnives";
 export * from "./BurningRoots";
 export * from "./BurningTreants";
 export * from "./DruidGrove";
+export * from "./DryadGrove";
