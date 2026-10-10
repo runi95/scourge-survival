@@ -17857,3 +17857,65 @@ STRING 3165
 Nature's Wrath
 }
 
+STRING 3166
+// Items: I0DE (Overgrowth), Tip (Tooltip - Basic)
+{
+Purchase Overgrowth
+}
+
+STRING 3167
+// Items: I0DE (Overgrowth), Description (Description)
+{
+Roots 3 random enemy units within range in place, damaging them over time.
+}
+
+STRING 3168
+// Items: I0DE (Overgrowth), Ubertip (Tooltip - Extended)
+{
+Roots 3 random enemy units within range in place, damaging them over time.
+}
+
+STRING 3169
+// Items: I0DE (Overgrowth), Name (Name)
+{
+Overgrowth
+}
+
+STRING 3170
+// Items: I0DF (Overgrowth), Tip (Tooltip - Basic)
+{
+Purchase Overgrowth
+}
+
+STRING 3171
+// Items: I0DF (Overgrowth), Ubertip (Tooltip - Extended)
+{
+Roots 3 random enemy units within range in place, damaging them over time.
+
+Damage: |cffffcc003 x 15 per second|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00600|r
+Duration: |cffffcc002.5s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 3172
+// Items: I0DF (Overgrowth), Description (Description)
+{
+Roots 3 random enemy units within range in place, damaging them over time.
+
+Damage: |cffffcc003 x 15 per second|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00600|r
+Duration: |cffffcc002.5s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 3173
+// Items: I0DF (Overgrowth), Name (Name)
+{
+Overgrowth
+}
+
