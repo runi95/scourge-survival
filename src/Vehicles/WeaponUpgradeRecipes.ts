@@ -183,4 +183,5 @@ export const weaponRecipes = [
   new Recipes.FrozenSpikes(),
   new Recipes.GargoyleSpire(),
   new Recipes.GhoulPit(),
+  new Recipes.GraveCurse(),
 ];

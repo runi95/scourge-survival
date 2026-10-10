@@ -15545,3 +15545,67 @@ STRING 2868
 Ghoul Pit
 }
 
+STRING 2869
+// Items: I0BE (Grave Curse), Tip (Tooltip - Basic)
+{
+Purchase Grave Curse
+}
+
+STRING 2870
+// Items: I0BE (Grave Curse), Description (Description)
+{
+Cripples a random enemy unit within range and raises a Skeleton Warrior beside your hero.
+}
+
+STRING 2871
+// Items: I0BE (Grave Curse), Ubertip (Tooltip - Extended)
+{
+Cripples a random enemy unit within range and raises a Skeleton Warrior beside your hero.
+}
+
+STRING 2872
+// Items: I0BE (Grave Curse), Name (Name)
+{
+Grave Curse
+}
+
+STRING 2873
+// Items: I0BF (Grave Curse), Tip (Tooltip - Basic)
+{
+Purchase Grave Curse
+}
+
+STRING 2874
+// Items: I0BF (Grave Curse), Ubertip (Tooltip - Extended)
+{
+Cripples a random enemy unit within range and raises a Skeleton Warrior beside your hero.
+
+Damage: |cffffcc0075 (cripple) + 26 - 42 (skeleton)|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00600|r
+Duration: |cffffcc003s (cripple) + 10s (skeleton)|r
+Health: |cffffcc00200|r
+Targets: |cffffcc00air & ground (cripple), ground (skeleton)|r
+Damage type: |cffffcc00spell + normal|r
+}
+
+STRING 2875
+// Items: I0BF (Grave Curse), Description (Description)
+{
+Cripples a random enemy unit within range and raises a Skeleton Warrior beside your hero.
+
+Damage: |cffffcc0075 (cripple) + 26 - 42 (skeleton)|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00600|r
+Duration: |cffffcc003s (cripple) + 10s (skeleton)|r
+Health: |cffffcc00200|r
+Targets: |cffffcc00air & ground (cripple), ground (skeleton)|r
+Damage type: |cffffcc00spell + normal|r
+}
+
+STRING 2876
+// Items: I0BF (Grave Curse), Name (Name)
+{
+Grave Curse
+}
+
