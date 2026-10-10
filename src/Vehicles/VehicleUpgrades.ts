@@ -42,6 +42,7 @@ import {
   LongRifle,
   OrbOfFire,
   Cripple,
+  WarStomp,
 } from "./Upgrades/Weapons/Rare/index";
 import {
   ManaLeech,
@@ -106,6 +107,7 @@ export const rareUpgrades: VehicleUpgrade[] = [
   new OrbOfFire(),
   new LongRifle(),
   new Cripple(),
+  new WarStomp(),
 ];
 
 export const legendaryUpgrades: VehicleUpgrade[] = [

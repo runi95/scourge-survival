@@ -8603,3 +8603,33 @@ STRING 1979
 Ensnare
 }
 
+STRING 1980
+// Items: I05H (War Stomp), Name (Name)
+{
+War Stomp
+}
+
+STRING 1981
+// Items: I05H (War Stomp), Tip (Tooltip - Basic)
+{
+Purchase War Stomp
+}
+
+STRING 1982
+// Items: I05H (War Stomp), Description (Description)
+{
+Stomps the ground, hurting and stunning nearby enemies.
+}
+
+STRING 1983
+// Items: I05H (War Stomp), Ubertip (Tooltip - Extended)
+{
+Stomps the ground, hurting and stunning nearby enemies.
+}
+
+STRING 1984
+// Abilities: A043 (War Stomp), Name (Name)
+{
+War Stomp
+}
+
