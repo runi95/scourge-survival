@@ -17,6 +17,7 @@ import {
   SpiritTower,
   LightJavelin,
   SearingArrow,
+  WaterElemental,
 } from "./Upgrades/Weapons/Common/index";
 import {
   Glyph,
@@ -47,7 +48,6 @@ import {
   GoblinLandMine,
   PermanentImmolation,
   ClusterRockets,
-  WaterElemental,
   Burrow,
   FrostNova,
 } from "./Upgrades/Weapons/Uncommon/index";
@@ -70,6 +70,7 @@ export const commonUpgrades: VehicleUpgrade[] = [
   new SpiritTower(),
   new LightJavelin(),
   new SearingArrow(),
+  new WaterElemental(),
 ];
 
 export const uncommonUpgrades: VehicleUpgrade[] = [
@@ -80,7 +81,6 @@ export const uncommonUpgrades: VehicleUpgrade[] = [
   new InnerFire(),
   new ClusterRockets(),
   new Berserk(),
-  new WaterElemental(),
   new Burrow(),
   new FrostNova(),
 ];
