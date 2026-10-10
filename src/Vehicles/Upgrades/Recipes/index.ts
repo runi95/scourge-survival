@@ -240,3 +240,4 @@ export * from "./TreantDrop";
 export * from "./TreantGrove";
 export * from "./TwinStrike";
 export * from "./VenomCyclone";
+export * from "./VenomRockets";

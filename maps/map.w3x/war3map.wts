@@ -19563,3 +19563,69 @@ STRING 3380
 Venom Cyclone
 }
 
+STRING 3381
+// Items: I0EU (Venom Rockets), Tip (Tooltip - Basic)
+{
+Purchase Venom Rockets
+}
+
+STRING 3382
+// Items: I0EU (Venom Rockets), Description (Description)
+{
+Throws a poisoned dagger and fires Cluster Rockets at a random enemy unit within range.
+}
+
+STRING 3383
+// Items: I0EU (Venom Rockets), Ubertip (Tooltip - Extended)
+{
+Throws a poisoned dagger and fires Cluster Rockets at a random enemy unit within range.
+}
+
+STRING 3384
+// Items: I0EU (Venom Rockets), Name (Name)
+{
+Venom Rockets
+}
+
+STRING 3385
+// Items: I0EV (Venom Rockets), Tip (Tooltip - Basic)
+{
+Purchase Venom Rockets
+}
+
+STRING 3386
+// Items: I0EV (Venom Rockets), Ubertip (Tooltip - Extended)
+{
+Throws a poisoned dagger and fires Cluster Rockets at a random enemy unit within range.
+
+Damage: |cffffcc00100 + 30 every 3s for 9s (dagger) + 6 x 17.5 (rockets)|r
+Slow: |cffffcc00-50% movement speed for 9s|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00700|r
+Area of effect: |cffffcc00300|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+Effect: |cffffcc00stuns for 1s|r
+}
+
+STRING 3387
+// Items: I0EV (Venom Rockets), Description (Description)
+{
+Throws a poisoned dagger and fires Cluster Rockets at a random enemy unit within range.
+
+Damage: |cffffcc00100 + 30 every 3s for 9s (dagger) + 6 x 17.5 (rockets)|r
+Slow: |cffffcc00-50% movement speed for 9s|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00700|r
+Area of effect: |cffffcc00300|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+Effect: |cffffcc00stuns for 1s|r
+}
+
+STRING 3388
+// Items: I0EV (Venom Rockets), Name (Name)
+{
+Venom Rockets
+}
+
