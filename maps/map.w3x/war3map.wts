@@ -359,7 +359,7 @@ E
 }
 
 STRING 289
-// Abilities: A00G (Stampede), Hotkey (Hotkey - Normal)
+// Abilities: A00R (Sentinel), Researchhotkey (Hotkey - Learn)
 {
 E
 }
@@ -3343,13 +3343,13 @@ Artillery Strike
 }
 
 STRING 1117
-// Abilities: A00G (Stampede), Researchhotkey (Hotkey - Learn)
+// Abilities: A00U (Sheep-o-Matic), Researchhotkey (Hotkey - Learn)
 {
 E
 }
 
 STRING 1118
-// Abilities: A00R (Sentinel), Researchhotkey (Hotkey - Learn)
+// Abilities: A00W (Devour), Researchhotkey (Hotkey - Learn)
 {
 E
 }
@@ -7148,13 +7148,13 @@ W
 }
 
 STRING 1758
-// Abilities: A00Q (Elune's Veil), Hotkey (Hotkey - Normal)
+// Abilities: A00G (Stampede), Hotkey (Hotkey - Normal)
 {
 R
 }
 
 STRING 1759
-// Abilities: A00Q (Elune's Veil), Researchhotkey (Hotkey - Learn)
+// Abilities: A00G (Stampede), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -7333,12 +7333,6 @@ STRING 1790
 Sheep-o-Matic - [|cffffcc00Level 5|r]
 }
 
-STRING 1791
-// Abilities: A00U (Sheep-o-Matic), Researchhotkey (Hotkey - Learn)
-{
-E
-}
-
 STRING 1792
 // Abilities: A03O (Blink Drive), Hotkey (Hotkey - Normal)
 {
@@ -7393,20 +7387,8 @@ STRING 1800
 Blink Drive
 }
 
-STRING 1801
-// Abilities: A00V (Ironhide), Unhotkey (Hotkey - Turn Off)
-{
-F
-}
-
-STRING 1802
-// Abilities: A00V (Ironhide), Hotkey (Hotkey - Normal)
-{
-F
-}
-
 STRING 1803
-// Abilities: A00V (Ironhide), Tip (Tooltip - Normal)
+// Abilities: A00V (Ironhide), Name (Name)
 {
 Ironhide
 }
@@ -7415,12 +7397,6 @@ STRING 1804
 // Abilities: A00V (Ironhide), Untip (Tooltip - Turn Off)
 {
 Stop Ironhide
-}
-
-STRING 1805
-// Abilities: A00V (Ironhide), Name (Name)
-{
-Ironhide
 }
 
 STRING 1806
@@ -7466,8 +7442,146 @@ Devour - [|cffffcc00Level 5|r]
 }
 
 STRING 1814
-// Abilities: A00W (Devour), Researchhotkey (Hotkey - Learn)
+// Abilities: A00V (Ironhide), Unhotkey (Hotkey - Turn Off)
 {
 W
+}
+
+STRING 1815
+// Abilities: A00Q (Elune's Veil), Hotkey (Hotkey - Normal)
+{
+R
+}
+
+STRING 1816
+// Abilities: A00Q (Elune's Veil), Researchhotkey (Hotkey - Learn)
+{
+R
+}
+
+STRING 1817
+// Abilities: A00V (Ironhide), Hotkey (Hotkey - Normal)
+{
+W
+}
+
+STRING 1818
+// Abilities: A00V (Ironhide), Tip (Tooltip - Normal)
+{
+Ironhide - [|cffffcc00Level 1|r]
+}
+
+STRING 1819
+// Abilities: A00V (Ironhide), Tip (Tooltip - Normal)
+{
+Ironhide - [|cffffcc00Level 2|r]
+}
+
+STRING 1820
+// Abilities: A00V (Ironhide), Tip (Tooltip - Normal)
+{
+Ironhide - [|cffffcc00Level 3|r]
+}
+
+STRING 1821
+// Abilities: A00V (Ironhide), Tip (Tooltip - Normal)
+{
+Ironhide - [|cffffcc00Level 4|r]
+}
+
+STRING 1822
+// Abilities: A00V (Ironhide), Tip (Tooltip - Normal)
+{
+Ironhide - [|cffffcc00Level 5|r]
+}
+
+STRING 1823
+// Abilities: A00V (Ironhide), Researchhotkey (Hotkey - Learn)
+{
+W
+}
+
+STRING 1824
+// Abilities: A00V (Ironhide), Researchtip (Tooltip - Learn)
+{
+Learn Ironhide - [|cffffcc00Level %d|r]
+}
+
+STRING 1825
+// Abilities: A00Y (Charge), Name (Name)
+{
+Charge
+}
+
+STRING 1826
+// Abilities: A00Y (Charge), Researchhotkey (Hotkey - Learn)
+{
+Q
+}
+
+STRING 1827
+// Abilities: A00Y (Charge), Hotkey (Hotkey - Normal)
+{
+Q
+}
+
+STRING 1828
+// Abilities: A00Y (Charge), Researchtip (Tooltip - Learn)
+{
+Learn Charge - [|cffffcc00Level %d|r]
+}
+
+STRING 1829
+// Abilities: A00Y (Charge), Tip (Tooltip - Normal)
+{
+Charge - [|cffffcc00Level 1|r]
+}
+
+STRING 1830
+// Abilities: A00Y (Charge), Tip (Tooltip - Normal)
+{
+Charge - [|cffffcc00Level 2|r]
+}
+
+STRING 1831
+// Abilities: A00Y (Charge), Tip (Tooltip - Normal)
+{
+Charge - [|cffffcc00Level 3|r]
+}
+
+STRING 1832
+// Abilities: A00Y (Charge), Tip (Tooltip - Normal)
+{
+Charge - [|cffffcc00Level 4|r]
+}
+
+STRING 1833
+// Abilities: A00Y (Charge), Tip (Tooltip - Normal)
+{
+Charge - [|cffffcc00Level 5|r]
+}
+
+STRING 1834
+// Abilities: A00Y (Charge), Ubertip (Tooltip - Normal - Extended)
+{
+Dashes towards a target point up to <ANcp,Rng4> range away, dealing <ANcp,DataB4> damage to enemy land units hit along the way, and slowing their movement by <ANcp,DataI4,%>% and attack rate by <ANcp,DataJ4,%>%.
+}
+
+STRING 1835
+// Abilities: A00Y (Charge), Ubertip (Tooltip - Normal - Extended)
+{
+Dashes towards a target point up to <ANcp,Rng5> range away, dealing <ANcp,DataB5> damage to enemy land units hit along the way, and slowing their movement by <ANcp,DataI5,%>% and attack rate by <ANcp,DataJ5,%>%.
+}
+
+STRING 1836
+// Buffs/Effects: B009 (), Bufftip (Tooltip)
+{
+Charge
+}
+
+STRING 1837
+// Buffs/Effects: B009 (), Buffubertip (Tooltip - Extended)
+{
+This unit has been hit by Charge; its movement speed and attack rate are reduced.
 }
 

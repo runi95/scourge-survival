@@ -518,8 +518,8 @@ InitGlobals()
 end
 
 function config()
-SetMapName("TRIGSTR_011")
-SetMapDescription("TRIGSTR_013")
+SetMapName("")
+SetMapDescription("")
 SetPlayers(18)
 SetTeams(18)
 SetGamePlacement(MAP_PLACEMENT_TEAMS_TOGETHER)

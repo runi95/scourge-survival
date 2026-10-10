@@ -9,13 +9,14 @@ export class Ironhide {
     const orderTrig = Trigger.create();
     orderTrig.addAction(() => {
       const unit = Unit.fromEvent();
-      if (unit.getAbilityLevel(this.ironhideAbilityId) < 1) return;
+      const level = unit.getAbilityLevel(this.ironhideAbilityId);
+      if (level < 1) return;
 
       const order = GetIssuedOrderId();
       if (order === OrderId.Defend) {
-        IronhideDamageEvent.ACTIVE.set(unit.id, true);
+        IronhideDamageEvent.ACTIVE_LEVEL_MAP.set(unit.id, level);
       } else if (order === OrderId.Undefend) {
-        IronhideDamageEvent.ACTIVE.set(unit.id, false);
+        IronhideDamageEvent.ACTIVE_LEVEL_MAP.delete(unit.id);
       }
     });
     orderTrig.registerAnyUnitEvent(EVENT_PLAYER_UNIT_ISSUED_ORDER);
