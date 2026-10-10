@@ -11233,3 +11233,65 @@ STRING 2327
 Spirit Lodge
 }
 
+STRING 2328
+// Items: I07Q (Headhunter Hut), Tip (Tooltip - Basic)
+{
+Purchase Headhunter Hut
+}
+
+STRING 2329
+// Items: I07Q (Headhunter Hut), Description (Description)
+{
+Sends out 3 Headhunters every 30 seconds that throw spears at enemies.
+}
+
+STRING 2330
+// Items: I07Q (Headhunter Hut), Ubertip (Tooltip - Extended)
+{
+Sends out 3 Headhunters every 30 seconds that throw spears at enemies.
+}
+
+STRING 2331
+// Items: I07Q (Headhunter Hut), Name (Name)
+{
+Headhunter Hut
+}
+
+STRING 2332
+// Items: I07R (Headhunter Hut), Tip (Tooltip - Basic)
+{
+Purchase Headhunter Hut
+}
+
+STRING 2333
+// Items: I07R (Headhunter Hut), Ubertip (Tooltip - Extended)
+{
+Sends out 3 Headhunters every 30 seconds that throw spears at enemies.
+
+Damage: |cffffcc003 x 23 - 27|r
+Cooldown: |cffffcc0030s|r
+Health: |cffffcc00375|r
+Duration: |cffffcc0020s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing|r
+}
+
+STRING 2334
+// Items: I07R (Headhunter Hut), Description (Description)
+{
+Sends out 3 Headhunters every 30 seconds that throw spears at enemies.
+
+Damage: |cffffcc003 x 23 - 27|r
+Cooldown: |cffffcc0030s|r
+Health: |cffffcc00375|r
+Duration: |cffffcc0020s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing|r
+}
+
+STRING 2335
+// Items: I07R (Headhunter Hut), Name (Name)
+{
+Headhunter Hut
+}
+

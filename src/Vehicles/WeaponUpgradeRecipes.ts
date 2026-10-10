@@ -117,4 +117,5 @@ export const weaponRecipes = [
   new Recipes.SiegeWorkshop(),
   new Recipes.KodoPen(),
   new Recipes.SpiritLodge(),
+  new Recipes.HeadhunterHut(),
 ];

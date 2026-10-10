@@ -112,3 +112,4 @@ export * from "./TaurenTotem";
 export * from "./SiegeWorkshop";
 export * from "./KodoPen";
 export * from "./SpiritLodge";
+export * from "./HeadhunterHut";
