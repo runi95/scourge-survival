@@ -227,4 +227,5 @@ export const weaponRecipes = [
   new Recipes.RootRockets(),
   new Recipes.RootedTreants(),
   new Recipes.SaplingMine(),
+  new Recipes.SearingMine(),
 ];

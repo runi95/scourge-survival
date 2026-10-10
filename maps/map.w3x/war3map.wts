@@ -18393,3 +18393,73 @@ STRING 3232
 Sapling Mine
 }
 
+STRING 3233
+// Items: I0DU (Searing Mine), Tip (Tooltip - Basic)
+{
+Purchase Searing Mine
+}
+
+STRING 3234
+// Items: I0DU (Searing Mine), Description (Description)
+{
+Places land mines underneath your hero. When an enemy steps on one, it explodes and fires searing arrows at 3 enemy units nearby.
+}
+
+STRING 3235
+// Items: I0DU (Searing Mine), Ubertip (Tooltip - Extended)
+{
+Places land mines underneath your hero. When an enemy steps on one, it explodes and fires searing arrows at 3 enemy units nearby.
+}
+
+STRING 3236
+// Items: I0DU (Searing Mine), Name (Name)
+{
+Searing Mine
+}
+
+STRING 3237
+// Items: I0DV (Searing Mine), Tip (Tooltip - Basic)
+{
+Purchase Searing Mine
+}
+
+STRING 3238
+// Items: I0DV (Searing Mine), Ubertip (Tooltip - Extended)
+{
+Places land mines underneath your hero. When an enemy steps on one, it explodes and fires searing arrows at 3 enemy units nearby.
+
+Damage: |cffffcc00100 (explosion) + 3 x 20 (arrows)|r
+Cooldown: |cffffcc003s|r
+Area of effect: |cffffcc00300|r
+Range: |cffffcc00500 (arrows)|r
+Mine activation delay: |cffffcc004s|r
+Targets: |cffffcc00ground (explosion), air & ground (arrows)|r
+Damage type: |cffffcc00spell + piercing|r
+}
+
+STRING 3239
+// Items: I0DV (Searing Mine), Description (Description)
+{
+Places land mines underneath your hero. When an enemy steps on one, it explodes and fires searing arrows at 3 enemy units nearby.
+
+Damage: |cffffcc00100 (explosion) + 3 x 20 (arrows)|r
+Cooldown: |cffffcc003s|r
+Area of effect: |cffffcc00300|r
+Range: |cffffcc00500 (arrows)|r
+Mine activation delay: |cffffcc004s|r
+Targets: |cffffcc00ground (explosion), air & ground (arrows)|r
+Damage type: |cffffcc00spell + piercing|r
+}
+
+STRING 3240
+// Items: I0DV (Searing Mine), Name (Name)
+{
+Searing Mine
+}
+
+STRING 3241
+// Units: n01O (Searing Mine), Name (Name)
+{
+Searing Mine
+}
+

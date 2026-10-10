@@ -222,3 +222,4 @@ export * from "./RootMine";
 export * from "./RootRockets";
 export * from "./RootedTreants";
 export * from "./SaplingMine";
+export * from "./SearingMine";
