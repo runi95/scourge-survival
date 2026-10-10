@@ -204,3 +204,4 @@ export * from "./BurningTreants";
 export * from "./DruidGrove";
 export * from "./DryadGrove";
 export * from "./DryadVolley";
+export * from "./FanOfArrows";

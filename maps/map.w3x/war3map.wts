@@ -17221,3 +17221,63 @@ STRING 3083
 Dryad Volley
 }
 
+STRING 3084
+// Items: I0CU (Fan of Arrows), Tip (Tooltip - Basic)
+{
+Purchase Fan of Arrows
+}
+
+STRING 3085
+// Items: I0CU (Fan of Arrows), Description (Description)
+{
+Fires searing arrows at 5 random enemy units within range.
+}
+
+STRING 3086
+// Items: I0CU (Fan of Arrows), Ubertip (Tooltip - Extended)
+{
+Fires searing arrows at 5 random enemy units within range.
+}
+
+STRING 3087
+// Items: I0CU (Fan of Arrows), Name (Name)
+{
+Fan of Arrows
+}
+
+STRING 3088
+// Items: I0CV (Fan of Arrows), Tip (Tooltip - Basic)
+{
+Purchase Fan of Arrows
+}
+
+STRING 3089
+// Items: I0CV (Fan of Arrows), Ubertip (Tooltip - Extended)
+{
+Fires searing arrows at 5 random enemy units within range.
+
+Damage: |cffffcc005 x 20|r
+Cooldown: |cffffcc002.5s|r
+Range: |cffffcc00500|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing|r
+}
+
+STRING 3090
+// Items: I0CV (Fan of Arrows), Description (Description)
+{
+Fires searing arrows at 5 random enemy units within range.
+
+Damage: |cffffcc005 x 20|r
+Cooldown: |cffffcc002.5s|r
+Range: |cffffcc00500|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing|r
+}
+
+STRING 3091
+// Items: I0CV (Fan of Arrows), Name (Name)
+{
+Fan of Arrows
+}
+
