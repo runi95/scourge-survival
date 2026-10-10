@@ -19629,3 +19629,65 @@ STRING 3388
 Venom Rockets
 }
 
+STRING 3389
+// Items: I0EW (Venom Spear), Tip (Tooltip - Basic)
+{
+Purchase Venom Spear
+}
+
+STRING 3390
+// Items: I0EW (Venom Spear), Description (Description)
+{
+Throws a poisoned spear and a poisoned dagger at a random enemy unit within range.
+}
+
+STRING 3391
+// Items: I0EW (Venom Spear), Ubertip (Tooltip - Extended)
+{
+Throws a poisoned spear and a poisoned dagger at a random enemy unit within range.
+}
+
+STRING 3392
+// Items: I0EW (Venom Spear), Name (Name)
+{
+Venom Spear
+}
+
+STRING 3393
+// Items: I0EX (Venom Spear), Tip (Tooltip - Basic)
+{
+Purchase Venom Spear
+}
+
+STRING 3394
+// Items: I0EX (Venom Spear), Ubertip (Tooltip - Extended)
+{
+Throws a poisoned spear and a poisoned dagger at a random enemy unit within range.
+
+Damage: |cffffcc0015 (spear) + 100 + 30 every 3s for 9s (dagger)|r
+Slow: |cffffcc00-50% movement speed for 9s|r
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00600|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing + spell|r
+}
+
+STRING 3395
+// Items: I0EX (Venom Spear), Description (Description)
+{
+Throws a poisoned spear and a poisoned dagger at a random enemy unit within range.
+
+Damage: |cffffcc0015 (spear) + 100 + 30 every 3s for 9s (dagger)|r
+Slow: |cffffcc00-50% movement speed for 9s|r
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00600|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing + spell|r
+}
+
+STRING 3396
+// Items: I0EX (Venom Spear), Name (Name)
+{
+Venom Spear
+}
+
