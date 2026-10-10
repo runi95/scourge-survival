@@ -206,3 +206,4 @@ export * from "./DryadGrove";
 export * from "./DryadVolley";
 export * from "./FanOfArrows";
 export * from "./Firestorm";
+export * from "./FlamingRockets";

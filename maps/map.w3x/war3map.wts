@@ -17349,3 +17349,67 @@ STRING 3100
 Fire Tornado
 }
 
+STRING 3101
+// Items: I0CY (Flaming Rockets), Tip (Tooltip - Basic)
+{
+Purchase Flaming Rockets
+}
+
+STRING 3102
+// Items: I0CY (Flaming Rockets), Description (Description)
+{
+Fires a searing arrow and Cluster Rockets at a random enemy unit within range.
+}
+
+STRING 3103
+// Items: I0CY (Flaming Rockets), Ubertip (Tooltip - Extended)
+{
+Fires a searing arrow and Cluster Rockets at a random enemy unit within range.
+}
+
+STRING 3104
+// Items: I0CY (Flaming Rockets), Name (Name)
+{
+Flaming Rockets
+}
+
+STRING 3105
+// Items: I0CZ (Flaming Rockets), Tip (Tooltip - Basic)
+{
+Purchase Flaming Rockets
+}
+
+STRING 3106
+// Items: I0CZ (Flaming Rockets), Ubertip (Tooltip - Extended)
+{
+Fires a searing arrow and Cluster Rockets at a random enemy unit within range.
+
+Damage: |cffffcc0020 (arrow) + 6 x 17.5 (rockets)|r
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00600|r
+Area of effect: |cffffcc00300|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing + spell|r
+Effect: |cffffcc00stuns for 1s|r
+}
+
+STRING 3107
+// Items: I0CZ (Flaming Rockets), Description (Description)
+{
+Fires a searing arrow and Cluster Rockets at a random enemy unit within range.
+
+Damage: |cffffcc0020 (arrow) + 6 x 17.5 (rockets)|r
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00600|r
+Area of effect: |cffffcc00300|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing + spell|r
+Effect: |cffffcc00stuns for 1s|r
+}
+
+STRING 3108
+// Items: I0CZ (Flaming Rockets), Name (Name)
+{
+Flaming Rockets
+}
+
