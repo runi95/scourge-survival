@@ -202,4 +202,5 @@ export const weaponRecipes = [
   new Recipes.ArcherBarracks(),
   new Recipes.BladeCyclone(),
   new Recipes.BladedSpear(),
+  new Recipes.BlazingArrows(),
 ];

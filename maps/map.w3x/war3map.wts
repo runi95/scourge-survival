@@ -16775,3 +16775,65 @@ STRING 3025
 Bladed Spear
 }
 
+STRING 3026
+// Items: I0CG (Blazing Arrows), Tip (Tooltip - Basic)
+{
+Purchase Blazing Arrows
+}
+
+STRING 3027
+// Items: I0CG (Blazing Arrows), Description (Description)
+{
+Fires a blazing arrow at a random enemy unit within range that bursts into flames, burning every enemy around it.
+}
+
+STRING 3028
+// Items: I0CG (Blazing Arrows), Ubertip (Tooltip - Extended)
+{
+Fires a blazing arrow at a random enemy unit within range that bursts into flames, burning every enemy around it.
+}
+
+STRING 3029
+// Items: I0CG (Blazing Arrows), Name (Name)
+{
+Blazing Arrows
+}
+
+STRING 3030
+// Items: I0CH (Blazing Arrows), Tip (Tooltip - Basic)
+{
+Purchase Blazing Arrows
+}
+
+STRING 3031
+// Items: I0CH (Blazing Arrows), Ubertip (Tooltip - Extended)
+{
+Fires a blazing arrow at a random enemy unit within range that bursts into flames, burning every enemy around it.
+
+Damage: |cffffcc0020 (arrow) + 25 (flames)|r
+Cooldown: |cffffcc001s|r
+Range: |cffffcc00600|r
+Area of effect: |cffffcc00150|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing + spell|r
+}
+
+STRING 3032
+// Items: I0CH (Blazing Arrows), Description (Description)
+{
+Fires a blazing arrow at a random enemy unit within range that bursts into flames, burning every enemy around it.
+
+Damage: |cffffcc0020 (arrow) + 25 (flames)|r
+Cooldown: |cffffcc001s|r
+Range: |cffffcc00600|r
+Area of effect: |cffffcc00150|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing + spell|r
+}
+
+STRING 3033
+// Items: I0CH (Blazing Arrows), Name (Name)
+{
+Blazing Arrows
+}
+
