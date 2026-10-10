@@ -200,3 +200,4 @@ export * from "./BladedSpear";
 export * from "./BlazingArrows";
 export * from "./BurningKnives";
 export * from "./BurningRoots";
+export * from "./BurningTreants";

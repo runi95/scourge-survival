@@ -16965,3 +16965,73 @@ STRING 3050
 Burning Roots
 }
 
+STRING 3051
+// Items: I0CM (Burning Treants), Tip (Tooltip - Basic)
+{
+Purchase Burning Treants
+}
+
+STRING 3052
+// Items: I0CM (Burning Treants), Description (Description)
+{
+Summons 2 Burning Treants every 20 seconds. They burn every enemy around them.
+}
+
+STRING 3053
+// Items: I0CM (Burning Treants), Ubertip (Tooltip - Extended)
+{
+Summons 2 Burning Treants every 20 seconds. They burn every enemy around them.
+}
+
+STRING 3054
+// Items: I0CM (Burning Treants), Name (Name)
+{
+Burning Treants
+}
+
+STRING 3055
+// Items: I0CN (Burning Treants), Tip (Tooltip - Basic)
+{
+Purchase Burning Treants
+}
+
+STRING 3056
+// Items: I0CN (Burning Treants), Ubertip (Tooltip - Extended)
+{
+Summons 2 Burning Treants every 20 seconds. They burn every enemy around them.
+
+Damage: |cffffcc002 x 15 - 17 (attack) + 12 per second (burn)|r
+Cooldown: |cffffcc0020s|r
+Area of effect: |cffffcc00150|r
+Health: |cffffcc00300|r
+Duration: |cffffcc0015s|r
+Targets: |cffffcc00ground (attack), air & ground (burn)|r
+Damage type: |cffffcc00normal + spell|r
+}
+
+STRING 3057
+// Items: I0CN (Burning Treants), Description (Description)
+{
+Summons 2 Burning Treants every 20 seconds. They burn every enemy around them.
+
+Damage: |cffffcc002 x 15 - 17 (attack) + 12 per second (burn)|r
+Cooldown: |cffffcc0020s|r
+Area of effect: |cffffcc00150|r
+Health: |cffffcc00300|r
+Duration: |cffffcc0015s|r
+Targets: |cffffcc00ground (attack), air & ground (burn)|r
+Damage type: |cffffcc00normal + spell|r
+}
+
+STRING 3058
+// Items: I0CN (Burning Treants), Name (Name)
+{
+Burning Treants
+}
+
+STRING 3059
+// Units: n01I (Burning Treant), Name (Name)
+{
+Burning Treant
+}
+
