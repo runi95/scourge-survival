@@ -1,199 +1,104 @@
-import { BoulderBarrage } from "./Upgrades/Recipes/BoulderBarrage";
-import { DualCannons } from "./Upgrades/Recipes/DualCannons";
-import { ExplosiveElemental } from "./Upgrades/Recipes/ExplosiveElemental";
-import { Firebolt } from "./Upgrades/Recipes/Firebolt";
-import { FlyingBehemoth } from "./Upgrades/Recipes/FlyingBehemoth";
-import { FragmentationBurst } from "./Upgrades/Recipes/FragmentationBurst";
-import { FocusedImpale } from "./Upgrades/Recipes/FocusedImpale";
-import { FocusedShockwave } from "./Upgrades/Recipes/FocusedShockwave";
-import { GiantGoblinLandMine } from "./Upgrades/Recipes/GiantGoblinLandMine";
-import { LiquidFire } from "./Upgrades/Recipes/LiquidFire";
-import { LocustSwarm } from "./Upgrades/Recipes/LocustSwarm";
-import { Monsoon } from "./Upgrades/Recipes/Monsoon";
-import { MortarTeam } from "./Upgrades/Recipes/MortarTeam";
-import { Phoenix } from "./Upgrades/Recipes/Phoenix";
-import { PocketCyclone } from "./Upgrades/Recipes/PocketCyclone";
-import { ScatterMines } from "./Upgrades/Recipes/ScatterMines";
-import { ShockMines } from "./Upgrades/Recipes/ShockMines";
-import { ShockwaveStorm } from "./Upgrades/Recipes/ShockwaveStorm";
-import { StormElemental } from "./Upgrades/Recipes/StormElemental";
-import { StormHammers } from "./Upgrades/Recipes/StormHammers";
-import { TeslaCoil } from "./Upgrades/Recipes/TeslaCoil";
-import { UnstableShockwave } from "./Upgrades/Recipes/UnstableShockwave";
-import { VortexTrap } from "./Upgrades/Recipes/VortexTrap";
-import { Whirlpool } from "./Upgrades/Recipes/Whirlpool";
-import { Workshop } from "./Upgrades/Recipes/Workshop";
-import { GoblinLaboratory } from "./Upgrades/Recipes/GoblinLaboratory";
-import { RocketFactory } from "./Upgrades/Recipes/RocketFactory";
-import { OverloadedClusterRockets } from "./Upgrades/Recipes/OverloadedClusterRockets";
-import { TrojanMine } from "./Upgrades/Recipes/TrojanMine";
-import { ExtraLargeRifle } from "./Upgrades/Recipes/ExtraLargeRifle";
-import { MassRifles } from "./Upgrades/Recipes/MassRifles";
-import { ElementalTwins } from "./Upgrades/Recipes/ElementalTwins";
-import { MachineGunner } from "./Upgrades/Recipes/MachineGunner";
-import { CallToArms } from "./Upgrades/Recipes/CallToArms";
-import { KamikazeGyros } from "./Upgrades/Recipes/KamikazeGyros";
-import { GryphonAviary } from "./Upgrades/Recipes/GryphonAviary";
-import { Marksman } from "./Upgrades/Recipes/Marksman";
-import { CarpetBombing } from "./Upgrades/Recipes/CarpetBombing";
-import { CannonTower } from "./Upgrades/Recipes/CannonTower";
-import { LavaSpawnForge } from "./Upgrades/Recipes/LavaSpawnForge";
-import { RiflemanBarracks } from "./Upgrades/Recipes/RiflemanBarracks";
-import { FlameStrike } from "./Upgrades/Recipes/FlameStrike";
-import { DragonbreathShot } from "./Upgrades/Recipes/DragonbreathShot";
-import { FireTrap } from "./Upgrades/Recipes/FireTrap";
-import { Scattergun } from "./Upgrades/Recipes/Scattergun";
-import { MarksmansTrap } from "./Upgrades/Recipes/MarksmansTrap";
-import { Tremor } from "./Upgrades/Recipes/Tremor";
-import { EnvenomedSpears } from "./Upgrades/Recipes/EnvenomedSpears";
-import { BerserkerRage } from "./Upgrades/Recipes/BerserkerRage";
-import { JavelinVolley } from "./Upgrades/Recipes/JavelinVolley";
-import { PurgingSpear } from "./Upgrades/Recipes/PurgingSpear";
-import { BatriderRaid } from "./Upgrades/Recipes/BatriderRaid";
-import { NetTrap } from "./Upgrades/Recipes/NetTrap";
-import { StasisWard } from "./Upgrades/Recipes/StasisWard";
-import { SerpentWard } from "./Upgrades/Recipes/SerpentWard";
-import { OrbOfLightning } from "./Upgrades/Recipes/OrbOfLightning";
-import { ThunderSpears } from "./Upgrades/Recipes/ThunderSpears";
-import { Crypt } from "./Upgrades/Recipes/Crypt";
-import { CarrionBeetleNest } from "./Upgrades/Recipes/CarrionBeetleNest";
-import { DeathCoil } from "./Upgrades/Recipes/DeathCoil";
-import { DeathAndDecay } from "./Upgrades/Recipes/DeathAndDecay";
-import { FrostNovaBarrage } from "./Upgrades/Recipes/FrostNovaBarrage";
-import { PlagueMine } from "./Upgrades/Recipes/PlagueMine";
-import { GraveTrap } from "./Upgrades/Recipes/GraveTrap";
-import { AncientOfWind } from "./Upgrades/Recipes/AncientOfWind";
-import { VolcanicEruption } from "./Upgrades/Recipes/VolcanicEruption";
-import { Starfall } from "./Upgrades/Recipes/Starfall";
-import { Metamorphosis } from "./Upgrades/Recipes/Metamorphosis";
-import { ImpalingCross } from "./Upgrades/Recipes/ImpalingCross";
-import { Shatter } from "./Upgrades/Recipes/Shatter";
-import { NecromancersGrasp } from "./Upgrades/Recipes/NecromancersGrasp";
-import { Sacrifice } from "./Upgrades/Recipes/Sacrifice";
-import { GraspOfTheDead } from "./Upgrades/Recipes/GraspOfTheDead";
-import { PlagueTrap } from "./Upgrades/Recipes/PlagueTrap";
-import { NerubianTower } from "./Upgrades/Recipes/NerubianTower";
-import { DragonWhelpForge } from "./Upgrades/Recipes/DragonWhelpForge";
-import { BlastFurnace } from "./Upgrades/Recipes/BlastFurnace";
-import { MeteorShower } from "./Upgrades/Recipes/MeteorShower";
-import { SteamRockets } from "./Upgrades/Recipes/SteamRockets";
-import { FrostBombers } from "./Upgrades/Recipes/FrostBombers";
-import { ThunderBombs } from "./Upgrades/Recipes/ThunderBombs";
-import { HammerSquadron } from "./Upgrades/Recipes/HammerSquadron";
-import { FrostCannon } from "./Upgrades/Recipes/FrostCannon";
-import { ConcussionShells } from "./Upgrades/Recipes/ConcussionShells";
-import { HammerCannon } from "./Upgrades/Recipes/HammerCannon";
-import { ElementalFoundry } from "./Upgrades/Recipes/ElementalFoundry";
-import { FrostClockwerks } from "./Upgrades/Recipes/FrostClockwerks";
-import { KnightStables } from "./Upgrades/Recipes/KnightStables";
-import { GryphonRoost } from "./Upgrades/Recipes/GryphonRoost";
-import { IceElemental } from "./Upgrades/Recipes/IceElemental";
-import { WaterSlam } from "./Upgrades/Recipes/WaterSlam";
-import { LightningElemental } from "./Upgrades/Recipes/LightningElemental";
-import { EternalWinter } from "./Upgrades/Recipes/EternalWinter";
-import { Frostfire } from "./Upgrades/Recipes/Frostfire";
-import { FrostbiteRifle } from "./Upgrades/Recipes/FrostbiteRifle";
-import { IceRockets } from "./Upgrades/Recipes/IceRockets";
-import { FrostClap } from "./Upgrades/Recipes/FrostClap";
-import { IceHammer } from "./Upgrades/Recipes/IceHammer";
+// One namespace import: a named import per recipe would give the bundled
+// module two Lua locals each, and Lua allows 200 per function
+import * as Recipes from "./Upgrades/Recipes/index";
 
 export const weaponRecipes = [
-  new DualCannons(),
-  new StormHammers(),
-  new Monsoon(),
-  new GiantGoblinLandMine(),
-  new ExplosiveElemental(),
-  new FocusedShockwave(),
-  new UnstableShockwave(),
-  new FocusedImpale(),
-  new ShockwaveStorm(),
-  new LiquidFire(),
-  new FlyingBehemoth(),
-  new Phoenix(),
-  new Workshop(),
-  new BoulderBarrage(),
-  new Firebolt(),
-  new MortarTeam(),
-  new Whirlpool(),
-  new TeslaCoil(),
-  new VortexTrap(),
-  new StormElemental(),
-  new ScatterMines(),
-  new LocustSwarm(),
-  new FragmentationBurst(),
-  new PocketCyclone(),
-  new ShockMines(),
-  new GoblinLaboratory(),
-  new RocketFactory(),
-  new OverloadedClusterRockets(),
-  new TrojanMine(),
-  new ExtraLargeRifle(),
-  new MassRifles(),
-  new ElementalTwins(),
-  new MachineGunner(),
-  new CallToArms(),
-  new KamikazeGyros(),
-  new GryphonAviary(),
-  new Marksman(),
-  new CarpetBombing(),
-  new CannonTower(),
-  new LavaSpawnForge(),
-  new RiflemanBarracks(),
-  new FlameStrike(),
-  new DragonbreathShot(),
-  new FireTrap(),
-  new Scattergun(),
-  new MarksmansTrap(),
-  new Tremor(),
-  new EnvenomedSpears(),
-  new BerserkerRage(),
-  new JavelinVolley(),
-  new PurgingSpear(),
-  new BatriderRaid(),
-  new NetTrap(),
-  new StasisWard(),
-  new SerpentWard(),
-  new OrbOfLightning(),
-  new ThunderSpears(),
-  new Crypt(),
-  new CarrionBeetleNest(),
-  new DeathCoil(),
-  new DeathAndDecay(),
-  new FrostNovaBarrage(),
-  new PlagueMine(),
-  new GraveTrap(),
-  new AncientOfWind(),
-  new VolcanicEruption(),
-  new Starfall(),
-  new Metamorphosis(),
-  new ImpalingCross(),
-  new Shatter(),
-  new NecromancersGrasp(),
-  new Sacrifice(),
-  new GraspOfTheDead(),
-  new PlagueTrap(),
-  new NerubianTower(),
-  new DragonWhelpForge(),
-  new BlastFurnace(),
-  new MeteorShower(),
-  new SteamRockets(),
-  new FrostBombers(),
-  new ThunderBombs(),
-  new HammerSquadron(),
-  new FrostCannon(),
-  new ConcussionShells(),
-  new HammerCannon(),
-  new ElementalFoundry(),
-  new FrostClockwerks(),
-  new KnightStables(),
-  new GryphonRoost(),
-  new IceElemental(),
-  new WaterSlam(),
-  new LightningElemental(),
-  new EternalWinter(),
-  new Frostfire(),
-  new FrostbiteRifle(),
-  new IceRockets(),
-  new FrostClap(),
-  new IceHammer(),
+  new Recipes.DualCannons(),
+  new Recipes.StormHammers(),
+  new Recipes.Monsoon(),
+  new Recipes.GiantGoblinLandMine(),
+  new Recipes.ExplosiveElemental(),
+  new Recipes.FocusedShockwave(),
+  new Recipes.UnstableShockwave(),
+  new Recipes.FocusedImpale(),
+  new Recipes.ShockwaveStorm(),
+  new Recipes.LiquidFire(),
+  new Recipes.FlyingBehemoth(),
+  new Recipes.Phoenix(),
+  new Recipes.Workshop(),
+  new Recipes.BoulderBarrage(),
+  new Recipes.Firebolt(),
+  new Recipes.MortarTeam(),
+  new Recipes.Whirlpool(),
+  new Recipes.TeslaCoil(),
+  new Recipes.VortexTrap(),
+  new Recipes.StormElemental(),
+  new Recipes.ScatterMines(),
+  new Recipes.LocustSwarm(),
+  new Recipes.FragmentationBurst(),
+  new Recipes.PocketCyclone(),
+  new Recipes.ShockMines(),
+  new Recipes.GoblinLaboratory(),
+  new Recipes.RocketFactory(),
+  new Recipes.OverloadedClusterRockets(),
+  new Recipes.TrojanMine(),
+  new Recipes.ExtraLargeRifle(),
+  new Recipes.MassRifles(),
+  new Recipes.ElementalTwins(),
+  new Recipes.MachineGunner(),
+  new Recipes.CallToArms(),
+  new Recipes.KamikazeGyros(),
+  new Recipes.GryphonAviary(),
+  new Recipes.Marksman(),
+  new Recipes.CarpetBombing(),
+  new Recipes.CannonTower(),
+  new Recipes.LavaSpawnForge(),
+  new Recipes.RiflemanBarracks(),
+  new Recipes.FlameStrike(),
+  new Recipes.DragonbreathShot(),
+  new Recipes.FireTrap(),
+  new Recipes.Scattergun(),
+  new Recipes.MarksmansTrap(),
+  new Recipes.Tremor(),
+  new Recipes.EnvenomedSpears(),
+  new Recipes.BerserkerRage(),
+  new Recipes.JavelinVolley(),
+  new Recipes.PurgingSpear(),
+  new Recipes.BatriderRaid(),
+  new Recipes.NetTrap(),
+  new Recipes.StasisWard(),
+  new Recipes.SerpentWard(),
+  new Recipes.OrbOfLightning(),
+  new Recipes.ThunderSpears(),
+  new Recipes.Crypt(),
+  new Recipes.CarrionBeetleNest(),
+  new Recipes.DeathCoil(),
+  new Recipes.DeathAndDecay(),
+  new Recipes.FrostNovaBarrage(),
+  new Recipes.PlagueMine(),
+  new Recipes.GraveTrap(),
+  new Recipes.AncientOfWind(),
+  new Recipes.VolcanicEruption(),
+  new Recipes.Starfall(),
+  new Recipes.Metamorphosis(),
+  new Recipes.ImpalingCross(),
+  new Recipes.Shatter(),
+  new Recipes.NecromancersGrasp(),
+  new Recipes.Sacrifice(),
+  new Recipes.GraspOfTheDead(),
+  new Recipes.PlagueTrap(),
+  new Recipes.NerubianTower(),
+  new Recipes.DragonWhelpForge(),
+  new Recipes.BlastFurnace(),
+  new Recipes.MeteorShower(),
+  new Recipes.SteamRockets(),
+  new Recipes.FrostBombers(),
+  new Recipes.ThunderBombs(),
+  new Recipes.HammerSquadron(),
+  new Recipes.FrostCannon(),
+  new Recipes.ConcussionShells(),
+  new Recipes.HammerCannon(),
+  new Recipes.ElementalFoundry(),
+  new Recipes.FrostClockwerks(),
+  new Recipes.KnightStables(),
+  new Recipes.GryphonRoost(),
+  new Recipes.IceElemental(),
+  new Recipes.WaterSlam(),
+  new Recipes.LightningElemental(),
+  new Recipes.EternalWinter(),
+  new Recipes.Frostfire(),
+  new Recipes.FrostbiteRifle(),
+  new Recipes.IceRockets(),
+  new Recipes.FrostClap(),
+  new Recipes.IceHammer(),
 ];
