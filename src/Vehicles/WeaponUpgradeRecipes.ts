@@ -132,4 +132,5 @@ export const weaponRecipes = [
   new Recipes.EarthquakeShot(),
   new Recipes.WolfCatapult(),
   new Recipes.RocketCatapult(),
+  new Recipes.MineLauncher(),
 ];

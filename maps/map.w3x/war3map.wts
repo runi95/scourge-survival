@@ -12181,3 +12181,67 @@ STRING 2448
 Rocket Catapult
 }
 
+STRING 2449
+// Items: I08K (Mine Launcher), Tip (Tooltip - Basic)
+{
+Purchase Mine Launcher
+}
+
+STRING 2450
+// Items: I08K (Mine Launcher), Description (Description)
+{
+Lobs a boulder at a random enemy unit within range and scatters a land mine where it lands.
+}
+
+STRING 2451
+// Items: I08K (Mine Launcher), Ubertip (Tooltip - Extended)
+{
+Lobs a boulder at a random enemy unit within range and scatters a land mine where it lands.
+}
+
+STRING 2452
+// Items: I08K (Mine Launcher), Name (Name)
+{
+Mine Launcher
+}
+
+STRING 2453
+// Items: I08L (Mine Launcher), Tip (Tooltip - Basic)
+{
+Purchase Mine Launcher
+}
+
+STRING 2454
+// Items: I08L (Mine Launcher), Ubertip (Tooltip - Extended)
+{
+Lobs a boulder at a random enemy unit within range and scatters a land mine where it lands.
+
+Damage: |cffffcc0045 (boulder) + 100 (mine)|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00800|r
+Area of effect: |cffffcc00150 (boulder) + 300 (mine)|r
+Mine activation delay: |cffffcc004s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00siege + spell|r
+}
+
+STRING 2455
+// Items: I08L (Mine Launcher), Description (Description)
+{
+Lobs a boulder at a random enemy unit within range and scatters a land mine where it lands.
+
+Damage: |cffffcc0045 (boulder) + 100 (mine)|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00800|r
+Area of effect: |cffffcc00150 (boulder) + 300 (mine)|r
+Mine activation delay: |cffffcc004s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00siege + spell|r
+}
+
+STRING 2456
+// Items: I08L (Mine Launcher), Name (Name)
+{
+Mine Launcher
+}
+
