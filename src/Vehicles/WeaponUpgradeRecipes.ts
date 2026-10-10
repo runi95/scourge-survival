@@ -195,4 +195,5 @@ export const weaponRecipes = [
   new Recipes.ShadowVolley(),
   new Recipes.SkeletonArmy(),
   new Recipes.SkeletonDrop(),
+  new Recipes.Slaughterhouse(),
 ];

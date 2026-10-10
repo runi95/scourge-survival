@@ -16315,3 +16315,65 @@ STRING 2966
 Skeleton Drop
 }
 
+STRING 2967
+// Items: I0C2 (Slaughterhouse), Tip (Tooltip - Basic)
+{
+Purchase Slaughterhouse
+}
+
+STRING 2968
+// Items: I0C2 (Slaughterhouse), Description (Description)
+{
+Sends out 2 Abominations every 30 seconds. Their disease cloud hurts every enemy around them.
+}
+
+STRING 2969
+// Items: I0C2 (Slaughterhouse), Ubertip (Tooltip - Extended)
+{
+Sends out 2 Abominations every 30 seconds. Their disease cloud hurts every enemy around them.
+}
+
+STRING 2970
+// Items: I0C2 (Slaughterhouse), Name (Name)
+{
+Slaughterhouse
+}
+
+STRING 2971
+// Items: I0C3 (Slaughterhouse), Tip (Tooltip - Basic)
+{
+Purchase Slaughterhouse
+}
+
+STRING 2972
+// Items: I0C3 (Slaughterhouse), Ubertip (Tooltip - Extended)
+{
+Sends out 2 Abominations every 30 seconds. Their disease cloud hurts every enemy around them.
+
+Damage: |cffffcc002 x 35 - 41|r
+Cooldown: |cffffcc0030s|r
+Health: |cffffcc001175|r
+Duration: |cffffcc0020s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00normal|r
+}
+
+STRING 2973
+// Items: I0C3 (Slaughterhouse), Description (Description)
+{
+Sends out 2 Abominations every 30 seconds. Their disease cloud hurts every enemy around them.
+
+Damage: |cffffcc002 x 35 - 41|r
+Cooldown: |cffffcc0030s|r
+Health: |cffffcc001175|r
+Duration: |cffffcc0020s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00normal|r
+}
+
+STRING 2974
+// Items: I0C3 (Slaughterhouse), Name (Name)
+{
+Slaughterhouse
+}
+
