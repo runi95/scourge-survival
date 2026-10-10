@@ -181,4 +181,5 @@ export const weaponRecipes = [
   new Recipes.FrozenDead(),
   new Recipes.FrozenImpale(),
   new Recipes.FrozenSpikes(),
+  new Recipes.GargoyleSpire(),
 ];

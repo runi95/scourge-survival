@@ -15421,3 +15421,65 @@ STRING 2852
 Frozen Spikes
 }
 
+STRING 2853
+// Items: I0BA (Gargoyle Spire), Tip (Tooltip - Basic)
+{
+Purchase Gargoyle Spire
+}
+
+STRING 2854
+// Items: I0BA (Gargoyle Spire), Description (Description)
+{
+Sends out 3 Gargoyles every 30 seconds that fight by your side.
+}
+
+STRING 2855
+// Items: I0BA (Gargoyle Spire), Ubertip (Tooltip - Extended)
+{
+Sends out 3 Gargoyles every 30 seconds that fight by your side.
+}
+
+STRING 2856
+// Items: I0BA (Gargoyle Spire), Name (Name)
+{
+Gargoyle Spire
+}
+
+STRING 2857
+// Items: I0BB (Gargoyle Spire), Tip (Tooltip - Basic)
+{
+Purchase Gargoyle Spire
+}
+
+STRING 2858
+// Items: I0BB (Gargoyle Spire), Ubertip (Tooltip - Extended)
+{
+Sends out 3 Gargoyles every 30 seconds that fight by your side.
+
+Damage: |cffffcc003 x 61 - 70|r
+Cooldown: |cffffcc0030s|r
+Health: |cffffcc00410|r
+Duration: |cffffcc0020s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00normal|r
+}
+
+STRING 2859
+// Items: I0BB (Gargoyle Spire), Description (Description)
+{
+Sends out 3 Gargoyles every 30 seconds that fight by your side.
+
+Damage: |cffffcc003 x 61 - 70|r
+Cooldown: |cffffcc0030s|r
+Health: |cffffcc00410|r
+Duration: |cffffcc0020s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00normal|r
+}
+
+STRING 2860
+// Items: I0BB (Gargoyle Spire), Name (Name)
+{
+Gargoyle Spire
+}
+
