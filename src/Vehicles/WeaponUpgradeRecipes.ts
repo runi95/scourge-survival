@@ -157,4 +157,5 @@ export const weaponRecipes = [
   new Recipes.SpearVolley(),
   new Recipes.BatBolts(),
   new Recipes.BatGraveyard(),
+  new Recipes.BatMine(),
 ];
