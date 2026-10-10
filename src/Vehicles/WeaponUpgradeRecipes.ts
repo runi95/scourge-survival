@@ -95,6 +95,7 @@ import { Frostfire } from "./Upgrades/Recipes/Frostfire";
 import { FrostbiteRifle } from "./Upgrades/Recipes/FrostbiteRifle";
 import { IceRockets } from "./Upgrades/Recipes/IceRockets";
 import { FrostClap } from "./Upgrades/Recipes/FrostClap";
+import { IceHammer } from "./Upgrades/Recipes/IceHammer";
 
 export const weaponRecipes = [
   new DualCannons(),
@@ -194,4 +195,5 @@ export const weaponRecipes = [
   new FrostbiteRifle(),
   new IceRockets(),
   new FrostClap(),
+  new IceHammer(),
 ];

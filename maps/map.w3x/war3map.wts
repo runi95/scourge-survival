@@ -10125,3 +10125,75 @@ STRING 2186
 Frost Clap
 }
 
+STRING 2187
+// Items: I06S (Ice Hammer), Tip (Tooltip - Basic)
+{
+Purchase Ice Hammer
+}
+
+STRING 2188
+// Items: I06S (Ice Hammer), Description (Description)
+{
+Throws a frozen hammer at a random enemy unit within range. It stuns the target and bursts into a Frost Nova.
+}
+
+STRING 2189
+// Items: I06S (Ice Hammer), Ubertip (Tooltip - Extended)
+{
+Throws a frozen hammer at a random enemy unit within range. It stuns the target and bursts into a Frost Nova.
+}
+
+STRING 2190
+// Items: I06S (Ice Hammer), Name (Name)
+{
+Ice Hammer
+}
+
+STRING 2191
+// Items: I06T (Ice Hammer), Tip (Tooltip - Basic)
+{
+Purchase Ice Hammer
+}
+
+STRING 2192
+// Items: I06T (Ice Hammer), Ubertip (Tooltip - Extended)
+{
+Throws a frozen hammer at a random enemy unit within range. It stuns the target and bursts into a Frost Nova.
+
+Damage: |cffffcc00100 (hammer) + 60 (target) + 40 (nova)|r
+Slow: |cffffcc00-50% movement speed for 3s|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00600|r
+Stun duration: |cffffcc001s|r
+Area of effect: |cffffcc00200|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 2193
+// Items: I06T (Ice Hammer), Description (Description)
+{
+Throws a frozen hammer at a random enemy unit within range. It stuns the target and bursts into a Frost Nova.
+
+Damage: |cffffcc00100 (hammer) + 60 (target) + 40 (nova)|r
+Slow: |cffffcc00-50% movement speed for 3s|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00600|r
+Stun duration: |cffffcc001s|r
+Area of effect: |cffffcc00200|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 2194
+// Items: I06T (Ice Hammer), Name (Name)
+{
+Ice Hammer
+}
+
+STRING 2195
+// Abilities: A04F (Ice Hammer), Name (Name)
+{
+Ice Hammer
+}
+
