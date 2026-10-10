@@ -18257,3 +18257,67 @@ STRING 3215
 Root Rockets
 }
 
+STRING 3216
+// Items: I0DQ (Rooted Treants), Tip (Tooltip - Basic)
+{
+Purchase Rooted Treants
+}
+
+STRING 3217
+// Items: I0DQ (Rooted Treants), Description (Description)
+{
+Roots a random enemy unit within range in place, and a Treant sprouts beside it.
+}
+
+STRING 3218
+// Items: I0DQ (Rooted Treants), Ubertip (Tooltip - Extended)
+{
+Roots a random enemy unit within range in place, and a Treant sprouts beside it.
+}
+
+STRING 3219
+// Items: I0DQ (Rooted Treants), Name (Name)
+{
+Rooted Treants
+}
+
+STRING 3220
+// Items: I0DR (Rooted Treants), Tip (Tooltip - Basic)
+{
+Purchase Rooted Treants
+}
+
+STRING 3221
+// Items: I0DR (Rooted Treants), Ubertip (Tooltip - Extended)
+{
+Roots a random enemy unit within range in place, and a Treant sprouts beside it.
+
+Damage: |cffffcc0015 per second (roots) + 15 - 17 (treant)|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00600|r
+Duration: |cffffcc002.5s (roots) + 8s (treant)|r
+Health: |cffffcc00300|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell + normal|r
+}
+
+STRING 3222
+// Items: I0DR (Rooted Treants), Description (Description)
+{
+Roots a random enemy unit within range in place, and a Treant sprouts beside it.
+
+Damage: |cffffcc0015 per second (roots) + 15 - 17 (treant)|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00600|r
+Duration: |cffffcc002.5s (roots) + 8s (treant)|r
+Health: |cffffcc00300|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell + normal|r
+}
+
+STRING 3223
+// Items: I0DR (Rooted Treants), Name (Name)
+{
+Rooted Treants
+}
+
