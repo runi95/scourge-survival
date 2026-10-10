@@ -167,4 +167,5 @@ export const weaponRecipes = [
   new Recipes.CripplingRockets(),
   new Recipes.CryptFiendDen(),
   new Recipes.DeathBolt(),
+  new Recipes.FreezingBreath(),
 ];
