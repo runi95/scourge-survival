@@ -17477,3 +17477,65 @@ STRING 3116
 Flaming Spear
 }
 
+STRING 3117
+// Items: I0D2 (Glaive Workshop), Tip (Tooltip - Basic)
+{
+Purchase Glaive Workshop
+}
+
+STRING 3118
+// Items: I0D2 (Glaive Workshop), Description (Description)
+{
+Builds 2 Glaive Throwers every 30 seconds that hurl glaives at enemies from afar.
+}
+
+STRING 3119
+// Items: I0D2 (Glaive Workshop), Ubertip (Tooltip - Extended)
+{
+Builds 2 Glaive Throwers every 30 seconds that hurl glaives at enemies from afar.
+}
+
+STRING 3120
+// Items: I0D2 (Glaive Workshop), Name (Name)
+{
+Glaive Workshop
+}
+
+STRING 3121
+// Items: I0D3 (Glaive Workshop), Tip (Tooltip - Basic)
+{
+Purchase Glaive Workshop
+}
+
+STRING 3122
+// Items: I0D3 (Glaive Workshop), Ubertip (Tooltip - Extended)
+{
+Builds 2 Glaive Throwers every 30 seconds that hurl glaives at enemies from afar.
+
+Damage: |cffffcc002 x 45 - 62|r
+Cooldown: |cffffcc0030s|r
+Health: |cffffcc00300|r
+Duration: |cffffcc0020s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00siege|r
+}
+
+STRING 3123
+// Items: I0D3 (Glaive Workshop), Description (Description)
+{
+Builds 2 Glaive Throwers every 30 seconds that hurl glaives at enemies from afar.
+
+Damage: |cffffcc002 x 45 - 62|r
+Cooldown: |cffffcc0030s|r
+Health: |cffffcc00300|r
+Duration: |cffffcc0020s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00siege|r
+}
+
+STRING 3124
+// Items: I0D3 (Glaive Workshop), Name (Name)
+{
+Glaive Workshop
+}
+

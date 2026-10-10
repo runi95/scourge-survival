@@ -213,4 +213,5 @@ export const weaponRecipes = [
   new Recipes.Firestorm(),
   new Recipes.FlamingRockets(),
   new Recipes.FlamingSpear(),
+  new Recipes.GlaiveWorkshop(),
 ];

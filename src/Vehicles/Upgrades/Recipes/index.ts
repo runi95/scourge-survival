@@ -208,3 +208,4 @@ export * from "./FanOfArrows";
 export * from "./Firestorm";
 export * from "./FlamingRockets";
 export * from "./FlamingSpear";
+export * from "./GlaiveWorkshop";
