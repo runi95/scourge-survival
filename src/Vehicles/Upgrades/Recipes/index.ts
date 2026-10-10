@@ -169,3 +169,4 @@ export * from "./FrostBrood";
 export * from "./FrostRevenants";
 export * from "./FrostRockets";
 export * from "./FrostShadow";
+export * from "./FrostSpire";

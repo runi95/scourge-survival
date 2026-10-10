@@ -14949,3 +14949,77 @@ STRING 2794
 Frost Shadow
 }
 
+STRING 2795
+// Items: I0AW (Frost Spire), Tip (Tooltip - Basic)
+{
+Purchase Frost Spire
+}
+
+STRING 2796
+// Items: I0AW (Frost Spire), Description (Description)
+{
+Rapidly fires freezing spirits at random enemy units within range, slowing them.
+}
+
+STRING 2797
+// Items: I0AW (Frost Spire), Ubertip (Tooltip - Extended)
+{
+Rapidly fires freezing spirits at random enemy units within range, slowing them.
+}
+
+STRING 2798
+// Items: I0AW (Frost Spire), Name (Name)
+{
+Frost Spire
+}
+
+STRING 2799
+// Items: I0AX (Frost Spire), Tip (Tooltip - Basic)
+{
+Purchase Frost Spire
+}
+
+STRING 2800
+// Items: I0AX (Frost Spire), Ubertip (Tooltip - Extended)
+{
+Rapidly fires freezing spirits at random enemy units within range, slowing them.
+
+Damage: |cffffcc0010 - 13|r
+Slow: |cffffcc00-50% movement and attack speed for 2s|r
+Cooldown: |cffffcc000.3s|r
+Range: |cffffcc00500|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing|r
+}
+
+STRING 2801
+// Items: I0AX (Frost Spire), Description (Description)
+{
+Rapidly fires freezing spirits at random enemy units within range, slowing them.
+
+Damage: |cffffcc0010 - 13|r
+Slow: |cffffcc00-50% movement and attack speed for 2s|r
+Cooldown: |cffffcc000.3s|r
+Range: |cffffcc00500|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing|r
+}
+
+STRING 2802
+// Items: I0AX (Frost Spire), Name (Name)
+{
+Frost Spire
+}
+
+STRING 2803
+// Units: u01X (Frost Spire), Name (Name)
+{
+Frost Spire
+}
+
+STRING 2804
+// Abilities: A04K (Frost Spire Slow), Name (Name)
+{
+Frost Spire Slow
+}
+
