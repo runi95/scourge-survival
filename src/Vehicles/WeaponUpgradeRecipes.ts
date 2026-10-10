@@ -120,4 +120,5 @@ export const weaponRecipes = [
   new Recipes.HeadhunterHut(),
   new Recipes.RaiderCamp(),
   new Recipes.SeismicBoulder(),
+  new Recipes.Earthsplitter(),
 ];

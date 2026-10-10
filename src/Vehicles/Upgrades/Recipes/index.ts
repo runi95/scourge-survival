@@ -115,3 +115,4 @@ export * from "./SpiritLodge";
 export * from "./HeadhunterHut";
 export * from "./RaiderCamp";
 export * from "./SeismicBoulder";
+export * from "./Earthsplitter";
