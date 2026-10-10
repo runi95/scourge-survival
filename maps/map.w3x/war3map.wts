@@ -19171,3 +19171,65 @@ STRING 3330
 Thorn Fan
 }
 
+STRING 3331
+// Items: I0EI (Thorn Spear), Tip (Tooltip - Basic)
+{
+Purchase Thorn Spear
+}
+
+STRING 3332
+// Items: I0EI (Thorn Spear), Description (Description)
+{
+Throws a poisoned spear at a random enemy unit within range and roots it in place.
+}
+
+STRING 3333
+// Items: I0EI (Thorn Spear), Ubertip (Tooltip - Extended)
+{
+Throws a poisoned spear at a random enemy unit within range and roots it in place.
+}
+
+STRING 3334
+// Items: I0EI (Thorn Spear), Name (Name)
+{
+Thorn Spear
+}
+
+STRING 3335
+// Items: I0EJ (Thorn Spear), Tip (Tooltip - Basic)
+{
+Purchase Thorn Spear
+}
+
+STRING 3336
+// Items: I0EJ (Thorn Spear), Ubertip (Tooltip - Extended)
+{
+Throws a poisoned spear at a random enemy unit within range and roots it in place.
+
+Damage: |cffffcc0015 (spear) + 15 per second (roots)|r
+Cooldown: |cffffcc002.5s|r
+Range: |cffffcc00600|r
+Duration: |cffffcc002.5s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00piercing + spell|r
+}
+
+STRING 3337
+// Items: I0EJ (Thorn Spear), Description (Description)
+{
+Throws a poisoned spear at a random enemy unit within range and roots it in place.
+
+Damage: |cffffcc0015 (spear) + 15 per second (roots)|r
+Cooldown: |cffffcc002.5s|r
+Range: |cffffcc00600|r
+Duration: |cffffcc002.5s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00piercing + spell|r
+}
+
+STRING 3338
+// Items: I0EJ (Thorn Spear), Name (Name)
+{
+Thorn Spear
+}
+
