@@ -96,3 +96,4 @@ export * from "./FrostbiteRifle";
 export * from "./IceRockets";
 export * from "./FrostClap";
 export * from "./IceHammer";
+export * from "./SearingClap";
