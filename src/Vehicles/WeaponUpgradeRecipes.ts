@@ -218,4 +218,5 @@ export const weaponRecipes = [
   new Recipes.KnifeMine(),
   new Recipes.KnifeRockets(),
   new Recipes.KnifeStorm(),
+  new Recipes.NaturesWrath(),
 ];

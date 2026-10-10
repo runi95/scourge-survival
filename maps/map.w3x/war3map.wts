@@ -17793,3 +17793,67 @@ STRING 3157
 Knife Storm
 }
 
+STRING 3158
+// Items: I0DC (Nature's Wrath), Tip (Tooltip - Basic)
+{
+Purchase Nature's Wrath
+}
+
+STRING 3159
+// Items: I0DC (Nature's Wrath), Description (Description)
+{
+Summons a tornado and 2 Treants every 10 seconds. The tornado wanders around, tossing enemies into the air.
+}
+
+STRING 3160
+// Items: I0DC (Nature's Wrath), Ubertip (Tooltip - Extended)
+{
+Summons a tornado and 2 Treants every 10 seconds. The tornado wanders around, tossing enemies into the air.
+}
+
+STRING 3161
+// Items: I0DC (Nature's Wrath), Name (Name)
+{
+Nature's Wrath
+}
+
+STRING 3162
+// Items: I0DD (Nature's Wrath), Tip (Tooltip - Basic)
+{
+Purchase Nature's Wrath
+}
+
+STRING 3163
+// Items: I0DD (Nature's Wrath), Ubertip (Tooltip - Extended)
+{
+Summons a tornado and 2 Treants every 10 seconds. The tornado wanders around, tossing enemies into the air.
+
+Damage: |cffffcc0025 - 180 (tornado) + 2 x 15 - 17 (treants)|r
+Cooldown: |cffffcc0010s|r
+Area of effect: |cffffcc00650|r
+Health: |cffffcc00300|r
+Duration: |cffffcc0010s|r
+Targets: |cffffcc00air & ground (tornado), ground (treants)|r
+Damage type: |cffffcc00spell + normal|r
+}
+
+STRING 3164
+// Items: I0DD (Nature's Wrath), Description (Description)
+{
+Summons a tornado and 2 Treants every 10 seconds. The tornado wanders around, tossing enemies into the air.
+
+Damage: |cffffcc0025 - 180 (tornado) + 2 x 15 - 17 (treants)|r
+Cooldown: |cffffcc0010s|r
+Area of effect: |cffffcc00650|r
+Health: |cffffcc00300|r
+Duration: |cffffcc0010s|r
+Targets: |cffffcc00air & ground (tornado), ground (treants)|r
+Damage type: |cffffcc00spell + normal|r
+}
+
+STRING 3165
+// Items: I0DD (Nature's Wrath), Name (Name)
+{
+Nature's Wrath
+}
+

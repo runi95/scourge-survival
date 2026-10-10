@@ -213,3 +213,4 @@ export * from "./HuntressHall";
 export * from "./KnifeMine";
 export * from "./KnifeRockets";
 export * from "./KnifeStorm";
+export * from "./NaturesWrath";
