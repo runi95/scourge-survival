@@ -68,6 +68,7 @@ import { Starfall } from "./Upgrades/Recipes/Starfall";
 import { Metamorphosis } from "./Upgrades/Recipes/Metamorphosis";
 import { ImpalingCross } from "./Upgrades/Recipes/ImpalingCross";
 import { Shatter } from "./Upgrades/Recipes/Shatter";
+import { NecromancersGrasp } from "./Upgrades/Recipes/NecromancersGrasp";
 
 export const weaponRecipes = [
   new DualCannons(),
@@ -140,4 +141,5 @@ export const weaponRecipes = [
   new Metamorphosis(),
   new ImpalingCross(),
   new Shatter(),
+  new NecromancersGrasp(),
 ];
