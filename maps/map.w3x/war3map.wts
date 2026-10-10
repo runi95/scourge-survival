@@ -18463,3 +18463,65 @@ STRING 3241
 Searing Mine
 }
 
+STRING 3242
+// Items: I0DW (Searing Spear), Tip (Tooltip - Basic)
+{
+Purchase Searing Spear
+}
+
+STRING 3243
+// Items: I0DW (Searing Spear), Description (Description)
+{
+Fires a searing arrow and throws a poisoned spear at 2 random enemy units within range.
+}
+
+STRING 3244
+// Items: I0DW (Searing Spear), Ubertip (Tooltip - Extended)
+{
+Fires a searing arrow and throws a poisoned spear at 2 random enemy units within range.
+}
+
+STRING 3245
+// Items: I0DW (Searing Spear), Name (Name)
+{
+Searing Spear
+}
+
+STRING 3246
+// Items: I0DX (Searing Spear), Tip (Tooltip - Basic)
+{
+Purchase Searing Spear
+}
+
+STRING 3247
+// Items: I0DX (Searing Spear), Ubertip (Tooltip - Extended)
+{
+Fires a searing arrow and throws a poisoned spear at 2 random enemy units within range.
+
+Damage: |cffffcc002 x 20 (arrow) + 2 x 15 (spear)|r
+Slow: |cffffcc00-25% movement speed for 2s|r
+Cooldown: |cffffcc001.5s|r
+Range: |cffffcc00600|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing|r
+}
+
+STRING 3248
+// Items: I0DX (Searing Spear), Description (Description)
+{
+Fires a searing arrow and throws a poisoned spear at 2 random enemy units within range.
+
+Damage: |cffffcc002 x 20 (arrow) + 2 x 15 (spear)|r
+Slow: |cffffcc00-25% movement speed for 2s|r
+Cooldown: |cffffcc001.5s|r
+Range: |cffffcc00600|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing|r
+}
+
+STRING 3249
+// Items: I0DX (Searing Spear), Name (Name)
+{
+Searing Spear
+}
+
