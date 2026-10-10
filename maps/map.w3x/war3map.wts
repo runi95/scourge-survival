@@ -16003,3 +16003,65 @@ STRING 2926
 Shadow Rockets
 }
 
+STRING 2927
+// Items: I0BS (Shadow Spikes), Tip (Tooltip - Basic)
+{
+Purchase Shadow Spikes
+}
+
+STRING 2928
+// Items: I0BS (Shadow Spikes), Description (Description)
+{
+Fires a shadow bolt at a random enemy unit within range and impales the ground towards it.
+}
+
+STRING 2929
+// Items: I0BS (Shadow Spikes), Ubertip (Tooltip - Extended)
+{
+Fires a shadow bolt at a random enemy unit within range and impales the ground towards it.
+}
+
+STRING 2930
+// Items: I0BS (Shadow Spikes), Name (Name)
+{
+Shadow Spikes
+}
+
+STRING 2931
+// Items: I0BT (Shadow Spikes), Tip (Tooltip - Basic)
+{
+Purchase Shadow Spikes
+}
+
+STRING 2932
+// Items: I0BT (Shadow Spikes), Ubertip (Tooltip - Extended)
+{
+Fires a shadow bolt at a random enemy unit within range and impales the ground towards it.
+
+Damage: |cffffcc0020 - 24 (bolt) + 75 (impale)|r
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00400|r
+Stun duration: |cffffcc001s|r
+Targets: |cffffcc00air & ground (bolt), ground (impale)|r
+Damage type: |cffffcc00magic + spell|r
+}
+
+STRING 2933
+// Items: I0BT (Shadow Spikes), Description (Description)
+{
+Fires a shadow bolt at a random enemy unit within range and impales the ground towards it.
+
+Damage: |cffffcc0020 - 24 (bolt) + 75 (impale)|r
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00400|r
+Stun duration: |cffffcc001s|r
+Targets: |cffffcc00air & ground (bolt), ground (impale)|r
+Damage type: |cffffcc00magic + spell|r
+}
+
+STRING 2934
+// Items: I0BT (Shadow Spikes), Name (Name)
+{
+Shadow Spikes
+}
+

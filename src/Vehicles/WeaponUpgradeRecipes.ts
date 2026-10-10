@@ -190,4 +190,5 @@ export const weaponRecipes = [
   new Recipes.PlagueSwarm(),
   new Recipes.ShadowMine(),
   new Recipes.ShadowRockets(),
+  new Recipes.ShadowSpikes(),
 ];

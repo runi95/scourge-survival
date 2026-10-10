@@ -185,3 +185,4 @@ export * from "./NovaMine";
 export * from "./PlagueSwarm";
 export * from "./ShadowMine";
 export * from "./ShadowRockets";
+export * from "./ShadowSpikes";
