@@ -204,4 +204,5 @@ export const weaponRecipes = [
   new Recipes.BladedSpear(),
   new Recipes.BlazingArrows(),
   new Recipes.BurningKnives(),
+  new Recipes.BurningRoots(),
 ];

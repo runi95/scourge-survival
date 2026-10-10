@@ -199,3 +199,4 @@ export * from "./BladeCyclone";
 export * from "./BladedSpear";
 export * from "./BlazingArrows";
 export * from "./BurningKnives";
+export * from "./BurningRoots";

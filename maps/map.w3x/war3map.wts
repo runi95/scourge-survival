@@ -16897,3 +16897,71 @@ STRING 3041
 Burning Knives
 }
 
+STRING 3042
+// Items: I0CK (Burning Roots), Tip (Tooltip - Basic)
+{
+Purchase Burning Roots
+}
+
+STRING 3043
+// Items: I0CK (Burning Roots), Description (Description)
+{
+Roots 2 random enemy units within range in burning vines that hold them in place.
+}
+
+STRING 3044
+// Items: I0CK (Burning Roots), Ubertip (Tooltip - Extended)
+{
+Roots 2 random enemy units within range in burning vines that hold them in place.
+}
+
+STRING 3045
+// Items: I0CK (Burning Roots), Name (Name)
+{
+Burning Roots
+}
+
+STRING 3046
+// Items: I0CL (Burning Roots), Tip (Tooltip - Basic)
+{
+Purchase Burning Roots
+}
+
+STRING 3047
+// Items: I0CL (Burning Roots), Ubertip (Tooltip - Extended)
+{
+Roots 2 random enemy units within range in burning vines that hold them in place.
+
+Damage: |cffffcc002 x 30 per second|r
+Cooldown: |cffffcc002.5s|r
+Range: |cffffcc00600|r
+Duration: |cffffcc002.5s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 3048
+// Items: I0CL (Burning Roots), Description (Description)
+{
+Roots 2 random enemy units within range in burning vines that hold them in place.
+
+Damage: |cffffcc002 x 30 per second|r
+Cooldown: |cffffcc002.5s|r
+Range: |cffffcc00600|r
+Duration: |cffffcc002.5s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 3049
+// Items: I0CL (Burning Roots), Name (Name)
+{
+Burning Roots
+}
+
+STRING 3050
+// Abilities: A04M (Burning Roots), Name (Name)
+{
+Burning Roots
+}
+
