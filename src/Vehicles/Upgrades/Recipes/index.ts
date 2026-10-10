@@ -196,3 +196,4 @@ export * from "./WyrmMine";
 export * from "./AncientGrove";
 export * from "./ArcherBarracks";
 export * from "./BladeCyclone";
+export * from "./BladedSpear";

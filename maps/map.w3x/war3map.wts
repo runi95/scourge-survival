@@ -16711,3 +16711,67 @@ STRING 3017
 Blade Cyclone
 }
 
+STRING 3018
+// Items: I0CE (Bladed Spear), Tip (Tooltip - Basic)
+{
+Purchase Bladed Spear
+}
+
+STRING 3019
+// Items: I0CE (Bladed Spear), Description (Description)
+{
+Throws a poisoned spear at a random enemy unit within range and flings a fan of knives at every enemy around your hero.
+}
+
+STRING 3020
+// Items: I0CE (Bladed Spear), Ubertip (Tooltip - Extended)
+{
+Throws a poisoned spear at a random enemy unit within range and flings a fan of knives at every enemy around your hero.
+}
+
+STRING 3021
+// Items: I0CE (Bladed Spear), Name (Name)
+{
+Bladed Spear
+}
+
+STRING 3022
+// Items: I0CF (Bladed Spear), Tip (Tooltip - Basic)
+{
+Purchase Bladed Spear
+}
+
+STRING 3023
+// Items: I0CF (Bladed Spear), Ubertip (Tooltip - Extended)
+{
+Throws a poisoned spear at a random enemy unit within range and flings a fan of knives at every enemy around your hero.
+
+Damage: |cffffcc0015 (spear) + 75 (knives)|r
+Slow: |cffffcc00-25% movement speed for 2s|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00600|r
+Area of effect: |cffffcc00400|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing + spell|r
+}
+
+STRING 3024
+// Items: I0CF (Bladed Spear), Description (Description)
+{
+Throws a poisoned spear at a random enemy unit within range and flings a fan of knives at every enemy around your hero.
+
+Damage: |cffffcc0015 (spear) + 75 (knives)|r
+Slow: |cffffcc00-25% movement speed for 2s|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00600|r
+Area of effect: |cffffcc00400|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing + spell|r
+}
+
+STRING 3025
+// Items: I0CF (Bladed Spear), Name (Name)
+{
+Bladed Spear
+}
+
