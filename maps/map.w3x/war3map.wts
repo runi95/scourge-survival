@@ -13169,3 +13169,67 @@ STRING 2571
 Spirit Trap
 }
 
+STRING 2572
+// Items: I09E (Spirit Hunters), Tip (Tooltip - Basic)
+{
+Purchase Spirit Hunters
+}
+
+STRING 2573
+// Items: I09E (Spirit Hunters), Description (Description)
+{
+Hurls spears at 2 random enemy units within range, and a Spirit Wolf leaps out where each one lands.
+}
+
+STRING 2574
+// Items: I09E (Spirit Hunters), Ubertip (Tooltip - Extended)
+{
+Hurls spears at 2 random enemy units within range, and a Spirit Wolf leaps out where each one lands.
+}
+
+STRING 2575
+// Items: I09E (Spirit Hunters), Name (Name)
+{
+Spirit Hunters
+}
+
+STRING 2576
+// Items: I09F (Spirit Hunters), Tip (Tooltip - Basic)
+{
+Purchase Spirit Hunters
+}
+
+STRING 2577
+// Items: I09F (Spirit Hunters), Ubertip (Tooltip - Extended)
+{
+Hurls spears at 2 random enemy units within range, and a Spirit Wolf leaps out where each one lands.
+
+Damage: |cffffcc002 x 20 - 30 (spear) + 16 - 17 (wolves)|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00800|r
+Health: |cffffcc00250|r
+Duration: |cffffcc006s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00piercing + normal|r
+}
+
+STRING 2578
+// Items: I09F (Spirit Hunters), Description (Description)
+{
+Hurls spears at 2 random enemy units within range, and a Spirit Wolf leaps out where each one lands.
+
+Damage: |cffffcc002 x 20 - 30 (spear) + 16 - 17 (wolves)|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00800|r
+Health: |cffffcc00250|r
+Duration: |cffffcc006s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00piercing + normal|r
+}
+
+STRING 2579
+// Items: I09F (Spirit Hunters), Name (Name)
+{
+Spirit Hunters
+}
+

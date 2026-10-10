@@ -147,4 +147,5 @@ export const weaponRecipes = [
   new Recipes.SpiritPack(),
   new Recipes.RocketWolves(),
   new Recipes.WolfDen(),
+  new Recipes.SpiritHunters(),
 ];
