@@ -11171,3 +11171,65 @@ STRING 2319
 Kodo Pen
 }
 
+STRING 2320
+// Items: I07O (Spirit Lodge), Tip (Tooltip - Basic)
+{
+Purchase Spirit Lodge
+}
+
+STRING 2321
+// Items: I07O (Spirit Lodge), Description (Description)
+{
+Calls 3 Shadow Wolves every 20 seconds that fight by your side. They strike critically and turn invisible.
+}
+
+STRING 2322
+// Items: I07O (Spirit Lodge), Ubertip (Tooltip - Extended)
+{
+Calls 3 Shadow Wolves every 20 seconds that fight by your side. They strike critically and turn invisible.
+}
+
+STRING 2323
+// Items: I07O (Spirit Lodge), Name (Name)
+{
+Spirit Lodge
+}
+
+STRING 2324
+// Items: I07P (Spirit Lodge), Tip (Tooltip - Basic)
+{
+Purchase Spirit Lodge
+}
+
+STRING 2325
+// Items: I07P (Spirit Lodge), Ubertip (Tooltip - Extended)
+{
+Calls 3 Shadow Wolves every 20 seconds that fight by your side. They strike critically and turn invisible.
+
+Damage: |cffffcc003 x 21 - 22|r
+Cooldown: |cffffcc0020s|r
+Health: |cffffcc00500|r
+Duration: |cffffcc0015s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00normal|r
+}
+
+STRING 2326
+// Items: I07P (Spirit Lodge), Description (Description)
+{
+Calls 3 Shadow Wolves every 20 seconds that fight by your side. They strike critically and turn invisible.
+
+Damage: |cffffcc003 x 21 - 22|r
+Cooldown: |cffffcc0020s|r
+Health: |cffffcc00500|r
+Duration: |cffffcc0015s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00normal|r
+}
+
+STRING 2327
+// Items: I07P (Spirit Lodge), Name (Name)
+{
+Spirit Lodge
+}
+
