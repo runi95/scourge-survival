@@ -58,6 +58,7 @@ export class SeismicBoulder extends WeaponUpgradeRecipe {
         missile.issueTargetOrder("attack", target);
       }
       {
+        const at = { x: target.x, y: target.y };
         const later: Timer = TimerUtils.newTimer();
         later.start(0.8, false, () => {
           TimerUtils.releaseTimer(later);
@@ -65,18 +66,13 @@ export class SeismicBoulder extends WeaponUpgradeRecipe {
           for (const angle of [0, 180]) {
             const radians = (startAngle + angle) * MULT;
             {
-              const dummy = Unit.create(
-                owner,
-                this.dummyUnitId,
-                target.x,
-                target.y,
-              );
+              const dummy = Unit.create(owner, this.dummyUnitId, at.x, at.y);
               dummy.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 3);
               dummy.addAbility(this.abilityId);
               dummy.issueOrderAt(
                 "shockwave",
-                target.x + 400 * Math.cos(radians),
-                target.y + 400 * Math.sin(radians),
+                at.x + 400 * Math.cos(radians),
+                at.y + 400 * Math.sin(radians),
               );
             }
           }

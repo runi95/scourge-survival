@@ -55,11 +55,12 @@ export class MoltenHammer extends WeaponUpgradeRecipe {
         dummy.issueTargetOrder("thunderbolt", target);
       }
       {
+        const at = { x: target.x, y: target.y };
         const later: Timer = TimerUtils.newTimer();
         later.start(0.6, false, () => {
           TimerUtils.releaseTimer(later);
           {
-            const center = Point.create(target.x, target.y);
+            const center = Point.create(at.x, at.y);
             const area = Group.fromRange(150, center);
             center.destroy();
             area.for((u) => {
@@ -80,13 +81,14 @@ export class MoltenHammer extends WeaponUpgradeRecipe {
         });
       }
       {
+        const at = { x: target.x, y: target.y };
         const later: Timer = TimerUtils.newTimer();
         later.start(0.6, false, () => {
           TimerUtils.releaseTimer(later);
           Effect.create(
             "Abilities/Weapons/FireBallMissile/FireBallMissile.mdl",
-            target.x,
-            target.y,
+            at.x,
+            at.y,
           ).destroy();
         });
       }

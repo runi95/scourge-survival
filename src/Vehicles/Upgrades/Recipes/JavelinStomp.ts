@@ -56,16 +56,12 @@ export class JavelinStomp extends WeaponUpgradeRecipe {
         missile.issueTargetOrder("attack", target);
       }
       {
+        const at = { x: target.x, y: target.y };
         const later: Timer = TimerUtils.newTimer();
         later.start(0.4, false, () => {
           TimerUtils.releaseTimer(later);
           {
-            const dummy = Unit.create(
-              owner,
-              this.dummyUnitId,
-              target.x,
-              target.y,
-            );
+            const dummy = Unit.create(owner, this.dummyUnitId, at.x, at.y);
             dummy.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 1);
             dummy.addAbility(this.abilityId);
             dummy.issueImmediateOrder("stomp");

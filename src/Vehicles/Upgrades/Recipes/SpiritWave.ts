@@ -58,13 +58,14 @@ export class SpiritWave extends WeaponUpgradeRecipe {
         dummy.issueOrderAt("shockwave", target.x, target.y);
       }
       {
+        const at = { x: target.x, y: target.y };
         const later: Timer = TimerUtils.newTimer();
         later.start(0.6, false, () => {
           TimerUtils.releaseTimer(later);
           for (let i = 0; i < 1; i++) {
             const radians = RandomNumberGenerator.random(0, 359) * MULT;
-            const sx = target.x + 80 * Math.cos(radians);
-            const sy = target.y + 80 * Math.sin(radians);
+            const sx = at.x + 80 * Math.cos(radians);
+            const sy = at.y + 80 * Math.sin(radians);
             Effect.create(
               "Abilities/Spells/Orc/FeralSpirit/feralspirittarget.mdl",
               sx,

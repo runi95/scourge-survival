@@ -56,16 +56,12 @@ export class ThunderRockets extends WeaponUpgradeRecipe {
         dummy.issueOrderAt("clusterrockets", target.x, target.y);
       }
       {
+        const at = { x: target.x, y: target.y };
         const later: Timer = TimerUtils.newTimer();
         later.start(1.2, false, () => {
           TimerUtils.releaseTimer(later);
           {
-            const dummy = Unit.create(
-              owner,
-              this.dummyUnitId,
-              target.x,
-              target.y,
-            );
+            const dummy = Unit.create(owner, this.dummyUnitId, at.x, at.y);
             dummy.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 1);
             dummy.addAbility(this.ability2Id);
             dummy.issueImmediateOrder("thunderclap");

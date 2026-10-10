@@ -56,6 +56,7 @@ export class IceRockets extends WeaponUpgradeRecipe {
         dummy.issueOrderAt("clusterrockets", target.x, target.y);
       }
       {
+        const at = { x: target.x, y: target.y };
         const later: Timer = TimerUtils.newTimer();
         later.start(1, false, () => {
           TimerUtils.releaseTimer(later);
@@ -63,7 +64,7 @@ export class IceRockets extends WeaponUpgradeRecipe {
             const dummy = Unit.create(owner, this.dummyUnitId, hx, hy);
             dummy.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 8);
             dummy.addAbility(this.ability2Id);
-            dummy.issueOrderAt("blizzard", target.x, target.y);
+            dummy.issueOrderAt("blizzard", at.x, at.y);
           }
         });
       }
