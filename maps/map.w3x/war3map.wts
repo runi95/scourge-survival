@@ -16125,3 +16125,63 @@ STRING 2942
 Shadow Spire
 }
 
+STRING 2943
+// Items: I0BW (Shadow Volley), Tip (Tooltip - Basic)
+{
+Purchase Shadow Volley
+}
+
+STRING 2944
+// Items: I0BW (Shadow Volley), Description (Description)
+{
+Fires shadow bolts at 3 random enemy units within range.
+}
+
+STRING 2945
+// Items: I0BW (Shadow Volley), Ubertip (Tooltip - Extended)
+{
+Fires shadow bolts at 3 random enemy units within range.
+}
+
+STRING 2946
+// Items: I0BW (Shadow Volley), Name (Name)
+{
+Shadow Volley
+}
+
+STRING 2947
+// Items: I0BX (Shadow Volley), Tip (Tooltip - Basic)
+{
+Purchase Shadow Volley
+}
+
+STRING 2948
+// Items: I0BX (Shadow Volley), Ubertip (Tooltip - Extended)
+{
+Fires shadow bolts at 3 random enemy units within range.
+
+Damage: |cffffcc003 x 20 - 24|r
+Cooldown: |cffffcc001.5s|r
+Range: |cffffcc00600|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00magic|r
+}
+
+STRING 2949
+// Items: I0BX (Shadow Volley), Description (Description)
+{
+Fires shadow bolts at 3 random enemy units within range.
+
+Damage: |cffffcc003 x 20 - 24|r
+Cooldown: |cffffcc001.5s|r
+Range: |cffffcc00600|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00magic|r
+}
+
+STRING 2950
+// Items: I0BX (Shadow Volley), Name (Name)
+{
+Shadow Volley
+}
+
