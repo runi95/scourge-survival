@@ -163,3 +163,4 @@ export * from "./CripplingRockets";
 export * from "./CryptFiendDen";
 export * from "./DeathBolt";
 export * from "./FreezingBreath";
+export * from "./FrostBats";
