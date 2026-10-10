@@ -102,3 +102,4 @@ export * from "./ThunderRifle";
 export * from "./StunningShot";
 export * from "./ThunderRockets";
 export * from "./RocketHammers";
+export * from "./Aftershock";
