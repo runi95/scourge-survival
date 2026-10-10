@@ -137,3 +137,4 @@ export * from "./SeismicStomp";
 export * from "./SpiritStomp";
 export * from "./RocketStomp";
 export * from "./TremorMine";
+export * from "./EarthSpikes";
