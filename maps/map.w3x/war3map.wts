@@ -18589,3 +18589,63 @@ STRING 3257
 Searing Strike
 }
 
+STRING 3258
+// Items: I0E0 (Searing Volley), Tip (Tooltip - Basic)
+{
+Purchase Searing Volley
+}
+
+STRING 3259
+// Items: I0E0 (Searing Volley), Description (Description)
+{
+Fires searing arrows at 3 random enemy units within range.
+}
+
+STRING 3260
+// Items: I0E0 (Searing Volley), Ubertip (Tooltip - Extended)
+{
+Fires searing arrows at 3 random enemy units within range.
+}
+
+STRING 3261
+// Items: I0E0 (Searing Volley), Name (Name)
+{
+Searing Volley
+}
+
+STRING 3262
+// Items: I0E1 (Searing Volley), Tip (Tooltip - Basic)
+{
+Purchase Searing Volley
+}
+
+STRING 3263
+// Items: I0E1 (Searing Volley), Ubertip (Tooltip - Extended)
+{
+Fires searing arrows at 3 random enemy units within range.
+
+Damage: |cffffcc003 x 20|r
+Cooldown: |cffffcc001.5s|r
+Range: |cffffcc00600|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing|r
+}
+
+STRING 3264
+// Items: I0E1 (Searing Volley), Description (Description)
+{
+Fires searing arrows at 3 random enemy units within range.
+
+Damage: |cffffcc003 x 20|r
+Cooldown: |cffffcc001.5s|r
+Range: |cffffcc00600|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing|r
+}
+
+STRING 3265
+// Items: I0E1 (Searing Volley), Name (Name)
+{
+Searing Volley
+}
+
