@@ -11357,3 +11357,65 @@ STRING 2343
 Raider Camp
 }
 
+STRING 2344
+// Items: I07U (Seismic Boulder), Tip (Tooltip - Basic)
+{
+Purchase Seismic Boulder
+}
+
+STRING 2345
+// Items: I07U (Seismic Boulder), Description (Description)
+{
+Lobs a boulder at a random enemy unit within range. Where it lands, 2 shockwaves tear outward in opposite directions.
+}
+
+STRING 2346
+// Items: I07U (Seismic Boulder), Ubertip (Tooltip - Extended)
+{
+Lobs a boulder at a random enemy unit within range. Where it lands, 2 shockwaves tear outward in opposite directions.
+}
+
+STRING 2347
+// Items: I07U (Seismic Boulder), Name (Name)
+{
+Seismic Boulder
+}
+
+STRING 2348
+// Items: I07V (Seismic Boulder), Tip (Tooltip - Basic)
+{
+Purchase Seismic Boulder
+}
+
+STRING 2349
+// Items: I07V (Seismic Boulder), Ubertip (Tooltip - Extended)
+{
+Lobs a boulder at a random enemy unit within range. Where it lands, 2 shockwaves tear outward in opposite directions.
+
+Damage: |cffffcc0045 (boulder) + 2 x 50 (shockwaves)|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00800|r
+Area of effect: |cffffcc00150|r
+Targets: |cffffcc00ground (boulder), air & ground (shockwaves)|r
+Damage type: |cffffcc00siege + spell|r
+}
+
+STRING 2350
+// Items: I07V (Seismic Boulder), Description (Description)
+{
+Lobs a boulder at a random enemy unit within range. Where it lands, 2 shockwaves tear outward in opposite directions.
+
+Damage: |cffffcc0045 (boulder) + 2 x 50 (shockwaves)|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00800|r
+Area of effect: |cffffcc00150|r
+Targets: |cffffcc00ground (boulder), air & ground (shockwaves)|r
+Damage type: |cffffcc00siege + spell|r
+}
+
+STRING 2351
+// Items: I07V (Seismic Boulder), Name (Name)
+{
+Seismic Boulder
+}
+
