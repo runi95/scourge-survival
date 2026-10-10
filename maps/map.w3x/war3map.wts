@@ -8687,3 +8687,27 @@ STRING 1993
 Shadow Bolt
 }
 
+STRING 1994
+// Items: I05K (Raise Dead), Name (Name)
+{
+Raise Dead
+}
+
+STRING 1995
+// Items: I05K (Raise Dead), Tip (Tooltip - Basic)
+{
+Purchase Raise Dead
+}
+
+STRING 1996
+// Items: I05K (Raise Dead), Description (Description)
+{
+Raises a Skeleton Warrior to fight by your side.
+}
+
+STRING 1997
+// Items: I05K (Raise Dead), Ubertip (Tooltip - Extended)
+{
+Raises a Skeleton Warrior to fight by your side.
+}
+

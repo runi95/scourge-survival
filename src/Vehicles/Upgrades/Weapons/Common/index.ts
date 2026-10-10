@@ -8,3 +8,4 @@ export * from "./SearingArrow";
 export * from "./WaterElemental";
 export * from "./Demolisher";
 export * from "./ShadowBolt";
+export * from "./RaiseDead";

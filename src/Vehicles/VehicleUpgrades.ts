@@ -20,6 +20,7 @@ import {
   WaterElemental,
   Demolisher,
   ShadowBolt,
+  RaiseDead,
 } from "./Upgrades/Weapons/Common/index";
 import {
   Glyph,
@@ -84,6 +85,7 @@ export const commonUpgrades: VehicleUpgrade[] = [
   new WaterElemental(),
   new Demolisher(),
   new ShadowBolt(),
+  new RaiseDead(),
 ];
 
 export const uncommonUpgrades: VehicleUpgrade[] = [
