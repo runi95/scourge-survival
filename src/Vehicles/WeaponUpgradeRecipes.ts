@@ -178,4 +178,5 @@ export const weaponRecipes = [
   new Recipes.FrostSwarm(),
   new Recipes.FrostbiteCurse(),
   new Recipes.FrozenCurse(),
+  new Recipes.FrozenDead(),
 ];
