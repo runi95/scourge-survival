@@ -19043,3 +19043,67 @@ STRING 3314
 Thorn Arrow
 }
 
+STRING 3315
+// Items: I0EE (Thorn Burst), Tip (Tooltip - Basic)
+{
+Purchase Thorn Burst
+}
+
+STRING 3316
+// Items: I0EE (Thorn Burst), Description (Description)
+{
+Flings a fan of knives at every enemy unit around your hero, and a Treant sprouts beside it.
+}
+
+STRING 3317
+// Items: I0EE (Thorn Burst), Ubertip (Tooltip - Extended)
+{
+Flings a fan of knives at every enemy unit around your hero, and a Treant sprouts beside it.
+}
+
+STRING 3318
+// Items: I0EE (Thorn Burst), Name (Name)
+{
+Thorn Burst
+}
+
+STRING 3319
+// Items: I0EF (Thorn Burst), Tip (Tooltip - Basic)
+{
+Purchase Thorn Burst
+}
+
+STRING 3320
+// Items: I0EF (Thorn Burst), Ubertip (Tooltip - Extended)
+{
+Flings a fan of knives at every enemy unit around your hero, and a Treant sprouts beside it.
+
+Damage: |cffffcc0075 (knives) + 15 - 17 (treant)|r
+Cooldown: |cffffcc003s|r
+Area of effect: |cffffcc00400|r
+Health: |cffffcc00300|r
+Duration: |cffffcc008s|r
+Targets: |cffffcc00air & ground (knives), ground (treant)|r
+Damage type: |cffffcc00spell + normal|r
+}
+
+STRING 3321
+// Items: I0EF (Thorn Burst), Description (Description)
+{
+Flings a fan of knives at every enemy unit around your hero, and a Treant sprouts beside it.
+
+Damage: |cffffcc0075 (knives) + 15 - 17 (treant)|r
+Cooldown: |cffffcc003s|r
+Area of effect: |cffffcc00400|r
+Health: |cffffcc00300|r
+Duration: |cffffcc008s|r
+Targets: |cffffcc00air & ground (knives), ground (treant)|r
+Damage type: |cffffcc00spell + normal|r
+}
+
+STRING 3322
+// Items: I0EF (Thorn Burst), Name (Name)
+{
+Thorn Burst
+}
+

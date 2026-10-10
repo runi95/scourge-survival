@@ -237,4 +237,5 @@ export const weaponRecipes = [
   new Recipes.StranglingStrike(),
   new Recipes.StranglingWinds(),
   new Recipes.ThornArrow(),
+  new Recipes.ThornBurst(),
 ];
