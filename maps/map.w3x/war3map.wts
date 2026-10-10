@@ -12307,3 +12307,67 @@ STRING 2464
 Siege Spears
 }
 
+STRING 2465
+// Items: I08O (Net Catapult), Tip (Tooltip - Basic)
+{
+Purchase Net Catapult
+}
+
+STRING 2466
+// Items: I08O (Net Catapult), Description (Description)
+{
+Lobs a boulder at a random enemy unit within range and throws a net at it, holding it in place.
+}
+
+STRING 2467
+// Items: I08O (Net Catapult), Ubertip (Tooltip - Extended)
+{
+Lobs a boulder at a random enemy unit within range and throws a net at it, holding it in place.
+}
+
+STRING 2468
+// Items: I08O (Net Catapult), Name (Name)
+{
+Net Catapult
+}
+
+STRING 2469
+// Items: I08P (Net Catapult), Tip (Tooltip - Basic)
+{
+Purchase Net Catapult
+}
+
+STRING 2470
+// Items: I08P (Net Catapult), Ubertip (Tooltip - Extended)
+{
+Lobs a boulder at a random enemy unit within range and throws a net at it, holding it in place.
+
+Damage: |cffffcc0045 (boulder) + 40 (net)|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00600|r
+Area of effect: |cffffcc00150|r
+Duration: |cffffcc003s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00siege + spell|r
+}
+
+STRING 2471
+// Items: I08P (Net Catapult), Description (Description)
+{
+Lobs a boulder at a random enemy unit within range and throws a net at it, holding it in place.
+
+Damage: |cffffcc0045 (boulder) + 40 (net)|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00600|r
+Area of effect: |cffffcc00150|r
+Duration: |cffffcc003s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00siege + spell|r
+}
+
+STRING 2472
+// Items: I08P (Net Catapult), Name (Name)
+{
+Net Catapult
+}
+

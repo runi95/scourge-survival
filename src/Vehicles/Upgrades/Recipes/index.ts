@@ -129,3 +129,4 @@ export * from "./WolfCatapult";
 export * from "./RocketCatapult";
 export * from "./MineLauncher";
 export * from "./SiegeSpears";
+export * from "./NetCatapult";
