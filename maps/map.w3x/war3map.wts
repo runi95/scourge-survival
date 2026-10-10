@@ -16247,3 +16247,71 @@ STRING 2958
 Skeleton Army
 }
 
+STRING 2959
+// Items: I0C0 (Skeleton Drop), Tip (Tooltip - Basic)
+{
+Purchase Skeleton Drop
+}
+
+STRING 2960
+// Items: I0C0 (Skeleton Drop), Description (Description)
+{
+Fires Cluster Rockets at a random enemy unit within range, and 2 Skeleton Warriors rise where they land.
+}
+
+STRING 2961
+// Items: I0C0 (Skeleton Drop), Ubertip (Tooltip - Extended)
+{
+Fires Cluster Rockets at a random enemy unit within range, and 2 Skeleton Warriors rise where they land.
+}
+
+STRING 2962
+// Items: I0C0 (Skeleton Drop), Name (Name)
+{
+Skeleton Drop
+}
+
+STRING 2963
+// Items: I0C1 (Skeleton Drop), Tip (Tooltip - Basic)
+{
+Purchase Skeleton Drop
+}
+
+STRING 2964
+// Items: I0C1 (Skeleton Drop), Ubertip (Tooltip - Extended)
+{
+Fires Cluster Rockets at a random enemy unit within range, and 2 Skeleton Warriors rise where they land.
+
+Damage: |cffffcc006 x 17.5 (rockets) + 2 x 26 - 42 (skeletons)|r
+Cooldown: |cffffcc004s|r
+Range: |cffffcc00700|r
+Area of effect: |cffffcc00300|r
+Health: |cffffcc00200|r
+Duration: |cffffcc008s|r
+Targets: |cffffcc00air & ground (rockets), ground (skeletons)|r
+Damage type: |cffffcc00spell + normal|r
+Effect: |cffffcc00stuns for 1s|r
+}
+
+STRING 2965
+// Items: I0C1 (Skeleton Drop), Description (Description)
+{
+Fires Cluster Rockets at a random enemy unit within range, and 2 Skeleton Warriors rise where they land.
+
+Damage: |cffffcc006 x 17.5 (rockets) + 2 x 26 - 42 (skeletons)|r
+Cooldown: |cffffcc004s|r
+Range: |cffffcc00700|r
+Area of effect: |cffffcc00300|r
+Health: |cffffcc00200|r
+Duration: |cffffcc008s|r
+Targets: |cffffcc00air & ground (rockets), ground (skeletons)|r
+Damage type: |cffffcc00spell + normal|r
+Effect: |cffffcc00stuns for 1s|r
+}
+
+STRING 2966
+// Items: I0C1 (Skeleton Drop), Name (Name)
+{
+Skeleton Drop
+}
+
