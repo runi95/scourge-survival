@@ -154,3 +154,4 @@ export * from "./BatBolts";
 export * from "./BatGraveyard";
 export * from "./BatMine";
 export * from "./BatRockets";
+export * from "./BatStorm";
