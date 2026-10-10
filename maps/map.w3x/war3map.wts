@@ -17991,3 +17991,69 @@ STRING 3182
 Poison Mine
 }
 
+STRING 3183
+// Items: I0DI (Poison Rockets), Tip (Tooltip - Basic)
+{
+Purchase Poison Rockets
+}
+
+STRING 3184
+// Items: I0DI (Poison Rockets), Description (Description)
+{
+Throws a poisoned spear and fires Cluster Rockets at a random enemy unit within range.
+}
+
+STRING 3185
+// Items: I0DI (Poison Rockets), Ubertip (Tooltip - Extended)
+{
+Throws a poisoned spear and fires Cluster Rockets at a random enemy unit within range.
+}
+
+STRING 3186
+// Items: I0DI (Poison Rockets), Name (Name)
+{
+Poison Rockets
+}
+
+STRING 3187
+// Items: I0DJ (Poison Rockets), Tip (Tooltip - Basic)
+{
+Purchase Poison Rockets
+}
+
+STRING 3188
+// Items: I0DJ (Poison Rockets), Ubertip (Tooltip - Extended)
+{
+Throws a poisoned spear and fires Cluster Rockets at a random enemy unit within range.
+
+Damage: |cffffcc0015 (spear) + 6 x 17.5 (rockets)|r
+Slow: |cffffcc00-25% movement speed for 2s|r
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00600|r
+Area of effect: |cffffcc00300|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing + spell|r
+Effect: |cffffcc00stuns for 1s|r
+}
+
+STRING 3189
+// Items: I0DJ (Poison Rockets), Description (Description)
+{
+Throws a poisoned spear and fires Cluster Rockets at a random enemy unit within range.
+
+Damage: |cffffcc0015 (spear) + 6 x 17.5 (rockets)|r
+Slow: |cffffcc00-25% movement speed for 2s|r
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00600|r
+Area of effect: |cffffcc00300|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing + spell|r
+Effect: |cffffcc00stuns for 1s|r
+}
+
+STRING 3190
+// Items: I0DJ (Poison Rockets), Name (Name)
+{
+Poison Rockets
+}
+
