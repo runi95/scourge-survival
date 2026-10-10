@@ -8573,3 +8573,33 @@ STRING 1974
 Demolisher
 }
 
+STRING 1975
+// Items: I05G (Ensnare), Name (Name)
+{
+Ensnare
+}
+
+STRING 1976
+// Items: I05G (Ensnare), Tip (Tooltip - Basic)
+{
+Purchase Ensnare
+}
+
+STRING 1977
+// Items: I05G (Ensnare), Description (Description)
+{
+Throws a net at a random nearby enemy, holding it in place.
+}
+
+STRING 1978
+// Items: I05G (Ensnare), Ubertip (Tooltip - Extended)
+{
+Throws a net at a random nearby enemy, holding it in place.
+}
+
+STRING 1979
+// Abilities: A042 (Ensnare), Name (Name)
+{
+Ensnare
+}
+
