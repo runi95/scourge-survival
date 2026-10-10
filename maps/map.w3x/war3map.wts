@@ -10521,3 +10521,67 @@ STRING 2236
 Thunder Rockets
 }
 
+STRING 2237
+// Items: I074 (Rocket Hammers), Tip (Tooltip - Basic)
+{
+Purchase Rocket Hammers
+}
+
+STRING 2238
+// Items: I074 (Rocket Hammers), Description (Description)
+{
+Fires Cluster Rockets and a magical hammer at a random enemy unit within range.
+}
+
+STRING 2239
+// Items: I074 (Rocket Hammers), Ubertip (Tooltip - Extended)
+{
+Fires Cluster Rockets and a magical hammer at a random enemy unit within range.
+}
+
+STRING 2240
+// Items: I074 (Rocket Hammers), Name (Name)
+{
+Rocket Hammers
+}
+
+STRING 2241
+// Items: I075 (Rocket Hammers), Tip (Tooltip - Basic)
+{
+Purchase Rocket Hammers
+}
+
+STRING 2242
+// Items: I075 (Rocket Hammers), Ubertip (Tooltip - Extended)
+{
+Fires Cluster Rockets and a magical hammer at a random enemy unit within range.
+
+Damage: |cffffcc006 x 17.5 (rockets) + 100 (hammer)|r
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00700|r
+Area of effect: |cffffcc00300|r
+Stun duration: |cffffcc001s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 2243
+// Items: I075 (Rocket Hammers), Description (Description)
+{
+Fires Cluster Rockets and a magical hammer at a random enemy unit within range.
+
+Damage: |cffffcc006 x 17.5 (rockets) + 100 (hammer)|r
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00700|r
+Area of effect: |cffffcc00300|r
+Stun duration: |cffffcc001s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 2244
+// Items: I075 (Rocket Hammers), Name (Name)
+{
+Rocket Hammers
+}
+
