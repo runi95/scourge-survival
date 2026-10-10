@@ -11987,3 +11987,67 @@ STRING 2424
 Lightning Boulder
 }
 
+STRING 2425
+// Items: I08E (Earthquake Shot), Tip (Tooltip - Basic)
+{
+Purchase Earthquake Shot
+}
+
+STRING 2426
+// Items: I08E (Earthquake Shot), Description (Description)
+{
+Lobs a boulder at a random enemy unit within range that lands with a stomp, stunning everything around it.
+}
+
+STRING 2427
+// Items: I08E (Earthquake Shot), Ubertip (Tooltip - Extended)
+{
+Lobs a boulder at a random enemy unit within range that lands with a stomp, stunning everything around it.
+}
+
+STRING 2428
+// Items: I08E (Earthquake Shot), Name (Name)
+{
+Earthquake Shot
+}
+
+STRING 2429
+// Items: I08F (Earthquake Shot), Tip (Tooltip - Basic)
+{
+Purchase Earthquake Shot
+}
+
+STRING 2430
+// Items: I08F (Earthquake Shot), Ubertip (Tooltip - Extended)
+{
+Lobs a boulder at a random enemy unit within range that lands with a stomp, stunning everything around it.
+
+Damage: |cffffcc0045 (boulder) + 90 (stomp)|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00800|r
+Area of effect: |cffffcc00300|r
+Stun duration: |cffffcc001.5s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00siege + spell|r
+}
+
+STRING 2431
+// Items: I08F (Earthquake Shot), Description (Description)
+{
+Lobs a boulder at a random enemy unit within range that lands with a stomp, stunning everything around it.
+
+Damage: |cffffcc0045 (boulder) + 90 (stomp)|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00800|r
+Area of effect: |cffffcc00300|r
+Stun duration: |cffffcc001.5s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00siege + spell|r
+}
+
+STRING 2432
+// Items: I08F (Earthquake Shot), Name (Name)
+{
+Earthquake Shot
+}
+

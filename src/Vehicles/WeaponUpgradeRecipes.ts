@@ -129,4 +129,5 @@ export const weaponRecipes = [
   new Recipes.HarpoonThrow(),
   new Recipes.TwinCatapults(),
   new Recipes.LightningBoulder(),
+  new Recipes.EarthquakeShot(),
 ];
