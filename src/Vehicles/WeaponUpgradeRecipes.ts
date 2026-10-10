@@ -86,6 +86,7 @@ import { HammerCannon } from "./Upgrades/Recipes/HammerCannon";
 import { ElementalFoundry } from "./Upgrades/Recipes/ElementalFoundry";
 import { FrostClockwerks } from "./Upgrades/Recipes/FrostClockwerks";
 import { KnightStables } from "./Upgrades/Recipes/KnightStables";
+import { GryphonRoost } from "./Upgrades/Recipes/GryphonRoost";
 
 export const weaponRecipes = [
   new DualCannons(),
@@ -176,4 +177,5 @@ export const weaponRecipes = [
   new ElementalFoundry(),
   new FrostClockwerks(),
   new KnightStables(),
+  new GryphonRoost(),
 ];
