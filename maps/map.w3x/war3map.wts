@@ -14015,3 +14015,69 @@ STRING 2677
 Bat Storm
 }
 
+STRING 2678
+// Items: I0A4 (Bone Spikes), Tip (Tooltip - Basic)
+{
+Purchase Bone Spikes
+}
+
+STRING 2679
+// Items: I0A4 (Bone Spikes), Description (Description)
+{
+Impales the ground towards a random enemy unit within range, and a Skeleton Warrior rises where the spikes end.
+}
+
+STRING 2680
+// Items: I0A4 (Bone Spikes), Ubertip (Tooltip - Extended)
+{
+Impales the ground towards a random enemy unit within range, and a Skeleton Warrior rises where the spikes end.
+}
+
+STRING 2681
+// Items: I0A4 (Bone Spikes), Name (Name)
+{
+Bone Spikes
+}
+
+STRING 2682
+// Items: I0A5 (Bone Spikes), Tip (Tooltip - Basic)
+{
+Purchase Bone Spikes
+}
+
+STRING 2683
+// Items: I0A5 (Bone Spikes), Ubertip (Tooltip - Extended)
+{
+Impales the ground towards a random enemy unit within range, and a Skeleton Warrior rises where the spikes end.
+
+Damage: |cffffcc0075 (impale) + 26 - 42 (skeleton)|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00400|r
+Stun duration: |cffffcc001s|r
+Health: |cffffcc00200|r
+Duration: |cffffcc008s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell + normal|r
+}
+
+STRING 2684
+// Items: I0A5 (Bone Spikes), Description (Description)
+{
+Impales the ground towards a random enemy unit within range, and a Skeleton Warrior rises where the spikes end.
+
+Damage: |cffffcc0075 (impale) + 26 - 42 (skeleton)|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00400|r
+Stun duration: |cffffcc001s|r
+Health: |cffffcc00200|r
+Duration: |cffffcc008s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell + normal|r
+}
+
+STRING 2685
+// Items: I0A5 (Bone Spikes), Name (Name)
+{
+Bone Spikes
+}
+
