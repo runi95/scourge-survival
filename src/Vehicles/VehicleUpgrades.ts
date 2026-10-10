@@ -19,6 +19,7 @@ import {
   SearingArrow,
   WaterElemental,
   Demolisher,
+  ShadowBolt,
 } from "./Upgrades/Weapons/Common/index";
 import {
   Glyph,
@@ -82,6 +83,7 @@ export const commonUpgrades: VehicleUpgrade[] = [
   new SearingArrow(),
   new WaterElemental(),
   new Demolisher(),
+  new ShadowBolt(),
 ];
 
 export const uncommonUpgrades: VehicleUpgrade[] = [

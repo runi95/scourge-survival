@@ -8657,3 +8657,33 @@ STRING 1988
 Summons Spirit Wolves to fight by your side.
 }
 
+STRING 1989
+// Items: I05J (Shadow Bolt), Name (Name)
+{
+Shadow Bolt
+}
+
+STRING 1990
+// Items: I05J (Shadow Bolt), Tip (Tooltip - Basic)
+{
+Purchase Shadow Bolt
+}
+
+STRING 1991
+// Items: I05J (Shadow Bolt), Description (Description)
+{
+Fires a bolt of shadow at a random nearby enemy.
+}
+
+STRING 1992
+// Items: I05J (Shadow Bolt), Ubertip (Tooltip - Extended)
+{
+Fires a bolt of shadow at a random nearby enemy.
+}
+
+STRING 1993
+// Units: u01Q (Shadow Bolt), Name (Name)
+{
+Shadow Bolt
+}
+
