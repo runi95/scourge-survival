@@ -174,3 +174,4 @@ export * from "./FrostSwarm";
 export * from "./FrostbiteCurse";
 export * from "./FrozenCurse";
 export * from "./FrozenDead";
+export * from "./FrozenImpale";

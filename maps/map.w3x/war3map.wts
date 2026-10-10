@@ -15289,3 +15289,69 @@ STRING 2836
 Frozen Dead
 }
 
+STRING 2837
+// Items: I0B6 (Frozen Impale), Tip (Tooltip - Basic)
+{
+Purchase Frozen Impale
+}
+
+STRING 2838
+// Items: I0B6 (Frozen Impale), Description (Description)
+{
+Impales the ground towards a random enemy unit within range and blasts it with a Frost Nova.
+}
+
+STRING 2839
+// Items: I0B6 (Frozen Impale), Ubertip (Tooltip - Extended)
+{
+Impales the ground towards a random enemy unit within range and blasts it with a Frost Nova.
+}
+
+STRING 2840
+// Items: I0B6 (Frozen Impale), Name (Name)
+{
+Frozen Impale
+}
+
+STRING 2841
+// Items: I0B7 (Frozen Impale), Tip (Tooltip - Basic)
+{
+Purchase Frozen Impale
+}
+
+STRING 2842
+// Items: I0B7 (Frozen Impale), Ubertip (Tooltip - Extended)
+{
+Impales the ground towards a random enemy unit within range and blasts it with a Frost Nova.
+
+Damage: |cffffcc0075 (impale) + 60 (target) + 40 (nova)|r
+Slow: |cffffcc00-50% movement speed for 3s|r
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00400|r
+Stun duration: |cffffcc001s|r
+Area of effect: |cffffcc00200|r
+Targets: |cffffcc00ground (impale), air & ground (nova)|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 2843
+// Items: I0B7 (Frozen Impale), Description (Description)
+{
+Impales the ground towards a random enemy unit within range and blasts it with a Frost Nova.
+
+Damage: |cffffcc0075 (impale) + 60 (target) + 40 (nova)|r
+Slow: |cffffcc00-50% movement speed for 3s|r
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00400|r
+Stun duration: |cffffcc001s|r
+Area of effect: |cffffcc00200|r
+Targets: |cffffcc00ground (impale), air & ground (nova)|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 2844
+// Items: I0B7 (Frozen Impale), Name (Name)
+{
+Frozen Impale
+}
+
