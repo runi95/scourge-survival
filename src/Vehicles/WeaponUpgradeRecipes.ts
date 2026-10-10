@@ -235,4 +235,5 @@ export const weaponRecipes = [
   new Recipes.ShadowTrap(),
   new Recipes.ShadowTreants(),
   new Recipes.StranglingStrike(),
+  new Recipes.StranglingWinds(),
 ];
