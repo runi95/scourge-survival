@@ -126,4 +126,5 @@ export const weaponRecipes = [
   new Recipes.BarrageWagon(),
   new Recipes.JavelinStomp(),
   new Recipes.SpiritJavelins(),
+  new Recipes.HarpoonThrow(),
 ];

@@ -11799,3 +11799,65 @@ STRING 2400
 Spirit Javelin
 }
 
+STRING 2401
+// Items: I088 (Harpoon Throw), Tip (Tooltip - Basic)
+{
+Purchase Harpoon Throw
+}
+
+STRING 2402
+// Items: I088 (Harpoon Throw), Description (Description)
+{
+Throws a harpoon and a net at a random enemy unit within range, holding it in place.
+}
+
+STRING 2403
+// Items: I088 (Harpoon Throw), Ubertip (Tooltip - Extended)
+{
+Throws a harpoon and a net at a random enemy unit within range, holding it in place.
+}
+
+STRING 2404
+// Items: I088 (Harpoon Throw), Name (Name)
+{
+Harpoon Throw
+}
+
+STRING 2405
+// Items: I089 (Harpoon Throw), Tip (Tooltip - Basic)
+{
+Purchase Harpoon Throw
+}
+
+STRING 2406
+// Items: I089 (Harpoon Throw), Ubertip (Tooltip - Extended)
+{
+Throws a harpoon and a net at a random enemy unit within range, holding it in place.
+
+Damage: |cffffcc0019 - 23 (harpoon) + 40 (net)|r
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00450|r
+Duration: |cffffcc003s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing + spell|r
+}
+
+STRING 2407
+// Items: I089 (Harpoon Throw), Description (Description)
+{
+Throws a harpoon and a net at a random enemy unit within range, holding it in place.
+
+Damage: |cffffcc0019 - 23 (harpoon) + 40 (net)|r
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00450|r
+Duration: |cffffcc003s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing + spell|r
+}
+
+STRING 2408
+// Items: I089 (Harpoon Throw), Name (Name)
+{
+Harpoon Throw
+}
+

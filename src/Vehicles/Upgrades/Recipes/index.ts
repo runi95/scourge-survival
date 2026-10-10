@@ -121,3 +121,4 @@ export * from "./SnareWave";
 export * from "./BarrageWagon";
 export * from "./JavelinStomp";
 export * from "./SpiritJavelins";
+export * from "./HarpoonThrow";
