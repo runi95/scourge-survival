@@ -19495,3 +19495,71 @@ STRING 3371
 Twin Strike
 }
 
+STRING 3372
+// Items: I0ES (Venom Cyclone), Tip (Tooltip - Basic)
+{
+Purchase Venom Cyclone
+}
+
+STRING 3373
+// Items: I0ES (Venom Cyclone), Description (Description)
+{
+Summons a poisonous tornado every 10 seconds that wanders around, tossing enemies into the air and poisoning everything around it.
+}
+
+STRING 3374
+// Items: I0ES (Venom Cyclone), Ubertip (Tooltip - Extended)
+{
+Summons a poisonous tornado every 10 seconds that wanders around, tossing enemies into the air and poisoning everything around it.
+}
+
+STRING 3375
+// Items: I0ES (Venom Cyclone), Name (Name)
+{
+Venom Cyclone
+}
+
+STRING 3376
+// Items: I0ET (Venom Cyclone), Tip (Tooltip - Basic)
+{
+Purchase Venom Cyclone
+}
+
+STRING 3377
+// Items: I0ET (Venom Cyclone), Ubertip (Tooltip - Extended)
+{
+Summons a poisonous tornado every 10 seconds that wanders around, tossing enemies into the air and poisoning everything around it.
+
+Damage: |cffffcc0025 - 180 (tornado) + 10 per second (poison)|r
+Cooldown: |cffffcc0010s|r
+Area of effect: |cffffcc00650 (tornado) + 250 (poison)|r
+Duration: |cffffcc0010s|r
+Targets: |cffffcc00air & ground (tornado), ground (poison)|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 3378
+// Items: I0ET (Venom Cyclone), Description (Description)
+{
+Summons a poisonous tornado every 10 seconds that wanders around, tossing enemies into the air and poisoning everything around it.
+
+Damage: |cffffcc0025 - 180 (tornado) + 10 per second (poison)|r
+Cooldown: |cffffcc0010s|r
+Area of effect: |cffffcc00650 (tornado) + 250 (poison)|r
+Duration: |cffffcc0010s|r
+Targets: |cffffcc00air & ground (tornado), ground (poison)|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 3379
+// Items: I0ET (Venom Cyclone), Name (Name)
+{
+Venom Cyclone
+}
+
+STRING 3380
+// Units: n01R (Venom Cyclone), Name (Name)
+{
+Venom Cyclone
+}
+

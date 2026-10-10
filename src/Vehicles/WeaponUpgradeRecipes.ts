@@ -244,4 +244,5 @@ export const weaponRecipes = [
   new Recipes.TreantDrop(),
   new Recipes.TreantGrove(),
   new Recipes.TwinStrike(),
+  new Recipes.VenomCyclone(),
 ];
