@@ -8215,3 +8215,95 @@ STRING 1922
 Dragon Whelp Forge
 }
 
+STRING 1923
+// Items: I056 (Blast Furnace), Tip (Tooltip - Basic)
+{
+Purchase Blast Furnace
+}
+
+STRING 1924
+// Items: I056 (Blast Furnace), Description (Description)
+{
+Spawns a Pocket Factory every 60 seconds that burns every enemy unit around it. Its Clockwerk Goblins are on fire too.
+}
+
+STRING 1925
+// Items: I056 (Blast Furnace), Ubertip (Tooltip - Extended)
+{
+Spawns a Pocket Factory every 60 seconds that burns every enemy unit around it. Its Clockwerk Goblins are on fire too.
+}
+
+STRING 1926
+// Items: I056 (Blast Furnace), Name (Name)
+{
+Blast Furnace
+}
+
+STRING 1927
+// Items: I057 (Blast Furnace), Tip (Tooltip - Basic)
+{
+Purchase Blast Furnace
+}
+
+STRING 1928
+// Items: I057 (Blast Furnace), Ubertip (Tooltip - Extended)
+{
+Spawns a Pocket Factory every 60 seconds that burns every enemy unit around it. Its Clockwerk Goblins are on fire too.
+
+Damage: |cffffcc008 (attack) + 12/s (burn) + 60 (explosion)|r
+Cooldown: |cffffcc0060s (factory) + 5s (goblin)|r
+Area of effect (factory): |cffffcc00300|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00normal (attack) + spell (burn, explosion)|r
+Health: |cffffcc00600 (factory) + 125 (goblin)|r
+}
+
+STRING 1929
+// Items: I057 (Blast Furnace), Description (Description)
+{
+Spawns a Pocket Factory every 60 seconds that burns every enemy unit around it. Its Clockwerk Goblins are on fire too.
+
+Damage: |cffffcc008 (attack) + 12/s (burn) + 60 (explosion)|r
+Cooldown: |cffffcc0060s (factory) + 5s (goblin)|r
+Area of effect (factory): |cffffcc00300|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00normal (attack) + spell (burn, explosion)|r
+Health: |cffffcc00600 (factory) + 125 (goblin)|r
+}
+
+STRING 1930
+// Items: I057 (Blast Furnace), Name (Name)
+{
+Blast Furnace
+}
+
+STRING 1931
+// Abilities: A03U (Blast Furnace Immolation), Name (Name)
+{
+Blast Furnace Immolation
+}
+
+STRING 1932
+// Abilities: A03V (Burning Clockwerk Goblin Immolation), Name (Name)
+{
+Burning Clockwerk Goblin Immolation
+}
+
+STRING 1933
+// Units: n011 (Burning Clockwerk Goblin), Name (Name)
+{
+Burning Clockwerk Goblin
+}
+
+STRING 1934
+// Units: n012 (Blast Furnace), Name (Name)
+{
+Blast Furnace
+}
+
+STRING 1935
+// Abilities: A03W (Blast Furnace), Name (Name)
+{
+Blast Furnace
+}
+
