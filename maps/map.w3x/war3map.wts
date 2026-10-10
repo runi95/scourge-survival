@@ -9865,3 +9865,67 @@ STRING 2153
 Eternal Winter
 }
 
+STRING 2154
+// Items: I06K (Frostfire), Tip (Tooltip - Basic)
+{
+Purchase Frostfire
+}
+
+STRING 2155
+// Items: I06K (Frostfire), Description (Description)
+{
+Hurls a ball of fire at a random enemy unit within range, then blasts it with a Frost Nova.
+}
+
+STRING 2156
+// Items: I06K (Frostfire), Ubertip (Tooltip - Extended)
+{
+Hurls a ball of fire at a random enemy unit within range, then blasts it with a Frost Nova.
+}
+
+STRING 2157
+// Items: I06K (Frostfire), Name (Name)
+{
+Frostfire
+}
+
+STRING 2158
+// Items: I06L (Frostfire), Tip (Tooltip - Basic)
+{
+Purchase Frostfire
+}
+
+STRING 2159
+// Items: I06L (Frostfire), Ubertip (Tooltip - Extended)
+{
+Hurls a ball of fire at a random enemy unit within range, then blasts it with a Frost Nova.
+
+Damage: |cffffcc00100 (fireball) + 60 (target) + 40 (nova)|r
+Slow: |cffffcc00-50% movement speed for 3s|r
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00500|r
+Area of effect: |cffffcc00125 (fireball) + 200 (nova)|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00magic + spell|r
+}
+
+STRING 2160
+// Items: I06L (Frostfire), Description (Description)
+{
+Hurls a ball of fire at a random enemy unit within range, then blasts it with a Frost Nova.
+
+Damage: |cffffcc00100 (fireball) + 60 (target) + 40 (nova)|r
+Slow: |cffffcc00-50% movement speed for 3s|r
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00500|r
+Area of effect: |cffffcc00125 (fireball) + 200 (nova)|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00magic + spell|r
+}
+
+STRING 2161
+// Items: I06L (Frostfire), Name (Name)
+{
+Frostfire
+}
+
