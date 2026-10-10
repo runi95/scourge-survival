@@ -16,6 +16,7 @@ import {
   PocketFactory,
   SpiritTower,
   LightJavelin,
+  SearingArrow,
 } from "./Upgrades/Weapons/Common/index";
 import {
   Glyph,
@@ -68,6 +69,7 @@ export const commonUpgrades: VehicleUpgrade[] = [
   new AdeptTraining(),
   new SpiritTower(),
   new LightJavelin(),
+  new SearingArrow(),
 ];
 
 export const uncommonUpgrades: VehicleUpgrade[] = [

@@ -7615,3 +7615,39 @@ STRING 1842
 Cripple
 }
 
+STRING 1843
+// Items: I04P (Searing Arrow), Name (Name)
+{
+Searing Arrow
+}
+
+STRING 1844
+// Items: I04P (Searing Arrow), Tip (Tooltip - Basic)
+{
+Purchase Searing Arrow
+}
+
+STRING 1845
+// Items: I04P (Searing Arrow), Description (Description)
+{
+Fires a searing arrow at a nearby enemy unit.
+}
+
+STRING 1846
+// Items: I04P (Searing Arrow), Ubertip (Tooltip - Extended)
+{
+Fires a searing arrow at a nearby enemy unit.
+}
+
+STRING 1847
+// Units: u01J (Arrow), Name (Name)
+{
+Arrow
+}
+
+STRING 1848
+// Units: u01K (Searing Arrow), Name (Name)
+{
+Searing Arrow
+}
+

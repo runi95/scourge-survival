@@ -4,3 +4,4 @@ export * from "./PocketFactory";
 export * from "./Shockwave";
 export * from "./SpiritTower";
 export * from "./LightJavelin";
+export * from "./SearingArrow";
