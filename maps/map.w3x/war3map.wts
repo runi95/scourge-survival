@@ -9657,3 +9657,71 @@ STRING 2127
 Ice Elemental Slow
 }
 
+STRING 2128
+// Items: I06E (Water Slam), Tip (Tooltip - Basic)
+{
+Purchase Water Slam
+}
+
+STRING 2129
+// Items: I06E (Water Slam), Description (Description)
+{
+A Water Elemental slams down onto a random enemy unit within range, hurting and slowing everything around it, and stays to fight.
+}
+
+STRING 2130
+// Items: I06E (Water Slam), Ubertip (Tooltip - Extended)
+{
+A Water Elemental slams down onto a random enemy unit within range, hurting and slowing everything around it, and stays to fight.
+}
+
+STRING 2131
+// Items: I06E (Water Slam), Name (Name)
+{
+Water Slam
+}
+
+STRING 2132
+// Items: I06F (Water Slam), Tip (Tooltip - Basic)
+{
+Purchase Water Slam
+}
+
+STRING 2133
+// Items: I06F (Water Slam), Ubertip (Tooltip - Extended)
+{
+A Water Elemental slams down onto a random enemy unit within range, hurting and slowing everything around it, and stays to fight.
+
+Damage: |cffffcc0060 (slam) + 29 - 43 (elemental)|r
+Slow: |cffffcc00-50% movement and attack speed for 3s|r
+Cooldown: |cffffcc004s|r
+Range: |cffffcc00700|r
+Area of effect: |cffffcc00300|r
+Health: |cffffcc00450|r
+Duration: |cffffcc008s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell + piercing|r
+}
+
+STRING 2134
+// Items: I06F (Water Slam), Description (Description)
+{
+A Water Elemental slams down onto a random enemy unit within range, hurting and slowing everything around it, and stays to fight.
+
+Damage: |cffffcc0060 (slam) + 29 - 43 (elemental)|r
+Slow: |cffffcc00-50% movement and attack speed for 3s|r
+Cooldown: |cffffcc004s|r
+Range: |cffffcc00700|r
+Area of effect: |cffffcc00300|r
+Health: |cffffcc00450|r
+Duration: |cffffcc008s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell + piercing|r
+}
+
+STRING 2135
+// Items: I06F (Water Slam), Name (Name)
+{
+Water Slam
+}
+
