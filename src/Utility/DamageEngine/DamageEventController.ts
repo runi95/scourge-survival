@@ -4,7 +4,6 @@ import { OverdriveDamageEvent } from "./DamageEvents/OverdriveDamageEvent";
 import { AntiMagicShellDamageEvent } from "./DamageEvents/AntiMagicShellDamageEvent";
 import { BerserkDamageEvent } from "./DamageEvents/BerserkDamageEvent";
 import { CriticalStrikeDamageEvent } from "./DamageEvents/CriticalStrikeDamageEvent";
-import { DeathCoilDamageEvent } from "./DamageEvents/DeathCoilDamageEvent";
 import { FireboltDamageEvent } from "./DamageEvents/FireboltDamageEvent";
 import { InnerFireDamageEvent } from "./DamageEvents/InnerFireDamageEvent";
 import { LocustSwarmDamageEvent } from "./DamageEvents/LocustSwarmDamageEvent";
@@ -125,10 +124,6 @@ export class DamageEventController {
     );
     DamageEngine.register(
       new ThunderSpearsDamageEvent(),
-      DamageEventType.AfterDamageEvent,
-    );
-    DamageEngine.register(
-      new DeathCoilDamageEvent(),
       DamageEventType.AfterDamageEvent,
     );
   }

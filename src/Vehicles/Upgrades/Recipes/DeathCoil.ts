@@ -6,12 +6,11 @@ import { Globals } from "../../../Utility/Globals";
 import { weaponDummyAbilityIds } from "../../../Utility/WeaponDummyAbilityIds";
 import { WeaponUpgradeRecipe } from "../../WeaponUpgradeRecipe";
 import { RandomNumberGenerator } from "../../../Utility/RandomNumberGenerator";
-import { Group } from "../../../Utility/Group";
 
 const MULT = Math.PI / 180;
 
 export class DeathCoil extends WeaponUpgradeRecipe {
-  public readonly cooldown = 1.5;
+  public readonly cooldown = 5;
   public readonly itemTypeId = FourCC("I046");
   public readonly merchantItemTypeId = FourCC("I047");
   public readonly recipe: number[] = [FourCC("I02K"), FourCC("I02K")];
@@ -29,20 +28,6 @@ export class DeathCoil extends WeaponUpgradeRecipe {
     const t: Timer = TimerUtils.newTimer();
     this.timers.set(itemId, t);
     t.start(this.cooldown, true, () => {
-      const enemies: Unit[] = [];
-      const grp = Group.fromRange(800, vehicle.unit.point);
-      grp.for((u) => {
-        if (!u.isAlive()) return;
-        if (!u.isVisible(owner)) return;
-        if (!u.isEnemy(owner)) return;
-        if (u.isUnitType(UNIT_TYPE_STRUCTURE)) return;
-
-        enemies.push(u);
-      });
-      grp.destroy();
-
-      if (enemies.length === 0) return;
-
       vehicle.unit.startAbilityCooldown(
         weaponDummyAbilityIds[weaponIndex],
         this.cooldown,
@@ -57,11 +42,18 @@ export class DeathCoil extends WeaponUpgradeRecipe {
         x + distance * Math.cos(radians),
         y + distance * Math.sin(radians),
       );
-      totem.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 2.5);
-      totem.issueTargetOrder(
-        OrderId.Creepthunderbolt,
-        enemies[RandomNumberGenerator.random(0, enemies.length - 1)],
-      );
+      totem.pauseEx(true);
+
+      const wake: Timer = TimerUtils.newTimer();
+      wake.start(3, false, () => {
+        TimerUtils.releaseTimer(wake);
+
+        totem.pauseEx(false);
+        totem.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 2);
+        if (vehicle.unit.isAlive()) {
+          totem.issueTargetOrder(OrderId.Deathcoil, vehicle.unit);
+        }
+      });
     });
   }
 

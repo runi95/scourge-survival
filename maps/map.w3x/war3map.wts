@@ -5981,7 +5981,7 @@ Death Coil
 }
 
 STRING 1524
-// Abilities: A03D (Death Coil), Name (Name)
+// Abilities: A03D (Death Coil), Tip (Tooltip - Normal)
 {
 Death Coil
 }
