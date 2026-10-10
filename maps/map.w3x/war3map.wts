@@ -16185,3 +16185,65 @@ STRING 2950
 Shadow Volley
 }
 
+STRING 2951
+// Items: I0BY (Skeleton Army), Tip (Tooltip - Basic)
+{
+Purchase Skeleton Army
+}
+
+STRING 2952
+// Items: I0BY (Skeleton Army), Description (Description)
+{
+Raises 2 Skeleton Warriors every 10 seconds that fight by your side.
+}
+
+STRING 2953
+// Items: I0BY (Skeleton Army), Ubertip (Tooltip - Extended)
+{
+Raises 2 Skeleton Warriors every 10 seconds that fight by your side.
+}
+
+STRING 2954
+// Items: I0BY (Skeleton Army), Name (Name)
+{
+Skeleton Army
+}
+
+STRING 2955
+// Items: I0BZ (Skeleton Army), Tip (Tooltip - Basic)
+{
+Purchase Skeleton Army
+}
+
+STRING 2956
+// Items: I0BZ (Skeleton Army), Ubertip (Tooltip - Extended)
+{
+Raises 2 Skeleton Warriors every 10 seconds that fight by your side.
+
+Damage: |cffffcc002 x 26 - 42|r
+Cooldown: |cffffcc0010s|r
+Health: |cffffcc00200|r
+Duration: |cffffcc0020s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00normal|r
+}
+
+STRING 2957
+// Items: I0BZ (Skeleton Army), Description (Description)
+{
+Raises 2 Skeleton Warriors every 10 seconds that fight by your side.
+
+Damage: |cffffcc002 x 26 - 42|r
+Cooldown: |cffffcc0010s|r
+Health: |cffffcc00200|r
+Duration: |cffffcc0020s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00normal|r
+}
+
+STRING 2958
+// Items: I0BZ (Skeleton Army), Name (Name)
+{
+Skeleton Army
+}
+

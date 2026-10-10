@@ -188,3 +188,4 @@ export * from "./ShadowRockets";
 export * from "./ShadowSpikes";
 export * from "./ShadowSpire";
 export * from "./ShadowVolley";
+export * from "./SkeletonArmy";
