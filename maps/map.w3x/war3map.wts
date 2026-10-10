@@ -16377,3 +16377,67 @@ STRING 2974
 Slaughterhouse
 }
 
+STRING 2975
+// Items: I0C4 (Swarm Spire), Tip (Tooltip - Basic)
+{
+Purchase Swarm Spire
+}
+
+STRING 2976
+// Items: I0C4 (Swarm Spire), Description (Description)
+{
+Sends a horde of bats towards a random enemy unit within range and fires a spirit at it.
+}
+
+STRING 2977
+// Items: I0C4 (Swarm Spire), Ubertip (Tooltip - Extended)
+{
+Sends a horde of bats towards a random enemy unit within range and fires a spirit at it.
+}
+
+STRING 2978
+// Items: I0C4 (Swarm Spire), Name (Name)
+{
+Swarm Spire
+}
+
+STRING 2979
+// Items: I0C5 (Swarm Spire), Tip (Tooltip - Basic)
+{
+Purchase Swarm Spire
+}
+
+STRING 2980
+// Items: I0C5 (Swarm Spire), Ubertip (Tooltip - Extended)
+{
+Sends a horde of bats towards a random enemy unit within range and fires a spirit at it.
+
+Damage: |cffffcc0075 (bats) + 10 - 13 (spirit)|r
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00600|r
+Distance: |cffffcc00800|r
+Area of effect: |cffffcc00100 - 300|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell + piercing|r
+}
+
+STRING 2981
+// Items: I0C5 (Swarm Spire), Description (Description)
+{
+Sends a horde of bats towards a random enemy unit within range and fires a spirit at it.
+
+Damage: |cffffcc0075 (bats) + 10 - 13 (spirit)|r
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00600|r
+Distance: |cffffcc00800|r
+Area of effect: |cffffcc00100 - 300|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell + piercing|r
+}
+
+STRING 2982
+// Items: I0C5 (Swarm Spire), Name (Name)
+{
+Swarm Spire
+}
+

@@ -191,3 +191,4 @@ export * from "./ShadowVolley";
 export * from "./SkeletonArmy";
 export * from "./SkeletonDrop";
 export * from "./Slaughterhouse";
+export * from "./SwarmSpire";
