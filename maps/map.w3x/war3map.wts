@@ -12245,3 +12245,65 @@ STRING 2456
 Mine Launcher
 }
 
+STRING 2457
+// Items: I08M (Siege Spears), Tip (Tooltip - Basic)
+{
+Purchase Siege Spears
+}
+
+STRING 2458
+// Items: I08M (Siege Spears), Description (Description)
+{
+Lobs boulders and hurls spears at 2 random enemy units within range.
+}
+
+STRING 2459
+// Items: I08M (Siege Spears), Ubertip (Tooltip - Extended)
+{
+Lobs boulders and hurls spears at 2 random enemy units within range.
+}
+
+STRING 2460
+// Items: I08M (Siege Spears), Name (Name)
+{
+Siege Spears
+}
+
+STRING 2461
+// Items: I08N (Siege Spears), Tip (Tooltip - Basic)
+{
+Purchase Siege Spears
+}
+
+STRING 2462
+// Items: I08N (Siege Spears), Ubertip (Tooltip - Extended)
+{
+Lobs boulders and hurls spears at 2 random enemy units within range.
+
+Damage: |cffffcc002 x 45 (boulder) + 2 x 20 - 30 (spear)|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00800|r
+Area of effect: |cffffcc00150|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00siege + piercing|r
+}
+
+STRING 2463
+// Items: I08N (Siege Spears), Description (Description)
+{
+Lobs boulders and hurls spears at 2 random enemy units within range.
+
+Damage: |cffffcc002 x 45 (boulder) + 2 x 20 - 30 (spear)|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00800|r
+Area of effect: |cffffcc00150|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00siege + piercing|r
+}
+
+STRING 2464
+// Items: I08N (Siege Spears), Name (Name)
+{
+Siege Spears
+}
+

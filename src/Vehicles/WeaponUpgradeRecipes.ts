@@ -133,4 +133,5 @@ export const weaponRecipes = [
   new Recipes.WolfCatapult(),
   new Recipes.RocketCatapult(),
   new Recipes.MineLauncher(),
+  new Recipes.SiegeSpears(),
 ];

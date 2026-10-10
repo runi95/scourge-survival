@@ -128,3 +128,4 @@ export * from "./EarthquakeShot";
 export * from "./WolfCatapult";
 export * from "./RocketCatapult";
 export * from "./MineLauncher";
+export * from "./SiegeSpears";
