@@ -153,4 +153,5 @@ export const weaponRecipes = [
   new Recipes.NetRockets(),
   new Recipes.SnareMine(),
   new Recipes.HuntersSpear(),
+  new Recipes.NetVolley(),
 ];

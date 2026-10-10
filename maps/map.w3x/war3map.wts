@@ -13561,3 +13561,65 @@ STRING 2620
 Hunter's Spear
 }
 
+STRING 2621
+// Items: I09Q (Net Volley), Tip (Tooltip - Basic)
+{
+Purchase Net Volley
+}
+
+STRING 2622
+// Items: I09Q (Net Volley), Description (Description)
+{
+Throws nets at 3 random enemy units within range, damaging them and holding them in place.
+}
+
+STRING 2623
+// Items: I09Q (Net Volley), Ubertip (Tooltip - Extended)
+{
+Throws nets at 3 random enemy units within range, damaging them and holding them in place.
+}
+
+STRING 2624
+// Items: I09Q (Net Volley), Name (Name)
+{
+Net Volley
+}
+
+STRING 2625
+// Items: I09R (Net Volley), Tip (Tooltip - Basic)
+{
+Purchase Net Volley
+}
+
+STRING 2626
+// Items: I09R (Net Volley), Ubertip (Tooltip - Extended)
+{
+Throws nets at 3 random enemy units within range, damaging them and holding them in place.
+
+Damage: |cffffcc003 x 40|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00600|r
+Duration: |cffffcc003s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 2627
+// Items: I09R (Net Volley), Description (Description)
+{
+Throws nets at 3 random enemy units within range, damaging them and holding them in place.
+
+Damage: |cffffcc003 x 40|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00600|r
+Duration: |cffffcc003s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 2628
+// Items: I09R (Net Volley), Name (Name)
+{
+Net Volley
+}
+
