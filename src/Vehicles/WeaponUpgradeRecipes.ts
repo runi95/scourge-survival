@@ -75,6 +75,7 @@ import { PlagueTrap } from "./Upgrades/Recipes/PlagueTrap";
 import { NerubianTower } from "./Upgrades/Recipes/NerubianTower";
 import { DragonWhelpForge } from "./Upgrades/Recipes/DragonWhelpForge";
 import { BlastFurnace } from "./Upgrades/Recipes/BlastFurnace";
+import { MeteorShower } from "./Upgrades/Recipes/MeteorShower";
 
 export const weaponRecipes = [
   new DualCannons(),
@@ -154,4 +155,5 @@ export const weaponRecipes = [
   new NerubianTower(),
   new DragonWhelpForge(),
   new BlastFurnace(),
+  new MeteorShower(),
 ];

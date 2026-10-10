@@ -8307,3 +8307,73 @@ STRING 1935
 Blast Furnace
 }
 
+STRING 1936
+// Items: I058 (Meteor Shower), Tip (Tooltip - Basic)
+{
+Purchase Meteor Shower
+}
+
+STRING 1937
+// Items: I058 (Meteor Shower), Description (Description)
+{
+Calls down 5 meteors over a random enemy group. Each meteor stuns and burns the enemies it hits.
+}
+
+STRING 1938
+// Items: I058 (Meteor Shower), Ubertip (Tooltip - Extended)
+{
+Calls down 5 meteors over a random enemy group. Each meteor stuns and burns the enemies it hits.
+}
+
+STRING 1939
+// Items: I058 (Meteor Shower), Name (Name)
+{
+Meteor Shower
+}
+
+STRING 1940
+// Items: I059 (Meteor Shower), Tip (Tooltip - Basic)
+{
+Purchase Meteor Shower
+}
+
+STRING 1941
+// Items: I059 (Meteor Shower), Ubertip (Tooltip - Extended)
+{
+Calls down 5 meteors over a random enemy group. Each meteor stuns and burns the enemies it hits.
+
+Damage: |cffffcc005 x 80|r
+Cooldown: |cffffcc003s|r
+Area of Effect (meteor): |cffffcc00150|r
+Range: |cffffcc00600|r
+Stun duration: |cffffcc000.5s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00magic|r
+}
+
+STRING 1942
+// Items: I059 (Meteor Shower), Description (Description)
+{
+Calls down 5 meteors over a random enemy group. Each meteor stuns and burns the enemies it hits.
+
+Damage: |cffffcc005 x 80|r
+Cooldown: |cffffcc003s|r
+Area of Effect (meteor): |cffffcc00150|r
+Range: |cffffcc00600|r
+Stun duration: |cffffcc000.5s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00magic|r
+}
+
+STRING 1943
+// Items: I059 (Meteor Shower), Name (Name)
+{
+Meteor Shower
+}
+
+STRING 1944
+// Abilities: A03X (Meteor Impact), Name (Name)
+{
+Meteor Impact
+}
+
