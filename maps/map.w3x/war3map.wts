@@ -8795,3 +8795,39 @@ STRING 2011
 Summons Treants to fight by your side.
 }
 
+STRING 2012
+// Items: I05O (Dryad Spear), Name (Name)
+{
+Dryad Spear
+}
+
+STRING 2013
+// Items: I05O (Dryad Spear), Tip (Tooltip - Basic)
+{
+Purchase Dryad Spear
+}
+
+STRING 2014
+// Items: I05O (Dryad Spear), Description (Description)
+{
+Throws a poisoned spear at a random nearby enemy, slowing it.
+}
+
+STRING 2015
+// Items: I05O (Dryad Spear), Ubertip (Tooltip - Extended)
+{
+Throws a poisoned spear at a random nearby enemy, slowing it.
+}
+
+STRING 2016
+// Abilities: A045 (Dryad Spear Slow), Name (Name)
+{
+Dryad Spear Slow
+}
+
+STRING 2017
+// Units: u01S (Dryad Spear), Name (Name)
+{
+Dryad Spear
+}
+

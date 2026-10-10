@@ -10,3 +10,4 @@ export * from "./Demolisher";
 export * from "./ShadowBolt";
 export * from "./RaiseDead";
 export * from "./Treants";
+export * from "./DryadSpear";

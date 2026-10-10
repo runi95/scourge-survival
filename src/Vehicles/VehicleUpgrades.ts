@@ -22,6 +22,7 @@ import {
   ShadowBolt,
   RaiseDead,
   Treants,
+  DryadSpear,
 } from "./Upgrades/Weapons/Common/index";
 import {
   Glyph,
@@ -90,6 +91,7 @@ export const commonUpgrades: VehicleUpgrade[] = [
   new ShadowBolt(),
   new RaiseDead(),
   new Treants(),
+  new DryadSpear(),
 ];
 
 export const uncommonUpgrades: VehicleUpgrade[] = [
