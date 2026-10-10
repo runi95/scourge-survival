@@ -17601,3 +17601,71 @@ STRING 3132
 Huntress Hall
 }
 
+STRING 3133
+// Items: I0D6 (Knife Mine), Tip (Tooltip - Basic)
+{
+Purchase Knife Mine
+}
+
+STRING 3134
+// Items: I0D6 (Knife Mine), Description (Description)
+{
+Places land mines underneath your hero. When an enemy steps on one, it explodes in a fan of knives that hits every enemy around it.
+}
+
+STRING 3135
+// Items: I0D6 (Knife Mine), Ubertip (Tooltip - Extended)
+{
+Places land mines underneath your hero. When an enemy steps on one, it explodes in a fan of knives that hits every enemy around it.
+}
+
+STRING 3136
+// Items: I0D6 (Knife Mine), Name (Name)
+{
+Knife Mine
+}
+
+STRING 3137
+// Items: I0D7 (Knife Mine), Tip (Tooltip - Basic)
+{
+Purchase Knife Mine
+}
+
+STRING 3138
+// Items: I0D7 (Knife Mine), Ubertip (Tooltip - Extended)
+{
+Places land mines underneath your hero. When an enemy steps on one, it explodes in a fan of knives that hits every enemy around it.
+
+Damage: |cffffcc00100 (explosion) + 75 (knives)|r
+Cooldown: |cffffcc003s|r
+Area of effect: |cffffcc00300 (explosion) + 400 (knives)|r
+Mine activation delay: |cffffcc004s|r
+Targets: |cffffcc00ground (explosion), air & ground (knives)|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 3139
+// Items: I0D7 (Knife Mine), Description (Description)
+{
+Places land mines underneath your hero. When an enemy steps on one, it explodes in a fan of knives that hits every enemy around it.
+
+Damage: |cffffcc00100 (explosion) + 75 (knives)|r
+Cooldown: |cffffcc003s|r
+Area of effect: |cffffcc00300 (explosion) + 400 (knives)|r
+Mine activation delay: |cffffcc004s|r
+Targets: |cffffcc00ground (explosion), air & ground (knives)|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 3140
+// Items: I0D7 (Knife Mine), Name (Name)
+{
+Knife Mine
+}
+
+STRING 3141
+// Units: n01K (Knife Mine), Name (Name)
+{
+Knife Mine
+}
+
