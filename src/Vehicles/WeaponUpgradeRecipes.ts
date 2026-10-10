@@ -247,4 +247,5 @@ export const weaponRecipes = [
   new Recipes.VenomCyclone(),
   new Recipes.VenomRockets(),
   new Recipes.VenomSpear(),
+  new Recipes.WhirlingBlades(),
 ];
