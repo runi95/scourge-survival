@@ -5,3 +5,4 @@ export * from "./Cripple";
 export * from "./WarStomp";
 export * from "./FeralSpirit";
 export * from "./ShadowStrike";
+export * from "./FanOfKnives";

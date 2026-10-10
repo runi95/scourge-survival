@@ -8891,3 +8891,33 @@ STRING 2027
 Shadow Strike
 }
 
+STRING 2028
+// Items: I05R (Fan of Knives), Name (Name)
+{
+Fan of Knives
+}
+
+STRING 2029
+// Items: I05R (Fan of Knives), Tip (Tooltip - Basic)
+{
+Purchase Fan of Knives
+}
+
+STRING 2030
+// Items: I05R (Fan of Knives), Description (Description)
+{
+Flings knives at every enemy around your hero.
+}
+
+STRING 2031
+// Items: I05R (Fan of Knives), Ubertip (Tooltip - Extended)
+{
+Flings knives at every enemy around your hero.
+}
+
+STRING 2032
+// Abilities: A048 (Fan of Knives), Name (Name)
+{
+Fan of Knives
+}
+

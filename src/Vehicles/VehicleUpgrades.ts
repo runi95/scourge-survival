@@ -50,6 +50,7 @@ import {
   WarStomp,
   FeralSpirit,
   ShadowStrike,
+  FanOfKnives,
 } from "./Upgrades/Weapons/Rare/index";
 import {
   ManaLeech,
@@ -125,6 +126,7 @@ export const rareUpgrades: VehicleUpgrade[] = [
   new WarStomp(),
   new FeralSpirit(),
   new ShadowStrike(),
+  new FanOfKnives(),
 ];
 
 export const legendaryUpgrades: VehicleUpgrade[] = [
