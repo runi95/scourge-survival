@@ -11545,3 +11545,65 @@ STRING 2367
 Spirit Wave
 }
 
+STRING 2368
+// Items: I080 (Snare Wave), Tip (Tooltip - Basic)
+{
+Purchase Snare Wave
+}
+
+STRING 2369
+// Items: I080 (Snare Wave), Description (Description)
+{
+Sends a shockwave towards a random enemy unit within range and throws a net at it, holding it in place.
+}
+
+STRING 2370
+// Items: I080 (Snare Wave), Ubertip (Tooltip - Extended)
+{
+Sends a shockwave towards a random enemy unit within range and throws a net at it, holding it in place.
+}
+
+STRING 2371
+// Items: I080 (Snare Wave), Name (Name)
+{
+Snare Wave
+}
+
+STRING 2372
+// Items: I081 (Snare Wave), Tip (Tooltip - Basic)
+{
+Purchase Snare Wave
+}
+
+STRING 2373
+// Items: I081 (Snare Wave), Ubertip (Tooltip - Extended)
+{
+Sends a shockwave towards a random enemy unit within range and throws a net at it, holding it in place.
+
+Damage: |cffffcc0050 (shockwave) + 40 (net)|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00600|r
+Duration: |cffffcc003s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 2374
+// Items: I081 (Snare Wave), Description (Description)
+{
+Sends a shockwave towards a random enemy unit within range and throws a net at it, holding it in place.
+
+Damage: |cffffcc0050 (shockwave) + 40 (net)|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00600|r
+Duration: |cffffcc003s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 2375
+// Items: I081 (Snare Wave), Name (Name)
+{
+Snare Wave
+}
+
