@@ -558,6 +558,9 @@ export class DamageEngine {
   private canKick = true;
   private sleepLevel = 0;
   private totem: boolean = false;
+  // 0.0 damage events skipped by the DAMAGING trigger, so the DAMAGED trigger
+  // skips the same events instead of running with no damage instance
+  private skippedZeroEvents: { source: unit; target: unit }[] = [];
   private isKicking: boolean = false;
   private isEventsRun: boolean = false;
   private prepped: DamageInstance = null;
@@ -693,7 +696,15 @@ export class DamageEngine {
         const eventDamage = GetEventDamage();
         // FIXME: A bug in wc3 causes a 0.0 damage event when attacking enemy units with initial damage + DOT (ex: Slow Poison, Envenomed Spears, Phoenix Fire)
         // This breaks the damage engine later down the line so this is a hotfix for this bug
-        if (eventDamage === 0.0) return;
+        if (eventDamage === 0.0) {
+          if (this.skippedZeroEvents.length >= 50)
+            this.skippedZeroEvents.shift();
+          this.skippedZeroEvents.push({
+            source: GetEventDamageSource(),
+            target: GetTriggerUnit(),
+          });
+          return;
+        }
 
         const d = this.createFromEvent(eventDamage, false);
         Log.Debug("Pre-damage event running...");
@@ -773,6 +784,17 @@ export class DamageEngine {
       this.t2,
       Filter(() => {
         const r = GetEventDamage();
+        if (r === 0.0 && this.skippedZeroEvents.length > 0) {
+          const source = GetEventDamageSource();
+          const target = GetTriggerUnit();
+          const i = this.skippedZeroEvents.findIndex(
+            (e) => e.source === source && e.target === target,
+          );
+          if (i >= 0) {
+            this.skippedZeroEvents.splice(i, 1);
+            return;
+          }
+        }
         let d = this.current;
         Log.Debug("Second damage event running...");
         if (this.prepped) this.prepped = null;
