@@ -73,6 +73,7 @@ import { Sacrifice } from "./Upgrades/Recipes/Sacrifice";
 import { GraspOfTheDead } from "./Upgrades/Recipes/GraspOfTheDead";
 import { PlagueTrap } from "./Upgrades/Recipes/PlagueTrap";
 import { NerubianTower } from "./Upgrades/Recipes/NerubianTower";
+import { DragonWhelpForge } from "./Upgrades/Recipes/DragonWhelpForge";
 
 export const weaponRecipes = [
   new DualCannons(),
@@ -150,4 +151,5 @@ export const weaponRecipes = [
   new GraspOfTheDead(),
   new PlagueTrap(),
   new NerubianTower(),
+  new DragonWhelpForge(),
 ];

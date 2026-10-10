@@ -8139,3 +8139,79 @@ STRING 1912
 Nerubian Tower
 }
 
+STRING 1913
+// Items: I054 (Dragon Whelp Forge), Tip (Tooltip - Basic)
+{
+Purchase Dragon Whelp Forge
+}
+
+STRING 1914
+// Items: I054 (Dragon Whelp Forge), Description (Description)
+{
+Spawns a Dragon Whelp Forge every 60 seconds that spawns Blue Dragon Whelps.
+}
+
+STRING 1915
+// Items: I054 (Dragon Whelp Forge), Ubertip (Tooltip - Extended)
+{
+Spawns a Dragon Whelp Forge every 60 seconds that spawns Blue Dragon Whelps.
+}
+
+STRING 1916
+// Items: I054 (Dragon Whelp Forge), Name (Name)
+{
+Dragon Whelp Forge
+}
+
+STRING 1917
+// Items: I055 (Dragon Whelp Forge), Tip (Tooltip - Basic)
+{
+Purchase Dragon Whelp Forge
+}
+
+STRING 1918
+// Items: I055 (Dragon Whelp Forge), Ubertip (Tooltip - Extended)
+{
+Spawns a Dragon Whelp Forge every 60 seconds that spawns Blue Dragon Whelps.
+
+Damage: |cffffcc0025|r
+Slow: |cffffcc00-50% for 10s|r
+Cooldown: |cffffcc0060s (factory) + 8s (whelp)|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00pierce|r
+Health: |cffffcc001000 (factory) + 250 (whelp)|r
+Duration: |cffffcc0060s (factory) + 20s (whelp)|r
+}
+
+STRING 1919
+// Items: I055 (Dragon Whelp Forge), Description (Description)
+{
+Spawns a Dragon Whelp Forge every 60 seconds that spawns Blue Dragon Whelps.
+
+Damage: |cffffcc0025|r
+Slow: |cffffcc00-50% for 10s|r
+Cooldown: |cffffcc0060s (factory) + 8s (whelp)|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00pierce|r
+Health: |cffffcc001000 (factory) + 250 (whelp)|r
+Duration: |cffffcc0060s (factory) + 20s (whelp)|r
+}
+
+STRING 1920
+// Items: I055 (Dragon Whelp Forge), Name (Name)
+{
+Dragon Whelp Forge
+}
+
+STRING 1921
+// Units: n00Z (Blue Dragon Whelp), Name (Name)
+{
+Blue Dragon Whelp
+}
+
+STRING 1922
+// Units: n010 (Dragon Whelp Forge), Name (Name)
+{
+Dragon Whelp Forge
+}
+
