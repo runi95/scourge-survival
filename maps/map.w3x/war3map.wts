@@ -17159,3 +17159,65 @@ STRING 3075
 Dryad Grove
 }
 
+STRING 3076
+// Items: I0CS (Dryad Volley), Tip (Tooltip - Basic)
+{
+Purchase Dryad Volley
+}
+
+STRING 3077
+// Items: I0CS (Dryad Volley), Description (Description)
+{
+Throws poisoned spears at 3 random enemy units within range, slowing them.
+}
+
+STRING 3078
+// Items: I0CS (Dryad Volley), Ubertip (Tooltip - Extended)
+{
+Throws poisoned spears at 3 random enemy units within range, slowing them.
+}
+
+STRING 3079
+// Items: I0CS (Dryad Volley), Name (Name)
+{
+Dryad Volley
+}
+
+STRING 3080
+// Items: I0CT (Dryad Volley), Tip (Tooltip - Basic)
+{
+Purchase Dryad Volley
+}
+
+STRING 3081
+// Items: I0CT (Dryad Volley), Ubertip (Tooltip - Extended)
+{
+Throws poisoned spears at 3 random enemy units within range, slowing them.
+
+Damage: |cffffcc003 x 15|r
+Slow: |cffffcc00-25% movement speed for 2s|r
+Cooldown: |cffffcc001.5s|r
+Range: |cffffcc00600|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing|r
+}
+
+STRING 3082
+// Items: I0CT (Dryad Volley), Description (Description)
+{
+Throws poisoned spears at 3 random enemy units within range, slowing them.
+
+Damage: |cffffcc003 x 15|r
+Slow: |cffffcc00-25% movement speed for 2s|r
+Cooldown: |cffffcc001.5s|r
+Range: |cffffcc00600|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing|r
+}
+
+STRING 3083
+// Items: I0CT (Dryad Volley), Name (Name)
+{
+Dryad Volley
+}
+
