@@ -10393,3 +10393,65 @@ STRING 2220
 Thunder Rifle
 }
 
+STRING 2221
+// Items: I070 (Stunning Shot), Tip (Tooltip - Basic)
+{
+Purchase Stunning Shot
+}
+
+STRING 2222
+// Items: I070 (Stunning Shot), Description (Description)
+{
+Shoots a random enemy unit within range and follows up with a magical hammer that stuns it.
+}
+
+STRING 2223
+// Items: I070 (Stunning Shot), Ubertip (Tooltip - Extended)
+{
+Shoots a random enemy unit within range and follows up with a magical hammer that stuns it.
+}
+
+STRING 2224
+// Items: I070 (Stunning Shot), Name (Name)
+{
+Stunning Shot
+}
+
+STRING 2225
+// Items: I071 (Stunning Shot), Tip (Tooltip - Basic)
+{
+Purchase Stunning Shot
+}
+
+STRING 2226
+// Items: I071 (Stunning Shot), Ubertip (Tooltip - Extended)
+{
+Shoots a random enemy unit within range and follows up with a magical hammer that stuns it.
+
+Damage: |cffffcc00750 (bullet) + 100 (hammer)|r
+Cooldown: |cffffcc004s|r
+Range: |cffffcc001200|r
+Stun duration: |cffffcc001s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing + spell|r
+}
+
+STRING 2227
+// Items: I071 (Stunning Shot), Description (Description)
+{
+Shoots a random enemy unit within range and follows up with a magical hammer that stuns it.
+
+Damage: |cffffcc00750 (bullet) + 100 (hammer)|r
+Cooldown: |cffffcc004s|r
+Range: |cffffcc001200|r
+Stun duration: |cffffcc001s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing + spell|r
+}
+
+STRING 2228
+// Items: I071 (Stunning Shot), Name (Name)
+{
+Stunning Shot
+}
+
