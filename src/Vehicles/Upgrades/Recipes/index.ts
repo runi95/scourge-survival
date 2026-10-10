@@ -193,3 +193,4 @@ export * from "./SkeletonDrop";
 export * from "./Slaughterhouse";
 export * from "./SwarmSpire";
 export * from "./WyrmMine";
+export * from "./AncientGrove";
