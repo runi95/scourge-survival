@@ -109,4 +109,5 @@ export const weaponRecipes = [
   new Recipes.RocketHammers(),
   new Recipes.Aftershock(),
   new Recipes.MountainKing(),
+  new Recipes.HammerStorm(),
 ];

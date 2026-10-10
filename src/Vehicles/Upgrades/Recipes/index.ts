@@ -104,3 +104,4 @@ export * from "./ThunderRockets";
 export * from "./RocketHammers";
 export * from "./Aftershock";
 export * from "./MountainKing";
+export * from "./HammerStorm";

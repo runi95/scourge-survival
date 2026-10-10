@@ -10713,3 +10713,65 @@ STRING 2260
 Mountain King
 }
 
+STRING 2261
+// Items: I07A (Hammer Storm), Tip (Tooltip - Basic)
+{
+Purchase Hammer Storm
+}
+
+STRING 2262
+// Items: I07A (Hammer Storm), Description (Description)
+{
+Throws magical hammers at 2 random enemy units within range, damaging and stunning them.
+}
+
+STRING 2263
+// Items: I07A (Hammer Storm), Ubertip (Tooltip - Extended)
+{
+Throws magical hammers at 2 random enemy units within range, damaging and stunning them.
+}
+
+STRING 2264
+// Items: I07A (Hammer Storm), Name (Name)
+{
+Hammer Storm
+}
+
+STRING 2265
+// Items: I07B (Hammer Storm), Tip (Tooltip - Basic)
+{
+Purchase Hammer Storm
+}
+
+STRING 2266
+// Items: I07B (Hammer Storm), Ubertip (Tooltip - Extended)
+{
+Throws magical hammers at 2 random enemy units within range, damaging and stunning them.
+
+Damage: |cffffcc002 x 100|r
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00700|r
+Stun duration: |cffffcc001s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 2267
+// Items: I07B (Hammer Storm), Description (Description)
+{
+Throws magical hammers at 2 random enemy units within range, damaging and stunning them.
+
+Damage: |cffffcc002 x 100|r
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00700|r
+Stun duration: |cffffcc001s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 2268
+// Items: I07B (Hammer Storm), Name (Name)
+{
+Hammer Storm
+}
+
