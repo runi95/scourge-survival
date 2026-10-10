@@ -150,4 +150,5 @@ export const weaponRecipes = [
   new Recipes.SpiritHunters(),
   new Recipes.HuntingPack(),
   new Recipes.RocketSpears(),
+  new Recipes.NetRockets(),
 ];

@@ -13361,3 +13361,69 @@ STRING 2595
 Rocket Spears
 }
 
+STRING 2596
+// Items: I09K (Net Rockets), Tip (Tooltip - Basic)
+{
+Purchase Net Rockets
+}
+
+STRING 2597
+// Items: I09K (Net Rockets), Description (Description)
+{
+Throws a net at a random enemy unit within range, holding it in place, and fires Cluster Rockets at it.
+}
+
+STRING 2598
+// Items: I09K (Net Rockets), Ubertip (Tooltip - Extended)
+{
+Throws a net at a random enemy unit within range, holding it in place, and fires Cluster Rockets at it.
+}
+
+STRING 2599
+// Items: I09K (Net Rockets), Name (Name)
+{
+Net Rockets
+}
+
+STRING 2600
+// Items: I09L (Net Rockets), Tip (Tooltip - Basic)
+{
+Purchase Net Rockets
+}
+
+STRING 2601
+// Items: I09L (Net Rockets), Ubertip (Tooltip - Extended)
+{
+Throws a net at a random enemy unit within range, holding it in place, and fires Cluster Rockets at it.
+
+Damage: |cffffcc0040 (net) + 6 x 17.5 (rockets)|r
+Cooldown: |cffffcc002.5s|r
+Range: |cffffcc00600|r
+Area of effect: |cffffcc00300|r
+Duration: |cffffcc003s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+Effect: |cffffcc00stuns for 1s|r
+}
+
+STRING 2602
+// Items: I09L (Net Rockets), Description (Description)
+{
+Throws a net at a random enemy unit within range, holding it in place, and fires Cluster Rockets at it.
+
+Damage: |cffffcc0040 (net) + 6 x 17.5 (rockets)|r
+Cooldown: |cffffcc002.5s|r
+Range: |cffffcc00600|r
+Area of effect: |cffffcc00300|r
+Duration: |cffffcc003s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+Effect: |cffffcc00stuns for 1s|r
+}
+
+STRING 2603
+// Items: I09L (Net Rockets), Name (Name)
+{
+Net Rockets
+}
+
