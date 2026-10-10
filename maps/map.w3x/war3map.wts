@@ -16441,3 +16441,75 @@ STRING 2982
 Swarm Spire
 }
 
+STRING 2983
+// Items: I0C6 (Wyrm Mine), Tip (Tooltip - Basic)
+{
+Purchase Wyrm Mine
+}
+
+STRING 2984
+// Items: I0C6 (Wyrm Mine), Description (Description)
+{
+Places frozen land mines underneath your hero. When an enemy steps on one, it explodes and blasts 3 enemy units nearby with a Frost Nova.
+}
+
+STRING 2985
+// Items: I0C6 (Wyrm Mine), Ubertip (Tooltip - Extended)
+{
+Places frozen land mines underneath your hero. When an enemy steps on one, it explodes and blasts 3 enemy units nearby with a Frost Nova.
+}
+
+STRING 2986
+// Items: I0C6 (Wyrm Mine), Name (Name)
+{
+Wyrm Mine
+}
+
+STRING 2987
+// Items: I0C7 (Wyrm Mine), Tip (Tooltip - Basic)
+{
+Purchase Wyrm Mine
+}
+
+STRING 2988
+// Items: I0C7 (Wyrm Mine), Ubertip (Tooltip - Extended)
+{
+Places frozen land mines underneath your hero. When an enemy steps on one, it explodes and blasts 3 enemy units nearby with a Frost Nova.
+
+Damage: |cffffcc00100 (explosion) + 3 x (60 + 40) (novas)|r
+Slow: |cffffcc00-50% movement speed for 3s|r
+Cooldown: |cffffcc003s|r
+Area of effect: |cffffcc00300 (explosion) + 200 (novas)|r
+Range: |cffffcc00400 (novas)|r
+Mine activation delay: |cffffcc004s|r
+Targets: |cffffcc00ground (explosion), air & ground (novas)|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 2989
+// Items: I0C7 (Wyrm Mine), Description (Description)
+{
+Places frozen land mines underneath your hero. When an enemy steps on one, it explodes and blasts 3 enemy units nearby with a Frost Nova.
+
+Damage: |cffffcc00100 (explosion) + 3 x (60 + 40) (novas)|r
+Slow: |cffffcc00-50% movement speed for 3s|r
+Cooldown: |cffffcc003s|r
+Area of effect: |cffffcc00300 (explosion) + 200 (novas)|r
+Range: |cffffcc00400 (novas)|r
+Mine activation delay: |cffffcc004s|r
+Targets: |cffffcc00ground (explosion), air & ground (novas)|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 2990
+// Items: I0C7 (Wyrm Mine), Name (Name)
+{
+Wyrm Mine
+}
+
+STRING 2991
+// Units: n01G (Wyrm Mine), Name (Name)
+{
+Wyrm Mine
+}
+

@@ -197,4 +197,5 @@ export const weaponRecipes = [
   new Recipes.SkeletonDrop(),
   new Recipes.Slaughterhouse(),
   new Recipes.SwarmSpire(),
+  new Recipes.WyrmMine(),
 ];

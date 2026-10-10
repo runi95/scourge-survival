@@ -192,3 +192,4 @@ export * from "./SkeletonArmy";
 export * from "./SkeletonDrop";
 export * from "./Slaughterhouse";
 export * from "./SwarmSpire";
+export * from "./WyrmMine";
