@@ -15939,3 +15939,67 @@ STRING 2918
 Shadow Mine
 }
 
+STRING 2919
+// Items: I0BQ (Shadow Rockets), Tip (Tooltip - Basic)
+{
+Purchase Shadow Rockets
+}
+
+STRING 2920
+// Items: I0BQ (Shadow Rockets), Description (Description)
+{
+Fires a shadow bolt and Cluster Rockets at a random enemy unit within range.
+}
+
+STRING 2921
+// Items: I0BQ (Shadow Rockets), Ubertip (Tooltip - Extended)
+{
+Fires a shadow bolt and Cluster Rockets at a random enemy unit within range.
+}
+
+STRING 2922
+// Items: I0BQ (Shadow Rockets), Name (Name)
+{
+Shadow Rockets
+}
+
+STRING 2923
+// Items: I0BR (Shadow Rockets), Tip (Tooltip - Basic)
+{
+Purchase Shadow Rockets
+}
+
+STRING 2924
+// Items: I0BR (Shadow Rockets), Ubertip (Tooltip - Extended)
+{
+Fires a shadow bolt and Cluster Rockets at a random enemy unit within range.
+
+Damage: |cffffcc0020 - 24 (bolt) + 6 x 17.5 (rockets)|r
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00600|r
+Area of effect: |cffffcc00300|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00magic + spell|r
+Effect: |cffffcc00stuns for 1s|r
+}
+
+STRING 2925
+// Items: I0BR (Shadow Rockets), Description (Description)
+{
+Fires a shadow bolt and Cluster Rockets at a random enemy unit within range.
+
+Damage: |cffffcc0020 - 24 (bolt) + 6 x 17.5 (rockets)|r
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00600|r
+Area of effect: |cffffcc00300|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00magic + spell|r
+Effect: |cffffcc00stuns for 1s|r
+}
+
+STRING 2926
+// Items: I0BR (Shadow Rockets), Name (Name)
+{
+Shadow Rockets
+}
+

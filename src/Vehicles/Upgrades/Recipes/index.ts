@@ -184,3 +184,4 @@ export * from "./NecromancerAcademy";
 export * from "./NovaMine";
 export * from "./PlagueSwarm";
 export * from "./ShadowMine";
+export * from "./ShadowRockets";
