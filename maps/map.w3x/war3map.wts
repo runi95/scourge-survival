@@ -15089,3 +15089,69 @@ STRING 2812
 Frost Swarm
 }
 
+STRING 2813
+// Items: I0B0 (Frostbite Curse), Tip (Tooltip - Basic)
+{
+Purchase Frostbite Curse
+}
+
+STRING 2814
+// Items: I0B0 (Frostbite Curse), Description (Description)
+{
+Cripples a random enemy unit within range and blasts it with a Frost Nova.
+}
+
+STRING 2815
+// Items: I0B0 (Frostbite Curse), Ubertip (Tooltip - Extended)
+{
+Cripples a random enemy unit within range and blasts it with a Frost Nova.
+}
+
+STRING 2816
+// Items: I0B0 (Frostbite Curse), Name (Name)
+{
+Frostbite Curse
+}
+
+STRING 2817
+// Items: I0B1 (Frostbite Curse), Tip (Tooltip - Basic)
+{
+Purchase Frostbite Curse
+}
+
+STRING 2818
+// Items: I0B1 (Frostbite Curse), Ubertip (Tooltip - Extended)
+{
+Cripples a random enemy unit within range and blasts it with a Frost Nova.
+
+Damage: |cffffcc0075 (cripple) + 60 (target) + 40 (nova)|r
+Slow: |cffffcc00-50% movement speed for 3s|r
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00600|r
+Area of effect: |cffffcc00200|r
+Duration: |cffffcc003s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 2819
+// Items: I0B1 (Frostbite Curse), Description (Description)
+{
+Cripples a random enemy unit within range and blasts it with a Frost Nova.
+
+Damage: |cffffcc0075 (cripple) + 60 (target) + 40 (nova)|r
+Slow: |cffffcc00-50% movement speed for 3s|r
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00600|r
+Area of effect: |cffffcc00200|r
+Duration: |cffffcc003s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 2820
+// Items: I0B1 (Frostbite Curse), Name (Name)
+{
+Frostbite Curse
+}
+
