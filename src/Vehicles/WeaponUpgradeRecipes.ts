@@ -199,4 +199,5 @@ export const weaponRecipes = [
   new Recipes.SwarmSpire(),
   new Recipes.WyrmMine(),
   new Recipes.AncientGrove(),
+  new Recipes.ArcherBarracks(),
 ];

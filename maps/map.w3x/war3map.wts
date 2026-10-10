@@ -16575,3 +16575,65 @@ STRING 2999
 Ancient Grove
 }
 
+STRING 3000
+// Items: I0CA (Archer Barracks), Tip (Tooltip - Basic)
+{
+Purchase Archer Barracks
+}
+
+STRING 3001
+// Items: I0CA (Archer Barracks), Description (Description)
+{
+Sends out 3 Archers every 30 seconds that fire arrows at enemies.
+}
+
+STRING 3002
+// Items: I0CA (Archer Barracks), Ubertip (Tooltip - Extended)
+{
+Sends out 3 Archers every 30 seconds that fire arrows at enemies.
+}
+
+STRING 3003
+// Items: I0CA (Archer Barracks), Name (Name)
+{
+Archer Barracks
+}
+
+STRING 3004
+// Items: I0CB (Archer Barracks), Tip (Tooltip - Basic)
+{
+Purchase Archer Barracks
+}
+
+STRING 3005
+// Items: I0CB (Archer Barracks), Ubertip (Tooltip - Extended)
+{
+Sends out 3 Archers every 30 seconds that fire arrows at enemies.
+
+Damage: |cffffcc003 x 16 - 18|r
+Cooldown: |cffffcc0030s|r
+Health: |cffffcc00275|r
+Duration: |cffffcc0020s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing|r
+}
+
+STRING 3006
+// Items: I0CB (Archer Barracks), Description (Description)
+{
+Sends out 3 Archers every 30 seconds that fire arrows at enemies.
+
+Damage: |cffffcc003 x 16 - 18|r
+Cooldown: |cffffcc0030s|r
+Health: |cffffcc00275|r
+Duration: |cffffcc0020s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing|r
+}
+
+STRING 3007
+// Items: I0CB (Archer Barracks), Name (Name)
+{
+Archer Barracks
+}
+
