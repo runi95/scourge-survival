@@ -17035,3 +17035,65 @@ STRING 3059
 Burning Treant
 }
 
+STRING 3060
+// Items: I0CO (Druid Grove), Tip (Tooltip - Basic)
+{
+Purchase Druid Grove
+}
+
+STRING 3061
+// Items: I0CO (Druid Grove), Description (Description)
+{
+Sends out 2 Druids of the Claw every 30 seconds that fight by your side.
+}
+
+STRING 3062
+// Items: I0CO (Druid Grove), Ubertip (Tooltip - Extended)
+{
+Sends out 2 Druids of the Claw every 30 seconds that fight by your side.
+}
+
+STRING 3063
+// Items: I0CO (Druid Grove), Name (Name)
+{
+Druid Grove
+}
+
+STRING 3064
+// Items: I0CP (Druid Grove), Tip (Tooltip - Basic)
+{
+Purchase Druid Grove
+}
+
+STRING 3065
+// Items: I0CP (Druid Grove), Ubertip (Tooltip - Extended)
+{
+Sends out 2 Druids of the Claw every 30 seconds that fight by your side.
+
+Damage: |cffffcc002 x 19 - 22|r
+Cooldown: |cffffcc0030s|r
+Health: |cffffcc00430|r
+Duration: |cffffcc0020s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00normal|r
+}
+
+STRING 3066
+// Items: I0CP (Druid Grove), Description (Description)
+{
+Sends out 2 Druids of the Claw every 30 seconds that fight by your side.
+
+Damage: |cffffcc002 x 19 - 22|r
+Cooldown: |cffffcc0030s|r
+Health: |cffffcc00430|r
+Duration: |cffffcc0020s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00normal|r
+}
+
+STRING 3067
+// Items: I0CP (Druid Grove), Name (Name)
+{
+Druid Grove
+}
+

@@ -206,4 +206,5 @@ export const weaponRecipes = [
   new Recipes.BurningKnives(),
   new Recipes.BurningRoots(),
   new Recipes.BurningTreants(),
+  new Recipes.DruidGrove(),
 ];
