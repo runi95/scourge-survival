@@ -9803,3 +9803,65 @@ STRING 2145
 Lightning Elemental Bash
 }
 
+STRING 2146
+// Items: I06I (Eternal Winter), Tip (Tooltip - Basic)
+{
+Purchase Eternal Winter
+}
+
+STRING 2147
+// Items: I06I (Eternal Winter), Description (Description)
+{
+Calls down a Blizzard on 3 random enemy units within range.
+}
+
+STRING 2148
+// Items: I06I (Eternal Winter), Ubertip (Tooltip - Extended)
+{
+Calls down a Blizzard on 3 random enemy units within range.
+}
+
+STRING 2149
+// Items: I06I (Eternal Winter), Name (Name)
+{
+Eternal Winter
+}
+
+STRING 2150
+// Items: I06J (Eternal Winter), Tip (Tooltip - Basic)
+{
+Purchase Eternal Winter
+}
+
+STRING 2151
+// Items: I06J (Eternal Winter), Ubertip (Tooltip - Extended)
+{
+Calls down a Blizzard on 3 random enemy units within range.
+
+Damage: |cffffcc003 x 6 x 50|r
+Cooldown: |cffffcc006s|r
+Range: |cffffcc00900|r
+Area of effect: |cffffcc00200|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 2152
+// Items: I06J (Eternal Winter), Description (Description)
+{
+Calls down a Blizzard on 3 random enemy units within range.
+
+Damage: |cffffcc003 x 6 x 50|r
+Cooldown: |cffffcc006s|r
+Range: |cffffcc00900|r
+Area of effect: |cffffcc00200|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 2153
+// Items: I06J (Eternal Winter), Name (Name)
+{
+Eternal Winter
+}
+

@@ -90,6 +90,7 @@ import { GryphonRoost } from "./Upgrades/Recipes/GryphonRoost";
 import { IceElemental } from "./Upgrades/Recipes/IceElemental";
 import { WaterSlam } from "./Upgrades/Recipes/WaterSlam";
 import { LightningElemental } from "./Upgrades/Recipes/LightningElemental";
+import { EternalWinter } from "./Upgrades/Recipes/EternalWinter";
 
 export const weaponRecipes = [
   new DualCannons(),
@@ -184,4 +185,5 @@ export const weaponRecipes = [
   new IceElemental(),
   new WaterSlam(),
   new LightningElemental(),
+  new EternalWinter(),
 ];
