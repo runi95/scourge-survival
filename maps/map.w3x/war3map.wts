@@ -15609,3 +15609,65 @@ STRING 2876
 Grave Curse
 }
 
+STRING 2877
+// Items: I0BG (Haunted Graveyard), Tip (Tooltip - Basic)
+{
+Purchase Haunted Graveyard
+}
+
+STRING 2878
+// Items: I0BG (Haunted Graveyard), Description (Description)
+{
+Raises 2 Skeleton Warriors every 10 seconds that fight by your side.
+}
+
+STRING 2879
+// Items: I0BG (Haunted Graveyard), Ubertip (Tooltip - Extended)
+{
+Raises 2 Skeleton Warriors every 10 seconds that fight by your side.
+}
+
+STRING 2880
+// Items: I0BG (Haunted Graveyard), Name (Name)
+{
+Haunted Graveyard
+}
+
+STRING 2881
+// Items: I0BH (Haunted Graveyard), Tip (Tooltip - Basic)
+{
+Purchase Haunted Graveyard
+}
+
+STRING 2882
+// Items: I0BH (Haunted Graveyard), Ubertip (Tooltip - Extended)
+{
+Raises 2 Skeleton Warriors every 10 seconds that fight by your side.
+
+Damage: |cffffcc002 x 26 - 42|r
+Cooldown: |cffffcc0010s|r
+Health: |cffffcc00200|r
+Duration: |cffffcc0010s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00normal|r
+}
+
+STRING 2883
+// Items: I0BH (Haunted Graveyard), Description (Description)
+{
+Raises 2 Skeleton Warriors every 10 seconds that fight by your side.
+
+Damage: |cffffcc002 x 26 - 42|r
+Cooldown: |cffffcc0010s|r
+Health: |cffffcc00200|r
+Duration: |cffffcc0010s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00normal|r
+}
+
+STRING 2884
+// Items: I0BH (Haunted Graveyard), Name (Name)
+{
+Haunted Graveyard
+}
+
