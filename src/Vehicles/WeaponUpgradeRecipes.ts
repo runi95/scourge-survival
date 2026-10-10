@@ -210,4 +210,5 @@ export const weaponRecipes = [
   new Recipes.DryadGrove(),
   new Recipes.DryadVolley(),
   new Recipes.FanOfArrows(),
+  new Recipes.Firestorm(),
 ];

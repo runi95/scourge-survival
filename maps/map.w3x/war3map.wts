@@ -17281,3 +17281,71 @@ STRING 3091
 Fan of Arrows
 }
 
+STRING 3092
+// Items: I0CW (Firestorm), Tip (Tooltip - Basic)
+{
+Purchase Firestorm
+}
+
+STRING 3093
+// Items: I0CW (Firestorm), Description (Description)
+{
+Summons a burning tornado every 10 seconds that wanders around, tossing enemies into the air and burning everything around it.
+}
+
+STRING 3094
+// Items: I0CW (Firestorm), Ubertip (Tooltip - Extended)
+{
+Summons a burning tornado every 10 seconds that wanders around, tossing enemies into the air and burning everything around it.
+}
+
+STRING 3095
+// Items: I0CW (Firestorm), Name (Name)
+{
+Firestorm
+}
+
+STRING 3096
+// Items: I0CX (Firestorm), Tip (Tooltip - Basic)
+{
+Purchase Firestorm
+}
+
+STRING 3097
+// Items: I0CX (Firestorm), Ubertip (Tooltip - Extended)
+{
+Summons a burning tornado every 10 seconds that wanders around, tossing enemies into the air and burning everything around it.
+
+Damage: |cffffcc0025 - 180 (tornado) + 12 per second (fire)|r
+Cooldown: |cffffcc0010s|r
+Area of effect: |cffffcc00650 (tornado) + 300 (fire)|r
+Duration: |cffffcc0010s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 3098
+// Items: I0CX (Firestorm), Description (Description)
+{
+Summons a burning tornado every 10 seconds that wanders around, tossing enemies into the air and burning everything around it.
+
+Damage: |cffffcc0025 - 180 (tornado) + 12 per second (fire)|r
+Cooldown: |cffffcc0010s|r
+Area of effect: |cffffcc00650 (tornado) + 300 (fire)|r
+Duration: |cffffcc0010s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 3099
+// Items: I0CX (Firestorm), Name (Name)
+{
+Firestorm
+}
+
+STRING 3100
+// Units: n01J (Fire Tornado), Name (Name)
+{
+Fire Tornado
+}
+
