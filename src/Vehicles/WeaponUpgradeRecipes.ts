@@ -231,4 +231,5 @@ export const weaponRecipes = [
   new Recipes.SearingSpear(),
   new Recipes.SearingStrike(),
   new Recipes.SearingVolley(),
+  new Recipes.ShadowCyclone(),
 ];
