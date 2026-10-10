@@ -8831,3 +8831,33 @@ STRING 2017
 Dryad Spear
 }
 
+STRING 2018
+// Items: I05P (Entangling Roots), Name (Name)
+{
+Entangling Roots
+}
+
+STRING 2019
+// Items: I05P (Entangling Roots), Tip (Tooltip - Basic)
+{
+Purchase Entangling Roots
+}
+
+STRING 2020
+// Items: I05P (Entangling Roots), Description (Description)
+{
+Roots a random nearby enemy in place, damaging it over time.
+}
+
+STRING 2021
+// Items: I05P (Entangling Roots), Ubertip (Tooltip - Extended)
+{
+Roots a random nearby enemy in place, damaging it over time.
+}
+
+STRING 2022
+// Abilities: A046 (Entangling Roots), Name (Name)
+{
+Entangling Roots
+}
+

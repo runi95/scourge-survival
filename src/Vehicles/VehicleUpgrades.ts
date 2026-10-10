@@ -66,6 +66,7 @@ import {
   StormBolt,
   Ensnare,
   CarrionSwarm,
+  EntanglingRoots,
 } from "./Upgrades/Weapons/Uncommon/index";
 import { VehicleUpgrade } from "./VehicleUpgrade";
 
@@ -108,6 +109,7 @@ export const uncommonUpgrades: VehicleUpgrade[] = [
   new StormBolt(),
   new Ensnare(),
   new CarrionSwarm(),
+  new EntanglingRoots(),
 ];
 
 export const rareUpgrades: VehicleUpgrade[] = [
