@@ -8377,3 +8377,79 @@ STRING 1944
 Meteor Impact
 }
 
+STRING 1945
+// Items: I05A (Steam Rockets), Tip (Tooltip - Basic)
+{
+Purchase Steam Rockets
+}
+
+STRING 1946
+// Items: I05A (Steam Rockets), Description (Description)
+{
+Sends Cluster Rockets into a random area. They burst into scalding steam that burns enemies for a few seconds.
+}
+
+STRING 1947
+// Items: I05A (Steam Rockets), Ubertip (Tooltip - Extended)
+{
+Sends Cluster Rockets into a random area. They burst into scalding steam that burns enemies for a few seconds.
+}
+
+STRING 1948
+// Items: I05A (Steam Rockets), Name (Name)
+{
+Steam Rockets
+}
+
+STRING 1949
+// Items: I05B (Steam Rockets), Tip (Tooltip - Basic)
+{
+Purchase Steam Rockets
+}
+
+STRING 1950
+// Items: I05B (Steam Rockets), Ubertip (Tooltip - Extended)
+{
+Sends Cluster Rockets into a random area. They burst into scalding steam that burns enemies for a few seconds.
+
+Damage: |cffffcc006 x 17.5 (rockets) + 25/s (steam)|r
+Cooldown: |cffffcc002s|r
+Area of effect: |cffffcc00300|r
+Steam duration: |cffffcc003s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+Effect: |cffffcc00stuns for 1s|r
+}
+
+STRING 1951
+// Items: I05B (Steam Rockets), Description (Description)
+{
+Sends Cluster Rockets into a random area. They burst into scalding steam that burns enemies for a few seconds.
+
+Damage: |cffffcc006 x 17.5 (rockets) + 25/s (steam)|r
+Cooldown: |cffffcc002s|r
+Area of effect: |cffffcc00300|r
+Steam duration: |cffffcc003s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+Effect: |cffffcc00stuns for 1s|r
+}
+
+STRING 1952
+// Items: I05B (Steam Rockets), Name (Name)
+{
+Steam Rockets
+}
+
+STRING 1953
+// Abilities: A03Y (Scalding Steam), Name (Name)
+{
+Scalding Steam
+}
+
+STRING 1954
+// Units: u01O (Scalding Steam), Name (Name)
+{
+Scalding Steam
+}
+
