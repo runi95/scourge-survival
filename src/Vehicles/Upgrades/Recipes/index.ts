@@ -219,3 +219,4 @@ export * from "./PoisonMine";
 export * from "./PoisonRockets";
 export * from "./PoisonedArrow";
 export * from "./RootMine";
+export * from "./RootRockets";
