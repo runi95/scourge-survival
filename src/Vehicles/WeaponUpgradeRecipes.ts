@@ -67,6 +67,7 @@ import { VolcanicEruption } from "./Upgrades/Recipes/VolcanicEruption";
 import { Starfall } from "./Upgrades/Recipes/Starfall";
 import { Metamorphosis } from "./Upgrades/Recipes/Metamorphosis";
 import { ImpalingCross } from "./Upgrades/Recipes/ImpalingCross";
+import { Shatter } from "./Upgrades/Recipes/Shatter";
 
 export const weaponRecipes = [
   new DualCannons(),
@@ -138,4 +139,5 @@ export const weaponRecipes = [
   new Starfall(),
   new Metamorphosis(),
   new ImpalingCross(),
+  new Shatter(),
 ];
