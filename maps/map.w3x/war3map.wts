@@ -12705,3 +12705,67 @@ STRING 2513
 Spirit Stomp
 }
 
+STRING 2514
+// Items: I090 (Rocket Stomp), Tip (Tooltip - Basic)
+{
+Purchase Rocket Stomp
+}
+
+STRING 2515
+// Items: I090 (Rocket Stomp), Description (Description)
+{
+Fires Cluster Rockets at a random enemy unit within range and stomps the ground, stunning every enemy around your hero.
+}
+
+STRING 2516
+// Items: I090 (Rocket Stomp), Ubertip (Tooltip - Extended)
+{
+Fires Cluster Rockets at a random enemy unit within range and stomps the ground, stunning every enemy around your hero.
+}
+
+STRING 2517
+// Items: I090 (Rocket Stomp), Name (Name)
+{
+Rocket Stomp
+}
+
+STRING 2518
+// Items: I091 (Rocket Stomp), Tip (Tooltip - Basic)
+{
+Purchase Rocket Stomp
+}
+
+STRING 2519
+// Items: I091 (Rocket Stomp), Ubertip (Tooltip - Extended)
+{
+Fires Cluster Rockets at a random enemy unit within range and stomps the ground, stunning every enemy around your hero.
+
+Damage: |cffffcc006 x 17.5 (rockets) + 90 (stomp)|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00600|r
+Area of effect: |cffffcc00300|r
+Stun duration: |cffffcc001s (rockets) + 1.5s (stomp)|r
+Targets: |cffffcc00air & ground (rockets), ground (stomp)|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 2520
+// Items: I091 (Rocket Stomp), Description (Description)
+{
+Fires Cluster Rockets at a random enemy unit within range and stomps the ground, stunning every enemy around your hero.
+
+Damage: |cffffcc006 x 17.5 (rockets) + 90 (stomp)|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00600|r
+Area of effect: |cffffcc00300|r
+Stun duration: |cffffcc001s (rockets) + 1.5s (stomp)|r
+Targets: |cffffcc00air & ground (rockets), ground (stomp)|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 2521
+// Items: I091 (Rocket Stomp), Name (Name)
+{
+Rocket Stomp
+}
+

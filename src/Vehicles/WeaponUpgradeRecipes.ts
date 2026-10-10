@@ -140,4 +140,5 @@ export const weaponRecipes = [
   new Recipes.LightningNet(),
   new Recipes.SeismicStomp(),
   new Recipes.SpiritStomp(),
+  new Recipes.RocketStomp(),
 ];
