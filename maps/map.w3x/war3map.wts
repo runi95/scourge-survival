@@ -18787,3 +18787,69 @@ STRING 3282
 Shadow Trap
 }
 
+STRING 3283
+// Items: I0E6 (Shadow Treants), Tip (Tooltip - Basic)
+{
+Purchase Shadow Treants
+}
+
+STRING 3284
+// Items: I0E6 (Shadow Treants), Description (Description)
+{
+Throws a poisoned dagger at a random enemy unit within range, and a Treant sprouts beside it.
+}
+
+STRING 3285
+// Items: I0E6 (Shadow Treants), Ubertip (Tooltip - Extended)
+{
+Throws a poisoned dagger at a random enemy unit within range, and a Treant sprouts beside it.
+}
+
+STRING 3286
+// Items: I0E6 (Shadow Treants), Name (Name)
+{
+Shadow Treants
+}
+
+STRING 3287
+// Items: I0E7 (Shadow Treants), Tip (Tooltip - Basic)
+{
+Purchase Shadow Treants
+}
+
+STRING 3288
+// Items: I0E7 (Shadow Treants), Ubertip (Tooltip - Extended)
+{
+Throws a poisoned dagger at a random enemy unit within range, and a Treant sprouts beside it.
+
+Damage: |cffffcc00100 + 30 every 3s for 9s (dagger) + 15 - 17 (treant)|r
+Slow: |cffffcc00-50% movement speed for 9s|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00700|r
+Health: |cffffcc00300|r
+Duration: |cffffcc008s|r
+Targets: |cffffcc00air & ground (dagger), ground (treant)|r
+Damage type: |cffffcc00spell + normal|r
+}
+
+STRING 3289
+// Items: I0E7 (Shadow Treants), Description (Description)
+{
+Throws a poisoned dagger at a random enemy unit within range, and a Treant sprouts beside it.
+
+Damage: |cffffcc00100 + 30 every 3s for 9s (dagger) + 15 - 17 (treant)|r
+Slow: |cffffcc00-50% movement speed for 9s|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00700|r
+Health: |cffffcc00300|r
+Duration: |cffffcc008s|r
+Targets: |cffffcc00air & ground (dagger), ground (treant)|r
+Damage type: |cffffcc00spell + normal|r
+}
+
+STRING 3290
+// Items: I0E7 (Shadow Treants), Name (Name)
+{
+Shadow Treants
+}
+

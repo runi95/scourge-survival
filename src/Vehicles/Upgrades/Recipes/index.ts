@@ -228,3 +228,4 @@ export * from "./SearingStrike";
 export * from "./SearingVolley";
 export * from "./ShadowCyclone";
 export * from "./ShadowTrap";
+export * from "./ShadowTreants";
