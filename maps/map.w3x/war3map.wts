@@ -13747,3 +13747,71 @@ STRING 2644
 Bat Bolts
 }
 
+STRING 2645
+// Items: I09W (Bat Graveyard), Tip (Tooltip - Basic)
+{
+Purchase Bat Graveyard
+}
+
+STRING 2646
+// Items: I09W (Bat Graveyard), Description (Description)
+{
+Sends a horde of bats towards a random enemy unit within range and raises a Skeleton Warrior beside your hero.
+}
+
+STRING 2647
+// Items: I09W (Bat Graveyard), Ubertip (Tooltip - Extended)
+{
+Sends a horde of bats towards a random enemy unit within range and raises a Skeleton Warrior beside your hero.
+}
+
+STRING 2648
+// Items: I09W (Bat Graveyard), Name (Name)
+{
+Bat Graveyard
+}
+
+STRING 2649
+// Items: I09X (Bat Graveyard), Tip (Tooltip - Basic)
+{
+Purchase Bat Graveyard
+}
+
+STRING 2650
+// Items: I09X (Bat Graveyard), Ubertip (Tooltip - Extended)
+{
+Sends a horde of bats towards a random enemy unit within range and raises a Skeleton Warrior beside your hero.
+
+Damage: |cffffcc0075 (bats) + 26 - 42 (skeleton)|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00600|r
+Distance: |cffffcc00800|r
+Area of effect: |cffffcc00100 - 300|r
+Health: |cffffcc00200|r
+Duration: |cffffcc0010s|r
+Targets: |cffffcc00air & ground (bats), ground (skeleton)|r
+Damage type: |cffffcc00spell + normal|r
+}
+
+STRING 2651
+// Items: I09X (Bat Graveyard), Description (Description)
+{
+Sends a horde of bats towards a random enemy unit within range and raises a Skeleton Warrior beside your hero.
+
+Damage: |cffffcc0075 (bats) + 26 - 42 (skeleton)|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00600|r
+Distance: |cffffcc00800|r
+Area of effect: |cffffcc00100 - 300|r
+Health: |cffffcc00200|r
+Duration: |cffffcc0010s|r
+Targets: |cffffcc00air & ground (bats), ground (skeleton)|r
+Damage type: |cffffcc00spell + normal|r
+}
+
+STRING 2652
+// Items: I09X (Bat Graveyard), Name (Name)
+{
+Bat Graveyard
+}
+

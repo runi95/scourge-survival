@@ -156,4 +156,5 @@ export const weaponRecipes = [
   new Recipes.NetVolley(),
   new Recipes.SpearVolley(),
   new Recipes.BatBolts(),
+  new Recipes.BatGraveyard(),
 ];

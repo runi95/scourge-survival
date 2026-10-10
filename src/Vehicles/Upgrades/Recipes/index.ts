@@ -151,3 +151,4 @@ export * from "./HuntersSpear";
 export * from "./NetVolley";
 export * from "./SpearVolley";
 export * from "./BatBolts";
+export * from "./BatGraveyard";
