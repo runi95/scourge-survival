@@ -19107,3 +19107,67 @@ STRING 3322
 Thorn Burst
 }
 
+STRING 3323
+// Items: I0EG (Thorn Fan), Tip (Tooltip - Basic)
+{
+Purchase Thorn Fan
+}
+
+STRING 3324
+// Items: I0EG (Thorn Fan), Description (Description)
+{
+Roots a random enemy unit within range in place and flings a fan of knives at every enemy around your hero.
+}
+
+STRING 3325
+// Items: I0EG (Thorn Fan), Ubertip (Tooltip - Extended)
+{
+Roots a random enemy unit within range in place and flings a fan of knives at every enemy around your hero.
+}
+
+STRING 3326
+// Items: I0EG (Thorn Fan), Name (Name)
+{
+Thorn Fan
+}
+
+STRING 3327
+// Items: I0EH (Thorn Fan), Tip (Tooltip - Basic)
+{
+Purchase Thorn Fan
+}
+
+STRING 3328
+// Items: I0EH (Thorn Fan), Ubertip (Tooltip - Extended)
+{
+Roots a random enemy unit within range in place and flings a fan of knives at every enemy around your hero.
+
+Damage: |cffffcc0015 per second (roots) + 75 (knives)|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00600|r
+Area of effect: |cffffcc00400|r
+Duration: |cffffcc002.5s|r
+Targets: |cffffcc00ground (roots), air & ground (knives)|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 3329
+// Items: I0EH (Thorn Fan), Description (Description)
+{
+Roots a random enemy unit within range in place and flings a fan of knives at every enemy around your hero.
+
+Damage: |cffffcc0015 per second (roots) + 75 (knives)|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00600|r
+Area of effect: |cffffcc00400|r
+Duration: |cffffcc002.5s|r
+Targets: |cffffcc00ground (roots), air & ground (knives)|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 3330
+// Items: I0EH (Thorn Fan), Name (Name)
+{
+Thorn Fan
+}
+

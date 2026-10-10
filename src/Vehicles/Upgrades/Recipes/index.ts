@@ -233,3 +233,4 @@ export * from "./StranglingStrike";
 export * from "./StranglingWinds";
 export * from "./ThornArrow";
 export * from "./ThornBurst";
+export * from "./ThornFan";
