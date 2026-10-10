@@ -15869,3 +15869,73 @@ STRING 2909
 Plague Swarm
 }
 
+STRING 2910
+// Items: I0BO (Shadow Mine), Tip (Tooltip - Basic)
+{
+Purchase Shadow Mine
+}
+
+STRING 2911
+// Items: I0BO (Shadow Mine), Description (Description)
+{
+Places cursed land mines underneath your hero. When an enemy steps on one, it explodes and fires shadow bolts at 3 enemy units nearby.
+}
+
+STRING 2912
+// Items: I0BO (Shadow Mine), Ubertip (Tooltip - Extended)
+{
+Places cursed land mines underneath your hero. When an enemy steps on one, it explodes and fires shadow bolts at 3 enemy units nearby.
+}
+
+STRING 2913
+// Items: I0BO (Shadow Mine), Name (Name)
+{
+Shadow Mine
+}
+
+STRING 2914
+// Items: I0BP (Shadow Mine), Tip (Tooltip - Basic)
+{
+Purchase Shadow Mine
+}
+
+STRING 2915
+// Items: I0BP (Shadow Mine), Ubertip (Tooltip - Extended)
+{
+Places cursed land mines underneath your hero. When an enemy steps on one, it explodes and fires shadow bolts at 3 enemy units nearby.
+
+Damage: |cffffcc00100 (explosion) + 3 x 20 - 24 (bolts)|r
+Cooldown: |cffffcc003s|r
+Area of effect: |cffffcc00300|r
+Range: |cffffcc00500 (bolts)|r
+Mine activation delay: |cffffcc004s|r
+Targets: |cffffcc00ground (explosion), air & ground (bolts)|r
+Damage type: |cffffcc00spell + magic|r
+}
+
+STRING 2916
+// Items: I0BP (Shadow Mine), Description (Description)
+{
+Places cursed land mines underneath your hero. When an enemy steps on one, it explodes and fires shadow bolts at 3 enemy units nearby.
+
+Damage: |cffffcc00100 (explosion) + 3 x 20 - 24 (bolts)|r
+Cooldown: |cffffcc003s|r
+Area of effect: |cffffcc00300|r
+Range: |cffffcc00500 (bolts)|r
+Mine activation delay: |cffffcc004s|r
+Targets: |cffffcc00ground (explosion), air & ground (bolts)|r
+Damage type: |cffffcc00spell + magic|r
+}
+
+STRING 2917
+// Items: I0BP (Shadow Mine), Name (Name)
+{
+Shadow Mine
+}
+
+STRING 2918
+// Units: n01F (Shadow Mine), Name (Name)
+{
+Shadow Mine
+}
+
