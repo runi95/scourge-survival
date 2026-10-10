@@ -15671,3 +15671,65 @@ STRING 2884
 Haunted Graveyard
 }
 
+STRING 2885
+// Items: I0BI (Necromancer Academy), Tip (Tooltip - Basic)
+{
+Purchase Necromancer Academy
+}
+
+STRING 2886
+// Items: I0BI (Necromancer Academy), Description (Description)
+{
+Sends out 3 Necromancers every 30 seconds that fire shadow bolts at enemies.
+}
+
+STRING 2887
+// Items: I0BI (Necromancer Academy), Ubertip (Tooltip - Extended)
+{
+Sends out 3 Necromancers every 30 seconds that fire shadow bolts at enemies.
+}
+
+STRING 2888
+// Items: I0BI (Necromancer Academy), Name (Name)
+{
+Necromancer Academy
+}
+
+STRING 2889
+// Items: I0BJ (Necromancer Academy), Tip (Tooltip - Basic)
+{
+Purchase Necromancer Academy
+}
+
+STRING 2890
+// Items: I0BJ (Necromancer Academy), Ubertip (Tooltip - Extended)
+{
+Sends out 3 Necromancers every 30 seconds that fire shadow bolts at enemies.
+
+Damage: |cffffcc003 x 10 - 11|r
+Cooldown: |cffffcc0030s|r
+Health: |cffffcc00315|r
+Duration: |cffffcc0020s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00magic|r
+}
+
+STRING 2891
+// Items: I0BJ (Necromancer Academy), Description (Description)
+{
+Sends out 3 Necromancers every 30 seconds that fire shadow bolts at enemies.
+
+Damage: |cffffcc003 x 10 - 11|r
+Cooldown: |cffffcc0030s|r
+Health: |cffffcc00315|r
+Duration: |cffffcc0020s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00magic|r
+}
+
+STRING 2892
+// Items: I0BJ (Necromancer Academy), Name (Name)
+{
+Necromancer Academy
+}
+
