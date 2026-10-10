@@ -9047,3 +9047,65 @@ STRING 2048
 Thunder Bombs
 }
 
+STRING 2049
+// Items: I05W (Hammer Squadron), Tip (Tooltip - Basic)
+{
+Purchase Hammer Squadron
+}
+
+STRING 2050
+// Items: I05W (Hammer Squadron), Description (Description)
+{
+Throws magical hammers at 3 random enemy units within range, damaging and stunning them.
+}
+
+STRING 2051
+// Items: I05W (Hammer Squadron), Ubertip (Tooltip - Extended)
+{
+Throws magical hammers at 3 random enemy units within range, damaging and stunning them.
+}
+
+STRING 2052
+// Items: I05W (Hammer Squadron), Name (Name)
+{
+Hammer Squadron
+}
+
+STRING 2053
+// Items: I05X (Hammer Squadron), Tip (Tooltip - Basic)
+{
+Purchase Hammer Squadron
+}
+
+STRING 2054
+// Items: I05X (Hammer Squadron), Ubertip (Tooltip - Extended)
+{
+Throws magical hammers at 3 random enemy units within range, damaging and stunning them.
+
+Damage: |cffffcc003 x 100|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00800|r
+Stun duration: |cffffcc001s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 2055
+// Items: I05X (Hammer Squadron), Description (Description)
+{
+Throws magical hammers at 3 random enemy units within range, damaging and stunning them.
+
+Damage: |cffffcc003 x 100|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00800|r
+Stun duration: |cffffcc001s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 2056
+// Items: I05X (Hammer Squadron), Name (Name)
+{
+Hammer Squadron
+}
+
