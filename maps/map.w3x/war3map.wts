@@ -14409,3 +14409,67 @@ STRING 2726
 Crypt Fiend Den
 }
 
+STRING 2727
+// Items: I0AG (Death Bolt), Tip (Tooltip - Basic)
+{
+Purchase Death Bolt
+}
+
+STRING 2728
+// Items: I0AG (Death Bolt), Description (Description)
+{
+Fires a shadow bolt at a random enemy unit within range, and a Skeleton Warrior rises where it hits.
+}
+
+STRING 2729
+// Items: I0AG (Death Bolt), Ubertip (Tooltip - Extended)
+{
+Fires a shadow bolt at a random enemy unit within range, and a Skeleton Warrior rises where it hits.
+}
+
+STRING 2730
+// Items: I0AG (Death Bolt), Name (Name)
+{
+Death Bolt
+}
+
+STRING 2731
+// Items: I0AH (Death Bolt), Tip (Tooltip - Basic)
+{
+Purchase Death Bolt
+}
+
+STRING 2732
+// Items: I0AH (Death Bolt), Ubertip (Tooltip - Extended)
+{
+Fires a shadow bolt at a random enemy unit within range, and a Skeleton Warrior rises where it hits.
+
+Damage: |cffffcc0020 - 24 (bolt) + 26 - 42 (skeleton)|r
+Cooldown: |cffffcc002.5s|r
+Range: |cffffcc00600|r
+Health: |cffffcc00200|r
+Duration: |cffffcc008s|r
+Targets: |cffffcc00air & ground (bolt), ground (skeleton)|r
+Damage type: |cffffcc00magic + normal|r
+}
+
+STRING 2733
+// Items: I0AH (Death Bolt), Description (Description)
+{
+Fires a shadow bolt at a random enemy unit within range, and a Skeleton Warrior rises where it hits.
+
+Damage: |cffffcc0020 - 24 (bolt) + 26 - 42 (skeleton)|r
+Cooldown: |cffffcc002.5s|r
+Range: |cffffcc00600|r
+Health: |cffffcc00200|r
+Duration: |cffffcc008s|r
+Targets: |cffffcc00air & ground (bolt), ground (skeleton)|r
+Damage type: |cffffcc00magic + normal|r
+}
+
+STRING 2734
+// Items: I0AH (Death Bolt), Name (Name)
+{
+Death Bolt
+}
+

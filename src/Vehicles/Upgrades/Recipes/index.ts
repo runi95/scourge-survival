@@ -161,3 +161,4 @@ export * from "./CorpseMine";
 export * from "./CripplingBolt";
 export * from "./CripplingRockets";
 export * from "./CryptFiendDen";
+export * from "./DeathBolt";
