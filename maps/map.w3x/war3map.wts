@@ -10985,3 +10985,65 @@ STRING 2295
 Hammer Mine
 }
 
+STRING 2296
+// Items: I07I (Tauren Totem), Tip (Tooltip - Basic)
+{
+Purchase Tauren Totem
+}
+
+STRING 2297
+// Items: I07I (Tauren Totem), Description (Description)
+{
+Calls 2 Tauren every 30 seconds that fight by your side.
+}
+
+STRING 2298
+// Items: I07I (Tauren Totem), Ubertip (Tooltip - Extended)
+{
+Calls 2 Tauren every 30 seconds that fight by your side.
+}
+
+STRING 2299
+// Items: I07I (Tauren Totem), Name (Name)
+{
+Tauren Totem
+}
+
+STRING 2300
+// Items: I07J (Tauren Totem), Tip (Tooltip - Basic)
+{
+Purchase Tauren Totem
+}
+
+STRING 2301
+// Items: I07J (Tauren Totem), Ubertip (Tooltip - Extended)
+{
+Calls 2 Tauren every 30 seconds that fight by your side.
+
+Damage: |cffffcc002 x 30 - 36|r
+Cooldown: |cffffcc0030s|r
+Health: |cffffcc001300|r
+Duration: |cffffcc0020s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00normal|r
+}
+
+STRING 2302
+// Items: I07J (Tauren Totem), Description (Description)
+{
+Calls 2 Tauren every 30 seconds that fight by your side.
+
+Damage: |cffffcc002 x 30 - 36|r
+Cooldown: |cffffcc0030s|r
+Health: |cffffcc001300|r
+Duration: |cffffcc0020s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00normal|r
+}
+
+STRING 2303
+// Items: I07J (Tauren Totem), Name (Name)
+{
+Tauren Totem
+}
+
