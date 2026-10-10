@@ -11109,3 +11109,65 @@ STRING 2311
 Siege Workshop
 }
 
+STRING 2312
+// Items: I07M (Kodo Pen), Tip (Tooltip - Basic)
+{
+Purchase Kodo Pen
+}
+
+STRING 2313
+// Items: I07M (Kodo Pen), Description (Description)
+{
+Sends out 2 Kodo Beasts every 30 seconds that fight by your side.
+}
+
+STRING 2314
+// Items: I07M (Kodo Pen), Ubertip (Tooltip - Extended)
+{
+Sends out 2 Kodo Beasts every 30 seconds that fight by your side.
+}
+
+STRING 2315
+// Items: I07M (Kodo Pen), Name (Name)
+{
+Kodo Pen
+}
+
+STRING 2316
+// Items: I07N (Kodo Pen), Tip (Tooltip - Basic)
+{
+Purchase Kodo Pen
+}
+
+STRING 2317
+// Items: I07N (Kodo Pen), Ubertip (Tooltip - Extended)
+{
+Sends out 2 Kodo Beasts every 30 seconds that fight by your side.
+
+Damage: |cffffcc002 x 16 - 20|r
+Cooldown: |cffffcc0030s|r
+Health: |cffffcc001000|r
+Duration: |cffffcc0020s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing|r
+}
+
+STRING 2318
+// Items: I07N (Kodo Pen), Description (Description)
+{
+Sends out 2 Kodo Beasts every 30 seconds that fight by your side.
+
+Damage: |cffffcc002 x 16 - 20|r
+Cooldown: |cffffcc0030s|r
+Health: |cffffcc001000|r
+Duration: |cffffcc0020s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing|r
+}
+
+STRING 2319
+// Items: I07N (Kodo Pen), Name (Name)
+{
+Kodo Pen
+}
+

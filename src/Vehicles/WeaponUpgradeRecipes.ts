@@ -115,4 +115,5 @@ export const weaponRecipes = [
   new Recipes.HammerMine(),
   new Recipes.TaurenTotem(),
   new Recipes.SiegeWorkshop(),
+  new Recipes.KodoPen(),
 ];

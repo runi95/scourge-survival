@@ -110,3 +110,4 @@ export * from "./ThunderMine";
 export * from "./HammerMine";
 export * from "./TaurenTotem";
 export * from "./SiegeWorkshop";
+export * from "./KodoPen";
