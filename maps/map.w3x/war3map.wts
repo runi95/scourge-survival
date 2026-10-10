@@ -8483,3 +8483,33 @@ STRING 1959
 Thunder Clap
 }
 
+STRING 1960
+// Items: I05D (Storm Bolt), Name (Name)
+{
+Storm Bolt
+}
+
+STRING 1961
+// Items: I05D (Storm Bolt), Tip (Tooltip - Basic)
+{
+Purchase Storm Bolt
+}
+
+STRING 1962
+// Items: I05D (Storm Bolt), Description (Description)
+{
+Throws a magical hammer at a random nearby enemy.
+}
+
+STRING 1963
+// Items: I05D (Storm Bolt), Ubertip (Tooltip - Extended)
+{
+Throws a magical hammer at a random nearby enemy.
+}
+
+STRING 1964
+// Abilities: A040 (Storm Bolt), Name (Name)
+{
+Storm Bolt
+}
+

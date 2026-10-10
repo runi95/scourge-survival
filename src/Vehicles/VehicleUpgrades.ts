@@ -51,6 +51,7 @@ import {
   Burrow,
   FrostNova,
   ThunderClap,
+  StormBolt,
 } from "./Upgrades/Weapons/Uncommon/index";
 import { VehicleUpgrade } from "./VehicleUpgrade";
 
@@ -85,6 +86,7 @@ export const uncommonUpgrades: VehicleUpgrade[] = [
   new Burrow(),
   new FrostNova(),
   new ThunderClap(),
+  new StormBolt(),
 ];
 
 export const rareUpgrades: VehicleUpgrade[] = [
