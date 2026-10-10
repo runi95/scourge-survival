@@ -222,4 +222,5 @@ export const weaponRecipes = [
   new Recipes.Overgrowth(),
   new Recipes.PoisonMine(),
   new Recipes.PoisonRockets(),
+  new Recipes.PoisonedArrow(),
 ];

@@ -18057,3 +18057,65 @@ STRING 3190
 Poison Rockets
 }
 
+STRING 3191
+// Items: I0DK (Poisoned Arrow), Tip (Tooltip - Basic)
+{
+Purchase Poisoned Arrow
+}
+
+STRING 3192
+// Items: I0DK (Poisoned Arrow), Description (Description)
+{
+Fires a searing arrow and throws a poisoned dagger at a random enemy unit within range.
+}
+
+STRING 3193
+// Items: I0DK (Poisoned Arrow), Ubertip (Tooltip - Extended)
+{
+Fires a searing arrow and throws a poisoned dagger at a random enemy unit within range.
+}
+
+STRING 3194
+// Items: I0DK (Poisoned Arrow), Name (Name)
+{
+Poisoned Arrow
+}
+
+STRING 3195
+// Items: I0DL (Poisoned Arrow), Tip (Tooltip - Basic)
+{
+Purchase Poisoned Arrow
+}
+
+STRING 3196
+// Items: I0DL (Poisoned Arrow), Ubertip (Tooltip - Extended)
+{
+Fires a searing arrow and throws a poisoned dagger at a random enemy unit within range.
+
+Damage: |cffffcc0020 (arrow) + 100 + 30 every 3s for 9s (dagger)|r
+Slow: |cffffcc00-50% movement speed for 9s|r
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00700|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing + spell|r
+}
+
+STRING 3197
+// Items: I0DL (Poisoned Arrow), Description (Description)
+{
+Fires a searing arrow and throws a poisoned dagger at a random enemy unit within range.
+
+Damage: |cffffcc0020 (arrow) + 100 + 30 every 3s for 9s (dagger)|r
+Slow: |cffffcc00-50% movement speed for 9s|r
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00700|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing + spell|r
+}
+
+STRING 3198
+// Items: I0DL (Poisoned Arrow), Name (Name)
+{
+Poisoned Arrow
+}
+
