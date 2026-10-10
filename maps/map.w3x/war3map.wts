@@ -17539,3 +17539,65 @@ STRING 3124
 Glaive Workshop
 }
 
+STRING 3125
+// Items: I0D4 (Huntress Hall), Tip (Tooltip - Basic)
+{
+Purchase Huntress Hall
+}
+
+STRING 3126
+// Items: I0D4 (Huntress Hall), Description (Description)
+{
+Sends out 2 Huntresses every 30 seconds. Their glaives bounce between enemies.
+}
+
+STRING 3127
+// Items: I0D4 (Huntress Hall), Ubertip (Tooltip - Extended)
+{
+Sends out 2 Huntresses every 30 seconds. Their glaives bounce between enemies.
+}
+
+STRING 3128
+// Items: I0D4 (Huntress Hall), Name (Name)
+{
+Huntress Hall
+}
+
+STRING 3129
+// Items: I0D5 (Huntress Hall), Tip (Tooltip - Basic)
+{
+Purchase Huntress Hall
+}
+
+STRING 3130
+// Items: I0D5 (Huntress Hall), Ubertip (Tooltip - Extended)
+{
+Sends out 2 Huntresses every 30 seconds. Their glaives bounce between enemies.
+
+Damage: |cffffcc002 x 16 - 18|r
+Cooldown: |cffffcc0030s|r
+Health: |cffffcc00600|r
+Duration: |cffffcc0020s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00normal|r
+}
+
+STRING 3131
+// Items: I0D5 (Huntress Hall), Description (Description)
+{
+Sends out 2 Huntresses every 30 seconds. Their glaives bounce between enemies.
+
+Damage: |cffffcc002 x 16 - 18|r
+Cooldown: |cffffcc0030s|r
+Health: |cffffcc00600|r
+Duration: |cffffcc0020s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00normal|r
+}
+
+STRING 3132
+// Items: I0D5 (Huntress Hall), Name (Name)
+{
+Huntress Hall
+}
+

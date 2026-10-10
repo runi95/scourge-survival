@@ -209,3 +209,4 @@ export * from "./Firestorm";
 export * from "./FlamingRockets";
 export * from "./FlamingSpear";
 export * from "./GlaiveWorkshop";
+export * from "./HuntressHall";
