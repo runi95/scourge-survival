@@ -140,3 +140,4 @@ export * from "./TremorMine";
 export * from "./EarthSpikes";
 export * from "./HuntersStomp";
 export * from "./SpiritPack";
+export * from "./RocketWolves";

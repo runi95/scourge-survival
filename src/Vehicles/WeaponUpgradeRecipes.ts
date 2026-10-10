@@ -145,4 +145,5 @@ export const weaponRecipes = [
   new Recipes.EarthSpikes(),
   new Recipes.HuntersStomp(),
   new Recipes.SpiritPack(),
+  new Recipes.RocketWolves(),
 ];

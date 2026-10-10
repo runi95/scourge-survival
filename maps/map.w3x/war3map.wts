@@ -13029,3 +13029,71 @@ STRING 2554
 Spirit Pack
 }
 
+STRING 2555
+// Items: I09A (Rocket Wolves), Tip (Tooltip - Basic)
+{
+Purchase Rocket Wolves
+}
+
+STRING 2556
+// Items: I09A (Rocket Wolves), Description (Description)
+{
+Fires Cluster Rockets at a random enemy unit within range, and a Spirit Wolf charges in after them.
+}
+
+STRING 2557
+// Items: I09A (Rocket Wolves), Ubertip (Tooltip - Extended)
+{
+Fires Cluster Rockets at a random enemy unit within range, and a Spirit Wolf charges in after them.
+}
+
+STRING 2558
+// Items: I09A (Rocket Wolves), Name (Name)
+{
+Rocket Wolves
+}
+
+STRING 2559
+// Items: I09B (Rocket Wolves), Tip (Tooltip - Basic)
+{
+Purchase Rocket Wolves
+}
+
+STRING 2560
+// Items: I09B (Rocket Wolves), Ubertip (Tooltip - Extended)
+{
+Fires Cluster Rockets at a random enemy unit within range, and a Spirit Wolf charges in after them.
+
+Damage: |cffffcc006 x 17.5 (rockets) + 16 - 17 (wolf)|r
+Cooldown: |cffffcc004s|r
+Range: |cffffcc00700|r
+Area of effect: |cffffcc00300|r
+Health: |cffffcc00350|r
+Duration: |cffffcc0010s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell + normal|r
+Effect: |cffffcc00stuns for 1s|r
+}
+
+STRING 2561
+// Items: I09B (Rocket Wolves), Description (Description)
+{
+Fires Cluster Rockets at a random enemy unit within range, and a Spirit Wolf charges in after them.
+
+Damage: |cffffcc006 x 17.5 (rockets) + 16 - 17 (wolf)|r
+Cooldown: |cffffcc004s|r
+Range: |cffffcc00700|r
+Area of effect: |cffffcc00300|r
+Health: |cffffcc00350|r
+Duration: |cffffcc0010s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell + normal|r
+Effect: |cffffcc00stuns for 1s|r
+}
+
+STRING 2562
+// Items: I09B (Rocket Wolves), Name (Name)
+{
+Rocket Wolves
+}
+
