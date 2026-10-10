@@ -10259,3 +10259,73 @@ STRING 2203
 Searing Clap
 }
 
+STRING 2204
+// Items: I06W (Molten Hammer), Tip (Tooltip - Basic)
+{
+Purchase Molten Hammer
+}
+
+STRING 2205
+// Items: I06W (Molten Hammer), Description (Description)
+{
+Throws a red-hot hammer at a random enemy unit within range. It stuns the target and explodes in flames.
+}
+
+STRING 2206
+// Items: I06W (Molten Hammer), Ubertip (Tooltip - Extended)
+{
+Throws a red-hot hammer at a random enemy unit within range. It stuns the target and explodes in flames.
+}
+
+STRING 2207
+// Items: I06W (Molten Hammer), Name (Name)
+{
+Molten Hammer
+}
+
+STRING 2208
+// Items: I06X (Molten Hammer), Tip (Tooltip - Basic)
+{
+Purchase Molten Hammer
+}
+
+STRING 2209
+// Items: I06X (Molten Hammer), Ubertip (Tooltip - Extended)
+{
+Throws a red-hot hammer at a random enemy unit within range. It stuns the target and explodes in flames.
+
+Damage: |cffffcc0080 (hammer) + 60 (explosion)|r
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00600|r
+Stun duration: |cffffcc001s|r
+Area of effect: |cffffcc00150|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 2210
+// Items: I06X (Molten Hammer), Description (Description)
+{
+Throws a red-hot hammer at a random enemy unit within range. It stuns the target and explodes in flames.
+
+Damage: |cffffcc0080 (hammer) + 60 (explosion)|r
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00600|r
+Stun duration: |cffffcc001s|r
+Area of effect: |cffffcc00150|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 2211
+// Items: I06X (Molten Hammer), Name (Name)
+{
+Molten Hammer
+}
+
+STRING 2212
+// Abilities: A04G (Molten Hammer), Name (Name)
+{
+Molten Hammer
+}
+
