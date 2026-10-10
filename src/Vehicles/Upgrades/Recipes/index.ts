@@ -172,3 +172,4 @@ export * from "./FrostShadow";
 export * from "./FrostSpire";
 export * from "./FrostSwarm";
 export * from "./FrostbiteCurse";
+export * from "./FrozenCurse";
