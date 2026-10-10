@@ -11861,3 +11861,65 @@ STRING 2408
 Harpoon Throw
 }
 
+STRING 2409
+// Items: I08A (Twin Catapults), Tip (Tooltip - Basic)
+{
+Purchase Twin Catapults
+}
+
+STRING 2410
+// Items: I08A (Twin Catapults), Description (Description)
+{
+Lobs flaming boulders at 2 random enemy units within range.
+}
+
+STRING 2411
+// Items: I08A (Twin Catapults), Ubertip (Tooltip - Extended)
+{
+Lobs flaming boulders at 2 random enemy units within range.
+}
+
+STRING 2412
+// Items: I08A (Twin Catapults), Name (Name)
+{
+Twin Catapults
+}
+
+STRING 2413
+// Items: I08B (Twin Catapults), Tip (Tooltip - Basic)
+{
+Purchase Twin Catapults
+}
+
+STRING 2414
+// Items: I08B (Twin Catapults), Ubertip (Tooltip - Extended)
+{
+Lobs flaming boulders at 2 random enemy units within range.
+
+Damage: |cffffcc002 x 45|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00800|r
+Area of effect: |cffffcc00150|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00siege|r
+}
+
+STRING 2415
+// Items: I08B (Twin Catapults), Description (Description)
+{
+Lobs flaming boulders at 2 random enemy units within range.
+
+Damage: |cffffcc002 x 45|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00800|r
+Area of effect: |cffffcc00150|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00siege|r
+}
+
+STRING 2416
+// Items: I08B (Twin Catapults), Name (Name)
+{
+Twin Catapults
+}
+
