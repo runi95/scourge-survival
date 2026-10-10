@@ -32,6 +32,7 @@ import {
   ChainLightning,
   Tornado,
   Blizzard,
+  FrostWyrm,
 } from "./Upgrades/Weapons/Legendary/index";
 import {
   CriticalStrike,
@@ -126,6 +127,7 @@ export const legendaryUpgrades: VehicleUpgrade[] = [
   new ChainLightning(),
   new Tornado(),
   new Blizzard(),
+  new FrostWyrm(),
 ];
 
 export const vehicleUpgrades: VehicleUpgrade[] = [

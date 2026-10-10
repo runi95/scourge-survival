@@ -8741,3 +8741,33 @@ STRING 2002
 Carrion Swarm
 }
 
+STRING 2003
+// Items: I05M (Frost Wyrm), Name (Name)
+{
+Frost Wyrm
+}
+
+STRING 2004
+// Items: I05M (Frost Wyrm), Tip (Tooltip - Basic)
+{
+Purchase Frost Wyrm
+}
+
+STRING 2005
+// Items: I05M (Frost Wyrm), Description (Description)
+{
+Summons a Frost Wyrm to fight by your side.
+}
+
+STRING 2006
+// Items: I05M (Frost Wyrm), Ubertip (Tooltip - Extended)
+{
+Summons a Frost Wyrm to fight by your side.
+}
+
+STRING 2007
+// Units: u01R (Frost Wyrm), Name (Name)
+{
+Frost Wyrm
+}
+
