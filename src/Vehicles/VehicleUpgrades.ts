@@ -49,6 +49,7 @@ import {
   Cripple,
   WarStomp,
   FeralSpirit,
+  ShadowStrike,
 } from "./Upgrades/Weapons/Rare/index";
 import {
   ManaLeech,
@@ -123,6 +124,7 @@ export const rareUpgrades: VehicleUpgrade[] = [
   new Cripple(),
   new WarStomp(),
   new FeralSpirit(),
+  new ShadowStrike(),
 ];
 
 export const legendaryUpgrades: VehicleUpgrade[] = [

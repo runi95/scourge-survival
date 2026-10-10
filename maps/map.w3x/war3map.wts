@@ -8861,3 +8861,33 @@ STRING 2022
 Entangling Roots
 }
 
+STRING 2023
+// Items: I05Q (Shadow Strike), Name (Name)
+{
+Shadow Strike
+}
+
+STRING 2024
+// Items: I05Q (Shadow Strike), Tip (Tooltip - Basic)
+{
+Purchase Shadow Strike
+}
+
+STRING 2025
+// Items: I05Q (Shadow Strike), Description (Description)
+{
+Throws a poisoned dagger at a random nearby enemy.
+}
+
+STRING 2026
+// Items: I05Q (Shadow Strike), Ubertip (Tooltip - Extended)
+{
+Throws a poisoned dagger at a random nearby enemy.
+}
+
+STRING 2027
+// Abilities: A047 (Shadow Strike), Name (Name)
+{
+Shadow Strike
+}
+
