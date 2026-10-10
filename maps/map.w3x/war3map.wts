@@ -9929,3 +9929,67 @@ STRING 2161
 Frostfire
 }
 
+STRING 2162
+// Items: I06M (Frostbite Rifle), Tip (Tooltip - Basic)
+{
+Purchase Frostbite Rifle
+}
+
+STRING 2163
+// Items: I06M (Frostbite Rifle), Description (Description)
+{
+Shoots a random enemy unit within range with a frozen bullet that bursts into a Frost Nova.
+}
+
+STRING 2164
+// Items: I06M (Frostbite Rifle), Ubertip (Tooltip - Extended)
+{
+Shoots a random enemy unit within range with a frozen bullet that bursts into a Frost Nova.
+}
+
+STRING 2165
+// Items: I06M (Frostbite Rifle), Name (Name)
+{
+Frostbite Rifle
+}
+
+STRING 2166
+// Items: I06N (Frostbite Rifle), Tip (Tooltip - Basic)
+{
+Purchase Frostbite Rifle
+}
+
+STRING 2167
+// Items: I06N (Frostbite Rifle), Ubertip (Tooltip - Extended)
+{
+Shoots a random enemy unit within range with a frozen bullet that bursts into a Frost Nova.
+
+Damage: |cffffcc00750 (bullet) + 60 (target) + 40 (nova)|r
+Slow: |cffffcc00-50% movement speed for 3s|r
+Cooldown: |cffffcc005s|r
+Range: |cffffcc001500|r
+Area of effect: |cffffcc00200|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing + spell|r
+}
+
+STRING 2168
+// Items: I06N (Frostbite Rifle), Description (Description)
+{
+Shoots a random enemy unit within range with a frozen bullet that bursts into a Frost Nova.
+
+Damage: |cffffcc00750 (bullet) + 60 (target) + 40 (nova)|r
+Slow: |cffffcc00-50% movement speed for 3s|r
+Cooldown: |cffffcc005s|r
+Range: |cffffcc001500|r
+Area of effect: |cffffcc00200|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing + spell|r
+}
+
+STRING 2169
+// Items: I06N (Frostbite Rifle), Name (Name)
+{
+Frostbite Rifle
+}
+
