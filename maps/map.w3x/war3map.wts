@@ -17669,3 +17669,67 @@ STRING 3141
 Knife Mine
 }
 
+STRING 3142
+// Items: I0D8 (Knife Rockets), Tip (Tooltip - Basic)
+{
+Purchase Knife Rockets
+}
+
+STRING 3143
+// Items: I0D8 (Knife Rockets), Description (Description)
+{
+Fires Cluster Rockets at a random enemy unit within range and flings a fan of knives at every enemy around your hero.
+}
+
+STRING 3144
+// Items: I0D8 (Knife Rockets), Ubertip (Tooltip - Extended)
+{
+Fires Cluster Rockets at a random enemy unit within range and flings a fan of knives at every enemy around your hero.
+}
+
+STRING 3145
+// Items: I0D8 (Knife Rockets), Name (Name)
+{
+Knife Rockets
+}
+
+STRING 3146
+// Items: I0D9 (Knife Rockets), Tip (Tooltip - Basic)
+{
+Purchase Knife Rockets
+}
+
+STRING 3147
+// Items: I0D9 (Knife Rockets), Ubertip (Tooltip - Extended)
+{
+Fires Cluster Rockets at a random enemy unit within range and flings a fan of knives at every enemy around your hero.
+
+Damage: |cffffcc006 x 17.5 (rockets) + 75 (knives)|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00700|r
+Area of effect: |cffffcc00300 (rockets) + 400 (knives)|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+Effect: |cffffcc00stuns for 1s|r
+}
+
+STRING 3148
+// Items: I0D9 (Knife Rockets), Description (Description)
+{
+Fires Cluster Rockets at a random enemy unit within range and flings a fan of knives at every enemy around your hero.
+
+Damage: |cffffcc006 x 17.5 (rockets) + 75 (knives)|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00700|r
+Area of effect: |cffffcc00300 (rockets) + 400 (knives)|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+Effect: |cffffcc00stuns for 1s|r
+}
+
+STRING 3149
+// Items: I0D9 (Knife Rockets), Name (Name)
+{
+Knife Rockets
+}
+

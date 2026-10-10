@@ -216,4 +216,5 @@ export const weaponRecipes = [
   new Recipes.GlaiveWorkshop(),
   new Recipes.HuntressHall(),
   new Recipes.KnifeMine(),
+  new Recipes.KnifeRockets(),
 ];
