@@ -16065,3 +16065,63 @@ STRING 2934
 Shadow Spikes
 }
 
+STRING 2935
+// Items: I0BU (Shadow Spire), Tip (Tooltip - Basic)
+{
+Purchase Shadow Spire
+}
+
+STRING 2936
+// Items: I0BU (Shadow Spire), Description (Description)
+{
+Rapidly fires shadow bolts at random enemy units within range.
+}
+
+STRING 2937
+// Items: I0BU (Shadow Spire), Ubertip (Tooltip - Extended)
+{
+Rapidly fires shadow bolts at random enemy units within range.
+}
+
+STRING 2938
+// Items: I0BU (Shadow Spire), Name (Name)
+{
+Shadow Spire
+}
+
+STRING 2939
+// Items: I0BV (Shadow Spire), Tip (Tooltip - Basic)
+{
+Purchase Shadow Spire
+}
+
+STRING 2940
+// Items: I0BV (Shadow Spire), Ubertip (Tooltip - Extended)
+{
+Rapidly fires shadow bolts at random enemy units within range.
+
+Damage: |cffffcc0020 - 24|r
+Cooldown: |cffffcc000.75s|r
+Range: |cffffcc00600|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00magic|r
+}
+
+STRING 2941
+// Items: I0BV (Shadow Spire), Description (Description)
+{
+Rapidly fires shadow bolts at random enemy units within range.
+
+Damage: |cffffcc0020 - 24|r
+Cooldown: |cffffcc000.75s|r
+Range: |cffffcc00600|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00magic|r
+}
+
+STRING 2942
+// Items: I0BV (Shadow Spire), Name (Name)
+{
+Shadow Spire
+}
+

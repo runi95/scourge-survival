@@ -191,4 +191,5 @@ export const weaponRecipes = [
   new Recipes.ShadowMine(),
   new Recipes.ShadowRockets(),
   new Recipes.ShadowSpikes(),
+  new Recipes.ShadowSpire(),
 ];
