@@ -11923,3 +11923,67 @@ STRING 2416
 Twin Catapults
 }
 
+STRING 2417
+// Items: I08C (Lightning Boulder), Tip (Tooltip - Basic)
+{
+Purchase Lightning Boulder
+}
+
+STRING 2418
+// Items: I08C (Lightning Boulder), Description (Description)
+{
+Lobs a boulder at a random enemy unit within range. It bursts into a chain of lightning that jumps between enemies.
+}
+
+STRING 2419
+// Items: I08C (Lightning Boulder), Ubertip (Tooltip - Extended)
+{
+Lobs a boulder at a random enemy unit within range. It bursts into a chain of lightning that jumps between enemies.
+}
+
+STRING 2420
+// Items: I08C (Lightning Boulder), Name (Name)
+{
+Lightning Boulder
+}
+
+STRING 2421
+// Items: I08D (Lightning Boulder), Tip (Tooltip - Basic)
+{
+Purchase Lightning Boulder
+}
+
+STRING 2422
+// Items: I08D (Lightning Boulder), Ubertip (Tooltip - Extended)
+{
+Lobs a boulder at a random enemy unit within range. It bursts into a chain of lightning that jumps between enemies.
+
+Damage: |cffffcc0045 (boulder) + 180 (lightning)|r
+Damage reduction jump: |cffffcc00-15%|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00800|r
+Area of effect: |cffffcc00150 (boulder) + 500 (chain)|r
+Targets: |cffffcc00ground (boulder), air & ground (lightning)|r
+Damage type: |cffffcc00siege + spell|r
+}
+
+STRING 2423
+// Items: I08D (Lightning Boulder), Description (Description)
+{
+Lobs a boulder at a random enemy unit within range. It bursts into a chain of lightning that jumps between enemies.
+
+Damage: |cffffcc0045 (boulder) + 180 (lightning)|r
+Damage reduction jump: |cffffcc00-15%|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00800|r
+Area of effect: |cffffcc00150 (boulder) + 500 (chain)|r
+Targets: |cffffcc00ground (boulder), air & ground (lightning)|r
+Damage type: |cffffcc00siege + spell|r
+}
+
+STRING 2424
+// Items: I08D (Lightning Boulder), Name (Name)
+{
+Lightning Boulder
+}
+

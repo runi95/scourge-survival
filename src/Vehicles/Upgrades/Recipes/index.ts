@@ -123,3 +123,4 @@ export * from "./JavelinStomp";
 export * from "./SpiritJavelins";
 export * from "./HarpoonThrow";
 export * from "./TwinCatapults";
+export * from "./LightningBoulder";
