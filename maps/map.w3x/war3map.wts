@@ -8711,3 +8711,33 @@ STRING 1997
 Raises a Skeleton Warrior to fight by your side.
 }
 
+STRING 1998
+// Items: I05L (Carrion Swarm), Name (Name)
+{
+Carrion Swarm
+}
+
+STRING 1999
+// Items: I05L (Carrion Swarm), Tip (Tooltip - Basic)
+{
+Purchase Carrion Swarm
+}
+
+STRING 2000
+// Items: I05L (Carrion Swarm), Description (Description)
+{
+Sends a horde of bats through the enemies in front of your hero.
+}
+
+STRING 2001
+// Items: I05L (Carrion Swarm), Ubertip (Tooltip - Extended)
+{
+Sends a horde of bats through the enemies in front of your hero.
+}
+
+STRING 2002
+// Abilities: A044 (Carrion Swarm), Name (Name)
+{
+Carrion Swarm
+}
+

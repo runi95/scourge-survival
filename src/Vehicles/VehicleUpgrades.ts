@@ -62,6 +62,7 @@ import {
   ThunderClap,
   StormBolt,
   Ensnare,
+  CarrionSwarm,
 } from "./Upgrades/Weapons/Uncommon/index";
 import { VehicleUpgrade } from "./VehicleUpgrade";
 
@@ -101,6 +102,7 @@ export const uncommonUpgrades: VehicleUpgrade[] = [
   new ThunderClap(),
   new StormBolt(),
   new Ensnare(),
+  new CarrionSwarm(),
 ];
 
 export const rareUpgrades: VehicleUpgrade[] = [

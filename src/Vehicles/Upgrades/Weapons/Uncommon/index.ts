@@ -6,3 +6,4 @@ export * from "./FrostNova";
 export * from "./ThunderClap";
 export * from "./StormBolt";
 export * from "./Ensnare";
+export * from "./CarrionSwarm";
