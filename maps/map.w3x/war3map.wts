@@ -18321,3 +18321,75 @@ STRING 3223
 Rooted Treants
 }
 
+STRING 3224
+// Items: I0DS (Sapling Mine), Tip (Tooltip - Basic)
+{
+Purchase Sapling Mine
+}
+
+STRING 3225
+// Items: I0DS (Sapling Mine), Description (Description)
+{
+Places seed-filled land mines underneath your hero. When an enemy steps on one, it explodes and 2 Treants sprout from it.
+}
+
+STRING 3226
+// Items: I0DS (Sapling Mine), Ubertip (Tooltip - Extended)
+{
+Places seed-filled land mines underneath your hero. When an enemy steps on one, it explodes and 2 Treants sprout from it.
+}
+
+STRING 3227
+// Items: I0DS (Sapling Mine), Name (Name)
+{
+Sapling Mine
+}
+
+STRING 3228
+// Items: I0DT (Sapling Mine), Tip (Tooltip - Basic)
+{
+Purchase Sapling Mine
+}
+
+STRING 3229
+// Items: I0DT (Sapling Mine), Ubertip (Tooltip - Extended)
+{
+Places seed-filled land mines underneath your hero. When an enemy steps on one, it explodes and 2 Treants sprout from it.
+
+Damage: |cffffcc00100 (explosion) + 2 x 15 - 17 (treants)|r
+Cooldown: |cffffcc003s|r
+Area of effect: |cffffcc00300|r
+Health: |cffffcc00300|r
+Duration: |cffffcc0010s|r
+Mine activation delay: |cffffcc004s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell + normal|r
+}
+
+STRING 3230
+// Items: I0DT (Sapling Mine), Description (Description)
+{
+Places seed-filled land mines underneath your hero. When an enemy steps on one, it explodes and 2 Treants sprout from it.
+
+Damage: |cffffcc00100 (explosion) + 2 x 15 - 17 (treants)|r
+Cooldown: |cffffcc003s|r
+Area of effect: |cffffcc00300|r
+Health: |cffffcc00300|r
+Duration: |cffffcc0010s|r
+Mine activation delay: |cffffcc004s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell + normal|r
+}
+
+STRING 3231
+// Items: I0DT (Sapling Mine), Name (Name)
+{
+Sapling Mine
+}
+
+STRING 3232
+// Units: n01N (Sapling Mine), Name (Name)
+{
+Sapling Mine
+}
+
