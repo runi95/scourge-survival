@@ -14819,3 +14819,69 @@ STRING 2778
 Frost Revenant Slow
 }
 
+STRING 2779
+// Items: I0AS (Frost Rockets), Tip (Tooltip - Basic)
+{
+Purchase Frost Rockets
+}
+
+STRING 2780
+// Items: I0AS (Frost Rockets), Description (Description)
+{
+Fires Cluster Rockets at a random enemy unit within range and blasts it with a Frost Nova.
+}
+
+STRING 2781
+// Items: I0AS (Frost Rockets), Ubertip (Tooltip - Extended)
+{
+Fires Cluster Rockets at a random enemy unit within range and blasts it with a Frost Nova.
+}
+
+STRING 2782
+// Items: I0AS (Frost Rockets), Name (Name)
+{
+Frost Rockets
+}
+
+STRING 2783
+// Items: I0AT (Frost Rockets), Tip (Tooltip - Basic)
+{
+Purchase Frost Rockets
+}
+
+STRING 2784
+// Items: I0AT (Frost Rockets), Ubertip (Tooltip - Extended)
+{
+Fires Cluster Rockets at a random enemy unit within range and blasts it with a Frost Nova.
+
+Damage: |cffffcc006 x 17.5 (rockets) + 60 (target) + 40 (nova)|r
+Slow: |cffffcc00-50% movement speed for 3s|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00700|r
+Area of effect: |cffffcc00300 (rockets) + 200 (nova)|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+Effect: |cffffcc00stuns for 1s|r
+}
+
+STRING 2785
+// Items: I0AT (Frost Rockets), Description (Description)
+{
+Fires Cluster Rockets at a random enemy unit within range and blasts it with a Frost Nova.
+
+Damage: |cffffcc006 x 17.5 (rockets) + 60 (target) + 40 (nova)|r
+Slow: |cffffcc00-50% movement speed for 3s|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00700|r
+Area of effect: |cffffcc00300 (rockets) + 200 (nova)|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+Effect: |cffffcc00stuns for 1s|r
+}
+
+STRING 2786
+// Items: I0AT (Frost Rockets), Name (Name)
+{
+Frost Rockets
+}
+
