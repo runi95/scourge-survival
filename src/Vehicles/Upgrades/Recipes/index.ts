@@ -238,3 +238,4 @@ export * from "./ThornSpear";
 export * from "./ThornedTreants";
 export * from "./TreantDrop";
 export * from "./TreantGrove";
+export * from "./TwinStrike";

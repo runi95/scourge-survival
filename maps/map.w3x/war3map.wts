@@ -19433,3 +19433,65 @@ STRING 3363
 Treant Grove
 }
 
+STRING 3364
+// Items: I0EQ (Twin Strike), Tip (Tooltip - Basic)
+{
+Purchase Twin Strike
+}
+
+STRING 3365
+// Items: I0EQ (Twin Strike), Description (Description)
+{
+Throws poisoned daggers at 2 random enemy units within range.
+}
+
+STRING 3366
+// Items: I0EQ (Twin Strike), Ubertip (Tooltip - Extended)
+{
+Throws poisoned daggers at 2 random enemy units within range.
+}
+
+STRING 3367
+// Items: I0EQ (Twin Strike), Name (Name)
+{
+Twin Strike
+}
+
+STRING 3368
+// Items: I0ER (Twin Strike), Tip (Tooltip - Basic)
+{
+Purchase Twin Strike
+}
+
+STRING 3369
+// Items: I0ER (Twin Strike), Ubertip (Tooltip - Extended)
+{
+Throws poisoned daggers at 2 random enemy units within range.
+
+Damage: |cffffcc002 x (100 + 30 every 3s for 9s)|r
+Slow: |cffffcc00-50% movement speed for 9s|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00700|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 3370
+// Items: I0ER (Twin Strike), Description (Description)
+{
+Throws poisoned daggers at 2 random enemy units within range.
+
+Damage: |cffffcc002 x (100 + 30 every 3s for 9s)|r
+Slow: |cffffcc00-50% movement speed for 9s|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00700|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
+}
+
+STRING 3371
+// Items: I0ER (Twin Strike), Name (Name)
+{
+Twin Strike
+}
+
