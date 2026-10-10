@@ -212,3 +212,4 @@ export * from "./GlaiveWorkshop";
 export * from "./HuntressHall";
 export * from "./KnifeMine";
 export * from "./KnifeRockets";
+export * from "./KnifeStorm";
