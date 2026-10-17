@@ -9,8 +9,8 @@ export class CursedDoll {
   private readonly dollUnitId = FourCC("o003");
   private readonly dummyUnitId = FourCC("u000");
   private readonly curseAbilityId = FourCC("A04R");
-  private readonly tauntRange = 500;
-  private readonly curseRange = 500;
+  private readonly tauntRange = 300;
+  private readonly curseRange = 300;
   private readonly duration = [6, 7, 8, 9, 10];
   private readonly life = [250, 400, 550, 700, 850];
 

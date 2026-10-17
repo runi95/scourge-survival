@@ -22,6 +22,7 @@ import { BlinkDrive } from "./BlinkDrive";
 import { Sentinel } from "./Sentinel";
 import { SoulReap } from "./SoulReap";
 import { CursedDoll } from "./CursedDoll";
+import { GatheringSorrow } from "./GatheringSorrow";
 
 export class Abilities {
   private readonly abilities: unknown[] = [];
@@ -53,5 +54,6 @@ export class Abilities {
     this.abilities.push(new Sentinel());
     this.abilities.push(new SoulReap());
     this.abilities.push(new CursedDoll());
+    this.abilities.push(new GatheringSorrow());
   }
 }
