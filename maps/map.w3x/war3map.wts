@@ -19654,3 +19654,237 @@ STRING 3445
 (souls effect 3)
 }
 
+STRING 3459
+// Abilities: A04P (Haunted Doll (Weakness)), Tip (Tooltip - Normal)
+{
+Doll's Curse
+}
+
+STRING 3460
+// Abilities: A04P (Haunted Doll (Weakness)), Ubertip (Tooltip - Normal - Extended)
+{
+Enemies near the doll deal less damage.
+}
+
+STRING 3461
+// Abilities: A04P (Haunted Doll (Weakness)), Name (Name)
+{
+Haunted Doll (Weakness)
+}
+
+STRING 3462
+// Abilities: A04Q (Cursed Doll (Frailty)), Tip (Tooltip - Normal)
+{
+Doll's Curse
+}
+
+STRING 3463
+// Abilities: A04Q (Cursed Doll (Frailty)), Ubertip (Tooltip - Normal - Extended)
+{
+Enemies near the doll have less armor.
+}
+
+STRING 3465
+// Buffs/Effects: B00A (Doll's Curse), EditorName (Name (Editor Only))
+{
+Doll's Curse
+}
+
+STRING 3466
+// Buffs/Effects: B00A (Doll's Curse), Bufftip (Tooltip)
+{
+Doll's Curse
+}
+
+STRING 3467
+// Buffs/Effects: B00A (Doll's Curse), Buffubertip (Tooltip - Extended)
+{
+This unit is cursed by a haunted doll; it deals less damage.
+}
+
+STRING 3469
+// Buffs/Effects: B00B (Doll's Curse), EditorName (Name (Editor Only))
+{
+Doll's Curse
+}
+
+STRING 3470
+// Buffs/Effects: B00B (Doll's Curse), Bufftip (Tooltip)
+{
+Doll's Curse
+}
+
+STRING 3471
+// Buffs/Effects: B00B (Doll's Curse), Buffubertip (Tooltip - Extended)
+{
+This unit is cursed by a haunted doll; it has less armor.
+}
+
+STRING 3474
+// Abilities: A04O (Cursed Doll), Hotkey (Hotkey - Normal)
+{
+Q
+}
+
+STRING 3475
+// Abilities: A04O (Cursed Doll), Researchhotkey (Hotkey - Learn)
+{
+Q
+}
+
+STRING 3476
+// Abilities: A04O (Cursed Doll), Researchtip (Tooltip - Learn)
+{
+Learn Cursed Doll - [|cffffcc00Level %d|r]
+}
+
+STRING 3477
+// Abilities: A04O (Cursed Doll), Researchubertip (Tooltip - Learn - Extended)
+{
+Places a cursed doll that forces nearby enemies to attack it while it weakens them.|n|n|cffffcc00Level 1|r - 6 seconds, 250 life, 10% less damage, 1 less armor.|n|cffffcc00Level 2|r - 7 seconds, 400 life, 15% less damage, 2 less armor.|n|cffffcc00Level 3|r - 8 seconds, 550 life, 20% less damage, 3 less armor.|n|cffffcc00Level 4|r - 9 seconds, 700 life, 25% less damage, 4 less armor.|n|cffffcc00Level 5|r - 10 seconds, 850 life, 30% less damage, 5 less armor.
+}
+
+STRING 3478
+// Abilities: A04O (Cursed Doll), Tip (Tooltip - Normal)
+{
+Cursed Doll - [|cffffcc00Level 1|r]
+}
+
+STRING 3479
+// Abilities: A04O (Cursed Doll), Ubertip (Tooltip - Normal - Extended)
+{
+Places a cursed doll at the target point for |cffffcc006|r seconds. Enemies within |cffffcc00500|r range are forced to attack the doll, deal |cffffcc0010%|r less damage and have |cffffcc001|r less armor.|n|nThe doll has |cffffcc00250|r life.
+}
+
+STRING 3480
+// Abilities: A04O (Cursed Doll), Tip (Tooltip - Normal)
+{
+Cursed Doll - [|cffffcc00Level 2|r]
+}
+
+STRING 3481
+// Abilities: A04O (Cursed Doll), Ubertip (Tooltip - Normal - Extended)
+{
+Places a cursed doll at the target point for |cffffcc007|r seconds. Enemies within |cffffcc00500|r range are forced to attack the doll, deal |cffffcc0015%|r less damage and have |cffffcc002|r less armor.|n|nThe doll has |cffffcc00400|r life.
+}
+
+STRING 3482
+// Abilities: A04O (Cursed Doll), Tip (Tooltip - Normal)
+{
+Cursed Doll - [|cffffcc00Level 3|r]
+}
+
+STRING 3483
+// Abilities: A04O (Cursed Doll), Ubertip (Tooltip - Normal - Extended)
+{
+Places a cursed doll at the target point for |cffffcc008|r seconds. Enemies within |cffffcc00500|r range are forced to attack the doll, deal |cffffcc0020%|r less damage and have |cffffcc003|r less armor.|n|nThe doll has |cffffcc00550|r life.
+}
+
+STRING 3484
+// Abilities: A04O (Cursed Doll), Tip (Tooltip - Normal)
+{
+Cursed Doll - [|cffffcc00Level 4|r]
+}
+
+STRING 3485
+// Abilities: A04O (Cursed Doll), Ubertip (Tooltip - Normal - Extended)
+{
+Places a cursed doll at the target point for |cffffcc009|r seconds. Enemies within |cffffcc00500|r range are forced to attack the doll, deal |cffffcc0025%|r less damage and have |cffffcc004|r less armor.|n|nThe doll has |cffffcc00700|r life.
+}
+
+STRING 3486
+// Abilities: A04O (Cursed Doll), Tip (Tooltip - Normal)
+{
+Cursed Doll - [|cffffcc00Level 5|r]
+}
+
+STRING 3487
+// Abilities: A04O (Cursed Doll), Ubertip (Tooltip - Normal - Extended)
+{
+Places a cursed doll at the target point for |cffffcc0010|r seconds. Enemies within |cffffcc00500|r range are forced to attack the doll, deal |cffffcc0030%|r less damage and have |cffffcc005|r less armor.|n|nThe doll has |cffffcc00850|r life.
+}
+
+STRING 3488
+// Units: o003 (Cursed Doll), Name (Name)
+{
+Cursed Doll
+}
+
+STRING 3489
+// Abilities: A04Q (Cursed Doll (Frailty)), Name (Name)
+{
+Cursed Doll (Frailty)
+}
+
+STRING 3490
+// Abilities: A04O (Cursed Doll), Name (Name)
+{
+Cursed Doll
+}
+
+STRING 3491
+// Abilities: A04O (dollability), Ubertip (Tooltip - Learn - Extended)
+{
+Places a cursed doll that forces nearby enemies to attack it. When the doll dies, every enemy near it is cursed and may miss their attacks.|n|n|cffffcc00Level 1|r - 6 seconds, 250 life.|n|cffffcc00Level 2|r - 7 seconds, 400 life.|n|cffffcc00Level 3|r - 8 seconds, 550 life.|n|cffffcc00Level 4|r - 9 seconds, 700 life.|n|cffffcc00Level 5|r - 10 seconds, 850 life.
+}
+
+STRING 3492
+// Abilities: A04O (dollability), Ubertip (Tooltip - Normal - Extended)
+{
+Places a cursed doll at the target point for |cffffcc006|r seconds. Enemies within |cffffcc00500|r range are forced to attack the doll.|n|nWhen the doll dies, every enemy within |cffffcc00500|r range is cursed for |cffffcc0020|r seconds, giving them a |cffffcc0033%|r chance to miss their attacks.|n|nThe doll has |cffffcc00250|r life.
+}
+
+STRING 3493
+// Abilities: A04O (dollability), Ubertip (Tooltip - Normal - Extended)
+{
+Places a cursed doll at the target point for |cffffcc007|r seconds. Enemies within |cffffcc00500|r range are forced to attack the doll.|n|nWhen the doll dies, every enemy within |cffffcc00500|r range is cursed for |cffffcc0020|r seconds, giving them a |cffffcc0033%|r chance to miss their attacks.|n|nThe doll has |cffffcc00400|r life.
+}
+
+STRING 3494
+// Abilities: A04O (dollability), Ubertip (Tooltip - Normal - Extended)
+{
+Places a cursed doll at the target point for |cffffcc008|r seconds. Enemies within |cffffcc00500|r range are forced to attack the doll.|n|nWhen the doll dies, every enemy within |cffffcc00500|r range is cursed for |cffffcc0020|r seconds, giving them a |cffffcc0033%|r chance to miss their attacks.|n|nThe doll has |cffffcc00550|r life.
+}
+
+STRING 3495
+// Abilities: A04O (dollability), Ubertip (Tooltip - Normal - Extended)
+{
+Places a cursed doll at the target point for |cffffcc009|r seconds. Enemies within |cffffcc00500|r range are forced to attack the doll.|n|nWhen the doll dies, every enemy within |cffffcc00500|r range is cursed for |cffffcc0020|r seconds, giving them a |cffffcc0033%|r chance to miss their attacks.|n|nThe doll has |cffffcc00700|r life.
+}
+
+STRING 3496
+// Abilities: A04O (dollability), Ubertip (Tooltip - Normal - Extended)
+{
+Places a cursed doll at the target point for |cffffcc0010|r seconds. Enemies within |cffffcc00500|r range are forced to attack the doll.|n|nWhen the doll dies, every enemy within |cffffcc00500|r range is cursed for |cffffcc0020|r seconds, giving them a |cffffcc0033%|r chance to miss their attacks.|n|nThe doll has |cffffcc00850|r life.
+}
+
+STRING 3497
+// Abilities: A04R (Cursed Doll (Curse)), Name (Name)
+{
+Cursed Doll (Curse)
+}
+
+STRING 3498
+// Buffs: B00C (Doll's Curse), Name (Name)
+{
+Doll's Curse
+}
+
+STRING 3499
+// Buffs: B00C (Doll's Curse), Tip (Tooltip)
+{
+Doll's Curse
+}
+
+STRING 3500
+// Buffs: B00C (Doll's Curse), Ubertip (Tooltip - Extended)
+{
+This unit has been cursed by a doll; it has a 33% chance to miss its attacks.
+}
+
+STRING 3501
+// Buffs: B00C (Doll's Curse), Name (Name)
+{
+Doll's Curse
+}
+

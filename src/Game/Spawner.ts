@@ -116,6 +116,7 @@ export class Spawner {
         for (const [_id, creep] of GameMap.REMAINING_PLAYER_CREEPS[
           playerId + 9
         ]) {
+          if (creep.tauntTarget != null) continue;
           if (creep.attackOrderPosition == null) {
             if (creep.attackMoveIndex <= 0) {
               creep.attackMoveIndex = 0;

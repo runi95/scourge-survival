@@ -5,6 +5,7 @@ export class Creep {
   public readonly spawnY: number;
   public attackMoveIndex: number;
   public attackOrderPosition: [number, number] | null = null;
+  public tauntTarget: Unit | null = null;
   public readonly unit: Unit;
 
   constructor(

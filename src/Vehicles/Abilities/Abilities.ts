@@ -21,6 +21,7 @@ import { SheepOMatic } from "./SheepOMatic";
 import { BlinkDrive } from "./BlinkDrive";
 import { Sentinel } from "./Sentinel";
 import { SoulReap } from "./SoulReap";
+import { CursedDoll } from "./CursedDoll";
 
 export class Abilities {
   private readonly abilities: unknown[] = [];
@@ -51,5 +52,6 @@ export class Abilities {
     this.abilities.push(new Devour());
     this.abilities.push(new Sentinel());
     this.abilities.push(new SoulReap());
+    this.abilities.push(new CursedDoll());
   }
 }
