@@ -20,6 +20,10 @@ function main(): void {
     logger.info(`Starting as ${race} (devRace)`);
     luaPrelude = `DEV_RACE = "${race}"\n`;
   }
+  if (config.devSkipIntro) {
+    logger.info("Skipping the transport intro (devSkipIntro)");
+    luaPrelude += "DEV_SKIP_INTRO = true\n";
+  }
 
   compileMap(
     config.mapPath,

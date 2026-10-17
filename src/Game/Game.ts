@@ -30,6 +30,9 @@ import { initializePlayerRaces, Race, RACE_SETUPS } from "./Race";
 import { OverdriveDamageEvent } from "../Utility/DamageEngine/DamageEvents/OverdriveDamageEvent";
 import { BansheeShellDamageEvent } from "../Utility/DamageEngine/DamageEvents/BansheeShellDamageEvent";
 
+// Set by `npm start` when config.json has "devSkipIntro"
+declare const DEV_SKIP_INTRO: boolean | undefined;
+
 export class Game {
   private readonly damageEngine = new DamageEngine();
   private readonly gameOptions = new GameOptions();
@@ -204,8 +207,14 @@ export class Game {
 
         player.setState(PLAYER_STATE_RESOURCE_GOLD, 500);
 
-        const x = GameMap.PLAYER_AREAS[i].minX + 700;
-        const y = GameMap.PLAYER_AREAS[i].maxY - 700;
+        // Without the intro the hero starts where the transport would take it
+        const skipIntro = DEV_SKIP_INTRO === true;
+        const x = skipIntro
+          ? GameMap.PLAYER_AREAS[i].centerX
+          : GameMap.PLAYER_AREAS[i].minX + 700;
+        const y = skipIntro
+          ? GameMap.PLAYER_AREAS[i].centerY
+          : GameMap.PLAYER_AREAS[i].maxY - 700;
         const raceSetup = RACE_SETUPS[GameMap.PLAYER_RACES[i]];
         const vehicleUnit = Unit.create(
           player,
@@ -214,7 +223,6 @@ export class Game {
           y,
           315.0,
         );
-        GameMap.PLAYER_VEHICLES[i].isArriving = true;
         if (raceSetup.startingWeapon != null) {
           vehicleUnit.addItemById(raceSetup.startingWeapon.itemTypeId);
         }
@@ -224,60 +232,9 @@ export class Game {
         vehicleUnit.disableAbility(FourCC("A007"), true, true);
         vehicleUnit.disableAbility(FourCC("A008"), true, true);
 
-        const zeppelinUnit = Unit.create(
-          player,
-          raceSetup.transportUnitTypeId,
-          x,
-          y,
-          315.0,
-        );
-        zeppelinUnit.life = 110;
-        zeppelinUnit.disableAbility(FourCC("Adro"), true, true);
-        zeppelinUnit.disableAbility(FourCC("Sch3"), false, true);
-
-        const loadTrigger = Trigger.create();
         const playerIndex = i;
-        loadTrigger.addAction(() => {
-          const transportUnit = GetTransportUnit();
-          BlzUnitDisableAbility(transportUnit, FourCC("Aloa"), true, true);
-
-          SetCameraTargetControllerNoZForPlayer(
-            player.handle,
-            transportUnit,
-            0,
-            0,
-            false,
-          );
-          IssuePointOrder(
-            transportUnit,
-            "move",
-            GameMap.PLAYER_AREAS[playerIndex].centerX,
-            GameMap.PLAYER_AREAS[playerIndex].centerY,
-          );
-          BlzUnitDisableAbility(transportUnit, FourCC("Amove"), false, true);
-          SelectUnitForPlayerSingle(transportUnit, player.handle);
-
-          loadTrigger.destroy();
-        });
-        loadTrigger.registerPlayerUnitEvent(
-          player,
-          EVENT_PLAYER_UNIT_LOADED,
-          undefined,
-        );
-        zeppelinUnit.issueTargetOrder("load", vehicleUnit);
-
-        const zeppelinDeathTrigger = Trigger.create();
-        zeppelinDeathTrigger.addAction(() => {
-          StopCameraForPlayerBJ(player.handle);
-          SelectUnitForPlayerSingle(vehicleUnit.handle, player.handle);
-          this.weaponUpgradeSystem.land(playerIndex);
-          zeppelinDeathTrigger.destroy();
-        });
-        zeppelinDeathTrigger.registerUnitEvent(zeppelinUnit, EVENT_UNIT_DEATH);
-
         const vehicle = GameMap.PLAYER_VEHICLES[i];
         vehicle.unit = vehicleUnit;
-        vehicle.transport = zeppelinUnit;
         vehicle.weaponRecipeShop = Unit.create(
           MapPlayer.fromIndex(PLAYER_NEUTRAL_PASSIVE),
           this.recipeShopUnitTypeId,
@@ -300,19 +257,17 @@ export class Game {
         vehicleDeathTrig.registerUnitEvent(vehicleUnit, EVENT_UNIT_DEATH);
         this.vehicleDeathTriggers[playerIndex] = vehicleDeathTrig;
 
-        let infernoCount = 0;
-        const t: Timer = TimerUtils.newTimer();
-        t.start(1.5, true, () => {
-          Effect.create(
-            "Units/Demon/Infernal/InfernalBirth.mdl",
-            zeppelinUnit.x + RandomNumberGenerator.random(-400, 400) + 270,
-            zeppelinUnit.y + RandomNumberGenerator.random(-400, 400) - 270,
-          ).destroy();
-
-          if (++infernoCount > 6) {
-            TimerUtils.releaseTimer(t);
-          }
-        });
+        if (skipIntro) {
+          SelectUnitForPlayerSingle(vehicleUnit.handle, player.handle);
+          PanCameraToTimedForPlayer(player.handle, x, y, 0);
+        } else {
+          this.startIntro(
+            player,
+            i,
+            vehicleUnit,
+            raceSetup.transportUnitTypeId,
+          );
+        }
       } else {
         GameMap.IS_PLAYER_ID_ONLINE.push(false);
         GameMap.IS_PLAYER_DEFEATED.push(true);
@@ -322,6 +277,80 @@ export class Game {
     this.abilities.initialize();
     this.creepAbilityController.initialize();
     this.spawner.initializeAI();
+  }
+
+  // The hero arrives in its race's transport, which loses life over time and
+  // lets the hero out where it dies
+  private startIntro(
+    player: MapPlayer,
+    playerIndex: number,
+    vehicleUnit: Unit,
+    transportUnitTypeId: number,
+  ): void {
+    const x = vehicleUnit.x;
+    const y = vehicleUnit.y;
+    const vehicle = GameMap.PLAYER_VEHICLES[playerIndex];
+    vehicle.isArriving = true;
+
+    const zeppelinUnit = Unit.create(player, transportUnitTypeId, x, y, 315.0);
+    zeppelinUnit.life = 110;
+    zeppelinUnit.disableAbility(FourCC("Adro"), true, true);
+    zeppelinUnit.disableAbility(FourCC("Sch3"), false, true);
+
+    const loadTrigger = Trigger.create();
+    loadTrigger.addAction(() => {
+      const transportUnit = GetTransportUnit();
+      BlzUnitDisableAbility(transportUnit, FourCC("Aloa"), true, true);
+
+      SetCameraTargetControllerNoZForPlayer(
+        player.handle,
+        transportUnit,
+        0,
+        0,
+        false,
+      );
+      IssuePointOrder(
+        transportUnit,
+        "move",
+        GameMap.PLAYER_AREAS[playerIndex].centerX,
+        GameMap.PLAYER_AREAS[playerIndex].centerY,
+      );
+      BlzUnitDisableAbility(transportUnit, FourCC("Amove"), false, true);
+      SelectUnitForPlayerSingle(transportUnit, player.handle);
+
+      loadTrigger.destroy();
+    });
+    loadTrigger.registerPlayerUnitEvent(
+      player,
+      EVENT_PLAYER_UNIT_LOADED,
+      undefined,
+    );
+    zeppelinUnit.issueTargetOrder("load", vehicleUnit);
+
+    const zeppelinDeathTrigger = Trigger.create();
+    zeppelinDeathTrigger.addAction(() => {
+      StopCameraForPlayerBJ(player.handle);
+      SelectUnitForPlayerSingle(vehicleUnit.handle, player.handle);
+      this.weaponUpgradeSystem.land(playerIndex);
+      zeppelinDeathTrigger.destroy();
+    });
+    zeppelinDeathTrigger.registerUnitEvent(zeppelinUnit, EVENT_UNIT_DEATH);
+
+    vehicle.transport = zeppelinUnit;
+
+    let infernoCount = 0;
+    const t: Timer = TimerUtils.newTimer();
+    t.start(1.5, true, () => {
+      Effect.create(
+        "Units/Demon/Infernal/InfernalBirth.mdl",
+        zeppelinUnit.x + RandomNumberGenerator.random(-400, 400) + 270,
+        zeppelinUnit.y + RandomNumberGenerator.random(-400, 400) - 270,
+      ).destroy();
+
+      if (++infernoCount > 6) {
+        TimerUtils.releaseTimer(t);
+      }
+    });
   }
 
   public changeRace(playerId: number, race: Race): void {

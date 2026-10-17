@@ -22,6 +22,7 @@ interface IConfigFile {
   winePrefix?: string;
   launchEnv?: Record<string, string>;
   devRace?: string;
+  devSkipIntro?: boolean;
 }
 
 export class ProjectConfigurationLoader {
@@ -42,6 +43,7 @@ export class ProjectConfigurationLoader {
   private _launchEnv: Record<string, string> = {};
   private _launchArgs: string[] = [];
   private _devRace: string | undefined;
+  private _devSkipIntro: boolean = false;
 
   private constructor() {}
 
@@ -100,6 +102,7 @@ export class ProjectConfigurationLoader {
     if (json.winePrefix) this._winePrefix = json.winePrefix;
     if (json.launchEnv) this._launchEnv = json.launchEnv;
     if (json.devRace) this._devRace = json.devRace;
+    if (json.devSkipIntro) this._devSkipIntro = json.devSkipIntro;
   }
 
   public get mapPath(): string | undefined {
@@ -119,6 +122,13 @@ export class ProjectConfigurationLoader {
 
   public get devRace(): string | undefined {
     return process.env.PROJECT_DEV_RACE ?? this._devRace;
+  }
+
+  public get devSkipIntro(): boolean {
+    return process.env.PROJECT_DEV_SKIP_INTRO
+      ? process.env.PROJECT_DEV_SKIP_INTRO.toLowerCase() === "true" ||
+          process.env.PROJECT_DEV_SKIP_INTRO === "1"
+      : this._devSkipIntro;
   }
 
   public get minifyScript(): boolean {
