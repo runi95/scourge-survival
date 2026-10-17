@@ -55,7 +55,7 @@ Damage type: |cffffcc00spell|r`;
         ).destroy();
         vehicle.unit.damageTarget(
           u.handle,
-          10,
+          20,
           false,
           false,
           ATTACK_TYPE_NORMAL,

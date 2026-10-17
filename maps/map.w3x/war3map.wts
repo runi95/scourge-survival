@@ -3162,12 +3162,6 @@ STRING 1086
 Wail
 }
 
-STRING 1094
-// Units: n00K (Undead Air Barge), Name (Name)
-{
-Undead Air Barge
-}
-
 STRING 1096
 // Units: n00J (Orc Juggernaught), Name (Name)
 {
@@ -3991,7 +3985,7 @@ Call to Arms
 }
 
 STRING 1253
-// Abilities: A00O (Call to Arms), EditorSuffix (Editor Suffix)
+// Units: u00R (Locust), EditorSuffix (Name - Editor Suffix)
 {
 (Locust Swarm)
 }
@@ -19862,5 +19856,71 @@ STRING 3516
 // Abilities: A04S (Gathering Sorrow), Researchhotkey (Hotkey - Learn)
 {
 R
+}
+
+STRING 3517
+// Units: n00K (Sky Barge), Name (Name)
+{
+Sky Barge
+}
+
+STRING 3518
+// Abilities: A016 (Shadow Bolt), Name (Name)
+{
+Shadow Bolt
+}
+
+STRING 3519
+// Units: u024 (Gargoyle), EditorSuffix (Name - Editor Suffix)
+{
+(Gargoyle Spire)
+}
+
+STRING 3520
+// Units: u025 (Stone Form Gargoyle), EditorSuffix (Name - Editor Suffix)
+{
+(Gargoyle Spire)
+}
+
+STRING 3521
+// Units: n00Z (Blue Dragon Whelp), EditorSuffix (Name - Editor Suffix)
+{
+(Dragon Whelp Forge)
+}
+
+STRING 3522
+// Units: u01Y (Necromancer), EditorSuffix (Name - Editor Suffix)
+{
+(Necromancer Academy)
+}
+
+STRING 3523
+// Units: u01Z (Crypt Fiend), EditorSuffix (Name - Editor Suffix)
+{
+(Crypt Fiend Den)
+}
+
+STRING 3524
+// Units: u020 (Abomination), EditorSuffix (Name - Editor Suffix)
+{
+(Slaughterhouse)
+}
+
+STRING 3525
+// Units: u021 (Burrowed Crypt Fiend), EditorSuffix (Name - Editor Suffix)
+{
+(Crypt Fiend Den)
+}
+
+STRING 3526
+// Units: u023 (Ghoul), EditorSuffix (Name - Editor Suffix)
+{
+(Ghoul Pit)
+}
+
+STRING 3527
+// Abilities: A00O (Call to Arms), EditorSuffix (Editor Suffix)
+{
+(Locust Swarm)
 }
 

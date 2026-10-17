@@ -15,7 +15,7 @@ export class NecromancerAcademy extends WeaponUpgradeRecipe {
   public readonly recipe: number[] = [FourCC("I00O"), FourCC("I05J")];
 
   private readonly timers = new Map<number, Timer>();
-  private readonly unitTypeId: number = FourCC("unec");
+  private readonly unitTypeId: number = FourCC("u01Y");
 
   public onAcquire(
     vehicle: Vehicle,

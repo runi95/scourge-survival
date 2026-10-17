@@ -30,7 +30,7 @@ Damage type: |cffffcc00normal|r`;
 
   private readonly timers = new Map<number, Timer>();
   private readonly itemTreants = new Map<number, Unit[]>();
-  private readonly treantUnitTypeId: number = FourCC("efon");
+  private readonly treantUnitTypeId: number = FourCC("e003");
 
   public onAcquire(
     vehicle: Vehicle,

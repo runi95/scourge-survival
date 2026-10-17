@@ -15,7 +15,7 @@ export class GargoyleSpire extends WeaponUpgradeRecipe {
   public readonly recipe: number[] = [FourCC("I00O"), FourCC("I05M")];
 
   private readonly timers = new Map<number, Timer>();
-  private readonly unitTypeId: number = FourCC("ugar");
+  private readonly unitTypeId: number = FourCC("u024");
 
   public onAcquire(
     vehicle: Vehicle,

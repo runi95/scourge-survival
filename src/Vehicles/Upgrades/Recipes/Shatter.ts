@@ -16,8 +16,6 @@ export class Shatter extends WeaponUpgradeRecipe {
   private readonly timers = new Map<number, Timer>();
   private readonly dummyUnitId: number = FourCC("u000");
   private readonly frostNovaAbilityId: number = FourCC("A03B");
-  // Enemies slowed by a Shatter nova (not by the novas they shatter into):
-  // handle id -> the nova that slowed them and who cast it
   private readonly frozen = new Map<
     number,
     { nova: number; owner: MapPlayer }

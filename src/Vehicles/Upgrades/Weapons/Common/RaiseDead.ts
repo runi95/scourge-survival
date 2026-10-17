@@ -15,7 +15,7 @@ export class RaiseDead extends WeaponUpgrade {
   public readonly rarity = VehicleUpgradeRarity.COMMON;
   public readonly race = Race.UNDEAD;
   public readonly icon =
-    "ReplaceableTextures/CommandButtons/BTNRaiseDeadOn.blp";
+    "ReplaceableTextures/CommandButtons/BTNSkeletonWarrior.blp";
   public readonly cost = 150;
   public readonly cooldown = 10;
   public readonly itemTypeId = FourCC("I05K");

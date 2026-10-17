@@ -15,7 +15,7 @@ export class GhoulPit extends WeaponUpgradeRecipe {
   public readonly recipe: number[] = [FourCC("I00O"), FourCC("I05K")];
 
   private readonly timers = new Map<number, Timer>();
-  private readonly unitTypeId: number = FourCC("ugho");
+  private readonly unitTypeId: number = FourCC("u023");
 
   public onAcquire(
     vehicle: Vehicle,

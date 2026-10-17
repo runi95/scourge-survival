@@ -15,7 +15,7 @@ export class CryptFiendDen extends WeaponUpgradeRecipe {
   public readonly recipe: number[] = [FourCC("I00O"), FourCC("I05L")];
 
   private readonly timers = new Map<number, Timer>();
-  private readonly unitTypeId: number = FourCC("ucry");
+  private readonly unitTypeId: number = FourCC("u01Z");
 
   public onAcquire(
     vehicle: Vehicle,

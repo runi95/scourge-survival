@@ -15,7 +15,7 @@ export class Slaughterhouse extends WeaponUpgradeRecipe {
   public readonly recipe: number[] = [FourCC("I00O"), FourCC("I04O")];
 
   private readonly timers = new Map<number, Timer>();
-  private readonly unitTypeId: number = FourCC("uabo");
+  private readonly unitTypeId: number = FourCC("u020");
 
   public onAcquire(
     vehicle: Vehicle,

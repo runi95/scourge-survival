@@ -4,10 +4,7 @@ import { TimerUtils } from "../../../Utility/TimerUtils";
 import { Globals } from "../../../Utility/Globals";
 import { weaponDummyAbilityIds } from "../../../Utility/WeaponDummyAbilityIds";
 import { WeaponUpgradeRecipe } from "../../WeaponUpgradeRecipe";
-import { RandomNumberGenerator } from "../../../Utility/RandomNumberGenerator";
 import { Group } from "../../../Utility/Group";
-
-const MULT = Math.PI / 180;
 
 export class FocusedImpale extends WeaponUpgradeRecipe {
   public readonly cooldown = 2;

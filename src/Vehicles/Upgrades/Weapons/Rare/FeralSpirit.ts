@@ -32,7 +32,7 @@ Damage type: |cffffcc00normal|r`;
 
   private readonly timers = new Map<number, Timer>();
   private readonly itemWolves = new Map<number, Unit[]>();
-  private readonly wolfUnitTypeId: number = FourCC("osw2");
+  private readonly wolfUnitTypeId: number = FourCC("o004");
 
   public onAcquire(
     vehicle: Vehicle,

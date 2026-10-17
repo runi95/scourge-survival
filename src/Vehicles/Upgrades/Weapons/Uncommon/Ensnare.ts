@@ -69,7 +69,7 @@ Damage type: |cffffcc00spell|r`;
       dummy.issueTargetOrder("ensnare", target);
       dummy.damageTarget(
         target.handle,
-        40,
+        120,
         false,
         false,
         ATTACK_TYPE_NORMAL,

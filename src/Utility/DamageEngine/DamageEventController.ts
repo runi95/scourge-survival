@@ -8,6 +8,7 @@ import { FireboltDamageEvent } from "./DamageEvents/FireboltDamageEvent";
 import { InnerFireDamageEvent } from "./DamageEvents/InnerFireDamageEvent";
 import { LocustSwarmDamageEvent } from "./DamageEvents/LocustSwarmDamageEvent";
 import { LongRifleDamageEvent } from "./DamageEvents/LongRifleDamageEvent";
+import { ShadowBoltDamageEvent } from "./DamageEvents/ShadowBoltDamageEvent";
 import { MagicSurgeDamageEvent } from "./DamageEvents/MagicSurgeDamageEvent";
 import { MarksmanDamageEvent } from "./DamageEvents/MarksmanDamageEvent";
 import { ScattergunDamageEvent } from "./DamageEvents/ScattergunDamageEvent";
@@ -50,6 +51,10 @@ export class DamageEventController {
     // On damage events
     DamageEngine.register(
       new LongRifleDamageEvent(),
+      DamageEventType.OnDamageEvent,
+    );
+    DamageEngine.register(
+      new ShadowBoltDamageEvent(),
       DamageEventType.OnDamageEvent,
     );
     DamageEngine.register(

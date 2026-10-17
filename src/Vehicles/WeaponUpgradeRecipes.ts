@@ -193,7 +193,6 @@ export const weaponRecipes = [
   new Recipes.ShadowSpikes(),
   new Recipes.ShadowSpire(),
   new Recipes.ShadowVolley(),
-  new Recipes.SkeletonArmy(),
   new Recipes.SkeletonDrop(),
   new Recipes.Slaughterhouse(),
   new Recipes.SwarmSpire(),

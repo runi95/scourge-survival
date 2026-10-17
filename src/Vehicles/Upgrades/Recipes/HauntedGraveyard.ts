@@ -12,10 +12,11 @@ export class HauntedGraveyard extends WeaponUpgradeRecipe {
   public readonly cooldown = 10;
   public readonly itemTypeId = FourCC("I0BG");
   public readonly merchantItemTypeId = FourCC("I0BH");
-  public readonly recipe: number[] = [FourCC("I02K"), FourCC("I05K")];
+  public readonly recipe: number[] = [FourCC("I05K"), FourCC("I05K")];
 
   private readonly timers = new Map<number, Timer>();
-  private readonly unitTypeId: number = FourCC("u01A");
+  private readonly itemSkeletons = new Map<number, Unit[]>();
+  private readonly skeletonUnitTypeId: number = FourCC("u01A");
 
   public onAcquire(
     vehicle: Vehicle,
@@ -24,32 +25,39 @@ export class HauntedGraveyard extends WeaponUpgradeRecipe {
     itemId: number,
     weaponIndex: number,
   ): void {
-    const tick = () => {
+    const summon = () => {
       vehicle.unit.startAbilityCooldown(
         weaponDummyAbilityIds[weaponIndex],
         this.cooldown,
       );
 
-      const hx = vehicle.unit.x;
-      const hy = vehicle.unit.y;
-      for (let i = 0; i < 2; i++) {
+      const { x, y } = vehicle.unit;
+      // Earlier skeletons can still be up
+      const skeletons = (this.itemSkeletons.get(itemId) ?? []).filter((s) =>
+        s.isAlive(),
+      );
+      for (let i = 0; i < 3; i++) {
         const radians = RandomNumberGenerator.random(0, 359) * MULT;
-        const sx = hx + 200 * Math.cos(radians);
-        const sy = hy + 200 * Math.sin(radians);
+        const wx = x + 150 * Math.cos(radians);
+        const wy = y + 150 * Math.sin(radians);
         Effect.create(
-          "Abilities/Spells/Undead/RaiseSkeletonWarrior/RaiseSkeleton.mdl",
-          sx,
-          sy,
+          "Abilities/Spells/Orc/RaiseDead/feralspirittarget.mdl",
+          wx,
+          wy,
         ).destroy();
-        const summoned = Unit.create(owner, this.unitTypeId, sx, sy);
-        summoned.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 10);
+        const skeleton = Unit.create(owner, this.skeletonUnitTypeId, wx, wy);
+        skeleton.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 20);
+        skeleton.setAnimation("birth");
+        skeleton.queueAnimation("stand");
+        skeletons.push(skeleton);
       }
+      this.itemSkeletons.set(itemId, skeletons);
     };
 
     const t: Timer = TimerUtils.newTimer();
     this.timers.set(itemId, t);
-    t.start(this.cooldown, true, tick);
-    tick();
+    t.start(this.cooldown, true, summon);
+    summon();
   }
 
   public onDrop(
@@ -62,5 +70,12 @@ export class HauntedGraveyard extends WeaponUpgradeRecipe {
     const t = this.timers.get(itemId);
     this.timers.delete(itemId);
     TimerUtils.releaseTimer(t);
+
+    const skeletons = this.itemSkeletons.get(itemId);
+    this.itemSkeletons.delete(itemId);
+    if (skeletons == null) return;
+    for (const skeleton of skeletons) {
+      if (skeleton.isAlive()) skeleton.kill();
+    }
   }
 }
