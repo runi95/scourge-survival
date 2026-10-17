@@ -233,7 +233,7 @@ Creates a permanent thunderstorm that strikes enemies with lightning every so of
 }
 
 STRING 110
-// Abilities: A02Q (Wail), Hotkey (Hotkey - Normal)
+// Abilities: A00R (Sentinel), Researchhotkey (Hotkey - Learn)
 {
 E
 }
@@ -353,25 +353,25 @@ Spawns 3 drones to permanently fight for you.
 }
 
 STRING 266
-// Abilities: A02Q (Wail), Researchhotkey (Hotkey - Learn)
+// Abilities: A00U (Sheep-o-Matic), Researchhotkey (Hotkey - Learn)
 {
 E
 }
 
 STRING 289
-// Abilities: A00R (Sentinel), Researchhotkey (Hotkey - Learn)
+// Abilities: A00W (Devour), Researchhotkey (Hotkey - Learn)
 {
 E
 }
 
 STRING 360
-// Abilities: A02M (Anti-magic Shell), Hotkey (Hotkey - Normal)
+// Abilities: A02O (Moon Glaive), Researchhotkey (Hotkey - Learn)
 {
 W
 }
 
 STRING 361
-// Abilities: A02M (Anti-magic Shell), Researchhotkey (Hotkey - Learn)
+// Abilities: A02O (Moon Glaive), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -2904,76 +2904,10 @@ STRING 940
 Overdrive
 }
 
-STRING 980
-// Abilities: A02M (Anti-magic Shell), Researchtip (Tooltip - Learn)
-{
-Learn Anti-magic Shell - [|cffffcc00Level %d|r]
-}
-
-STRING 981
-// Abilities: A02M (Anti-magic Shell), Researchubertip (Tooltip - Learn - Extended)
-{
-Surrounds the Banshee with a shell that absorbs damage for 12 seconds.|n|n|cffffcc00Level 1|r - Absorbs 150 damage.|n|cffffcc00Level 2|r - Absorbs 250 damage.|n|cffffcc00Level 3|r - Absorbs 350 damage.|n|cffffcc00Level 4|r - Absorbs 450 damage.|n|cffffcc00Level 5|r - Absorbs 550 damage.
-}
-
-STRING 982
-// Abilities: A02M (Anti-magic Shell), Tip (Tooltip - Normal)
-{
-Anti-magic Shell - [|cffffcc00Level 1|r]
-}
-
 STRING 983
 // Abilities: A02M (Anti-magic Shell), Ubertip (Tooltip - Normal - Extended)
 {
 Surrounds the Banshee with a shell that absorbs the next 150 damage she would take. Lasts 12 seconds.|n|n|cffffcc00Cooldown:|r 30 seconds.
-}
-
-STRING 984
-// Abilities: A02M (Anti-magic Shell), Tip (Tooltip - Normal)
-{
-Anti-magic Shell - [|cffffcc00Level 2|r]
-}
-
-STRING 985
-// Abilities: A02M (Anti-magic Shell), Ubertip (Tooltip - Normal - Extended)
-{
-Surrounds the Banshee with a shell that absorbs the next 250 damage she would take. Lasts 12 seconds.|n|n|cffffcc00Cooldown:|r 30 seconds.
-}
-
-STRING 986
-// Abilities: A02M (Anti-magic Shell), Tip (Tooltip - Normal)
-{
-Anti-magic Shell - [|cffffcc00Level 3|r]
-}
-
-STRING 987
-// Abilities: A02M (Anti-magic Shell), Ubertip (Tooltip - Normal - Extended)
-{
-Surrounds the Banshee with a shell that absorbs the next 350 damage she would take. Lasts 12 seconds.|n|n|cffffcc00Cooldown:|r 30 seconds.
-}
-
-STRING 988
-// Abilities: A02M (Anti-magic Shell), Tip (Tooltip - Normal)
-{
-Anti-magic Shell - [|cffffcc00Level 4|r]
-}
-
-STRING 989
-// Abilities: A02M (Anti-magic Shell), Ubertip (Tooltip - Normal - Extended)
-{
-Surrounds the Banshee with a shell that absorbs the next 450 damage she would take. Lasts 12 seconds.|n|n|cffffcc00Cooldown:|r 30 seconds.
-}
-
-STRING 990
-// Abilities: A02M (Anti-magic Shell), Tip (Tooltip - Normal)
-{
-Anti-magic Shell - [|cffffcc00Level 5|r]
-}
-
-STRING 991
-// Abilities: A02M (Anti-magic Shell), Ubertip (Tooltip - Normal - Extended)
-{
-Surrounds the Banshee with a shell that absorbs the next 550 damage she would take. Lasts 12 seconds.|n|n|cffffcc00Cooldown:|r 30 seconds.
 }
 
 STRING 992
@@ -3343,13 +3277,7 @@ Artillery Strike
 }
 
 STRING 1117
-// Abilities: A00U (Sheep-o-Matic), Researchhotkey (Hotkey - Learn)
-{
-E
-}
-
-STRING 1118
-// Abilities: A00W (Devour), Researchhotkey (Hotkey - Learn)
+// Abilities: A04N (Soul Reap), Researchhotkey (Hotkey - Learn)
 {
 E
 }
@@ -6779,7 +6707,7 @@ STRING 1719
 }
 
 STRING 1720
-// Abilities: A02O (Moon Glaive), Researchhotkey (Hotkey - Learn)
+// Abilities: A02Q (Wail), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -6917,7 +6845,7 @@ Overclocks the Siege Engine's weapons, doubling the damage they deal for 4 secon
 }
 
 STRING 1757
-// Abilities: A02O (Moon Glaive), Hotkey (Hotkey - Normal)
+// Abilities: A02Q (Wail), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -19598,5 +19526,131 @@ STRING 3413
 // Abilities: A01D (Workshop), EditorSuffix (Editor Suffix)
 {
 (Pocket Factory)
+}
+
+STRING 3414
+// Abilities: A02M (Anti-magic Shell), Hotkey (Hotkey - Normal)
+{
+F
+}
+
+STRING 3416
+// Abilities: A04N (Soul Reap), Name (Name)
+{
+Soul Reap
+}
+
+STRING 3417
+// Abilities: A04N (Soul Reap), Researchtip (Tooltip - Learn)
+{
+Learn Soul Reap - [|cffffcc00Level %d|r]
+}
+
+STRING 3418
+// Abilities: A04N (Soul Reap), Tip (Tooltip - Normal)
+{
+Soul Reap - [|cffffcc00Level 1|r]
+}
+
+STRING 3419
+// Abilities: A04N (Soul Reap), Tip (Tooltip - Normal)
+{
+Soul Reap - [|cffffcc00Level 2|r]
+}
+
+STRING 3420
+// Abilities: A04N (Soul Reap), Tip (Tooltip - Normal)
+{
+Soul Reap - [|cffffcc00Level 3|r]
+}
+
+STRING 3421
+// Abilities: A04N (Soul Reap), Tip (Tooltip - Normal)
+{
+Soul Reap - [|cffffcc00Level 4|r]
+}
+
+STRING 3422
+// Abilities: A04N (Soul Reap), Tip (Tooltip - Normal)
+{
+Soul Reap - [|cffffcc00Level 5|r]
+}
+
+STRING 3429
+// Abilities: A04N (Soul Reap), Ubertip (Tooltip - Normal - Extended)
+{
+Enemies that die within |cffffcc00600|r range of the Banshee have a |cffffcc0010%|r chance to leave a soul for her to harvest, up to |cffffcc003|r souls. Each spell she casts spends one soul to shorten its cooldown by |cffffcc0022%|r.
+}
+
+STRING 3430
+// Abilities: A04N (Soul Reap), Researchubertip (Tooltip - Learn - Extended)
+{
+Enemies that die near the Banshee have a |cffffcc0010%|r chance to leave a soul for her to harvest, up to |cffffcc003|r souls. Each spell she casts spends one soul to shorten its cooldown.|n|n|cffffcc00Level 1|r - 22% shorter cooldown.|n|cffffcc00Level 2|r - 34% shorter cooldown.|n|cffffcc00Level 3|r - 46% shorter cooldown.|n|cffffcc00Level 4|r - 58% shorter cooldown.|n|cffffcc00Level 5|r - 70% shorter cooldown.
+}
+
+STRING 3431
+// Abilities: A04N (Soul Reap), Ubertip (Tooltip - Normal - Extended)
+{
+Enemies that die within |cffffcc00600|r range of the Banshee have a |cffffcc0010%|r chance to leave a soul for her to harvest, up to |cffffcc003|r souls. Each spell she casts spends one soul to shorten its cooldown by |cffffcc0034%|r.
+}
+
+STRING 3432
+// Abilities: A04N (Soul Reap), Ubertip (Tooltip - Normal - Extended)
+{
+Enemies that die within |cffffcc00600|r range of the Banshee have a |cffffcc0010%|r chance to leave a soul for her to harvest, up to |cffffcc003|r souls. Each spell she casts spends one soul to shorten its cooldown by |cffffcc0046%|r.
+}
+
+STRING 3433
+// Abilities: A04N (Soul Reap), Ubertip (Tooltip - Normal - Extended)
+{
+Enemies that die within |cffffcc00600|r range of the Banshee have a |cffffcc0010%|r chance to leave a soul for her to harvest, up to |cffffcc003|r souls. Each spell she casts spends one soul to shorten its cooldown by |cffffcc0058%|r.
+}
+
+STRING 3434
+// Abilities: A04N (Soul Reap), Ubertip (Tooltip - Normal - Extended)
+{
+Enemies that die within |cffffcc00600|r range of the Banshee have a |cffffcc0010%|r chance to leave a soul for her to harvest, up to |cffffcc003|r souls. Each spell she casts spends one soul to shorten its cooldown by |cffffcc0070%|r.
+}
+
+STRING 3435
+// Abilities: A02M (Anti-magic Shell), Tip (Tooltip - Normal)
+{
+Anti-magic Shell
+}
+
+STRING 3439
+// Abilities: A013 (Soul Reap), Name (Name)
+{
+Soul Reap
+}
+
+STRING 3441
+// Abilities: A013 (Soul Reap), EditorSuffix (Editor Suffix)
+{
+(souls effect 1)
+}
+
+STRING 3442
+// Abilities: A014 (Soul Reap), Name (Name)
+{
+Soul Reap
+}
+
+STRING 3443
+// Abilities: A014 (Soul Reap), EditorSuffix (Editor Suffix)
+{
+(souls effect 2)
+}
+
+STRING 3444
+// Abilities: A015 (Soul Reap), Name (Name)
+{
+Soul Reap
+}
+
+STRING 3445
+// Abilities: A015 (Soul Reap), EditorSuffix (Editor Suffix)
+{
+(souls effect 3)
 }
 

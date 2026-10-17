@@ -1,4 +1,4 @@
-import { Effect, Timer, Trigger, Unit } from "w3ts";
+import { Timer, Trigger, Unit } from "w3ts";
 import { AntiMagicShellDamageEvent } from "../../Utility/DamageEngine/DamageEvents/AntiMagicShellDamageEvent";
 import { TimerUtils } from "../../Utility/TimerUtils";
 
@@ -18,11 +18,6 @@ export class AntiMagicShell {
       const ownerId = owner.id;
       AntiMagicShellDamageEvent.UNIT_ID[ownerId] = triggeringUnit.id;
 
-      // const effect = Effect.createAttachment(
-      //   "Abilities/Spells/Undead/AntiMagicShell/AntiMagicShell.mdl",
-      //   triggeringUnit,
-      //   "overhead",
-      // );
       triggeringUnit.addAbility(this.antiMagicShellEffectAbilityId);
       const t: Timer = TimerUtils.newTimer();
       t.start(10, false, () => {

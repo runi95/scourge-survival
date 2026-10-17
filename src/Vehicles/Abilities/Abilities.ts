@@ -20,6 +20,7 @@ import { WrathOfElune } from "./WrathOfElune";
 import { SheepOMatic } from "./SheepOMatic";
 import { BlinkDrive } from "./BlinkDrive";
 import { Sentinel } from "./Sentinel";
+import { SoulReap } from "./SoulReap";
 
 export class Abilities {
   private readonly abilities: unknown[] = [];
@@ -49,5 +50,6 @@ export class Abilities {
     this.abilities.push(new Ironhide());
     this.abilities.push(new Devour());
     this.abilities.push(new Sentinel());
+    this.abilities.push(new SoulReap());
   }
 }
