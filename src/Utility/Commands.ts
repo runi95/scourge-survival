@@ -87,6 +87,14 @@ export class Commands {
           vehicle.unit.setHeroLevel(Number(args[0]), true);
         })();
         break;
+      case "cd":
+        (() => {
+          const vehicle = GameMap.PLAYER_VEHICLES[this.player.id];
+          if (vehicle.unit == null) return;
+
+          vehicle.unit.resetCooldown();
+        })();
+        break;
       case "wave":
         (() => {
           if (args.length !== 1) return;
