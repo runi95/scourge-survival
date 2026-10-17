@@ -6623,7 +6623,7 @@ STRING 1609
 }
 
 STRING 1612
-// Abilities: A01D (Workshop), EditorSuffix (Editor Suffix)
+// Units: n010 (Dragon Whelp Forge), EditorSuffix (Name - Editor Suffix)
 {
 (Pocket Factory)
 }
@@ -6758,231 +6758,6 @@ Targets: |cffffcc00ground only!|r
 Damage type: |cffffcc00spell|r
 Mine activation delay: |cffffcc004s|r
 Mine activation: |cffffcc00spawns 3 Clockwerk Goblins|r
-}
-
-STRING 1672
-{
-Fortified armor takes this much damage:|n|cffff4040+25%|r from Siege attacks and Hero attacks|n|cff40ff40-15%|r from Normal attacks, Piercing attacks and Magic attacks|nFull damage from everything else.
-}
-
-STRING 1673
-{
-Heroes take this much damage:|n|cff40ff40-5%|r from Piercing attacks|n|cff40ff40-25%|r from Magic attacks and Spells|nFull damage from everything else.
-}
-
-STRING 1674
-{
-Heavy armor takes this much damage:|n|cffff4040+25%|r from Magic attacks|n|cffff4040+10%|r from Hero attacks|nFull damage from everything else.
-}
-
-STRING 1675
-{
-Medium armor takes this much damage:|n|cffff4040+25%|r from Normal attacks|n|cffff4040+5%|r from Hero attacks|n|cff40ff40-5%|r from Magic attacks|n|cff40ff40-15%|r from Piercing attacks|n|cff40ff40-25%|r from Siege attacks|nFull damage from everything else.
-}
-
-STRING 1676
-{
-Normal armor takes this much damage:|n|cffff4040+5%|r from Piercing attacks and Magic attacks|n|cff40ff40-10%|r from Hero attacks|n|cff40ff40-20%|r from Siege attacks|nFull damage from everything else.
-}
-
-STRING 1677
-{
-Light armor takes this much damage:|n|cffff4040+25%|r from Piercing attacks and Magic attacks|n|cff40ff40-5%|r from Hero attacks|nFull damage from everything else.
-}
-
-STRING 1678
-{
-Divine beings take full damage from all attack types.
-}
-
-STRING 1679
-{
-Unarmored units take this much damage:|n|cffff4040+20%|r from Siege attacks|n|cffff4040+15%|r from Piercing attacks|n|cff40ff40-25%|r from Hero attacks|nFull damage from everything else.
-}
-
-STRING 1680
-{
-Fortified armor takes this much damage:|n|cffff4040+25%|r from Siege attacks and Hero attacks|n|cff40ff40-15%|r from Normal attacks, Piercing attacks and Magic attacks|nFull damage from everything else.
-}
-
-STRING 1681
-{
-Heroes take this much damage:|n|cff40ff40-5%|r from Piercing attacks|n|cff40ff40-25%|r from Magic attacks and Spells|nFull damage from everything else.
-}
-
-STRING 1682
-{
-Heavy armor takes this much damage:|n|cffff4040+25%|r from Magic attacks|n|cffff4040+10%|r from Hero attacks|nFull damage from everything else.
-}
-
-STRING 1683
-{
-Medium armor takes this much damage:|n|cffff4040+25%|r from Normal attacks|n|cffff4040+5%|r from Hero attacks|n|cff40ff40-5%|r from Magic attacks|n|cff40ff40-15%|r from Piercing attacks|n|cff40ff40-25%|r from Siege attacks|nFull damage from everything else.
-}
-
-STRING 1684
-{
-Normal armor takes this much damage:|n|cffff4040+5%|r from Piercing attacks and Magic attacks|n|cff40ff40-10%|r from Hero attacks|n|cff40ff40-20%|r from Siege attacks|nFull damage from everything else.
-}
-
-STRING 1685
-{
-Light armor takes this much damage:|n|cffff4040+25%|r from Piercing attacks and Magic attacks|n|cff40ff40-5%|r from Hero attacks|nFull damage from everything else.
-}
-
-STRING 1686
-{
-Divine beings take full damage from all attack types.
-}
-
-STRING 1687
-{
-Unarmored units take this much damage:|n|cffff4040+20%|r from Siege attacks|n|cffff4040+15%|r from Piercing attacks|n|cff40ff40-25%|r from Hero attacks|nFull damage from everything else.
-}
-
-STRING 1688
-{
-Fortified armor takes this much damage:|n|cffff4040+25%|r from Siege attacks and Hero attacks|n|cff40ff40-15%|r from Normal attacks, Piercing attacks and Magic attacks|nFull damage from everything else.
-}
-
-STRING 1689
-{
-Heroes take this much damage:|n|cff40ff40-5%|r from Piercing attacks|n|cff40ff40-25%|r from Magic attacks and Spells|nFull damage from everything else.
-}
-
-STRING 1690
-{
-Heavy armor takes this much damage:|n|cffff4040+25%|r from Magic attacks|n|cffff4040+10%|r from Hero attacks|nFull damage from everything else.
-}
-
-STRING 1691
-{
-Medium armor takes this much damage:|n|cffff4040+25%|r from Normal attacks|n|cffff4040+5%|r from Hero attacks|n|cff40ff40-5%|r from Magic attacks|n|cff40ff40-15%|r from Piercing attacks|n|cff40ff40-25%|r from Siege attacks|nFull damage from everything else.
-}
-
-STRING 1692
-{
-Normal armor takes this much damage:|n|cffff4040+5%|r from Piercing attacks and Magic attacks|n|cff40ff40-10%|r from Hero attacks|n|cff40ff40-20%|r from Siege attacks|nFull damage from everything else.
-}
-
-STRING 1693
-{
-Light armor takes this much damage:|n|cffff4040+25%|r from Piercing attacks and Magic attacks|n|cff40ff40-5%|r from Hero attacks|nFull damage from everything else.
-}
-
-STRING 1694
-{
-Divine beings take full damage from all attack types.
-}
-
-STRING 1695
-{
-Unarmored units take this much damage:|n|cffff4040+20%|r from Siege attacks|n|cffff4040+15%|r from Piercing attacks|n|cff40ff40-25%|r from Hero attacks|nFull damage from everything else.
-}
-
-STRING 1696
-{
-Hero attacks deal:|n|cff40ff40+25%|r against Fortified armor|n|cff40ff40+10%|r against Heavy armor|n|cff40ff40+5%|r against Medium armor|n|cffff4040-5%|r against Light armor|n|cffff4040-10%|r against Normal armor|n|cffff4040-25%|r against Unarmored units|nFul
-}
-
-STRING 1697
-{
-Normal attacks deal:|n|cff40ff40+25%|r against Medium armor|n|cffff4040-15%|r against Fortified armor|nFull damage against everything else.
-}
-
-STRING 1698
-{
-Normal attacks deal:|n|cff40ff40+25%|r against Medium armor|n|cffff4040-15%|r against Fortified armor|nFull damage against everything else.
-}
-
-STRING 1699
-{
-Magic attacks deal:|n|cff40ff40+25%|r against Light armor and Heavy armor|n|cff40ff40+5%|r against Normal armor|n|cffff4040-5%|r against Medium armor|n|cffff4040-15%|r against Fortified armor|n|cffff4040-25%|r against Heroes|nFull damage against everything el
-}
-
-STRING 1700
-{
-Piercing attacks deal:|n|cff40ff40+25%|r against Light armor|n|cff40ff40+15%|r against Unarmored units|n|cff40ff40+5%|r against Normal armor|n|cffff4040-5%|r against Heroes|n|cffff4040-15%|r against Medium armor and Fortified armor|nFull damage against everyt
-}
-
-STRING 1701
-{
-Chaos attacks deal full damage to all armor types.
-}
-
-STRING 1702
-{
-Siege attacks deal:|n|cff40ff40+25%|r against Fortified armor|n|cff40ff40+20%|r against Unarmored units|n|cffff4040-20%|r against Normal armor|n|cffff4040-25%|r against Medium armor|nFull damage against everything else.
-}
-
-STRING 1703
-{
-Hero attacks deal:|n|cff40ff40+25%|r against Fortified armor|n|cff40ff40+10%|r against Heavy armor|n|cff40ff40+5%|r against Medium armor|n|cffff4040-5%|r against Light armor|n|cffff4040-10%|r against Normal armor|n|cffff4040-25%|r against Unarmored units|nFul
-}
-
-STRING 1704
-{
-Normal attacks deal:|n|cff40ff40+25%|r against Medium armor|n|cffff4040-15%|r against Fortified armor|nFull damage against everything else.
-}
-
-STRING 1705
-{
-Normal attacks deal:|n|cff40ff40+25%|r against Medium armor|n|cffff4040-15%|r against Fortified armor|nFull damage against everything else.
-}
-
-STRING 1706
-{
-Magic attacks deal:|n|cff40ff40+25%|r against Light armor and Heavy armor|n|cff40ff40+5%|r against Normal armor|n|cffff4040-5%|r against Medium armor|n|cffff4040-15%|r against Fortified armor|n|cffff4040-25%|r against Heroes|nFull damage against everything el
-}
-
-STRING 1707
-{
-Piercing attacks deal:|n|cff40ff40+25%|r against Light armor|n|cff40ff40+15%|r against Unarmored units|n|cff40ff40+5%|r against Normal armor|n|cffff4040-5%|r against Heroes|n|cffff4040-15%|r against Medium armor and Fortified armor|nFull damage against everyt
-}
-
-STRING 1708
-{
-Chaos attacks deal full damage to all armor types.
-}
-
-STRING 1709
-{
-Siege attacks deal:|n|cff40ff40+25%|r against Fortified armor|n|cff40ff40+20%|r against Unarmored units|n|cffff4040-20%|r against Normal armor|n|cffff4040-25%|r against Medium armor|nFull damage against everything else.
-}
-
-STRING 1710
-{
-Hero attacks deal:|n|cff40ff40+25%|r against Fortified armor|n|cff40ff40+10%|r against Heavy armor|n|cff40ff40+5%|r against Medium armor|n|cffff4040-5%|r against Light armor|n|cffff4040-10%|r against Normal armor|n|cffff4040-25%|r against Unarmored units|nFul
-}
-
-STRING 1711
-{
-Normal attacks deal:|n|cff40ff40+25%|r against Medium armor|n|cffff4040-15%|r against Fortified armor|nFull damage against everything else.
-}
-
-STRING 1712
-{
-Normal attacks deal:|n|cff40ff40+25%|r against Medium armor|n|cffff4040-15%|r against Fortified armor|nFull damage against everything else.
-}
-
-STRING 1713
-{
-Magic attacks deal:|n|cff40ff40+25%|r against Light armor and Heavy armor|n|cff40ff40+5%|r against Normal armor|n|cffff4040-5%|r against Medium armor|n|cffff4040-15%|r against Fortified armor|n|cffff4040-25%|r against Heroes|nFull damage against everything el
-}
-
-STRING 1714
-{
-Piercing attacks deal:|n|cff40ff40+25%|r against Light armor|n|cff40ff40+15%|r against Unarmored units|n|cff40ff40+5%|r against Normal armor|n|cffff4040-5%|r against Heroes|n|cffff4040-15%|r against Medium armor and Fortified armor|nFull damage against everyt
-}
-
-STRING 1715
-{
-Chaos attacks deal full damage to all armor types.
-}
-
-STRING 1716
-{
-Siege attacks deal:|n|cff40ff40+25%|r against Fortified armor|n|cff40ff40+20%|r against Unarmored units|n|cffff4040-20%|r against Normal armor|n|cffff4040-25%|r against Medium armor|nFull damage against everything else.
 }
 
 STRING 1717
@@ -7616,7 +7391,7 @@ Cripple
 }
 
 STRING 1843
-// Items: I04P (Searing Arrow), Name (Name)
+// Units: u01K (Searing Arrow), Name (Name)
 {
 Searing Arrow
 }
@@ -7646,7 +7421,7 @@ Arrow
 }
 
 STRING 1848
-// Units: u01K (Searing Arrow), Name (Name)
+// Items: I04P (Searing Arrow), Name (Name)
 {
 Searing Arrow
 }
@@ -7860,7 +7635,7 @@ Fires rapid spectral missiles at random enemy units. Every 8th missile cripples 
 }
 
 STRING 1876
-// Items: I04W (Sacrifice), Name (Name)
+// Units: u01L (Sacrifice), Name (Name)
 {
 Sacrifice
 }
@@ -7896,13 +7671,13 @@ Damage type: |cffffcc00chaos|r
 }
 
 STRING 1880
-// Items: I04X (Sacrifice), Name (Name)
+// Items: I04W (Sacrifice), Name (Name)
 {
 Sacrifice
 }
 
 STRING 1881
-// Units: u01L (Sacrifice), Name (Name)
+// Items: I04X (Sacrifice), Name (Name)
 {
 Sacrifice
 }
@@ -8002,7 +7777,7 @@ Places plague traps underneath your hero. When an enemy steps on one, it release
 }
 
 STRING 1895
-// Items: I050 (Plague Trap), Name (Name)
+// Units: n00Y (Plague Trap), Name (Name)
 {
 Plague Trap
 }
@@ -8042,7 +7817,7 @@ Damage type: |cffffcc00spell|r
 }
 
 STRING 1899
-// Items: I051 (Plague Trap), Name (Name)
+// Items: I050 (Plague Trap), Name (Name)
 {
 Plague Trap
 }
@@ -8060,7 +7835,7 @@ Plague Trap Cloud
 }
 
 STRING 1902
-// Units: n00Y (Plague Trap), Name (Name)
+// Items: I051 (Plague Trap), Name (Name)
 {
 Plague Trap
 }
@@ -8084,7 +7859,7 @@ Fires slowing missiles at random enemy units within range.
 }
 
 STRING 1906
-// Items: I052 (Nerubian Tower), Name (Name)
+// Units: u01N (Nerubian Tower), Name (Name)
 {
 Nerubian Tower
 }
@@ -8122,7 +7897,7 @@ Damage type: |cffffcc00piercing|r
 }
 
 STRING 1910
-// Items: I053 (Nerubian Tower), Name (Name)
+// Items: I052 (Nerubian Tower), Name (Name)
 {
 Nerubian Tower
 }
@@ -8134,7 +7909,7 @@ Nerubian Tower Slow
 }
 
 STRING 1912
-// Units: u01N (Nerubian Tower), Name (Name)
+// Items: I053 (Nerubian Tower), Name (Name)
 {
 Nerubian Tower
 }
@@ -8158,7 +7933,7 @@ Spawns a Dragon Whelp Forge every 60 seconds that spawns Blue Dragon Whelps.
 }
 
 STRING 1916
-// Items: I054 (Dragon Whelp Forge), Name (Name)
+// Units: n010 (Dragon Whelp Forge), Name (Name)
 {
 Dragon Whelp Forge
 }
@@ -8198,7 +7973,7 @@ Duration: |cffffcc0060s (factory) + 20s (whelp)|r
 }
 
 STRING 1920
-// Items: I055 (Dragon Whelp Forge), Name (Name)
+// Items: I054 (Dragon Whelp Forge), Name (Name)
 {
 Dragon Whelp Forge
 }
@@ -8210,7 +7985,7 @@ Blue Dragon Whelp
 }
 
 STRING 1922
-// Units: n010 (Dragon Whelp Forge), Name (Name)
+// Items: I055 (Dragon Whelp Forge), Name (Name)
 {
 Dragon Whelp Forge
 }
@@ -8234,7 +8009,7 @@ Spawns a Pocket Factory every 60 seconds that burns every enemy unit around it. 
 }
 
 STRING 1926
-// Items: I056 (Blast Furnace), Name (Name)
+// Units: n012 (Blast Furnace), Name (Name)
 {
 Blast Furnace
 }
@@ -8272,7 +8047,7 @@ Health: |cffffcc00600 (factory) + 125 (goblin)|r
 }
 
 STRING 1930
-// Items: I057 (Blast Furnace), Name (Name)
+// Items: I056 (Blast Furnace), Name (Name)
 {
 Blast Furnace
 }
@@ -8296,7 +8071,7 @@ Burning Clockwerk Goblin
 }
 
 STRING 1934
-// Units: n012 (Blast Furnace), Name (Name)
+// Items: I057 (Blast Furnace), Name (Name)
 {
 Blast Furnace
 }
@@ -8442,13 +8217,13 @@ Steam Rockets
 }
 
 STRING 1953
-// Abilities: A03Y (Scalding Steam), Name (Name)
+// Units: u01O (Scalding Steam), Name (Name)
 {
 Scalding Steam
 }
 
 STRING 1954
-// Units: u01O (Scalding Steam), Name (Name)
+// Abilities: A03Y (Scalding Steam), Name (Name)
 {
 Scalding Steam
 }
@@ -8544,7 +8319,7 @@ Blizzard
 }
 
 STRING 1970
-// Items: I05F (Demolisher), Name (Name)
+// Units: u01P (Demolisher), Name (Name)
 {
 Demolisher
 }
@@ -8568,7 +8343,7 @@ Lobs a flaming boulder at a random nearby enemy.
 }
 
 STRING 1974
-// Units: u01P (Demolisher), Name (Name)
+// Items: I05F (Demolisher), Name (Name)
 {
 Demolisher
 }
@@ -8658,7 +8433,7 @@ Summons Spirit Wolves to fight by your side.
 }
 
 STRING 1989
-// Items: I05J (Shadow Bolt), Name (Name)
+// Units: u01Q (Shadow Bolt), Name (Name)
 {
 Shadow Bolt
 }
@@ -8682,7 +8457,7 @@ Fires a bolt of shadow at a random nearby enemy.
 }
 
 STRING 1993
-// Units: u01Q (Shadow Bolt), Name (Name)
+// Items: I05J (Shadow Bolt), Name (Name)
 {
 Shadow Bolt
 }
@@ -8742,7 +8517,7 @@ Carrion Swarm
 }
 
 STRING 2003
-// Items: I05M (Frost Wyrm), Name (Name)
+// Units: u01R (Frost Wyrm), Name (Name)
 {
 Frost Wyrm
 }
@@ -8766,7 +8541,7 @@ Summons a Frost Wyrm to fight by your side.
 }
 
 STRING 2007
-// Units: u01R (Frost Wyrm), Name (Name)
+// Items: I05M (Frost Wyrm), Name (Name)
 {
 Frost Wyrm
 }
@@ -8796,7 +8571,7 @@ Summons Treants to fight by your side.
 }
 
 STRING 2012
-// Items: I05O (Dryad Spear), Name (Name)
+// Units: u01S (Dryad Spear), Name (Name)
 {
 Dryad Spear
 }
@@ -8826,7 +8601,7 @@ Dryad Spear Slow
 }
 
 STRING 2017
-// Units: u01S (Dryad Spear), Name (Name)
+// Items: I05O (Dryad Spear), Name (Name)
 {
 Dryad Spear
 }
@@ -9128,7 +8903,7 @@ Fires an ice-cold cannonball at a random enemy unit within range, slowing it.
 }
 
 STRING 2060
-// Items: I05Y (Frost Cannon), Name (Name)
+// Units: u01T (Frost Cannon), Name (Name)
 {
 Frost Cannon
 }
@@ -9166,13 +8941,13 @@ Damage type: |cffffcc00siege|r
 }
 
 STRING 2064
-// Items: I05Z (Frost Cannon), Name (Name)
+// Items: I05Y (Frost Cannon), Name (Name)
 {
 Frost Cannon
 }
 
 STRING 2065
-// Units: u01T (Frost Cannon), Name (Name)
+// Items: I05Z (Frost Cannon), Name (Name)
 {
 Frost Cannon
 }
@@ -9598,7 +9373,7 @@ Summons an Ice Elemental every 15 seconds. Its icy bolts slow every enemy they h
 }
 
 STRING 2121
-// Items: I06C (Ice Elemental), Name (Name)
+// Units: n014 (Ice Elemental), Name (Name)
 {
 Ice Elemental
 }
@@ -9640,13 +9415,13 @@ Damage type: |cffffcc00piercing|r
 }
 
 STRING 2125
-// Items: I06D (Ice Elemental), Name (Name)
+// Items: I06C (Ice Elemental), Name (Name)
 {
 Ice Elemental
 }
 
 STRING 2126
-// Units: n014 (Ice Elemental), Name (Name)
+// Items: I06D (Ice Elemental), Name (Name)
 {
 Ice Elemental
 }
@@ -9744,7 +9519,7 @@ Summons a Lightning Elemental every 15 seconds. Its bolts sometimes stun their t
 }
 
 STRING 2139
-// Items: I06G (Lightning Elemental), Name (Name)
+// Units: n015 (Lightning Elemental), Name (Name)
 {
 Lightning Elemental
 }
@@ -9786,13 +9561,13 @@ Damage type: |cffffcc00piercing|r
 }
 
 STRING 2143
-// Items: I06H (Lightning Elemental), Name (Name)
+// Items: I06G (Lightning Elemental), Name (Name)
 {
 Lightning Elemental
 }
 
 STRING 2144
-// Units: n015 (Lightning Elemental), Name (Name)
+// Items: I06H (Lightning Elemental), Name (Name)
 {
 Lightning Elemental
 }
@@ -10862,7 +10637,7 @@ Places thundering land mines underneath your hero. When an enemy steps on one, i
 }
 
 STRING 2281
-// Items: I07E (Thunder Mine), Name (Name)
+// Units: n017 (Thunder Mine), Name (Name)
 {
 Thunder Mine
 }
@@ -10902,13 +10677,13 @@ Damage type: |cffffcc00spell|r
 }
 
 STRING 2285
-// Items: I07F (Thunder Mine), Name (Name)
+// Items: I07E (Thunder Mine), Name (Name)
 {
 Thunder Mine
 }
 
 STRING 2286
-// Units: n017 (Thunder Mine), Name (Name)
+// Items: I07F (Thunder Mine), Name (Name)
 {
 Thunder Mine
 }
@@ -10932,7 +10707,7 @@ Places land mines underneath your hero. When an enemy steps on one, it explodes 
 }
 
 STRING 2290
-// Items: I07G (Hammer Mine), Name (Name)
+// Units: n018 (Hammer Mine), Name (Name)
 {
 Hammer Mine
 }
@@ -10974,13 +10749,13 @@ Damage type: |cffffcc00spell|r
 }
 
 STRING 2294
-// Items: I07H (Hammer Mine), Name (Name)
+// Items: I07G (Hammer Mine), Name (Name)
 {
 Hammer Mine
 }
 
 STRING 2295
-// Units: n018 (Hammer Mine), Name (Name)
+// Items: I07H (Hammer Mine), Name (Name)
 {
 Hammer Mine
 }
@@ -12788,7 +12563,7 @@ Places land mines underneath your hero. When an enemy steps on one, it explodes 
 }
 
 STRING 2525
-// Items: I092 (Tremor Mine), Name (Name)
+// Units: n019 (Tremor Mine), Name (Name)
 {
 Tremor Mine
 }
@@ -12828,13 +12603,13 @@ Damage type: |cffffcc00spell|r
 }
 
 STRING 2529
-// Items: I093 (Tremor Mine), Name (Name)
+// Items: I092 (Tremor Mine), Name (Name)
 {
 Tremor Mine
 }
 
 STRING 2530
-// Units: n019 (Tremor Mine), Name (Name)
+// Items: I093 (Tremor Mine), Name (Name)
 {
 Tremor Mine
 }
@@ -13446,7 +13221,7 @@ Places land mines underneath your hero. When an enemy steps on one, it explodes 
 }
 
 STRING 2607
-// Items: I09M (Snare Mine), Name (Name)
+// Units: n01B (Snare Mine), Name (Name)
 {
 Snare Mine
 }
@@ -13488,13 +13263,13 @@ Damage type: |cffffcc00spell|r
 }
 
 STRING 2611
-// Items: I09N (Snare Mine), Name (Name)
+// Items: I09M (Snare Mine), Name (Name)
 {
 Snare Mine
 }
 
 STRING 2612
-// Units: n01B (Snare Mine), Name (Name)
+// Items: I09N (Snare Mine), Name (Name)
 {
 Snare Mine
 }
@@ -13834,7 +13609,7 @@ Places land mines full of bats underneath your hero. When an enemy steps on one,
 }
 
 STRING 2656
-// Items: I09Y (Bat Mine), Name (Name)
+// Units: n01C (Bat Mine), Name (Name)
 {
 Bat Mine
 }
@@ -13874,13 +13649,13 @@ Damage type: |cffffcc00spell|r
 }
 
 STRING 2660
-// Items: I09Z (Bat Mine), Name (Name)
+// Items: I09Y (Bat Mine), Name (Name)
 {
 Bat Mine
 }
 
 STRING 2661
-// Units: n01C (Bat Mine), Name (Name)
+// Items: I09Z (Bat Mine), Name (Name)
 {
 Bat Mine
 }
@@ -14166,7 +13941,7 @@ Places corpse-filled land mines underneath your hero. When an enemy steps on one
 }
 
 STRING 2697
-// Items: I0A8 (Corpse Mine), Name (Name)
+// Units: n01D (Corpse Mine), Name (Name)
 {
 Corpse Mine
 }
@@ -14208,13 +13983,13 @@ Damage type: |cffffcc00spell + normal|r
 }
 
 STRING 2701
-// Items: I0A9 (Corpse Mine), Name (Name)
+// Items: I0A8 (Corpse Mine), Name (Name)
 {
 Corpse Mine
 }
 
 STRING 2702
-// Units: n01D (Corpse Mine), Name (Name)
+// Items: I0A9 (Corpse Mine), Name (Name)
 {
 Corpse Mine
 }
@@ -14622,7 +14397,7 @@ Fires a freezing bolt at a random enemy unit within range, slowing it.
 }
 
 STRING 2754
-// Items: I0AM (Frost Bolt), Name (Name)
+// Units: u01V (Frost Bolt), Name (Name)
 {
 Frost Bolt
 }
@@ -14660,13 +14435,13 @@ Damage type: |cffffcc00magic|r
 }
 
 STRING 2758
-// Items: I0AN (Frost Bolt), Name (Name)
+// Items: I0AM (Frost Bolt), Name (Name)
 {
 Frost Bolt
 }
 
 STRING 2759
-// Units: u01V (Frost Bolt), Name (Name)
+// Items: I0AN (Frost Bolt), Name (Name)
 {
 Frost Bolt
 }
@@ -14968,7 +14743,7 @@ Rapidly fires freezing spirits at random enemy units within range, slowing them.
 }
 
 STRING 2798
-// Items: I0AW (Frost Spire), Name (Name)
+// Units: u01X (Frost Spire), Name (Name)
 {
 Frost Spire
 }
@@ -15006,13 +14781,13 @@ Damage type: |cffffcc00piercing|r
 }
 
 STRING 2802
-// Items: I0AX (Frost Spire), Name (Name)
+// Items: I0AW (Frost Spire), Name (Name)
 {
 Frost Spire
 }
 
 STRING 2803
-// Units: u01X (Frost Spire), Name (Name)
+// Items: I0AX (Frost Spire), Name (Name)
 {
 Frost Spire
 }
@@ -15752,7 +15527,7 @@ Places freezing land mines underneath your hero. When an enemy steps on one, it 
 }
 
 STRING 2896
-// Items: I0BK (Nova Mine), Name (Name)
+// Units: n01E (Nova Mine), Name (Name)
 {
 Nova Mine
 }
@@ -15792,13 +15567,13 @@ Damage type: |cffffcc00spell|r
 }
 
 STRING 2900
-// Items: I0BL (Nova Mine), Name (Name)
+// Items: I0BK (Nova Mine), Name (Name)
 {
 Nova Mine
 }
 
 STRING 2901
-// Units: n01E (Nova Mine), Name (Name)
+// Items: I0BL (Nova Mine), Name (Name)
 {
 Nova Mine
 }
@@ -15888,7 +15663,7 @@ Places cursed land mines underneath your hero. When an enemy steps on one, it ex
 }
 
 STRING 2913
-// Items: I0BO (Shadow Mine), Name (Name)
+// Units: n01F (Shadow Mine), Name (Name)
 {
 Shadow Mine
 }
@@ -15928,13 +15703,13 @@ Damage type: |cffffcc00spell + magic|r
 }
 
 STRING 2917
-// Items: I0BP (Shadow Mine), Name (Name)
+// Items: I0BO (Shadow Mine), Name (Name)
 {
 Shadow Mine
 }
 
 STRING 2918
-// Units: n01F (Shadow Mine), Name (Name)
+// Items: I0BP (Shadow Mine), Name (Name)
 {
 Shadow Mine
 }
@@ -16460,7 +16235,7 @@ Places frozen land mines underneath your hero. When an enemy steps on one, it ex
 }
 
 STRING 2986
-// Items: I0C6 (Wyrm Mine), Name (Name)
+// Units: n01G (Wyrm Mine), Name (Name)
 {
 Wyrm Mine
 }
@@ -16502,13 +16277,13 @@ Damage type: |cffffcc00spell|r
 }
 
 STRING 2990
-// Items: I0C7 (Wyrm Mine), Name (Name)
+// Items: I0C6 (Wyrm Mine), Name (Name)
 {
 Wyrm Mine
 }
 
 STRING 2991
-// Units: n01G (Wyrm Mine), Name (Name)
+// Items: I0C7 (Wyrm Mine), Name (Name)
 {
 Wyrm Mine
 }
@@ -16656,7 +16431,7 @@ Summons a tornado full of knives every 10 seconds that wanders around, tossing e
 }
 
 STRING 3011
-// Items: I0CC (Blade Cyclone), Name (Name)
+// Units: n01H (Blade Cyclone), Name (Name)
 {
 Blade Cyclone
 }
@@ -16694,7 +16469,7 @@ Damage type: |cffffcc00spell|r
 }
 
 STRING 3015
-// Items: I0CD (Blade Cyclone), Name (Name)
+// Items: I0CC (Blade Cyclone), Name (Name)
 {
 Blade Cyclone
 }
@@ -16706,7 +16481,7 @@ Blade Cyclone Damage
 }
 
 STRING 3017
-// Units: n01H (Blade Cyclone), Name (Name)
+// Items: I0CD (Blade Cyclone), Name (Name)
 {
 Blade Cyclone
 }
@@ -17620,7 +17395,7 @@ Places land mines underneath your hero. When an enemy steps on one, it explodes 
 }
 
 STRING 3136
-// Items: I0D6 (Knife Mine), Name (Name)
+// Units: n01K (Knife Mine), Name (Name)
 {
 Knife Mine
 }
@@ -17658,13 +17433,13 @@ Damage type: |cffffcc00spell|r
 }
 
 STRING 3140
-// Items: I0D7 (Knife Mine), Name (Name)
+// Items: I0D6 (Knife Mine), Name (Name)
 {
 Knife Mine
 }
 
 STRING 3141
-// Units: n01K (Knife Mine), Name (Name)
+// Items: I0D7 (Knife Mine), Name (Name)
 {
 Knife Mine
 }
@@ -17938,7 +17713,7 @@ Places land mines underneath your hero. When an enemy steps on one, it explodes 
 }
 
 STRING 3177
-// Items: I0DG (Poison Mine), Name (Name)
+// Units: n01L (Poison Mine), Name (Name)
 {
 Poison Mine
 }
@@ -17980,13 +17755,13 @@ Damage type: |cffffcc00spell + piercing|r
 }
 
 STRING 3181
-// Items: I0DH (Poison Mine), Name (Name)
+// Items: I0DG (Poison Mine), Name (Name)
 {
 Poison Mine
 }
 
 STRING 3182
-// Units: n01L (Poison Mine), Name (Name)
+// Items: I0DH (Poison Mine), Name (Name)
 {
 Poison Mine
 }
@@ -18138,7 +17913,7 @@ Places land mines underneath your hero. When an enemy steps on one, it explodes 
 }
 
 STRING 3202
-// Items: I0DM (Root Mine), Name (Name)
+// Units: n01M (Root Mine), Name (Name)
 {
 Root Mine
 }
@@ -18180,13 +17955,13 @@ Damage type: |cffffcc00spell|r
 }
 
 STRING 3206
-// Items: I0DN (Root Mine), Name (Name)
+// Items: I0DM (Root Mine), Name (Name)
 {
 Root Mine
 }
 
 STRING 3207
-// Units: n01M (Root Mine), Name (Name)
+// Items: I0DN (Root Mine), Name (Name)
 {
 Root Mine
 }
@@ -18340,7 +18115,7 @@ Places seed-filled land mines underneath your hero. When an enemy steps on one, 
 }
 
 STRING 3227
-// Items: I0DS (Sapling Mine), Name (Name)
+// Units: n01N (Sapling Mine), Name (Name)
 {
 Sapling Mine
 }
@@ -18382,13 +18157,13 @@ Damage type: |cffffcc00spell + normal|r
 }
 
 STRING 3231
-// Items: I0DT (Sapling Mine), Name (Name)
+// Items: I0DS (Sapling Mine), Name (Name)
 {
 Sapling Mine
 }
 
 STRING 3232
-// Units: n01N (Sapling Mine), Name (Name)
+// Items: I0DT (Sapling Mine), Name (Name)
 {
 Sapling Mine
 }
@@ -18412,7 +18187,7 @@ Places land mines underneath your hero. When an enemy steps on one, it explodes 
 }
 
 STRING 3236
-// Items: I0DU (Searing Mine), Name (Name)
+// Units: n01O (Searing Mine), Name (Name)
 {
 Searing Mine
 }
@@ -18452,13 +18227,13 @@ Damage type: |cffffcc00spell + piercing|r
 }
 
 STRING 3240
-// Items: I0DV (Searing Mine), Name (Name)
+// Items: I0DU (Searing Mine), Name (Name)
 {
 Searing Mine
 }
 
 STRING 3241
-// Units: n01O (Searing Mine), Name (Name)
+// Items: I0DV (Searing Mine), Name (Name)
 {
 Searing Mine
 }
@@ -18734,7 +18509,7 @@ Places land mines underneath your hero. When an enemy steps on one, it explodes 
 }
 
 STRING 3277
-// Items: I0E4 (Shadow Trap), Name (Name)
+// Units: n01P (Shadow Trap), Name (Name)
 {
 Shadow Trap
 }
@@ -18776,13 +18551,13 @@ Damage type: |cffffcc00spell|r
 }
 
 STRING 3281
-// Items: I0E5 (Shadow Trap), Name (Name)
+// Items: I0E4 (Shadow Trap), Name (Name)
 {
 Shadow Trap
 }
 
 STRING 3282
-// Units: n01P (Shadow Trap), Name (Name)
+// Items: I0E5 (Shadow Trap), Name (Name)
 {
 Shadow Trap
 }
@@ -19514,7 +19289,7 @@ Summons a poisonous tornado every 10 seconds that wanders around, tossing enemie
 }
 
 STRING 3375
-// Items: I0ES (Venom Cyclone), Name (Name)
+// Units: n01R (Venom Cyclone), Name (Name)
 {
 Venom Cyclone
 }
@@ -19552,13 +19327,13 @@ Damage type: |cffffcc00spell|r
 }
 
 STRING 3379
-// Items: I0ET (Venom Cyclone), Name (Name)
+// Items: I0ES (Venom Cyclone), Name (Name)
 {
 Venom Cyclone
 }
 
 STRING 3380
-// Units: n01R (Venom Cyclone), Name (Name)
+// Items: I0ET (Venom Cyclone), Name (Name)
 {
 Venom Cyclone
 }
@@ -19817,5 +19592,11 @@ STRING 3412
 // Items: I0F1 (Wild Growth), Name (Name)
 {
 Wild Growth
+}
+
+STRING 3413
+// Abilities: A01D (Workshop), EditorSuffix (Editor Suffix)
+{
+(Pocket Factory)
 }
 
