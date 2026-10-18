@@ -7471,67 +7471,63 @@ Shatter
 }
 
 STRING 1865
-// Items: I04U (Necromancer's Grasp), Tip (Tooltip - Basic)
+// Items: I04U (Curse of Frailty), Tip (Tooltip - Basic)
 {
-Purchase Necromancer's Grasp
+Purchase Curse of Frailty
 }
 
 STRING 1866
-// Items: I04U (Necromancer's Grasp), Description (Description)
+// Items: I04U (Curse of Frailty), Description (Description)
 {
-Cripples a nearby enemy. If the crippled enemy dies, it rises as a Skeleton Warrior that fights for you.
+Every enemy unit that hits your hero is crippled.
 }
 
 STRING 1867
-// Items: I04U (Necromancer's Grasp), Ubertip (Tooltip - Extended)
+// Items: I04U (Curse of Frailty), Ubertip (Tooltip - Extended)
 {
-Cripples a nearby enemy. If the crippled enemy dies, it rises as a Skeleton Warrior that fights for you.
+Every enemy unit that hits your hero is crippled.
 }
 
 STRING 1868
-// Items: I04U (Necromancer's Grasp), Name (Name)
+// Items: I04U (Curse of Frailty), Name (Name)
 {
-Necromancer's Grasp
+Curse of Frailty
 }
 
 STRING 1869
-// Items: I04V (Necromancer's Grasp), Tip (Tooltip - Basic)
+// Items: I04V (Curse of Frailty), Tip (Tooltip - Basic)
 {
-Purchase Necromancer's Grasp
+Purchase Curse of Frailty
 }
 
 STRING 1870
-// Items: I04V (Necromancer's Grasp), Ubertip (Tooltip - Extended)
+// Items: I04V (Curse of Frailty), Ubertip (Tooltip - Extended)
 {
-Cripples a nearby enemy. If the crippled enemy dies, it rises as a Skeleton Warrior that fights for you.
+Every enemy unit that hits your hero is crippled and takes damage. The curse strikes each enemy at most once every 3 seconds.
 
-Damage: |cffffcc00200|r
-Cooldown: |cffffcc002s|r
-Range: |cffffcc00600|r
+Damage: |cffffcc00150|r
+Cooldown: |cffffcc003s|r (per enemy)
 Duration: |cffffcc003s|r
-Duration (skeleton): |cffffcc0015s|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 1871
-// Items: I04V (Necromancer's Grasp), Description (Description)
+// Items: I04V (Curse of Frailty), Description (Description)
 {
-Cripples a nearby enemy. If the crippled enemy dies, it rises as a Skeleton Warrior that fights for you.
+Every enemy unit that hits your hero is crippled and takes damage. The curse strikes each enemy at most once every 3 seconds.
 
-Damage: |cffffcc00200|r
-Cooldown: |cffffcc002s|r
-Range: |cffffcc00600|r
+Damage: |cffffcc00150|r
+Cooldown: |cffffcc003s|r (per enemy)
 Duration: |cffffcc003s|r
-Duration (skeleton): |cffffcc0015s|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 1872
-// Items: I04V (Necromancer's Grasp), Name (Name)
+// Items: I04V (Curse of Frailty), Name (Name)
 {
-Necromancer's Grasp
+Curse of Frailty
 }
 
 STRING 1873

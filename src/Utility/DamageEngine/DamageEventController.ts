@@ -19,6 +19,7 @@ import { ThunderSpearsDamageEvent } from "./DamageEvents/ThunderSpearsDamageEven
 import { WarDrumsDamageEvent } from "./DamageEvents/WarDrumsDamageEvent";
 import { ElunesVeilDamageEvent } from "./DamageEvents/ElunesVeilDamageEvent";
 import { IronhideDamageEvent } from "./DamageEvents/IronhideDamageEvent";
+import { CurseOfFrailtyDamageEvent } from "./DamageEvents/CurseOfFrailtyDamageEvent";
 
 export interface ExtendedDamageInstance extends DamageInstance {
   sourceOwningPlayer: player;
@@ -129,6 +130,10 @@ export class DamageEventController {
     );
     DamageEngine.register(
       new ThunderSpearsDamageEvent(),
+      DamageEventType.AfterDamageEvent,
+    );
+    DamageEngine.register(
+      new CurseOfFrailtyDamageEvent(),
       DamageEventType.AfterDamageEvent,
     );
   }

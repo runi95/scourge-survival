@@ -73,7 +73,7 @@ export const weaponRecipes = [
   new Recipes.Metamorphosis(),
   new Recipes.ImpalingCross(),
   new Recipes.Shatter(),
-  new Recipes.NecromancersGrasp(),
+  new Recipes.CurseOfFrailty(),
   new Recipes.Sacrifice(),
   new Recipes.GraspOfTheDead(),
   new Recipes.PlagueTrap(),

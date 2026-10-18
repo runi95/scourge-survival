@@ -68,7 +68,7 @@ export * from "./Starfall";
 export * from "./Metamorphosis";
 export * from "./ImpalingCross";
 export * from "./Shatter";
-export * from "./NecromancersGrasp";
+export * from "./CurseOfFrailty";
 export * from "./Sacrifice";
 export * from "./GraspOfTheDead";
 export * from "./PlagueTrap";
