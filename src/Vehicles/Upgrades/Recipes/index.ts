@@ -151,7 +151,7 @@ export * from "./HuntersSpear";
 export * from "./NetVolley";
 export * from "./SpearVolley";
 export * from "./NightTerror";
-export * from "./BatGraveyard";
+export * from "./DeathMarch";
 export * from "./BatMine";
 export * from "./BatRockets";
 export * from "./BatStorm";

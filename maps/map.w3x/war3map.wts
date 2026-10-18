@@ -13419,71 +13419,67 @@ Night Terror
 }
 
 STRING 2645
-// Items: I09W (Bat Graveyard), Tip (Tooltip - Basic)
+// Items: I09W (Death March), Tip (Tooltip - Basic)
 {
-Purchase Bat Graveyard
+Purchase Death March
 }
 
 STRING 2646
-// Items: I09W (Bat Graveyard), Description (Description)
+// Items: I09W (Death March), Description (Description)
 {
-Sends a horde of bats towards a random enemy unit within range and raises a Skeleton Warrior beside your hero.
+Raises a row of Skeleton Warriors that charge like a swarm into the largest enemy group, trampling everything in their path, then stay to fight.
 }
 
 STRING 2647
-// Items: I09W (Bat Graveyard), Ubertip (Tooltip - Extended)
+// Items: I09W (Death March), Ubertip (Tooltip - Extended)
 {
-Sends a horde of bats towards a random enemy unit within range and raises a Skeleton Warrior beside your hero.
+Raises a row of Skeleton Warriors that charge like a swarm into the largest enemy group, trampling everything in their path, then stay to fight.
 }
 
 STRING 2648
-// Items: I09W (Bat Graveyard), Name (Name)
+// Items: I09W (Death March), Name (Name)
 {
-Bat Graveyard
+Death March
 }
 
 STRING 2649
-// Items: I09X (Bat Graveyard), Tip (Tooltip - Basic)
+// Items: I09X (Death March), Tip (Tooltip - Basic)
 {
-Purchase Bat Graveyard
+Purchase Death March
 }
 
 STRING 2650
-// Items: I09X (Bat Graveyard), Ubertip (Tooltip - Extended)
+// Items: I09X (Death March), Ubertip (Tooltip - Extended)
 {
-Sends a horde of bats towards a random enemy unit within range and raises a Skeleton Warrior beside your hero.
+Raises 3 Skeleton Warriors in a row every 10 seconds. They charge like a swarm towards the largest enemy group, trampling every enemy ground unit in their path, then stay to fight by your side.
 
-Damage: |cffffcc0075 (bats) + 26 - 42 (skeleton)|r
-Cooldown: |cffffcc003s|r
-Range: |cffffcc00600|r
-Distance: |cffffcc00800|r
-Area of effect: |cffffcc00100 - 300|r
+Damage: |cffffcc00100|r (trample) + |cffffcc0026 - 42|r (attack)
+Cooldown: |cffffcc0010s|r
+Charge distance: |cffffcc00800|r
 Health: |cffffcc00200|r
-Duration: |cffffcc0010s|r
-Targets: |cffffcc00air & ground (bats), ground (skeleton)|r
-Damage type: |cffffcc00spell + normal|r
+Duration: |cffffcc0020s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00normal|r
 }
 
 STRING 2651
-// Items: I09X (Bat Graveyard), Description (Description)
+// Items: I09X (Death March), Description (Description)
 {
-Sends a horde of bats towards a random enemy unit within range and raises a Skeleton Warrior beside your hero.
+Raises 3 Skeleton Warriors in a row every 10 seconds. They charge like a swarm towards the largest enemy group, trampling every enemy ground unit in their path, then stay to fight by your side.
 
-Damage: |cffffcc0075 (bats) + 26 - 42 (skeleton)|r
-Cooldown: |cffffcc003s|r
-Range: |cffffcc00600|r
-Distance: |cffffcc00800|r
-Area of effect: |cffffcc00100 - 300|r
+Damage: |cffffcc00100|r (trample) + |cffffcc0026 - 42|r (attack)
+Cooldown: |cffffcc0010s|r
+Charge distance: |cffffcc00800|r
 Health: |cffffcc00200|r
-Duration: |cffffcc0010s|r
-Targets: |cffffcc00air & ground (bats), ground (skeleton)|r
-Damage type: |cffffcc00spell + normal|r
+Duration: |cffffcc0020s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00normal|r
 }
 
 STRING 2652
-// Items: I09X (Bat Graveyard), Name (Name)
+// Items: I09X (Death March), Name (Name)
 {
-Bat Graveyard
+Death March
 }
 
 STRING 2653
