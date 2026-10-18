@@ -164,7 +164,7 @@ export const weaponRecipes = [
   new Recipes.Undertow(),
   new Recipes.CorpseMine(),
   new Recipes.SoulRend(),
-  new Recipes.CripplingRockets(),
+  new Recipes.Shrapnel(),
   new Recipes.CryptFiendDen(),
   new Recipes.DeathBolt(),
   new Recipes.FreezingBreath(),

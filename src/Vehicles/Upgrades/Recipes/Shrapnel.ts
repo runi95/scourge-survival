@@ -7,16 +7,17 @@ import { WeaponUpgradeRecipe } from "../../WeaponUpgradeRecipe";
 import { RandomNumberGenerator } from "../../../Utility/RandomNumberGenerator";
 import { Group } from "../../../Utility/Group";
 
-export class CripplingRockets extends WeaponUpgradeRecipe {
+// Fires Cluster Rockets from a Shrapnel Caster; ShrapnelDamageEvent lodges
+// shrapnel in what they hit, crippling it and tearing at it as it walks
+export class Shrapnel extends WeaponUpgradeRecipe {
   public readonly cooldown = 2;
   public readonly itemTypeId = FourCC("I0AC");
   public readonly merchantItemTypeId = FourCC("I0AD");
   public readonly recipe: number[] = [FourCC("I04O"), FourCC("I00N")];
 
   private readonly timers = new Map<number, Timer>();
-  private readonly dummyUnitId: number = FourCC("u000");
-  private readonly abilityId: number = FourCC("A01B");
-  private readonly ability2Id: number = FourCC("A03P");
+  private readonly casterUnitTypeId: number = FourCC("u029");
+  private readonly clusterRocketsAbilityId: number = FourCC("A01B");
 
   public onAcquire(
     vehicle: Vehicle,
@@ -25,14 +26,11 @@ export class CripplingRockets extends WeaponUpgradeRecipe {
     itemId: number,
     weaponIndex: number,
   ): void {
-    const tick = () => {
-      vehicle.unit.startAbilityCooldown(
-        weaponDummyAbilityIds[weaponIndex],
-        this.cooldown,
-      );
-
+    const t: Timer = TimerUtils.newTimer();
+    this.timers.set(itemId, t);
+    t.start(this.cooldown, true, () => {
       const enemies: Unit[] = [];
-      const grp = Group.fromRange(600, vehicle.unit.point);
+      const grp = Group.fromRange(700, vehicle.unit.point);
       grp.for((u) => {
         if (!u.isAlive()) return;
         if (!u.isVisible(owner)) return;
@@ -43,38 +41,21 @@ export class CripplingRockets extends WeaponUpgradeRecipe {
       });
       grp.destroy();
 
+      vehicle.unit.startAbilityCooldown(
+        weaponDummyAbilityIds[weaponIndex],
+        this.cooldown,
+      );
+
       if (enemies.length === 0) return;
 
-      const hx = vehicle.unit.x;
-      const hy = vehicle.unit.y;
+      const { x, y } = vehicle.unit;
       const target =
         enemies[RandomNumberGenerator.random(0, enemies.length - 1)];
-      {
-        const dummy = Unit.create(owner, this.dummyUnitId, hx, hy);
-        dummy.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 4);
-        dummy.addAbility(this.abilityId);
-        dummy.issueOrderAt("clusterrockets", target.x, target.y);
-      }
-      {
-        const dummy = Unit.create(owner, this.dummyUnitId, hx, hy);
-        dummy.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 1);
-        dummy.addAbility(this.ability2Id);
-        dummy.issueTargetOrder("cripple", target);
-      }
-      vehicle.unit.damageTarget(
-        target.handle,
-        75,
-        false,
-        false,
-        ATTACK_TYPE_NORMAL,
-        DAMAGE_TYPE_MAGIC,
-        WEAPON_TYPE_WHOKNOWS,
-      );
-    };
-
-    const t: Timer = TimerUtils.newTimer();
-    this.timers.set(itemId, t);
-    t.start(this.cooldown, true, tick);
+      const caster = Unit.create(owner, this.casterUnitTypeId, x, y);
+      caster.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 4);
+      caster.addAbility(this.clusterRocketsAbilityId);
+      caster.issueOrderAt("clusterrockets", target.x, target.y);
+    });
   }
 
   public onDrop(

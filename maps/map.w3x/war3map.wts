@@ -13939,69 +13939,69 @@ Soul Rend
 }
 
 STRING 2711
-// Items: I0AC (Crippling Rockets), Tip (Tooltip - Basic)
+// Items: I0AC (Shrapnel), Tip (Tooltip - Basic)
 {
-Purchase Crippling Rockets
+Purchase Shrapnel
 }
 
 STRING 2712
-// Items: I0AC (Crippling Rockets), Description (Description)
+// Items: I0AC (Shrapnel), Description (Description)
 {
-Fires Cluster Rockets at a random enemy unit within range and cripples it.
+Fires Cluster Rockets at a random enemy unit. Their shrapnel lodges in the enemies they hit, crippling them and tearing at them with every step they take.
 }
 
 STRING 2713
-// Items: I0AC (Crippling Rockets), Ubertip (Tooltip - Extended)
+// Items: I0AC (Shrapnel), Ubertip (Tooltip - Extended)
 {
-Fires Cluster Rockets at a random enemy unit within range and cripples it.
+Fires Cluster Rockets at a random enemy unit. Their shrapnel lodges in the enemies they hit, crippling them and tearing at them with every step they take.
 }
 
 STRING 2714
-// Items: I0AC (Crippling Rockets), Name (Name)
+// Items: I0AC (Shrapnel), Name (Name)
 {
-Crippling Rockets
+Shrapnel
 }
 
 STRING 2715
-// Items: I0AD (Crippling Rockets), Tip (Tooltip - Basic)
+// Items: I0AD (Shrapnel), Tip (Tooltip - Basic)
 {
-Purchase Crippling Rockets
+Purchase Shrapnel
 }
 
 STRING 2716
-// Items: I0AD (Crippling Rockets), Ubertip (Tooltip - Extended)
+// Items: I0AD (Shrapnel), Ubertip (Tooltip - Extended)
 {
-Fires Cluster Rockets at a random enemy unit within range and cripples it.
+Fires Cluster Rockets at a random enemy unit within range. Shrapnel lodges in every enemy unit they hit for 5 seconds: it is crippled, and every step it takes tears at it, the farther it walks the more.
 
-Damage: |cffffcc006 x 17.5 (rockets) + 75 (cripple)|r
+Damage: |cffffcc006 x 17.5|r (rockets) + |cffffcc0035|r per 100 distance walked (shrapnel)
 Cooldown: |cffffcc002s|r
-Range: |cffffcc00600|r
+Range: |cffffcc00700|r
 Area of effect: |cffffcc00300|r
-Duration: |cffffcc003s|r
+Duration: |cffffcc005s|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
-Effect: |cffffcc00stuns for 1s|r
+Effect: stuns for |cffffcc001s|r
 }
 
 STRING 2717
-// Items: I0AD (Crippling Rockets), Description (Description)
+// Items: I0AD (Shrapnel), Description (Description)
 {
-Fires Cluster Rockets at a random enemy unit within range and cripples it.
+Fires Cluster Rockets at a random enemy unit within range. Shrapnel lodges in every enemy unit they hit for 5 seconds: it is crippled, and every step it takes tears at it, the farther it walks the more.
 
-Damage: |cffffcc006 x 17.5 (rockets) + 75 (cripple)|r
+Damage: |cffffcc006 x 17.5|r (rockets) + |cffffcc0035|r per 100 distance walked (shrapnel)
 Cooldown: |cffffcc002s|r
-Range: |cffffcc00600|r
+Range: |cffffcc00700|r
 Area of effect: |cffffcc00300|r
-Duration: |cffffcc003s|r
+Duration: |cffffcc005s|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
-Effect: |cffffcc00stuns for 1s|r
+Effect: stuns for |cffffcc001s|r
 }
 
 STRING 2718
-// Items: I0AD (Crippling Rockets), Name (Name)
+// Items: I0AD (Shrapnel), Name (Name)
 {
-Crippling Rockets
+Shrapnel
 }
 
 STRING 2719
@@ -19986,5 +19986,11 @@ STRING 3542
 // Units: u028 (Bone Lancer), Name (Name)
 {
 Bone Lancer
+}
+
+STRING 3543
+// Units: u029 (Shrapnel Caster), Name (Name)
+{
+Shrapnel Caster
 }
 

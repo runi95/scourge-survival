@@ -159,7 +159,7 @@ export * from "./BoneLancers";
 export * from "./Undertow";
 export * from "./CorpseMine";
 export * from "./SoulRend";
-export * from "./CripplingRockets";
+export * from "./Shrapnel";
 export * from "./CryptFiendDen";
 export * from "./DeathBolt";
 export * from "./FreezingBreath";
