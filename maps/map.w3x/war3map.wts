@@ -14683,69 +14683,67 @@ Frost Spire Slow
 }
 
 STRING 2805
-// Items: I0AY (Frost Swarm), Tip (Tooltip - Basic)
+// Items: I0AY (Breath of Frost), Tip (Tooltip - Basic)
 {
-Purchase Frost Swarm
+Purchase Breath of Frost
 }
 
 STRING 2806
-// Items: I0AY (Frost Swarm), Description (Description)
+// Items: I0AY (Breath of Frost), Description (Description)
 {
-Sends a horde of bats towards a random enemy unit within range and blasts it with a Frost Nova.
+Breathes a widening cone of frost at the largest enemy group, freezing everything in it a little more every second.
 }
 
 STRING 2807
-// Items: I0AY (Frost Swarm), Ubertip (Tooltip - Extended)
+// Items: I0AY (Breath of Frost), Ubertip (Tooltip - Extended)
 {
-Sends a horde of bats towards a random enemy unit within range and blasts it with a Frost Nova.
+Breathes a widening cone of frost at the largest enemy group, freezing everything in it a little more every second.
 }
 
 STRING 2808
-// Items: I0AY (Frost Swarm), Name (Name)
+// Items: I0AY (Breath of Frost), Name (Name)
 {
-Frost Swarm
+Breath of Frost
 }
 
 STRING 2809
-// Items: I0AZ (Frost Swarm), Tip (Tooltip - Basic)
+// Items: I0AZ (Breath of Frost), Tip (Tooltip - Basic)
 {
-Purchase Frost Swarm
+Purchase Breath of Frost
 }
 
 STRING 2810
-// Items: I0AZ (Frost Swarm), Ubertip (Tooltip - Extended)
+// Items: I0AZ (Breath of Frost), Ubertip (Tooltip - Extended)
 {
-Sends a horde of bats towards a random enemy unit within range and blasts it with a Frost Nova.
+Breathes a cone of frost at the largest enemy group within range. It widens as it flies, like a swarm, and every enemy unit it hits takes damage and keeps freezing for 4 seconds.
 
-Damage: |cffffcc0075 (bats) + 60 (target) + 40 (nova)|r
-Slow: |cffffcc00-50% movement speed for 3s|r
+Damage: |cffffcc0080|r + |cffffcc0020|r per second for 4s
 Cooldown: |cffffcc003s|r
-Range: |cffffcc00600|r
-Distance: |cffffcc00800|r
-Area of effect: |cffffcc00100 - 300 (bats) + 200 (nova)|r
+Range: |cffffcc00700|r
+Distance: |cffffcc00700|r
+Area of effect: |cffffcc00125 - 400|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 2811
-// Items: I0AZ (Frost Swarm), Description (Description)
+// Items: I0AZ (Breath of Frost), Description (Description)
 {
-Sends a horde of bats towards a random enemy unit within range and blasts it with a Frost Nova.
+Breathes a cone of frost at the largest enemy group within range. It widens as it flies, like a swarm, and every enemy unit it hits takes damage and keeps freezing for 4 seconds.
 
-Damage: |cffffcc0075 (bats) + 60 (target) + 40 (nova)|r
-Slow: |cffffcc00-50% movement speed for 3s|r
+Damage: |cffffcc0080|r + |cffffcc0020|r per second for 4s
 Cooldown: |cffffcc003s|r
-Range: |cffffcc00600|r
-Distance: |cffffcc00800|r
-Area of effect: |cffffcc00100 - 300 (bats) + 200 (nova)|r
+Range: |cffffcc00700|r
+Distance: |cffffcc00700|r
+Area of effect: |cffffcc00125 - 400|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 2812
-// Items: I0AZ (Frost Swarm), Name (Name)
+// Items: I0AZ (Breath of Frost), Name (Name)
 {
-Frost Swarm
+Breath of Frost
 }
 
 STRING 2813
@@ -20020,5 +20018,11 @@ STRING 3548
 // Abilities: A04X (Black Ice (chill)), Name (Name)
 {
 Black Ice (chill)
+}
+
+STRING 3549
+// Abilities: A04Y (Breath of Frost (weapon)), Name (Name)
+{
+Breath of Frost (weapon)
 }
 

@@ -175,7 +175,7 @@ export const weaponRecipes = [
   new Recipes.FrostRockets(),
   new Recipes.FrozenSoul(),
   new Recipes.FrostSpire(),
-  new Recipes.FrostSwarm(),
+  new Recipes.BreathOfFrost(),
   new Recipes.FrostbiteCurse(),
   new Recipes.FrozenCurse(),
   new Recipes.FrozenDead(),
