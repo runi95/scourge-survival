@@ -14,7 +14,8 @@ export class FrostBolt extends WeaponUpgradeRecipe {
   public readonly recipe: number[] = [FourCC("I05J"), FourCC("I05M")];
 
   private readonly timers = new Map<number, Timer>();
-  private readonly unitTypeId: number = FourCC("u01V");
+  private readonly dummyUnitId: number = FourCC("u000");
+  private readonly frostBoltAbilityId: number = FourCC("A04U");
 
   public onAcquire(
     vehicle: Vehicle,
@@ -48,9 +49,10 @@ export class FrostBolt extends WeaponUpgradeRecipe {
       const target =
         enemies[RandomNumberGenerator.random(0, enemies.length - 1)];
       {
-        const missile = Unit.create(owner, this.unitTypeId, hx, hy);
-        missile.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 1);
-        missile.issueTargetOrder("attack", target);
+        const dummy = Unit.create(owner, this.dummyUnitId, hx, hy);
+        dummy.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 2);
+        dummy.addAbility(this.frostBoltAbilityId);
+        dummy.issueTargetOrder("thunderbolt", target);
       }
     };
 

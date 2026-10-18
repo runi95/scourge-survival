@@ -5777,13 +5777,13 @@ Purchase Carrion Beetle Nest
 STRING 1507
 // Items: I044 (Carrion Beetle Nest), Description (Description)
 {
-Spawns Carrion Beetles from nearby corpses.
+Spawns 2 Carrion Beetles where an enemy unit dies near your hero.
 }
 
 STRING 1508
 // Items: I044 (Carrion Beetle Nest), Ubertip (Tooltip - Extended)
 {
-Spawns Carrion Beetles from nearby corpses.
+Spawns 2 Carrion Beetles where an enemy unit dies near your hero.
 }
 
 STRING 1509
@@ -5801,10 +5801,11 @@ Purchase Carrion Beetle Nest
 STRING 1511
 // Items: I045 (Carrion Beetle Nest), Ubertip (Tooltip - Extended)
 {
-Spawns Carrion Beetles from any nearby corpse.
+When an enemy unit dies near your hero, 2 Carrion Beetles crawl out where it died to fight by your side.
 
 Damage: |cffffcc0012 - 15|r
-Cooldown: |cffffcc003s|r
+Cooldown: |cffffcc006s|r
+Range: |cffffcc00900|r
 Duration: |cffffcc0030s|r
 Targets: |cffffcc00ground only!|r
 Damage type: |cffffcc00normal|r
@@ -5813,10 +5814,11 @@ Damage type: |cffffcc00normal|r
 STRING 1512
 // Items: I045 (Carrion Beetle Nest), Description (Description)
 {
-Spawns Carrion Beetles from any nearby corpse.
+When an enemy unit dies near your hero, 2 Carrion Beetles crawl out where it died to fight by your side.
 
 Damage: |cffffcc0012 - 15|r
-Cooldown: |cffffcc003s|r
+Cooldown: |cffffcc006s|r
+Range: |cffffcc00900|r
 Duration: |cffffcc0030s|r
 Targets: |cffffcc00ground only!|r
 Damage type: |cffffcc00normal|r
@@ -5832,12 +5834,6 @@ STRING 1514
 // Units: u017 (Carrion Beetle), Name (Name)
 {
 Carrion Beetle
-}
-
-STRING 1515
-// Abilities: A03C (Carrion Beetle Nest), Name (Name)
-{
-Carrion Beetle Nest
 }
 
 STRING 1516
@@ -14309,13 +14305,13 @@ Purchase Frost Bolt
 STRING 2752
 // Items: I0AM (Frost Bolt), Description (Description)
 {
-Fires a freezing bolt at a random enemy unit within range, slowing it.
+Hurls a Frost Bolt at a random enemy unit within range, damaging it and freezing it in place.
 }
 
 STRING 2753
 // Items: I0AM (Frost Bolt), Ubertip (Tooltip - Extended)
 {
-Fires a freezing bolt at a random enemy unit within range, slowing it.
+Hurls a Frost Bolt at a random enemy unit within range, damaging it and freezing it in place.
 }
 
 STRING 2754
@@ -14333,27 +14329,27 @@ Purchase Frost Bolt
 STRING 2756
 // Items: I0AN (Frost Bolt), Ubertip (Tooltip - Extended)
 {
-Fires a freezing bolt at a random enemy unit within range, slowing it.
+Hurls a Frost Bolt at a random enemy unit within range, damaging it and freezing it in place.
 
-Damage: |cffffcc0028 - 32|r
-Slow: |cffffcc00-50% movement and attack speed for 3s|r
+Damage: |cffffcc00220|r
+Stun: |cffffcc001s (0.5s on heroes)|r
 Cooldown: |cffffcc001.5s|r
 Range: |cffffcc00600|r
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00magic|r
+Damage type: |cffffcc00spell|r
 }
 
 STRING 2757
 // Items: I0AN (Frost Bolt), Description (Description)
 {
-Fires a freezing bolt at a random enemy unit within range, slowing it.
+Hurls a Frost Bolt at a random enemy unit within range, damaging it and freezing it in place.
 
-Damage: |cffffcc0028 - 32|r
-Slow: |cffffcc00-50% movement and attack speed for 3s|r
+Damage: |cffffcc00220|r
+Stun: |cffffcc001s (0.5s on heroes)|r
 Cooldown: |cffffcc001.5s|r
 Range: |cffffcc00600|r
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00magic|r
+Damage type: |cffffcc00spell|r
 }
 
 STRING 2758
@@ -14525,13 +14521,13 @@ Purchase Frost Rockets
 STRING 2780
 // Items: I0AS (Frost Rockets), Description (Description)
 {
-Fires Cluster Rockets at a random enemy unit within range and blasts it with a Frost Nova.
+Fires a frost rocket at a random enemy unit within range. Where it lands, Frost Novas keep striking enemy units for 5 seconds, damaging and slowing them.
 }
 
 STRING 2781
 // Items: I0AS (Frost Rockets), Ubertip (Tooltip - Extended)
 {
-Fires Cluster Rockets at a random enemy unit within range and blasts it with a Frost Nova.
+Fires a frost rocket at a random enemy unit within range. Where it lands, Frost Novas keep striking enemy units for 5 seconds, damaging and slowing them.
 }
 
 STRING 2782
@@ -14549,31 +14545,29 @@ Purchase Frost Rockets
 STRING 2784
 // Items: I0AT (Frost Rockets), Ubertip (Tooltip - Extended)
 {
-Fires Cluster Rockets at a random enemy unit within range and blasts it with a Frost Nova.
+Fires a frost rocket at a random enemy unit within range. Where it lands, Frost Novas keep striking enemy units for 5 seconds, damaging and slowing them.
 
-Damage: |cffffcc006 x 17.5 (rockets) + 60 (target) + 40 (nova)|r
+Damage: |cffffcc0030 (target) + 40 (nova) every 0.5s for 5s|r
 Slow: |cffffcc00-50% movement speed for 3s|r
-Cooldown: |cffffcc003s|r
+Cooldown: |cffffcc005s|r
 Range: |cffffcc00700|r
-Area of effect: |cffffcc00300 (rockets) + 200 (nova)|r
+Area of effect: |cffffcc00300 (frozen area) + 200 (nova)|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
-Effect: |cffffcc00stuns for 1s|r
 }
 
 STRING 2785
 // Items: I0AT (Frost Rockets), Description (Description)
 {
-Fires Cluster Rockets at a random enemy unit within range and blasts it with a Frost Nova.
+Fires a frost rocket at a random enemy unit within range. Where it lands, Frost Novas keep striking enemy units for 5 seconds, damaging and slowing them.
 
-Damage: |cffffcc006 x 17.5 (rockets) + 60 (target) + 40 (nova)|r
+Damage: |cffffcc0030 (target) + 40 (nova) every 0.5s for 5s|r
 Slow: |cffffcc00-50% movement speed for 3s|r
-Cooldown: |cffffcc003s|r
+Cooldown: |cffffcc005s|r
 Range: |cffffcc00700|r
-Area of effect: |cffffcc00300 (rockets) + 200 (nova)|r
+Area of effect: |cffffcc00300 (frozen area) + 200 (nova)|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
-Effect: |cffffcc00stuns for 1s|r
 }
 
 STRING 2786
@@ -15781,7 +15775,7 @@ Rapidly fires shadow bolts at random enemy units within range.
 }
 
 STRING 2938
-// Items: I0BU (Shadow Spire), Name (Name)
+// Units: u026 (Shadow Spire), Name (Name)
 {
 Shadow Spire
 }
@@ -15817,7 +15811,7 @@ Damage type: |cffffcc00magic|r
 }
 
 STRING 2942
-// Items: I0BV (Shadow Spire), Name (Name)
+// Items: I0BU (Shadow Spire), Name (Name)
 {
 Shadow Spire
 }
@@ -19922,5 +19916,93 @@ STRING 3527
 // Abilities: A00O (Call to Arms), EditorSuffix (Editor Suffix)
 {
 (Locust Swarm)
+}
+
+STRING 3528
+// Abilities: A04T (Frost Rockets (Nova)), Name (Name)
+{
+Frost Rockets (Nova)
+}
+
+STRING 3529
+// Items: I0F2 (Spirit Warriors), Tip (Tooltip - Basic)
+{
+Purchase Spirit Warriors
+}
+
+STRING 3530
+// Items: I0F2 (Spirit Warriors), Description (Description)
+{
+Raises a Skeleton Warrior next to your hero every 10 seconds. Its spirit fires spirit missiles at nearby enemy units while it fights.
+}
+
+STRING 3531
+// Items: I0F2 (Spirit Warriors), Ubertip (Tooltip - Extended)
+{
+Raises a Skeleton Warrior next to your hero every 10 seconds. Its spirit fires spirit missiles at nearby enemy units while it fights.
+}
+
+STRING 3532
+// Items: I0F2 (Spirit Warriors), Name (Name)
+{
+Spirit Warriors
+}
+
+STRING 3533
+// Items: I0F3 (Spirit Warriors), Tip (Tooltip - Basic)
+{
+Purchase Spirit Warriors
+}
+
+STRING 3534
+// Items: I0F3 (Spirit Warriors), Ubertip (Tooltip - Extended)
+{
+Raises a Skeleton Warrior next to your hero every 10 seconds. Its spirit fires spirit missiles at nearby enemy units while it fights.
+
+Damage: |cffffcc0026 - 42 (skeleton) + 10 - 14 (spirit missile)|r
+Cooldown: |cffffcc0010s (skeleton) + 0.4s (spirit missile)|r
+Health: |cffffcc00200|r
+Duration: |cffffcc0020s|r
+Range: |cffffcc00500 (spirit missile)|r
+Targets: |cffffcc00ground (skeleton), air & ground (spirit missile)|r
+Damage type: |cffffcc00normal + piercing|r
+}
+
+STRING 3535
+// Items: I0F3 (Spirit Warriors), Description (Description)
+{
+Raises a Skeleton Warrior next to your hero every 10 seconds. Its spirit fires spirit missiles at nearby enemy units while it fights.
+
+Damage: |cffffcc0026 - 42 (skeleton) + 10 - 14 (spirit missile)|r
+Cooldown: |cffffcc0010s (skeleton) + 0.4s (spirit missile)|r
+Health: |cffffcc00200|r
+Duration: |cffffcc0020s|r
+Range: |cffffcc00500 (spirit missile)|r
+Targets: |cffffcc00ground (skeleton), air & ground (spirit missile)|r
+Damage type: |cffffcc00normal + piercing|r
+}
+
+STRING 3536
+// Items: I0F3 (Spirit Warriors), Name (Name)
+{
+Spirit Warriors
+}
+
+STRING 3537
+// Items: I0BV (Shadow Spire), Name (Name)
+{
+Shadow Spire
+}
+
+STRING 3538
+// Units: u017 (Carrion Beetle), EditorSuffix (Name - Editor Suffix)
+{
+(Carrion Beetle Nest)
+}
+
+STRING 3539
+// Abilities: A04U (Frost Bolt (weapon)), Name (Name)
+{
+Frost Bolt (weapon)
 }
 

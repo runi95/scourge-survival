@@ -14,7 +14,7 @@ export class ShadowSpire extends WeaponUpgradeRecipe {
   public readonly recipe: number[] = [FourCC("I02K"), FourCC("I05J")];
 
   private readonly timers = new Map<number, Timer>();
-  private readonly unitTypeId: number = FourCC("u01Q");
+  private readonly unitTypeId: number = FourCC("u026");
 
   public onAcquire(
     vehicle: Vehicle,

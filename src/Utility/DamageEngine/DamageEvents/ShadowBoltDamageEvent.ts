@@ -3,8 +3,8 @@ import type { ExtendedDamageInstance } from "../DamageEventController";
 
 export class ShadowBoltDamageEvent implements DamageEvent {
   private readonly shadowBoltUnitTypeId = FourCC("u01Q");
-  // Necromancer Academy's Necromancers fire shadow bolts too
   private readonly academyNecromancerUnitTypeId = FourCC("u01Y");
+  private readonly shadowSpireUnitTypeId = FourCC("u026");
   private readonly curseAbilityId = FourCC("A016");
   private readonly maxLevel = 10;
   private readonly damagePerLevel = 0.1;
