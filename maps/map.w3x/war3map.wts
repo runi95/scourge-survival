@@ -13877,65 +13877,65 @@ Corpse Mine
 }
 
 STRING 2703
-// Items: I0AA (Crippling Bolt), Tip (Tooltip - Basic)
+// Items: I0AA (Soul Rend), Tip (Tooltip - Basic)
 {
-Purchase Crippling Bolt
+Purchase Soul Rend
 }
 
 STRING 2704
-// Items: I0AA (Crippling Bolt), Description (Description)
+// Items: I0AA (Soul Rend), Description (Description)
 {
-Fires a shadow bolt at a random enemy unit within range and cripples it.
+Piles shadow bolt curses onto one enemy unit. Every 5 seconds a cripple tears them all out of it.
 }
 
 STRING 2705
-// Items: I0AA (Crippling Bolt), Ubertip (Tooltip - Extended)
+// Items: I0AA (Soul Rend), Ubertip (Tooltip - Extended)
 {
-Fires a shadow bolt at a random enemy unit within range and cripples it.
+Piles shadow bolt curses onto one enemy unit. Every 5 seconds a cripple tears them all out of it.
 }
 
 STRING 2706
-// Items: I0AA (Crippling Bolt), Name (Name)
+// Items: I0AA (Soul Rend), Name (Name)
 {
-Crippling Bolt
+Soul Rend
 }
 
 STRING 2707
-// Items: I0AB (Crippling Bolt), Tip (Tooltip - Basic)
+// Items: I0AB (Soul Rend), Tip (Tooltip - Basic)
 {
-Purchase Crippling Bolt
+Purchase Soul Rend
 }
 
 STRING 2708
-// Items: I0AB (Crippling Bolt), Ubertip (Tooltip - Extended)
+// Items: I0AB (Soul Rend), Ubertip (Tooltip - Extended)
 {
-Fires a shadow bolt at a random enemy unit within range and cripples it.
+Fires shadow bolts at one enemy unit within range until it dies or gets away, piling their curses onto it. Every 5 seconds the victim is crippled and its curses are torn out of it, dealing damage for every curse. The bolts then pick a new victim.
 
-Damage: |cffffcc0020 - 24 (bolt) + 75 (cripple)|r
-Cooldown: |cffffcc002s|r
+Damage: |cffffcc0020 - 24|r (bolt) + |cffffcc0075|r per curse (rend)
+Cooldown: |cffffcc000.75s|r (bolt) + |cffffcc005s|r (rend)
 Range: |cffffcc00600|r
-Duration: |cffffcc003s|r
+Cripple duration: |cffffcc003s|r
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00magic + spell|r
+Damage type: |cffffcc00magic|r
 }
 
 STRING 2709
-// Items: I0AB (Crippling Bolt), Description (Description)
+// Items: I0AB (Soul Rend), Description (Description)
 {
-Fires a shadow bolt at a random enemy unit within range and cripples it.
+Fires shadow bolts at one enemy unit within range until it dies or gets away, piling their curses onto it. Every 5 seconds the victim is crippled and its curses are torn out of it, dealing damage for every curse. The bolts then pick a new victim.
 
-Damage: |cffffcc0020 - 24 (bolt) + 75 (cripple)|r
-Cooldown: |cffffcc002s|r
+Damage: |cffffcc0020 - 24|r (bolt) + |cffffcc0075|r per curse (rend)
+Cooldown: |cffffcc000.75s|r (bolt) + |cffffcc005s|r (rend)
 Range: |cffffcc00600|r
-Duration: |cffffcc003s|r
+Cripple duration: |cffffcc003s|r
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00magic + spell|r
+Damage type: |cffffcc00magic|r
 }
 
 STRING 2710
-// Items: I0AB (Crippling Bolt), Name (Name)
+// Items: I0AB (Soul Rend), Name (Name)
 {
-Crippling Bolt
+Soul Rend
 }
 
 STRING 2711

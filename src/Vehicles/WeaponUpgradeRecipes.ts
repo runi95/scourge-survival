@@ -163,7 +163,7 @@ export const weaponRecipes = [
   new Recipes.BoneLancers(),
   new Recipes.Undertow(),
   new Recipes.CorpseMine(),
-  new Recipes.CripplingBolt(),
+  new Recipes.SoulRend(),
   new Recipes.CripplingRockets(),
   new Recipes.CryptFiendDen(),
   new Recipes.DeathBolt(),

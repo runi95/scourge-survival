@@ -158,7 +158,7 @@ export * from "./Nightfall";
 export * from "./BoneLancers";
 export * from "./Undertow";
 export * from "./CorpseMine";
-export * from "./CripplingBolt";
+export * from "./SoulRend";
 export * from "./CripplingRockets";
 export * from "./CryptFiendDen";
 export * from "./DeathBolt";
