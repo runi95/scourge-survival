@@ -14813,69 +14813,65 @@ Ravenous Wyrm
 }
 
 STRING 2821
-// Items: I0B2 (Frozen Curse), Tip (Tooltip - Basic)
+// Items: I0B2 (Bitter Cold), Tip (Tooltip - Basic)
 {
-Purchase Frozen Curse
+Purchase Bitter Cold
 }
 
 STRING 2822
-// Items: I0B2 (Frozen Curse), Description (Description)
+// Items: I0B2 (Bitter Cold), Description (Description)
 {
-Cripples a random enemy unit within range and blasts it with a Frost Nova.
+Surrounds your hero with a bitter cold. Enemies inside are slowed, and the longer each one stays the harder the cold bites, until it cripples them.
 }
 
 STRING 2823
-// Items: I0B2 (Frozen Curse), Ubertip (Tooltip - Extended)
+// Items: I0B2 (Bitter Cold), Ubertip (Tooltip - Extended)
 {
-Cripples a random enemy unit within range and blasts it with a Frost Nova.
+Surrounds your hero with a bitter cold. Enemies inside are slowed, and the longer each one stays the harder the cold bites, until it cripples them.
 }
 
 STRING 2824
-// Items: I0B2 (Frozen Curse), Name (Name)
+// Items: I0B2 (Bitter Cold), Name (Name)
 {
-Frozen Curse
+Bitter Cold
 }
 
 STRING 2825
-// Items: I0B3 (Frozen Curse), Tip (Tooltip - Basic)
+// Items: I0B3 (Bitter Cold), Tip (Tooltip - Basic)
 {
-Purchase Frozen Curse
+Purchase Bitter Cold
 }
 
 STRING 2826
-// Items: I0B3 (Frozen Curse), Ubertip (Tooltip - Extended)
+// Items: I0B3 (Bitter Cold), Ubertip (Tooltip - Extended)
 {
-Cripples a random enemy unit within range and blasts it with a Frost Nova.
+Surrounds your hero with a bitter cold. Every enemy unit within 350 of your hero is slowed and takes damage every second, 10 more for every second it stays inside, up to 40. After 3 seconds in the cold it is crippled. An enemy that leaves the cold warms up again.
 
-Damage: |cffffcc0075 (cripple) + 60 (target) + 40 (nova)|r
-Slow: |cffffcc00-50% movement speed for 3s|r
-Cooldown: |cffffcc002s|r
-Range: |cffffcc00600|r
-Area of effect: |cffffcc00200|r
-Duration: |cffffcc003s|r
+Damage: |cffffcc0010 - 40|r per second
+Slow: |cffffcc00-50% movement speed|r
+Area of effect: |cffffcc00350|r
+Cripple: |cffffcc00after 3s|r inside, for |cffffcc003s|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 2827
-// Items: I0B3 (Frozen Curse), Description (Description)
+// Items: I0B3 (Bitter Cold), Description (Description)
 {
-Cripples a random enemy unit within range and blasts it with a Frost Nova.
+Surrounds your hero with a bitter cold. Every enemy unit within 350 of your hero is slowed and takes damage every second, 10 more for every second it stays inside, up to 40. After 3 seconds in the cold it is crippled. An enemy that leaves the cold warms up again.
 
-Damage: |cffffcc0075 (cripple) + 60 (target) + 40 (nova)|r
-Slow: |cffffcc00-50% movement speed for 3s|r
-Cooldown: |cffffcc002s|r
-Range: |cffffcc00600|r
-Area of effect: |cffffcc00200|r
-Duration: |cffffcc003s|r
+Damage: |cffffcc0010 - 40|r per second
+Slow: |cffffcc00-50% movement speed|r
+Area of effect: |cffffcc00350|r
+Cripple: |cffffcc00after 3s|r inside, for |cffffcc003s|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 2828
-// Items: I0B3 (Frozen Curse), Name (Name)
+// Items: I0B3 (Bitter Cold), Name (Name)
 {
-Frozen Curse
+Bitter Cold
 }
 
 STRING 2829
