@@ -15007,69 +15007,71 @@ Ice Cage
 }
 
 STRING 2845
-// Items: I0B8 (Frozen Spikes), Tip (Tooltip - Basic)
+// Items: I0B8 (Glacial Spikes), Tip (Tooltip - Basic)
 {
-Purchase Frozen Spikes
+Purchase Glacial Spikes
 }
 
 STRING 2846
-// Items: I0B8 (Frozen Spikes), Description (Description)
+// Items: I0B8 (Glacial Spikes), Description (Description)
 {
-Impales the ground towards a random enemy unit within range and blasts it with a Frost Nova.
+Impales the ground towards the largest enemy group, leaving a ridge of ice behind. Enemies on the ridge are slowed, and those killed while slowed shatter into more spikes.
 }
 
 STRING 2847
-// Items: I0B8 (Frozen Spikes), Ubertip (Tooltip - Extended)
+// Items: I0B8 (Glacial Spikes), Ubertip (Tooltip - Extended)
 {
-Impales the ground towards a random enemy unit within range and blasts it with a Frost Nova.
+Impales the ground towards the largest enemy group, leaving a ridge of ice behind. Enemies on the ridge are slowed, and those killed while slowed shatter into more spikes.
 }
 
 STRING 2848
-// Items: I0B8 (Frozen Spikes), Name (Name)
+// Items: I0B8 (Glacial Spikes), Name (Name)
 {
-Frozen Spikes
+Glacial Spikes
 }
 
 STRING 2849
-// Items: I0B9 (Frozen Spikes), Tip (Tooltip - Basic)
+// Items: I0B9 (Glacial Spikes), Tip (Tooltip - Basic)
 {
-Purchase Frozen Spikes
+Purchase Glacial Spikes
 }
 
 STRING 2850
-// Items: I0B9 (Frozen Spikes), Ubertip (Tooltip - Extended)
+// Items: I0B9 (Glacial Spikes), Ubertip (Tooltip - Extended)
 {
-Impales the ground towards a random enemy unit within range and blasts it with a Frost Nova.
+Drives a line of ice spikes towards the largest enemy group within range, hurting and stunning every enemy ground unit in it. The spikes leave a ridge of ice for 4 seconds that slows every enemy standing on it. An enemy killed while slowed by the ridge shatters, and spikes burst out of where it died towards the nearest enemy.
 
-Damage: |cffffcc0075 (impale) + 60 (target) + 40 (nova)|r
+Damage: |cffffcc00200|r
 Slow: |cffffcc00-50% movement speed for 3s|r
 Cooldown: |cffffcc002s|r
-Range: |cffffcc00400|r
+Range: |cffffcc00600|r
+Distance: |cffffcc00600|r
 Stun duration: |cffffcc001s|r
-Area of effect: |cffffcc00200|r
+Ridge duration: |cffffcc004s|r
 Targets: |cffffcc00ground only!|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 2851
-// Items: I0B9 (Frozen Spikes), Description (Description)
+// Items: I0B9 (Glacial Spikes), Description (Description)
 {
-Impales the ground towards a random enemy unit within range and blasts it with a Frost Nova.
+Drives a line of ice spikes towards the largest enemy group within range, hurting and stunning every enemy ground unit in it. The spikes leave a ridge of ice for 4 seconds that slows every enemy standing on it. An enemy killed while slowed by the ridge shatters, and spikes burst out of where it died towards the nearest enemy.
 
-Damage: |cffffcc0075 (impale) + 60 (target) + 40 (nova)|r
+Damage: |cffffcc00200|r
 Slow: |cffffcc00-50% movement speed for 3s|r
 Cooldown: |cffffcc002s|r
-Range: |cffffcc00400|r
+Range: |cffffcc00600|r
+Distance: |cffffcc00600|r
 Stun duration: |cffffcc001s|r
-Area of effect: |cffffcc00200|r
+Ridge duration: |cffffcc004s|r
 Targets: |cffffcc00ground only!|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 2852
-// Items: I0B9 (Frozen Spikes), Name (Name)
+// Items: I0B9 (Glacial Spikes), Name (Name)
 {
-Frozen Spikes
+Glacial Spikes
 }
 
 STRING 2853
@@ -20030,5 +20032,11 @@ STRING 3551
 // Abilities: A04Z (Frost Armor (weapon)), Name (Name)
 {
 Frost Armor (weapon)
+}
+
+STRING 3552
+// Abilities: A050 (Glacial Spikes), Name (Name)
+{
+Glacial Spikes
 }
 

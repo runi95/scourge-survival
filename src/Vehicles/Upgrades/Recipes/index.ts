@@ -175,7 +175,7 @@ export * from "./RavenousWyrm";
 export * from "./BitterCold";
 export * from "./FrostArmor";
 export * from "./IceCage";
-export * from "./FrozenSpikes";
+export * from "./GlacialSpikes";
 export * from "./GargoyleSpire";
 export * from "./GhoulPit";
 export * from "./GraveCurse";
