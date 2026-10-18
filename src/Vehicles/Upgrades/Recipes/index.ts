@@ -162,7 +162,7 @@ export * from "./SoulRend";
 export * from "./Shrapnel";
 export * from "./CryptFiendDen";
 export * from "./BlackArrow";
-export * from "./FreezingBreath";
+export * from "./IceTomb";
 export * from "./FrostBats";
 export * from "./FrostBolt";
 export * from "./FrostBrood";

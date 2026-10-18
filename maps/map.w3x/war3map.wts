@@ -14131,67 +14131,69 @@ Black Arrow
 }
 
 STRING 2735
-// Items: I0AI (Freezing Breath), Tip (Tooltip - Basic)
+// Items: I0AI (Ice Tomb), Tip (Tooltip - Basic)
 {
-Purchase Freezing Breath
+Purchase Ice Tomb
 }
 
 STRING 2736
-// Items: I0AI (Freezing Breath), Description (Description)
+// Items: I0AI (Ice Tomb), Description (Description)
 {
-Breathes frost on 2 random enemy units within range, blasting each with a Frost Nova.
+Entombs the strongest enemy unit in ice. When the tomb breaks, it shatters in a Frost Nova that hurts more the mightier the enemy inside was.
 }
 
 STRING 2737
-// Items: I0AI (Freezing Breath), Ubertip (Tooltip - Extended)
+// Items: I0AI (Ice Tomb), Ubertip (Tooltip - Extended)
 {
-Breathes frost on 2 random enemy units within range, blasting each with a Frost Nova.
+Entombs the strongest enemy unit in ice. When the tomb breaks, it shatters in a Frost Nova that hurts more the mightier the enemy inside was.
 }
 
 STRING 2738
-// Items: I0AI (Freezing Breath), Name (Name)
+// Items: I0AI (Ice Tomb), Name (Name)
 {
-Freezing Breath
+Ice Tomb
 }
 
 STRING 2739
-// Items: I0AJ (Freezing Breath), Tip (Tooltip - Basic)
+// Items: I0AJ (Ice Tomb), Tip (Tooltip - Basic)
 {
-Purchase Freezing Breath
+Purchase Ice Tomb
 }
 
 STRING 2740
-// Items: I0AJ (Freezing Breath), Ubertip (Tooltip - Extended)
+// Items: I0AJ (Ice Tomb), Ubertip (Tooltip - Extended)
 {
-Breathes frost on 2 random enemy units within range, blasting each with a Frost Nova.
+Entombs the enemy unit with the most life within range in ice, freezing it in place. When the tomb breaks 2 seconds later, it shatters in a Frost Nova that hurts every enemy unit around it, the entombed one too, for 100 plus 5% of the entombed enemy's maximum life, and slows them.
 
-Damage: |cffffcc002 x (60 + 60 + 40)|r
+Damage: |cffffcc00100|r + |cffffcc005%|r of the entombed enemy's maximum life
 Slow: |cffffcc00-50% movement speed for 3s|r
-Cooldown: |cffffcc002.5s|r
-Range: |cffffcc00600|r
-Area of effect: |cffffcc00200|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00700|r
+Area of effect: |cffffcc00300|r
+Freeze duration: |cffffcc002s|r
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00spell|r
+Damage type: |cffffcc00magic|r
 }
 
 STRING 2741
-// Items: I0AJ (Freezing Breath), Description (Description)
+// Items: I0AJ (Ice Tomb), Description (Description)
 {
-Breathes frost on 2 random enemy units within range, blasting each with a Frost Nova.
+Entombs the enemy unit with the most life within range in ice, freezing it in place. When the tomb breaks 2 seconds later, it shatters in a Frost Nova that hurts every enemy unit around it, the entombed one too, for 100 plus 5% of the entombed enemy's maximum life, and slows them.
 
-Damage: |cffffcc002 x (60 + 60 + 40)|r
+Damage: |cffffcc00100|r + |cffffcc005%|r of the entombed enemy's maximum life
 Slow: |cffffcc00-50% movement speed for 3s|r
-Cooldown: |cffffcc002.5s|r
-Range: |cffffcc00600|r
-Area of effect: |cffffcc00200|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00700|r
+Area of effect: |cffffcc00300|r
+Freeze duration: |cffffcc002s|r
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00spell|r
+Damage type: |cffffcc00magic|r
 }
 
 STRING 2742
-// Items: I0AJ (Freezing Breath), Name (Name)
+// Items: I0AJ (Ice Tomb), Name (Name)
 {
-Freezing Breath
+Ice Tomb
 }
 
 STRING 2743
