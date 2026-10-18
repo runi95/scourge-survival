@@ -171,7 +171,7 @@ export * from "./FrostRockets";
 export * from "./FrozenSoul";
 export * from "./FrostSpire";
 export * from "./BreathOfFrost";
-export * from "./FrostbiteCurse";
+export * from "./RavenousWyrm";
 export * from "./FrozenCurse";
 export * from "./FrozenDead";
 export * from "./FrozenImpale";
