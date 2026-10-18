@@ -13617,67 +13617,65 @@ Scattering Swarm
 }
 
 STRING 2670
-// Items: I0A2 (Bat Storm), Tip (Tooltip - Basic)
+// Items: I0A2 (Nightfall), Tip (Tooltip - Basic)
 {
-Purchase Bat Storm
+Purchase Nightfall
 }
 
 STRING 2671
-// Items: I0A2 (Bat Storm), Description (Description)
+// Items: I0A2 (Nightfall), Description (Description)
 {
-Sends hordes of bats towards 3 random enemy units within range.
+A great swarm of bats spirals out from your hero, sweeping round it lap after lap.
 }
 
 STRING 2672
-// Items: I0A2 (Bat Storm), Ubertip (Tooltip - Extended)
+// Items: I0A2 (Nightfall), Ubertip (Tooltip - Extended)
 {
-Sends hordes of bats towards 3 random enemy units within range.
+A great swarm of bats spirals out from your hero, sweeping round it lap after lap.
 }
 
 STRING 2673
-// Items: I0A2 (Bat Storm), Name (Name)
+// Items: I0A2 (Nightfall), Name (Name)
 {
-Bat Storm
+Nightfall
 }
 
 STRING 2674
-// Items: I0A3 (Bat Storm), Tip (Tooltip - Basic)
+// Items: I0A3 (Nightfall), Tip (Tooltip - Basic)
 {
-Purchase Bat Storm
+Purchase Nightfall
 }
 
 STRING 2675
-// Items: I0A3 (Bat Storm), Ubertip (Tooltip - Extended)
+// Items: I0A3 (Nightfall), Ubertip (Tooltip - Extended)
 {
-Sends hordes of bats towards 3 random enemy units within range.
+Every 8 seconds a great swarm of bats spirals out from your hero for 5 seconds, sweeping round it lap after lap until it reaches 550 away. The bats bite every enemy unit they pass, again and again.
 
-Damage: |cffffcc003 x 75|r
-Cooldown: |cffffcc003s|r
-Range: |cffffcc00600|r
-Distance: |cffffcc00800|r
-Area of effect: |cffffcc00100 - 300|r
+Damage: |cffffcc0050|r (per bite, at most every 0.6s per enemy)
+Cooldown: |cffffcc008s|r
+Duration: |cffffcc005s|r
+Area of effect: |cffffcc00150 - 550|r
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00spell|r
+Damage type: |cffffcc00magic|r
 }
 
 STRING 2676
-// Items: I0A3 (Bat Storm), Description (Description)
+// Items: I0A3 (Nightfall), Description (Description)
 {
-Sends hordes of bats towards 3 random enemy units within range.
+Every 8 seconds a great swarm of bats spirals out from your hero for 5 seconds, sweeping round it lap after lap until it reaches 550 away. The bats bite every enemy unit they pass, again and again.
 
-Damage: |cffffcc003 x 75|r
-Cooldown: |cffffcc003s|r
-Range: |cffffcc00600|r
-Distance: |cffffcc00800|r
-Area of effect: |cffffcc00100 - 300|r
+Damage: |cffffcc0050|r (per bite, at most every 0.6s per enemy)
+Cooldown: |cffffcc008s|r
+Duration: |cffffcc005s|r
+Area of effect: |cffffcc00150 - 550|r
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00spell|r
+Damage type: |cffffcc00magic|r
 }
 
 STRING 2677
-// Items: I0A3 (Bat Storm), Name (Name)
+// Items: I0A3 (Nightfall), Name (Name)
 {
-Bat Storm
+Nightfall
 }
 
 STRING 2678

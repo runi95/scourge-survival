@@ -154,7 +154,7 @@ export * from "./NightTerror";
 export * from "./DeathMarch";
 export * from "./Belfry";
 export * from "./ScatteringSwarm";
-export * from "./BatStorm";
+export * from "./Nightfall";
 export * from "./BoneSpikes";
 export * from "./BoneSwarm";
 export * from "./CorpseMine";

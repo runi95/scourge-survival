@@ -159,7 +159,7 @@ export const weaponRecipes = [
   new Recipes.DeathMarch(),
   new Recipes.Belfry(),
   new Recipes.ScatteringSwarm(),
-  new Recipes.BatStorm(),
+  new Recipes.Nightfall(),
   new Recipes.BoneSpikes(),
   new Recipes.BoneSwarm(),
   new Recipes.CorpseMine(),
