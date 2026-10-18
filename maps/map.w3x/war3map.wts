@@ -15589,67 +15589,67 @@ Creeping Shadow
 }
 
 STRING 2919
-// Items: I0BQ (Shadow Rockets), Tip (Tooltip - Basic)
+// Items: I0BQ (Orb of Annihilation), Tip (Tooltip - Basic)
 {
-Purchase Shadow Rockets
+Purchase Orb of Annihilation
 }
 
 STRING 2920
-// Items: I0BQ (Shadow Rockets), Description (Description)
+// Items: I0BQ (Orb of Annihilation), Description (Description)
 {
-Fires a shadow bolt and Cluster Rockets at a random enemy unit within range.
+Lobs the Destroyer's Orb of Annihilation at the largest enemy group. It bounces on twice more to the nearest enemy it missed, blasting everything around every place it lands.
 }
 
 STRING 2921
-// Items: I0BQ (Shadow Rockets), Ubertip (Tooltip - Extended)
+// Items: I0BQ (Orb of Annihilation), Ubertip (Tooltip - Extended)
 {
-Fires a shadow bolt and Cluster Rockets at a random enemy unit within range.
+Lobs the Destroyer's Orb of Annihilation at the largest enemy group. It bounces on twice more to the nearest enemy it missed, blasting everything around every place it lands.
 }
 
 STRING 2922
-// Items: I0BQ (Shadow Rockets), Name (Name)
+// Items: I0BQ (Orb of Annihilation), Name (Name)
 {
-Shadow Rockets
+Orb of Annihilation
 }
 
 STRING 2923
-// Items: I0BR (Shadow Rockets), Tip (Tooltip - Basic)
+// Items: I0BR (Orb of Annihilation), Tip (Tooltip - Basic)
 {
-Purchase Shadow Rockets
+Purchase Orb of Annihilation
 }
 
 STRING 2924
-// Items: I0BR (Shadow Rockets), Ubertip (Tooltip - Extended)
+// Items: I0BR (Orb of Annihilation), Ubertip (Tooltip - Extended)
 {
-Fires a shadow bolt and Cluster Rockets at a random enemy unit within range.
+Lobs the Destroyer's Orb of Annihilation at the largest enemy group within range. It bounces on twice more, each time to the nearest enemy unit it has not blasted yet, blasting every enemy unit around every place it lands.
 
-Damage: |cffffcc0020 - 24 (bolt) + 6 x 17.5 (rockets)|r
-Cooldown: |cffffcc002s|r
-Range: |cffffcc00600|r
-Area of effect: |cffffcc00300|r
+Damage: |cffffcc003 x 70|r
+Cooldown: |cffffcc002.5s|r
+Range: |cffffcc00700|r
+Bounce range: |cffffcc00450|r
+Area of effect: |cffffcc00175|r
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00magic + spell|r
-Effect: |cffffcc00stuns for 1s|r
+Damage type: |cffffcc00magic|r
 }
 
 STRING 2925
-// Items: I0BR (Shadow Rockets), Description (Description)
+// Items: I0BR (Orb of Annihilation), Description (Description)
 {
-Fires a shadow bolt and Cluster Rockets at a random enemy unit within range.
+Lobs the Destroyer's Orb of Annihilation at the largest enemy group within range. It bounces on twice more, each time to the nearest enemy unit it has not blasted yet, blasting every enemy unit around every place it lands.
 
-Damage: |cffffcc0020 - 24 (bolt) + 6 x 17.5 (rockets)|r
-Cooldown: |cffffcc002s|r
-Range: |cffffcc00600|r
-Area of effect: |cffffcc00300|r
+Damage: |cffffcc003 x 70|r
+Cooldown: |cffffcc002.5s|r
+Range: |cffffcc00700|r
+Bounce range: |cffffcc00450|r
+Area of effect: |cffffcc00175|r
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00magic + spell|r
-Effect: |cffffcc00stuns for 1s|r
+Damage type: |cffffcc00magic|r
 }
 
 STRING 2926
-// Items: I0BR (Shadow Rockets), Name (Name)
+// Items: I0BR (Orb of Annihilation), Name (Name)
 {
-Shadow Rockets
+Orb of Annihilation
 }
 
 STRING 2927

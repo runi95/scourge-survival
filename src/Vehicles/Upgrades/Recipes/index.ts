@@ -184,7 +184,7 @@ export * from "./NecromancerAcademy";
 export * from "./NovaMine";
 export * from "./CarrionFeast";
 export * from "./CreepingShadow";
-export * from "./ShadowRockets";
+export * from "./OrbOfAnnihilation";
 export * from "./ShadowSpikes";
 export * from "./ShadowSpire";
 export * from "./ShadowVolley";
