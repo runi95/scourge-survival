@@ -70,7 +70,7 @@ export * from "./ImpalingCross";
 export * from "./Shatter";
 export * from "./CurseOfFrailty";
 export * from "./Sacrifice";
-export * from "./GraspOfTheDead";
+export * from "./Rupture";
 export * from "./PlagueTrap";
 export * from "./NerubianTower";
 export * from "./DragonWhelpForge";

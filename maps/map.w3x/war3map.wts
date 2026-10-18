@@ -7597,79 +7597,67 @@ Sacrifice
 }
 
 STRING 1882
-// Items: I04Y (Grasp of the Dead), Tip (Tooltip - Basic)
+// Items: I04Y (Rupture), Tip (Tooltip - Basic)
 {
-Purchase Grasp of the Dead
+Purchase Rupture
 }
 
 STRING 1883
-// Items: I04Y (Grasp of the Dead), Description (Description)
+// Items: I04Y (Rupture), Description (Description)
 {
-Skeletal hands burst out of the ground along a line, holding every enemy in place and crippling them after they break free.
+Impales the ground towards a random enemy unit. Crippled enemies hit by the spikes rupture and send the spikes on.
 }
 
 STRING 1884
-// Items: I04Y (Grasp of the Dead), Ubertip (Tooltip - Extended)
+// Items: I04Y (Rupture), Ubertip (Tooltip - Extended)
 {
-Skeletal hands burst out of the ground along a line, holding every enemy in place and crippling them after they break free.
+Impales the ground towards a random enemy unit. Crippled enemies hit by the spikes rupture and send the spikes on.
 }
 
 STRING 1885
-// Items: I04Y (Grasp of the Dead), Name (Name)
+// Items: I04Y (Rupture), Name (Name)
 {
-Grasp of the Dead
+Rupture
 }
 
 STRING 1886
-// Items: I04Z (Grasp of the Dead), Tip (Tooltip - Basic)
+// Items: I04Z (Rupture), Tip (Tooltip - Basic)
 {
-Purchase Grasp of the Dead
+Purchase Rupture
 }
 
 STRING 1887
-// Items: I04Z (Grasp of the Dead), Ubertip (Tooltip - Extended)
+// Items: I04Z (Rupture), Ubertip (Tooltip - Extended)
 {
-Skeletal hands burst out of the ground along a line, holding every enemy in place and crippling them after they break free.
+Impales the ground towards a random enemy unit within range. Every enemy the spikes hit is crippled. An enemy that is already crippled ruptures instead, taking extra damage, and the spikes burst out of it towards the next enemy nearby, up to 3 times in a row.
 
-Damage: |cffffcc0060|r
+Damage: |cffffcc00150|r (spikes) + |cffffcc00150|r (rupture)
 Cooldown: |cffffcc002s|r
 Range: |cffffcc00450|r
-Hold: |cffffcc001.5s|r
-Cripple: |cffffcc002s|r
+Stun duration: |cffffcc001s|r
+Cripple duration: |cffffcc003s|r
 Targets: |cffffcc00ground only!|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 1888
-// Items: I04Z (Grasp of the Dead), Description (Description)
+// Items: I04Z (Rupture), Description (Description)
 {
-Skeletal hands burst out of the ground along a line, holding every enemy in place and crippling them after they break free.
+Impales the ground towards a random enemy unit within range. Every enemy the spikes hit is crippled. An enemy that is already crippled ruptures instead, taking extra damage, and the spikes burst out of it towards the next enemy nearby, up to 3 times in a row.
 
-Damage: |cffffcc0060|r
+Damage: |cffffcc00150|r (spikes) + |cffffcc00150|r (rupture)
 Cooldown: |cffffcc002s|r
 Range: |cffffcc00450|r
-Hold: |cffffcc001.5s|r
-Cripple: |cffffcc002s|r
+Stun duration: |cffffcc001s|r
+Cripple duration: |cffffcc003s|r
 Targets: |cffffcc00ground only!|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 1889
-// Items: I04Z (Grasp of the Dead), Name (Name)
+// Items: I04Z (Rupture), Name (Name)
 {
-Grasp of the Dead
-}
-
-STRING 1890
-// Abilities: A03Q (Grasp of the Dead), Name (Name)
-{
-Grasp of the Dead
-}
-
-STRING 1891
-// Abilities: A03R (Cripple (Grasp of the Dead)), Name (Name)
-{
-Cripple (Grasp of the Dead)
+Rupture
 }
 
 STRING 1892
@@ -20000,5 +19988,11 @@ STRING 3539
 // Abilities: A04U (Frost Bolt (weapon)), Name (Name)
 {
 Frost Bolt (weapon)
+}
+
+STRING 3540
+// Units: u027 (Rupture Caster), Name (Name)
+{
+Rupture Caster
 }
 
