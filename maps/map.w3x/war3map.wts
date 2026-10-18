@@ -14545,67 +14545,67 @@ Frost Rockets
 }
 
 STRING 2787
-// Items: I0AU (Frost Shadow), Tip (Tooltip - Basic)
+// Items: I0AU (Frozen Soul), Tip (Tooltip - Basic)
 {
-Purchase Frost Shadow
+Purchase Frozen Soul
 }
 
 STRING 2788
-// Items: I0AU (Frost Shadow), Description (Description)
+// Items: I0AU (Frozen Soul), Description (Description)
 {
-Fires a shadow bolt at a random enemy unit within range and blasts it with a Frost Nova.
+Freezes the soul of the strongest enemy unit. Every enemy that dies near it makes the frozen soul burst in a Frost Nova.
 }
 
 STRING 2789
-// Items: I0AU (Frost Shadow), Ubertip (Tooltip - Extended)
+// Items: I0AU (Frozen Soul), Ubertip (Tooltip - Extended)
 {
-Fires a shadow bolt at a random enemy unit within range and blasts it with a Frost Nova.
+Freezes the soul of the strongest enemy unit. Every enemy that dies near it makes the frozen soul burst in a Frost Nova.
 }
 
 STRING 2790
-// Items: I0AU (Frost Shadow), Name (Name)
+// Items: I0AU (Frozen Soul), Name (Name)
 {
-Frost Shadow
+Frozen Soul
 }
 
 STRING 2791
-// Items: I0AV (Frost Shadow), Tip (Tooltip - Basic)
+// Items: I0AV (Frozen Soul), Tip (Tooltip - Basic)
 {
-Purchase Frost Shadow
+Purchase Frozen Soul
 }
 
 STRING 2792
-// Items: I0AV (Frost Shadow), Ubertip (Tooltip - Extended)
+// Items: I0AV (Frozen Soul), Ubertip (Tooltip - Extended)
 {
-Fires a shadow bolt at a random enemy unit within range and blasts it with a Frost Nova.
+Every 6 seconds freezes the soul of the enemy unit with the most life within range, and it bursts in a Frost Nova. Shadow bolts finish off the weakest enemies around it, and every enemy unit that dies near it makes the frozen soul burst in another Frost Nova, damaging it and slowing every enemy around it. When the frozen enemy itself dies, its soul shatters in one last nova.
 
-Damage: |cffffcc0020 - 24 (bolt) + 60 (target) + 40 (nova)|r
+Damage: |cffffcc0020 - 24|r (bolt) + |cffffcc0060|r (nova target) + |cffffcc0040|r (nova area)
 Slow: |cffffcc00-50% movement speed for 3s|r
-Cooldown: |cffffcc002.5s|r
-Range: |cffffcc00600|r
-Area of effect: |cffffcc00200|r
+Cooldown: |cffffcc006s|r (soul) + |cffffcc000.75s|r (bolt)
+Range: |cffffcc00700|r
+Area of effect: |cffffcc00400|r (deaths) + |cffffcc00200|r (nova)
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00magic + spell|r
+Damage type: |cffffcc00magic|r (bolt) + |cffffcc00spell|r (nova)
 }
 
 STRING 2793
-// Items: I0AV (Frost Shadow), Description (Description)
+// Items: I0AV (Frozen Soul), Description (Description)
 {
-Fires a shadow bolt at a random enemy unit within range and blasts it with a Frost Nova.
+Every 6 seconds freezes the soul of the enemy unit with the most life within range, and it bursts in a Frost Nova. Shadow bolts finish off the weakest enemies around it, and every enemy unit that dies near it makes the frozen soul burst in another Frost Nova, damaging it and slowing every enemy around it. When the frozen enemy itself dies, its soul shatters in one last nova.
 
-Damage: |cffffcc0020 - 24 (bolt) + 60 (target) + 40 (nova)|r
+Damage: |cffffcc0020 - 24|r (bolt) + |cffffcc0060|r (nova target) + |cffffcc0040|r (nova area)
 Slow: |cffffcc00-50% movement speed for 3s|r
-Cooldown: |cffffcc002.5s|r
-Range: |cffffcc00600|r
-Area of effect: |cffffcc00200|r
+Cooldown: |cffffcc006s|r (soul) + |cffffcc000.75s|r (bolt)
+Range: |cffffcc00700|r
+Area of effect: |cffffcc00400|r (deaths) + |cffffcc00200|r (nova)
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00magic + spell|r
+Damage type: |cffffcc00magic|r (bolt) + |cffffcc00spell|r (nova)
 }
 
 STRING 2794
-// Items: I0AV (Frost Shadow), Name (Name)
+// Items: I0AV (Frozen Soul), Name (Name)
 {
-Frost Shadow
+Frozen Soul
 }
 
 STRING 2795
