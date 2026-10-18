@@ -14941,69 +14941,69 @@ Frost Armor
 }
 
 STRING 2837
-// Items: I0B6 (Frozen Impale), Tip (Tooltip - Basic)
+// Items: I0B6 (Ice Cage), Tip (Tooltip - Basic)
 {
-Purchase Frozen Impale
+Purchase Ice Cage
 }
 
 STRING 2838
-// Items: I0B6 (Frozen Impale), Description (Description)
+// Items: I0B6 (Ice Cage), Description (Description)
 {
-Impales the ground towards a random enemy unit within range and blasts it with a Frost Nova.
+Raises a ring of ice spikes around the largest enemy group. It impales the enemies on its edge, chills everything inside, and impales whatever crosses it.
 }
 
 STRING 2839
-// Items: I0B6 (Frozen Impale), Ubertip (Tooltip - Extended)
+// Items: I0B6 (Ice Cage), Ubertip (Tooltip - Extended)
 {
-Impales the ground towards a random enemy unit within range and blasts it with a Frost Nova.
+Raises a ring of ice spikes around the largest enemy group. It impales the enemies on its edge, chills everything inside, and impales whatever crosses it.
 }
 
 STRING 2840
-// Items: I0B6 (Frozen Impale), Name (Name)
+// Items: I0B6 (Ice Cage), Name (Name)
 {
-Frozen Impale
+Ice Cage
 }
 
 STRING 2841
-// Items: I0B7 (Frozen Impale), Tip (Tooltip - Basic)
+// Items: I0B7 (Ice Cage), Tip (Tooltip - Basic)
 {
-Purchase Frozen Impale
+Purchase Ice Cage
 }
 
 STRING 2842
-// Items: I0B7 (Frozen Impale), Ubertip (Tooltip - Extended)
+// Items: I0B7 (Ice Cage), Ubertip (Tooltip - Extended)
 {
-Impales the ground towards a random enemy unit within range and blasts it with a Frost Nova.
+Raises a ring of ice spikes around the largest enemy group within range. Every enemy ground unit on the ring's edge is impaled, and every one inside is bitten by the cold and slowed. For 3 seconds every enemy that crosses the ring, in or out, is impaled too.
 
-Damage: |cffffcc0075 (impale) + 60 (target) + 40 (nova)|r
+Damage: |cffffcc00150|r (impaled) + |cffffcc0075|r (inside)
 Slow: |cffffcc00-50% movement speed for 3s|r
-Cooldown: |cffffcc002s|r
-Range: |cffffcc00400|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00700|r
+Area of effect: |cffffcc00250|r (ring)
 Stun duration: |cffffcc001s|r
-Area of effect: |cffffcc00200|r
-Targets: |cffffcc00ground (impale), air & ground (nova)|r
+Targets: |cffffcc00ground only!|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 2843
-// Items: I0B7 (Frozen Impale), Description (Description)
+// Items: I0B7 (Ice Cage), Description (Description)
 {
-Impales the ground towards a random enemy unit within range and blasts it with a Frost Nova.
+Raises a ring of ice spikes around the largest enemy group within range. Every enemy ground unit on the ring's edge is impaled, and every one inside is bitten by the cold and slowed. For 3 seconds every enemy that crosses the ring, in or out, is impaled too.
 
-Damage: |cffffcc0075 (impale) + 60 (target) + 40 (nova)|r
+Damage: |cffffcc00150|r (impaled) + |cffffcc0075|r (inside)
 Slow: |cffffcc00-50% movement speed for 3s|r
-Cooldown: |cffffcc002s|r
-Range: |cffffcc00400|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00700|r
+Area of effect: |cffffcc00250|r (ring)
 Stun duration: |cffffcc001s|r
-Area of effect: |cffffcc00200|r
-Targets: |cffffcc00ground (impale), air & ground (nova)|r
+Targets: |cffffcc00ground only!|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 2844
-// Items: I0B7 (Frozen Impale), Name (Name)
+// Items: I0B7 (Ice Cage), Name (Name)
 {
-Frozen Impale
+Ice Cage
 }
 
 STRING 2845
