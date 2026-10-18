@@ -188,7 +188,7 @@ export * from "./OrbOfAnnihilation";
 export * from "./Skewer";
 export * from "./ShadowSpire";
 export * from "./ShadowVolley";
-export * from "./SkeletonDrop";
+export * from "./MeatWagon";
 export * from "./Slaughterhouse";
 export * from "./SpiritWarriors";
 export * from "./SwarmSpire";

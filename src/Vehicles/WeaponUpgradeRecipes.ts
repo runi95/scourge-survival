@@ -193,7 +193,7 @@ export const weaponRecipes = [
   new Recipes.Skewer(),
   new Recipes.ShadowSpire(),
   new Recipes.ShadowVolley(),
-  new Recipes.SkeletonDrop(),
+  new Recipes.MeatWagon(),
   new Recipes.Slaughterhouse(),
   new Recipes.SpiritWarriors(),
   new Recipes.SwarmSpire(),
