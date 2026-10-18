@@ -161,7 +161,7 @@ export * from "./CorpseMine";
 export * from "./SoulRend";
 export * from "./Shrapnel";
 export * from "./CryptFiendDen";
-export * from "./DeathBolt";
+export * from "./BlackArrow";
 export * from "./FreezingBreath";
 export * from "./FrostBats";
 export * from "./FrostBolt";

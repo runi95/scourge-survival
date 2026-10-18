@@ -166,7 +166,7 @@ export const weaponRecipes = [
   new Recipes.SoulRend(),
   new Recipes.Shrapnel(),
   new Recipes.CryptFiendDen(),
-  new Recipes.DeathBolt(),
+  new Recipes.BlackArrow(),
   new Recipes.FreezingBreath(),
   new Recipes.FrostBats(),
   new Recipes.FrostBolt(),

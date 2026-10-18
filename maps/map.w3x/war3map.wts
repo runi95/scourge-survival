@@ -14067,67 +14067,67 @@ Crypt Fiend Den
 }
 
 STRING 2727
-// Items: I0AG (Death Bolt), Tip (Tooltip - Basic)
+// Items: I0AG (Black Arrow), Tip (Tooltip - Basic)
 {
-Purchase Death Bolt
+Purchase Black Arrow
 }
 
 STRING 2728
-// Items: I0AG (Death Bolt), Description (Description)
+// Items: I0AG (Black Arrow), Description (Description)
 {
-Fires a shadow bolt at a random enemy unit within range, and a Skeleton Warrior rises where it hits.
+Fires black arrows at random enemy units. Enemies that die within 5 seconds of being hit rise as Dark Minions that fight for you.
 }
 
 STRING 2729
-// Items: I0AG (Death Bolt), Ubertip (Tooltip - Extended)
+// Items: I0AG (Black Arrow), Ubertip (Tooltip - Extended)
 {
-Fires a shadow bolt at a random enemy unit within range, and a Skeleton Warrior rises where it hits.
+Fires black arrows at random enemy units. Enemies that die within 5 seconds of being hit rise as Dark Minions that fight for you.
 }
 
 STRING 2730
-// Items: I0AG (Death Bolt), Name (Name)
+// Items: I0AG (Black Arrow), Name (Name)
 {
-Death Bolt
+Black Arrow
 }
 
 STRING 2731
-// Items: I0AH (Death Bolt), Tip (Tooltip - Basic)
+// Items: I0AH (Black Arrow), Tip (Tooltip - Basic)
 {
-Purchase Death Bolt
+Purchase Black Arrow
 }
 
 STRING 2732
-// Items: I0AH (Death Bolt), Ubertip (Tooltip - Extended)
+// Items: I0AH (Black Arrow), Ubertip (Tooltip - Extended)
 {
-Fires a shadow bolt at a random enemy unit within range, and a Skeleton Warrior rises where it hits.
+Fires a black arrow at a random enemy unit within range. An enemy that dies within 5 seconds of being hit by one rises as a Dark Minion that fights by your side.
 
-Damage: |cffffcc0020 - 24 (bolt) + 26 - 42 (skeleton)|r
-Cooldown: |cffffcc002.5s|r
+Damage: |cffffcc0041 - 45|r (arrow) + |cffffcc0026 - 36|r (minion)
+Cooldown: |cffffcc001.5s|r
 Range: |cffffcc00600|r
-Health: |cffffcc00200|r
-Duration: |cffffcc008s|r
-Targets: |cffffcc00air & ground (bolt), ground (skeleton)|r
-Damage type: |cffffcc00magic + normal|r
+Health: |cffffcc00300|r (minion)
+Duration: |cffffcc0020s|r (minion)
+Targets: |cffffcc00air & ground|r (arrow), |cffffcc00ground only!|r (minion)
+Damage type: |cffffcc00magic|r (arrow) + |cffffcc00normal|r (minion)
 }
 
 STRING 2733
-// Items: I0AH (Death Bolt), Description (Description)
+// Items: I0AH (Black Arrow), Description (Description)
 {
-Fires a shadow bolt at a random enemy unit within range, and a Skeleton Warrior rises where it hits.
+Fires a black arrow at a random enemy unit within range. An enemy that dies within 5 seconds of being hit by one rises as a Dark Minion that fights by your side.
 
-Damage: |cffffcc0020 - 24 (bolt) + 26 - 42 (skeleton)|r
-Cooldown: |cffffcc002.5s|r
+Damage: |cffffcc0041 - 45|r (arrow) + |cffffcc0026 - 36|r (minion)
+Cooldown: |cffffcc001.5s|r
 Range: |cffffcc00600|r
-Health: |cffffcc00200|r
-Duration: |cffffcc008s|r
-Targets: |cffffcc00air & ground (bolt), ground (skeleton)|r
-Damage type: |cffffcc00magic + normal|r
+Health: |cffffcc00300|r (minion)
+Duration: |cffffcc0020s|r (minion)
+Targets: |cffffcc00air & ground|r (arrow), |cffffcc00ground only!|r (minion)
+Damage type: |cffffcc00magic|r (arrow) + |cffffcc00normal|r (minion)
 }
 
 STRING 2734
-// Items: I0AH (Death Bolt), Name (Name)
+// Items: I0AH (Black Arrow), Name (Name)
 {
-Death Bolt
+Black Arrow
 }
 
 STRING 2735
@@ -19992,5 +19992,17 @@ STRING 3543
 // Units: u029 (Shrapnel Caster), Name (Name)
 {
 Shrapnel Caster
+}
+
+STRING 3544
+// Units: u02A (Black Arrow), Name (Name)
+{
+Black Arrow
+}
+
+STRING 3545
+// Units: u02B (Dark Minion), Name (Name)
+{
+Dark Minion
 }
 

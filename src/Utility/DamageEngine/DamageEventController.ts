@@ -23,6 +23,7 @@ import { CurseOfFrailtyDamageEvent } from "./DamageEvents/CurseOfFrailtyDamageEv
 import { RuptureDamageEvent } from "./DamageEvents/RuptureDamageEvent";
 import { BoneLancersDamageEvent } from "./DamageEvents/BoneLancersDamageEvent";
 import { ShrapnelDamageEvent } from "./DamageEvents/ShrapnelDamageEvent";
+import { BlackArrowDamageEvent } from "./DamageEvents/BlackArrowDamageEvent";
 
 export interface ExtendedDamageInstance extends DamageInstance {
   sourceOwningPlayer: player;
@@ -149,6 +150,10 @@ export class DamageEventController {
     );
     DamageEngine.register(
       new ShrapnelDamageEvent(),
+      DamageEventType.AfterDamageEvent,
+    );
+    DamageEngine.register(
+      new BlackArrowDamageEvent(),
       DamageEventType.AfterDamageEvent,
     );
   }
