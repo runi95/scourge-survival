@@ -178,7 +178,7 @@ export * from "./IceCage";
 export * from "./GlacialSpikes";
 export * from "./GargoyleSpire";
 export * from "./GhoulPit";
-export * from "./GraveCurse";
+export * from "./DeathPact";
 export * from "./HauntedGraveyard";
 export * from "./NecromancerAcademy";
 export * from "./NovaMine";

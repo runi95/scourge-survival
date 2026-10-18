@@ -15199,67 +15199,69 @@ Ghoul Pit
 }
 
 STRING 2869
-// Items: I0BE (Grave Curse), Tip (Tooltip - Basic)
+// Items: I0BE (Death Pact), Tip (Tooltip - Basic)
 {
-Purchase Grave Curse
+Purchase Death Pact
 }
 
 STRING 2870
-// Items: I0BE (Grave Curse), Description (Description)
+// Items: I0BE (Death Pact), Description (Description)
 {
-Cripples a random enemy unit within range and raises a Skeleton Warrior beside your hero.
+Raises Skeleton Warriors and sacrifices the oldest of them every 6 seconds. Its death cripples every enemy around it, and its remaining life goes to your hero.
 }
 
 STRING 2871
-// Items: I0BE (Grave Curse), Ubertip (Tooltip - Extended)
+// Items: I0BE (Death Pact), Ubertip (Tooltip - Extended)
 {
-Cripples a random enemy unit within range and raises a Skeleton Warrior beside your hero.
+Raises Skeleton Warriors and sacrifices the oldest of them every 6 seconds. Its death cripples every enemy around it, and its remaining life goes to your hero.
 }
 
 STRING 2872
-// Items: I0BE (Grave Curse), Name (Name)
+// Items: I0BE (Death Pact), Name (Name)
 {
-Grave Curse
+Death Pact
 }
 
 STRING 2873
-// Items: I0BF (Grave Curse), Tip (Tooltip - Basic)
+// Items: I0BF (Death Pact), Tip (Tooltip - Basic)
 {
-Purchase Grave Curse
+Purchase Death Pact
 }
 
 STRING 2874
-// Items: I0BF (Grave Curse), Ubertip (Tooltip - Extended)
+// Items: I0BF (Death Pact), Ubertip (Tooltip - Extended)
 {
-Cripples a random enemy unit within range and raises a Skeleton Warrior beside your hero.
+Raises a Skeleton Warrior next to your hero every 4 seconds. Every 6 seconds the oldest one is sacrificed: its death cripples and hurts every enemy unit around it, and your hero is healed for the life it had left.
 
-Damage: |cffffcc0075 (cripple) + 26 - 42 (skeleton)|r
-Cooldown: |cffffcc003s|r
-Range: |cffffcc00600|r
-Duration: |cffffcc003s (cripple) + 10s (skeleton)|r
+Damage: |cffffcc0026 - 42|r (attack) + |cffffcc00150|r (sacrifice)
+Cooldown: |cffffcc004s|r (raise) + |cffffcc006s|r (sacrifice)
+Area of effect: |cffffcc00250|r
+Cripple duration: |cffffcc003s|r
 Health: |cffffcc00200|r
-Targets: |cffffcc00air & ground (cripple), ground (skeleton)|r
-Damage type: |cffffcc00spell + normal|r
+Duration: |cffffcc0020s|r
+Targets: |cffffcc00ground only!|r (attack), |cffffcc00air & ground|r (sacrifice)
+Damage type: |cffffcc00normal|r (attack) + |cffffcc00spell|r (sacrifice)
 }
 
 STRING 2875
-// Items: I0BF (Grave Curse), Description (Description)
+// Items: I0BF (Death Pact), Description (Description)
 {
-Cripples a random enemy unit within range and raises a Skeleton Warrior beside your hero.
+Raises a Skeleton Warrior next to your hero every 4 seconds. Every 6 seconds the oldest one is sacrificed: its death cripples and hurts every enemy unit around it, and your hero is healed for the life it had left.
 
-Damage: |cffffcc0075 (cripple) + 26 - 42 (skeleton)|r
-Cooldown: |cffffcc003s|r
-Range: |cffffcc00600|r
-Duration: |cffffcc003s (cripple) + 10s (skeleton)|r
+Damage: |cffffcc0026 - 42|r (attack) + |cffffcc00150|r (sacrifice)
+Cooldown: |cffffcc004s|r (raise) + |cffffcc006s|r (sacrifice)
+Area of effect: |cffffcc00250|r
+Cripple duration: |cffffcc003s|r
 Health: |cffffcc00200|r
-Targets: |cffffcc00air & ground (cripple), ground (skeleton)|r
-Damage type: |cffffcc00spell + normal|r
+Duration: |cffffcc0020s|r
+Targets: |cffffcc00ground only!|r (attack), |cffffcc00air & ground|r (sacrifice)
+Damage type: |cffffcc00normal|r (attack) + |cffffcc00spell|r (sacrifice)
 }
 
 STRING 2876
-// Items: I0BF (Grave Curse), Name (Name)
+// Items: I0BF (Death Pact), Name (Name)
 {
-Grave Curse
+Death Pact
 }
 
 STRING 2877

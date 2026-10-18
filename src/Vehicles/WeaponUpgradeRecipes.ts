@@ -183,7 +183,7 @@ export const weaponRecipes = [
   new Recipes.GlacialSpikes(),
   new Recipes.GargoyleSpire(),
   new Recipes.GhoulPit(),
-  new Recipes.GraveCurse(),
+  new Recipes.DeathPact(),
   new Recipes.HauntedGraveyard(),
   new Recipes.NecromancerAcademy(),
   new Recipes.NovaMine(),
