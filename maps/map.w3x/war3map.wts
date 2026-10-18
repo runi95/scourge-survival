@@ -13743,69 +13743,65 @@ Bone Lancers
 }
 
 STRING 2686
-// Items: I0A6 (Bone Swarm), Tip (Tooltip - Basic)
+// Items: I0A6 (Undertow), Tip (Tooltip - Basic)
 {
-Purchase Bone Swarm
+Purchase Undertow
 }
 
 STRING 2687
-// Items: I0A6 (Bone Swarm), Description (Description)
+// Items: I0A6 (Undertow), Description (Description)
 {
-Impales the ground and sends a horde of bats towards a random enemy unit within range.
+A swarm of bats sweeps in from the farthest enemy, dragging everything it catches to your hero, where spikes impale the whole line.
 }
 
 STRING 2688
-// Items: I0A6 (Bone Swarm), Ubertip (Tooltip - Extended)
+// Items: I0A6 (Undertow), Ubertip (Tooltip - Extended)
 {
-Impales the ground and sends a horde of bats towards a random enemy unit within range.
+A swarm of bats sweeps in from the farthest enemy, dragging everything it catches to your hero, where spikes impale the whole line.
 }
 
 STRING 2689
-// Items: I0A6 (Bone Swarm), Name (Name)
+// Items: I0A6 (Undertow), Name (Name)
 {
-Bone Swarm
+Undertow
 }
 
 STRING 2690
-// Items: I0A7 (Bone Swarm), Tip (Tooltip - Basic)
+// Items: I0A7 (Undertow), Tip (Tooltip - Basic)
 {
-Purchase Bone Swarm
+Purchase Undertow
 }
 
 STRING 2691
-// Items: I0A7 (Bone Swarm), Ubertip (Tooltip - Extended)
+// Items: I0A7 (Undertow), Ubertip (Tooltip - Extended)
 {
-Impales the ground and sends a horde of bats towards a random enemy unit within range.
+A swarm of bats sweeps in from the enemy unit farthest from your hero, biting every enemy unit in its path and dragging the ground units along with it. It drops them in a line in front of your hero, where spikes burst out of the ground and impale the whole line.
 
-Damage: |cffffcc0075 (impale) + 75 (bats)|r
+Damage: |cffffcc0090|r (bats) + |cffffcc00150|r (spikes)
 Cooldown: |cffffcc003s|r
-Range: |cffffcc00400|r
+Range: |cffffcc00800|r
 Stun duration: |cffffcc001s|r
-Distance: |cffffcc00800|r
-Area of effect: |cffffcc00100 - 300|r
-Targets: |cffffcc00ground (impale), air & ground (bats)|r
+Targets: |cffffcc00air & ground|r (bats), |cffffcc00ground|r (spikes)
 Damage type: |cffffcc00spell|r
 }
 
 STRING 2692
-// Items: I0A7 (Bone Swarm), Description (Description)
+// Items: I0A7 (Undertow), Description (Description)
 {
-Impales the ground and sends a horde of bats towards a random enemy unit within range.
+A swarm of bats sweeps in from the enemy unit farthest from your hero, biting every enemy unit in its path and dragging the ground units along with it. It drops them in a line in front of your hero, where spikes burst out of the ground and impale the whole line.
 
-Damage: |cffffcc0075 (impale) + 75 (bats)|r
+Damage: |cffffcc0090|r (bats) + |cffffcc00150|r (spikes)
 Cooldown: |cffffcc003s|r
-Range: |cffffcc00400|r
+Range: |cffffcc00800|r
 Stun duration: |cffffcc001s|r
-Distance: |cffffcc00800|r
-Area of effect: |cffffcc00100 - 300|r
-Targets: |cffffcc00ground (impale), air & ground (bats)|r
+Targets: |cffffcc00air & ground|r (bats), |cffffcc00ground|r (spikes)
 Damage type: |cffffcc00spell|r
 }
 
 STRING 2693
-// Items: I0A7 (Bone Swarm), Name (Name)
+// Items: I0A7 (Undertow), Name (Name)
 {
-Bone Swarm
+Undertow
 }
 
 STRING 2694

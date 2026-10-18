@@ -161,7 +161,7 @@ export const weaponRecipes = [
   new Recipes.ScatteringSwarm(),
   new Recipes.Nightfall(),
   new Recipes.BoneLancers(),
-  new Recipes.BoneSwarm(),
+  new Recipes.Undertow(),
   new Recipes.CorpseMine(),
   new Recipes.CripplingBolt(),
   new Recipes.CripplingRockets(),
