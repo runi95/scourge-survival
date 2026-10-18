@@ -13355,67 +13355,67 @@ Spear Volley
 }
 
 STRING 2637
-// Items: I09U (Bat Bolts), Tip (Tooltip - Basic)
+// Items: I09U (Night Terror), Tip (Tooltip - Basic)
 {
-Purchase Bat Bolts
+Purchase Night Terror
 }
 
 STRING 2638
-// Items: I09U (Bat Bolts), Description (Description)
+// Items: I09U (Night Terror), Description (Description)
 {
-Fires a shadow bolt at a random enemy unit within range and sends a horde of bats after it.
+Sends a swarm of bats hunting a random enemy unit. It turns after its prey wherever it goes, tearing through everything on the way.
 }
 
 STRING 2639
-// Items: I09U (Bat Bolts), Ubertip (Tooltip - Extended)
+// Items: I09U (Night Terror), Ubertip (Tooltip - Extended)
 {
-Fires a shadow bolt at a random enemy unit within range and sends a horde of bats after it.
+Sends a swarm of bats hunting a random enemy unit. It turns after its prey wherever it goes, tearing through everything on the way.
 }
 
 STRING 2640
-// Items: I09U (Bat Bolts), Name (Name)
+// Items: I09U (Night Terror), Name (Name)
 {
-Bat Bolts
+Night Terror
 }
 
 STRING 2641
-// Items: I09V (Bat Bolts), Tip (Tooltip - Basic)
+// Items: I09V (Night Terror), Tip (Tooltip - Basic)
 {
-Purchase Bat Bolts
+Purchase Night Terror
 }
 
 STRING 2642
-// Items: I09V (Bat Bolts), Ubertip (Tooltip - Extended)
+// Items: I09V (Night Terror), Ubertip (Tooltip - Extended)
 {
-Fires a shadow bolt at a random enemy unit within range and sends a horde of bats after it.
+Sends a swarm of bats hunting a random enemy unit within range. The swarm turns after its prey wherever it goes, tearing through every enemy unit in its way, and strikes its prey with shadow when it catches it.
 
-Damage: |cffffcc0020 - 24 (bolt) + 75 (bats)|r
+Damage: |cffffcc00100|r (path) + |cffffcc00150|r (prey)
 Cooldown: |cffffcc002.5s|r
-Range: |cffffcc00600|r
-Distance: |cffffcc00800|r
-Area of effect: |cffffcc00100 - 300|r
+Range: |cffffcc00700|r
+Area of effect: |cffffcc00150|r
+Flight time: |cffffcc003s|r
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00magic + spell|r
+Damage type: |cffffcc00magic|r
 }
 
 STRING 2643
-// Items: I09V (Bat Bolts), Description (Description)
+// Items: I09V (Night Terror), Description (Description)
 {
-Fires a shadow bolt at a random enemy unit within range and sends a horde of bats after it.
+Sends a swarm of bats hunting a random enemy unit within range. The swarm turns after its prey wherever it goes, tearing through every enemy unit in its way, and strikes its prey with shadow when it catches it.
 
-Damage: |cffffcc0020 - 24 (bolt) + 75 (bats)|r
+Damage: |cffffcc00100|r (path) + |cffffcc00150|r (prey)
 Cooldown: |cffffcc002.5s|r
-Range: |cffffcc00600|r
-Distance: |cffffcc00800|r
-Area of effect: |cffffcc00100 - 300|r
+Range: |cffffcc00700|r
+Area of effect: |cffffcc00150|r
+Flight time: |cffffcc003s|r
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00magic + spell|r
+Damage type: |cffffcc00magic|r
 }
 
 STRING 2644
-// Items: I09V (Bat Bolts), Name (Name)
+// Items: I09V (Night Terror), Name (Name)
 {
-Bat Bolts
+Night Terror
 }
 
 STRING 2645

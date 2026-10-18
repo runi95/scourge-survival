@@ -150,7 +150,7 @@ export * from "./SnareMine";
 export * from "./HuntersSpear";
 export * from "./NetVolley";
 export * from "./SpearVolley";
-export * from "./BatBolts";
+export * from "./NightTerror";
 export * from "./BatGraveyard";
 export * from "./BatMine";
 export * from "./BatRockets";
