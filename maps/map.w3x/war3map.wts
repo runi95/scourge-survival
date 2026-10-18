@@ -13483,73 +13483,75 @@ Death March
 }
 
 STRING 2653
-// Items: I09Y (Bat Mine), Tip (Tooltip - Basic)
+// Items: I09Y (Belfry), Tip (Tooltip - Basic)
 {
-Purchase Bat Mine
+Purchase Belfry
 }
 
 STRING 2654
-// Items: I09Y (Bat Mine), Description (Description)
+// Items: I09Y (Belfry), Description (Description)
 {
-Places land mines full of bats underneath your hero. When an enemy steps on one, it explodes and a horde of bats bursts out towards the enemies.
+Places bat roosts underneath your hero. When an enemy steps on one, every roost sends its bats at that enemy at once.
 }
 
 STRING 2655
-// Items: I09Y (Bat Mine), Ubertip (Tooltip - Extended)
+// Items: I09Y (Belfry), Ubertip (Tooltip - Extended)
 {
-Places land mines full of bats underneath your hero. When an enemy steps on one, it explodes and a horde of bats bursts out towards the enemies.
+Places bat roosts underneath your hero. When an enemy steps on one, every roost sends its bats at that enemy at once.
 }
 
 STRING 2656
-// Units: n01C (Bat Mine), Name (Name)
+// Units: n01C (Bat Roost), Name (Name)
 {
-Bat Mine
+Bat Roost
 }
 
 STRING 2657
-// Items: I09Z (Bat Mine), Tip (Tooltip - Basic)
+// Items: I09Z (Belfry), Tip (Tooltip - Basic)
 {
-Purchase Bat Mine
+Purchase Belfry
 }
 
 STRING 2658
-// Items: I09Z (Bat Mine), Ubertip (Tooltip - Extended)
+// Items: I09Z (Belfry), Ubertip (Tooltip - Extended)
 {
-Places land mines full of bats underneath your hero. When an enemy steps on one, it explodes and a horde of bats bursts out towards the enemies.
+Places a bat roost underneath your hero every 4 seconds, up to 5 at a time. When an enemy ground unit steps on any of them, every roost sends a horde of bats at that enemy at once, damaging every enemy unit in their path. The bats need 4 seconds to return to their roosts.
 
-Damage: |cffffcc00100 (explosion) + 75 (bats)|r
-Cooldown: |cffffcc003s|r
-Area of effect: |cffffcc00300 (explosion) + 100 - 300 (bats)|r
+Damage: |cffffcc0060|r (per horde)
+Cooldown: |cffffcc004s|r
+Roosts: |cffffcc005|r
 Distance: |cffffcc00800|r
-Mine activation delay: |cffffcc004s|r
-Targets: |cffffcc00ground (explosion), air & ground (bats)|r
+Area of effect: |cffffcc00100 - 300|r
+Duration: |cffffcc0060s|r (roost)
+Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 2659
-// Items: I09Z (Bat Mine), Description (Description)
+// Items: I09Z (Belfry), Description (Description)
 {
-Places land mines full of bats underneath your hero. When an enemy steps on one, it explodes and a horde of bats bursts out towards the enemies.
+Places a bat roost underneath your hero every 4 seconds, up to 5 at a time. When an enemy ground unit steps on any of them, every roost sends a horde of bats at that enemy at once, damaging every enemy unit in their path. The bats need 4 seconds to return to their roosts.
 
-Damage: |cffffcc00100 (explosion) + 75 (bats)|r
-Cooldown: |cffffcc003s|r
-Area of effect: |cffffcc00300 (explosion) + 100 - 300 (bats)|r
+Damage: |cffffcc0060|r (per horde)
+Cooldown: |cffffcc004s|r
+Roosts: |cffffcc005|r
 Distance: |cffffcc00800|r
-Mine activation delay: |cffffcc004s|r
-Targets: |cffffcc00ground (explosion), air & ground (bats)|r
+Area of effect: |cffffcc00100 - 300|r
+Duration: |cffffcc0060s|r (roost)
+Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 2660
-// Items: I09Y (Bat Mine), Name (Name)
+// Items: I09Y (Belfry), Name (Name)
 {
-Bat Mine
+Belfry
 }
 
 STRING 2661
-// Items: I09Z (Bat Mine), Name (Name)
+// Items: I09Z (Belfry), Name (Name)
 {
-Bat Mine
+Belfry
 }
 
 STRING 2662

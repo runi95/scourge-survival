@@ -152,7 +152,7 @@ export * from "./NetVolley";
 export * from "./SpearVolley";
 export * from "./NightTerror";
 export * from "./DeathMarch";
-export * from "./BatMine";
+export * from "./Belfry";
 export * from "./BatRockets";
 export * from "./BatStorm";
 export * from "./BoneSpikes";
