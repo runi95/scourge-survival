@@ -26,6 +26,7 @@ import { ShrapnelDamageEvent } from "./DamageEvents/ShrapnelDamageEvent";
 import { BlackArrowDamageEvent } from "./DamageEvents/BlackArrowDamageEvent";
 import { BlackIceDamageEvent } from "./DamageEvents/BlackIceDamageEvent";
 import { RavenousWyrmDamageEvent } from "./DamageEvents/RavenousWyrmDamageEvent";
+import { CarrionFeastDamageEvent } from "./DamageEvents/CarrionFeastDamageEvent";
 
 export interface ExtendedDamageInstance extends DamageInstance {
   sourceOwningPlayer: player;
@@ -164,6 +165,10 @@ export class DamageEventController {
     );
     DamageEngine.register(
       new RavenousWyrmDamageEvent(),
+      DamageEventType.AfterDamageEvent,
+    );
+    DamageEngine.register(
+      new CarrionFeastDamageEvent(),
       DamageEventType.AfterDamageEvent,
     );
   }

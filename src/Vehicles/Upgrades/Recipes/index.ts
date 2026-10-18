@@ -182,7 +182,7 @@ export * from "./DeathPact";
 export * from "./HauntedGraveyard";
 export * from "./NecromancerAcademy";
 export * from "./NovaMine";
-export * from "./PlagueSwarm";
+export * from "./CarrionFeast";
 export * from "./ShadowMine";
 export * from "./ShadowRockets";
 export * from "./ShadowSpikes";

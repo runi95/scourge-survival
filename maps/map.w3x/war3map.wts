@@ -15459,69 +15459,71 @@ Nova Mine
 }
 
 STRING 2902
-// Items: I0BM (Plague Swarm), Tip (Tooltip - Basic)
+// Items: I0BM (Carrion Feast), Tip (Tooltip - Basic)
 {
-Purchase Plague Swarm
+Purchase Carrion Feast
 }
 
 STRING 2903
-// Items: I0BM (Plague Swarm), Description (Description)
+// Items: I0BM (Carrion Feast), Description (Description)
 {
-Sends a horde of bats towards a random enemy unit within range and cripples it.
+Sends a horde of carrion bats at the most wounded enemy, crippling every enemy in its path. The bats devour any enemy they crippled once it is weak enough.
 }
 
 STRING 2904
-// Items: I0BM (Plague Swarm), Ubertip (Tooltip - Extended)
+// Items: I0BM (Carrion Feast), Ubertip (Tooltip - Extended)
 {
-Sends a horde of bats towards a random enemy unit within range and cripples it.
+Sends a horde of carrion bats at the most wounded enemy, crippling every enemy in its path. The bats devour any enemy they crippled once it is weak enough.
 }
 
 STRING 2905
-// Items: I0BM (Plague Swarm), Name (Name)
+// Items: I0BM (Carrion Feast), Name (Name)
 {
-Plague Swarm
+Carrion Feast
 }
 
 STRING 2906
-// Items: I0BN (Plague Swarm), Tip (Tooltip - Basic)
+// Items: I0BN (Carrion Feast), Tip (Tooltip - Basic)
 {
-Purchase Plague Swarm
+Purchase Carrion Feast
 }
 
 STRING 2907
-// Items: I0BN (Plague Swarm), Ubertip (Tooltip - Extended)
+// Items: I0BN (Carrion Feast), Ubertip (Tooltip - Extended)
 {
-Sends a horde of bats towards a random enemy unit within range and cripples it.
+Sends a horde of carrion bats towards the most wounded enemy unit within range, damaging every enemy unit in their path and crippling the ones that are not crippled yet. While an enemy is crippled by them, the bats devour it the moment it drops below 30% of its life.
 
-Damage: |cffffcc0075 (bats) + 75 (cripple)|r
+Damage: |cffffcc0060|r (bats) + |cffffcc00120|r (cripple)
 Cooldown: |cffffcc003s|r
 Range: |cffffcc00600|r
 Distance: |cffffcc00800|r
 Area of effect: |cffffcc00100 - 300|r
-Duration: |cffffcc003s|r
+Cripple duration: |cffffcc003s|r
+Devours: |cffffcc00below 30% life|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 2908
-// Items: I0BN (Plague Swarm), Description (Description)
+// Items: I0BN (Carrion Feast), Description (Description)
 {
-Sends a horde of bats towards a random enemy unit within range and cripples it.
+Sends a horde of carrion bats towards the most wounded enemy unit within range, damaging every enemy unit in their path and crippling the ones that are not crippled yet. While an enemy is crippled by them, the bats devour it the moment it drops below 30% of its life.
 
-Damage: |cffffcc0075 (bats) + 75 (cripple)|r
+Damage: |cffffcc0060|r (bats) + |cffffcc00120|r (cripple)
 Cooldown: |cffffcc003s|r
 Range: |cffffcc00600|r
 Distance: |cffffcc00800|r
 Area of effect: |cffffcc00100 - 300|r
-Duration: |cffffcc003s|r
+Cripple duration: |cffffcc003s|r
+Devours: |cffffcc00below 30% life|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 2909
-// Items: I0BN (Plague Swarm), Name (Name)
+// Items: I0BN (Carrion Feast), Name (Name)
 {
-Plague Swarm
+Carrion Feast
 }
 
 STRING 2910
@@ -20040,5 +20042,11 @@ STRING 3552
 // Abilities: A050 (Glacial Spikes), Name (Name)
 {
 Glacial Spikes
+}
+
+STRING 3553
+// Units: u02E (Carrion Feast Caster), Name (Name)
+{
+Carrion Feast Caster
 }
 
