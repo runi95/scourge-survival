@@ -185,7 +185,7 @@ export * from "./NovaMine";
 export * from "./CarrionFeast";
 export * from "./CreepingShadow";
 export * from "./OrbOfAnnihilation";
-export * from "./ShadowSpikes";
+export * from "./Skewer";
 export * from "./ShadowSpire";
 export * from "./ShadowVolley";
 export * from "./SkeletonDrop";

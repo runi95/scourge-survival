@@ -190,7 +190,7 @@ export const weaponRecipes = [
   new Recipes.CarrionFeast(),
   new Recipes.CreepingShadow(),
   new Recipes.OrbOfAnnihilation(),
-  new Recipes.ShadowSpikes(),
+  new Recipes.Skewer(),
   new Recipes.ShadowSpire(),
   new Recipes.ShadowVolley(),
   new Recipes.SkeletonDrop(),

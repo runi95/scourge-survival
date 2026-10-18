@@ -15653,65 +15653,65 @@ Orb of Annihilation
 }
 
 STRING 2927
-// Items: I0BS (Shadow Spikes), Tip (Tooltip - Basic)
+// Items: I0BS (Skewer), Tip (Tooltip - Basic)
 {
-Purchase Shadow Spikes
+Purchase Skewer
 }
 
 STRING 2928
-// Items: I0BS (Shadow Spikes), Description (Description)
+// Items: I0BS (Skewer), Description (Description)
 {
-Fires a shadow bolt at a random enemy unit within range and impales the ground towards it.
+Hurls a lance of shadow and bone down the line with the most enemies. It skewers every enemy in its way, harder for every one it has already gone through.
 }
 
 STRING 2929
-// Items: I0BS (Shadow Spikes), Ubertip (Tooltip - Extended)
+// Items: I0BS (Skewer), Ubertip (Tooltip - Extended)
 {
-Fires a shadow bolt at a random enemy unit within range and impales the ground towards it.
+Hurls a lance of shadow and bone down the line with the most enemies. It skewers every enemy in its way, harder for every one it has already gone through.
 }
 
 STRING 2930
-// Items: I0BS (Shadow Spikes), Name (Name)
+// Items: I0BS (Skewer), Name (Name)
 {
-Shadow Spikes
+Skewer
 }
 
 STRING 2931
-// Items: I0BT (Shadow Spikes), Tip (Tooltip - Basic)
+// Items: I0BT (Skewer), Tip (Tooltip - Basic)
 {
-Purchase Shadow Spikes
+Purchase Skewer
 }
 
 STRING 2932
-// Items: I0BT (Shadow Spikes), Ubertip (Tooltip - Extended)
+// Items: I0BT (Skewer), Ubertip (Tooltip - Extended)
 {
-Fires a shadow bolt at a random enemy unit within range and impales the ground towards it.
+Hurls a lance of shadow and bone down the line with the most enemy units in it. The lance skewers and stuns every enemy unit in its way, dealing 40 more damage for every enemy it has already gone through.
 
-Damage: |cffffcc0020 - 24 (bolt) + 75 (impale)|r
+Damage: |cffffcc0080|r + |cffffcc0040|r per enemy already skewered
 Cooldown: |cffffcc002s|r
-Range: |cffffcc00400|r
-Stun duration: |cffffcc001s|r
-Targets: |cffffcc00air & ground (bolt), ground (impale)|r
-Damage type: |cffffcc00magic + spell|r
+Distance: |cffffcc00900|r
+Stun duration: |cffffcc000.75s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00magic|r
 }
 
 STRING 2933
-// Items: I0BT (Shadow Spikes), Description (Description)
+// Items: I0BT (Skewer), Description (Description)
 {
-Fires a shadow bolt at a random enemy unit within range and impales the ground towards it.
+Hurls a lance of shadow and bone down the line with the most enemy units in it. The lance skewers and stuns every enemy unit in its way, dealing 40 more damage for every enemy it has already gone through.
 
-Damage: |cffffcc0020 - 24 (bolt) + 75 (impale)|r
+Damage: |cffffcc0080|r + |cffffcc0040|r per enemy already skewered
 Cooldown: |cffffcc002s|r
-Range: |cffffcc00400|r
-Stun duration: |cffffcc001s|r
-Targets: |cffffcc00air & ground (bolt), ground (impale)|r
-Damage type: |cffffcc00magic + spell|r
+Distance: |cffffcc00900|r
+Stun duration: |cffffcc000.75s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00magic|r
 }
 
 STRING 2934
-// Items: I0BT (Shadow Spikes), Name (Name)
+// Items: I0BT (Skewer), Name (Name)
 {
-Shadow Spikes
+Skewer
 }
 
 STRING 2935
