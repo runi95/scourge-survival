@@ -15527,73 +15527,65 @@ Carrion Feast
 }
 
 STRING 2910
-// Items: I0BO (Shadow Mine), Tip (Tooltip - Basic)
+// Items: I0BO (Creeping Shadow), Tip (Tooltip - Basic)
 {
-Purchase Shadow Mine
+Purchase Creeping Shadow
 }
 
 STRING 2911
-// Items: I0BO (Shadow Mine), Description (Description)
+// Items: I0BO (Creeping Shadow), Description (Description)
 {
-Places cursed land mines underneath your hero. When an enemy steps on one, it explodes and fires shadow bolts at 3 enemy units nearby.
+Leaves shades behind your hero that lie in wait. When an enemy comes near one, it creeps up on it and bursts beneath it.
 }
 
 STRING 2912
-// Items: I0BO (Shadow Mine), Ubertip (Tooltip - Extended)
+// Items: I0BO (Creeping Shadow), Ubertip (Tooltip - Extended)
 {
-Places cursed land mines underneath your hero. When an enemy steps on one, it explodes and fires shadow bolts at 3 enemy units nearby.
-}
-
-STRING 2913
-// Units: n01F (Shadow Mine), Name (Name)
-{
-Shadow Mine
+Leaves shades behind your hero that lie in wait. When an enemy comes near one, it creeps up on it and bursts beneath it.
 }
 
 STRING 2914
-// Items: I0BP (Shadow Mine), Tip (Tooltip - Basic)
+// Items: I0BP (Creeping Shadow), Tip (Tooltip - Basic)
 {
-Purchase Shadow Mine
+Purchase Creeping Shadow
 }
 
 STRING 2915
-// Items: I0BP (Shadow Mine), Ubertip (Tooltip - Extended)
+// Items: I0BP (Creeping Shadow), Ubertip (Tooltip - Extended)
 {
-Places cursed land mines underneath your hero. When an enemy steps on one, it explodes and fires shadow bolts at 3 enemy units nearby.
+Leaves a shade behind your hero every 3 seconds, up to 5 at a time. A shade lies in wait until an enemy ground unit comes within 500 of it, then creeps up on the nearest one and bursts beneath it, hurting every enemy ground unit around it. Shades that find nobody fade after 60 seconds.
 
-Damage: |cffffcc00100 (explosion) + 3 x 20 - 24 (bolts)|r
+Damage: |cffffcc00175|r
 Cooldown: |cffffcc003s|r
-Area of effect: |cffffcc00300|r
-Range: |cffffcc00500 (bolts)|r
-Mine activation delay: |cffffcc004s|r
-Targets: |cffffcc00ground (explosion), air & ground (bolts)|r
-Damage type: |cffffcc00spell + magic|r
+Shades: |cffffcc005|r
+Area of effect: |cffffcc00200|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00magic|r
 }
 
 STRING 2916
-// Items: I0BP (Shadow Mine), Description (Description)
+// Items: I0BP (Creeping Shadow), Description (Description)
 {
-Places cursed land mines underneath your hero. When an enemy steps on one, it explodes and fires shadow bolts at 3 enemy units nearby.
+Leaves a shade behind your hero every 3 seconds, up to 5 at a time. A shade lies in wait until an enemy ground unit comes within 500 of it, then creeps up on the nearest one and bursts beneath it, hurting every enemy ground unit around it. Shades that find nobody fade after 60 seconds.
 
-Damage: |cffffcc00100 (explosion) + 3 x 20 - 24 (bolts)|r
+Damage: |cffffcc00175|r
 Cooldown: |cffffcc003s|r
-Area of effect: |cffffcc00300|r
-Range: |cffffcc00500 (bolts)|r
-Mine activation delay: |cffffcc004s|r
-Targets: |cffffcc00ground (explosion), air & ground (bolts)|r
-Damage type: |cffffcc00spell + magic|r
+Shades: |cffffcc005|r
+Area of effect: |cffffcc00200|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00magic|r
 }
 
 STRING 2917
-// Items: I0BO (Shadow Mine), Name (Name)
+// Items: I0BO (Creeping Shadow), Name (Name)
 {
-Shadow Mine
+Creeping Shadow
 }
 
 STRING 2918
-// Items: I0BP (Shadow Mine), Name (Name)
+// Items: I0BP (Creeping Shadow), Name (Name)
 {
-Shadow Mine
+Creeping Shadow
 }
 
 STRING 2919

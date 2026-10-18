@@ -188,7 +188,7 @@ export const weaponRecipes = [
   new Recipes.NecromancerAcademy(),
   new Recipes.NovaMine(),
   new Recipes.CarrionFeast(),
-  new Recipes.ShadowMine(),
+  new Recipes.CreepingShadow(),
   new Recipes.ShadowRockets(),
   new Recipes.ShadowSpikes(),
   new Recipes.ShadowSpire(),
