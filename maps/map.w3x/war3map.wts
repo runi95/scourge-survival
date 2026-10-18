@@ -7661,67 +7661,67 @@ Rupture
 }
 
 STRING 1892
-// Items: I050 (Plague Trap), Tip (Tooltip - Basic)
+// Items: I050 (Plague Carrier), Tip (Tooltip - Basic)
 {
-Purchase Plague Trap
+Purchase Plague Carrier
 }
 
 STRING 1893
-// Items: I050 (Plague Trap), Description (Description)
+// Items: I050 (Plague Carrier), Description (Description)
 {
-Places plague traps underneath your hero. When an enemy steps on one, it releases a cloud that cripples and poisons everything around.
+Places plague mines underneath your hero. The first enemy to step on one carries the plague back into its pack before it bursts.
 }
 
 STRING 1894
-// Items: I050 (Plague Trap), Ubertip (Tooltip - Extended)
+// Items: I050 (Plague Carrier), Ubertip (Tooltip - Extended)
 {
-Places plague traps underneath your hero. When an enemy steps on one, it releases a cloud that cripples and poisons everything around.
+Places plague mines underneath your hero. The first enemy to step on one carries the plague back into its pack before it bursts.
 }
 
 STRING 1895
-// Units: n00Y (Plague Trap), Name (Name)
+// Units: n00Y (Plague Carrier Mine), Name (Name)
 {
-Plague Trap
+Plague Carrier Mine
 }
 
 STRING 1896
-// Items: I051 (Plague Trap), Tip (Tooltip - Basic)
+// Items: I051 (Plague Carrier), Tip (Tooltip - Basic)
 {
-Purchase Plague Trap
+Purchase Plague Carrier
 }
 
 STRING 1897
-// Items: I051 (Plague Trap), Ubertip (Tooltip - Extended)
+// Items: I051 (Plague Carrier), Ubertip (Tooltip - Extended)
 {
-Places plague traps underneath your hero. When an enemy steps on one, it releases a cloud that cripples and poisons everything around.
+Places a plague mine underneath your hero every 3 seconds. The first enemy ground unit to step on one is crippled and carries the plague off with it. 3 seconds later the plague bursts, hurting every enemy ground unit around the carrier.
 
-Damage: |cffffcc00100 + 10/s for 5s|r
+Damage: |cffffcc00300|r
 Cooldown: |cffffcc003s|r
 Area of effect: |cffffcc00250|r
-Cripple: |cffffcc003s|r
-Mine activation delay: |cffffcc004s|r
+Cripple duration: |cffffcc003s|r
 Targets: |cffffcc00ground only!|r
 Damage type: |cffffcc00spell|r
+Mine activation delay: |cffffcc004s|r
 }
 
 STRING 1898
-// Items: I051 (Plague Trap), Description (Description)
+// Items: I051 (Plague Carrier), Description (Description)
 {
-Places plague traps underneath your hero. When an enemy steps on one, it releases a cloud that cripples and poisons everything around.
+Places a plague mine underneath your hero every 3 seconds. The first enemy ground unit to step on one is crippled and carries the plague off with it. 3 seconds later the plague bursts, hurting every enemy ground unit around the carrier.
 
-Damage: |cffffcc00100 + 10/s for 5s|r
+Damage: |cffffcc00300|r
 Cooldown: |cffffcc003s|r
 Area of effect: |cffffcc00250|r
-Cripple: |cffffcc003s|r
-Mine activation delay: |cffffcc004s|r
+Cripple duration: |cffffcc003s|r
 Targets: |cffffcc00ground only!|r
 Damage type: |cffffcc00spell|r
+Mine activation delay: |cffffcc004s|r
 }
 
 STRING 1899
-// Items: I050 (Plague Trap), Name (Name)
+// Items: I050 (Plague Carrier), Name (Name)
 {
-Plague Trap
+Plague Carrier
 }
 
 STRING 1900
@@ -7730,16 +7730,10 @@ STRING 1900
 Plague Trap Disease
 }
 
-STRING 1901
-// Units: u01M (Plague Trap Cloud), Name (Name)
-{
-Plague Trap Cloud
-}
-
 STRING 1902
-// Items: I051 (Plague Trap), Name (Name)
+// Items: I051 (Plague Carrier), Name (Name)
 {
-Plague Trap
+Plague Carrier
 }
 
 STRING 1903

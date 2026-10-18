@@ -71,7 +71,7 @@ export * from "./Shatter";
 export * from "./CurseOfFrailty";
 export * from "./Sacrifice";
 export * from "./Rupture";
-export * from "./PlagueTrap";
+export * from "./PlagueCarrier";
 export * from "./NerubianTower";
 export * from "./DragonWhelpForge";
 export * from "./BlastFurnace";
