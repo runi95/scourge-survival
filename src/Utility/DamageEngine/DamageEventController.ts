@@ -21,6 +21,7 @@ import { ElunesVeilDamageEvent } from "./DamageEvents/ElunesVeilDamageEvent";
 import { IronhideDamageEvent } from "./DamageEvents/IronhideDamageEvent";
 import { CurseOfFrailtyDamageEvent } from "./DamageEvents/CurseOfFrailtyDamageEvent";
 import { RuptureDamageEvent } from "./DamageEvents/RuptureDamageEvent";
+import { BoneLancersDamageEvent } from "./DamageEvents/BoneLancersDamageEvent";
 
 export interface ExtendedDamageInstance extends DamageInstance {
   sourceOwningPlayer: player;
@@ -139,6 +140,10 @@ export class DamageEventController {
     );
     DamageEngine.register(
       new RuptureDamageEvent(),
+      DamageEventType.AfterDamageEvent,
+    );
+    DamageEngine.register(
+      new BoneLancersDamageEvent(),
       DamageEventType.AfterDamageEvent,
     );
   }

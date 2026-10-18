@@ -13679,69 +13679,67 @@ Nightfall
 }
 
 STRING 2678
-// Items: I0A4 (Bone Spikes), Tip (Tooltip - Basic)
+// Items: I0A4 (Bone Lancers), Tip (Tooltip - Basic)
 {
-Purchase Bone Spikes
+Purchase Bone Lancers
 }
 
 STRING 2679
-// Items: I0A4 (Bone Spikes), Description (Description)
+// Items: I0A4 (Bone Lancers), Description (Description)
 {
-Impales the ground towards a random enemy unit within range, and a Skeleton Warrior rises where the spikes end.
+Raises Bone Lancers that fight by your side. Every third blow drives spikes through the ground behind their target.
 }
 
 STRING 2680
-// Items: I0A4 (Bone Spikes), Ubertip (Tooltip - Extended)
+// Items: I0A4 (Bone Lancers), Ubertip (Tooltip - Extended)
 {
-Impales the ground towards a random enemy unit within range, and a Skeleton Warrior rises where the spikes end.
+Raises Bone Lancers that fight by your side. Every third blow drives spikes through the ground behind their target.
 }
 
 STRING 2681
-// Items: I0A4 (Bone Spikes), Name (Name)
+// Items: I0A4 (Bone Lancers), Name (Name)
 {
-Bone Spikes
+Bone Lancers
 }
 
 STRING 2682
-// Items: I0A5 (Bone Spikes), Tip (Tooltip - Basic)
+// Items: I0A5 (Bone Lancers), Tip (Tooltip - Basic)
 {
-Purchase Bone Spikes
+Purchase Bone Lancers
 }
 
 STRING 2683
-// Items: I0A5 (Bone Spikes), Ubertip (Tooltip - Extended)
+// Items: I0A5 (Bone Lancers), Ubertip (Tooltip - Extended)
 {
-Impales the ground towards a random enemy unit within range, and a Skeleton Warrior rises where the spikes end.
+Raises a Bone Lancer next to your hero every 8 seconds that fights by your side. Every third blow of a Bone Lancer drives spikes out of the ground through its target and on behind it, hurting and stunning every enemy ground unit in the line.
 
-Damage: |cffffcc0075 (impale) + 26 - 42 (skeleton)|r
-Cooldown: |cffffcc003s|r
-Range: |cffffcc00400|r
-Stun duration: |cffffcc001s|r
+Damage: |cffffcc0026 - 42|r (attack) + |cffffcc00150|r (spikes)
+Cooldown: |cffffcc008s|r
 Health: |cffffcc00200|r
-Duration: |cffffcc008s|r
+Duration: |cffffcc0020s|r
+Stun duration: |cffffcc001s|r
 Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00spell + normal|r
+Damage type: |cffffcc00normal|r (attack) + |cffffcc00spell|r (spikes)
 }
 
 STRING 2684
-// Items: I0A5 (Bone Spikes), Description (Description)
+// Items: I0A5 (Bone Lancers), Description (Description)
 {
-Impales the ground towards a random enemy unit within range, and a Skeleton Warrior rises where the spikes end.
+Raises a Bone Lancer next to your hero every 8 seconds that fights by your side. Every third blow of a Bone Lancer drives spikes out of the ground through its target and on behind it, hurting and stunning every enemy ground unit in the line.
 
-Damage: |cffffcc0075 (impale) + 26 - 42 (skeleton)|r
-Cooldown: |cffffcc003s|r
-Range: |cffffcc00400|r
-Stun duration: |cffffcc001s|r
+Damage: |cffffcc0026 - 42|r (attack) + |cffffcc00150|r (spikes)
+Cooldown: |cffffcc008s|r
 Health: |cffffcc00200|r
-Duration: |cffffcc008s|r
+Duration: |cffffcc0020s|r
+Stun duration: |cffffcc001s|r
 Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00spell + normal|r
+Damage type: |cffffcc00normal|r (attack) + |cffffcc00spell|r (spikes)
 }
 
 STRING 2685
-// Items: I0A5 (Bone Spikes), Name (Name)
+// Items: I0A5 (Bone Lancers), Name (Name)
 {
-Bone Spikes
+Bone Lancers
 }
 
 STRING 2686
@@ -19986,5 +19984,11 @@ STRING 3541
 // Abilities: A04V (Scattering Swarm), Name (Name)
 {
 Scattering Swarm
+}
+
+STRING 3542
+// Units: u028 (Bone Lancer), Name (Name)
+{
+Bone Lancer
 }
 

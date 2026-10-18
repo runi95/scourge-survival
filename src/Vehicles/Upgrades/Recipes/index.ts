@@ -155,7 +155,7 @@ export * from "./DeathMarch";
 export * from "./Belfry";
 export * from "./ScatteringSwarm";
 export * from "./Nightfall";
-export * from "./BoneSpikes";
+export * from "./BoneLancers";
 export * from "./BoneSwarm";
 export * from "./CorpseMine";
 export * from "./CripplingBolt";
