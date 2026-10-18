@@ -24,6 +24,7 @@ import { RuptureDamageEvent } from "./DamageEvents/RuptureDamageEvent";
 import { BoneLancersDamageEvent } from "./DamageEvents/BoneLancersDamageEvent";
 import { ShrapnelDamageEvent } from "./DamageEvents/ShrapnelDamageEvent";
 import { BlackArrowDamageEvent } from "./DamageEvents/BlackArrowDamageEvent";
+import { BlackIceDamageEvent } from "./DamageEvents/BlackIceDamageEvent";
 
 export interface ExtendedDamageInstance extends DamageInstance {
   sourceOwningPlayer: player;
@@ -108,6 +109,10 @@ export class DamageEventController {
     );
     DamageEngine.register(
       new BansheeShellDamageEvent(),
+      DamageEventType.OnDamageEvent,
+    );
+    DamageEngine.register(
+      new BlackIceDamageEvent(),
       DamageEventType.OnDamageEvent,
     );
 

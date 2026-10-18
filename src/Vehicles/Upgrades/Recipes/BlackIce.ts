@@ -6,16 +6,18 @@ import { weaponDummyAbilityIds } from "../../../Utility/WeaponDummyAbilityIds";
 import { WeaponUpgradeRecipe } from "../../WeaponUpgradeRecipe";
 import { RandomNumberGenerator } from "../../../Utility/RandomNumberGenerator";
 import { Group } from "../../../Utility/Group";
+import { BlackIceDamageEvent } from "../../../Utility/DamageEngine/DamageEvents/BlackIceDamageEvent";
 
-export class FrostBolt extends WeaponUpgradeRecipe {
-  public readonly cooldown = 1.5;
+// Fires bolts of black ice; BlackIceDamageEvent chills their target more with
+// every hit, freezes it on the 5th and triples the bolts against it frozen
+export class BlackIce extends WeaponUpgradeRecipe {
+  public readonly cooldown = 0.6;
   public readonly itemTypeId = FourCC("I0AM");
   public readonly merchantItemTypeId = FourCC("I0AN");
   public readonly recipe: number[] = [FourCC("I05J"), FourCC("I05M")];
 
   private readonly timers = new Map<number, Timer>();
-  private readonly dummyUnitId: number = FourCC("u000");
-  private readonly frostBoltAbilityId: number = FourCC("A04U");
+  private readonly boltUnitTypeId: number = FourCC("u02C");
 
   public onAcquire(
     vehicle: Vehicle,
@@ -24,12 +26,12 @@ export class FrostBolt extends WeaponUpgradeRecipe {
     itemId: number,
     weaponIndex: number,
   ): void {
-    const tick = () => {
-      vehicle.unit.startAbilityCooldown(
-        weaponDummyAbilityIds[weaponIndex],
-        this.cooldown,
-      );
-
+    const t: Timer = TimerUtils.newTimer();
+    this.timers.set(itemId, t);
+    t.start(this.cooldown, true, () => {
+      // The most chilled enemy first (frozen ones most of all), else any
+      let coldest: Unit | undefined;
+      let coldestChill = 0;
       const enemies: Unit[] = [];
       const grp = Group.fromRange(600, vehicle.unit.point);
       grp.for((u) => {
@@ -39,26 +41,27 @@ export class FrostBolt extends WeaponUpgradeRecipe {
         if (u.isUnitType(UNIT_TYPE_STRUCTURE)) return;
 
         enemies.push(u);
+        const chill = BlackIceDamageEvent.chillOf(u);
+        if (chill <= coldestChill) return;
+        coldest = u;
+        coldestChill = chill;
       });
       grp.destroy();
 
+      vehicle.unit.startAbilityCooldown(
+        weaponDummyAbilityIds[weaponIndex],
+        this.cooldown,
+      );
+
       if (enemies.length === 0) return;
 
-      const hx = vehicle.unit.x;
-      const hy = vehicle.unit.y;
+      const { x, y } = vehicle.unit;
       const target =
-        enemies[RandomNumberGenerator.random(0, enemies.length - 1)];
-      {
-        const dummy = Unit.create(owner, this.dummyUnitId, hx, hy);
-        dummy.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 2);
-        dummy.addAbility(this.frostBoltAbilityId);
-        dummy.issueTargetOrder("thunderbolt", target);
-      }
-    };
-
-    const t: Timer = TimerUtils.newTimer();
-    this.timers.set(itemId, t);
-    t.start(this.cooldown, true, tick);
+        coldest ?? enemies[RandomNumberGenerator.random(0, enemies.length - 1)];
+      const bolt = Unit.create(owner, this.boltUnitTypeId, x, y);
+      bolt.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 1);
+      bolt.issueTargetOrder("attack", target);
+    });
   }
 
   public onDrop(

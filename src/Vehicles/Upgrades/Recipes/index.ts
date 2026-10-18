@@ -164,7 +164,7 @@ export * from "./CryptFiendDen";
 export * from "./BlackArrow";
 export * from "./IceTomb";
 export * from "./ColdSnap";
-export * from "./FrostBolt";
+export * from "./BlackIce";
 export * from "./FrostBrood";
 export * from "./FrostRevenants";
 export * from "./FrostRockets";
