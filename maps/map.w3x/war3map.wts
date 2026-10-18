@@ -13555,69 +13555,65 @@ Belfry
 }
 
 STRING 2662
-// Items: I0A0 (Bat Rockets), Tip (Tooltip - Basic)
+// Items: I0A0 (Scattering Swarm), Tip (Tooltip - Basic)
 {
-Purchase Bat Rockets
+Purchase Scattering Swarm
 }
 
 STRING 2663
-// Items: I0A0 (Bat Rockets), Description (Description)
+// Items: I0A0 (Scattering Swarm), Description (Description)
 {
-Fires Cluster Rockets and sends a horde of bats towards a random enemy unit within range.
+Sends a horde of bats into the largest enemy group, where it breaks apart into 6 smaller swarms that scatter through it.
 }
 
 STRING 2664
-// Items: I0A0 (Bat Rockets), Ubertip (Tooltip - Extended)
+// Items: I0A0 (Scattering Swarm), Ubertip (Tooltip - Extended)
 {
-Fires Cluster Rockets and sends a horde of bats towards a random enemy unit within range.
+Sends a horde of bats into the largest enemy group, where it breaks apart into 6 smaller swarms that scatter through it.
 }
 
 STRING 2665
-// Items: I0A0 (Bat Rockets), Name (Name)
+// Items: I0A0 (Scattering Swarm), Name (Name)
 {
-Bat Rockets
+Scattering Swarm
 }
 
 STRING 2666
-// Items: I0A1 (Bat Rockets), Tip (Tooltip - Basic)
+// Items: I0A1 (Scattering Swarm), Tip (Tooltip - Basic)
 {
-Purchase Bat Rockets
+Purchase Scattering Swarm
 }
 
 STRING 2667
-// Items: I0A1 (Bat Rockets), Ubertip (Tooltip - Extended)
+// Items: I0A1 (Scattering Swarm), Ubertip (Tooltip - Extended)
 {
-Fires Cluster Rockets and sends a horde of bats towards a random enemy unit within range.
+Sends a horde of bats into the largest enemy group within range. When it reaches the group, it breaks apart like a cluster of rockets: 6 smaller swarms scatter outward in every direction, damaging every enemy unit in their path.
 
-Damage: |cffffcc006 x 17.5 (rockets) + 75 (bats)|r
-Cooldown: |cffffcc002.5s|r
-Range: |cffffcc00600|r
-Area of effect: |cffffcc00300 (rockets) + 100 - 300 (bats)|r
-Distance: |cffffcc00800|r
+Damage: |cffffcc0060|r (horde) + |cffffcc006 x 40|r (swarms)
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00700|r
+Distance: |cffffcc00800|r (horde) + |cffffcc00400|r (swarms)
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
-Effect: |cffffcc00stuns for 1s|r
 }
 
 STRING 2668
-// Items: I0A1 (Bat Rockets), Description (Description)
+// Items: I0A1 (Scattering Swarm), Description (Description)
 {
-Fires Cluster Rockets and sends a horde of bats towards a random enemy unit within range.
+Sends a horde of bats into the largest enemy group within range. When it reaches the group, it breaks apart like a cluster of rockets: 6 smaller swarms scatter outward in every direction, damaging every enemy unit in their path.
 
-Damage: |cffffcc006 x 17.5 (rockets) + 75 (bats)|r
-Cooldown: |cffffcc002.5s|r
-Range: |cffffcc00600|r
-Area of effect: |cffffcc00300 (rockets) + 100 - 300 (bats)|r
-Distance: |cffffcc00800|r
+Damage: |cffffcc0060|r (horde) + |cffffcc006 x 40|r (swarms)
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00700|r
+Distance: |cffffcc00800|r (horde) + |cffffcc00400|r (swarms)
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
-Effect: |cffffcc00stuns for 1s|r
 }
 
 STRING 2669
-// Items: I0A1 (Bat Rockets), Name (Name)
+// Items: I0A1 (Scattering Swarm), Name (Name)
 {
-Bat Rockets
+Scattering Swarm
 }
 
 STRING 2670
@@ -19986,5 +19982,11 @@ STRING 3540
 // Units: u027 (Rupture Caster), Name (Name)
 {
 Rupture Caster
+}
+
+STRING 3541
+// Abilities: A04V (Scattering Swarm), Name (Name)
+{
+Scattering Swarm
 }
 

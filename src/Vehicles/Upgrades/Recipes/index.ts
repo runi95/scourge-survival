@@ -153,7 +153,7 @@ export * from "./SpearVolley";
 export * from "./NightTerror";
 export * from "./DeathMarch";
 export * from "./Belfry";
-export * from "./BatRockets";
+export * from "./ScatteringSwarm";
 export * from "./BatStorm";
 export * from "./BoneSpikes";
 export * from "./BoneSwarm";
