@@ -192,7 +192,7 @@ export * from "./MeatWagon";
 export * from "./Slaughterhouse";
 export * from "./SpiritWarriors";
 export * from "./Haunting";
-export * from "./WyrmMine";
+export * from "./IceCrystal";
 export * from "./AncientGrove";
 export * from "./ArcherBarracks";
 export * from "./BladeCyclone";

@@ -16085,75 +16085,67 @@ Haunting
 }
 
 STRING 2983
-// Items: I0C6 (Wyrm Mine), Tip (Tooltip - Basic)
+// Items: I0C6 (Ice Crystal), Tip (Tooltip - Basic)
 {
-Purchase Wyrm Mine
+Purchase Ice Crystal
 }
 
 STRING 2984
-// Items: I0C6 (Wyrm Mine), Description (Description)
+// Items: I0C6 (Ice Crystal), Description (Description)
 {
-Places frozen land mines underneath your hero. When an enemy steps on one, it explodes and blasts 3 enemy units nearby with a Frost Nova.
+Leaves ice crystals behind your hero that grow bigger and deadlier every second nobody touches them, and shatter on the first enemy that does.
 }
 
 STRING 2985
-// Items: I0C6 (Wyrm Mine), Ubertip (Tooltip - Extended)
+// Items: I0C6 (Ice Crystal), Ubertip (Tooltip - Extended)
 {
-Places frozen land mines underneath your hero. When an enemy steps on one, it explodes and blasts 3 enemy units nearby with a Frost Nova.
-}
-
-STRING 2986
-// Units: n01G (Wyrm Mine), Name (Name)
-{
-Wyrm Mine
+Leaves ice crystals behind your hero that grow bigger and deadlier every second nobody touches them, and shatter on the first enemy that does.
 }
 
 STRING 2987
-// Items: I0C7 (Wyrm Mine), Tip (Tooltip - Basic)
+// Items: I0C7 (Ice Crystal), Tip (Tooltip - Basic)
 {
-Purchase Wyrm Mine
+Purchase Ice Crystal
 }
 
 STRING 2988
-// Items: I0C7 (Wyrm Mine), Ubertip (Tooltip - Extended)
+// Items: I0C7 (Ice Crystal), Ubertip (Tooltip - Extended)
 {
-Places frozen land mines underneath your hero. When an enemy steps on one, it explodes and blasts 3 enemy units nearby with a Frost Nova.
+Leaves an ice crystal behind your hero every 3 seconds, up to 4 at a time. A crystal grows every second nobody touches it. When an enemy ground unit comes near one, it shatters, hurting and slowing every enemy ground unit around it, the longer it grew the harder and wider.
 
-Damage: |cffffcc00100 (explosion) + 3 x (60 + 40) (novas)|r
+Damage: |cffffcc00100|r, |cffffcc00+25|r per second grown (up to |cffffcc00350|r)
 Slow: |cffffcc00-50% movement speed for 3s|r
 Cooldown: |cffffcc003s|r
-Area of effect: |cffffcc00300 (explosion) + 200 (novas)|r
-Range: |cffffcc00400 (novas)|r
-Mine activation delay: |cffffcc004s|r
-Targets: |cffffcc00ground (explosion), air & ground (novas)|r
-Damage type: |cffffcc00spell|r
+Area of effect: |cffffcc00200|r, |cffffcc00+15|r per second grown (up to |cffffcc00350|r)
+Growth: |cffffcc0010s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00magic|r
 }
 
 STRING 2989
-// Items: I0C7 (Wyrm Mine), Description (Description)
+// Items: I0C7 (Ice Crystal), Description (Description)
 {
-Places frozen land mines underneath your hero. When an enemy steps on one, it explodes and blasts 3 enemy units nearby with a Frost Nova.
+Leaves an ice crystal behind your hero every 3 seconds, up to 4 at a time. A crystal grows every second nobody touches it. When an enemy ground unit comes near one, it shatters, hurting and slowing every enemy ground unit around it, the longer it grew the harder and wider.
 
-Damage: |cffffcc00100 (explosion) + 3 x (60 + 40) (novas)|r
+Damage: |cffffcc00100|r, |cffffcc00+25|r per second grown (up to |cffffcc00350|r)
 Slow: |cffffcc00-50% movement speed for 3s|r
 Cooldown: |cffffcc003s|r
-Area of effect: |cffffcc00300 (explosion) + 200 (novas)|r
-Range: |cffffcc00400 (novas)|r
-Mine activation delay: |cffffcc004s|r
-Targets: |cffffcc00ground (explosion), air & ground (novas)|r
-Damage type: |cffffcc00spell|r
+Area of effect: |cffffcc00200|r, |cffffcc00+15|r per second grown (up to |cffffcc00350|r)
+Growth: |cffffcc0010s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00magic|r
 }
 
 STRING 2990
-// Items: I0C6 (Wyrm Mine), Name (Name)
+// Items: I0C6 (Ice Crystal), Name (Name)
 {
-Wyrm Mine
+Ice Crystal
 }
 
 STRING 2991
-// Items: I0C7 (Wyrm Mine), Name (Name)
+// Items: I0C7 (Ice Crystal), Name (Name)
 {
-Wyrm Mine
+Ice Crystal
 }
 
 STRING 2992
