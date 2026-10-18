@@ -14197,69 +14197,69 @@ Ice Tomb
 }
 
 STRING 2743
-// Items: I0AK (Frost Bats), Tip (Tooltip - Basic)
+// Items: I0AK (Cold Snap), Tip (Tooltip - Basic)
 {
-Purchase Frost Bats
+Purchase Cold Snap
 }
 
 STRING 2744
-// Items: I0AK (Frost Bats), Description (Description)
+// Items: I0AK (Cold Snap), Description (Description)
 {
-Blasts a random enemy unit within range with a Frost Nova and sends a horde of bats towards it.
+Sends a swarm of icy bats out that chills everything it passes, then snaps back to your hero, biting chilled enemies twice as hard.
 }
 
 STRING 2745
-// Items: I0AK (Frost Bats), Ubertip (Tooltip - Extended)
+// Items: I0AK (Cold Snap), Ubertip (Tooltip - Extended)
 {
-Blasts a random enemy unit within range with a Frost Nova and sends a horde of bats towards it.
+Sends a swarm of icy bats out that chills everything it passes, then snaps back to your hero, biting chilled enemies twice as hard.
 }
 
 STRING 2746
-// Items: I0AK (Frost Bats), Name (Name)
+// Items: I0AK (Cold Snap), Name (Name)
 {
-Frost Bats
+Cold Snap
 }
 
 STRING 2747
-// Items: I0AL (Frost Bats), Tip (Tooltip - Basic)
+// Items: I0AL (Cold Snap), Tip (Tooltip - Basic)
 {
-Purchase Frost Bats
+Purchase Cold Snap
 }
 
 STRING 2748
-// Items: I0AL (Frost Bats), Ubertip (Tooltip - Extended)
+// Items: I0AL (Cold Snap), Ubertip (Tooltip - Extended)
 {
-Blasts a random enemy unit within range with a Frost Nova and sends a horde of bats towards it.
+Sends a swarm of icy bats out towards a random enemy unit. On the way out it bites and chills every enemy unit it passes. Then it snaps back to your hero, biting everything on the way again, twice as hard if the enemy is still slowed by frost.
 
-Damage: |cffffcc0060 (target) + 40 (nova) + 75 (bats)|r
+Damage: |cffffcc0060|r (out) + |cffffcc0060|r or |cffffcc00120|r (back)
 Slow: |cffffcc00-50% movement speed for 3s|r
 Cooldown: |cffffcc003s|r
-Range: |cffffcc00600|r
-Area of effect: |cffffcc00200 (nova) + 100 - 300 (bats)|r
+Range: |cffffcc00700|r
 Distance: |cffffcc00800|r
+Area of effect: |cffffcc00150|r
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00spell|r
+Damage type: |cffffcc00magic|r
 }
 
 STRING 2749
-// Items: I0AL (Frost Bats), Description (Description)
+// Items: I0AL (Cold Snap), Description (Description)
 {
-Blasts a random enemy unit within range with a Frost Nova and sends a horde of bats towards it.
+Sends a swarm of icy bats out towards a random enemy unit. On the way out it bites and chills every enemy unit it passes. Then it snaps back to your hero, biting everything on the way again, twice as hard if the enemy is still slowed by frost.
 
-Damage: |cffffcc0060 (target) + 40 (nova) + 75 (bats)|r
+Damage: |cffffcc0060|r (out) + |cffffcc0060|r or |cffffcc00120|r (back)
 Slow: |cffffcc00-50% movement speed for 3s|r
 Cooldown: |cffffcc003s|r
-Range: |cffffcc00600|r
-Area of effect: |cffffcc00200 (nova) + 100 - 300 (bats)|r
+Range: |cffffcc00700|r
 Distance: |cffffcc00800|r
+Area of effect: |cffffcc00150|r
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00spell|r
+Damage type: |cffffcc00magic|r
 }
 
 STRING 2750
-// Items: I0AL (Frost Bats), Name (Name)
+// Items: I0AL (Cold Snap), Name (Name)
 {
-Frost Bats
+Cold Snap
 }
 
 STRING 2751
@@ -20006,5 +20006,11 @@ STRING 3545
 // Units: u02B (Dark Minion), Name (Name)
 {
 Dark Minion
+}
+
+STRING 3546
+// Abilities: A04W (Cold Snap (chill)), Name (Name)
+{
+Cold Snap (chill)
 }
 
