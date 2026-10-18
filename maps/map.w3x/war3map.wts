@@ -16021,67 +16021,67 @@ Slaughterhouse
 }
 
 STRING 2975
-// Items: I0C4 (Swarm Spire), Tip (Tooltip - Basic)
+// Items: I0C4 (Haunting), Tip (Tooltip - Basic)
 {
-Purchase Swarm Spire
+Purchase Haunting
 }
 
 STRING 2976
-// Items: I0C4 (Swarm Spire), Description (Description)
+// Items: I0C4 (Haunting), Description (Description)
 {
-Sends a horde of bats towards a random enemy unit within range and fires a spirit at it.
+A flock of spirits settles over the largest enemy group and haunts it, striking it again and again.
 }
 
 STRING 2977
-// Items: I0C4 (Swarm Spire), Ubertip (Tooltip - Extended)
+// Items: I0C4 (Haunting), Ubertip (Tooltip - Extended)
 {
-Sends a horde of bats towards a random enemy unit within range and fires a spirit at it.
+A flock of spirits settles over the largest enemy group and haunts it, striking it again and again.
 }
 
 STRING 2978
-// Items: I0C4 (Swarm Spire), Name (Name)
+// Items: I0C4 (Haunting), Name (Name)
 {
-Swarm Spire
+Haunting
 }
 
 STRING 2979
-// Items: I0C5 (Swarm Spire), Tip (Tooltip - Basic)
+// Items: I0C5 (Haunting), Tip (Tooltip - Basic)
 {
-Purchase Swarm Spire
+Purchase Haunting
 }
 
 STRING 2980
-// Items: I0C5 (Swarm Spire), Ubertip (Tooltip - Extended)
+// Items: I0C5 (Haunting), Ubertip (Tooltip - Extended)
 {
-Sends a horde of bats towards a random enemy unit within range and fires a spirit at it.
+Every 5 seconds a flock of spirits settles over the largest enemy group within range and haunts it for 4 seconds. It follows the group around and strikes a random enemy unit in it 5 times a second.
 
-Damage: |cffffcc0075 (bats) + 10 - 13 (spirit)|r
-Cooldown: |cffffcc002s|r
-Range: |cffffcc00600|r
-Distance: |cffffcc00800|r
-Area of effect: |cffffcc00100 - 300|r
+Damage: |cffffcc0045|r (per strike)
+Cooldown: |cffffcc005s|r
+Range: |cffffcc00700|r
+Area of effect: |cffffcc00250|r
+Duration: |cffffcc004s|r
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00spell + piercing|r
+Damage type: |cffffcc00piercing|r
 }
 
 STRING 2981
-// Items: I0C5 (Swarm Spire), Description (Description)
+// Items: I0C5 (Haunting), Description (Description)
 {
-Sends a horde of bats towards a random enemy unit within range and fires a spirit at it.
+Every 5 seconds a flock of spirits settles over the largest enemy group within range and haunts it for 4 seconds. It follows the group around and strikes a random enemy unit in it 5 times a second.
 
-Damage: |cffffcc0075 (bats) + 10 - 13 (spirit)|r
-Cooldown: |cffffcc002s|r
-Range: |cffffcc00600|r
-Distance: |cffffcc00800|r
-Area of effect: |cffffcc00100 - 300|r
+Damage: |cffffcc0045|r (per strike)
+Cooldown: |cffffcc005s|r
+Range: |cffffcc00700|r
+Area of effect: |cffffcc00250|r
+Duration: |cffffcc004s|r
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00spell + piercing|r
+Damage type: |cffffcc00piercing|r
 }
 
 STRING 2982
-// Items: I0C5 (Swarm Spire), Name (Name)
+// Items: I0C5 (Haunting), Name (Name)
 {
-Swarm Spire
+Haunting
 }
 
 STRING 2983

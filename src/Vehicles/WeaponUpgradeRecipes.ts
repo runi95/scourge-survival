@@ -196,7 +196,7 @@ export const weaponRecipes = [
   new Recipes.MeatWagon(),
   new Recipes.Slaughterhouse(),
   new Recipes.SpiritWarriors(),
-  new Recipes.SwarmSpire(),
+  new Recipes.Haunting(),
   new Recipes.WyrmMine(),
   new Recipes.AncientGrove(),
   new Recipes.ArcherBarracks(),

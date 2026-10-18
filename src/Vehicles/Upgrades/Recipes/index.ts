@@ -191,7 +191,7 @@ export * from "./ShadowVolley";
 export * from "./MeatWagon";
 export * from "./Slaughterhouse";
 export * from "./SpiritWarriors";
-export * from "./SwarmSpire";
+export * from "./Haunting";
 export * from "./WyrmMine";
 export * from "./AncientGrove";
 export * from "./ArcherBarracks";
