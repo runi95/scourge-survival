@@ -19869,67 +19869,67 @@ Frost Rockets (Nova)
 }
 
 STRING 3529
-// Items: I0F2 (Spirit Warriors), Tip (Tooltip - Basic)
+// Items: I0F2 (Restless Spirits), Tip (Tooltip - Basic)
 {
-Purchase Spirit Warriors
+Purchase Restless Spirits
 }
 
 STRING 3530
-// Items: I0F2 (Spirit Warriors), Description (Description)
+// Items: I0F2 (Restless Spirits), Description (Description)
 {
-Raises a Skeleton Warrior next to your hero every 10 seconds. Its spirit fires spirit missiles at nearby enemy units while it fights.
+Restless spirits circle your hero and fire spirit missiles at nearby enemies. Every enemy that dies near your hero adds its spirit to the ring.
 }
 
 STRING 3531
-// Items: I0F2 (Spirit Warriors), Ubertip (Tooltip - Extended)
+// Items: I0F2 (Restless Spirits), Ubertip (Tooltip - Extended)
 {
-Raises a Skeleton Warrior next to your hero every 10 seconds. Its spirit fires spirit missiles at nearby enemy units while it fights.
+Restless spirits circle your hero and fire spirit missiles at nearby enemies. Every enemy that dies near your hero adds its spirit to the ring.
 }
 
 STRING 3532
-// Items: I0F2 (Spirit Warriors), Name (Name)
+// Items: I0F2 (Restless Spirits), Name (Name)
 {
-Spirit Warriors
+Restless Spirits
 }
 
 STRING 3533
-// Items: I0F3 (Spirit Warriors), Tip (Tooltip - Basic)
+// Items: I0F3 (Restless Spirits), Tip (Tooltip - Basic)
 {
-Purchase Spirit Warriors
+Purchase Restless Spirits
 }
 
 STRING 3534
-// Items: I0F3 (Spirit Warriors), Ubertip (Tooltip - Extended)
+// Items: I0F3 (Restless Spirits), Ubertip (Tooltip - Extended)
 {
-Raises a Skeleton Warrior next to your hero every 10 seconds. Its spirit fires spirit missiles at nearby enemy units while it fights.
+Three restless spirits circle your hero and fire spirit missiles at random enemy units nearby. Every enemy unit that dies near your hero rises as another spirit and joins the ring for 20 seconds, up to 8 more.
 
-Damage: |cffffcc0026 - 42 (skeleton) + 10 - 14 (spirit missile)|r
-Cooldown: |cffffcc0010s (skeleton) + 0.4s (spirit missile)|r
-Health: |cffffcc00200|r
-Duration: |cffffcc0020s|r
-Range: |cffffcc00500 (spirit missile)|r
-Targets: |cffffcc00ground (skeleton), air & ground (spirit missile)|r
-Damage type: |cffffcc00normal + piercing|r
+Damage: |cffffcc009 - 12|r (per missile)
+Cooldown: |cffffcc000.35s|r (per spirit)
+Range: |cffffcc00500|r
+Spirits: |cffffcc003|r + |cffffcc00up to 8|r (risen)
+Duration: |cffffcc0020s|r (risen)
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing|r
 }
 
 STRING 3535
-// Items: I0F3 (Spirit Warriors), Description (Description)
+// Items: I0F3 (Restless Spirits), Description (Description)
 {
-Raises a Skeleton Warrior next to your hero every 10 seconds. Its spirit fires spirit missiles at nearby enemy units while it fights.
+Three restless spirits circle your hero and fire spirit missiles at random enemy units nearby. Every enemy unit that dies near your hero rises as another spirit and joins the ring for 20 seconds, up to 8 more.
 
-Damage: |cffffcc0026 - 42 (skeleton) + 10 - 14 (spirit missile)|r
-Cooldown: |cffffcc0010s (skeleton) + 0.4s (spirit missile)|r
-Health: |cffffcc00200|r
-Duration: |cffffcc0020s|r
-Range: |cffffcc00500 (spirit missile)|r
-Targets: |cffffcc00ground (skeleton), air & ground (spirit missile)|r
-Damage type: |cffffcc00normal + piercing|r
+Damage: |cffffcc009 - 12|r (per missile)
+Cooldown: |cffffcc000.35s|r (per spirit)
+Range: |cffffcc00500|r
+Spirits: |cffffcc003|r + |cffffcc00up to 8|r (risen)
+Duration: |cffffcc0020s|r (risen)
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00piercing|r
 }
 
 STRING 3536
-// Items: I0F3 (Spirit Warriors), Name (Name)
+// Items: I0F3 (Restless Spirits), Name (Name)
 {
-Spirit Warriors
+Restless Spirits
 }
 
 STRING 3537

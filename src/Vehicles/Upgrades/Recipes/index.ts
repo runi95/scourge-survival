@@ -190,7 +190,7 @@ export * from "./ShadowSpire";
 export * from "./ShadowVolley";
 export * from "./MeatWagon";
 export * from "./Slaughterhouse";
-export * from "./SpiritWarriors";
+export * from "./RestlessSpirits";
 export * from "./Haunting";
 export * from "./IceCrystal";
 export * from "./AncientGrove";
