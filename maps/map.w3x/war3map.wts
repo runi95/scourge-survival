@@ -14875,71 +14875,69 @@ Bitter Cold
 }
 
 STRING 2829
-// Items: I0B4 (Frozen Dead), Tip (Tooltip - Basic)
+// Items: I0B4 (Frost Armor), Tip (Tooltip - Basic)
 {
-Purchase Frozen Dead
+Purchase Frost Armor
 }
 
 STRING 2830
-// Items: I0B4 (Frozen Dead), Description (Description)
+// Items: I0B4 (Frost Armor), Description (Description)
 {
-Blasts a random enemy unit within range with a Frost Nova, and a Skeleton Warrior rises beside it.
+Raises Skeleton Warriors clad in the Lich's Frost Armor. Whatever strikes them is slowed, and when one falls its armor bursts in a Frost Nova.
 }
 
 STRING 2831
-// Items: I0B4 (Frozen Dead), Ubertip (Tooltip - Extended)
+// Items: I0B4 (Frost Armor), Ubertip (Tooltip - Extended)
 {
-Blasts a random enemy unit within range with a Frost Nova, and a Skeleton Warrior rises beside it.
+Raises Skeleton Warriors clad in the Lich's Frost Armor. Whatever strikes them is slowed, and when one falls its armor bursts in a Frost Nova.
 }
 
 STRING 2832
-// Items: I0B4 (Frozen Dead), Name (Name)
+// Items: I0B4 (Frost Armor), Name (Name)
 {
-Frozen Dead
+Frost Armor
 }
 
 STRING 2833
-// Items: I0B5 (Frozen Dead), Tip (Tooltip - Basic)
+// Items: I0B5 (Frost Armor), Tip (Tooltip - Basic)
 {
-Purchase Frozen Dead
+Purchase Frost Armor
 }
 
 STRING 2834
-// Items: I0B5 (Frozen Dead), Ubertip (Tooltip - Extended)
+// Items: I0B5 (Frost Armor), Ubertip (Tooltip - Extended)
 {
-Blasts a random enemy unit within range with a Frost Nova, and a Skeleton Warrior rises beside it.
+Raises 3 Skeleton Warriors next to your hero every 10 seconds, clad in the Lich's Frost Armor. Every enemy unit that strikes one in melee is slowed. When one falls, its armor bursts in a Frost Nova on the nearest enemy unit.
 
-Damage: |cffffcc0060 (target) + 40 (nova) + 26 - 42 (skeleton)|r
-Slow: |cffffcc00-50% movement speed for 3s|r
-Cooldown: |cffffcc003s|r
-Range: |cffffcc00600|r
-Area of effect: |cffffcc00200|r
+Damage: |cffffcc0026 - 42|r (attack) + |cffffcc0060|r (nova target) + |cffffcc0040|r (nova area)
+Armor: |cffffcc00+5|r
+Slow: |cffffcc00-50% movement and attack speed for 3s|r
+Cooldown: |cffffcc0010s|r
 Health: |cffffcc00200|r
-Duration: |cffffcc008s|r
-Targets: |cffffcc00air & ground (nova), ground (skeleton)|r
-Damage type: |cffffcc00spell + normal|r
+Duration: |cffffcc0020s|r
+Targets: |cffffcc00ground only!|r (attack), |cffffcc00air & ground|r (nova)
+Damage type: |cffffcc00normal|r (attack) + |cffffcc00spell|r (nova)
 }
 
 STRING 2835
-// Items: I0B5 (Frozen Dead), Description (Description)
+// Items: I0B5 (Frost Armor), Description (Description)
 {
-Blasts a random enemy unit within range with a Frost Nova, and a Skeleton Warrior rises beside it.
+Raises 3 Skeleton Warriors next to your hero every 10 seconds, clad in the Lich's Frost Armor. Every enemy unit that strikes one in melee is slowed. When one falls, its armor bursts in a Frost Nova on the nearest enemy unit.
 
-Damage: |cffffcc0060 (target) + 40 (nova) + 26 - 42 (skeleton)|r
-Slow: |cffffcc00-50% movement speed for 3s|r
-Cooldown: |cffffcc003s|r
-Range: |cffffcc00600|r
-Area of effect: |cffffcc00200|r
+Damage: |cffffcc0026 - 42|r (attack) + |cffffcc0060|r (nova target) + |cffffcc0040|r (nova area)
+Armor: |cffffcc00+5|r
+Slow: |cffffcc00-50% movement and attack speed for 3s|r
+Cooldown: |cffffcc0010s|r
 Health: |cffffcc00200|r
-Duration: |cffffcc008s|r
-Targets: |cffffcc00air & ground (nova), ground (skeleton)|r
-Damage type: |cffffcc00spell + normal|r
+Duration: |cffffcc0020s|r
+Targets: |cffffcc00ground only!|r (attack), |cffffcc00air & ground|r (nova)
+Damage type: |cffffcc00normal|r (attack) + |cffffcc00spell|r (nova)
 }
 
 STRING 2836
-// Items: I0B5 (Frozen Dead), Name (Name)
+// Items: I0B5 (Frost Armor), Name (Name)
 {
-Frozen Dead
+Frost Armor
 }
 
 STRING 2837
@@ -20026,5 +20024,11 @@ STRING 3550
 // Units: u02D (Ravenous Wyrm), Name (Name)
 {
 Ravenous Wyrm
+}
+
+STRING 3551
+// Abilities: A04Z (Frost Armor (weapon)), Name (Name)
+{
+Frost Armor (weapon)
 }
 
