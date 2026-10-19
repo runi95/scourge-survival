@@ -33,8 +33,9 @@ export class RestlessSpirits extends WeaponUpgradeRecipe {
 
   private readonly timers = new Map<number, Timer>();
   private readonly rings = new Map<number, Ring>();
-  // Spirit Tower's spirit: shoots one spirit missile at an enemy in range
-  private readonly spiritUnitTypeId: number = FourCC("u00V");
+  // Shoots one spirit missile at an enemy in range, a green copy of the
+  // Spirit Tower's spirit
+  private readonly spiritUnitTypeId: number = FourCC("u02F");
   private readonly maxRisen = 8;
 
   public onInitialize(): void {
@@ -106,7 +107,7 @@ export class RestlessSpirits extends WeaponUpgradeRecipe {
 
   private spirit(hero: Unit, left?: number): Spirit {
     const effect = Effect.create(
-      "Abilities/Weapons/ZigguratMissile/ZigguratMissile.mdl",
+      "war3mapImported/RestlessSpirit.mdx",
       hero.x,
       hero.y,
     );
