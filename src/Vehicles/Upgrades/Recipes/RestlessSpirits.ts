@@ -9,7 +9,7 @@ import { Group } from "../../../Utility/Group";
 
 interface Spirit {
   effect: Effect;
-  // Seconds left, or undefined for the three that never leave
+  slot: number;
   left?: number;
   reload: number;
 }
@@ -19,12 +19,8 @@ interface Ring {
   owner: MapPlayer;
   weaponIndex: number;
   spirits: Spirit[];
-  turn: number;
 }
 
-// The spirits of enemies that die near the hero rise and join a ring around
-// it for 20 seconds, up to 8 of them besides the 3 that never leave; every
-// spirit fires a spirit missile at a nearby enemy every 0.35 seconds
 export class RestlessSpirits extends WeaponUpgradeRecipe {
   public readonly cooldown = 0.35;
   public readonly itemTypeId = FourCC("I0F2");
@@ -33,10 +29,8 @@ export class RestlessSpirits extends WeaponUpgradeRecipe {
 
   private readonly timers = new Map<number, Timer>();
   private readonly rings = new Map<number, Ring>();
-  // Shoots one spirit missile at an enemy in range, a green copy of the
-  // Spirit Tower's spirit
   private readonly spiritUnitTypeId: number = FourCC("u02F");
-  private readonly maxRisen = 8;
+  private readonly maxRisen = 3;
 
   public onInitialize(): void {
     const trig = Trigger.create();
@@ -52,14 +46,15 @@ export class RestlessSpirits extends WeaponUpgradeRecipe {
         const dx = dying.x - hero.x;
         const dy = dying.y - hero.y;
         if (dx * dx + dy * dy > 800 * 800) continue;
-        if (ring.spirits.length >= 3 + this.maxRisen) continue;
+        const slot = this.freeOuterSlot(ring);
+        if (slot == null) continue;
 
         Effect.create(
           "Abilities/Spells/Undead/DeathCoil/DeathCoilSpecialArt.mdl",
           dying.x,
           dying.y,
         ).destroy();
-        ring.spirits.push(this.spirit(hero, 20));
+        ring.spirits.push(this.spirit(ring, slot, 10));
       }
     });
   }
@@ -71,17 +66,10 @@ export class RestlessSpirits extends WeaponUpgradeRecipe {
     itemId: number,
     weaponIndex: number,
   ): void {
-    const ring: Ring = {
-      vehicle,
-      owner,
-      weaponIndex,
-      spirits: [
-        this.spirit(vehicle.unit),
-        this.spirit(vehicle.unit),
-        this.spirit(vehicle.unit),
-      ],
-      turn: 0,
-    };
+    const ring: Ring = { vehicle, owner, weaponIndex, spirits: [] };
+    for (let slot = 0; slot < 3; slot++) {
+      ring.spirits.push(this.spirit(ring, slot));
+    }
     this.rings.set(itemId, ring);
 
     const t: Timer = TimerUtils.newTimer();
@@ -105,19 +93,31 @@ export class RestlessSpirits extends WeaponUpgradeRecipe {
     for (const spirit of ring?.spirits ?? []) spirit.effect.destroy();
   }
 
-  private spirit(hero: Unit, left?: number): Spirit {
-    const effect = Effect.create(
-      "war3mapImported/RestlessSpirit.mdx",
-      hero.x,
-      hero.y,
+  private spirit(ring: Ring, slot: number, left?: number): Spirit {
+    const effect = Effect.createAttachment(
+      `war3mapImported/RestlessSoul${slot + 1}.mdx`,
+      ring.vehicle.unit,
+      "origin",
     );
-    effect.setHeight(120);
-    return { effect, left, reload: RandomNumberGenerator.random(0, 10) / 20 };
+    return {
+      effect,
+      slot,
+      left,
+      reload: RandomNumberGenerator.random(0, 10) / 20,
+    };
+  }
+
+  private freeOuterSlot(ring: Ring): number | undefined {
+    const step = Math.max(1, Math.floor(8 / this.maxRisen));
+    for (let n = 0; n < this.maxRisen; n++) {
+      const slot = 3 + ((n * step) % 8);
+      if (!ring.spirits.some((s) => s.slot === slot)) return slot;
+    }
+    return undefined;
   }
 
   private tick(ring: Ring): void {
     const hero = ring.vehicle.unit;
-    ring.turn += 0.05;
     ring.spirits = ring.spirits.filter((spirit) => {
       if (spirit.left == null) return true;
       spirit.left -= 0.05;
@@ -127,16 +127,7 @@ export class RestlessSpirits extends WeaponUpgradeRecipe {
     });
 
     let enemies: Unit[] | undefined;
-    const count = ring.spirits.length;
-    for (let i = 0; i < count; i++) {
-      const spirit = ring.spirits[i];
-      // A lap every 3 seconds, 140 from the hero
-      const angle = (ring.turn * 2 * Math.PI) / 3 + (i * 2 * Math.PI) / count;
-      const x = hero.x + 140 * Math.cos(angle);
-      const y = hero.y + 140 * Math.sin(angle);
-      spirit.effect.x = x;
-      spirit.effect.y = y;
-
+    for (const spirit of ring.spirits) {
       spirit.reload -= 0.05;
       if (spirit.reload > 0) continue;
       spirit.reload += this.cooldown;
@@ -145,7 +136,16 @@ export class RestlessSpirits extends WeaponUpgradeRecipe {
       if (enemies.length === 0) continue;
       const target =
         enemies[RandomNumberGenerator.random(0, enemies.length - 1)];
-      const missile = Unit.create(ring.owner, this.spiritUnitTypeId, x, y);
+      const radius = RandomNumberGenerator.random(180, 240);
+      const angle =
+        Math.atan2(target.y - hero.y, target.x - hero.x) +
+        (RandomNumberGenerator.random(-45, 45) * Math.PI) / 180;
+      const missile = Unit.create(
+        ring.owner,
+        this.spiritUnitTypeId,
+        hero.x + radius * Math.cos(angle),
+        hero.y + radius * Math.sin(angle),
+      );
       missile.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 1);
       missile.issueTargetOrder("attack", target);
     }

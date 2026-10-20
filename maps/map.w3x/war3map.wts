@@ -13563,13 +13563,13 @@ Purchase Scattering Swarm
 STRING 2663
 // Items: I0A0 (Scattering Swarm), Description (Description)
 {
-Sends a horde of bats into the largest enemy group, where it breaks apart into 6 smaller swarms that scatter through it.
+Sends a horde of bats through the largest enemy group. At the end of its flight it breaks apart into 6 smaller swarms that scatter back through the group.
 }
 
 STRING 2664
 // Items: I0A0 (Scattering Swarm), Ubertip (Tooltip - Extended)
 {
-Sends a horde of bats into the largest enemy group, where it breaks apart into 6 smaller swarms that scatter through it.
+Sends a horde of bats through the largest enemy group. At the end of its flight it breaks apart into 6 smaller swarms that scatter back through the group.
 }
 
 STRING 2665
@@ -13587,12 +13587,12 @@ Purchase Scattering Swarm
 STRING 2667
 // Items: I0A1 (Scattering Swarm), Ubertip (Tooltip - Extended)
 {
-Sends a horde of bats into the largest enemy group within range. When it reaches the group, it breaks apart like a cluster of rockets: 6 smaller swarms scatter outward in every direction, damaging every enemy unit in their path.
+Sends a horde of bats through the largest enemy group within range. At the end of its flight, just past the middle of the group, it breaks apart like a cluster of rockets: 6 smaller swarms scatter outward in every direction, damaging every enemy unit in their path.
 
 Damage: |cffffcc0060|r (horde) + |cffffcc006 x 40|r (swarms)
 Cooldown: |cffffcc003s|r
 Range: |cffffcc00700|r
-Distance: |cffffcc00800|r (horde) + |cffffcc00400|r (swarms)
+Distance: |cffffcc00400|r (swarms)
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
 }
@@ -13600,12 +13600,12 @@ Damage type: |cffffcc00spell|r
 STRING 2668
 // Items: I0A1 (Scattering Swarm), Description (Description)
 {
-Sends a horde of bats into the largest enemy group within range. When it reaches the group, it breaks apart like a cluster of rockets: 6 smaller swarms scatter outward in every direction, damaging every enemy unit in their path.
+Sends a horde of bats through the largest enemy group within range. At the end of its flight, just past the middle of the group, it breaks apart like a cluster of rockets: 6 smaller swarms scatter outward in every direction, damaging every enemy unit in their path.
 
 Damage: |cffffcc0060|r (horde) + |cffffcc006 x 40|r (swarms)
 Cooldown: |cffffcc003s|r
 Range: |cffffcc00700|r
-Distance: |cffffcc00800|r (horde) + |cffffcc00400|r (swarms)
+Distance: |cffffcc00400|r (swarms)
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
 }
@@ -14085,7 +14085,7 @@ Fires black arrows at random enemy units. Enemies that die within 5 seconds of b
 }
 
 STRING 2730
-// Items: I0AG (Black Arrow), Name (Name)
+// Units: u02A (Black Arrow), Name (Name)
 {
 Black Arrow
 }
@@ -14125,7 +14125,7 @@ Damage type: |cffffcc00magic|r (arrow) + |cffffcc00normal|r (minion)
 }
 
 STRING 2734
-// Items: I0AH (Black Arrow), Name (Name)
+// Items: I0AG (Black Arrow), Name (Name)
 {
 Black Arrow
 }
@@ -14197,37 +14197,37 @@ Ice Tomb
 }
 
 STRING 2743
-// Items: I0AK (Cold Snap), Tip (Tooltip - Basic)
+// Items: I0AK (Frostwing Swarm), Tip (Tooltip - Basic)
 {
-Purchase Cold Snap
+Purchase Frostwing Swarm
 }
 
 STRING 2744
-// Items: I0AK (Cold Snap), Description (Description)
+// Items: I0AK (Frostwing Swarm), Description (Description)
 {
 Sends a swarm of icy bats out that chills everything it passes, then snaps back to your hero, biting chilled enemies twice as hard.
 }
 
 STRING 2745
-// Items: I0AK (Cold Snap), Ubertip (Tooltip - Extended)
+// Items: I0AK (Frostwing Swarm), Ubertip (Tooltip - Extended)
 {
 Sends a swarm of icy bats out that chills everything it passes, then snaps back to your hero, biting chilled enemies twice as hard.
 }
 
 STRING 2746
-// Items: I0AK (Cold Snap), Name (Name)
+// Items: I0AK (Frostwing Swarm), Name (Name)
 {
-Cold Snap
+Frostwing Swarm
 }
 
 STRING 2747
-// Items: I0AL (Cold Snap), Tip (Tooltip - Basic)
+// Items: I0AL (Frostwing Swarm), Tip (Tooltip - Basic)
 {
-Purchase Cold Snap
+Purchase Frostwing Swarm
 }
 
 STRING 2748
-// Items: I0AL (Cold Snap), Ubertip (Tooltip - Extended)
+// Items: I0AL (Frostwing Swarm), Ubertip (Tooltip - Extended)
 {
 Sends a swarm of icy bats out towards a random enemy unit. On the way out it bites and chills every enemy unit it passes. Then it snaps back to your hero, biting everything on the way again, twice as hard if the enemy is still slowed by frost.
 
@@ -14242,7 +14242,7 @@ Damage type: |cffffcc00magic|r
 }
 
 STRING 2749
-// Items: I0AL (Cold Snap), Description (Description)
+// Items: I0AL (Frostwing Swarm), Description (Description)
 {
 Sends a swarm of icy bats out towards a random enemy unit. On the way out it bites and chills every enemy unit it passes. Then it snaps back to your hero, biting everything on the way again, twice as hard if the enemy is still slowed by frost.
 
@@ -14257,9 +14257,9 @@ Damage type: |cffffcc00magic|r
 }
 
 STRING 2750
-// Items: I0AL (Cold Snap), Name (Name)
+// Items: I0AL (Frostwing Swarm), Name (Name)
 {
-Cold Snap
+Frostwing Swarm
 }
 
 STRING 2751
@@ -14765,7 +14765,7 @@ Summons a ravenous Frost Wyrm whose breath cripples. Every enemy it kills makes 
 }
 
 STRING 2816
-// Items: I0B0 (Ravenous Wyrm), Name (Name)
+// Units: u02D (Ravenous Wyrm), Name (Name)
 {
 Ravenous Wyrm
 }
@@ -14807,7 +14807,7 @@ Damage type: |cffffcc00magic|r
 }
 
 STRING 2820
-// Items: I0B1 (Ravenous Wyrm), Name (Name)
+// Items: I0B0 (Ravenous Wyrm), Name (Name)
 {
 Ravenous Wyrm
 }
@@ -14893,7 +14893,7 @@ Raises Skeleton Warriors clad in the Lich's Frost Armor. Whatever strikes them i
 }
 
 STRING 2832
-// Items: I0B4 (Frost Armor), Name (Name)
+// Units: u01M (Frost Armor), Name (Name)
 {
 Frost Armor
 }
@@ -14935,7 +14935,7 @@ Damage type: |cffffcc00normal|r (attack) + |cffffcc00spell|r (nova)
 }
 
 STRING 2836
-// Items: I0B5 (Frost Armor), Name (Name)
+// Items: I0B4 (Frost Armor), Name (Name)
 {
 Frost Armor
 }
@@ -15905,17 +15905,17 @@ Purchase Meat Wagon
 STRING 2960
 // Items: I0C0 (Meat Wagon), Description (Description)
 {
-Lobs volleys of corpses into the largest enemy group. Every enemy a volley kills is one more corpse for the next.
+Lobs volleys of corpses into the largest enemy group.
 }
 
 STRING 2961
 // Items: I0C0 (Meat Wagon), Ubertip (Tooltip - Extended)
 {
-Lobs volleys of corpses into the largest enemy group. Every enemy a volley kills is one more corpse for the next.
+Lobs volleys of corpses into the largest enemy group.
 }
 
 STRING 2962
-// Items: I0C0 (Meat Wagon), Name (Name)
+// Units: u02G (Meat Wagon), Name (Name)
 {
 Meat Wagon
 }
@@ -15929,31 +15929,31 @@ Purchase Meat Wagon
 STRING 2964
 // Items: I0C1 (Meat Wagon), Ubertip (Tooltip - Extended)
 {
-Lobs a volley of corpses into the largest enemy group within range every 3 seconds, each one bursting on impact and hurting every enemy unit around it. Every enemy a volley kills is one more corpse for the next volley, up to 7. A volley that kills nothing leaves only 3 corpses for the next.
+Lobs a volley of 3 corpses into the largest enemy ground group within range every 3 seconds, each one bursting on impact and hurting every enemy ground unit around it. The full damage is dealt within 75, half within 125 and a quarter out to 175.
 
-Damage: |cffffcc003 - 7 x 65|r
+Damage: |cffffcc003 x 65|r
 Cooldown: |cffffcc003s|r
 Range: |cffffcc00800|r
 Area of effect: |cffffcc00175|r
-Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00magic|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00siege|r
 }
 
 STRING 2965
 // Items: I0C1 (Meat Wagon), Description (Description)
 {
-Lobs a volley of corpses into the largest enemy group within range every 3 seconds, each one bursting on impact and hurting every enemy unit around it. Every enemy a volley kills is one more corpse for the next volley, up to 7. A volley that kills nothing leaves only 3 corpses for the next.
+Lobs a volley of 3 corpses into the largest enemy ground group within range every 3 seconds, each one bursting on impact and hurting every enemy ground unit around it. The full damage is dealt within 75, half within 125 and a quarter out to 175.
 
-Damage: |cffffcc003 - 7 x 65|r
+Damage: |cffffcc003 x 65|r
 Cooldown: |cffffcc003s|r
 Range: |cffffcc00800|r
 Area of effect: |cffffcc00175|r
-Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00magic|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00siege|r
 }
 
 STRING 2966
-// Items: I0C1 (Meat Wagon), Name (Name)
+// Items: I0C0 (Meat Wagon), Name (Name)
 {
 Meat Wagon
 }
@@ -19969,7 +19969,7 @@ Shrapnel Caster
 }
 
 STRING 3544
-// Units: u02A (Black Arrow), Name (Name)
+// Items: I0AH (Black Arrow), Name (Name)
 {
 Black Arrow
 }
@@ -19981,9 +19981,9 @@ Dark Minion
 }
 
 STRING 3546
-// Abilities: A04W (Cold Snap (chill)), Name (Name)
+// Abilities: A04W (Frostwing Swarm (chill)), Name (Name)
 {
-Cold Snap (chill)
+Frostwing Swarm (chill)
 }
 
 STRING 3547
@@ -20005,7 +20005,7 @@ Breath of Frost (weapon)
 }
 
 STRING 3550
-// Units: u02D (Ravenous Wyrm), Name (Name)
+// Items: I0B1 (Ravenous Wyrm), Name (Name)
 {
 Ravenous Wyrm
 }
@@ -20032,5 +20032,47 @@ STRING 3554
 // Units: u02F (Restless Spirit), Name (Name)
 {
 Restless Spirit
+}
+
+STRING 3555
+// Abilities: A04W (Frostwing Swarm (chill)), EditorSuffix (Editor Suffix)
+{
+(Slow)
+}
+
+STRING 3556
+// Abilities: A04X (Black Ice (chill)), EditorSuffix (Editor Suffix)
+{
+(Slow)
+}
+
+STRING 3557
+// Items: I0B5 (Frost Armor), Name (Name)
+{
+Frost Armor
+}
+
+STRING 3558
+// Abilities: A021 (Frost Armor), EditorSuffix (Editor Suffix)
+{
+(Frost Nova)
+}
+
+STRING 3559
+// Units: u01M (Frost Armor), EditorSuffix (Name - Editor Suffix)
+{
+(Skeleton Warrior)
+}
+
+STRING 3560
+// Abilities: A021 (Frost Armor), Name (Name)
+{
+Frost Armor
+}
+
+STRING 3561
+// Items: I0C1 (Meat Wagon), Name (Name)
+{
+Meat Wagon
 }
 

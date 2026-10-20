@@ -163,7 +163,7 @@ export * from "./Shrapnel";
 export * from "./CryptFiendDen";
 export * from "./BlackArrow";
 export * from "./IceTomb";
-export * from "./ColdSnap";
+export * from "./FrostwingSwarm";
 export * from "./BlackIce";
 export * from "./FrostBrood";
 export * from "./FrostRevenants";

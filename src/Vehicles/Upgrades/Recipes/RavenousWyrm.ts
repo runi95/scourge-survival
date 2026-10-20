@@ -8,8 +8,6 @@ import { Globals } from "../../../Utility/Globals";
 
 const MULT = Math.PI / 180;
 
-// A Frost Wyrm whose breath cripples (RavenousWyrmDamageEvent) and that grows
-// 10% bigger and stronger with every enemy it kills, up to 10 times
 export class RavenousWyrm extends WeaponUpgradeRecipe {
   public readonly cooldown = 60;
   public readonly itemTypeId = FourCC("I0B0");
@@ -18,7 +16,6 @@ export class RavenousWyrm extends WeaponUpgradeRecipe {
 
   private readonly timers = new Map<number, Timer>();
   private readonly itemWyrms = new Map<number, Unit>();
-  // Kills eaten, by wyrm handle id
   private readonly meals = new Map<number, number>();
   private readonly wyrmUnitTypeId: number = FourCC("u02D");
 
@@ -34,7 +31,6 @@ export class RavenousWyrm extends WeaponUpgradeRecipe {
       const meals = this.meals.get(wyrm.id) ?? 0;
       if (meals >= 10 || !wyrm.isAlive()) return;
 
-      // Grows from what it was summoned with, both its breaths
       this.meals.set(wyrm.id, meals + 1);
       const growth = (1 + 0.1 * (meals + 1)) / (1 + 0.1 * meals);
       for (const weapon of [0, 1]) {

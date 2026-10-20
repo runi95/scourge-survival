@@ -7,9 +7,6 @@ import { WeaponUpgradeRecipe } from "../../WeaponUpgradeRecipe";
 import { RandomNumberGenerator } from "../../../Utility/RandomNumberGenerator";
 import { Group } from "../../../Utility/Group";
 
-// A swarm of bats that hunts its target like a shadow bolt: it turns after it
-// wherever it goes, tearing through every enemy on the way, and strikes it
-// with the shadow when it catches it
 export class NightTerror extends WeaponUpgradeRecipe {
   public readonly cooldown = 2.5;
   public readonly itemTypeId = FourCC("I09U");
@@ -46,10 +43,10 @@ export class NightTerror extends WeaponUpgradeRecipe {
         this.cooldown,
       );
 
-      if (enemies.length === 0) return;
-
       const target =
-        enemies[RandomNumberGenerator.random(0, enemies.length - 1)];
+        enemies.length > 0
+          ? enemies[RandomNumberGenerator.random(0, enemies.length - 1)]
+          : undefined;
       this.hunt(owner, vehicle.unit, target);
     });
   }
@@ -66,12 +63,13 @@ export class NightTerror extends WeaponUpgradeRecipe {
     TimerUtils.releaseTimer(t);
   }
 
-  private hunt(owner: MapPlayer, hero: Unit, target: Unit): void {
+  private hunt(owner: MapPlayer, hero: Unit, target?: Unit): void {
     let { x, y } = hero;
-    // It sets off away from its target and has to turn after it
+    const side = RandomNumberGenerator.random(0, 1) === 0 ? -1 : 1;
     let angle =
-      Math.atan2(target.y - y, target.x - x) +
-      (RandomNumberGenerator.random(0, 1) === 0 ? -1 : 1) * 1.3;
+      target != null
+        ? Math.atan2(target.y - y, target.x - x) + side * 1.3
+        : (RandomNumberGenerator.random(0, 359) * Math.PI) / 180;
     const swarm = Effect.create(
       "Abilities/Spells/Undead/CarrionSwarm/CarrionSwarmMissile.mdl",
       x,
@@ -88,8 +86,9 @@ export class NightTerror extends WeaponUpgradeRecipe {
     const t = TimerUtils.newTimer();
     t.start(0.03, true, () => {
       elapsed += 0.03;
-      // Turns at most 150 degrees a second towards where its target is now
-      if (target.isAlive()) {
+      if (target == null) {
+        angle -= side * 1.2 * 0.03;
+      } else if (target.isAlive()) {
         let turn = Math.atan2(target.y - y, target.x - x) - angle;
         while (turn > Math.PI) turn -= 2 * Math.PI;
         while (turn < -Math.PI) turn += 2 * Math.PI;
@@ -118,7 +117,7 @@ export class NightTerror extends WeaponUpgradeRecipe {
         ).destroy();
         dummy.damageTarget(
           u.handle,
-          u.handle === target.handle ? 150 : 100,
+          u.handle === target?.handle ? 150 : 100,
           false,
           false,
           ATTACK_TYPE_NORMAL,
@@ -128,8 +127,11 @@ export class NightTerror extends WeaponUpgradeRecipe {
       });
       grp.destroy();
 
-      // Done when it caught its target, or after 3 seconds of flight
-      if (!hit.has(target.id) && target.isAlive() && elapsed < 3) return;
+      if (target == null) {
+        if (elapsed < 1.2) return;
+      } else if (!hit.has(target.id) && target.isAlive() && elapsed < 3) {
+        return;
+      }
 
       TimerUtils.releaseTimer(t);
       swarm.destroy();

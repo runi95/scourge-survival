@@ -8,9 +8,7 @@ import { WeaponUpgradeRecipe } from "../../WeaponUpgradeRecipe";
 import { RandomNumberGenerator } from "../../../Utility/RandomNumberGenerator";
 import { Group } from "../../../Utility/Group";
 
-// A swarm of icy bats flies out 800, chilling everything it passes, then
-// snaps back to the hero and bites enemies still slowed by frost twice as hard
-export class ColdSnap extends WeaponUpgradeRecipe {
+export class FrostwingSwarm extends WeaponUpgradeRecipe {
   public readonly cooldown = 3;
   public readonly itemTypeId = FourCC("I0AK");
   public readonly merchantItemTypeId = FourCC("I0AL");
@@ -93,7 +91,6 @@ export class ColdSnap extends WeaponUpgradeRecipe {
     let travelled = 0;
     const t = TimerUtils.newTimer();
     t.start(0.03, true, () => {
-      // Out in a straight line, then back to wherever the hero is now
       const angle = returning ? Math.atan2(hero.y - y, hero.x - x) : out;
       x += 1000 * 0.03 * Math.cos(angle);
       y += 1000 * 0.03 * Math.sin(angle);
@@ -114,7 +111,7 @@ export class ColdSnap extends WeaponUpgradeRecipe {
         const chilled = returning && u.getAbilityLevel(this.frostBuffId) > 0;
         dummy.damageTarget(
           u.handle,
-          chilled ? 120 : 60,
+          chilled ? 80 : 40,
           false,
           false,
           ATTACK_TYPE_NORMAL,
@@ -132,7 +129,6 @@ export class ColdSnap extends WeaponUpgradeRecipe {
 
       if (!returning) {
         if (travelled < 800) return;
-        // Every enemy can be bitten again on the way back
         returning = true;
         bitten.clear();
         return;

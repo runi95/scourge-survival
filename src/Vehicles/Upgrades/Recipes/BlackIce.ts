@@ -8,8 +8,6 @@ import { RandomNumberGenerator } from "../../../Utility/RandomNumberGenerator";
 import { Group } from "../../../Utility/Group";
 import { BlackIceDamageEvent } from "../../../Utility/DamageEngine/DamageEvents/BlackIceDamageEvent";
 
-// Fires bolts of black ice; BlackIceDamageEvent chills their target more with
-// every hit, freezes it on the 5th and triples the bolts against it frozen
 export class BlackIce extends WeaponUpgradeRecipe {
   public readonly cooldown = 0.6;
   public readonly itemTypeId = FourCC("I0AM");
@@ -29,7 +27,6 @@ export class BlackIce extends WeaponUpgradeRecipe {
     const t: Timer = TimerUtils.newTimer();
     this.timers.set(itemId, t);
     t.start(this.cooldown, true, () => {
-      // The most chilled enemy first (frozen ones most of all), else any
       let coldest: Unit | undefined;
       let coldestChill = 0;
       const enemies: Unit[] = [];

@@ -9,8 +9,6 @@ import { Group } from "../../../Utility/Group";
 
 const MULT = Math.PI / 180;
 
-// A horde of bats flies into the largest group and breaks apart there like a
-// cluster of rockets, its 6 smaller swarms scattering through the group
 export class ScatteringSwarm extends WeaponUpgradeRecipe {
   public readonly cooldown = 3;
   public readonly itemTypeId = FourCC("I0A0");
@@ -38,31 +36,41 @@ export class ScatteringSwarm extends WeaponUpgradeRecipe {
       );
 
       const target = this.largestGroup(vehicle.unit, owner);
-      if (target == null) return;
-
       const { x, y } = vehicle.unit;
-      const tx = target.x;
-      const ty = target.y;
+      const wander = RandomNumberGenerator.random(0, 359) * MULT;
+      const tx = target != null ? target.x : x + 500 * Math.cos(wander);
+      const ty = target != null ? target.y : y + 500 * Math.sin(wander);
+      const flight = Math.max(
+        300,
+        Math.sqrt((tx - x) * (tx - x) + (ty - y) * (ty - y)) + 100,
+      );
       const horde = Unit.create(owner, this.dummyUnitId, x, y);
       horde.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 3);
       horde.addAbility(this.hordeAbilityId);
+      BlzSetAbilityRealLevelField(
+        horde.getAbility(this.hordeAbilityId),
+        ABILITY_RLF_DISTANCE_UCS3,
+        0,
+        flight,
+      );
       horde.issueOrderAt("carrionswarm", tx, ty);
 
-      // It breaks apart when it reaches the group (the horde flies 1100 a second)
-      const distance = Math.sqrt((tx - x) * (tx - x) + (ty - y) * (ty - y));
+      const heading = Math.atan2(ty - y, tx - x);
+      const ex = x + flight * Math.cos(heading);
+      const ey = y + flight * Math.sin(heading);
       const later = TimerUtils.newTimer();
-      later.start(distance / 1100, false, () => {
+      later.start(flight / 1100, false, () => {
         TimerUtils.releaseTimer(later);
         const offset = RandomNumberGenerator.random(0, 59);
         for (let i = 0; i < 6; i++) {
           const radians = (offset + 60 * i) * MULT;
-          const swarm = Unit.create(owner, this.dummyUnitId, tx, ty);
+          const swarm = Unit.create(owner, this.dummyUnitId, ex, ey);
           swarm.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 2);
           swarm.addAbility(this.swarmAbilityId);
           swarm.issueOrderAt(
             "carrionswarm",
-            tx + 100 * Math.cos(radians),
-            ty + 100 * Math.sin(radians),
+            ex + 100 * Math.cos(radians),
+            ey + 100 * Math.sin(radians),
           );
         }
       });

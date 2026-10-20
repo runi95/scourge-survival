@@ -13,8 +13,6 @@ interface Shade {
   left: number;
 }
 
-// Shades are left behind the hero like mines. Once an enemy ground unit comes
-// near one, it creeps up on it and bursts beneath it
 export class CreepingShadow extends WeaponUpgradeRecipe {
   public readonly cooldown = 3;
   public readonly itemTypeId = FourCC("I0BO");
@@ -73,7 +71,6 @@ export class CreepingShadow extends WeaponUpgradeRecipe {
         const dy = prey.y - shade.y;
         const distance = Math.sqrt(dx * dx + dy * dy);
         if (distance > 60) {
-          // Creeps at 350 a second
           const step = Math.min(distance, 350 * 0.05);
           shade.x += (step * dx) / distance;
           shade.y += (step * dy) / distance;
@@ -121,7 +118,7 @@ export class CreepingShadow extends WeaponUpgradeRecipe {
 
       dummy.damageTarget(
         u.handle,
-        175,
+        125,
         false,
         false,
         ATTACK_TYPE_NORMAL,

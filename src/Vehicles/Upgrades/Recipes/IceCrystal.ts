@@ -13,8 +13,6 @@ interface Crystal {
   age: number;
 }
 
-// Ice crystals left behind the hero grow bigger and deadlier every second
-// nobody touches them, and shatter on the first enemy that does
 export class IceCrystal extends WeaponUpgradeRecipe {
   public readonly cooldown = 3;
   public readonly itemTypeId = FourCC("I0C6");
@@ -101,11 +99,9 @@ export class IceCrystal extends WeaponUpgradeRecipe {
     return touched;
   }
 
-  // 100 damage in 200, growing by 25 and 15 every second it was left alone,
-  // up to 350 in 350 after 10 seconds
   private shatter(owner: MapPlayer, crystal: Crystal): void {
     const { at, age } = crystal;
-    const damage = 100 + 25 * age;
+    const damage = 75 + 25 * age;
     const radius = 200 + 15 * age;
     crystal.effect.destroy();
     for (let i = 0; i < 6; i++) {

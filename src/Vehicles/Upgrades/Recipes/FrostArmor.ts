@@ -9,8 +9,6 @@ import { Group } from "../../../Utility/Group";
 
 const MULT = Math.PI / 180;
 
-// Skeleton Warriors clad in the Lich's Frost Armor: whatever strikes them is
-// slowed, and when one falls its armor bursts in a Frost Nova
 export class FrostArmor extends WeaponUpgradeRecipe {
   public readonly cooldown = 10;
   public readonly itemTypeId = FourCC("I0B4");
@@ -19,12 +17,11 @@ export class FrostArmor extends WeaponUpgradeRecipe {
 
   private readonly timers = new Map<number, Timer>();
   private readonly itemSkeletons = new Map<number, Unit[]>();
-  // Armored skeletons, by handle id
   private readonly armored = new Set<number>();
-  private readonly skeletonUnitTypeId: number = FourCC("u01A");
+  private readonly skeletonUnitTypeId: number = FourCC("u01M");
   private readonly dummyUnitId: number = FourCC("u000");
   private readonly frostArmorAbilityId: number = FourCC("A04Z");
-  private readonly frostNovaAbilityId: number = FourCC("A03B");
+  private readonly frostNovaAbilityId: number = FourCC("A021");
 
   public onInitialize(): void {
     const trig = Trigger.create();
@@ -78,7 +75,6 @@ export class FrostArmor extends WeaponUpgradeRecipe {
       );
 
       const { x, y } = vehicle.unit;
-      // Earlier skeletons can still be up
       const skeletons = (this.itemSkeletons.get(itemId) ?? []).filter((s) =>
         s.isAlive(),
       );

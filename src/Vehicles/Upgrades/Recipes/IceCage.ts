@@ -8,9 +8,6 @@ import { WeaponUpgradeRecipe } from "../../WeaponUpgradeRecipe";
 import { Group } from "../../../Utility/Group";
 import { StunUtils } from "../../../Utility/StunUtils";
 
-// A ring of ice spikes erupts round the largest group: it impales the
-// enemies on its edge and chills everything inside, and for 3 seconds it
-// impales every enemy that crosses it
 export class IceCage extends WeaponUpgradeRecipe {
   public readonly cooldown = 3;
   public readonly itemTypeId = FourCC("I0B6");

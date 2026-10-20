@@ -10,9 +10,6 @@ import { Group } from "../../../Utility/Group";
 
 const MULT = Math.PI / 180;
 
-// The Death Knight's Death Pact: Skeleton Warriors keep rising, and every 6
-// seconds the oldest is sacrificed. Its death cripples and hurts every enemy
-// around it, and what life it had left goes to the hero
 export class DeathPact extends WeaponUpgradeRecipe {
   public readonly cooldown = 6;
   public readonly itemTypeId = FourCC("I0BE");
@@ -127,7 +124,7 @@ export class DeathPact extends WeaponUpgradeRecipe {
       dummy.issueTargetOrder(OrderId.Cripple, u);
       dummy.damageTarget(
         u.handle,
-        150,
+        90,
         false,
         false,
         ATTACK_TYPE_NORMAL,

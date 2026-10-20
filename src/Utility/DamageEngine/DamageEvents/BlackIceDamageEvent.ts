@@ -8,13 +8,9 @@ import { TimerUtils } from "../../TimerUtils";
 
 interface Chill {
   stacks: number;
-  // Hits since the chill was last renewed, so only the newest wears it off
   hit: number;
 }
 
-// Black Ice's bolts (see BlackIce.ts): every hit chills the target 10% more
-// for 4 seconds, the 5th freezes it solid for 2, and a bolt that hits a
-// frozen enemy deals triple damage
 export class BlackIceDamageEvent implements DamageEvent {
   private static readonly chills = new Map<number, Chill>();
 
@@ -22,7 +18,6 @@ export class BlackIceDamageEvent implements DamageEvent {
   private readonly dummyUnitTypeId = FourCC("u000");
   private readonly chillAbilityId = FourCC("A04X");
 
-  // How chilled an enemy is: its stacks, or 5 while frozen
   public static chillOf(u: Unit): number {
     if (StunUtils.getFrozenUnit(u.id) != null) return 5;
     return BlackIceDamageEvent.chills.get(u.id)?.stacks ?? 0;

@@ -6,10 +6,8 @@ import { weaponDummyAbilityIds } from "../../../Utility/WeaponDummyAbilityIds";
 import { WeaponUpgradeRecipe } from "../../WeaponUpgradeRecipe";
 import { Group } from "../../../Utility/Group";
 
-// A great swarm of bats spirals out from the hero for 5 seconds, sweeping
-// round it lap after lap until it has darkened everything up to 550 away
 export class Nightfall extends WeaponUpgradeRecipe {
-  public readonly cooldown = 8;
+  public readonly cooldown = 16;
   public readonly itemTypeId = FourCC("I0A2");
   public readonly merchantItemTypeId = FourCC("I0A3");
   public readonly recipe: number[] = [FourCC("I05L"), FourCC("I05L")];
@@ -61,14 +59,12 @@ export class Nightfall extends WeaponUpgradeRecipe {
       swarms.push(swarm);
     }
     const at = Point.create(0, 0);
-    // Enemy handle id -> when it can be bitten again
     const bitten = new Map<number, number>();
     let elapsed = 0;
     const t = TimerUtils.newTimer();
     t.start(0.03, true, () => {
       elapsed += 0.03;
       const radius = 150 + 400 * (elapsed / 5);
-      // A lap every 1.2 seconds
       const turn = (elapsed / 1.2) * 2 * Math.PI;
       for (let i = 0; i < swarms.length; i++) {
         const angle = turn + (i * Math.PI) / 2;
@@ -89,7 +85,7 @@ export class Nightfall extends WeaponUpgradeRecipe {
           bitten.set(u.id, elapsed + 0.6);
           dummy.damageTarget(
             u.handle,
-            50,
+            75,
             false,
             false,
             ATTACK_TYPE_NORMAL,

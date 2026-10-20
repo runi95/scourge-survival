@@ -8,12 +8,9 @@ import { Group } from "../../../Utility/Group";
 
 interface Exposure {
   seconds: number;
-  // When it was last chilled, in seconds of exposure
   chilled: number;
 }
 
-// A biting cold around the hero: enemies inside are slowed, and the longer
-// each one stays the harder the cold bites, until it cripples them
 export class BitterCold extends WeaponUpgradeRecipe {
   public readonly cooldown = 0.5;
   public readonly itemTypeId = FourCC("I0B2");
@@ -33,7 +30,6 @@ export class BitterCold extends WeaponUpgradeRecipe {
     itemId: number,
     _weaponIndex: number,
   ): void {
-    // By enemy handle id; an enemy that leaves the cold warms up again
     let exposures = new Map<number, Exposure>();
     const t: Timer = TimerUtils.newTimer();
     this.timers.set(itemId, t);
@@ -50,7 +46,6 @@ export class BitterCold extends WeaponUpgradeRecipe {
         exposure.seconds += this.cooldown;
         next.set(u.id, exposure);
 
-        // 10 more damage a second for every second inside, up to 40
         const dps = Math.min(40, 10 * Math.ceil(exposure.seconds));
         const dummy = Unit.create(owner, this.dummyUnitId, u.x, u.y);
         dummy.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 1);

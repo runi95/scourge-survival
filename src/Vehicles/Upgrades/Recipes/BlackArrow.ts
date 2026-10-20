@@ -7,10 +7,8 @@ import { WeaponUpgradeRecipe } from "../../WeaponUpgradeRecipe";
 import { Group } from "../../../Utility/Group";
 import { BlackArrowDamageEvent } from "../../../Utility/DamageEngine/DamageEvents/BlackArrowDamageEvent";
 
-// The Dark Ranger's Black Arrow: an enemy that dies within 5 seconds of being
-// hit by one (BlackArrowDamageEvent marks it) rises as a Dark Minion
 export class BlackArrow extends WeaponUpgradeRecipe {
-  public readonly cooldown = 1.5;
+  public readonly cooldown = 2;
   public readonly itemTypeId = FourCC("I0AG");
   public readonly merchantItemTypeId = FourCC("I0AH");
   public readonly recipe: number[] = [FourCC("I05J"), FourCC("I05K")];
@@ -59,7 +57,6 @@ export class BlackArrow extends WeaponUpgradeRecipe {
     const t: Timer = TimerUtils.newTimer();
     this.timers.set(itemId, t);
     t.start(this.cooldown, true, () => {
-      // The weakest enemy in range, to finish it off
       let target: Unit | undefined;
       const grp = Group.fromRange(600, vehicle.unit.point);
       grp.for((u) => {
