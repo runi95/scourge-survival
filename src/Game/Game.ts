@@ -26,10 +26,10 @@ import { CreepWaveUpgrade } from "./CreepUpgrades/CreepWaveUpgrade";
 import { waves } from "./Waves/index";
 import { CreepUpgradesFrameSystem } from "./CreepUpgrades/CreepUpgradesFrameSystem";
 import { WeaponUpgradeSystem } from "../Vehicles/WeaponUpgradeSystem";
-import { initializePlayerRaces, Race, RACE_SETUPS } from "./Race";
+import { HeroSetup, initializePlayerRaces, Race, RACE_SETUPS } from "./Race";
 import { OverdriveDamageEvent } from "../Utility/DamageEngine/DamageEvents/OverdriveDamageEvent";
 import { BansheeShellDamageEvent } from "../Utility/DamageEngine/DamageEvents/BansheeShellDamageEvent";
-import { DifficultySelectionSystem } from "./DifficultySelectionSystem";
+import { GameSetupSystem } from "./GameSetupSystem";
 
 // Set by `npm start` when config.json has "devSkipIntro"
 declare const DEV_SKIP_INTRO: boolean | undefined;
@@ -51,7 +51,7 @@ export class Game {
   private readonly creepUpgrades = new CreepUpgrades();
   private readonly creepUpgradesFrameSystem = new CreepUpgradesFrameSystem();
   private readonly weaponUpgradeSystem = new WeaponUpgradeSystem();
-  private readonly difficultySelectionSystem: DifficultySelectionSystem;
+  private readonly gameSetupSystem: GameSetupSystem;
 
   constructor() {
     this.debugger = new Debugger(this.gameOptions);
@@ -60,13 +60,13 @@ export class Game {
     this.spawner = new Spawner(
       this.creepUpgradesFrameSystem,
       this.vehicleUpgradeSystem,
-      (playerId) => this.difficultySelectionSystem.complete(playerId),
+      (playerId) => this.gameSetupSystem.complete(playerId),
     );
     this.abilities = new Abilities();
     this.damageEventController = new DamageEventController();
     this.creepAbilityController = new CreepAbilityController();
-    this.difficultySelectionSystem = new DifficultySelectionSystem((playerId) =>
-      this.spawner.startFirstWave(playerId),
+    this.gameSetupSystem = new GameSetupSystem((playerId, heroIndex) =>
+      this.deploy(playerId, heroIndex),
     );
 
     const availableCreepUpgradeIndexes =
@@ -204,8 +204,8 @@ export class Game {
         this.spawner,
         (race) => this.changeRace(player.id, race),
         (difficulty) =>
-          this.difficultySelectionSystem.choose(player.id, difficulty, true),
-        () => this.difficultySelectionSystem.resetProgress(player.id),
+          this.gameSetupSystem.choose(player.id, difficulty, true),
+        () => this.gameSetupSystem.resetProgress(player.id),
       );
 
       playerLeavesTrig.registerPlayerEvent(player, EVENT_PLAYER_LEAVE);
@@ -219,34 +219,12 @@ export class Game {
 
         player.setState(PLAYER_STATE_RESOURCE_GOLD, 500);
 
-        // Without the intro the hero starts where the transport would take it
-        const skipIntro = DEV_SKIP_INTRO === true;
-        const x = skipIntro
-          ? GameMap.PLAYER_AREAS[i].centerX
-          : GameMap.PLAYER_AREAS[i].minX + 700;
-        const y = skipIntro
-          ? GameMap.PLAYER_AREAS[i].centerY
-          : GameMap.PLAYER_AREAS[i].maxY - 700;
-        const raceSetup = RACE_SETUPS[GameMap.PLAYER_RACES[i]];
-        const vehicleUnit = Unit.create(
-          player,
-          raceSetup.heroUnitTypeId,
-          x,
-          y,
-          315.0,
-        );
-        if (raceSetup.startingWeapon != null) {
-          vehicleUnit.addItemById(raceSetup.startingWeapon.itemTypeId);
-        }
-
-        vehicleUnit.disableAbility(FourCC("A004"), true, true);
-        vehicleUnit.disableAbility(FourCC("A006"), true, true);
-        vehicleUnit.disableAbility(FourCC("A007"), true, true);
-        vehicleUnit.disableAbility(FourCC("A008"), true, true);
+        // The hero comes once the player has chosen it (deploy)
+        const [x, y] = this.heroStart(i);
+        PanCameraToTimedForPlayer(player.handle, x, y, 0);
 
         const playerIndex = i;
         const vehicle = GameMap.PLAYER_VEHICLES[i];
-        vehicle.unit = vehicleUnit;
         vehicle.weaponRecipeShop = Unit.create(
           MapPlayer.fromIndex(PLAYER_NEUTRAL_PASSIVE),
           this.recipeShopUnitTypeId,
@@ -254,9 +232,6 @@ export class Game {
           GameMap.PLAYER_AREAS[i].maxY - 896,
           270.0,
         );
-        if (raceSetup.startingWeapon != null) {
-          vehicle.upgradeMap.set(raceSetup.startingWeapon.upgradeName, 1);
-        }
 
         const playerName = player.name;
         const vehicleDeathTrig = Trigger.create();
@@ -266,20 +241,7 @@ export class Game {
             `|c${GameMap.PLAYER_COLORS[playerIndex]}${playerName}|r has been defeated!`,
           );
         });
-        vehicleDeathTrig.registerUnitEvent(vehicleUnit, EVENT_UNIT_DEATH);
         this.vehicleDeathTriggers[playerIndex] = vehicleDeathTrig;
-
-        if (skipIntro) {
-          SelectUnitForPlayerSingle(vehicleUnit.handle, player.handle);
-          PanCameraToTimedForPlayer(player.handle, x, y, 0);
-        } else {
-          this.startIntro(
-            player,
-            i,
-            vehicleUnit,
-            raceSetup.transportUnitTypeId,
-          );
-        }
       } else {
         GameMap.IS_PLAYER_ID_ONLINE.push(false);
         GameMap.IS_PLAYER_DEFEATED.push(true);
@@ -289,7 +251,71 @@ export class Game {
     this.abilities.initialize();
     this.creepAbilityController.initialize();
     this.spawner.initializeAI();
-    this.difficultySelectionSystem.show();
+    this.vehicleUpgradeSystem.setMenuVisible(false);
+    this.gameSetupSystem.show();
+  }
+
+  // Without the intro the hero starts where the transport would take it
+  private heroStart(playerId: number): [number, number] {
+    const area = GameMap.PLAYER_AREAS[playerId];
+    return DEV_SKIP_INTRO === true
+      ? [area.centerX, area.centerY]
+      : [area.minX + 700, area.maxY - 700];
+  }
+
+  // The player has chosen their hero and difficulty: the hero arrives and
+  // their first wave starts
+  private deploy(playerId: number, heroIndex: number): void {
+    const player = MapPlayer.fromIndex(playerId);
+    const vehicle = GameMap.PLAYER_VEHICLES[playerId];
+    const raceSetup = RACE_SETUPS[GameMap.PLAYER_RACES[playerId]];
+    const hero = raceSetup.heroes[heroIndex] ?? raceSetup.heroes[0];
+    const [x, y] = this.heroStart(playerId);
+    const vehicleUnit = this.createHero(player, hero, x, y, 315.0);
+    vehicle.unit = vehicleUnit;
+    if (hero.startingWeapon != null) {
+      vehicle.upgradeMap.set(hero.startingWeapon.upgradeName, 1);
+    }
+    this.vehicleDeathTriggers[playerId].registerUnitEvent(
+      vehicleUnit,
+      EVENT_UNIT_DEATH,
+    );
+    this.creepAbilityController.registerVehicle(vehicleUnit);
+    if (GetPlayerId(GetLocalPlayer()) === playerId) {
+      this.vehicleUpgradeSystem.setMenuVisible(true);
+    }
+
+    if (DEV_SKIP_INTRO === true) {
+      SelectUnitForPlayerSingle(vehicleUnit.handle, player.handle);
+      PanCameraToTimedForPlayer(player.handle, x, y, 0);
+    } else {
+      this.startIntro(
+        player,
+        playerId,
+        vehicleUnit,
+        raceSetup.transportUnitTypeId,
+      );
+    }
+    this.spawner.startFirstWave(playerId);
+  }
+
+  private createHero(
+    player: MapPlayer,
+    hero: HeroSetup,
+    x: number,
+    y: number,
+    facing: number,
+  ): Unit {
+    const vehicleUnit = Unit.create(player, hero.heroUnitTypeId, x, y, facing);
+    if (hero.startingWeapon != null) {
+      vehicleUnit.addItemById(hero.startingWeapon.itemTypeId);
+    }
+
+    vehicleUnit.disableAbility(FourCC("A004"), true, true);
+    vehicleUnit.disableAbility(FourCC("A006"), true, true);
+    vehicleUnit.disableAbility(FourCC("A007"), true, true);
+    vehicleUnit.disableAbility(FourCC("A008"), true, true);
+    return vehicleUnit;
   }
 
   // The hero arrives in its race's transport, which loses life over time and
@@ -367,10 +393,20 @@ export class Game {
   }
 
   public changeRace(playerId: number, race: Race): void {
-    const vehicle = GameMap.PLAYER_VEHICLES[playerId];
-    const oldHero = vehicle.unit;
+    const oldHero = GameMap.PLAYER_VEHICLES[playerId].unit;
     if (oldHero == null || !oldHero.isAlive()) return;
 
+    GameMap.PLAYER_RACES[playerId] = race;
+    const hero = this.replaceHero(playerId, RACE_SETUPS[race].heroes[0]);
+    SelectUnitForPlayerSingle(hero.handle, hero.owner.handle);
+    print(`${GetPlayerName(hero.owner.handle)} is now playing ${race}.`);
+  }
+
+  // A new hero in the old one's place, starting over: no items or upgrades
+  // but its starting weapon, at the old one's level
+  private replaceHero(playerId: number, setup: HeroSetup): Unit {
+    const vehicle = GameMap.PLAYER_VEHICLES[playerId];
+    const oldHero = vehicle.unit;
     for (let slot = 0; slot < 6; slot++) {
       const item = oldHero.getItemInSlot(slot);
       if (item == null) continue;
@@ -378,11 +414,9 @@ export class Game {
       item.destroy();
     }
 
-    GameMap.PLAYER_RACES[playerId] = race;
-    const setup = RACE_SETUPS[race];
-    const hero = Unit.create(
+    const hero = this.createHero(
       oldHero.owner,
-      setup.heroUnitTypeId,
+      setup,
       oldHero.x,
       oldHero.y,
       oldHero.facing,
@@ -396,7 +430,6 @@ export class Game {
     OverdriveDamageEvent.ACTIVE[playerId] = false;
     BansheeShellDamageEvent.REMAINING[playerId] = 0;
     if (setup.startingWeapon != null) {
-      hero.addItemById(setup.startingWeapon.itemTypeId);
       vehicle.upgradeMap.set(setup.startingWeapon.upgradeName, 1);
     }
 
@@ -404,9 +437,9 @@ export class Game {
       hero,
       EVENT_UNIT_DEATH,
     );
+    this.creepAbilityController.registerVehicle(hero);
     oldHero.destroy();
-    SelectUnitForPlayerSingle(hero.handle, hero.owner.handle);
     this.vehicleUpgradeSystem.rerollFree(playerId);
-    print(`${GetPlayerName(hero.owner.handle)} is now playing ${race}.`);
+    return hero;
   }
 }

@@ -175,6 +175,11 @@ export class VehicleUpgradeSystem {
     this.menu.setFocus(false);
   }
 
+  // Local: hidden until the player has chosen their hero
+  public setMenuVisible(visible: boolean): void {
+    this.menu.setVisible(visible);
+  }
+
   public rerollFree(playerId: number): void {
     this.rollUpgrades(playerId);
     this.refreshUpgradeIcons();

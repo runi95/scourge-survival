@@ -7,32 +7,73 @@ export enum Race {
   NIGHT_ELF = "Night Elf",
 }
 
-export interface RaceSetup {
+export interface HeroSetup {
+  name: string;
+  icon: string;
   heroUnitTypeId: number;
-  transportUnitTypeId: number;
   startingWeapon?: { itemTypeId: number; upgradeName: string };
+}
+
+// A race's heroes are offered in this order, the first one picked by default
+export interface RaceSetup {
+  transportUnitTypeId: number;
+  heroes: HeroSetup[];
 }
 
 export const RACE_SETUPS: Record<Race, RaceSetup> = {
   [Race.HUMAN]: {
-    heroUnitTypeId: FourCC("H001"),
     transportUnitTypeId: FourCC("n004"),
-    startingWeapon: { itemTypeId: FourCC("I000"), upgradeName: "Cannon" },
+    heroes: [
+      {
+        name: "Siege Engine",
+        icon: "ReplaceableTextures/CommandButtons/BTNSeigeEngine.blp",
+        heroUnitTypeId: FourCC("H001"),
+        startingWeapon: { itemTypeId: FourCC("I000"), upgradeName: "Cannon" },
+      },
+    ],
   },
   [Race.ORC]: {
-    heroUnitTypeId: FourCC("O000"),
     transportUnitTypeId: FourCC("n00J"),
-    startingWeapon: { itemTypeId: FourCC("I002"), upgradeName: "Shockwave" },
+    heroes: [
+      {
+        name: "War Kodo",
+        icon: "ReplaceableTextures/CommandButtons/BTNKotoBeast.blp",
+        heroUnitTypeId: FourCC("O000"),
+        startingWeapon: {
+          itemTypeId: FourCC("I002"),
+          upgradeName: "Shockwave",
+        },
+      },
+    ],
   },
   [Race.UNDEAD]: {
-    heroUnitTypeId: FourCC("U000"),
     transportUnitTypeId: FourCC("n00K"),
+    heroes: [
+      {
+        name: "Banshee",
+        icon: "ReplaceableTextures/CommandButtons/BTNBanshee.blp",
+        heroUnitTypeId: FourCC("U000"),
+      },
+    ],
   },
   [Race.NIGHT_ELF]: {
-    heroUnitTypeId: FourCC("E000"),
     transportUnitTypeId: FourCC("n00L"),
+    heroes: [
+      {
+        name: "Huntress",
+        icon: "ReplaceableTextures/CommandButtons/BTNHuntress.blp",
+        heroUnitTypeId: FourCC("E000"),
+      },
+    ],
   },
 };
+
+// The most heroes any race has: the selection frame has this many slots
+export const MAX_HEROES = Math.max(
+  ...[Race.HUMAN, Race.ORC, Race.UNDEAD, Race.NIGHT_ELF].map(
+    (race) => RACE_SETUPS[race].heroes.length,
+  ),
+);
 
 // Set by `npm start` when config.json has "devRace"
 declare const DEV_RACE: string | undefined;

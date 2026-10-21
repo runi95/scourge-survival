@@ -2,36 +2,109 @@ import { Frame, MapPlayer, Trigger } from "w3ts";
 import { GameMap } from "./GameMap";
 import { Difficulty, DIFFICULTIES, DIFFICULTY_SETUPS } from "./Difficulty";
 import { loadCompleted, saveCompleted } from "./DifficultyProgress";
+import { MAX_HEROES, RACE_SETUPS } from "./Race";
 
 const SYNC_PREFIX = "ssprogress";
+const HERO_ICON_SIZE = 0.04;
+const HERO_SPACING = 0.06;
 
-// Every player picks a difficulty for their own scourge when the game
-// starts. Their first wave starts as soon as they have picked. A difficulty
-// unlocks once the one before it has been completed, which is saved for the
-// player's next games
-export class DifficultySelectionSystem {
+// Every player picks a hero of their race and a difficulty for their own
+// scourge when the game starts. Picking the difficulty sends the hero off and
+// starts their first wave. A difficulty unlocks once the one before it has
+// been completed, which is saved for the player's next games
+export class GameSetupSystem {
   private readonly menu: Frame;
+  private readonly heroIcons: Frame[] = [];
+  private readonly heroNames: Frame[] = [];
+  private readonly heroHighlight: Frame;
   private readonly buttons: Frame[] = [];
   private readonly descriptions: Frame[] = [];
   private readonly waiting = new Set<number>();
+  // By player id: the hero picked, an index into their race's heroes
+  private readonly heroes: number[] = [];
   // By player id: the hardest difficulty completed (an index into
   // DIFFICULTIES), synced from the player's file
   private readonly completed: number[] = [];
-  private readonly onChosen: (this: void, playerId: number) => void;
+  private readonly onChosen: (
+    this: void,
+    playerId: number,
+    heroIndex: number,
+  ) => void;
 
-  constructor(onChosen: (this: void, playerId: number) => void) {
+  constructor(
+    onChosen: (this: void, playerId: number, heroIndex: number) => void,
+  ) {
     this.onChosen = onChosen;
 
     const gameUi = Frame.fromOrigin(ORIGIN_FRAME_GAME_UI, 0);
     this.menu = Frame.create("EscMenuBackdrop", gameUi, -1, 0);
-    this.menu.setSize(0.36, 0.25);
-    this.menu.setAbsPoint(FRAMEPOINT_CENTER, 0.4, 0.37);
+    this.menu.setSize(0.36, 0.36);
+    this.menu.setAbsPoint(FRAMEPOINT_CENTER, 0.4, 0.36);
 
-    const title = Frame.createType("titleFrame", this.menu, 0, "TEXT", "");
-    title.setPoint(FRAMEPOINT_TOP, this.menu, FRAMEPOINT_TOP, 0, -0.03);
-    title.setText("|cffffcc00Choose your difficulty|r");
+    const heroTitle = Frame.createType(
+      "heroTitleFrame",
+      this.menu,
+      0,
+      "TEXT",
+      "",
+    );
+    heroTitle.setPoint(FRAMEPOINT_TOP, this.menu, FRAMEPOINT_TOP, 0, -0.03);
+    heroTitle.setText("|cffffcc00Choose your hero|r");
+
+    // As many slots as the race with the most heroes, filled in for the
+    // local player's race
+    for (let i = 0; i < MAX_HEROES; i++) {
+      // (a copy for the click: TSTL loops share one i)
+      const heroIndex = i;
+      const icon = Frame.createType("heroIcon", this.menu, i, "BACKDROP", "");
+      icon.setSize(HERO_ICON_SIZE, HERO_ICON_SIZE);
+      this.heroIcons.push(icon);
+
+      const name = Frame.createType("heroName", icon, i, "TEXT", "");
+      name.setPoint(FRAMEPOINT_TOP, icon, FRAMEPOINT_BOTTOM, 0, -0.004);
+      this.heroNames.push(name);
+
+      const button = Frame.createType("heroButton", icon, i, "BUTTON", "");
+      button.setAllPoints(icon);
+      const trig = Trigger.create();
+      trig.addAction(() => {
+        button.setEnabled(false);
+        button.setEnabled(true);
+        this.pickHero(MapPlayer.fromEvent().id, heroIndex);
+      });
+      trig.triggerRegisterFrameEvent(button, FRAMEEVENT_CONTROL_CLICK);
+    }
+
+    // The glow of a selected button. A sprite draws from its bottom left
+    // corner, so it sits on the icon's
+    this.heroHighlight = Frame.createType(
+      "heroHighlight",
+      this.menu,
+      0,
+      "SPRITE",
+      "",
+    );
+    this.heroHighlight.setSize(HERO_ICON_SIZE, HERO_ICON_SIZE);
+    this.heroHighlight.setModel("UI/Feedback/Autocast/UI-ModalButtonOn.mdx", 0);
+
+    const difficultyTitle = Frame.createType(
+      "difficultyTitleFrame",
+      this.menu,
+      0,
+      "TEXT",
+      "",
+    );
+    difficultyTitle.setPoint(
+      FRAMEPOINT_TOP,
+      this.menu,
+      FRAMEPOINT_TOP,
+      0,
+      -0.135,
+    );
+    difficultyTitle.setText("|cffffcc00Choose your difficulty|r");
 
     for (let i = 0; i < DIFFICULTIES.length; i++) {
+      const index = i;
       const difficulty = DIFFICULTIES[i];
       const setup = DIFFICULTY_SETUPS[difficulty];
 
@@ -42,7 +115,7 @@ export class DifficultySelectionSystem {
         this.menu,
         FRAMEPOINT_TOPLEFT,
         0.03,
-        -0.055 - i * 0.045,
+        -0.16 - i * 0.045,
       );
       button.setText(`|c${setup.color}${difficulty}|r`);
       this.buttons.push(button);
@@ -61,7 +134,9 @@ export class DifficultySelectionSystem {
       const trig = Trigger.create();
       trig.addAction(() => {
         button.setEnabled(false);
-        button.setEnabled(this.isUnlocked(GetPlayerId(GetLocalPlayer()), i));
+        button.setEnabled(
+          this.isUnlocked(GetPlayerId(GetLocalPlayer()), index),
+        );
         this.choose(MapPlayer.fromEvent().id, difficulty);
       });
       trig.triggerRegisterFrameEvent(button, FRAMEEVENT_CONTROL_CLICK);
@@ -88,6 +163,7 @@ export class DifficultySelectionSystem {
 
     for (const playerId of GameMap.ONLINE_PLAYER_ID_LIST) {
       this.waiting.add(playerId);
+      this.heroes[playerId] = 0;
       BlzTriggerRegisterPlayerSyncEvent(
         syncTrig.handle,
         Player(playerId),
@@ -102,6 +178,7 @@ export class DifficultySelectionSystem {
         SYNC_PREFIX,
         `${loadCompleted(GetPlayerName(GetLocalPlayer()))}`,
       );
+      this.refreshHeroes();
       this.menu.setVisible(true);
     }
   }
@@ -122,12 +199,13 @@ export class DifficultySelectionSystem {
     if (GetPlayerId(GetLocalPlayer()) === playerId) {
       this.menu.setVisible(false);
     }
+    const hero = this.heroSetups(playerId)[this.heroes[playerId]];
     print(
       `|c${GameMap.PLAYER_COLORS[playerId]}${GetPlayerName(
         Player(playerId),
-      )}|r chose |c${setup.color}${difficulty}|r.`,
+      )}|r chose the ${hero.name} on |c${setup.color}${difficulty}|r.`,
     );
-    this.onChosen(playerId);
+    this.onChosen(playerId, this.heroes[playerId]);
   }
 
   // The player has survived every wave: the next difficulty unlocks
@@ -169,8 +247,52 @@ export class DifficultySelectionSystem {
     DisplayTextToPlayer(GetLocalPlayer(), 0, 0, "Difficulty progress reset.");
   }
 
+  private pickHero(playerId: number, heroIndex: number): void {
+    if (!this.waiting.has(playerId)) return;
+    if (heroIndex >= this.heroSetups(playerId).length) return;
+
+    this.heroes[playerId] = heroIndex;
+    if (GetPlayerId(GetLocalPlayer()) === playerId) this.refreshHeroes();
+  }
+
+  private heroSetups(playerId: number) {
+    return RACE_SETUPS[GameMap.PLAYER_RACES[playerId]].heroes;
+  }
+
   private isUnlocked(playerId: number, index: number): boolean {
     return index <= (this.completed[playerId] ?? -1) + 1;
+  }
+
+  // The local player's race's heroes, centred, the picked one highlighted
+  private refreshHeroes(): void {
+    const localPlayerId = GetPlayerId(GetLocalPlayer());
+    const setups = this.heroSetups(localPlayerId);
+    for (let i = 0; i < MAX_HEROES; i++) {
+      const icon = this.heroIcons[i];
+      const setup = setups[i];
+      icon.visible = setup != null;
+      if (setup == null) continue;
+
+      icon.clearPoints();
+      icon.setPoint(
+        FRAMEPOINT_TOP,
+        this.menu,
+        FRAMEPOINT_TOP,
+        (i - (setups.length - 1) / 2) * HERO_SPACING,
+        -0.05,
+      );
+      icon.setTexture(setup.icon, 0, true);
+      this.heroNames[i].setText(setup.name);
+    }
+
+    this.heroHighlight.clearPoints();
+    this.heroHighlight.setPoint(
+      FRAMEPOINT_BOTTOMLEFT,
+      this.heroIcons[this.heroes[localPlayerId] ?? 0],
+      FRAMEPOINT_BOTTOMLEFT,
+      0,
+      0,
+    );
   }
 
   // The local player's locks
