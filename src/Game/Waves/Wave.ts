@@ -13,7 +13,11 @@ export type PortalWave = {
 export type Wave = {
   bonusUpgrades?: CreepUpgrade[];
   portals: [PortalWave[], PortalWave[]];
-  before?: (vehicleUpgradeSystem: VehicleUpgradeSystem) => void;
+  // When the wave starts for one player
+  before?: (
+    vehicleUpgradeSystem: VehicleUpgradeSystem,
+    playerId: number,
+  ) => void;
 };
 
 export type WaveWithUpgrades = {

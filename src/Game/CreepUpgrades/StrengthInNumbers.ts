@@ -11,12 +11,8 @@ export class StrengthInNumbers extends CreepUpgrade {
   public readonly description = () =>
     "Gives all units the |cffffcc00Strength In Numbers|r ability:|n- Reduces damage taken from all sources by 1.1% for each other scourge unit alive up to a maximum damage reduction of 25%.";
 
-  public apply(): void {
-    StrengthInNumbersDamageEvent.IS_ENABLED = true;
-
-    for (let i = 9; i < 18; i++) {
-      const scourgePlayer = MapPlayer.fromIndex(i);
-      scourgePlayer.addTechResearched(this.upgradeTypeId, 1);
-    }
+  public apply(_level: number, scourgePlayer: MapPlayer): void {
+    StrengthInNumbersDamageEvent.IS_ENABLED[scourgePlayer.id] = true;
+    scourgePlayer.addTechResearched(this.upgradeTypeId, 1);
   }
 }

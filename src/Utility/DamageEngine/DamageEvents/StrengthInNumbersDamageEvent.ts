@@ -3,12 +3,18 @@ import { DamageEvent } from "../DamageEvent";
 import type { ExtendedDamageInstance } from "../DamageEventController";
 
 export class StrengthInNumbersDamageEvent implements DamageEvent {
-  public static IS_ENABLED = false;
+  // By scourge player id
+  public static readonly IS_ENABLED: boolean[] = [];
 
   public event(damageInstance: ExtendedDamageInstance): void {
-    if (!StrengthInNumbersDamageEvent.IS_ENABLED) return;
     if (damageInstance.damage < 1) return;
     if (damageInstance.targetOwningPlayerId < 9) return;
+    if (
+      !StrengthInNumbersDamageEvent.IS_ENABLED[
+        damageInstance.targetOwningPlayerId
+      ]
+    )
+      return;
 
     const remainingCreepCount = GameMap.REMAINING_PLAYER_CREEPS_COUNT.get(
       damageInstance.targetOwningPlayerId,

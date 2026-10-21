@@ -29,6 +29,7 @@ import { WeaponUpgradeSystem } from "../Vehicles/WeaponUpgradeSystem";
 import { initializePlayerRaces, Race, RACE_SETUPS } from "./Race";
 import { OverdriveDamageEvent } from "../Utility/DamageEngine/DamageEvents/OverdriveDamageEvent";
 import { BansheeShellDamageEvent } from "../Utility/DamageEngine/DamageEvents/BansheeShellDamageEvent";
+import { DifficultySelectionSystem } from "./DifficultySelectionSystem";
 
 // Set by `npm start` when config.json has "devSkipIntro"
 declare const DEV_SKIP_INTRO: boolean | undefined;
@@ -50,6 +51,7 @@ export class Game {
   private readonly creepUpgrades = new CreepUpgrades();
   private readonly creepUpgradesFrameSystem = new CreepUpgradesFrameSystem();
   private readonly weaponUpgradeSystem = new WeaponUpgradeSystem();
+  private readonly difficultySelectionSystem: DifficultySelectionSystem;
 
   constructor() {
     this.debugger = new Debugger(this.gameOptions);
@@ -62,6 +64,9 @@ export class Game {
     this.abilities = new Abilities();
     this.damageEventController = new DamageEventController();
     this.creepAbilityController = new CreepAbilityController();
+    this.difficultySelectionSystem = new DifficultySelectionSystem((playerId) =>
+      this.spawner.startFirstWave(playerId),
+    );
 
     const availableCreepUpgradeIndexes =
       this.creepUpgrades.creepUpgradeTypes.map((_, i) => i);
@@ -192,8 +197,13 @@ export class Game {
 
     for (let i = 0; i < 9; i++) {
       const player = MapPlayer.fromIndex(i);
-      new Commands(this.gameOptions, player, this.spawner, (race) =>
-        this.changeRace(player.id, race),
+      new Commands(
+        this.gameOptions,
+        player,
+        this.spawner,
+        (race) => this.changeRace(player.id, race),
+        (difficulty) =>
+          this.difficultySelectionSystem.choose(player.id, difficulty),
       );
 
       playerLeavesTrig.registerPlayerEvent(player, EVENT_PLAYER_LEAVE);
@@ -277,6 +287,7 @@ export class Game {
     this.abilities.initialize();
     this.creepAbilityController.initialize();
     this.spawner.initializeAI();
+    this.difficultySelectionSystem.show();
   }
 
   // The hero arrives in its race's transport, which loses life over time and

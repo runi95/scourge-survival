@@ -32,12 +32,8 @@ export const TWELVE: Wave = {
     ],
   ],
   bonusUpgrades: [new StrengthInNumbers()],
-  before: (vehicleUpgradeSystem: VehicleUpgradeSystem) => {
-    for (const playerId of GameMap.ONLINE_PLAYER_ID_LIST) {
-      if (GameMap.IS_PLAYER_DEFEATED[playerId]) continue;
-
-      vehicleUpgradeSystem.addFreeRerolls(playerId, 3);
-    }
+  before: (vehicleUpgradeSystem: VehicleUpgradeSystem, playerId: number) => {
+    vehicleUpgradeSystem.addFreeRerolls(playerId, 3);
 
     const spawnSkeletonSound = Sound.create(
       Sounds.THEYLL_ALL_BE_MINE_IN_THE_END,
@@ -48,19 +44,16 @@ export const TWELVE: Wave = {
       10,
       "DefaultEAXON",
     );
+
+    if (GetPlayerId(GetLocalPlayer()) !== playerId) return;
+
     spawnSkeletonSound.start();
-
-    const localPlayerId = GetPlayerId(GetLocalPlayer());
-    if (GameMap.IS_PLAYER_DEFEATED[localPlayerId]) return;
-
-    const localPlayerArea = GameMap.PLAYER_AREAS[localPlayerId];
-    if (localPlayerArea == null) return;
-
     DisplayTextToPlayer(GetLocalPlayer(), 0, 0, `Free rerolls: |cffffcc00+3|r`);
 
+    const playerArea = GameMap.PLAYER_AREAS[playerId];
     PingMinimapEx(
-      localPlayerArea.maxX - 640,
-      localPlayerArea.minY + 640,
+      playerArea.maxX - 640,
+      playerArea.minY + 640,
       4,
       255,
       0,

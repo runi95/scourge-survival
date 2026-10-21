@@ -7,10 +7,8 @@ export abstract class CreepUpgrade {
   public abstract readonly icon: string;
   public readonly maxLevel: number = 10;
 
-  public apply(level: number): void {
-    for (let i = 9; i < 18; i++) {
-      const scourgePlayer = MapPlayer.fromIndex(i);
-      scourgePlayer.addTechResearched(this.upgradeTypeId, 1);
-    }
+  // For the scourge of one player, whose wave it is
+  public apply(_level: number, scourgePlayer: MapPlayer): void {
+    scourgePlayer.addTechResearched(this.upgradeTypeId, 1);
   }
 }

@@ -7,6 +7,7 @@ import { GameOptions } from "../Game/GameOptions";
 import { Globals } from "./Globals";
 import type { Spawner } from "../Game/Spawner";
 import { parseRace, Race } from "../Game/Race";
+import { Difficulty, parseDifficulty } from "../Game/Difficulty";
 
 const COMMAND_PREFIX = "-";
 
@@ -17,17 +18,23 @@ export class Commands {
   private readonly player: MapPlayer;
   private readonly spawner: Spawner;
   private readonly changeRace: (this: void, race: Race) => void;
+  private readonly chooseDifficulty: (
+    this: void,
+    difficulty: Difficulty,
+  ) => void;
 
   constructor(
     gameOptions: GameOptions,
     player: MapPlayer,
     spawner: Spawner,
     changeRace: (this: void, race: Race) => void,
+    chooseDifficulty: (this: void, difficulty: Difficulty) => void,
   ) {
     this.gameOptions = gameOptions;
     this.player = player;
     this.spawner = spawner;
     this.changeRace = changeRace;
+    this.chooseDifficulty = chooseDifficulty;
 
     const trig = Trigger.create();
     trig.addAction(() => this.handleCommand());
@@ -77,6 +84,17 @@ export class Commands {
           this.changeRace(race);
         })();
         break;
+      case "difficulty":
+        (() => {
+          const difficulty =
+            args.length === 1 ? parseDifficulty(args[0]) : undefined;
+          if (difficulty == null) {
+            print("Usage: -difficulty easy|normal|hard|nightmare");
+            return;
+          }
+          this.chooseDifficulty(difficulty);
+        })();
+        break;
       case "level":
         (() => {
           if (args.length !== 1) return;
@@ -98,7 +116,7 @@ export class Commands {
       case "wave":
         (() => {
           if (args.length !== 1) return;
-          GameMap.CURRENT_WAVE = Number(args[0]);
+          GameMap.PLAYER_WAVES[this.player.id] = Number(args[0]);
         })();
         break;
       case "pause":

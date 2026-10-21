@@ -307,7 +307,8 @@ export class VehicleUpgradeSystem {
   ) {
     let odds = RARITY_ODDS_BY_WAVE[0].odds;
     for (const tier of RARITY_ODDS_BY_WAVE) {
-      if (GameMap.CURRENT_WAVE >= tier.fromWave) odds = tier.odds;
+      if ((GameMap.PLAYER_WAVES[playerId] ?? 0) >= tier.fromWave)
+        odds = tier.odds;
     }
     const roll = RandomNumberGenerator.random(1, 100);
     let rarity = 0;

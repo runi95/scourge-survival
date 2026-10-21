@@ -129,7 +129,9 @@ export class CreepUpgradesFrameSystem {
     });
   }
 
-  public unlockWaveUpgrade(waveIndex: number) {
+  // Shows the player the upgrades of a wave they have reached
+  public unlockWaveUpgrade(playerId: number, waveIndex: number) {
+    if (GetPlayerId(GetLocalPlayer()) !== playerId) return;
     if (this.upgradeFrames.length - 1 < waveIndex) return;
 
     const wave = GameMap.WAVES[waveIndex];

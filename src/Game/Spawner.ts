@@ -11,13 +11,12 @@ export class Spawner {
   private readonly creepUpgradeFrameSystem: CreepUpgradesFrameSystem;
   private readonly vehicleUpgradeSystem: VehicleUpgradeSystem;
 
-  private waveTimer: Timer | undefined;
+  // By player id: every player has waves of their own
+  private readonly waveTimers: (Timer | undefined)[] = [];
   private isWaveTimerPaused = false;
-  private firstPortalTimer: Timer;
-  private secondPortalTimer: Timer;
   private readonly positionTimer: Timer;
   private readonly attackTimer: Timer;
-  private isCreepSpawnerRunning = false;
+  private readonly runningPortals: number[] = [];
 
   private readonly deathTrigger = Trigger.create();
   private readonly dummyUnitTypeId = FourCC("u000");
@@ -35,6 +34,7 @@ export class Spawner {
   // A creep died and no longer counts towards finishing the wave
   private removeCreep(creepUnit: unit): void {
     const creepPlayerId = GetPlayerId(GetOwningPlayer(creepUnit));
+    const playerId = creepPlayerId - 9;
     const handleId = GetHandleId(creepUnit);
     const creeps = GameMap.REMAINING_PLAYER_CREEPS[creepPlayerId];
     if (creeps == null || creeps.get(handleId) == null) return;
@@ -46,18 +46,20 @@ export class Spawner {
       newPlayerCreepCount,
     );
     SetPlayerState(
-      Player(creepPlayerId - 9),
+      Player(playerId),
       PLAYER_STATE_RESOURCE_FOOD_USED,
       newPlayerCreepCount,
     );
 
     if (
       newPlayerCreepCount < 1 &&
-      !this.isCreepSpawnerRunning &&
+      this.runningPortals[playerId] === 0 &&
+      this.waveTimers[playerId] != null &&
       !this.isWaveTimerPaused
     ) {
-      TimerUtils.releaseTimer(this.waveTimer);
-      this.startWave();
+      TimerUtils.releaseTimer(this.waveTimers[playerId]);
+      this.waveTimers[playerId] = undefined;
+      this.nextWave(playerId);
     }
   }
 
@@ -142,16 +144,18 @@ export class Spawner {
         }
       }
     });
+  }
 
+  // When the player has chosen a difficulty
+  public startFirstWave(playerId: number) {
     const t: Timer = TimerUtils.newTimer();
-    this.waveTimer = t;
+    this.waveTimers[playerId] = t;
     t.start(1, false, () => {
-      const localPlayerArea =
-        GameMap.PLAYER_AREAS[GetPlayerId(GetLocalPlayer())];
-      if (localPlayerArea != null) {
+      if (GetPlayerId(GetLocalPlayer()) === playerId) {
+        const playerArea = GameMap.PLAYER_AREAS[playerId];
         PingMinimapEx(
-          localPlayerArea.minX + 640,
-          localPlayerArea.maxY - 640,
+          playerArea.minX + 640,
+          playerArea.maxY - 640,
           4,
           255,
           0,
@@ -160,143 +164,151 @@ export class Spawner {
         );
       }
       TimerUtils.releaseTimer(t);
-      this.waveTimer = undefined;
-      this.startWave();
+      this.waveTimers[playerId] = undefined;
+      this.startWave(playerId);
     });
   }
 
   public toggleWaveTimerPause(): boolean {
     this.isWaveTimerPaused = !this.isWaveTimerPaused;
-    if (this.waveTimer != null) {
+    for (const waveTimer of this.waveTimers) {
+      if (waveTimer == null) continue;
       if (this.isWaveTimerPaused) {
-        this.waveTimer.pause();
+        waveTimer.pause();
       } else {
-        this.waveTimer.resume();
+        waveTimer.resume();
       }
     }
     return this.isWaveTimerPaused;
   }
 
-  private startWave() {
-    for (let i = 0; i < GameMap.ONLINE_PLAYER_ID_LIST.length; i++) {
-      const vehicle = GameMap.PLAYER_VEHICLES[GameMap.ONLINE_PLAYER_ID_LIST[i]];
-      if (vehicle.unit == null) continue;
+  private nextWave(playerId: number) {
+    if (GameMap.WAVES.length > GameMap.PLAYER_WAVES[playerId]) {
+      this.startWave(playerId);
+    } else if (GetPlayerId(GetLocalPlayer()) === playerId) {
+      DisplayTextToPlayer(GetLocalPlayer(), 0, 0, "No more waves!");
+    }
+  }
 
+  private startWave(playerId: number) {
+    if (GameMap.IS_PLAYER_DEFEATED[playerId]) return;
+
+    const vehicle = GameMap.PLAYER_VEHICLES[playerId];
+    if (vehicle.unit != null) {
       const { x, y } = vehicle.unit;
       vehicle.lastKnownX = x;
       vehicle.lastKnownY = y;
     }
 
-    const { wave, upgrades } = GameMap.WAVES[GameMap.CURRENT_WAVE];
-    if (GameMap.CURRENT_WAVE > 0) {
-      this.creepUpgradeFrameSystem.unlockWaveUpgrade(GameMap.CURRENT_WAVE);
+    const waveIndex = GameMap.PLAYER_WAVES[playerId];
+    const { wave, upgrades } = GameMap.WAVES[waveIndex];
+    if (waveIndex > 0) {
+      this.creepUpgradeFrameSystem.unlockWaveUpgrade(playerId, waveIndex);
     }
-    print(`Wave ${++GameMap.CURRENT_WAVE} incoming!`);
+    const waveNumber = ++GameMap.PLAYER_WAVES[playerId];
+    if (GetPlayerId(GetLocalPlayer()) === playerId) {
+      DisplayTextToPlayer(
+        GetLocalPlayer(),
+        0,
+        0,
+        `Wave ${waveNumber} incoming!`,
+      );
+    }
 
     if (wave.before != null) {
-      wave.before(this.vehicleUpgradeSystem);
+      wave.before(this.vehicleUpgradeSystem, playerId);
     }
 
+    const scourgePlayer = MapPlayer.fromIndex(playerId + 9);
     for (const { upgrade, level } of upgrades) {
-      upgrade.apply(level);
+      upgrade.apply(level, scourgePlayer);
     }
 
-    if (GameMap.CURRENT_WAVE > 1) {
-      for (let i = 0; i < GameMap.ONLINE_PLAYER_ID_LIST.length; i++) {
-        const playerId = GameMap.ONLINE_PLAYER_ID_LIST[i];
-        if (GameMap.IS_PLAYER_DEFEATED[playerId]) continue;
-
-        const player = MapPlayer.fromIndex(playerId);
-        const gold = player.getState(PLAYER_STATE_RESOURCE_GOLD);
-        const income = Math.floor(0.1 * gold);
-        if (income < 1) continue;
-
-        const upkeepMult =
-          (100 - player.getState(PLAYER_STATE_GOLD_UPKEEP_RATE)) * 0.01;
-        const realIncome = Math.floor(income * upkeepMult);
-        if (realIncome < 1) continue;
-
-        player.setState(PLAYER_STATE_RESOURCE_GOLD, gold + realIncome);
-        if (GetPlayerId(GetLocalPlayer()) === playerId) {
-          DisplayTextToPlayer(
-            GetLocalPlayer(),
-            0,
-            0,
-            `Income: |cffffcc00+${realIncome}|r`,
-          );
-        }
-      }
+    if (waveNumber > 1) {
+      this.payIncome(playerId);
     }
 
     const [firstPortal, secondPortal] = wave.portals;
-    this.spawnPortal(firstPortal, 0, true);
-    this.spawnPortal(secondPortal, 0, false);
+    this.runningPortals[playerId] = 0;
+    this.spawnPortal(playerId, firstPortal, 0, true);
+    this.spawnPortal(playerId, secondPortal, 0, false);
 
     const t: Timer = TimerUtils.newTimer();
-    this.waveTimer = t;
+    this.waveTimers[playerId] = t;
+    if (this.isWaveTimerPaused) t.pause();
     t.start(60, false, () => {
       TimerUtils.releaseTimer(t);
-      this.waveTimer = undefined;
-
-      this.isCreepSpawnerRunning = true;
-
-      if (GameMap.WAVES.length > GameMap.CURRENT_WAVE) {
-        this.startWave();
-      } else {
-        print("No more waves!");
-      }
+      this.waveTimers[playerId] = undefined;
+      this.nextWave(playerId);
     });
   }
 
+  private payIncome(playerId: number) {
+    const player = MapPlayer.fromIndex(playerId);
+    const gold = player.getState(PLAYER_STATE_RESOURCE_GOLD);
+    const income = Math.floor(0.1 * gold);
+    if (income < 1) return;
+
+    const upkeepMult =
+      (100 - player.getState(PLAYER_STATE_GOLD_UPKEEP_RATE)) * 0.01;
+    const realIncome = Math.floor(income * upkeepMult);
+    if (realIncome < 1) return;
+
+    player.setState(PLAYER_STATE_RESOURCE_GOLD, gold + realIncome);
+    if (GetPlayerId(GetLocalPlayer()) === playerId) {
+      DisplayTextToPlayer(
+        GetLocalPlayer(),
+        0,
+        0,
+        `Income: |cffffcc00+${realIncome}|r`,
+      );
+    }
+  }
+
   private spawnPortal(
+    playerId: number,
     portalWaves: PortalWave[],
     index: number,
     isFirstPortal: boolean,
   ) {
     if (portalWaves.length === 0) return;
+    if (index === 0) this.runningPortals[playerId]++;
     let { count } = portalWaves[index];
     const { delay, unitTypeId, attackImmediately } = portalWaves[index];
     const t: Timer = TimerUtils.newTimer();
-    if (isFirstPortal) {
-      this.firstPortalTimer = t;
-    } else {
-      this.secondPortalTimer = t;
-    }
     t.start(delay, true, () => {
-      for (let i = 0; i < GameMap.ONLINE_PLAYER_ID_LIST.length; i++) {
-        const playerId = GameMap.ONLINE_PLAYER_ID_LIST[i];
-        if (GameMap.IS_PLAYER_DEFEATED[playerId]) continue;
-        const scourgePlayer = MapPlayer.fromIndex(playerId + 9);
-        const x = isFirstPortal
-          ? GameMap.PLAYER_AREAS[playerId].minX + 640
-          : GameMap.PLAYER_AREAS[playerId].maxX - 640;
-        const y = isFirstPortal
-          ? GameMap.PLAYER_AREAS[playerId].maxY - 640
-          : GameMap.PLAYER_AREAS[playerId].minY + 640;
-        const scourgeUnit = Unit.create(
-          scourgePlayer,
-          unitTypeId,
-          x,
-          y,
-          isFirstPortal ? 315.0 : 135.0,
-        );
+      if (GameMap.IS_PLAYER_DEFEATED[playerId]) {
+        TimerUtils.releaseTimer(t);
+        return;
+      }
 
-        const creep = new Creep(scourgeUnit, x, y, count);
-        GameMap.REMAINING_PLAYER_CREEPS[playerId + 9].set(
-          scourgeUnit.id,
-          creep,
-        );
-        const newCreepCount =
-          GameMap.REMAINING_PLAYER_CREEPS_COUNT.get(playerId + 9) + 1;
-        GameMap.REMAINING_PLAYER_CREEPS_COUNT.set(playerId + 9, newCreepCount);
-        SetPlayerState(
-          Player(playerId),
-          PLAYER_STATE_RESOURCE_FOOD_USED,
-          newCreepCount,
-        );
+      const scourgePlayer = MapPlayer.fromIndex(playerId + 9);
+      const x = isFirstPortal
+        ? GameMap.PLAYER_AREAS[playerId].minX + 640
+        : GameMap.PLAYER_AREAS[playerId].maxX - 640;
+      const y = isFirstPortal
+        ? GameMap.PLAYER_AREAS[playerId].maxY - 640
+        : GameMap.PLAYER_AREAS[playerId].minY + 640;
+      const scourgeUnit = Unit.create(
+        scourgePlayer,
+        unitTypeId,
+        x,
+        y,
+        isFirstPortal ? 315.0 : 135.0,
+      );
 
-        if (!attackImmediately) continue;
+      const creep = new Creep(scourgeUnit, x, y, count);
+      GameMap.REMAINING_PLAYER_CREEPS[playerId + 9].set(scourgeUnit.id, creep);
+      const newCreepCount =
+        GameMap.REMAINING_PLAYER_CREEPS_COUNT.get(playerId + 9) + 1;
+      GameMap.REMAINING_PLAYER_CREEPS_COUNT.set(playerId + 9, newCreepCount);
+      SetPlayerState(
+        Player(playerId),
+        PLAYER_STATE_RESOURCE_FOOD_USED,
+        newCreepCount,
+      );
 
+      if (attackImmediately) {
         const vehicle = GameMap.PLAYER_VEHICLES[playerId];
         const attackX = vehicle.lastKnownX;
         const attackY = vehicle.lastKnownY;
@@ -307,9 +319,9 @@ export class Spawner {
       if (--count <= 0) {
         TimerUtils.releaseTimer(t);
         if (portalWaves.length - 1 > index) {
-          this.spawnPortal(portalWaves, index + 1, isFirstPortal);
+          this.spawnPortal(playerId, portalWaves, index + 1, isFirstPortal);
         } else {
-          this.isCreepSpawnerRunning = false;
+          this.runningPortals[playerId]--;
         }
 
         // } else {

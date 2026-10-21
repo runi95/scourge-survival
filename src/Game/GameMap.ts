@@ -1,4 +1,5 @@
 import type { Race } from "./Race";
+import type { Difficulty } from "./Difficulty";
 import { Rectangle } from "w3ts";
 import { Vehicle } from "../Vehicles/Vehicle";
 import { Creep } from "./Creep";
@@ -46,8 +47,10 @@ export class GameMap {
     new Vehicle(),
     new Vehicle(),
   ];
-  public static CURRENT_WAVE: number = 0;
+  // By player id: how many waves each player has started
+  public static readonly PLAYER_WAVES: number[] = [0, 0, 0, 0, 0, 0, 0, 0, 0];
   public static readonly PLAYER_RACES: Race[] = [];
+  public static readonly PLAYER_DIFFICULTIES: Difficulty[] = [];
   public static readonly REMAINING_PLAYER_CREEPS: Map<number, Creep>[] = [];
   public static readonly REMAINING_PLAYER_CREEPS_COUNT: Map<number, number> =
     new Map();
