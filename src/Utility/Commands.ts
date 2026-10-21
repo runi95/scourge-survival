@@ -22,6 +22,7 @@ export class Commands {
     this: void,
     difficulty: Difficulty,
   ) => void;
+  private readonly resetProgress: (this: void) => void;
 
   constructor(
     gameOptions: GameOptions,
@@ -29,12 +30,14 @@ export class Commands {
     spawner: Spawner,
     changeRace: (this: void, race: Race) => void,
     chooseDifficulty: (this: void, difficulty: Difficulty) => void,
+    resetProgress: (this: void) => void,
   ) {
     this.gameOptions = gameOptions;
     this.player = player;
     this.spawner = spawner;
     this.changeRace = changeRace;
     this.chooseDifficulty = chooseDifficulty;
+    this.resetProgress = resetProgress;
 
     const trig = Trigger.create();
     trig.addAction(() => this.handleCommand());
@@ -94,6 +97,9 @@ export class Commands {
           }
           this.chooseDifficulty(difficulty);
         })();
+        break;
+      case "resetprogress":
+        this.resetProgress();
         break;
       case "level":
         (() => {

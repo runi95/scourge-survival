@@ -205,6 +205,7 @@ export class Game {
         (race) => this.changeRace(player.id, race),
         (difficulty) =>
           this.difficultySelectionSystem.choose(player.id, difficulty, true),
+        () => this.difficultySelectionSystem.resetProgress(player.id),
       );
 
       playerLeavesTrig.registerPlayerEvent(player, EVENT_PLAYER_LEAVE);

@@ -159,6 +159,16 @@ export class DifficultySelectionSystem {
     }
   }
 
+  // Back to Easy only, in this game and the player's next ones
+  public resetProgress(playerId: number): void {
+    this.completed[playerId] = -1;
+    if (GetPlayerId(GetLocalPlayer()) !== playerId) return;
+
+    saveCompleted(GetPlayerName(GetLocalPlayer()), -1);
+    this.refreshLocks();
+    DisplayTextToPlayer(GetLocalPlayer(), 0, 0, "Difficulty progress reset.");
+  }
+
   private isUnlocked(playerId: number, index: number): boolean {
     return index <= (this.completed[playerId] ?? -1) + 1;
   }
