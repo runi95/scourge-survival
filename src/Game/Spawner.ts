@@ -17,6 +17,8 @@ export class Spawner {
   private readonly positionTimer: Timer;
   private readonly attackTimer: Timer;
   private readonly runningPortals: number[] = [];
+  private readonly completed: boolean[] = [];
+  private readonly onComplete: (this: void, playerId: number) => void;
 
   private readonly deathTrigger = Trigger.create();
   private readonly dummyUnitTypeId = FourCC("u000");
@@ -24,8 +26,10 @@ export class Spawner {
   constructor(
     creepUpgradeFrameSystem: CreepUpgradesFrameSystem,
     vehicleUpgradeSystem: VehicleUpgradeSystem,
+    onComplete: (this: void, playerId: number) => void,
   ) {
     this.creepUpgradeFrameSystem = creepUpgradeFrameSystem;
+    this.onComplete = onComplete;
     this.vehicleUpgradeSystem = vehicleUpgradeSystem;
     this.positionTimer = TimerUtils.newTimer();
     this.attackTimer = TimerUtils.newTimer();
@@ -51,12 +55,22 @@ export class Spawner {
       newPlayerCreepCount,
     );
 
-    if (
-      newPlayerCreepCount < 1 &&
-      this.runningPortals[playerId] === 0 &&
-      this.waveTimers[playerId] != null &&
-      !this.isWaveTimerPaused
-    ) {
+    if (newPlayerCreepCount > 0 || this.runningPortals[playerId] !== 0) return;
+
+    // The last wave is over once all of it is dead
+    if (GameMap.PLAYER_WAVES[playerId] >= GameMap.WAVES.length) {
+      if (this.completed[playerId] || GameMap.IS_PLAYER_DEFEATED[playerId])
+        return;
+      this.completed[playerId] = true;
+      if (this.waveTimers[playerId] != null) {
+        TimerUtils.releaseTimer(this.waveTimers[playerId]);
+        this.waveTimers[playerId] = undefined;
+      }
+      this.onComplete(playerId);
+      return;
+    }
+
+    if (this.waveTimers[playerId] != null && !this.isWaveTimerPaused) {
       TimerUtils.releaseTimer(this.waveTimers[playerId]);
       this.waveTimers[playerId] = undefined;
       this.nextWave(playerId);
@@ -186,7 +200,12 @@ export class Spawner {
     if (GameMap.WAVES.length > GameMap.PLAYER_WAVES[playerId]) {
       this.startWave(playerId);
     } else if (GetPlayerId(GetLocalPlayer()) === playerId) {
-      DisplayTextToPlayer(GetLocalPlayer(), 0, 0, "No more waves!");
+      DisplayTextToPlayer(
+        GetLocalPlayer(),
+        0,
+        0,
+        "No more waves! Defeat the remaining scourge.",
+      );
     }
   }
 

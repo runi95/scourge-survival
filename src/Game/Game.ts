@@ -60,6 +60,7 @@ export class Game {
     this.spawner = new Spawner(
       this.creepUpgradesFrameSystem,
       this.vehicleUpgradeSystem,
+      (playerId) => this.difficultySelectionSystem.complete(playerId),
     );
     this.abilities = new Abilities();
     this.damageEventController = new DamageEventController();
@@ -203,7 +204,7 @@ export class Game {
         this.spawner,
         (race) => this.changeRace(player.id, race),
         (difficulty) =>
-          this.difficultySelectionSystem.choose(player.id, difficulty),
+          this.difficultySelectionSystem.choose(player.id, difficulty, true),
       );
 
       playerLeavesTrig.registerPlayerEvent(player, EVENT_PLAYER_LEAVE);
