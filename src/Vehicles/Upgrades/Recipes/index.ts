@@ -156,7 +156,7 @@ export * from "./Belfry";
 export * from "./ScatteringSwarm";
 export * from "./Nightfall";
 export * from "./Uprising";
-export * from "./Undertow";
+export * from "./PlungingSwarm";
 export * from "./CorpseMine";
 export * from "./SoulRend";
 export * from "./Shrapnel";
