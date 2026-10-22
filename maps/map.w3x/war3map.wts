@@ -13683,67 +13683,69 @@ Nightfall
 }
 
 STRING 2678
-// Items: I0A4 (Bone Lancers), Tip (Tooltip - Basic)
+// Items: I0A4 (Uprising), Tip (Tooltip - Basic)
 {
-Purchase Bone Lancers
+Purchase Uprising
 }
 
 STRING 2679
-// Items: I0A4 (Bone Lancers), Description (Description)
+// Items: I0A4 (Uprising), Description (Description)
 {
-Raises Bone Lancers that fight by your side. Every third blow drives spikes through the ground behind their target.
+The dead claw their way up beneath the enemies nearest your hero, driving spikes up through them, then stay to fight.
 }
 
 STRING 2680
-// Items: I0A4 (Bone Lancers), Ubertip (Tooltip - Extended)
+// Items: I0A4 (Uprising), Ubertip (Tooltip - Extended)
 {
-Raises Bone Lancers that fight by your side. Every third blow drives spikes through the ground behind their target.
+The dead claw their way up beneath the enemies nearest your hero, driving spikes up through them, then stay to fight.
 }
 
 STRING 2681
-// Items: I0A4 (Bone Lancers), Name (Name)
+// Items: I0A4 (Uprising), Name (Name)
 {
-Bone Lancers
+Uprising
 }
 
 STRING 2682
-// Items: I0A5 (Bone Lancers), Tip (Tooltip - Basic)
+// Items: I0A5 (Uprising), Tip (Tooltip - Basic)
 {
-Purchase Bone Lancers
+Purchase Uprising
 }
 
 STRING 2683
-// Items: I0A5 (Bone Lancers), Ubertip (Tooltip - Extended)
+// Items: I0A5 (Uprising), Ubertip (Tooltip - Extended)
 {
-Raises a Bone Lancer next to your hero every 8 seconds that fights by your side. Every third blow of a Bone Lancer drives spikes out of the ground through its target and on behind it, hurting and stunning every enemy ground unit in the line.
+Every 4 seconds a Skeleton Warrior claws its way out of the ground beneath each of the 2 enemy ground units nearest your hero. It drives spikes up through the enemy and on away from your hero, hurting and stunning every enemy ground unit in the line, then stays to fight.
 
-Damage: |cffffcc0026 - 42|r (attack) + |cffffcc00150|r (spikes)
-Cooldown: |cffffcc008s|r
-Health: |cffffcc00200|r
-Duration: |cffffcc0020s|r
+Damage: |cffffcc00150|r (spikes) + |cffffcc0026 - 42|r (skeleton)
+Cooldown: |cffffcc004s|r
+Range: |cffffcc00500|r
 Stun duration: |cffffcc001s|r
+Health: |cffffcc00200|r (skeleton)
+Duration: |cffffcc0012s|r (skeleton)
 Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00normal|r (attack) + |cffffcc00spell|r (spikes)
+Damage type: |cffffcc00spell|r (spikes) + |cffffcc00normal|r (skeleton)
 }
 
 STRING 2684
-// Items: I0A5 (Bone Lancers), Description (Description)
+// Items: I0A5 (Uprising), Description (Description)
 {
-Raises a Bone Lancer next to your hero every 8 seconds that fights by your side. Every third blow of a Bone Lancer drives spikes out of the ground through its target and on behind it, hurting and stunning every enemy ground unit in the line.
+Every 4 seconds a Skeleton Warrior claws its way out of the ground beneath each of the 2 enemy ground units nearest your hero. It drives spikes up through the enemy and on away from your hero, hurting and stunning every enemy ground unit in the line, then stays to fight.
 
-Damage: |cffffcc0026 - 42|r (attack) + |cffffcc00150|r (spikes)
-Cooldown: |cffffcc008s|r
-Health: |cffffcc00200|r
-Duration: |cffffcc0020s|r
+Damage: |cffffcc00150|r (spikes) + |cffffcc0026 - 42|r (skeleton)
+Cooldown: |cffffcc004s|r
+Range: |cffffcc00500|r
 Stun duration: |cffffcc001s|r
+Health: |cffffcc00200|r (skeleton)
+Duration: |cffffcc0012s|r (skeleton)
 Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00normal|r (attack) + |cffffcc00spell|r (spikes)
+Damage type: |cffffcc00spell|r (spikes) + |cffffcc00normal|r (skeleton)
 }
 
 STRING 2685
-// Items: I0A5 (Bone Lancers), Name (Name)
+// Items: I0A5 (Uprising), Name (Name)
 {
-Bone Lancers
+Uprising
 }
 
 STRING 2686
@@ -19952,12 +19954,6 @@ STRING 3541
 // Abilities: A04V (Scattering Swarm), Name (Name)
 {
 Scattering Swarm
-}
-
-STRING 3542
-// Units: u028 (Bone Lancer), Name (Name)
-{
-Bone Lancer
 }
 
 STRING 3543

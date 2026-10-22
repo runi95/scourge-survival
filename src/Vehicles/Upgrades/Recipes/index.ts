@@ -155,7 +155,7 @@ export * from "./Dreadlord";
 export * from "./Belfry";
 export * from "./ScatteringSwarm";
 export * from "./Nightfall";
-export * from "./BoneLancers";
+export * from "./Uprising";
 export * from "./Undertow";
 export * from "./CorpseMine";
 export * from "./SoulRend";

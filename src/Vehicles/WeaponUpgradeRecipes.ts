@@ -160,7 +160,7 @@ export const weaponRecipes = [
   new Recipes.Belfry(),
   new Recipes.ScatteringSwarm(),
   new Recipes.Nightfall(),
-  new Recipes.BoneLancers(),
+  new Recipes.Uprising(),
   new Recipes.Undertow(),
   new Recipes.CorpseMine(),
   new Recipes.SoulRend(),
