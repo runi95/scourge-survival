@@ -13947,69 +13947,69 @@ Possession
 }
 
 STRING 2711
-// Items: I0AC (Shrapnel), Tip (Tooltip - Basic)
+// Items: I0AC (Bracketing Fire), Tip (Tooltip - Basic)
 {
-Purchase Shrapnel
+Purchase Bracketing Fire
 }
 
 STRING 2712
-// Items: I0AC (Shrapnel), Description (Description)
+// Items: I0AC (Bracketing Fire), Description (Description)
 {
-Fires Cluster Rockets at a random enemy unit. Their shrapnel lodges in the enemies they hit, crippling them and tearing at them with every step they take.
+Spots the nearest enemy with a crippling flare, then walks a barrage of rockets in on it, each volley landing tighter.
 }
 
 STRING 2713
-// Items: I0AC (Shrapnel), Ubertip (Tooltip - Extended)
+// Items: I0AC (Bracketing Fire), Ubertip (Tooltip - Extended)
 {
-Fires Cluster Rockets at a random enemy unit. Their shrapnel lodges in the enemies they hit, crippling them and tearing at them with every step they take.
+Spots the nearest enemy with a crippling flare, then walks a barrage of rockets in on it, each volley landing tighter.
 }
 
 STRING 2714
-// Items: I0AC (Shrapnel), Name (Name)
+// Items: I0AC (Bracketing Fire), Name (Name)
 {
-Shrapnel
+Bracketing Fire
 }
 
 STRING 2715
-// Items: I0AD (Shrapnel), Tip (Tooltip - Basic)
+// Items: I0AD (Bracketing Fire), Tip (Tooltip - Basic)
 {
-Purchase Shrapnel
+Purchase Bracketing Fire
 }
 
 STRING 2716
-// Items: I0AD (Shrapnel), Ubertip (Tooltip - Extended)
+// Items: I0AD (Bracketing Fire), Ubertip (Tooltip - Extended)
 {
-Fires Cluster Rockets at a random enemy unit within range. Shrapnel lodges in every enemy unit they hit for 5 seconds: it is crippled, and every step it takes tears at it, the farther it walks the more.
+Spots the enemy unit nearest your hero with a flare that cripples it, then walks a barrage in on it: 3 volleys of Cluster Rockets, 0.75 seconds apart, each scattered tighter around where it is now, the last right on top of it.
 
-Damage: |cffffcc006 x 17.5|r (rockets) + |cffffcc0035|r per 100 distance walked (shrapnel)
-Cooldown: |cffffcc002s|r
+Damage: |cffffcc00100|r (flare) + |cffffcc006 x 17.5 (max 210)|r per volley
+Cooldown: |cffffcc004s|r
 Range: |cffffcc00700|r
-Area of effect: |cffffcc00300|r
-Duration: |cffffcc005s|r
+Area of effect: |cffffcc00300|r, |cffffcc00175|r, |cffffcc0075|r
+Cripple duration: |cffffcc003s|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
-Effect: stuns for |cffffcc001s|r
+Effect: rockets stun for |cffffcc001s|r
 }
 
 STRING 2717
-// Items: I0AD (Shrapnel), Description (Description)
+// Items: I0AD (Bracketing Fire), Description (Description)
 {
-Fires Cluster Rockets at a random enemy unit within range. Shrapnel lodges in every enemy unit they hit for 5 seconds: it is crippled, and every step it takes tears at it, the farther it walks the more.
+Spots the enemy unit nearest your hero with a flare that cripples it, then walks a barrage in on it: 3 volleys of Cluster Rockets, 0.75 seconds apart, each scattered tighter around where it is now, the last right on top of it.
 
-Damage: |cffffcc006 x 17.5|r (rockets) + |cffffcc0035|r per 100 distance walked (shrapnel)
-Cooldown: |cffffcc002s|r
+Damage: |cffffcc00100|r (flare) + |cffffcc006 x 17.5 (max 210)|r per volley
+Cooldown: |cffffcc004s|r
 Range: |cffffcc00700|r
-Area of effect: |cffffcc00300|r
-Duration: |cffffcc005s|r
+Area of effect: |cffffcc00300|r, |cffffcc00175|r, |cffffcc0075|r
+Cripple duration: |cffffcc003s|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
-Effect: stuns for |cffffcc001s|r
+Effect: rockets stun for |cffffcc001s|r
 }
 
 STRING 2718
-// Items: I0AD (Shrapnel), Name (Name)
+// Items: I0AD (Bracketing Fire), Name (Name)
 {
-Shrapnel
+Bracketing Fire
 }
 
 STRING 2719
@@ -19958,12 +19958,6 @@ STRING 3541
 Scattering Swarm
 }
 
-STRING 3543
-// Units: u029 (Shrapnel Caster), Name (Name)
-{
-Shrapnel Caster
-}
-
 STRING 3544
 // Items: I0AH (Black Arrow), Name (Name)
 {
@@ -20076,5 +20070,17 @@ STRING 3562
 // Units: u02H (Dreadlord), Name (Name)
 {
 Dreadlord
+}
+
+STRING 3563
+// Abilities: A051 (Bracketing Fire (close)), Name (Name)
+{
+Bracketing Fire (close)
+}
+
+STRING 3564
+// Abilities: A052 (Bracketing Fire (direct)), Name (Name)
+{
+Bracketing Fire (direct)
 }
 

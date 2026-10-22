@@ -159,7 +159,7 @@ export * from "./Uprising";
 export * from "./PlungingSwarm";
 export * from "./CorpseMine";
 export * from "./Possession";
-export * from "./Shrapnel";
+export * from "./BracketingFire";
 export * from "./CryptFiendDen";
 export * from "./BlackArrow";
 export * from "./IceTomb";
