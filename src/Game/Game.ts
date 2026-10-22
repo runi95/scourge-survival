@@ -24,7 +24,7 @@ import { CreepAbilityController } from "./CreepAbilityController";
 import { CreepUpgrades } from "./CreepUpgrades/CreepUpgrades";
 import { CreepWaveUpgrade } from "./CreepUpgrades/CreepWaveUpgrade";
 import { waves } from "./Waves/index";
-import { CreepUpgradesFrameSystem } from "./CreepUpgrades/CreepUpgradesFrameSystem";
+import { Scoreboard } from "./Scoreboard";
 import { WeaponUpgradeSystem } from "../Vehicles/WeaponUpgradeSystem";
 import { HeroSetup, initializePlayerRaces, Race, RACE_SETUPS } from "./Race";
 import { OverdriveDamageEvent } from "../Utility/DamageEngine/DamageEvents/OverdriveDamageEvent";
@@ -49,7 +49,7 @@ export class Game {
   private readonly vehicleDeathTriggers: Trigger[] = [];
   private readonly creepAbilityController: CreepAbilityController;
   private readonly creepUpgrades = new CreepUpgrades();
-  private readonly creepUpgradesFrameSystem = new CreepUpgradesFrameSystem();
+  private readonly scoreboard = new Scoreboard();
   private readonly weaponUpgradeSystem = new WeaponUpgradeSystem();
   private readonly gameSetupSystem: GameSetupSystem;
 
@@ -58,7 +58,7 @@ export class Game {
     initializePlayerRaces();
     this.vehicleUpgradeSystem = new VehicleUpgradeSystem();
     this.spawner = new Spawner(
-      this.creepUpgradesFrameSystem,
+      this.scoreboard,
       this.vehicleUpgradeSystem,
       (playerId) => this.gameSetupSystem.complete(playerId),
     );
@@ -273,6 +273,7 @@ export class Game {
     const [x, y] = this.heroStart(playerId);
     const vehicleUnit = this.createHero(player, hero, x, y, 315.0);
     vehicle.unit = vehicleUnit;
+    GameMap.PLAYER_HEROES[playerId] = hero;
     if (hero.startingWeapon != null) {
       vehicle.upgradeMap.set(hero.startingWeapon.upgradeName, 1);
     }
@@ -425,6 +426,7 @@ export class Game {
     if (level > 1) hero.setHeroLevel(level, false);
 
     vehicle.unit = hero;
+    GameMap.PLAYER_HEROES[playerId] = setup;
     vehicle.upgradeMap.clear();
     vehicle.skillMap.clear();
     OverdriveDamageEvent.ACTIVE[playerId] = false;

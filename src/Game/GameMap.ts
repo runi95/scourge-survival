@@ -1,4 +1,4 @@
-import type { Race } from "./Race";
+import type { HeroSetup, Race } from "./Race";
 import type { Difficulty } from "./Difficulty";
 import { Rectangle } from "w3ts";
 import { Vehicle } from "../Vehicles/Vehicle";
@@ -51,6 +51,10 @@ export class GameMap {
   public static readonly PLAYER_WAVES: number[] = [0, 0, 0, 0, 0, 0, 0, 0, 0];
   public static readonly PLAYER_RACES: Race[] = [];
   public static readonly PLAYER_DIFFICULTIES: Difficulty[] = [];
+  // By player id: the hero they chose, once they have
+  public static readonly PLAYER_HEROES: HeroSetup[] = [];
+  // By player id: survived every wave
+  public static readonly IS_PLAYER_VICTORIOUS: boolean[] = [];
   public static readonly REMAINING_PLAYER_CREEPS: Map<number, Creep>[] = [];
   public static readonly REMAINING_PLAYER_CREEPS_COUNT: Map<number, number> =
     new Map();

@@ -4,11 +4,11 @@ import { TimerUtils } from "../Utility/TimerUtils";
 import { GameMap } from "./GameMap";
 import { Creep } from "./Creep";
 import { PortalWave } from "./Waves/index";
-import { CreepUpgradesFrameSystem } from "./CreepUpgrades/CreepUpgradesFrameSystem";
+import { Scoreboard } from "./Scoreboard";
 import { VehicleUpgradeSystem } from "./VehicleUpgradeSystem";
 
 export class Spawner {
-  private readonly creepUpgradeFrameSystem: CreepUpgradesFrameSystem;
+  private readonly scoreboard: Scoreboard;
   private readonly vehicleUpgradeSystem: VehicleUpgradeSystem;
 
   // By player id: every player has waves of their own
@@ -24,11 +24,11 @@ export class Spawner {
   private readonly dummyUnitTypeId = FourCC("u000");
 
   constructor(
-    creepUpgradeFrameSystem: CreepUpgradesFrameSystem,
+    scoreboard: Scoreboard,
     vehicleUpgradeSystem: VehicleUpgradeSystem,
     onComplete: (this: void, playerId: number) => void,
   ) {
-    this.creepUpgradeFrameSystem = creepUpgradeFrameSystem;
+    this.scoreboard = scoreboard;
     this.onComplete = onComplete;
     this.vehicleUpgradeSystem = vehicleUpgradeSystem;
     this.positionTimer = TimerUtils.newTimer();
@@ -62,6 +62,7 @@ export class Spawner {
       if (this.completed[playerId] || GameMap.IS_PLAYER_DEFEATED[playerId])
         return;
       this.completed[playerId] = true;
+      GameMap.IS_PLAYER_VICTORIOUS[playerId] = true;
       if (this.waveTimers[playerId] != null) {
         TimerUtils.releaseTimer(this.waveTimers[playerId]);
         this.waveTimers[playerId] = undefined;
@@ -222,7 +223,7 @@ export class Spawner {
     const waveIndex = GameMap.PLAYER_WAVES[playerId];
     const { wave, upgrades } = GameMap.WAVES[waveIndex];
     if (waveIndex > 0) {
-      this.creepUpgradeFrameSystem.unlockWaveUpgrade(playerId, waveIndex);
+      this.scoreboard.unlockWaveUpgrade(playerId, waveIndex);
     }
     const waveNumber = ++GameMap.PLAYER_WAVES[playerId];
     if (GetPlayerId(GetLocalPlayer()) === playerId) {
