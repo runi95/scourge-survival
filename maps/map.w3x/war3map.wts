@@ -7471,63 +7471,67 @@ Shatter
 }
 
 STRING 1865
-// Items: I04U (Curse of Frailty), Tip (Tooltip - Basic)
+// Items: I04U (Contagion), Tip (Tooltip - Basic)
 {
-Purchase Curse of Frailty
+Purchase Contagion
 }
 
 STRING 1866
-// Items: I04U (Curse of Frailty), Description (Description)
+// Items: I04U (Contagion), Description (Description)
 {
-Every enemy unit that hits your hero is crippled.
+Cripples the nearest enemy unit with a curse that leaps from enemy to enemy, growing stronger with every host.
 }
 
 STRING 1867
-// Items: I04U (Curse of Frailty), Ubertip (Tooltip - Extended)
+// Items: I04U (Contagion), Ubertip (Tooltip - Extended)
 {
-Every enemy unit that hits your hero is crippled.
+Cripples the nearest enemy unit with a curse that leaps from enemy to enemy, growing stronger with every host.
 }
 
 STRING 1868
-// Items: I04U (Curse of Frailty), Name (Name)
+// Items: I04U (Contagion), Name (Name)
 {
-Curse of Frailty
+Contagion
 }
 
 STRING 1869
-// Items: I04V (Curse of Frailty), Tip (Tooltip - Basic)
+// Items: I04V (Contagion), Tip (Tooltip - Basic)
 {
-Purchase Curse of Frailty
+Purchase Contagion
 }
 
 STRING 1870
-// Items: I04V (Curse of Frailty), Ubertip (Tooltip - Extended)
+// Items: I04V (Contagion), Ubertip (Tooltip - Extended)
 {
-Every enemy unit that hits your hero is crippled and takes damage. The curse strikes each enemy at most once every 3 seconds.
+Cripples the enemy unit nearest your hero with a wasting curse. The curse leaps on to the nearest enemy unit it has not had yet, 5 times, and hurts every new host more than the last. When its host dies, it leaps at once.
 
-Damage: |cffffcc00150|r
-Cooldown: |cffffcc003s|r (per enemy)
-Duration: |cffffcc003s|r
+Damage: |cffffcc00120|r (|cffffcc00+25|r per leap)
+Cooldown: |cffffcc004s|r
+Range: |cffffcc00600|r (leap |cffffcc00400|r)
+Leaps: |cffffcc005|r
+Cripple duration: |cffffcc003s|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 1871
-// Items: I04V (Curse of Frailty), Description (Description)
+// Items: I04V (Contagion), Description (Description)
 {
-Every enemy unit that hits your hero is crippled and takes damage. The curse strikes each enemy at most once every 3 seconds.
+Cripples the enemy unit nearest your hero with a wasting curse. The curse leaps on to the nearest enemy unit it has not had yet, 5 times, and hurts every new host more than the last. When its host dies, it leaps at once.
 
-Damage: |cffffcc00150|r
-Cooldown: |cffffcc003s|r (per enemy)
-Duration: |cffffcc003s|r
+Damage: |cffffcc00120|r (|cffffcc00+25|r per leap)
+Cooldown: |cffffcc004s|r
+Range: |cffffcc00600|r (leap |cffffcc00400|r)
+Leaps: |cffffcc005|r
+Cripple duration: |cffffcc003s|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 1872
-// Items: I04V (Curse of Frailty), Name (Name)
+// Items: I04V (Contagion), Name (Name)
 {
-Curse of Frailty
+Contagion
 }
 
 STRING 1873

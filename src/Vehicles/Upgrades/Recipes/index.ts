@@ -68,7 +68,7 @@ export * from "./Starfall";
 export * from "./Metamorphosis";
 export * from "./ImpalingCross";
 export * from "./Shatter";
-export * from "./CurseOfFrailty";
+export * from "./Contagion";
 export * from "./Sacrifice";
 export * from "./Rupture";
 export * from "./PlagueCarrier";

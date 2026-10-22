@@ -19,7 +19,6 @@ import { ThunderSpearsDamageEvent } from "./DamageEvents/ThunderSpearsDamageEven
 import { WarDrumsDamageEvent } from "./DamageEvents/WarDrumsDamageEvent";
 import { ElunesVeilDamageEvent } from "./DamageEvents/ElunesVeilDamageEvent";
 import { IronhideDamageEvent } from "./DamageEvents/IronhideDamageEvent";
-import { CurseOfFrailtyDamageEvent } from "./DamageEvents/CurseOfFrailtyDamageEvent";
 import { RuptureDamageEvent } from "./DamageEvents/RuptureDamageEvent";
 import { BoneLancersDamageEvent } from "./DamageEvents/BoneLancersDamageEvent";
 import { ShrapnelDamageEvent } from "./DamageEvents/ShrapnelDamageEvent";
@@ -141,10 +140,6 @@ export class DamageEventController {
     );
     DamageEngine.register(
       new ThunderSpearsDamageEvent(),
-      DamageEventType.AfterDamageEvent,
-    );
-    DamageEngine.register(
-      new CurseOfFrailtyDamageEvent(),
       DamageEventType.AfterDamageEvent,
     );
     DamageEngine.register(

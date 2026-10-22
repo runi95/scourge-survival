@@ -73,7 +73,7 @@ export const weaponRecipes = [
   new Recipes.Metamorphosis(),
   new Recipes.ImpalingCross(),
   new Recipes.Shatter(),
-  new Recipes.CurseOfFrailty(),
+  new Recipes.Contagion(),
   new Recipes.Sacrifice(),
   new Recipes.Rupture(),
   new Recipes.PlagueCarrier(),
