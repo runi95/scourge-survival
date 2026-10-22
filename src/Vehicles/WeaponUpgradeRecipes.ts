@@ -76,7 +76,7 @@ export const weaponRecipes = [
   new Recipes.Contagion(),
   new Recipes.Sacrifice(),
   new Recipes.NerubianAmbush(),
-  new Recipes.PlagueCarrier(),
+  new Recipes.Tripwire(),
   new Recipes.NerubianTower(),
   new Recipes.DragonWhelpForge(),
   new Recipes.BlastFurnace(),

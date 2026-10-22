@@ -71,7 +71,7 @@ export * from "./Shatter";
 export * from "./Contagion";
 export * from "./Sacrifice";
 export * from "./NerubianAmbush";
-export * from "./PlagueCarrier";
+export * from "./Tripwire";
 export * from "./NerubianTower";
 export * from "./DragonWhelpForge";
 export * from "./BlastFurnace";

@@ -7665,67 +7665,67 @@ Nerubian Ambush
 }
 
 STRING 1892
-// Items: I050 (Plague Carrier), Tip (Tooltip - Basic)
+// Items: I050 (Tripwire), Tip (Tooltip - Basic)
 {
-Purchase Plague Carrier
+Purchase Tripwire
 }
 
 STRING 1893
-// Items: I050 (Plague Carrier), Description (Description)
+// Items: I050 (Tripwire), Description (Description)
 {
-Places plague mines underneath your hero. The first enemy to step on one carries the plague back into its pack before it bursts.
+Plants mines around your hero, each wired to the one before it. Enemies that cross a wire trip over it and set off both of its mines.
 }
 
 STRING 1894
-// Items: I050 (Plague Carrier), Ubertip (Tooltip - Extended)
+// Items: I050 (Tripwire), Ubertip (Tooltip - Extended)
 {
-Places plague mines underneath your hero. The first enemy to step on one carries the plague back into its pack before it bursts.
+Plants mines around your hero, each wired to the one before it. Enemies that cross a wire trip over it and set off both of its mines.
 }
 
 STRING 1895
-// Units: n00Y (Plague Carrier Mine), Name (Name)
+// Units: n00Y (Tripwire Mine), Name (Name)
 {
-Plague Carrier Mine
+Tripwire Mine
 }
 
 STRING 1896
-// Items: I051 (Plague Carrier), Tip (Tooltip - Basic)
+// Items: I051 (Tripwire), Tip (Tooltip - Basic)
 {
-Purchase Plague Carrier
+Purchase Tripwire
 }
 
 STRING 1897
-// Items: I051 (Plague Carrier), Ubertip (Tooltip - Extended)
+// Items: I051 (Tripwire), Ubertip (Tooltip - Extended)
 {
-Places a plague mine underneath your hero every 3 seconds. The first enemy ground unit to step on one is crippled and carries the plague off with it. 3 seconds later the plague bursts, hurting every enemy ground unit around the carrier.
+Plants a mine near your hero every 1.5 seconds, wired to the one planted before it, up to 6 mines. An enemy ground unit that crosses a wire trips over it: it is crippled, and both mines on the wire blow up, snapping every other wire tied to them.
 
-Damage: |cffffcc00300|r
-Cooldown: |cffffcc003s|r
-Area of effect: |cffffcc00250|r
+Damage: |cffffcc00175|r (per mine)
+Cooldown: |cffffcc001.5s|r
+Area of effect: |cffffcc00200|r (per mine)
+Wire length: |cffffcc00600|r (at most)
 Cripple duration: |cffffcc003s|r
 Targets: |cffffcc00ground only!|r
 Damage type: |cffffcc00spell|r
-Mine activation delay: |cffffcc004s|r
 }
 
 STRING 1898
-// Items: I051 (Plague Carrier), Description (Description)
+// Items: I051 (Tripwire), Description (Description)
 {
-Places a plague mine underneath your hero every 3 seconds. The first enemy ground unit to step on one is crippled and carries the plague off with it. 3 seconds later the plague bursts, hurting every enemy ground unit around the carrier.
+Plants a mine near your hero every 1.5 seconds, wired to the one planted before it, up to 6 mines. An enemy ground unit that crosses a wire trips over it: it is crippled, and both mines on the wire blow up, snapping every other wire tied to them.
 
-Damage: |cffffcc00300|r
-Cooldown: |cffffcc003s|r
-Area of effect: |cffffcc00250|r
+Damage: |cffffcc00175|r (per mine)
+Cooldown: |cffffcc001.5s|r
+Area of effect: |cffffcc00200|r (per mine)
+Wire length: |cffffcc00600|r (at most)
 Cripple duration: |cffffcc003s|r
 Targets: |cffffcc00ground only!|r
 Damage type: |cffffcc00spell|r
-Mine activation delay: |cffffcc004s|r
 }
 
 STRING 1899
-// Items: I050 (Plague Carrier), Name (Name)
+// Items: I050 (Tripwire), Name (Name)
 {
-Plague Carrier
+Tripwire
 }
 
 STRING 1900
@@ -7735,9 +7735,9 @@ Plague Trap Disease
 }
 
 STRING 1902
-// Items: I051 (Plague Carrier), Name (Name)
+// Items: I051 (Tripwire), Name (Name)
 {
-Plague Carrier
+Tripwire
 }
 
 STRING 1903
