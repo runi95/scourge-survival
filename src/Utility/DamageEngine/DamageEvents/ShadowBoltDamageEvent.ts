@@ -5,6 +5,7 @@ export class ShadowBoltDamageEvent implements DamageEvent {
   private readonly shadowBoltUnitTypeId = FourCC("u01Q");
   private readonly academyNecromancerUnitTypeId = FourCC("u01Y");
   private readonly shadowSpireUnitTypeId = FourCC("u026");
+  private readonly deathKnellBoltUnitTypeId = FourCC("u02I");
   private readonly curseAbilityId = FourCC("A016");
   private readonly maxLevel = 10;
   private readonly damagePerLevel = 0.1;
@@ -15,7 +16,8 @@ export class ShadowBoltDamageEvent implements DamageEvent {
     if (damageInstance.sourceOwningPlayerId > 8) return;
     if (
       damageInstance.sourceUnitTypeId !== this.shadowBoltUnitTypeId &&
-      damageInstance.sourceUnitTypeId !== this.academyNecromancerUnitTypeId
+      damageInstance.sourceUnitTypeId !== this.academyNecromancerUnitTypeId &&
+      damageInstance.sourceUnitTypeId !== this.deathKnellBoltUnitTypeId
     )
       return;
 

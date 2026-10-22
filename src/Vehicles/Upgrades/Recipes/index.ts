@@ -185,7 +185,7 @@ export * from "./NovaMine";
 export * from "./ClingingSwarm";
 export * from "./CreepingShadow";
 export * from "./DeathRay";
-export * from "./Skewer";
+export * from "./DeathKnell";
 export * from "./ShadowSpire";
 export * from "./ShadowVolley";
 export * from "./MeatWagon";

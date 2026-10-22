@@ -15649,65 +15649,67 @@ Death Ray
 }
 
 STRING 2927
-// Items: I0BS (Skewer), Tip (Tooltip - Basic)
+// Items: I0BS (Death Knell), Tip (Tooltip - Basic)
 {
-Purchase Skewer
+Purchase Death Knell
 }
 
 STRING 2928
-// Items: I0BS (Skewer), Description (Description)
+// Items: I0BS (Death Knell), Description (Description)
 {
-Hurls a lance of shadow and bone down the line with the most enemies. It skewers every enemy in its way, harder for every one it has already gone through.
+Fires shadow bolts at the weakest enemy unit. When a bolt kills, spikes burst out of the corpse and run on behind it.
 }
 
 STRING 2929
-// Items: I0BS (Skewer), Ubertip (Tooltip - Extended)
+// Items: I0BS (Death Knell), Ubertip (Tooltip - Extended)
 {
-Hurls a lance of shadow and bone down the line with the most enemies. It skewers every enemy in its way, harder for every one it has already gone through.
+Fires shadow bolts at the weakest enemy unit. When a bolt kills, spikes burst out of the corpse and run on behind it.
 }
 
 STRING 2930
-// Items: I0BS (Skewer), Name (Name)
+// Items: I0BS (Death Knell), Name (Name)
 {
-Skewer
+Death Knell
 }
 
 STRING 2931
-// Items: I0BT (Skewer), Tip (Tooltip - Basic)
+// Items: I0BT (Death Knell), Tip (Tooltip - Basic)
 {
-Purchase Skewer
+Purchase Death Knell
 }
 
 STRING 2932
-// Items: I0BT (Skewer), Ubertip (Tooltip - Extended)
+// Items: I0BT (Death Knell), Ubertip (Tooltip - Extended)
 {
-Hurls a lance of shadow and bone down the line with the most enemy units in it. The lance skewers and stuns every enemy unit in its way, dealing 40 more damage for every enemy it has already gone through.
+Fires a bolt of shadow at the enemy unit with the least life within range twice a second, cursing it like your Shadow Bolts do. When a bolt kills, spikes burst out of the corpse and run on the way the bolt was flying, hurting and stunning every enemy ground unit in the line. An enemy the spikes kill bursts the same way.
 
-Damage: |cffffcc0080|r + |cffffcc0040|r per enemy already skewered
-Cooldown: |cffffcc002s|r
-Distance: |cffffcc00900|r
-Stun duration: |cffffcc000.75s|r
-Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00magic|r
+Damage: |cffffcc0046 - 50|r (bolt) + |cffffcc00150|r (spikes)
+Cooldown: |cffffcc000.5s|r
+Range: |cffffcc00600|r
+Distance: |cffffcc00400|r (spikes)
+Stun duration: |cffffcc001s|r
+Targets: |cffffcc00air & ground|r (bolt), |cffffcc00ground only!|r (spikes)
+Damage type: |cffffcc00magic|r (bolt) + |cffffcc00spell|r (spikes)
 }
 
 STRING 2933
-// Items: I0BT (Skewer), Description (Description)
+// Items: I0BT (Death Knell), Description (Description)
 {
-Hurls a lance of shadow and bone down the line with the most enemy units in it. The lance skewers and stuns every enemy unit in its way, dealing 40 more damage for every enemy it has already gone through.
+Fires a bolt of shadow at the enemy unit with the least life within range twice a second, cursing it like your Shadow Bolts do. When a bolt kills, spikes burst out of the corpse and run on the way the bolt was flying, hurting and stunning every enemy ground unit in the line. An enemy the spikes kill bursts the same way.
 
-Damage: |cffffcc0080|r + |cffffcc0040|r per enemy already skewered
-Cooldown: |cffffcc002s|r
-Distance: |cffffcc00900|r
-Stun duration: |cffffcc000.75s|r
-Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00magic|r
+Damage: |cffffcc0046 - 50|r (bolt) + |cffffcc00150|r (spikes)
+Cooldown: |cffffcc000.5s|r
+Range: |cffffcc00600|r
+Distance: |cffffcc00400|r (spikes)
+Stun duration: |cffffcc001s|r
+Targets: |cffffcc00air & ground|r (bolt), |cffffcc00ground only!|r (spikes)
+Damage type: |cffffcc00magic|r (bolt) + |cffffcc00spell|r (spikes)
 }
 
 STRING 2934
-// Items: I0BT (Skewer), Name (Name)
+// Items: I0BT (Death Knell), Name (Name)
 {
-Skewer
+Death Knell
 }
 
 STRING 2935
@@ -20070,5 +20072,17 @@ STRING 3564
 // Abilities: A052 (Bracketing Fire (direct)), Name (Name)
 {
 Bracketing Fire (direct)
+}
+
+STRING 3565
+// Units: u02I (Death Knell Bolt), Name (Name)
+{
+Death Knell Bolt
+}
+
+STRING 3566
+// Units: u02J (Death Knell Spikes), Name (Name)
+{
+Death Knell Spikes
 }
 
