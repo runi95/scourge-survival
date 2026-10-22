@@ -13491,15 +13491,15 @@ Purchase Belfry
 }
 
 STRING 2654
-// Items: I09Y (Belfry), Description (Description)
+// Items: I09Y (item), Description (Description)
 {
-Places bat roosts underneath your hero. When an enemy steps on one, every roost sends its bats at that enemy at once.
+Bat roosts settle around your hero. When an enemy steps under one, every roost sends its bats at that enemy.
 }
 
 STRING 2655
-// Items: I09Y (Belfry), Ubertip (Tooltip - Extended)
+// Items: I09Y (item), Ubertip (Tooltip - Extended)
 {
-Places bat roosts underneath your hero. When an enemy steps on one, every roost sends its bats at that enemy at once.
+Bat roosts settle around your hero. When an enemy steps under one, every roost sends its bats at that enemy.
 }
 
 STRING 2656
@@ -13515,31 +13515,33 @@ Purchase Belfry
 }
 
 STRING 2658
-// Items: I09Z (Belfry), Ubertip (Tooltip - Extended)
+// Items: I09Z (merchant), Ubertip (Tooltip - Extended)
 {
-Places a bat roost underneath your hero every 4 seconds, up to 5 at a time. When an enemy ground unit steps on any of them, every roost sends a horde of bats at that enemy at once, damaging every enemy unit in their path. The bats need 4 seconds to return to their roosts.
+A bat roost settles near your hero every 2 seconds, on the side the enemies come from, up to 5 at a time. Once the bats have settled in, an enemy ground unit that steps under a roost stirs them all: every roost sends its horde of bats at that enemy at once, damaging every enemy unit in their path, and the roosts are left empty.
 
-Damage: |cffffcc0060|r (per horde)
-Cooldown: |cffffcc004s|r
+Damage: |cffffcc0075|r (per horde)
+Cooldown: |cffffcc002s|r (per roost)
 Roosts: |cffffcc005|r
+Settling time: |cffffcc003s|r
 Distance: |cffffcc00800|r
 Area of effect: |cffffcc00100 - 300|r
-Duration: |cffffcc0060s|r (roost)
+Duration: |cffffcc0030s|r (roost)
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 2659
-// Items: I09Z (Belfry), Description (Description)
+// Items: I09Z (merchant), Description (Description)
 {
-Places a bat roost underneath your hero every 4 seconds, up to 5 at a time. When an enemy ground unit steps on any of them, every roost sends a horde of bats at that enemy at once, damaging every enemy unit in their path. The bats need 4 seconds to return to their roosts.
+A bat roost settles near your hero every 2 seconds, on the side the enemies come from, up to 5 at a time. Once the bats have settled in, an enemy ground unit that steps under a roost stirs them all: every roost sends its horde of bats at that enemy at once, damaging every enemy unit in their path, and the roosts are left empty.
 
-Damage: |cffffcc0060|r (per horde)
-Cooldown: |cffffcc004s|r
+Damage: |cffffcc0075|r (per horde)
+Cooldown: |cffffcc002s|r (per roost)
 Roosts: |cffffcc005|r
+Settling time: |cffffcc003s|r
 Distance: |cffffcc00800|r
 Area of effect: |cffffcc00100 - 300|r
-Duration: |cffffcc0060s|r (roost)
+Duration: |cffffcc0030s|r (roost)
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
 }
