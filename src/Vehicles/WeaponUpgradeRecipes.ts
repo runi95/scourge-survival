@@ -180,7 +180,7 @@ export const weaponRecipes = [
   new Recipes.BitterCold(),
   new Recipes.FrostArmor(),
   new Recipes.IceCage(),
-  new Recipes.GlacialSpikes(),
+  new Recipes.Fracture(),
   new Recipes.GargoyleSpire(),
   new Recipes.GhoulPit(),
   new Recipes.DeathPact(),

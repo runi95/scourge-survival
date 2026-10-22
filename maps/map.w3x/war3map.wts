@@ -15011,71 +15011,69 @@ Ice Cage
 }
 
 STRING 2845
-// Items: I0B8 (Glacial Spikes), Tip (Tooltip - Basic)
+// Items: I0B8 (Fracture), Tip (Tooltip - Basic)
 {
-Purchase Glacial Spikes
+Purchase Fracture
 }
 
 STRING 2846
-// Items: I0B8 (Glacial Spikes), Description (Description)
+// Items: I0B8 (Fracture), Description (Description)
 {
-Impales the ground towards the largest enemy group, leaving a ridge of ice behind. Enemies on the ridge are slowed, and those killed while slowed shatter into more spikes.
+A crack of ice spikes races towards the largest enemy group, forking again and again like cracks in a frozen lake.
 }
 
 STRING 2847
-// Items: I0B8 (Glacial Spikes), Ubertip (Tooltip - Extended)
+// Items: I0B8 (Fracture), Ubertip (Tooltip - Extended)
 {
-Impales the ground towards the largest enemy group, leaving a ridge of ice behind. Enemies on the ridge are slowed, and those killed while slowed shatter into more spikes.
+A crack of ice spikes races towards the largest enemy group, forking again and again like cracks in a frozen lake.
 }
 
 STRING 2848
-// Items: I0B8 (Glacial Spikes), Name (Name)
+// Items: I0B8 (Fracture), Name (Name)
 {
-Glacial Spikes
+Fracture
 }
 
 STRING 2849
-// Items: I0B9 (Glacial Spikes), Tip (Tooltip - Basic)
+// Items: I0B9 (Fracture), Tip (Tooltip - Basic)
 {
-Purchase Glacial Spikes
+Purchase Fracture
 }
 
 STRING 2850
-// Items: I0B9 (Glacial Spikes), Ubertip (Tooltip - Extended)
+// Items: I0B9 (Fracture), Ubertip (Tooltip - Extended)
 {
-Drives a line of ice spikes towards the largest enemy group within range, hurting and stunning every enemy ground unit in it. The spikes leave a ridge of ice for 4 seconds that slows every enemy standing on it. An enemy killed while slowed by the ridge shatters, and spikes burst out of where it died towards the nearest enemy.
+A crack of ice spikes races towards the largest enemy group within range. Every 120 it forks in two, 3 times, spreading out like cracks in a frozen lake. Every enemy ground unit a crack runs through is hurt, stunned and chilled.
 
-Damage: |cffffcc00200|r
+Damage: |cffffcc00150|r
 Slow: |cffffcc00-50% movement speed for 3s|r
-Cooldown: |cffffcc002s|r
-Range: |cffffcc00600|r
-Distance: |cffffcc00600|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00700|r
+Distance: |cffffcc00480|r
 Stun duration: |cffffcc001s|r
-Ridge duration: |cffffcc004s|r
 Targets: |cffffcc00ground only!|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 2851
-// Items: I0B9 (Glacial Spikes), Description (Description)
+// Items: I0B9 (Fracture), Description (Description)
 {
-Drives a line of ice spikes towards the largest enemy group within range, hurting and stunning every enemy ground unit in it. The spikes leave a ridge of ice for 4 seconds that slows every enemy standing on it. An enemy killed while slowed by the ridge shatters, and spikes burst out of where it died towards the nearest enemy.
+A crack of ice spikes races towards the largest enemy group within range. Every 120 it forks in two, 3 times, spreading out like cracks in a frozen lake. Every enemy ground unit a crack runs through is hurt, stunned and chilled.
 
-Damage: |cffffcc00200|r
+Damage: |cffffcc00150|r
 Slow: |cffffcc00-50% movement speed for 3s|r
-Cooldown: |cffffcc002s|r
-Range: |cffffcc00600|r
-Distance: |cffffcc00600|r
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00700|r
+Distance: |cffffcc00480|r
 Stun duration: |cffffcc001s|r
-Ridge duration: |cffffcc004s|r
 Targets: |cffffcc00ground only!|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 2852
-// Items: I0B9 (Glacial Spikes), Name (Name)
+// Items: I0B9 (Fracture), Name (Name)
 {
-Glacial Spikes
+Fracture
 }
 
 STRING 2853
@@ -20003,9 +20001,9 @@ Frost Armor (weapon)
 }
 
 STRING 3552
-// Abilities: A050 (Glacial Spikes), Name (Name)
+// Abilities: A050 (Fracture), Name (Name)
 {
-Glacial Spikes
+Fracture
 }
 
 STRING 3553
