@@ -16025,15 +16025,15 @@ Purchase Haunting
 }
 
 STRING 2976
-// Items: I0C4 (Haunting), Description (Description)
+// Items: I0C4 (item), Description (Description)
 {
-A flock of spirits settles over the largest enemy group and haunts it, striking it again and again.
+A haunted flock of bats flies out to the largest enemy group and hovers over it, dropping spirits onto the enemies below.
 }
 
 STRING 2977
-// Items: I0C4 (Haunting), Ubertip (Tooltip - Extended)
+// Items: I0C4 (item), Ubertip (Tooltip - Extended)
 {
-A flock of spirits settles over the largest enemy group and haunts it, striking it again and again.
+A haunted flock of bats flies out to the largest enemy group and hovers over it, dropping spirits onto the enemies below.
 }
 
 STRING 2978
@@ -16049,11 +16049,11 @@ Purchase Haunting
 }
 
 STRING 2980
-// Items: I0C5 (Haunting), Ubertip (Tooltip - Extended)
+// Items: I0C5 (merchant), Ubertip (Tooltip - Extended)
 {
-Every 5 seconds a flock of spirits settles over the largest enemy group within range and haunts it for 4 seconds. It follows the group around and strikes a random enemy unit in it 5 times a second.
+Every 5 seconds a haunted flock of bats flies out to the largest enemy group within range and hovers over it for 4 seconds, following it around. Spirits drop out of the flock onto a random enemy unit below it 5 times a second.
 
-Damage: |cffffcc0045|r (per strike)
+Damage: |cffffcc0046 - 50|r (per spirit)
 Cooldown: |cffffcc005s|r
 Range: |cffffcc00700|r
 Area of effect: |cffffcc00250|r
@@ -16063,11 +16063,11 @@ Damage type: |cffffcc00piercing|r
 }
 
 STRING 2981
-// Items: I0C5 (Haunting), Description (Description)
+// Items: I0C5 (merchant), Description (Description)
 {
-Every 5 seconds a flock of spirits settles over the largest enemy group within range and haunts it for 4 seconds. It follows the group around and strikes a random enemy unit in it 5 times a second.
+Every 5 seconds a haunted flock of bats flies out to the largest enemy group within range and hovers over it for 4 seconds, following it around. Spirits drop out of the flock onto a random enemy unit below it 5 times a second.
 
-Damage: |cffffcc0045|r (per strike)
+Damage: |cffffcc0046 - 50|r (per spirit)
 Cooldown: |cffffcc005s|r
 Range: |cffffcc00700|r
 Area of effect: |cffffcc00250|r
@@ -20084,5 +20084,17 @@ STRING 3566
 // Units: u02J (Death Knell Spikes), Name (Name)
 {
 Death Knell Spikes
+}
+
+STRING 3567
+// Units: u02K (Haunted Flock), Name (Name)
+{
+Haunted Flock
+}
+
+STRING 3568
+// Units: u02L (Haunting Spirit), Name (Name)
+{
+Haunting Spirit
 }
 

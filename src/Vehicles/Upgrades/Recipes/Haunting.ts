@@ -1,4 +1,4 @@
-import { Effect, Item, MapPlayer, Point, Timer, Unit } from "w3ts";
+import { Item, MapPlayer, Point, Timer, Unit } from "w3ts";
 import { TimerUtils } from "../../../Utility/TimerUtils";
 import { Vehicle } from "../../Vehicle";
 import { Globals } from "../../../Utility/Globals";
@@ -7,9 +7,9 @@ import { WeaponUpgradeRecipe } from "../../WeaponUpgradeRecipe";
 import { RandomNumberGenerator } from "../../../Utility/RandomNumberGenerator";
 import { Group } from "../../../Utility/Group";
 
-// A flock of spirits settles over the largest group and haunts it for 4
-// seconds, following it around and striking a random enemy in it 5 times a
-// second
+// A haunted flock of bats flies out to the largest group and hovers over it
+// for 4 seconds, following it around, while spirits drop out of it onto a
+// random enemy below 5 times a second
 export class Haunting extends WeaponUpgradeRecipe {
   public readonly cooldown = 5;
   public readonly itemTypeId = FourCC("I0C4");
@@ -17,7 +17,8 @@ export class Haunting extends WeaponUpgradeRecipe {
   public readonly recipe: number[] = [FourCC("I02K"), FourCC("I05L")];
 
   private readonly timers = new Map<number, Timer>();
-  private readonly dummyUnitId: number = FourCC("u000");
+  private readonly flockUnitTypeId: number = FourCC("u02K");
+  private readonly spiritUnitTypeId: number = FourCC("u02L");
 
   public onAcquire(
     vehicle: Vehicle,
@@ -35,7 +36,7 @@ export class Haunting extends WeaponUpgradeRecipe {
       );
 
       const anchor = this.largestGroup(vehicle.unit, owner);
-      if (anchor != null) this.haunt(owner, anchor);
+      if (anchor != null) this.haunt(owner, vehicle.unit, anchor);
     });
   }
 
@@ -51,75 +52,60 @@ export class Haunting extends WeaponUpgradeRecipe {
     TimerUtils.releaseTimer(t);
   }
 
-  private haunt(owner: MapPlayer, anchor: Unit): void {
+  // The flock flies out from the hero, at most 2.5 seconds, then haunts the
+  // group for 4 seconds, following the enemy it settled on while it lives.
+  // A spirit drops out of it every 0.2 seconds
+  private haunt(owner: MapPlayer, hero: Unit, anchor: Unit): void {
+    const flock = Unit.create(owner, this.flockUnitTypeId, hero.x, hero.y);
+    flock.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 8);
     let { x, y } = anchor;
-    const dummy = Unit.create(owner, this.dummyUnitId, x, y);
-    dummy.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 5);
-    const spirits: Effect[] = [];
-    for (let i = 0; i < 5; i++) {
-      const spirit = Effect.create(
-        "Abilities/Weapons/ZigguratMissile/ZigguratMissile.mdl",
-        x,
-        y,
-      );
-      spirit.setHeight(150);
-      spirits.push(spirit);
-    }
-
     const at = Point.create(x, y);
-    let elapsed = 0;
-    let strikes = 0;
+    let flying = 0;
+    let haunting = -1;
     const t = TimerUtils.newTimer();
-    t.start(0.05, true, () => {
-      elapsed += 0.05;
-      // It follows the group while the enemy it settled on lives
+    t.start(0.2, true, () => {
       if (anchor.isAlive()) {
         x = anchor.x;
         y = anchor.y;
       }
-      for (let i = 0; i < spirits.length; i++) {
-        const angle = elapsed * 4 + (i * 2 * Math.PI) / spirits.length;
-        spirits[i].x = x + 150 * Math.cos(angle);
-        spirits[i].y = y + 150 * Math.sin(angle);
+      const dx = x - flock.x;
+      const dy = y - flock.y;
+      if (dx * dx + dy * dy > 50 * 50) flock.issueOrderAt("move", x, y);
+      if (haunting < 0) {
+        flying += 0.2;
+        if (dx * dx + dy * dy > 150 * 150 && flying < 2.5) return;
+        haunting = 0;
       }
 
-      if (elapsed >= 0.2 * (strikes + 1)) {
-        strikes++;
-        at.setPosition(x, y);
-        const haunted: Unit[] = [];
-        const grp = Group.fromRange(250, at);
-        grp.for((u) => {
-          if (!u.isAlive()) return;
-          if (!u.isEnemy(owner)) return;
-          if (u.isUnitType(UNIT_TYPE_STRUCTURE)) return;
+      haunting += 0.2;
+      at.setPosition(flock.x, flock.y);
+      const haunted: Unit[] = [];
+      const grp = Group.fromRange(250, at);
+      grp.for((u) => {
+        if (!u.isAlive()) return;
+        if (!u.isEnemy(owner)) return;
+        if (u.isUnitType(UNIT_TYPE_STRUCTURE)) return;
 
-          haunted.push(u);
-        });
-        grp.destroy();
-        if (haunted.length > 0) {
-          const victim =
-            haunted[RandomNumberGenerator.random(0, haunted.length - 1)];
-          Effect.createAttachment(
-            "Abilities/Weapons/ZigguratMissile/ZigguratMissile.mdl",
-            victim,
-            "chest",
-          ).destroy();
-          dummy.damageTarget(
-            victim.handle,
-            45,
-            false,
-            false,
-            ATTACK_TYPE_PIERCE,
-            DAMAGE_TYPE_NORMAL,
-            WEAPON_TYPE_WHOKNOWS,
-          );
-        }
+        haunted.push(u);
+      });
+      grp.destroy();
+      if (haunted.length > 0) {
+        const victim =
+          haunted[RandomNumberGenerator.random(0, haunted.length - 1)];
+        const spirit = Unit.create(
+          owner,
+          this.spiritUnitTypeId,
+          flock.x,
+          flock.y,
+        );
+        spirit.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 1.5);
+        spirit.issueTargetOrder("attack", victim);
       }
-      if (elapsed < 4) return;
+      if (haunting < 4) return;
 
       TimerUtils.releaseTimer(t);
       at.destroy();
-      for (const spirit of spirits) spirit.destroy();
+      flock.destroy();
     });
   }
 
