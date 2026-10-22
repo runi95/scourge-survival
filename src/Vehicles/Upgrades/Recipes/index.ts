@@ -70,7 +70,7 @@ export * from "./ImpalingCross";
 export * from "./Shatter";
 export * from "./Contagion";
 export * from "./Sacrifice";
-export * from "./Rupture";
+export * from "./NerubianAmbush";
 export * from "./PlagueCarrier";
 export * from "./NerubianTower";
 export * from "./DragonWhelpForge";

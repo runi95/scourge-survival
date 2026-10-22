@@ -7601,67 +7601,67 @@ Sacrifice
 }
 
 STRING 1882
-// Items: I04Y (Rupture), Tip (Tooltip - Basic)
+// Items: I04Y (Nerubian Ambush), Tip (Tooltip - Basic)
 {
-Purchase Rupture
+Purchase Nerubian Ambush
 }
 
 STRING 1883
-// Items: I04Y (Rupture), Description (Description)
+// Items: I04Y (Nerubian Ambush), Description (Description)
 {
-Impales the ground towards a random enemy unit. Crippled enemies hit by the spikes rupture and send the spikes on.
+Cripples the farthest enemy unit and sends spikes burrowing after it, impaling everything on their way.
 }
 
 STRING 1884
-// Items: I04Y (Rupture), Ubertip (Tooltip - Extended)
+// Items: I04Y (Nerubian Ambush), Ubertip (Tooltip - Extended)
 {
-Impales the ground towards a random enemy unit. Crippled enemies hit by the spikes rupture and send the spikes on.
+Cripples the farthest enemy unit and sends spikes burrowing after it, impaling everything on their way.
 }
 
 STRING 1885
-// Items: I04Y (Rupture), Name (Name)
+// Items: I04Y (Nerubian Ambush), Name (Name)
 {
-Rupture
+Nerubian Ambush
 }
 
 STRING 1886
-// Items: I04Z (Rupture), Tip (Tooltip - Basic)
+// Items: I04Z (Nerubian Ambush), Tip (Tooltip - Basic)
 {
-Purchase Rupture
+Purchase Nerubian Ambush
 }
 
 STRING 1887
-// Items: I04Z (Rupture), Ubertip (Tooltip - Extended)
+// Items: I04Z (Nerubian Ambush), Ubertip (Tooltip - Extended)
 {
-Impales the ground towards a random enemy unit within range. Every enemy the spikes hit is crippled. An enemy that is already crippled ruptures instead, taking extra damage, and the spikes burst out of it towards the next enemy nearby, up to 3 times in a row.
+Cripples the enemy ground unit farthest from your hero and sends spikes burrowing after it. They curve to follow it, impaling every enemy ground unit on their way, and erupt under it once they catch up, tossing it and the enemies behind it into the air.
 
-Damage: |cffffcc00150|r (spikes) + |cffffcc00150|r (rupture)
+Damage: |cffffcc0080|r (on the way) + |cffffcc00150|r (eruption) + |cffffcc00200|r (prey)
 Cooldown: |cffffcc002s|r
-Range: |cffffcc00450|r
-Stun duration: |cffffcc001s|r
+Range: |cffffcc00700|r
+Stun duration: |cffffcc001s|r (eruption)
 Cripple duration: |cffffcc003s|r
 Targets: |cffffcc00ground only!|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 1888
-// Items: I04Z (Rupture), Description (Description)
+// Items: I04Z (Nerubian Ambush), Description (Description)
 {
-Impales the ground towards a random enemy unit within range. Every enemy the spikes hit is crippled. An enemy that is already crippled ruptures instead, taking extra damage, and the spikes burst out of it towards the next enemy nearby, up to 3 times in a row.
+Cripples the enemy ground unit farthest from your hero and sends spikes burrowing after it. They curve to follow it, impaling every enemy ground unit on their way, and erupt under it once they catch up, tossing it and the enemies behind it into the air.
 
-Damage: |cffffcc00150|r (spikes) + |cffffcc00150|r (rupture)
+Damage: |cffffcc0080|r (on the way) + |cffffcc00150|r (eruption) + |cffffcc00200|r (prey)
 Cooldown: |cffffcc002s|r
-Range: |cffffcc00450|r
-Stun duration: |cffffcc001s|r
+Range: |cffffcc00700|r
+Stun duration: |cffffcc001s|r (eruption)
 Cripple duration: |cffffcc003s|r
 Targets: |cffffcc00ground only!|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 1889
-// Items: I04Z (Rupture), Name (Name)
+// Items: I04Z (Nerubian Ambush), Name (Name)
 {
-Rupture
+Nerubian Ambush
 }
 
 STRING 1892
@@ -19946,12 +19946,6 @@ STRING 3538
 // Units: u017 (Carrion Beetle), EditorSuffix (Name - Editor Suffix)
 {
 (Carrion Beetle Nest)
-}
-
-STRING 3540
-// Units: u027 (Rupture Caster), Name (Name)
-{
-Rupture Caster
 }
 
 STRING 3541
