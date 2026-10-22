@@ -151,7 +151,7 @@ export * from "./HuntersSpear";
 export * from "./NetVolley";
 export * from "./SpearVolley";
 export * from "./NightTerror";
-export * from "./DeathMarch";
+export * from "./Dreadlord";
 export * from "./Belfry";
 export * from "./ScatteringSwarm";
 export * from "./Nightfall";

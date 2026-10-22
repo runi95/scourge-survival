@@ -13423,67 +13423,65 @@ Night Terror
 }
 
 STRING 2645
-// Items: I09W (Death March), Tip (Tooltip - Basic)
+// Items: I09W (Dreadlord), Tip (Tooltip - Basic)
 {
-Purchase Death March
+Purchase Dreadlord
 }
 
 STRING 2646
-// Items: I09W (Death March), Description (Description)
+// Items: I09W (Dreadlord), Description (Description)
 {
-Raises a row of Skeleton Warriors that charge like a swarm into the largest enemy group, trampling everything in their path, then stay to fight.
+Raises a Dreadlord that fights by your side and flies through enemy groups as a swarm of bats.
 }
 
 STRING 2647
-// Items: I09W (Death March), Ubertip (Tooltip - Extended)
+// Items: I09W (Dreadlord), Ubertip (Tooltip - Extended)
 {
-Raises a row of Skeleton Warriors that charge like a swarm into the largest enemy group, trampling everything in their path, then stay to fight.
+Raises a Dreadlord that fights by your side and flies through enemy groups as a swarm of bats.
 }
 
 STRING 2648
-// Items: I09W (Death March), Name (Name)
+// Items: I09W (Dreadlord), Name (Name)
 {
-Death March
+Dreadlord
 }
 
 STRING 2649
-// Items: I09X (Death March), Tip (Tooltip - Basic)
+// Items: I09X (Dreadlord), Tip (Tooltip - Basic)
 {
-Purchase Death March
+Purchase Dreadlord
 }
 
 STRING 2650
-// Items: I09X (Death March), Ubertip (Tooltip - Extended)
+// Items: I09X (Dreadlord), Ubertip (Tooltip - Extended)
 {
-Raises 3 Skeleton Warriors in a row every 10 seconds. They charge like a swarm towards the largest enemy group, trampling every enemy ground unit in their path, then stay to fight by your side.
+Raises a Dreadlord next to your hero that fights by your side, and raises it again 10 seconds after it falls. Every 3 seconds the Dreadlord scatters into a swarm of bats, flies through the largest enemy group near it, biting every enemy unit in its path, and takes shape again on the far side.
 
-Damage: |cffffcc00100|r (trample) + |cffffcc0026 - 42|r (attack)
-Cooldown: |cffffcc0010s|r
-Charge distance: |cffffcc00800|r
-Health: |cffffcc00200|r
-Duration: |cffffcc0020s|r
-Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00normal|r
+Damage: |cffffcc0044 - 60|r (attack) + |cffffcc0075|r (swarm)
+Cooldown: |cffffcc003s|r (swarm)
+Health: |cffffcc00800|r
+Range: |cffffcc00700|r (swarm)
+Targets: |cffffcc00ground only!|r (attack), |cffffcc00air & ground|r (swarm)
+Damage type: |cffffcc00normal|r (attack), |cffffcc00spell|r (swarm)
 }
 
 STRING 2651
-// Items: I09X (Death March), Description (Description)
+// Items: I09X (Dreadlord), Description (Description)
 {
-Raises 3 Skeleton Warriors in a row every 10 seconds. They charge like a swarm towards the largest enemy group, trampling every enemy ground unit in their path, then stay to fight by your side.
+Raises a Dreadlord next to your hero that fights by your side, and raises it again 10 seconds after it falls. Every 3 seconds the Dreadlord scatters into a swarm of bats, flies through the largest enemy group near it, biting every enemy unit in its path, and takes shape again on the far side.
 
-Damage: |cffffcc00100|r (trample) + |cffffcc0026 - 42|r (attack)
-Cooldown: |cffffcc0010s|r
-Charge distance: |cffffcc00800|r
-Health: |cffffcc00200|r
-Duration: |cffffcc0020s|r
-Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00normal|r
+Damage: |cffffcc0044 - 60|r (attack) + |cffffcc0075|r (swarm)
+Cooldown: |cffffcc003s|r (swarm)
+Health: |cffffcc00800|r
+Range: |cffffcc00700|r (swarm)
+Targets: |cffffcc00ground only!|r (attack), |cffffcc00air & ground|r (swarm)
+Damage type: |cffffcc00normal|r (attack), |cffffcc00spell|r (swarm)
 }
 
 STRING 2652
-// Items: I09X (Death March), Name (Name)
+// Items: I09X (Dreadlord), Name (Name)
 {
-Death March
+Dreadlord
 }
 
 STRING 2653
@@ -20072,5 +20070,11 @@ STRING 3561
 // Items: I0C1 (Meat Wagon), Name (Name)
 {
 Meat Wagon
+}
+
+STRING 3562
+// Units: u02H (Dreadlord), Name (Name)
+{
+Dreadlord
 }
 
