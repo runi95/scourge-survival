@@ -162,7 +162,7 @@ export * from "./Possession";
 export * from "./BracketingFire";
 export * from "./CryptFiendDen";
 export * from "./BlackArrow";
-export * from "./IceTomb";
+export * from "./Avalanche";
 export * from "./FrostwingSwarm";
 export * from "./BlackIce";
 export * from "./FrostBrood";
