@@ -158,7 +158,7 @@ export * from "./Nightfall";
 export * from "./Uprising";
 export * from "./PlungingSwarm";
 export * from "./CorpseMine";
-export * from "./SoulRend";
+export * from "./Possession";
 export * from "./Shrapnel";
 export * from "./CryptFiendDen";
 export * from "./BlackArrow";

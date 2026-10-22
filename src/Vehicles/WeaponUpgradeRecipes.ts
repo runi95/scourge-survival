@@ -163,7 +163,7 @@ export const weaponRecipes = [
   new Recipes.Uprising(),
   new Recipes.PlungingSwarm(),
   new Recipes.CorpseMine(),
-  new Recipes.SoulRend(),
+  new Recipes.Possession(),
   new Recipes.Shrapnel(),
   new Recipes.CryptFiendDen(),
   new Recipes.BlackArrow(),
