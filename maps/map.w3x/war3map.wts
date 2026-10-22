@@ -14551,67 +14551,65 @@ Frost Rockets
 }
 
 STRING 2787
-// Items: I0AU (Frozen Soul), Tip (Tooltip - Basic)
+// Items: I0AU (Implosion), Tip (Tooltip - Basic)
 {
-Purchase Frozen Soul
+Purchase Implosion
 }
 
 STRING 2788
-// Items: I0AU (Frozen Soul), Description (Description)
+// Items: I0AU (Implosion), Description (Description)
 {
-Freezes the soul of the strongest enemy unit. Every enemy that dies near it makes the frozen soul burst in a Frost Nova.
+A ring of shadow bolts closes in on the largest enemy group from every side and bursts in a Frost Nova where they meet.
 }
 
 STRING 2789
-// Items: I0AU (Frozen Soul), Ubertip (Tooltip - Extended)
+// Items: I0AU (Implosion), Ubertip (Tooltip - Extended)
 {
-Freezes the soul of the strongest enemy unit. Every enemy that dies near it makes the frozen soul burst in a Frost Nova.
+A ring of shadow bolts closes in on the largest enemy group from every side and bursts in a Frost Nova where they meet.
 }
 
 STRING 2790
-// Items: I0AU (Frozen Soul), Name (Name)
+// Items: I0AU (Implosion), Name (Name)
 {
-Frozen Soul
+Implosion
 }
 
 STRING 2791
-// Items: I0AV (Frozen Soul), Tip (Tooltip - Basic)
+// Items: I0AV (Implosion), Tip (Tooltip - Basic)
 {
-Purchase Frozen Soul
+Purchase Implosion
 }
 
 STRING 2792
-// Items: I0AV (Frozen Soul), Ubertip (Tooltip - Extended)
+// Items: I0AV (Implosion), Ubertip (Tooltip - Extended)
 {
-Every 6 seconds freezes the soul of the enemy unit with the most life within range, and it bursts in a Frost Nova. Shadow bolts finish off the weakest enemies around it, and every enemy unit that dies near it makes the frozen soul burst in another Frost Nova, damaging it and slowing every enemy around it. When the frozen enemy itself dies, its soul shatters in one last nova.
+A ring of 12 shadow bolts forms around the largest enemy group and closes in on it from every side, hurting and cursing every enemy unit it passes through, like your Shadow Bolts do. Where the bolts meet, their cold bursts in a Frost Nova that hurts every enemy unit around it 20% more for every curse it carries.
 
-Damage: |cffffcc0020 - 24|r (bolt) + |cffffcc0060|r (nova target) + |cffffcc0040|r (nova area)
-Slow: |cffffcc00-50% movement speed for 3s|r
-Cooldown: |cffffcc006s|r (soul) + |cffffcc000.75s|r (bolt)
-Range: |cffffcc00700|r
-Area of effect: |cffffcc00400|r (deaths) + |cffffcc00200|r (nova)
+Damage: |cffffcc0010|r (bolt) + |cffffcc0040|r (|cffffcc00+20%|r per curse) burst
+Cooldown: |cffffcc005s|r
+Range: |cffffcc00800|r
+Area of effect: |cffffcc00450|r (ring), |cffffcc00250|r (burst)
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00magic|r (bolt) + |cffffcc00spell|r (nova)
+Damage type: |cffffcc00magic|r
 }
 
 STRING 2793
-// Items: I0AV (Frozen Soul), Description (Description)
+// Items: I0AV (Implosion), Description (Description)
 {
-Every 6 seconds freezes the soul of the enemy unit with the most life within range, and it bursts in a Frost Nova. Shadow bolts finish off the weakest enemies around it, and every enemy unit that dies near it makes the frozen soul burst in another Frost Nova, damaging it and slowing every enemy around it. When the frozen enemy itself dies, its soul shatters in one last nova.
+A ring of 12 shadow bolts forms around the largest enemy group and closes in on it from every side, hurting and cursing every enemy unit it passes through, like your Shadow Bolts do. Where the bolts meet, their cold bursts in a Frost Nova that hurts every enemy unit around it 20% more for every curse it carries.
 
-Damage: |cffffcc0020 - 24|r (bolt) + |cffffcc0060|r (nova target) + |cffffcc0040|r (nova area)
-Slow: |cffffcc00-50% movement speed for 3s|r
-Cooldown: |cffffcc006s|r (soul) + |cffffcc000.75s|r (bolt)
-Range: |cffffcc00700|r
-Area of effect: |cffffcc00400|r (deaths) + |cffffcc00200|r (nova)
+Damage: |cffffcc0010|r (bolt) + |cffffcc0040|r (|cffffcc00+20%|r per curse) burst
+Cooldown: |cffffcc005s|r
+Range: |cffffcc00800|r
+Area of effect: |cffffcc00450|r (ring), |cffffcc00250|r (burst)
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00magic|r (bolt) + |cffffcc00spell|r (nova)
+Damage type: |cffffcc00magic|r
 }
 
 STRING 2794
-// Items: I0AV (Frozen Soul), Name (Name)
+// Items: I0AV (Implosion), Name (Name)
 {
-Frozen Soul
+Implosion
 }
 
 STRING 2795

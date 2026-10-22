@@ -168,7 +168,7 @@ export * from "./BlackIce";
 export * from "./FrostBrood";
 export * from "./FrostRevenants";
 export * from "./FrostRockets";
-export * from "./FrozenSoul";
+export * from "./Implosion";
 export * from "./FrostSpire";
 export * from "./BreathOfFrost";
 export * from "./RavenousWyrm";
