@@ -189,7 +189,7 @@ export const weaponRecipes = [
   new Recipes.NovaMine(),
   new Recipes.ClingingSwarm(),
   new Recipes.CreepingShadow(),
-  new Recipes.OrbOfAnnihilation(),
+  new Recipes.DeathRay(),
   new Recipes.Skewer(),
   new Recipes.ShadowSpire(),
   new Recipes.ShadowVolley(),

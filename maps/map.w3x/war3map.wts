@@ -15587,67 +15587,65 @@ Creeping Shadow
 }
 
 STRING 2919
-// Items: I0BQ (Orb of Annihilation), Tip (Tooltip - Basic)
+// Items: I0BQ (Death Ray), Tip (Tooltip - Basic)
 {
-Purchase Orb of Annihilation
+Purchase Death Ray
 }
 
 STRING 2920
-// Items: I0BQ (Orb of Annihilation), Description (Description)
+// Items: I0BQ (Death Ray), Description (Description)
 {
-Lobs the Destroyer's Orb of Annihilation at the largest enemy group. It bounces on twice more to the nearest enemy it missed, blasting everything around every place it lands.
+A goblin-built ray of shadow sweeps across the largest enemy group, cursing everything it crosses.
 }
 
 STRING 2921
-// Items: I0BQ (Orb of Annihilation), Ubertip (Tooltip - Extended)
+// Items: I0BQ (Death Ray), Ubertip (Tooltip - Extended)
 {
-Lobs the Destroyer's Orb of Annihilation at the largest enemy group. It bounces on twice more to the nearest enemy it missed, blasting everything around every place it lands.
+A goblin-built ray of shadow sweeps across the largest enemy group, cursing everything it crosses.
 }
 
 STRING 2922
-// Items: I0BQ (Orb of Annihilation), Name (Name)
+// Items: I0BQ (Death Ray), Name (Name)
 {
-Orb of Annihilation
+Death Ray
 }
 
 STRING 2923
-// Items: I0BR (Orb of Annihilation), Tip (Tooltip - Basic)
+// Items: I0BR (Death Ray), Tip (Tooltip - Basic)
 {
-Purchase Orb of Annihilation
+Purchase Death Ray
 }
 
 STRING 2924
-// Items: I0BR (Orb of Annihilation), Ubertip (Tooltip - Extended)
+// Items: I0BR (Death Ray), Ubertip (Tooltip - Extended)
 {
-Lobs the Destroyer's Orb of Annihilation at the largest enemy group within range. It bounces on twice more, each time to the nearest enemy unit it has not blasted yet, blasting every enemy unit around every place it lands.
+A goblin-built ray of shadow sweeps 90 degrees across the largest enemy group within range in 1.5 seconds. It hurts every enemy unit it crosses, 10% harder for every curse already on it, and curses it like your Shadow Bolts do.
 
-Damage: |cffffcc003 x 70|r
-Cooldown: |cffffcc002.5s|r
-Range: |cffffcc00700|r
-Bounce range: |cffffcc00450|r
-Area of effect: |cffffcc00175|r
+Damage: |cffffcc00100|r (|cffffcc00+10%|r per curse)
+Cooldown: |cffffcc004s|r
+Range: |cffffcc00600|r
+Sweep: |cffffcc0090°|r in |cffffcc001.5s|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00magic|r
 }
 
 STRING 2925
-// Items: I0BR (Orb of Annihilation), Description (Description)
+// Items: I0BR (Death Ray), Description (Description)
 {
-Lobs the Destroyer's Orb of Annihilation at the largest enemy group within range. It bounces on twice more, each time to the nearest enemy unit it has not blasted yet, blasting every enemy unit around every place it lands.
+A goblin-built ray of shadow sweeps 90 degrees across the largest enemy group within range in 1.5 seconds. It hurts every enemy unit it crosses, 10% harder for every curse already on it, and curses it like your Shadow Bolts do.
 
-Damage: |cffffcc003 x 70|r
-Cooldown: |cffffcc002.5s|r
-Range: |cffffcc00700|r
-Bounce range: |cffffcc00450|r
-Area of effect: |cffffcc00175|r
+Damage: |cffffcc00100|r (|cffffcc00+10%|r per curse)
+Cooldown: |cffffcc004s|r
+Range: |cffffcc00600|r
+Sweep: |cffffcc0090°|r in |cffffcc001.5s|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00magic|r
 }
 
 STRING 2926
-// Items: I0BR (Orb of Annihilation), Name (Name)
+// Items: I0BR (Death Ray), Name (Name)
 {
-Orb of Annihilation
+Death Ray
 }
 
 STRING 2927
