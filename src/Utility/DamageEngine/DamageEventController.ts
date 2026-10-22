@@ -22,7 +22,7 @@ import { IronhideDamageEvent } from "./DamageEvents/IronhideDamageEvent";
 import { BlackArrowDamageEvent } from "./DamageEvents/BlackArrowDamageEvent";
 import { BlackIceDamageEvent } from "./DamageEvents/BlackIceDamageEvent";
 import { RavenousWyrmDamageEvent } from "./DamageEvents/RavenousWyrmDamageEvent";
-import { CarrionFeastDamageEvent } from "./DamageEvents/CarrionFeastDamageEvent";
+import { ClingingSwarmDamageEvent } from "./DamageEvents/ClingingSwarmDamageEvent";
 
 export interface ExtendedDamageInstance extends DamageInstance {
   sourceOwningPlayer: player;
@@ -148,7 +148,7 @@ export class DamageEventController {
       DamageEventType.AfterDamageEvent,
     );
     DamageEngine.register(
-      new CarrionFeastDamageEvent(),
+      new ClingingSwarmDamageEvent(),
       DamageEventType.AfterDamageEvent,
     );
   }

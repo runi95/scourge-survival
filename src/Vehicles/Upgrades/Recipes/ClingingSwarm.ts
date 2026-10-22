@@ -4,11 +4,12 @@ import { Vehicle } from "../../Vehicle";
 import { Globals } from "../../../Utility/Globals";
 import { weaponDummyAbilityIds } from "../../../Utility/WeaponDummyAbilityIds";
 import { WeaponUpgradeRecipe } from "../../WeaponUpgradeRecipe";
+import { RandomNumberGenerator } from "../../../Utility/RandomNumberGenerator";
 import { Group } from "../../../Utility/Group";
 
-// Sends carrion bats from a Carrion Feast Caster; CarrionFeastDamageEvent
-// cripples what they hit and devours it once it is weak enough
-export class CarrionFeast extends WeaponUpgradeRecipe {
+// Sends a swarm of bats from a Clinging Swarm Caster at a random enemy;
+// ClingingSwarmDamageEvent latches a bat onto every enemy it hits
+export class ClingingSwarm extends WeaponUpgradeRecipe {
   public readonly cooldown = 3;
   public readonly itemTypeId = FourCC("I0BM");
   public readonly merchantItemTypeId = FourCC("I0BN");
@@ -28,21 +29,15 @@ export class CarrionFeast extends WeaponUpgradeRecipe {
     const t: Timer = TimerUtils.newTimer();
     this.timers.set(itemId, t);
     t.start(this.cooldown, true, () => {
-      // Carrion bats go for the most wounded
-      let target: Unit | undefined;
-      const grp = Group.fromRange(600, vehicle.unit.point);
+      const enemies: Unit[] = [];
+      const grp = Group.fromRange(700, vehicle.unit.point);
       grp.for((u) => {
         if (!u.isAlive()) return;
         if (!u.isVisible(owner)) return;
         if (!u.isEnemy(owner)) return;
         if (u.isUnitType(UNIT_TYPE_STRUCTURE)) return;
 
-        if (
-          target != null &&
-          u.life / u.maxLife >= target.life / target.maxLife
-        )
-          return;
-        target = u;
+        enemies.push(u);
       });
       grp.destroy();
 
@@ -51,7 +46,10 @@ export class CarrionFeast extends WeaponUpgradeRecipe {
         this.cooldown,
       );
 
-      if (target == null) return;
+      if (enemies.length === 0) return;
+
+      const target =
+        enemies[RandomNumberGenerator.random(0, enemies.length - 1)];
 
       const { x, y } = vehicle.unit;
       const caster = Unit.create(owner, this.casterUnitTypeId, x, y);

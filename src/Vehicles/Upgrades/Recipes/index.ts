@@ -182,7 +182,7 @@ export * from "./DeathPact";
 export * from "./HauntedGraveyard";
 export * from "./NecromancerAcademy";
 export * from "./NovaMine";
-export * from "./CarrionFeast";
+export * from "./ClingingSwarm";
 export * from "./CreepingShadow";
 export * from "./OrbOfAnnihilation";
 export * from "./Skewer";
