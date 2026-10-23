@@ -221,7 +221,7 @@ export const weaponRecipes = [
   new Recipes.NaturesWrath(),
   new Recipes.Overgrowth(),
   new Recipes.PoisonMine(),
-  new Recipes.PoisonRockets(),
+  new Recipes.AcidBomb(),
   new Recipes.PoisonedArrow(),
   new Recipes.RootMine(),
   new Recipes.RootRockets(),

@@ -216,7 +216,7 @@ export * from "./ReturningBlades";
 export * from "./NaturesWrath";
 export * from "./Overgrowth";
 export * from "./PoisonMine";
-export * from "./PoisonRockets";
+export * from "./AcidBomb";
 export * from "./PoisonedArrow";
 export * from "./RootMine";
 export * from "./RootRockets";

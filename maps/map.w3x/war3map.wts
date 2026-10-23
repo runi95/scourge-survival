@@ -17639,69 +17639,69 @@ Poison Mine
 }
 
 STRING 3183
-// Items: I0DI (Poison Rockets), Tip (Tooltip - Basic)
+// Items: I0DI (Acid Bomb), Tip (Tooltip - Basic)
 {
-Purchase Poison Rockets
+Purchase Acid Bomb
 }
 
 STRING 3184
-// Items: I0DI (Poison Rockets), Description (Description)
+// Items: I0DI (Acid Bomb), Description (Description)
 {
-Throws a poisoned spear and fires Cluster Rockets at a random enemy unit within range.
+Lobs flasks of goblin acid into the largest enemy group. The acid eats through armor, slows and burns everything it splashes.
 }
 
 STRING 3185
-// Items: I0DI (Poison Rockets), Ubertip (Tooltip - Extended)
+// Items: I0DI (Acid Bomb), Ubertip (Tooltip - Extended)
 {
-Throws a poisoned spear and fires Cluster Rockets at a random enemy unit within range.
+Lobs flasks of goblin acid into the largest enemy group. The acid eats through armor, slows and burns everything it splashes.
 }
 
 STRING 3186
-// Items: I0DI (Poison Rockets), Name (Name)
+// Items: I0DI (Acid Bomb), Name (Name)
 {
-Poison Rockets
+Acid Bomb
 }
 
 STRING 3187
-// Items: I0DJ (Poison Rockets), Tip (Tooltip - Basic)
+// Items: I0DJ (Acid Bomb), Tip (Tooltip - Basic)
 {
-Purchase Poison Rockets
+Purchase Acid Bomb
 }
 
 STRING 3188
-// Items: I0DJ (Poison Rockets), Ubertip (Tooltip - Extended)
+// Items: I0DJ (Acid Bomb), Ubertip (Tooltip - Extended)
 {
-Throws a poisoned spear and fires Cluster Rockets at a random enemy unit within range.
+Lobs a flask of goblin acid at the largest enemy group within range that hasn't been doused yet. The acid splashes every enemy unit around where it lands: their armor corrodes, they are slowed and the acid burns them for 6 seconds, so every weapon you carry hits them harder.
 
-Damage: |cffffcc0015 (spear) + 6 x 17.5 (rockets)|r
-Slow: |cffffcc00-25% movement speed for 2s|r
+Damage: |cffffcc0025|r per second (the unit hit) or |cffffcc0015|r per second (around it) for |cffffcc006s|r
+Armor: |cffffcc00-4|r
+Slow: |cffffcc00-25% movement speed|r
 Cooldown: |cffffcc002s|r
-Range: |cffffcc00600|r
-Area of effect: |cffffcc00300|r
+Range: |cffffcc00800|r
+Area of effect: |cffffcc00250|r
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00piercing + spell|r
-Effect: |cffffcc00stuns for 1s|r
+Damage type: |cffffcc00spell|r
 }
 
 STRING 3189
-// Items: I0DJ (Poison Rockets), Description (Description)
+// Items: I0DJ (Acid Bomb), Description (Description)
 {
-Throws a poisoned spear and fires Cluster Rockets at a random enemy unit within range.
+Lobs a flask of goblin acid at the largest enemy group within range that hasn't been doused yet. The acid splashes every enemy unit around where it lands: their armor corrodes, they are slowed and the acid burns them for 6 seconds, so every weapon you carry hits them harder.
 
-Damage: |cffffcc0015 (spear) + 6 x 17.5 (rockets)|r
-Slow: |cffffcc00-25% movement speed for 2s|r
+Damage: |cffffcc0025|r per second (the unit hit) or |cffffcc0015|r per second (around it) for |cffffcc006s|r
+Armor: |cffffcc00-4|r
+Slow: |cffffcc00-25% movement speed|r
 Cooldown: |cffffcc002s|r
-Range: |cffffcc00600|r
-Area of effect: |cffffcc00300|r
+Range: |cffffcc00800|r
+Area of effect: |cffffcc00250|r
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00piercing + spell|r
-Effect: |cffffcc00stuns for 1s|r
+Damage type: |cffffcc00spell|r
 }
 
 STRING 3190
-// Items: I0DJ (Poison Rockets), Name (Name)
+// Items: I0DJ (Acid Bomb), Name (Name)
 {
-Poison Rockets
+Acid Bomb
 }
 
 STRING 3191
@@ -20138,5 +20138,11 @@ STRING 3574
 // Units: e005 (Warden), Name (Name)
 {
 Warden
+}
+
+STRING 3575
+// Abilities: A057 (Acid Bomb (weapon)), Name (Name)
+{
+Acid Bomb (weapon)
 }
 
