@@ -16859,63 +16859,67 @@ Dryad Volley
 }
 
 STRING 3084
-// Items: I0CU (Fan of Arrows), Tip (Tooltip - Basic)
+// Items: I0CU (Ricochet Arrow), Tip (Tooltip - Basic)
 {
-Purchase Fan of Arrows
+Purchase Ricochet Arrow
 }
 
 STRING 3085
-// Items: I0CU (Fan of Arrows), Description (Description)
+// Items: I0CU (Ricochet Arrow), Description (Description)
 {
-Fires searing arrows at 5 random enemy units within range.
+Fires an arrow that pierces through enemies and ricochets onward from one to the next, searing while your hero pays for it with mana.
 }
 
 STRING 3086
-// Items: I0CU (Fan of Arrows), Ubertip (Tooltip - Extended)
+// Items: I0CU (Ricochet Arrow), Ubertip (Tooltip - Extended)
 {
-Fires searing arrows at 5 random enemy units within range.
+Fires an arrow that pierces through enemies and ricochets onward from one to the next, searing while your hero pays for it with mana.
 }
 
 STRING 3087
-// Items: I0CU (Fan of Arrows), Name (Name)
+// Items: I0CU (Ricochet Arrow), Name (Name)
 {
-Fan of Arrows
+Ricochet Arrow
 }
 
 STRING 3088
-// Items: I0CV (Fan of Arrows), Tip (Tooltip - Basic)
+// Items: I0CV (Ricochet Arrow), Tip (Tooltip - Basic)
 {
-Purchase Fan of Arrows
+Purchase Ricochet Arrow
 }
 
 STRING 3089
-// Items: I0CV (Fan of Arrows), Ubertip (Tooltip - Extended)
+// Items: I0CV (Ricochet Arrow), Ubertip (Tooltip - Extended)
 {
-Fires searing arrows at 5 random enemy units within range.
+Fires an arrow at the nearest enemy unit that pierces every enemy on its way. When it reaches its target it ricochets on to the nearest enemy ahead of it that it has not hit yet, up to 7 times. Every leg of its flight costs 2 mana and sears; a leg your hero can't pay for is a plain arrow that stops where it lands.
 
-Damage: |cffffcc005 x 20|r
-Cooldown: |cffffcc002.5s|r
-Range: |cffffcc00500|r
+Damage: |cffffcc0060 or 120 (with mana)|r per enemy
+Cooldown: |cffffcc001.5s|r
+Range: |cffffcc00600|r, |cffffcc00500|r (ricochet)
+Ricochets: |cffffcc007|r
+Additional cost: |cffffcc002 mana|r per leg
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00piercing|r
 }
 
 STRING 3090
-// Items: I0CV (Fan of Arrows), Description (Description)
+// Items: I0CV (Ricochet Arrow), Description (Description)
 {
-Fires searing arrows at 5 random enemy units within range.
+Fires an arrow at the nearest enemy unit that pierces every enemy on its way. When it reaches its target it ricochets on to the nearest enemy ahead of it that it has not hit yet, up to 7 times. Every leg of its flight costs 2 mana and sears; a leg your hero can't pay for is a plain arrow that stops where it lands.
 
-Damage: |cffffcc005 x 20|r
-Cooldown: |cffffcc002.5s|r
-Range: |cffffcc00500|r
+Damage: |cffffcc0060 or 120 (with mana)|r per enemy
+Cooldown: |cffffcc001.5s|r
+Range: |cffffcc00600|r, |cffffcc00500|r (ricochet)
+Ricochets: |cffffcc007|r
+Additional cost: |cffffcc002 mana|r per leg
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00piercing|r
 }
 
 STRING 3091
-// Items: I0CV (Fan of Arrows), Name (Name)
+// Items: I0CV (Ricochet Arrow), Name (Name)
 {
-Fan of Arrows
+Ricochet Arrow
 }
 
 STRING 3092

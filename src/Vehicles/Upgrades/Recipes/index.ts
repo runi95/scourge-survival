@@ -204,7 +204,7 @@ export * from "./BurningTreants";
 export * from "./DruidGrove";
 export * from "./DryadGrove";
 export * from "./DryadVolley";
-export * from "./FanOfArrows";
+export * from "./RicochetArrow";
 export * from "./Firestorm";
 export * from "./FlamingRockets";
 export * from "./FlamingSpear";
