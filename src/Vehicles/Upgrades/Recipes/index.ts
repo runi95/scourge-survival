@@ -229,7 +229,7 @@ export * from "./Smoulder";
 export * from "./FunnelCloud";
 export * from "./SmokeBomb";
 export * from "./SneakAttack";
-export * from "./StranglingStrike";
+export * from "./Garrote";
 export * from "./StranglingWinds";
 export * from "./Tripvine";
 export * from "./ThornsAura";

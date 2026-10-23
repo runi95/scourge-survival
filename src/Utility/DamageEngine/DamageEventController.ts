@@ -27,6 +27,7 @@ import { ThornsAuraDamageEvent } from "./DamageEvents/ThornsAuraDamageEvent";
 import { WildfireDamageEvent } from "./DamageEvents/WildfireDamageEvent";
 import { SneakAttackDamageEvent } from "./DamageEvents/SneakAttackDamageEvent";
 import { VertigoDamageEvent } from "./DamageEvents/VertigoDamageEvent";
+import { GarroteDamageEvent } from "./DamageEvents/GarroteDamageEvent";
 
 export interface ExtendedDamageInstance extends DamageInstance {
   sourceOwningPlayer: player;
@@ -169,6 +170,10 @@ export class DamageEventController {
     );
     DamageEngine.register(
       new VertigoDamageEvent(),
+      DamageEventType.AfterDamageEvent,
+    );
+    DamageEngine.register(
+      new GarroteDamageEvent(),
       DamageEventType.AfterDamageEvent,
     );
   }

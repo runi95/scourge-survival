@@ -18475,67 +18475,63 @@ Sneak Attack
 }
 
 STRING 3291
-// Items: I0E8 (Strangling Strike), Tip (Tooltip - Basic)
+// Items: I0E8 (Garrote), Tip (Tooltip - Basic)
 {
-Purchase Strangling Strike
+Purchase Garrote
 }
 
 STRING 3292
-// Items: I0E8 (Strangling Strike), Description (Description)
+// Items: I0E8 (Garrote), Description (Description)
 {
-Throws a poisoned dagger at a random enemy unit within range and roots it in place.
+A vine cord from the shadows seizes the enemy that last struck your hero and strangles it, twice as hard every second, until it dies. Then it whips on to the next one.
 }
 
 STRING 3293
-// Items: I0E8 (Strangling Strike), Ubertip (Tooltip - Extended)
+// Items: I0E8 (Garrote), Ubertip (Tooltip - Extended)
 {
-Throws a poisoned dagger at a random enemy unit within range and roots it in place.
+A vine cord from the shadows seizes the enemy that last struck your hero and strangles it, twice as hard every second, until it dies. Then it whips on to the next one.
 }
 
 STRING 3294
-// Items: I0E8 (Strangling Strike), Name (Name)
+// Items: I0E8 (Garrote), Name (Name)
 {
-Strangling Strike
+Garrote
 }
 
 STRING 3295
-// Items: I0E9 (Strangling Strike), Tip (Tooltip - Basic)
+// Items: I0E9 (Garrote), Tip (Tooltip - Basic)
 {
-Purchase Strangling Strike
+Purchase Garrote
 }
 
 STRING 3296
-// Items: I0E9 (Strangling Strike), Ubertip (Tooltip - Extended)
+// Items: I0E9 (Garrote), Ubertip (Tooltip - Extended)
 {
-Throws a poisoned dagger at a random enemy unit within range and roots it in place.
+A vine cord from the shadows seizes the enemy ground unit that last struck your hero (or the nearest one) and holds it in place, unable to attack. It strangles it twice as hard every second for as long as it holds, until its victim dies. Then the cord whips on to the next enemy at once, keeping half of the strength it had built up.
 
-Damage: |cffffcc00100 + 30 every 3s for 9s (dagger) + 15 per second (roots)|r
-Slow: |cffffcc00-50% movement speed for 9s|r
-Cooldown: |cffffcc003s|r
-Range: |cffffcc00700|r
-Duration: |cffffcc002.5s (roots)|r
+Damage: |cffffcc0040|r the first second, doubling every second up to |cffffcc00320|r per second
+On a kill: the next victim starts at |cffffcc00half|r the strength reached
+Range: |cffffcc00600|r (the cord snaps beyond |cffffcc00800|r)
 Targets: |cffffcc00ground only!|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 3297
-// Items: I0E9 (Strangling Strike), Description (Description)
+// Items: I0E9 (Garrote), Description (Description)
 {
-Throws a poisoned dagger at a random enemy unit within range and roots it in place.
+A vine cord from the shadows seizes the enemy ground unit that last struck your hero (or the nearest one) and holds it in place, unable to attack. It strangles it twice as hard every second for as long as it holds, until its victim dies. Then the cord whips on to the next enemy at once, keeping half of the strength it had built up.
 
-Damage: |cffffcc00100 + 30 every 3s for 9s (dagger) + 15 per second (roots)|r
-Slow: |cffffcc00-50% movement speed for 9s|r
-Cooldown: |cffffcc003s|r
-Range: |cffffcc00700|r
-Duration: |cffffcc002.5s (roots)|r
+Damage: |cffffcc0040|r the first second, doubling every second up to |cffffcc00320|r per second
+On a kill: the next victim starts at |cffffcc00half|r the strength reached
+Range: |cffffcc00600|r (the cord snaps beyond |cffffcc00800|r)
 Targets: |cffffcc00ground only!|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 3298
-// Items: I0E9 (Strangling Strike), Name (Name)
+// Items: I0E9 (Garrote), Name (Name)
 {
-Strangling Strike
+Garrote
 }
 
 STRING 3299
@@ -20188,5 +20184,11 @@ STRING 3585
 // Abilities: A05E (Sneak Attack Dagger), Name (Name)
 {
 Sneak Attack Dagger
+}
+
+STRING 3586
+// Abilities: A05F (Garrote Vines), Name (Name)
+{
+Garrote Vines
 }
 
