@@ -228,7 +228,7 @@ export * from "./Fever";
 export * from "./Smoulder";
 export * from "./ShadowCyclone";
 export * from "./SmokeBomb";
-export * from "./ShadowTreants";
+export * from "./SneakAttack";
 export * from "./StranglingStrike";
 export * from "./StranglingWinds";
 export * from "./Tripvine";

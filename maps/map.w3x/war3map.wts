@@ -18413,69 +18413,71 @@ Smoke Bomb
 }
 
 STRING 3283
-// Items: I0E6 (Shadow Treants), Tip (Tooltip - Basic)
+// Items: I0E6 (Sneak Attack), Tip (Tooltip - Basic)
 {
-Purchase Shadow Treants
+Purchase Sneak Attack
 }
 
 STRING 3284
-// Items: I0E6 (Shadow Treants), Description (Description)
+// Items: I0E6 (Sneak Attack), Description (Description)
 {
-Throws a poisoned dagger at a random enemy unit within range, and a Treant sprouts beside it.
+Summons Treants that pick fights: every enemy a Treant strikes turns on it. Your poisoned daggers find the enemies caught off their guard and hit them far harder.
 }
 
 STRING 3285
-// Items: I0E6 (Shadow Treants), Ubertip (Tooltip - Extended)
+// Items: I0E6 (Sneak Attack), Ubertip (Tooltip - Extended)
 {
-Throws a poisoned dagger at a random enemy unit within range, and a Treant sprouts beside it.
+Summons Treants that pick fights: every enemy a Treant strikes turns on it. Your poisoned daggers find the enemies caught off their guard and hit them far harder.
 }
 
 STRING 3286
-// Items: I0E6 (Shadow Treants), Name (Name)
+// Items: I0E6 (Sneak Attack), Name (Name)
 {
-Shadow Treants
+Sneak Attack
 }
 
 STRING 3287
-// Items: I0E7 (Shadow Treants), Tip (Tooltip - Basic)
+// Items: I0E7 (Sneak Attack), Tip (Tooltip - Basic)
 {
-Purchase Shadow Treants
+Purchase Sneak Attack
 }
 
 STRING 3288
-// Items: I0E7 (Shadow Treants), Ubertip (Tooltip - Extended)
+// Items: I0E7 (Sneak Attack), Ubertip (Tooltip - Extended)
 {
-Throws a poisoned dagger at a random enemy unit within range, and a Treant sprouts beside it.
+Summons 2 Treants every 15 seconds. Every enemy a Treant strikes turns on that Treant for 3 seconds, its back to your hero. Every 2.5 seconds your hero throws a poisoned dagger at the enemy off its guard with the most life, hitting it far harder; with nobody off guard, the dagger goes to the nearest enemy.
 
-Damage: |cffffcc00100 + 30 every 3s for 9s (dagger) + 15 - 17 (treant)|r
-Slow: |cffffcc00-50% movement speed for 9s|r
-Cooldown: |cffffcc003s|r
-Range: |cffffcc00700|r
-Health: |cffffcc00300|r
-Duration: |cffffcc008s|r
-Targets: |cffffcc00air & ground (dagger), ground (treant)|r
-Damage type: |cffffcc00spell + normal|r
+Dagger damage: |cffffcc00250|r off guard, |cffffcc00100|r otherwise
+Poison: |cffffcc0030|r every 3s for 9s, |cffffcc00-50%|r movement speed
+Treant damage: |cffffcc0041 - 43|r
+Treant health: |cffffcc00300|r
+Treant duration: |cffffcc0015s|r
+Cooldown: |cffffcc002.5s|r (dagger), |cffffcc0015s|r (Treants)
+Range: |cffffcc00800|r
+Targets: |cffffcc00air & ground|r (dagger), |cffffcc00ground only!|r (Treants)
+Damage type: |cffffcc00spell|r (dagger), |cffffcc00normal|r (Treants)
 }
 
 STRING 3289
-// Items: I0E7 (Shadow Treants), Description (Description)
+// Items: I0E7 (Sneak Attack), Description (Description)
 {
-Throws a poisoned dagger at a random enemy unit within range, and a Treant sprouts beside it.
+Summons 2 Treants every 15 seconds. Every enemy a Treant strikes turns on that Treant for 3 seconds, its back to your hero. Every 2.5 seconds your hero throws a poisoned dagger at the enemy off its guard with the most life, hitting it far harder; with nobody off guard, the dagger goes to the nearest enemy.
 
-Damage: |cffffcc00100 + 30 every 3s for 9s (dagger) + 15 - 17 (treant)|r
-Slow: |cffffcc00-50% movement speed for 9s|r
-Cooldown: |cffffcc003s|r
-Range: |cffffcc00700|r
-Health: |cffffcc00300|r
-Duration: |cffffcc008s|r
-Targets: |cffffcc00air & ground (dagger), ground (treant)|r
-Damage type: |cffffcc00spell + normal|r
+Dagger damage: |cffffcc00250|r off guard, |cffffcc00100|r otherwise
+Poison: |cffffcc0030|r every 3s for 9s, |cffffcc00-50%|r movement speed
+Treant damage: |cffffcc0041 - 43|r
+Treant health: |cffffcc00300|r
+Treant duration: |cffffcc0015s|r
+Cooldown: |cffffcc002.5s|r (dagger), |cffffcc0015s|r (Treants)
+Range: |cffffcc00800|r
+Targets: |cffffcc00air & ground|r (dagger), |cffffcc00ground only!|r (Treants)
+Damage type: |cffffcc00spell|r (dagger), |cffffcc00normal|r (Treants)
 }
 
 STRING 3290
-// Items: I0E7 (Shadow Treants), Name (Name)
+// Items: I0E7 (Sneak Attack), Name (Name)
 {
-Shadow Treants
+Sneak Attack
 }
 
 STRING 3291
@@ -20190,5 +20192,11 @@ STRING 3584
 // Abilities: A05D (Burning Pitch Slow), Name (Name)
 {
 Burning Pitch Slow
+}
+
+STRING 3585
+// Abilities: A05E (Sneak Attack Dagger), Name (Name)
+{
+Sneak Attack Dagger
 }
 
