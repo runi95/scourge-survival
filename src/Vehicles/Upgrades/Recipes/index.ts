@@ -198,7 +198,7 @@ export * from "./ArcherBarracks";
 export * from "./BladeCyclone";
 export * from "./BarbedHook";
 export * from "./BlazingArrows";
-export * from "./BurningKnives";
+export * from "./StokedBlades";
 export * from "./BurningRoots";
 export * from "./BurningTreants";
 export * from "./DruidGrove";

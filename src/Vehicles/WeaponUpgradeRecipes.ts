@@ -203,7 +203,7 @@ export const weaponRecipes = [
   new Recipes.BladeCyclone(),
   new Recipes.BarbedHook(),
   new Recipes.BlazingArrows(),
-  new Recipes.BurningKnives(),
+  new Recipes.StokedBlades(),
   new Recipes.BurningRoots(),
   new Recipes.BurningTreants(),
   new Recipes.DruidGrove(),

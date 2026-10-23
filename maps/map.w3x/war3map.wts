@@ -16475,63 +16475,65 @@ Blazing Arrows
 }
 
 STRING 3034
-// Items: I0CI (Burning Knives), Tip (Tooltip - Basic)
+// Items: I0CI (Stoked Blades), Tip (Tooltip - Basic)
 {
-Purchase Burning Knives
+Purchase Stoked Blades
 }
 
 STRING 3035
-// Items: I0CI (Burning Knives), Description (Description)
+// Items: I0CI (Stoked Blades), Description (Description)
 {
-Flings a fan of burning knives at every enemy unit around your hero.
+Your hero's flames heat its knives: every enemy burned makes the next fan of knives cut harder.
 }
 
 STRING 3036
-// Items: I0CI (Burning Knives), Ubertip (Tooltip - Extended)
+// Items: I0CI (Stoked Blades), Ubertip (Tooltip - Extended)
 {
-Flings a fan of burning knives at every enemy unit around your hero.
+Your hero's flames heat its knives: every enemy burned makes the next fan of knives cut harder.
 }
 
 STRING 3037
-// Items: I0CI (Burning Knives), Name (Name)
+// Items: I0CI (Stoked Blades), Name (Name)
 {
-Burning Knives
+Stoked Blades
 }
 
 STRING 3038
-// Items: I0CJ (Burning Knives), Tip (Tooltip - Basic)
+// Items: I0CJ (Stoked Blades), Tip (Tooltip - Basic)
 {
-Purchase Burning Knives
+Purchase Stoked Blades
 }
 
 STRING 3039
-// Items: I0CJ (Burning Knives), Ubertip (Tooltip - Extended)
+// Items: I0CJ (Stoked Blades), Ubertip (Tooltip - Extended)
 {
-Flings a fan of burning knives at every enemy unit around your hero.
+Engulfs your hero in flames that burn every enemy unit close to it, and every enemy burned heats your hero's knives. Every 3 seconds a fan of knives releases the heat at every enemy unit around your hero: each knife cuts harder for every enemy burned since the last fan, then the knives cool.
 
-Damage: |cffffcc0075 (knives) + 30 (flames)|r
-Cooldown: |cffffcc003s|r
-Area of effect: |cffffcc00400|r
+Damage: |cffffcc0020|r per second (flames), |cffffcc00105|r + |cffffcc004|r per heat (fan)
+Heat: |cffffcc001|r per enemy burned, |cffffcc0040|r at most
+Cooldown: |cffffcc001s|r (flames), |cffffcc003s|r (fan)
+Area of effect: |cffffcc00220|r (flames), |cffffcc00400|r (fan)
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00spell|r
+Damage type: |cffffcc00normal|r (flames), |cffffcc00spell|r (fan)
 }
 
 STRING 3040
-// Items: I0CJ (Burning Knives), Description (Description)
+// Items: I0CJ (Stoked Blades), Description (Description)
 {
-Flings a fan of burning knives at every enemy unit around your hero.
+Engulfs your hero in flames that burn every enemy unit close to it, and every enemy burned heats your hero's knives. Every 3 seconds a fan of knives releases the heat at every enemy unit around your hero: each knife cuts harder for every enemy burned since the last fan, then the knives cool.
 
-Damage: |cffffcc0075 (knives) + 30 (flames)|r
-Cooldown: |cffffcc003s|r
-Area of effect: |cffffcc00400|r
+Damage: |cffffcc0020|r per second (flames), |cffffcc00105|r + |cffffcc004|r per heat (fan)
+Heat: |cffffcc001|r per enemy burned, |cffffcc0040|r at most
+Cooldown: |cffffcc001s|r (flames), |cffffcc003s|r (fan)
+Area of effect: |cffffcc00220|r (flames), |cffffcc00400|r (fan)
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00spell|r
+Damage type: |cffffcc00normal|r (flames), |cffffcc00spell|r (fan)
 }
 
 STRING 3041
-// Items: I0CJ (Burning Knives), Name (Name)
+// Items: I0CJ (Stoked Blades), Name (Name)
 {
-Burning Knives
+Stoked Blades
 }
 
 STRING 3042
