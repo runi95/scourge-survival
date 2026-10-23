@@ -211,7 +211,7 @@ export const weaponRecipes = [
   new Recipes.DryadVolley(),
   new Recipes.RicochetArrow(),
   new Recipes.Firestorm(),
-  new Recipes.FlamingRockets(),
+  new Recipes.Firestreak(),
   new Recipes.Firebrand(),
   new Recipes.GlaiveWorkshop(),
   new Recipes.Watchers(),

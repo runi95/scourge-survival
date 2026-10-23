@@ -16995,67 +16995,69 @@ Fire Tornado
 }
 
 STRING 3101
-// Items: I0CY (Flaming Rockets), Tip (Tooltip - Basic)
+// Items: I0CY (Firestreak), Tip (Tooltip - Basic)
 {
-Purchase Flaming Rockets
+Purchase Firestreak
 }
 
 STRING 3102
-// Items: I0CY (Flaming Rockets), Description (Description)
+// Items: I0CY (Firestreak), Description (Description)
 {
-Fires a searing arrow and Cluster Rockets at a random enemy unit within range.
+Fires a rocket-propelled arrow at the farthest enemy. Its exhaust leaves the whole flight line burning behind it.
 }
 
 STRING 3103
-// Items: I0CY (Flaming Rockets), Ubertip (Tooltip - Extended)
+// Items: I0CY (Firestreak), Ubertip (Tooltip - Extended)
 {
-Fires a searing arrow and Cluster Rockets at a random enemy unit within range.
+Fires a rocket-propelled arrow at the farthest enemy. Its exhaust leaves the whole flight line burning behind it.
 }
 
 STRING 3104
-// Items: I0CY (Flaming Rockets), Name (Name)
+// Items: I0CY (Firestreak), Name (Name)
 {
-Flaming Rockets
+Firestreak
 }
 
 STRING 3105
-// Items: I0CZ (Flaming Rockets), Tip (Tooltip - Basic)
+// Items: I0CZ (Firestreak), Tip (Tooltip - Basic)
 {
-Purchase Flaming Rockets
+Purchase Firestreak
 }
 
 STRING 3106
-// Items: I0CZ (Flaming Rockets), Ubertip (Tooltip - Extended)
+// Items: I0CZ (Firestreak), Ubertip (Tooltip - Extended)
 {
-Fires a searing arrow and Cluster Rockets at a random enemy unit within range.
+Fires a rocket-propelled arrow at the farthest enemy unit within range. Its exhaust sets the whole line it flies along on fire for 6 seconds, burning every enemy unit that stands in it or walks through it. When your hero pays 8 mana for the shot, the line burns twice as hot. An enemy standing in several burning lines burns only in the hottest.
 
-Damage: |cffffcc0020 (arrow) + 6 x 17.5 (rockets)|r
+Damage: |cffffcc0020|r (arrow) + |cffffcc0012|r per second, or |cffffcc0024|r with mana (burning line)
 Cooldown: |cffffcc002s|r
-Range: |cffffcc00600|r
-Area of effect: |cffffcc00300|r
+Range: |cffffcc00900|r
+Area of effect: |cffffcc00300|r wide line
+Duration: |cffffcc006s|r
+Additional cost: |cffffcc008 mana|r
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00piercing + spell|r
-Effect: |cffffcc00stuns for 1s|r
+Damage type: |cffffcc00piercing|r (arrow) + |cffffcc00spell|r (fire)
 }
 
 STRING 3107
-// Items: I0CZ (Flaming Rockets), Description (Description)
+// Items: I0CZ (Firestreak), Description (Description)
 {
-Fires a searing arrow and Cluster Rockets at a random enemy unit within range.
+Fires a rocket-propelled arrow at the farthest enemy unit within range. Its exhaust sets the whole line it flies along on fire for 6 seconds, burning every enemy unit that stands in it or walks through it. When your hero pays 8 mana for the shot, the line burns twice as hot. An enemy standing in several burning lines burns only in the hottest.
 
-Damage: |cffffcc0020 (arrow) + 6 x 17.5 (rockets)|r
+Damage: |cffffcc0020|r (arrow) + |cffffcc0012|r per second, or |cffffcc0024|r with mana (burning line)
 Cooldown: |cffffcc002s|r
-Range: |cffffcc00600|r
-Area of effect: |cffffcc00300|r
+Range: |cffffcc00900|r
+Area of effect: |cffffcc00300|r wide line
+Duration: |cffffcc006s|r
+Additional cost: |cffffcc008 mana|r
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00piercing + spell|r
-Effect: |cffffcc00stuns for 1s|r
+Damage type: |cffffcc00piercing|r (arrow) + |cffffcc00spell|r (fire)
 }
 
 STRING 3108
-// Items: I0CZ (Flaming Rockets), Name (Name)
+// Items: I0CZ (Firestreak), Name (Name)
 {
-Flaming Rockets
+Firestreak
 }
 
 STRING 3109

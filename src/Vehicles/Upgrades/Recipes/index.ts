@@ -206,7 +206,7 @@ export * from "./DryadGrove";
 export * from "./DryadVolley";
 export * from "./RicochetArrow";
 export * from "./Firestorm";
-export * from "./FlamingRockets";
+export * from "./Firestreak";
 export * from "./Firebrand";
 export * from "./GlaiveWorkshop";
 export * from "./Watchers";
