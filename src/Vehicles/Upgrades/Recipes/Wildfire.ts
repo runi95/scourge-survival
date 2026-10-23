@@ -90,6 +90,8 @@ export class Wildfire extends WeaponUpgradeRecipe {
     const burn = TimerUtils.newTimer();
     burn.start(0.5, true, () => {
       const hero = vehicle.unit;
+      // Deleting inside forEach would end the loop there
+      const burntOut: Unit[] = [];
       fire.burning.forEach((b, u) => {
         if (u.isAlive()) {
           hero.damageTarget(
@@ -105,8 +107,9 @@ export class Wildfire extends WeaponUpgradeRecipe {
         b.left -= 0.5;
         if (b.left > 0 && u.isAlive()) return;
         b.flames.destroy();
-        fire.burning.delete(u);
+        burntOut.push(u);
       });
+      for (const u of burntOut) fire.burning.delete(u);
 
       fire.treants = fire.treants.filter((treant) => {
         if (treant.isAlive()) return true;
