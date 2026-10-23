@@ -231,7 +231,7 @@ export * from "./SmokeBomb";
 export * from "./ShadowTreants";
 export * from "./StranglingStrike";
 export * from "./StranglingWinds";
-export * from "./ThornArrow";
+export * from "./Tripvine";
 export * from "./ThornsAura";
 export * from "./BrambleBurst";
 export * from "./ThornSpear";

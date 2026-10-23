@@ -18607,65 +18607,67 @@ Strangling Winds
 }
 
 STRING 3307
-// Items: I0EC (Thorn Arrow), Tip (Tooltip - Basic)
+// Items: I0EC (Tripvine), Tip (Tooltip - Basic)
 {
-Purchase Thorn Arrow
+Purchase Tripvine
 }
 
 STRING 3308
-// Items: I0EC (Thorn Arrow), Description (Description)
+// Items: I0EC (Tripvine), Description (Description)
 {
-Fires a searing arrow at a random enemy unit within range and roots it in place.
+Shoots a vine arrow at the legs of the enemy charging your hero fastest. It trips and is held in roots, and the enemies right behind it stumble over it and are caught too, all the way down the column.
 }
 
 STRING 3309
-// Items: I0EC (Thorn Arrow), Ubertip (Tooltip - Extended)
+// Items: I0EC (Tripvine), Ubertip (Tooltip - Extended)
 {
-Fires a searing arrow at a random enemy unit within range and roots it in place.
+Shoots a vine arrow at the legs of the enemy charging your hero fastest. It trips and is held in roots, and the enemies right behind it stumble over it and are caught too, all the way down the column.
 }
 
 STRING 3310
-// Items: I0EC (Thorn Arrow), Name (Name)
+// Items: I0EC (Tripvine), Name (Name)
 {
-Thorn Arrow
+Tripvine
 }
 
 STRING 3311
-// Items: I0ED (Thorn Arrow), Tip (Tooltip - Basic)
+// Items: I0ED (Tripvine), Tip (Tooltip - Basic)
 {
-Purchase Thorn Arrow
+Purchase Tripvine
 }
 
 STRING 3312
-// Items: I0ED (Thorn Arrow), Ubertip (Tooltip - Extended)
+// Items: I0ED (Tripvine), Ubertip (Tooltip - Extended)
 {
-Fires a searing arrow at a random enemy unit within range and roots it in place.
+Shoots a vine-trailing arrow at the legs of the enemy ground unit closing in on your hero fastest. It trips and is held in roots that keep hurting it and stop it from attacking. Every enemy right behind it stumbles over it and is caught as well, and every enemy behind those, all the way down the column.
 
-Damage: |cffffcc0020 (arrow) + 15 per second (roots)|r
-Cooldown: |cffffcc002.5s|r
-Range: |cffffcc00600|r
+Damage: |cffffcc0020|r (arrow) + |cffffcc0050|r per second (roots)
 Duration: |cffffcc002.5s|r
+Pile-up: enemies within |cffffcc00150|r behind a tripped one, up to |cffffcc006|r
+Cooldown: |cffffcc003.5s|r
+Range: |cffffcc00700|r
 Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00piercing + spell|r
+Damage type: |cffffcc00piercing|r (arrow), |cffffcc00spell|r (roots)
 }
 
 STRING 3313
-// Items: I0ED (Thorn Arrow), Description (Description)
+// Items: I0ED (Tripvine), Description (Description)
 {
-Fires a searing arrow at a random enemy unit within range and roots it in place.
+Shoots a vine-trailing arrow at the legs of the enemy ground unit closing in on your hero fastest. It trips and is held in roots that keep hurting it and stop it from attacking. Every enemy right behind it stumbles over it and is caught as well, and every enemy behind those, all the way down the column.
 
-Damage: |cffffcc0020 (arrow) + 15 per second (roots)|r
-Cooldown: |cffffcc002.5s|r
-Range: |cffffcc00600|r
+Damage: |cffffcc0020|r (arrow) + |cffffcc0050|r per second (roots)
 Duration: |cffffcc002.5s|r
+Pile-up: enemies within |cffffcc00150|r behind a tripped one, up to |cffffcc006|r
+Cooldown: |cffffcc003.5s|r
+Range: |cffffcc00700|r
 Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00piercing + spell|r
+Damage type: |cffffcc00piercing|r (arrow), |cffffcc00spell|r (roots)
 }
 
 STRING 3314
-// Items: I0ED (Thorn Arrow), Name (Name)
+// Items: I0ED (Tripvine), Name (Name)
 {
-Thorn Arrow
+Tripvine
 }
 
 STRING 3315
