@@ -241,6 +241,6 @@ export * from "./TreantGrove";
 export * from "./TwinStrike";
 export * from "./Vertigo";
 export * from "./Joyride";
-export * from "./VenomSpear";
+export * from "./CoupDeGrace";
 export * from "./Warden";
 export * from "./Wildfire";

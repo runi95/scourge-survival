@@ -29,6 +29,7 @@ import { SneakAttackDamageEvent } from "./DamageEvents/SneakAttackDamageEvent";
 import { VertigoDamageEvent } from "./DamageEvents/VertigoDamageEvent";
 import { GarroteDamageEvent } from "./DamageEvents/GarroteDamageEvent";
 import { BloodrootDamageEvent } from "./DamageEvents/BloodrootDamageEvent";
+import { CoupDeGraceDamageEvent } from "./DamageEvents/CoupDeGraceDamageEvent";
 
 export interface ExtendedDamageInstance extends DamageInstance {
   sourceOwningPlayer: player;
@@ -179,6 +180,10 @@ export class DamageEventController {
     );
     DamageEngine.register(
       new BloodrootDamageEvent(),
+      DamageEventType.AfterDamageEvent,
+    );
+    DamageEngine.register(
+      new CoupDeGraceDamageEvent(),
       DamageEventType.AfterDamageEvent,
     );
   }

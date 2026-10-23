@@ -19243,65 +19243,67 @@ Joyride
 }
 
 STRING 3389
-// Items: I0EW (Venom Spear), Tip (Tooltip - Basic)
+// Items: I0EW (Coup de Grace), Tip (Tooltip - Basic)
 {
-Purchase Venom Spear
+Purchase Coup de Grace
 }
 
 STRING 3390
-// Items: I0EW (Venom Spear), Description (Description)
+// Items: I0EW (Coup de Grace), Description (Description)
 {
-Throws a poisoned spear and a poisoned dagger at a random enemy unit within range.
+Quick poisoned spears wear the enemies down, and a dagger from the shadows finishes them: a spear-poisoned enemy the dagger leaves below 40% of its life dies outright.
 }
 
 STRING 3391
-// Items: I0EW (Venom Spear), Ubertip (Tooltip - Extended)
+// Items: I0EW (Coup de Grace), Ubertip (Tooltip - Extended)
 {
-Throws a poisoned spear and a poisoned dagger at a random enemy unit within range.
+Quick poisoned spears wear the enemies down, and a dagger from the shadows finishes them: a spear-poisoned enemy the dagger leaves below 40% of its life dies outright.
 }
 
 STRING 3392
-// Items: I0EW (Venom Spear), Name (Name)
+// Items: I0EW (Coup de Grace), Name (Name)
 {
-Venom Spear
+Coup de Grace
 }
 
 STRING 3393
-// Items: I0EX (Venom Spear), Tip (Tooltip - Basic)
+// Items: I0EX (Coup de Grace), Tip (Tooltip - Basic)
 {
-Purchase Venom Spear
+Purchase Coup de Grace
 }
 
 STRING 3394
-// Items: I0EX (Venom Spear), Ubertip (Tooltip - Extended)
+// Items: I0EX (Coup de Grace), Ubertip (Tooltip - Extended)
 {
-Throws a poisoned spear and a poisoned dagger at a random enemy unit within range.
+Throws quick poisoned spears, each at the nearest enemy unit that isn't poisoned yet, slowing it. Every 2 seconds a dagger from the shadows goes to the poisoned enemy with the least of its life left and poisons it too. A spear-poisoned enemy the dagger leaves below 40% of its life dies outright.
 
-Damage: |cffffcc0015 (spear) + 100 + 30 every 3s for 9s (dagger)|r
-Slow: |cffffcc00-50% movement speed for 9s|r
-Cooldown: |cffffcc002s|r
+Spear damage: |cffffcc0015|r, |cffffcc00-25%|r movement speed for 2s
+Dagger damage: |cffffcc00100 + 30 every 3s for 9s|r, |cffffcc00-50%|r movement speed
+Executes: spear-poisoned enemies left below |cffffcc0040%|r life by the dagger
+Cooldown: |cffffcc000.75s|r (spears), |cffffcc002s|r (dagger)
 Range: |cffffcc00600|r
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00piercing + spell|r
+Damage type: |cffffcc00piercing|r (spear), |cffffcc00spell|r (dagger)
 }
 
 STRING 3395
-// Items: I0EX (Venom Spear), Description (Description)
+// Items: I0EX (Coup de Grace), Description (Description)
 {
-Throws a poisoned spear and a poisoned dagger at a random enemy unit within range.
+Throws quick poisoned spears, each at the nearest enemy unit that isn't poisoned yet, slowing it. Every 2 seconds a dagger from the shadows goes to the poisoned enemy with the least of its life left and poisons it too. A spear-poisoned enemy the dagger leaves below 40% of its life dies outright.
 
-Damage: |cffffcc0015 (spear) + 100 + 30 every 3s for 9s (dagger)|r
-Slow: |cffffcc00-50% movement speed for 9s|r
-Cooldown: |cffffcc002s|r
+Spear damage: |cffffcc0015|r, |cffffcc00-25%|r movement speed for 2s
+Dagger damage: |cffffcc00100 + 30 every 3s for 9s|r, |cffffcc00-50%|r movement speed
+Executes: spear-poisoned enemies left below |cffffcc0040%|r life by the dagger
+Cooldown: |cffffcc000.75s|r (spears), |cffffcc002s|r (dagger)
 Range: |cffffcc00600|r
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00piercing + spell|r
+Damage type: |cffffcc00piercing|r (spear), |cffffcc00spell|r (dagger)
 }
 
 STRING 3396
-// Items: I0EX (Venom Spear), Name (Name)
+// Items: I0EX (Coup de Grace), Name (Name)
 {
-Venom Spear
+Coup de Grace
 }
 
 STRING 3397

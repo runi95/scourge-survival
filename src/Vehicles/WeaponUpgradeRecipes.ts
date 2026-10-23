@@ -246,7 +246,7 @@ export const weaponRecipes = [
   new Recipes.TwinStrike(),
   new Recipes.Vertigo(),
   new Recipes.Joyride(),
-  new Recipes.VenomSpear(),
+  new Recipes.CoupDeGrace(),
   new Recipes.Warden(),
   new Recipes.Wildfire(),
 ];
