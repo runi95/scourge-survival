@@ -232,7 +232,7 @@ export * from "./ShadowTreants";
 export * from "./StranglingStrike";
 export * from "./StranglingWinds";
 export * from "./ThornArrow";
-export * from "./ThornBurst";
+export * from "./ThornsAura";
 export * from "./ThornFan";
 export * from "./ThornSpear";
 export * from "./ThornedTreants";

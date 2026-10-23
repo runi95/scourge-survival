@@ -23,6 +23,7 @@ import { BlackArrowDamageEvent } from "./DamageEvents/BlackArrowDamageEvent";
 import { BlackIceDamageEvent } from "./DamageEvents/BlackIceDamageEvent";
 import { RavenousWyrmDamageEvent } from "./DamageEvents/RavenousWyrmDamageEvent";
 import { ClingingSwarmDamageEvent } from "./DamageEvents/ClingingSwarmDamageEvent";
+import { ThornsAuraDamageEvent } from "./DamageEvents/ThornsAuraDamageEvent";
 
 export interface ExtendedDamageInstance extends DamageInstance {
   sourceOwningPlayer: player;
@@ -149,6 +150,10 @@ export class DamageEventController {
     );
     DamageEngine.register(
       new ClingingSwarmDamageEvent(),
+      DamageEventType.AfterDamageEvent,
+    );
+    DamageEngine.register(
+      new ThornsAuraDamageEvent(),
       DamageEventType.AfterDamageEvent,
     );
   }

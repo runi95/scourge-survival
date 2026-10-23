@@ -18685,67 +18685,65 @@ Thorn Arrow
 }
 
 STRING 3315
-// Items: I0EE (Thorn Burst), Tip (Tooltip - Basic)
+// Items: I0EE (Thorns Aura), Tip (Tooltip - Basic)
 {
-Purchase Thorn Burst
+Purchase Thorns Aura
 }
 
 STRING 3316
-// Items: I0EE (Thorn Burst), Description (Description)
+// Items: I0EE (Thorns Aura), Description (Description)
 {
-Flings a fan of knives at every enemy unit around your hero, and a Treant sprouts beside it.
+Sheathes your hero and its Treants in thorns that cut back every enemy that attacks them.
 }
 
 STRING 3317
-// Items: I0EE (Thorn Burst), Ubertip (Tooltip - Extended)
+// Items: I0EE (Thorns Aura), Ubertip (Tooltip - Extended)
 {
-Flings a fan of knives at every enemy unit around your hero, and a Treant sprouts beside it.
+Sheathes your hero and its Treants in thorns that cut back every enemy that attacks them.
 }
 
 STRING 3318
-// Items: I0EE (Thorn Burst), Name (Name)
+// Items: I0EE (Thorns Aura), Name (Name)
 {
-Thorn Burst
+Thorns Aura
 }
 
 STRING 3319
-// Items: I0EF (Thorn Burst), Tip (Tooltip - Basic)
+// Items: I0EF (Thorns Aura), Tip (Tooltip - Basic)
 {
-Purchase Thorn Burst
+Purchase Thorns Aura
 }
 
 STRING 3320
-// Items: I0EF (Thorn Burst), Ubertip (Tooltip - Extended)
+// Items: I0EF (Thorns Aura), Ubertip (Tooltip - Extended)
 {
-Flings a fan of knives at every enemy unit around your hero, and a Treant sprouts beside it.
+Sheathes your hero in thorns, and every 20 seconds 2 thorned Treants grow beside it for 15 seconds. Every attack an enemy lands on your hero or one of its Treants cuts the attacker back, even from range.
 
-Damage: |cffffcc0075 (knives) + 15 - 17 (treant)|r
-Cooldown: |cffffcc003s|r
-Area of effect: |cffffcc00400|r
-Health: |cffffcc00300|r
-Duration: |cffffcc008s|r
-Targets: |cffffcc00air & ground (knives), ground (treant)|r
-Damage type: |cffffcc00spell + normal|r
+Damage: |cffffcc0050|r per attack taken (thorns), |cffffcc0015 - 17|r (Treants)
+Cooldown: |cffffcc0020s|r (Treants)
+Health: |cffffcc00300|r (Treants)
+Duration: |cffffcc0015s|r (Treants)
+Targets: |cffffcc00air & ground|r (thorns), |cffffcc00ground only!|r (Treants)
+Damage type: |cffffcc00spell|r (thorns), |cffffcc00normal|r (Treants)
 }
 
 STRING 3321
-// Items: I0EF (Thorn Burst), Description (Description)
+// Items: I0EF (Thorns Aura), Description (Description)
 {
-Flings a fan of knives at every enemy unit around your hero, and a Treant sprouts beside it.
+Sheathes your hero in thorns, and every 20 seconds 2 thorned Treants grow beside it for 15 seconds. Every attack an enemy lands on your hero or one of its Treants cuts the attacker back, even from range.
 
-Damage: |cffffcc0075 (knives) + 15 - 17 (treant)|r
-Cooldown: |cffffcc003s|r
-Area of effect: |cffffcc00400|r
-Health: |cffffcc00300|r
-Duration: |cffffcc008s|r
-Targets: |cffffcc00air & ground (knives), ground (treant)|r
-Damage type: |cffffcc00spell + normal|r
+Damage: |cffffcc0050|r per attack taken (thorns), |cffffcc0015 - 17|r (Treants)
+Cooldown: |cffffcc0020s|r (Treants)
+Health: |cffffcc00300|r (Treants)
+Duration: |cffffcc0015s|r (Treants)
+Targets: |cffffcc00air & ground|r (thorns), |cffffcc00ground only!|r (Treants)
+Damage type: |cffffcc00spell|r (thorns), |cffffcc00normal|r (Treants)
 }
 
 STRING 3322
-// Items: I0EF (Thorn Burst), Name (Name)
+// Items: I0EF (Thorns Aura), Name (Name)
 {
-Thorn Burst
+Thorns Aura
 }
 
 STRING 3323
