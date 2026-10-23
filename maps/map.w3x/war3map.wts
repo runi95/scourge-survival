@@ -18747,67 +18747,67 @@ Thorns Aura
 }
 
 STRING 3323
-// Items: I0EG (Thorn Fan), Tip (Tooltip - Basic)
+// Items: I0EG (Bramble Burst), Tip (Tooltip - Basic)
 {
-Purchase Thorn Fan
+Purchase Bramble Burst
 }
 
 STRING 3324
-// Items: I0EG (Thorn Fan), Description (Description)
+// Items: I0EG (Bramble Burst), Description (Description)
 {
-Roots a random enemy unit within range in place and flings a fan of knives at every enemy around your hero.
+When enemies close in around your hero, brambles burst out of the ground, cutting them and holding them in thorny roots.
 }
 
 STRING 3325
-// Items: I0EG (Thorn Fan), Ubertip (Tooltip - Extended)
+// Items: I0EG (Bramble Burst), Ubertip (Tooltip - Extended)
 {
-Roots a random enemy unit within range in place and flings a fan of knives at every enemy around your hero.
+When enemies close in around your hero, brambles burst out of the ground, cutting them and holding them in thorny roots.
 }
 
 STRING 3326
-// Items: I0EG (Thorn Fan), Name (Name)
+// Items: I0EG (Bramble Burst), Name (Name)
 {
-Thorn Fan
+Bramble Burst
 }
 
 STRING 3327
-// Items: I0EH (Thorn Fan), Tip (Tooltip - Basic)
+// Items: I0EH (Bramble Burst), Tip (Tooltip - Basic)
 {
-Purchase Thorn Fan
+Purchase Bramble Burst
 }
 
 STRING 3328
-// Items: I0EH (Thorn Fan), Ubertip (Tooltip - Extended)
+// Items: I0EH (Bramble Burst), Ubertip (Tooltip - Extended)
 {
-Roots a random enemy unit within range in place and flings a fan of knives at every enemy around your hero.
+Waits until 3 or more enemy units close in around your hero, then brambles burst out of the ground. Every enemy unit around your hero is cut, and every enemy ground unit there is held in thorny roots that keep cutting it. The brambles need 4 seconds to regrow.
 
-Damage: |cffffcc0015 per second (roots) + 75 (knives)|r
-Cooldown: |cffffcc003s|r
-Range: |cffffcc00600|r
-Area of effect: |cffffcc00400|r
-Duration: |cffffcc002.5s|r
-Targets: |cffffcc00ground (roots), air & ground (knives)|r
+Damage: |cffffcc00110|r + |cffffcc0050 per second|r while rooted
+Cooldown: |cffffcc004s|r
+Trigger: |cffffcc003|r enemies within |cffffcc00400|r
+Area of effect: |cffffcc00500|r
+Duration: |cffffcc002.5s|r (roots)
+Targets: |cffffcc00air & ground|r, roots |cffffcc00ground only!|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 3329
-// Items: I0EH (Thorn Fan), Description (Description)
+// Items: I0EH (Bramble Burst), Description (Description)
 {
-Roots a random enemy unit within range in place and flings a fan of knives at every enemy around your hero.
+Waits until 3 or more enemy units close in around your hero, then brambles burst out of the ground. Every enemy unit around your hero is cut, and every enemy ground unit there is held in thorny roots that keep cutting it. The brambles need 4 seconds to regrow.
 
-Damage: |cffffcc0015 per second (roots) + 75 (knives)|r
-Cooldown: |cffffcc003s|r
-Range: |cffffcc00600|r
-Area of effect: |cffffcc00400|r
-Duration: |cffffcc002.5s|r
-Targets: |cffffcc00ground (roots), air & ground (knives)|r
+Damage: |cffffcc00110|r + |cffffcc0050 per second|r while rooted
+Cooldown: |cffffcc004s|r
+Trigger: |cffffcc003|r enemies within |cffffcc00400|r
+Area of effect: |cffffcc00500|r
+Duration: |cffffcc002.5s|r (roots)
+Targets: |cffffcc00air & ground|r, roots |cffffcc00ground only!|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 3330
-// Items: I0EH (Thorn Fan), Name (Name)
+// Items: I0EH (Bramble Burst), Name (Name)
 {
-Thorn Fan
+Bramble Burst
 }
 
 STRING 3331
