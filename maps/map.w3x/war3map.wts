@@ -18169,67 +18169,67 @@ Searing Spear
 }
 
 STRING 3250
-// Items: I0DY (Searing Strike), Tip (Tooltip - Basic)
+// Items: I0DY (Fever), Tip (Tooltip - Basic)
 {
-Purchase Searing Strike
+Purchase Fever
 }
 
 STRING 3251
-// Items: I0DY (Searing Strike), Description (Description)
+// Items: I0DY (Fever), Description (Description)
 {
-Throws a burning, poisoned dagger at a random enemy unit within range that bursts into flames, burning every enemy around it.
+Throws poisoned daggers while your hero burns. A poisoned enemy in the flames runs a fever that keeps hurting it for as long as it keeps burning.
 }
 
 STRING 3252
-// Items: I0DY (Searing Strike), Ubertip (Tooltip - Extended)
+// Items: I0DY (Fever), Ubertip (Tooltip - Extended)
 {
-Throws a burning, poisoned dagger at a random enemy unit within range that bursts into flames, burning every enemy around it.
+Throws poisoned daggers while your hero burns. A poisoned enemy in the flames runs a fever that keeps hurting it for as long as it keeps burning.
 }
 
 STRING 3253
-// Items: I0DY (Searing Strike), Name (Name)
+// Items: I0DY (Fever), Name (Name)
 {
-Searing Strike
+Fever
 }
 
 STRING 3254
-// Items: I0DZ (Searing Strike), Tip (Tooltip - Basic)
+// Items: I0DZ (Fever), Tip (Tooltip - Basic)
 {
-Purchase Searing Strike
+Purchase Fever
 }
 
 STRING 3255
-// Items: I0DZ (Searing Strike), Ubertip (Tooltip - Extended)
+// Items: I0DZ (Fever), Ubertip (Tooltip - Extended)
 {
-Throws a burning, poisoned dagger at a random enemy unit within range that bursts into flames, burning every enemy around it.
+Engulfs your hero in flames that burn every enemy unit close to it, and every 3 seconds throws a poisoned dagger at the nearest enemy unit within range that isn't poisoned yet. A poisoned enemy in the flames runs a fever: it takes more damage every second for as long as it keeps burning, even after the poison has worn off.
 
-Damage: |cffffcc00100 + 30 every 3s for 9s (dagger) + 40 (flames)|r
+Damage: |cffffcc00100 + 30 every 3s for 9s|r (dagger) + |cffffcc0020 per second|r (flames) + |cffffcc0040 per second|r (fever)
 Slow: |cffffcc00-50% movement speed for 9s|r
 Cooldown: |cffffcc003s|r
 Range: |cffffcc00700|r
-Area of effect: |cffffcc00200|r
+Area of effect: |cffffcc00220|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 3256
-// Items: I0DZ (Searing Strike), Description (Description)
+// Items: I0DZ (Fever), Description (Description)
 {
-Throws a burning, poisoned dagger at a random enemy unit within range that bursts into flames, burning every enemy around it.
+Engulfs your hero in flames that burn every enemy unit close to it, and every 3 seconds throws a poisoned dagger at the nearest enemy unit within range that isn't poisoned yet. A poisoned enemy in the flames runs a fever: it takes more damage every second for as long as it keeps burning, even after the poison has worn off.
 
-Damage: |cffffcc00100 + 30 every 3s for 9s (dagger) + 40 (flames)|r
+Damage: |cffffcc00100 + 30 every 3s for 9s|r (dagger) + |cffffcc0020 per second|r (flames) + |cffffcc0040 per second|r (fever)
 Slow: |cffffcc00-50% movement speed for 9s|r
 Cooldown: |cffffcc003s|r
 Range: |cffffcc00700|r
-Area of effect: |cffffcc00200|r
+Area of effect: |cffffcc00220|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 3257
-// Items: I0DZ (Searing Strike), Name (Name)
+// Items: I0DZ (Fever), Name (Name)
 {
-Searing Strike
+Fever
 }
 
 STRING 3258
