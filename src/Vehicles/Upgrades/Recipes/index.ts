@@ -223,7 +223,7 @@ export * from "./Earthbind";
 export * from "./RootedTreants";
 export * from "./Wildseed";
 export * from "./PowderKeg";
-export * from "./SearingSpear";
+export * from "./BurningPitch";
 export * from "./Fever";
 export * from "./Smoulder";
 export * from "./ShadowCyclone";

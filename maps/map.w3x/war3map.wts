@@ -18091,65 +18091,67 @@ Powder Keg
 }
 
 STRING 3242
-// Items: I0DW (Searing Spear), Tip (Tooltip - Basic)
+// Items: I0DW (Burning Pitch), Tip (Tooltip - Basic)
 {
-Purchase Searing Spear
+Purchase Burning Pitch
 }
 
 STRING 3243
-// Items: I0DW (Searing Spear), Description (Description)
+// Items: I0DW (Burning Pitch), Description (Description)
 {
-Fires a searing arrow and throws a poisoned spear at 2 random enemy units within range.
+Throws a spear coated in burning pitch at the nearest enemy. The pitch sticks to it, slowing it, and drips off it as it walks, leaving a trail of burning puddles for its pack to walk through.
 }
 
 STRING 3244
-// Items: I0DW (Searing Spear), Ubertip (Tooltip - Extended)
+// Items: I0DW (Burning Pitch), Ubertip (Tooltip - Extended)
 {
-Fires a searing arrow and throws a poisoned spear at 2 random enemy units within range.
+Throws a spear coated in burning pitch at the nearest enemy. The pitch sticks to it, slowing it, and drips off it as it walks, leaving a trail of burning puddles for its pack to walk through.
 }
 
 STRING 3245
-// Items: I0DW (Searing Spear), Name (Name)
+// Items: I0DW (Burning Pitch), Name (Name)
 {
-Searing Spear
+Burning Pitch
 }
 
 STRING 3246
-// Items: I0DX (Searing Spear), Tip (Tooltip - Basic)
+// Items: I0DX (Burning Pitch), Tip (Tooltip - Basic)
 {
-Purchase Searing Spear
+Purchase Burning Pitch
 }
 
 STRING 3247
-// Items: I0DX (Searing Spear), Ubertip (Tooltip - Extended)
+// Items: I0DX (Burning Pitch), Ubertip (Tooltip - Extended)
 {
-Fires a searing arrow and throws a poisoned spear at 2 random enemy units within range.
+Throws a spear coated in burning pitch at the nearest enemy unit. The pitch sticks to it for 5 seconds: it is slowed and burns, and the pitch drips off it wherever it walks, leaving burning puddles along its path. The enemies following in its footsteps walk right through them.
 
-Damage: |cffffcc002 x 20 (arrow) + 2 x 15 (spear)|r
-Slow: |cffffcc00-25% movement speed for 2s|r
+Damage: |cffffcc0030|r (spear), |cffffcc0016|r per second (burning pitch)
+Slow: |cffffcc00-30%|r movement speed for 5s
+Puddles: |cffffcc00120|r area, last |cffffcc004s|r
 Cooldown: |cffffcc001.5s|r
-Range: |cffffcc00600|r
-Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00piercing|r
+Range: |cffffcc00700|r
+Targets: |cffffcc00air & ground|r (puddles: |cffffcc00ground only!|r)
+Damage type: |cffffcc00piercing|r (spear), |cffffcc00spell|r (fire)
 }
 
 STRING 3248
-// Items: I0DX (Searing Spear), Description (Description)
+// Items: I0DX (Burning Pitch), Description (Description)
 {
-Fires a searing arrow and throws a poisoned spear at 2 random enemy units within range.
+Throws a spear coated in burning pitch at the nearest enemy unit. The pitch sticks to it for 5 seconds: it is slowed and burns, and the pitch drips off it wherever it walks, leaving burning puddles along its path. The enemies following in its footsteps walk right through them.
 
-Damage: |cffffcc002 x 20 (arrow) + 2 x 15 (spear)|r
-Slow: |cffffcc00-25% movement speed for 2s|r
+Damage: |cffffcc0030|r (spear), |cffffcc0016|r per second (burning pitch)
+Slow: |cffffcc00-30%|r movement speed for 5s
+Puddles: |cffffcc00120|r area, last |cffffcc004s|r
 Cooldown: |cffffcc001.5s|r
-Range: |cffffcc00600|r
-Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00piercing|r
+Range: |cffffcc00700|r
+Targets: |cffffcc00air & ground|r (puddles: |cffffcc00ground only!|r)
+Damage type: |cffffcc00piercing|r (spear), |cffffcc00spell|r (fire)
 }
 
 STRING 3249
-// Items: I0DX (Searing Spear), Name (Name)
+// Items: I0DX (Burning Pitch), Name (Name)
 {
-Searing Spear
+Burning Pitch
 }
 
 STRING 3250
@@ -20174,5 +20176,11 @@ STRING 3583
 // Abilities: A05C (Lone Prey Heart Shot), Name (Name)
 {
 Lone Prey Heart Shot
+}
+
+STRING 3584
+// Abilities: A05D (Burning Pitch Slow), Name (Name)
+{
+Burning Pitch Slow
 }
 

@@ -228,7 +228,7 @@ export const weaponRecipes = [
   new Recipes.RootedTreants(),
   new Recipes.Wildseed(),
   new Recipes.PowderKeg(),
-  new Recipes.SearingSpear(),
+  new Recipes.BurningPitch(),
   new Recipes.Fever(),
   new Recipes.Smoulder(),
   new Recipes.ShadowCyclone(),
