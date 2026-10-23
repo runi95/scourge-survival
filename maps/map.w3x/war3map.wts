@@ -18935,71 +18935,69 @@ Thorned Treant
 }
 
 STRING 3348
-// Items: I0EM (Treant Drop), Tip (Tooltip - Basic)
+// Items: I0EM (Timber), Tip (Tooltip - Basic)
 {
-Purchase Treant Drop
+Purchase Timber
 }
 
 STRING 3349
-// Items: I0EM (Treant Drop), Description (Description)
+// Items: I0EM (Timber), Description (Description)
 {
-Fires Cluster Rockets at a random enemy unit within range, and 2 Treants sprout where they land.
+Summons Treants with goblin felling charges in their roots. When one falls, it topples onto the largest enemy group nearby, crushing everything under its trunk.
 }
 
 STRING 3350
-// Items: I0EM (Treant Drop), Ubertip (Tooltip - Extended)
+// Items: I0EM (Timber), Ubertip (Tooltip - Extended)
 {
-Fires Cluster Rockets at a random enemy unit within range, and 2 Treants sprout where they land.
+Summons Treants with goblin felling charges in their roots. When one falls, it topples onto the largest enemy group nearby, crushing everything under its trunk.
 }
 
 STRING 3351
-// Items: I0EM (Treant Drop), Name (Name)
+// Items: I0EM (Timber), Name (Name)
 {
-Treant Drop
+Timber
 }
 
 STRING 3352
-// Items: I0EN (Treant Drop), Tip (Tooltip - Basic)
+// Items: I0EN (Timber), Tip (Tooltip - Basic)
 {
-Purchase Treant Drop
+Purchase Timber
 }
 
 STRING 3353
-// Items: I0EN (Treant Drop), Ubertip (Tooltip - Extended)
+// Items: I0EN (Timber), Ubertip (Tooltip - Extended)
 {
-Fires Cluster Rockets at a random enemy unit within range, and 2 Treants sprout where they land.
+Summons 2 Treants every 10 seconds, each with a goblin felling charge in its roots. When a Treant has fought for 10 seconds, or is cut down sooner, the charge blows and the Treant topples towards the largest enemy group nearby. Every enemy ground unit under its trunk is crushed and stunned.
 
-Damage: |cffffcc006 x 17.5 (rockets) + 2 x 15 - 17 (treants)|r
-Cooldown: |cffffcc004s|r
-Range: |cffffcc00700|r
-Area of effect: |cffffcc00300|r
-Health: |cffffcc00300|r
-Duration: |cffffcc008s|r
-Targets: |cffffcc00air & ground (rockets), ground (treants)|r
-Damage type: |cffffcc00spell + normal|r
-Effect: |cffffcc00stuns for 1s|r
+Treant damage: |cffffcc0041 - 43|r
+Treant health: |cffffcc00300|r
+Crush damage: |cffffcc00200|r (every enemy under the trunk)
+Stun: |cffffcc001.5s|r
+Trunk: |cffffcc00450|r long, |cffffcc00200|r wide
+Cooldown: |cffffcc0010s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00normal|r (Treants), |cffffcc00spell|r (crush)
 }
 
 STRING 3354
-// Items: I0EN (Treant Drop), Description (Description)
+// Items: I0EN (Timber), Description (Description)
 {
-Fires Cluster Rockets at a random enemy unit within range, and 2 Treants sprout where they land.
+Summons 2 Treants every 10 seconds, each with a goblin felling charge in its roots. When a Treant has fought for 10 seconds, or is cut down sooner, the charge blows and the Treant topples towards the largest enemy group nearby. Every enemy ground unit under its trunk is crushed and stunned.
 
-Damage: |cffffcc006 x 17.5 (rockets) + 2 x 15 - 17 (treants)|r
-Cooldown: |cffffcc004s|r
-Range: |cffffcc00700|r
-Area of effect: |cffffcc00300|r
-Health: |cffffcc00300|r
-Duration: |cffffcc008s|r
-Targets: |cffffcc00air & ground (rockets), ground (treants)|r
-Damage type: |cffffcc00spell + normal|r
-Effect: |cffffcc00stuns for 1s|r
+Treant damage: |cffffcc0041 - 43|r
+Treant health: |cffffcc00300|r
+Crush damage: |cffffcc00200|r (every enemy under the trunk)
+Stun: |cffffcc001.5s|r
+Trunk: |cffffcc00450|r long, |cffffcc00200|r wide
+Cooldown: |cffffcc0010s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00normal|r (Treants), |cffffcc00spell|r (crush)
 }
 
 STRING 3355
-// Items: I0EN (Treant Drop), Name (Name)
+// Items: I0EN (Timber), Name (Name)
 {
-Treant Drop
+Timber
 }
 
 STRING 3356

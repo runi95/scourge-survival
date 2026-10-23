@@ -241,7 +241,7 @@ export const weaponRecipes = [
   new Recipes.BrambleBurst(),
   new Recipes.ThornSpear(),
   new Recipes.ThornedTreants(),
-  new Recipes.TreantDrop(),
+  new Recipes.Timber(),
   new Recipes.TreantGrove(),
   new Recipes.TwinStrike(),
   new Recipes.VenomCyclone(),
