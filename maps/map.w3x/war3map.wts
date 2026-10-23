@@ -7728,12 +7728,6 @@ STRING 1899
 Tripwire
 }
 
-STRING 1900
-// Abilities: A03S (Plague Trap Disease), Name (Name)
-{
-Plague Trap Disease
-}
-
 STRING 1902
 // Items: I051 (Tripwire), Name (Name)
 {
@@ -19121,71 +19115,67 @@ Twin Strike
 }
 
 STRING 3372
-// Items: I0ES (Venom Cyclone), Tip (Tooltip - Basic)
+// Items: I0ES (Vertigo), Tip (Tooltip - Basic)
 {
-Purchase Venom Cyclone
+Purchase Vertigo
 }
 
 STRING 3373
-// Items: I0ES (Venom Cyclone), Description (Description)
+// Items: I0ES (Vertigo), Description (Description)
 {
-Summons a poisonous tornado every 10 seconds that wanders around, tossing enemies into the air and poisoning everything around it.
+A sickening whirlwind drifts into the largest enemy group. Enemies it spins reel out of it dizzy and lash out at each other, their blows carrying the Dryad's slow poison.
 }
 
 STRING 3374
-// Items: I0ES (Venom Cyclone), Ubertip (Tooltip - Extended)
+// Items: I0ES (Vertigo), Ubertip (Tooltip - Extended)
 {
-Summons a poisonous tornado every 10 seconds that wanders around, tossing enemies into the air and poisoning everything around it.
-}
-
-STRING 3375
-// Units: n01R (Venom Cyclone), Name (Name)
-{
-Venom Cyclone
+A sickening whirlwind drifts into the largest enemy group. Enemies it spins reel out of it dizzy and lash out at each other, their blows carrying the Dryad's slow poison.
 }
 
 STRING 3376
-// Items: I0ET (Venom Cyclone), Tip (Tooltip - Basic)
+// Items: I0ET (Vertigo), Tip (Tooltip - Basic)
 {
-Purchase Venom Cyclone
+Purchase Vertigo
 }
 
 STRING 3377
-// Items: I0ET (Venom Cyclone), Ubertip (Tooltip - Extended)
+// Items: I0ET (Vertigo), Ubertip (Tooltip - Extended)
 {
-Summons a poisonous tornado every 10 seconds that wanders around, tossing enemies into the air and poisoning everything around it.
+A sickening whirlwind drifts after the largest enemy group near your hero, spinning every enemy unit around it. The spun reel out of it dizzy for 4 seconds: instead of your hero, each one lashes out at the nearest enemy next to it, and every blow it lands on its own kind is poisoned, hurting and slowing the one it strikes.
 
-Damage: |cffffcc0025 - 180 (tornado) + 10 per second (poison)|r
-Cooldown: |cffffcc0010s|r
-Area of effect: |cffffcc00650 (tornado) + 250 (poison)|r
-Duration: |cffffcc0010s|r
-Targets: |cffffcc00air & ground (tornado), ground (poison)|r
-Damage type: |cffffcc00spell|r
+Damage: |cffffcc0040|r every 0.5s (spin) + |cffffcc0040|r + |cffffcc0015|r per poisoned blow
+Poison: |cffffcc0010|r per second for |cffffcc002s|r, |cffffcc00-25%|r movement speed
+Dizzy: |cffffcc004s|r
+Range: |cffffcc00900|r (whirlwind), |cffffcc00400|r (blows)
+Area of effect: |cffffcc00250|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r (spin, blow), |cffffcc00piercing|r (poisoned spear)
 }
 
 STRING 3378
-// Items: I0ET (Venom Cyclone), Description (Description)
+// Items: I0ET (Vertigo), Description (Description)
 {
-Summons a poisonous tornado every 10 seconds that wanders around, tossing enemies into the air and poisoning everything around it.
+A sickening whirlwind drifts after the largest enemy group near your hero, spinning every enemy unit around it. The spun reel out of it dizzy for 4 seconds: instead of your hero, each one lashes out at the nearest enemy next to it, and every blow it lands on its own kind is poisoned, hurting and slowing the one it strikes.
 
-Damage: |cffffcc0025 - 180 (tornado) + 10 per second (poison)|r
-Cooldown: |cffffcc0010s|r
-Area of effect: |cffffcc00650 (tornado) + 250 (poison)|r
-Duration: |cffffcc0010s|r
-Targets: |cffffcc00air & ground (tornado), ground (poison)|r
-Damage type: |cffffcc00spell|r
+Damage: |cffffcc0040|r every 0.5s (spin) + |cffffcc0040|r + |cffffcc0015|r per poisoned blow
+Poison: |cffffcc0010|r per second for |cffffcc002s|r, |cffffcc00-25%|r movement speed
+Dizzy: |cffffcc004s|r
+Range: |cffffcc00900|r (whirlwind), |cffffcc00400|r (blows)
+Area of effect: |cffffcc00250|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r (spin, blow), |cffffcc00piercing|r (poisoned spear)
 }
 
 STRING 3379
-// Items: I0ES (Venom Cyclone), Name (Name)
+// Items: I0ES (Vertigo), Name (Name)
 {
-Venom Cyclone
+Vertigo
 }
 
 STRING 3380
-// Items: I0ET (Venom Cyclone), Name (Name)
+// Items: I0ET (Vertigo), Name (Name)
 {
-Venom Cyclone
+Vertigo
 }
 
 STRING 3381

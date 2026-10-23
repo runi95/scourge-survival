@@ -26,6 +26,7 @@ import { ClingingSwarmDamageEvent } from "./DamageEvents/ClingingSwarmDamageEven
 import { ThornsAuraDamageEvent } from "./DamageEvents/ThornsAuraDamageEvent";
 import { WildfireDamageEvent } from "./DamageEvents/WildfireDamageEvent";
 import { SneakAttackDamageEvent } from "./DamageEvents/SneakAttackDamageEvent";
+import { VertigoDamageEvent } from "./DamageEvents/VertigoDamageEvent";
 
 export interface ExtendedDamageInstance extends DamageInstance {
   sourceOwningPlayer: player;
@@ -164,6 +165,10 @@ export class DamageEventController {
     );
     DamageEngine.register(
       new SneakAttackDamageEvent(),
+      DamageEventType.AfterDamageEvent,
+    );
+    DamageEngine.register(
+      new VertigoDamageEvent(),
       DamageEventType.AfterDamageEvent,
     );
   }
