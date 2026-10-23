@@ -217,7 +217,7 @@ export const weaponRecipes = [
   new Recipes.HuntressHall(),
   new Recipes.KnifeMine(),
   new Recipes.KnifeRockets(),
-  new Recipes.KnifeStorm(),
+  new Recipes.ReturningBlades(),
   new Recipes.NaturesWrath(),
   new Recipes.Overgrowth(),
   new Recipes.PoisonMine(),

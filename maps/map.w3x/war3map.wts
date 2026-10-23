@@ -17375,63 +17375,65 @@ Knife Rockets
 }
 
 STRING 3150
-// Items: I0DA (Knife Storm), Tip (Tooltip - Basic)
+// Items: I0DA (Returning Blades), Tip (Tooltip - Basic)
 {
-Purchase Knife Storm
+Purchase Returning Blades
 }
 
 STRING 3151
-// Items: I0DA (Knife Storm), Description (Description)
+// Items: I0DA (Returning Blades), Description (Description)
 {
-Flings 2 fans of knives in a row at every enemy unit around your hero.
+Flings fans of knives that stick in their victims; every third fan the knives tear out and fly back to your hero.
 }
 
 STRING 3152
-// Items: I0DA (Knife Storm), Ubertip (Tooltip - Extended)
+// Items: I0DA (Returning Blades), Ubertip (Tooltip - Extended)
 {
-Flings 2 fans of knives in a row at every enemy unit around your hero.
+Flings fans of knives that stick in their victims; every third fan the knives tear out and fly back to your hero.
 }
 
 STRING 3153
-// Items: I0DA (Knife Storm), Name (Name)
+// Items: I0DA (Returning Blades), Name (Name)
 {
-Knife Storm
+Returning Blades
 }
 
 STRING 3154
-// Items: I0DB (Knife Storm), Tip (Tooltip - Basic)
+// Items: I0DB (Returning Blades), Tip (Tooltip - Basic)
 {
-Purchase Knife Storm
+Purchase Returning Blades
 }
 
 STRING 3155
-// Items: I0DB (Knife Storm), Ubertip (Tooltip - Extended)
+// Items: I0DB (Returning Blades), Ubertip (Tooltip - Extended)
 {
-Flings 2 fans of knives in a row at every enemy unit around your hero.
+Flings a fan of knives at every enemy unit around your hero, leaving a knife stuck in each of them. Every third fan, all the stuck knives tear out of their victims, even the dead ones, and fly back to your hero, cutting every enemy unit on their way in.
 
-Damage: |cffffcc002 x 75|r
-Cooldown: |cffffcc003s|r
-Area of effect: |cffffcc00400|r
+Damage: |cffffcc00105|r (fan), |cffffcc00100|r (tearing out), |cffffcc00100|r (on the way back)
+Cooldown: |cffffcc003s|r, knives return every |cffffcc003rd|r fan
+Area of effect: |cffffcc00400|r (fan), |cffffcc0075|r (returning knife)
+Knives: |cffffcc0040|r at most
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 3156
-// Items: I0DB (Knife Storm), Description (Description)
+// Items: I0DB (Returning Blades), Description (Description)
 {
-Flings 2 fans of knives in a row at every enemy unit around your hero.
+Flings a fan of knives at every enemy unit around your hero, leaving a knife stuck in each of them. Every third fan, all the stuck knives tear out of their victims, even the dead ones, and fly back to your hero, cutting every enemy unit on their way in.
 
-Damage: |cffffcc002 x 75|r
-Cooldown: |cffffcc003s|r
-Area of effect: |cffffcc00400|r
+Damage: |cffffcc00105|r (fan), |cffffcc00100|r (tearing out), |cffffcc00100|r (on the way back)
+Cooldown: |cffffcc003s|r, knives return every |cffffcc003rd|r fan
+Area of effect: |cffffcc00400|r (fan), |cffffcc0075|r (returning knife)
+Knives: |cffffcc0040|r at most
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 3157
-// Items: I0DB (Knife Storm), Name (Name)
+// Items: I0DB (Returning Blades), Name (Name)
 {
-Knife Storm
+Returning Blades
 }
 
 STRING 3158
