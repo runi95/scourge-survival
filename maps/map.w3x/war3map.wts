@@ -19195,69 +19195,69 @@ Venom Cyclone
 }
 
 STRING 3381
-// Items: I0EU (Venom Rockets), Tip (Tooltip - Basic)
+// Items: I0EU (Joyride), Tip (Tooltip - Basic)
 {
-Purchase Venom Rockets
+Purchase Joyride
 }
 
 STRING 3382
-// Items: I0EU (Venom Rockets), Description (Description)
+// Items: I0EU (Joyride), Description (Description)
 {
-Throws a poisoned dagger and fires Cluster Rockets at a random enemy unit within range.
+Stabs a lit goblin rocket into the nearest enemy, which then takes it on a joyride into the largest enemy group nearby and blows up there, spraying poison.
 }
 
 STRING 3383
-// Items: I0EU (Venom Rockets), Ubertip (Tooltip - Extended)
+// Items: I0EU (Joyride), Ubertip (Tooltip - Extended)
 {
-Throws a poisoned dagger and fires Cluster Rockets at a random enemy unit within range.
+Stabs a lit goblin rocket into the nearest enemy, which then takes it on a joyride into the largest enemy group nearby and blows up there, spraying poison.
 }
 
 STRING 3384
-// Items: I0EU (Venom Rockets), Name (Name)
+// Items: I0EU (Joyride), Name (Name)
 {
-Venom Rockets
+Joyride
 }
 
 STRING 3385
-// Items: I0EV (Venom Rockets), Tip (Tooltip - Basic)
+// Items: I0EV (Joyride), Tip (Tooltip - Basic)
 {
-Purchase Venom Rockets
+Purchase Joyride
 }
 
 STRING 3386
-// Items: I0EV (Venom Rockets), Ubertip (Tooltip - Extended)
+// Items: I0EV (Joyride), Ubertip (Tooltip - Extended)
 {
-Throws a poisoned dagger and fires Cluster Rockets at a random enemy unit within range.
+Stabs a poisoned dagger with a goblin rocket strapped to it into the nearest enemy unit. A moment later the rocket ignites and carries its helpless host through the air into the largest enemy group nearby, where it crashes and explodes: every enemy around is stunned and poisoned, the poison hurting and slowing them for 9 seconds.
 
-Damage: |cffffcc00100 + 30 every 3s for 9s (dagger) + 6 x 17.5 (rockets)|r
-Slow: |cffffcc00-50% movement speed for 9s|r
-Cooldown: |cffffcc003s|r
-Range: |cffffcc00700|r
-Area of effect: |cffffcc00300|r
+Damage: |cffffcc00100|r (dagger) + |cffffcc00100|r (crash, every enemy around)
+Poison: |cffffcc0030 every 3s for 9s|r, |cffffcc00-50%|r movement speed (fading)
+Stun: |cffffcc001s|r (crash)
+Cooldown: |cffffcc004s|r
+Range: |cffffcc00700|r (dagger), |cffffcc00900|r (flight)
+Area of effect: |cffffcc00250|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
-Effect: |cffffcc00stuns for 1s|r
 }
 
 STRING 3387
-// Items: I0EV (Venom Rockets), Description (Description)
+// Items: I0EV (Joyride), Description (Description)
 {
-Throws a poisoned dagger and fires Cluster Rockets at a random enemy unit within range.
+Stabs a poisoned dagger with a goblin rocket strapped to it into the nearest enemy unit. A moment later the rocket ignites and carries its helpless host through the air into the largest enemy group nearby, where it crashes and explodes: every enemy around is stunned and poisoned, the poison hurting and slowing them for 9 seconds.
 
-Damage: |cffffcc00100 + 30 every 3s for 9s (dagger) + 6 x 17.5 (rockets)|r
-Slow: |cffffcc00-50% movement speed for 9s|r
-Cooldown: |cffffcc003s|r
-Range: |cffffcc00700|r
-Area of effect: |cffffcc00300|r
+Damage: |cffffcc00100|r (dagger) + |cffffcc00100|r (crash, every enemy around)
+Poison: |cffffcc0030 every 3s for 9s|r, |cffffcc00-50%|r movement speed (fading)
+Stun: |cffffcc001s|r (crash)
+Cooldown: |cffffcc004s|r
+Range: |cffffcc00700|r (dagger), |cffffcc00900|r (flight)
+Area of effect: |cffffcc00250|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
-Effect: |cffffcc00stuns for 1s|r
 }
 
 STRING 3388
-// Items: I0EV (Venom Rockets), Name (Name)
+// Items: I0EV (Joyride), Name (Name)
 {
-Venom Rockets
+Joyride
 }
 
 STRING 3389
@@ -20162,5 +20162,11 @@ STRING 3579
 // Abilities: A058 (Earthbind (weapon)), Name (Name)
 {
 Earthbind (weapon)
+}
+
+STRING 3580
+// Abilities: A059 (Joyride venom (weapon)), Name (Name)
+{
+Joyride venom (weapon)
 }
 

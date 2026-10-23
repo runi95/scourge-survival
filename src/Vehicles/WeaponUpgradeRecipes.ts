@@ -245,7 +245,7 @@ export const weaponRecipes = [
   new Recipes.TreantGrove(),
   new Recipes.TwinStrike(),
   new Recipes.VenomCyclone(),
-  new Recipes.VenomRockets(),
+  new Recipes.Joyride(),
   new Recipes.VenomSpear(),
   new Recipes.Warden(),
   new Recipes.WildGrowth(),

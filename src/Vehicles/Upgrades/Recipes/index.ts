@@ -240,7 +240,7 @@ export * from "./TreantDrop";
 export * from "./TreantGrove";
 export * from "./TwinStrike";
 export * from "./VenomCyclone";
-export * from "./VenomRockets";
+export * from "./Joyride";
 export * from "./VenomSpear";
 export * from "./Warden";
 export * from "./WildGrowth";
