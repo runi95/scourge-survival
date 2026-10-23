@@ -16537,71 +16537,71 @@ Stoked Blades
 }
 
 STRING 3042
-// Items: I0CK (Burning Roots), Tip (Tooltip - Basic)
+// Items: I0CK (Grasping Flames), Tip (Tooltip - Basic)
 {
-Purchase Burning Roots
+Purchase Grasping Flames
 }
 
 STRING 3043
-// Items: I0CK (Burning Roots), Description (Description)
+// Items: I0CK (Grasping Flames), Description (Description)
 {
-Roots 2 random enemy units within range in burning vines that hold them in place.
+Engulfs your hero in flames. Enemies that stay in them are gripped by burning vines that hold them and keep them from attacking.
 }
 
 STRING 3044
-// Items: I0CK (Burning Roots), Ubertip (Tooltip - Extended)
+// Items: I0CK (Grasping Flames), Ubertip (Tooltip - Extended)
 {
-Roots 2 random enemy units within range in burning vines that hold them in place.
+Engulfs your hero in flames. Enemies that stay in them are gripped by burning vines that hold them and keep them from attacking.
 }
 
 STRING 3045
-// Items: I0CK (Burning Roots), Name (Name)
+// Items: I0CK (Grasping Flames), Name (Name)
 {
-Burning Roots
+Grasping Flames
 }
 
 STRING 3046
-// Items: I0CL (Burning Roots), Tip (Tooltip - Basic)
+// Items: I0CL (Grasping Flames), Tip (Tooltip - Basic)
 {
-Purchase Burning Roots
+Purchase Grasping Flames
 }
 
 STRING 3047
-// Items: I0CL (Burning Roots), Ubertip (Tooltip - Extended)
+// Items: I0CL (Grasping Flames), Ubertip (Tooltip - Extended)
 {
-Roots 2 random enemy units within range in burning vines that hold them in place.
+Engulfs your hero in flames that burn every enemy unit close to it. An enemy ground unit that stays in the flames for 2 seconds is gripped by burning vines: it is held in place and cannot attack for 3 seconds while it burns harder. It has to stay in the flames 2 more seconds after it breaks free to be gripped again.
 
-Damage: |cffffcc002 x 30 per second|r
-Cooldown: |cffffcc002.5s|r
-Range: |cffffcc00600|r
-Duration: |cffffcc002.5s|r
-Targets: |cffffcc00ground only!|r
+Damage: |cffffcc0020 per second|r + |cffffcc0040 per second|r while gripped
+Cooldown: |cffffcc001s|r
+Area of effect: |cffffcc00220|r
+Grip: after |cffffcc002s|r in the flames, for |cffffcc003s|r
+Targets: |cffffcc00air & ground|r, grips |cffffcc00ground only!|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 3048
-// Items: I0CL (Burning Roots), Description (Description)
+// Items: I0CL (Grasping Flames), Description (Description)
 {
-Roots 2 random enemy units within range in burning vines that hold them in place.
+Engulfs your hero in flames that burn every enemy unit close to it. An enemy ground unit that stays in the flames for 2 seconds is gripped by burning vines: it is held in place and cannot attack for 3 seconds while it burns harder. It has to stay in the flames 2 more seconds after it breaks free to be gripped again.
 
-Damage: |cffffcc002 x 30 per second|r
-Cooldown: |cffffcc002.5s|r
-Range: |cffffcc00600|r
-Duration: |cffffcc002.5s|r
-Targets: |cffffcc00ground only!|r
+Damage: |cffffcc0020 per second|r + |cffffcc0040 per second|r while gripped
+Cooldown: |cffffcc001s|r
+Area of effect: |cffffcc00220|r
+Grip: after |cffffcc002s|r in the flames, for |cffffcc003s|r
+Targets: |cffffcc00air & ground|r, grips |cffffcc00ground only!|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 3049
-// Items: I0CL (Burning Roots), Name (Name)
+// Items: I0CL (Grasping Flames), Name (Name)
 {
-Burning Roots
+Grasping Flames
 }
 
 STRING 3050
-// Abilities: A04M (Burning Roots), Name (Name)
+// Abilities: A04M (grip), Name (Name)
 {
-Burning Roots
+Grasping Flames
 }
 
 STRING 3051

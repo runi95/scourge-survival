@@ -199,7 +199,7 @@ export * from "./BladeCyclone";
 export * from "./BarbedHook";
 export * from "./BlazingArrows";
 export * from "./StokedBlades";
-export * from "./BurningRoots";
+export * from "./GraspingFlames";
 export * from "./BurningTreants";
 export * from "./DruidGrove";
 export * from "./DryadGrove";

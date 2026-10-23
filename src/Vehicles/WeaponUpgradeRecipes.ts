@@ -204,7 +204,7 @@ export const weaponRecipes = [
   new Recipes.BarbedHook(),
   new Recipes.BlazingArrows(),
   new Recipes.StokedBlades(),
-  new Recipes.BurningRoots(),
+  new Recipes.GraspingFlames(),
   new Recipes.BurningTreants(),
   new Recipes.DruidGrove(),
   new Recipes.DryadGrove(),
