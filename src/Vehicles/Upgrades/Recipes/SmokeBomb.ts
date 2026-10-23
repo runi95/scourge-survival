@@ -132,20 +132,24 @@ export class SmokeBomb extends WeaponUpgradeRecipe {
     const creeps = GameMap.REMAINING_PLAYER_CREEPS[owner.id + 9];
 
     // Who came out of the smoke gets a dagger
+    // Deleting inside forEach would end the loop there
+    const left: Unit[] = [];
     cloud.inside.forEach((u) => {
       const dx = u.x - x;
       const dy = u.y - y;
       if (u.isAlive() && dx * dx + dy * dy <= 300 * 300) return;
-
+      left.push(u);
+    });
+    for (const u of left) {
       cloud.inside.delete(u);
       this.release(owner, cloud, u);
-      if (!u.isAlive() || cloud.stabbed.has(u)) return;
+      if (!u.isAlive() || cloud.stabbed.has(u)) continue;
       cloud.stabbed.add(u);
       const dummy = Unit.create(owner, this.dummyUnitId, x, y);
       dummy.applyTimedLife(Globals.TIMED_LIFE_BUFF_ID, 11);
       dummy.addAbility(this.abilityId);
       dummy.issueTargetOrder("shadowstrike", u);
-    });
+    }
 
     // Who is in it gropes its way out, away from where the bomb fell
     const grp = Group.fromRange(300, cloud.at);

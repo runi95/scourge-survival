@@ -67,10 +67,13 @@ export class Tripvine extends WeaponUpgradeRecipe {
         vines.distances.set(u, this.distance(hero, u));
       });
       grp.destroy();
+      // Deleting inside forEach would end the loop there
+      const freed: Unit[] = [];
       vines.held.forEach((left, u) => {
-        if (left <= 0.5 || !u.isAlive()) vines.held.delete(u);
+        if (left <= 0.5 || !u.isAlive()) freed.push(u);
         else vines.held.set(u, left - 0.5);
       });
+      for (const u of freed) vines.held.delete(u);
     });
     vines.timers.push(shoot, look);
   }
