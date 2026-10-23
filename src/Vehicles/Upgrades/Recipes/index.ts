@@ -201,7 +201,7 @@ export * from "./BlazingArrows";
 export * from "./StokedBlades";
 export * from "./GraspingFlames";
 export * from "./BurningTreants";
-export * from "./DruidGrove";
+export * from "./Harvester";
 export * from "./DryadGrove";
 export * from "./DryadVolley";
 export * from "./RicochetArrow";

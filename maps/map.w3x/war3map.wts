@@ -16675,65 +16675,67 @@ Burning Treant
 }
 
 STRING 3060
-// Items: I0CO (Druid Grove), Tip (Tooltip - Basic)
+// Items: I0CO (Harvester), Tip (Tooltip - Basic)
 {
-Purchase Druid Grove
+Purchase Harvester
 }
 
 STRING 3061
-// Items: I0CO (Druid Grove), Description (Description)
+// Items: I0CO (Harvester), Description (Description)
 {
-Sends out 2 Druids of the Claw every 30 seconds that fight by your side.
+Sends a goblin harvester plowing through the largest enemy group. Its vines carry off every enemy in its way and plant them far from your hero.
 }
 
 STRING 3062
-// Items: I0CO (Druid Grove), Ubertip (Tooltip - Extended)
+// Items: I0CO (Harvester), Ubertip (Tooltip - Extended)
 {
-Sends out 2 Druids of the Claw every 30 seconds that fight by your side.
+Sends a goblin harvester plowing through the largest enemy group. Its vines carry off every enemy in its way and plant them far from your hero.
 }
 
 STRING 3063
-// Items: I0CO (Druid Grove), Name (Name)
+// Items: I0CO (Harvester), Name (Name)
 {
-Druid Grove
+Harvester
 }
 
 STRING 3064
-// Items: I0CP (Druid Grove), Tip (Tooltip - Basic)
+// Items: I0CP (Harvester), Tip (Tooltip - Basic)
 {
-Purchase Druid Grove
+Purchase Harvester
 }
 
 STRING 3065
-// Items: I0CP (Druid Grove), Ubertip (Tooltip - Extended)
+// Items: I0CP (Harvester), Ubertip (Tooltip - Extended)
 {
-Sends out 2 Druids of the Claw every 30 seconds that fight by your side.
+Every 8 seconds a goblin harvester drives out from your hero through the largest group of enemy ground units within range. The vines of its reel catch every enemy ground unit in front of it and carry it along under the blades, and at the end of the row they plant the whole catch there, rooted in place.
 
-Damage: |cffffcc002 x 19 - 22|r
-Cooldown: |cffffcc0030s|r
-Health: |cffffcc00430|r
-Duration: |cffffcc0020s|r
+Damage: |cffffcc0025|r every 0.25s while carried + |cffffcc0050 per second|r while rooted
+Cooldown: |cffffcc008s|r
+Range: |cffffcc00800|r, drives |cffffcc00700|r
+Area of effect: |cffffcc00130|r in front of the harvester
+Roots: |cffffcc002.5s|r
 Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00normal|r
+Damage type: |cffffcc00spell|r
 }
 
 STRING 3066
-// Items: I0CP (Druid Grove), Description (Description)
+// Items: I0CP (Harvester), Description (Description)
 {
-Sends out 2 Druids of the Claw every 30 seconds that fight by your side.
+Every 8 seconds a goblin harvester drives out from your hero through the largest group of enemy ground units within range. The vines of its reel catch every enemy ground unit in front of it and carry it along under the blades, and at the end of the row they plant the whole catch there, rooted in place.
 
-Damage: |cffffcc002 x 19 - 22|r
-Cooldown: |cffffcc0030s|r
-Health: |cffffcc00430|r
-Duration: |cffffcc0020s|r
+Damage: |cffffcc0025|r every 0.25s while carried + |cffffcc0050 per second|r while rooted
+Cooldown: |cffffcc008s|r
+Range: |cffffcc00800|r, drives |cffffcc00700|r
+Area of effect: |cffffcc00130|r in front of the harvester
+Roots: |cffffcc002.5s|r
 Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00normal|r
+Damage type: |cffffcc00spell|r
 }
 
 STRING 3067
-// Items: I0CP (Druid Grove), Name (Name)
+// Items: I0CP (Harvester), Name (Name)
 {
-Druid Grove
+Harvester
 }
 
 STRING 3068
