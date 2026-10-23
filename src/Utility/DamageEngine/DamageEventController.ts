@@ -24,6 +24,7 @@ import { BlackIceDamageEvent } from "./DamageEvents/BlackIceDamageEvent";
 import { RavenousWyrmDamageEvent } from "./DamageEvents/RavenousWyrmDamageEvent";
 import { ClingingSwarmDamageEvent } from "./DamageEvents/ClingingSwarmDamageEvent";
 import { ThornsAuraDamageEvent } from "./DamageEvents/ThornsAuraDamageEvent";
+import { WildfireDamageEvent } from "./DamageEvents/WildfireDamageEvent";
 
 export interface ExtendedDamageInstance extends DamageInstance {
   sourceOwningPlayer: player;
@@ -154,6 +155,10 @@ export class DamageEventController {
     );
     DamageEngine.register(
       new ThornsAuraDamageEvent(),
+      DamageEventType.AfterDamageEvent,
+    );
+    DamageEngine.register(
+      new WildfireDamageEvent(),
       DamageEventType.AfterDamageEvent,
     );
   }

@@ -243,4 +243,4 @@ export * from "./VenomCyclone";
 export * from "./Joyride";
 export * from "./VenomSpear";
 export * from "./Warden";
-export * from "./WildGrowth";
+export * from "./Wildfire";

@@ -19381,67 +19381,73 @@ Warden
 }
 
 STRING 3405
-// Items: I0F0 (Wild Growth), Tip (Tooltip - Basic)
+// Items: I0F0 (Wildfire), Tip (Tooltip - Basic)
 {
-Purchase Wild Growth
+Purchase Wildfire
 }
 
 STRING 3406
-// Items: I0F0 (Wild Growth), Description (Description)
+// Items: I0F0 (Wildfire), Description (Description)
 {
-Fires a searing arrow at a random enemy unit within range, and a Treant sprouts where it hits.
+Summons kindling Treants and sets the enemies near them alight with searing arrows. Every blow a Treant lands on a burning enemy spreads the fire to everyone around it.
 }
 
 STRING 3407
-// Items: I0F0 (Wild Growth), Ubertip (Tooltip - Extended)
+// Items: I0F0 (Wildfire), Ubertip (Tooltip - Extended)
 {
-Fires a searing arrow at a random enemy unit within range, and a Treant sprouts where it hits.
+Summons kindling Treants and sets the enemies near them alight with searing arrows. Every blow a Treant lands on a burning enemy spreads the fire to everyone around it.
 }
 
 STRING 3408
-// Items: I0F0 (Wild Growth), Name (Name)
+// Items: I0F0 (Wildfire), Name (Name)
 {
-Wild Growth
+Wildfire
 }
 
 STRING 3409
-// Items: I0F1 (Wild Growth), Tip (Tooltip - Basic)
+// Items: I0F1 (Wildfire), Tip (Tooltip - Basic)
 {
-Purchase Wild Growth
+Purchase Wildfire
 }
 
 STRING 3410
-// Items: I0F1 (Wild Growth), Ubertip (Tooltip - Extended)
+// Items: I0F1 (Wildfire), Ubertip (Tooltip - Extended)
 {
-Fires a searing arrow at a random enemy unit within range, and a Treant sprouts where it hits.
+Summons 2 kindling Treants every 15 seconds, and every 2 seconds fires a searing arrow that sets the unlit enemy nearest to them on fire. The Treants go for burning enemies first, and every blow one of them lands on a burning enemy spreads the fire to every enemy around it, or keeps it burning longer.
 
-Damage: |cffffcc0020 (arrow) + 15 - 17 (treant)|r
-Cooldown: |cffffcc003s|r
-Range: |cffffcc00600|r
-Health: |cffffcc00300|r
-Duration: |cffffcc008s|r
-Targets: |cffffcc00air & ground (arrow), ground (treant)|r
-Damage type: |cffffcc00piercing + normal|r
+Arrow damage: |cffffcc0025|r
+Burn damage: |cffffcc008|r per second for |cffffcc006s|r
+Spread: every enemy within |cffffcc00150|r of a burning enemy a Treant hits
+Treant damage: |cffffcc0041 - 43|r
+Treant health: |cffffcc00300|r
+Treant duration: |cffffcc0015s|r
+Cooldown: |cffffcc002s|r (arrow), |cffffcc0015s|r (Treants)
+Range: |cffffcc00800|r
+Targets: |cffffcc00air & ground|r (fire), |cffffcc00ground only!|r (Treants)
+Damage type: |cffffcc00piercing|r (arrow), |cffffcc00spell|r (burn), |cffffcc00normal|r (Treants)
 }
 
 STRING 3411
-// Items: I0F1 (Wild Growth), Description (Description)
+// Items: I0F1 (Wildfire), Description (Description)
 {
-Fires a searing arrow at a random enemy unit within range, and a Treant sprouts where it hits.
+Summons 2 kindling Treants every 15 seconds, and every 2 seconds fires a searing arrow that sets the unlit enemy nearest to them on fire. The Treants go for burning enemies first, and every blow one of them lands on a burning enemy spreads the fire to every enemy around it, or keeps it burning longer.
 
-Damage: |cffffcc0020 (arrow) + 15 - 17 (treant)|r
-Cooldown: |cffffcc003s|r
-Range: |cffffcc00600|r
-Health: |cffffcc00300|r
-Duration: |cffffcc008s|r
-Targets: |cffffcc00air & ground (arrow), ground (treant)|r
-Damage type: |cffffcc00piercing + normal|r
+Arrow damage: |cffffcc0025|r
+Burn damage: |cffffcc008|r per second for |cffffcc006s|r
+Spread: every enemy within |cffffcc00150|r of a burning enemy a Treant hits
+Treant damage: |cffffcc0041 - 43|r
+Treant health: |cffffcc00300|r
+Treant duration: |cffffcc0015s|r
+Cooldown: |cffffcc002s|r (arrow), |cffffcc0015s|r (Treants)
+Range: |cffffcc00800|r
+Targets: |cffffcc00air & ground|r (fire), |cffffcc00ground only!|r (Treants)
+Damage type: |cffffcc00piercing|r (arrow), |cffffcc00spell|r (burn), |cffffcc00normal|r (Treants)
 }
 
 STRING 3412
-// Items: I0F1 (Wild Growth), Name (Name)
+// Items: I0F1 (Wildfire), Name (Name)
 {
-Wild Growth
+Wildfire
 }
 
 STRING 3413

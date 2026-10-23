@@ -248,5 +248,5 @@ export const weaponRecipes = [
   new Recipes.Joyride(),
   new Recipes.VenomSpear(),
   new Recipes.Warden(),
-  new Recipes.WildGrowth(),
+  new Recipes.Wildfire(),
 ];
