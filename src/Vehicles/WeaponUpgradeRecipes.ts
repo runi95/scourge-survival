@@ -198,7 +198,7 @@ export const weaponRecipes = [
   new Recipes.RestlessSpirits(),
   new Recipes.Haunting(),
   new Recipes.IceCrystal(),
-  new Recipes.AncientGrove(),
+  new Recipes.MountainGiant(),
   new Recipes.ArcherBarracks(),
   new Recipes.BladeCyclone(),
   new Recipes.BladedSpear(),

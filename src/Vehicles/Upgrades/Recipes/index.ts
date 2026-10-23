@@ -193,7 +193,7 @@ export * from "./Slaughterhouse";
 export * from "./RestlessSpirits";
 export * from "./Haunting";
 export * from "./IceCrystal";
-export * from "./AncientGrove";
+export * from "./MountainGiant";
 export * from "./ArcherBarracks";
 export * from "./BladeCyclone";
 export * from "./BladedSpear";

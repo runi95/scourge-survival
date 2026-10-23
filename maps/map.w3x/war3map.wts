@@ -16147,65 +16147,69 @@ Ice Crystal
 }
 
 STRING 2992
-// Items: I0C8 (Ancient Grove), Tip (Tooltip - Basic)
+// Items: I0C8 (Mountain Giant), Tip (Tooltip - Basic)
 {
-Purchase Ancient Grove
+Purchase Mountain Giant
 }
 
 STRING 2993
-// Items: I0C8 (Ancient Grove), Description (Description)
+// Items: I0C8 (Mountain Giant), Description (Description)
 {
-Awakens a Mountain Giant every 30 seconds that fights by your side.
+Awakens a Mountain Giant by your hero that taunts nearby enemies away from it every 8 seconds.
 }
 
 STRING 2994
-// Items: I0C8 (Ancient Grove), Ubertip (Tooltip - Extended)
+// Items: I0C8 (Mountain Giant), Ubertip (Tooltip - Extended)
 {
-Awakens a Mountain Giant every 30 seconds that fights by your side.
+Awakens a Mountain Giant by your hero that taunts nearby enemies away from it every 8 seconds.
 }
 
 STRING 2995
-// Items: I0C8 (Ancient Grove), Name (Name)
+// Items: I0C8 (Mountain Giant), Name (Name)
 {
-Ancient Grove
+Mountain Giant
 }
 
 STRING 2996
-// Items: I0C9 (Ancient Grove), Tip (Tooltip - Basic)
+// Items: I0C9 (Mountain Giant), Tip (Tooltip - Basic)
 {
-Purchase Ancient Grove
+Purchase Mountain Giant
 }
 
 STRING 2997
-// Items: I0C9 (Ancient Grove), Ubertip (Tooltip - Extended)
+// Items: I0C9 (Mountain Giant), Ubertip (Tooltip - Extended)
 {
-Awakens a Mountain Giant every 30 seconds that fights by your side.
+Awakens a Mountain Giant next to your hero that fights by its side, and awakens it again 10 seconds after it falls. Every 8 seconds the giant Taunts every enemy unit within 500 of it, making them attack it instead of your hero for 4 seconds. It swings an uprooted tree, hitting every enemy ground unit around its target.
 
-Damage: |cffffcc0028 - 40|r
-Cooldown: |cffffcc0030s|r
-Health: |cffffcc001600|r
-Duration: |cffffcc0025s|r
+Damage: |cffffcc0061 - 67|r
+Area of effect: |cffffcc00100|r (full), |cffffcc00250|r (quarter)
+Cooldown: |cffffcc008s|r (taunt), |cffffcc0010s|r (awaken)
+Taunt area: |cffffcc00500|r
+Taunt duration: |cffffcc004s|r
+Health: |cffffcc002000|r
 Targets: |cffffcc00ground only!|r
 Damage type: |cffffcc00normal|r
 }
 
 STRING 2998
-// Items: I0C9 (Ancient Grove), Description (Description)
+// Items: I0C9 (Mountain Giant), Description (Description)
 {
-Awakens a Mountain Giant every 30 seconds that fights by your side.
+Awakens a Mountain Giant next to your hero that fights by its side, and awakens it again 10 seconds after it falls. Every 8 seconds the giant Taunts every enemy unit within 500 of it, making them attack it instead of your hero for 4 seconds. It swings an uprooted tree, hitting every enemy ground unit around its target.
 
-Damage: |cffffcc0028 - 40|r
-Cooldown: |cffffcc0030s|r
-Health: |cffffcc001600|r
-Duration: |cffffcc0025s|r
+Damage: |cffffcc0061 - 67|r
+Area of effect: |cffffcc00100|r (full), |cffffcc00250|r (quarter)
+Cooldown: |cffffcc008s|r (taunt), |cffffcc0010s|r (awaken)
+Taunt area: |cffffcc00500|r
+Taunt duration: |cffffcc004s|r
+Health: |cffffcc002000|r
 Targets: |cffffcc00ground only!|r
 Damage type: |cffffcc00normal|r
 }
 
 STRING 2999
-// Items: I0C9 (Ancient Grove), Name (Name)
+// Items: I0C9 (Mountain Giant), Name (Name)
 {
-Ancient Grove
+Mountain Giant
 }
 
 STRING 3000
@@ -20096,5 +20100,17 @@ STRING 3568
 // Units: u02L (Haunting Spirit), Name (Name)
 {
 Haunting Spirit
+}
+
+STRING 3569
+// Abilities: A053 (Mountain Giant Taunt), Name (Name)
+{
+Mountain Giant Taunt
+}
+
+STRING 3570
+// Units: e004 (Mountain Giant), Name (Name)
+{
+Mountain Giant
 }
 
