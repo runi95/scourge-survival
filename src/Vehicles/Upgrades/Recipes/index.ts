@@ -234,7 +234,7 @@ export * from "./StranglingWinds";
 export * from "./Tripvine";
 export * from "./ThornsAura";
 export * from "./BrambleBurst";
-export * from "./ThornSpear";
+export * from "./Bloodroot";
 export * from "./ThornedTreants";
 export * from "./Timber";
 export * from "./TreantGrove";

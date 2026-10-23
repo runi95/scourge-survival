@@ -239,7 +239,7 @@ export const weaponRecipes = [
   new Recipes.Tripvine(),
   new Recipes.ThornsAura(),
   new Recipes.BrambleBurst(),
-  new Recipes.ThornSpear(),
+  new Recipes.Bloodroot(),
   new Recipes.ThornedTreants(),
   new Recipes.Timber(),
   new Recipes.TreantGrove(),

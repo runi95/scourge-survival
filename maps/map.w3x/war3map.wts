@@ -18789,65 +18789,67 @@ Bramble Burst
 }
 
 STRING 3331
-// Items: I0EI (Thorn Spear), Tip (Tooltip - Basic)
+// Items: I0EI (Bloodroot), Tip (Tooltip - Basic)
 {
-Purchase Thorn Spear
+Purchase Bloodroot
 }
 
 STRING 3332
-// Items: I0EI (Thorn Spear), Description (Description)
+// Items: I0EI (Bloodroot), Description (Description)
 {
-Throws a poisoned spear at a random enemy unit within range and roots it in place.
+Throws poisoned spears in quick succession at the nearest enemy that isn't rooted. Each spear leaves a seed in its poison, and the third seed takes root: the enemy is held on the spot by roots that keep hurting it.
 }
 
 STRING 3333
-// Items: I0EI (Thorn Spear), Ubertip (Tooltip - Extended)
+// Items: I0EI (Bloodroot), Ubertip (Tooltip - Extended)
 {
-Throws a poisoned spear at a random enemy unit within range and roots it in place.
+Throws poisoned spears in quick succession at the nearest enemy that isn't rooted. Each spear leaves a seed in its poison, and the third seed takes root: the enemy is held on the spot by roots that keep hurting it.
 }
 
 STRING 3334
-// Items: I0EI (Thorn Spear), Name (Name)
+// Items: I0EI (Bloodroot), Name (Name)
 {
-Thorn Spear
+Bloodroot
 }
 
 STRING 3335
-// Items: I0EJ (Thorn Spear), Tip (Tooltip - Basic)
+// Items: I0EJ (Bloodroot), Tip (Tooltip - Basic)
 {
-Purchase Thorn Spear
+Purchase Bloodroot
 }
 
 STRING 3336
-// Items: I0EJ (Thorn Spear), Ubertip (Tooltip - Extended)
+// Items: I0EJ (Bloodroot), Ubertip (Tooltip - Extended)
 {
-Throws a poisoned spear at a random enemy unit within range and roots it in place.
+Throws poisoned spears in quick succession at the nearest enemy unit that isn't rooted, slowing it. Every spear leaves a seed in the poison, and the third seed in one enemy ground unit sprouts in its blood: it is rooted on the spot, unable to attack, and the roots keep hurting it. Rooted enemies are passed over, so the spears plant the front of the charge one after another.
 
-Damage: |cffffcc0015 (spear) + 15 per second (roots)|r
-Cooldown: |cffffcc002.5s|r
+Damage: |cffffcc0015|r (spear) + |cffffcc0050|r per second (roots)
+Slow: |cffffcc00-25%|r movement speed for 2s
+Roots: on the |cffffcc003rd|r spear in one enemy (each within |cffffcc005s|r of the last), for |cffffcc002.5s|r
+Cooldown: |cffffcc000.6s|r
 Range: |cffffcc00600|r
-Duration: |cffffcc002.5s|r
-Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00piercing + spell|r
+Targets: |cffffcc00air & ground|r (spears), |cffffcc00ground only!|r (roots)
+Damage type: |cffffcc00piercing|r (spear), |cffffcc00spell|r (roots)
 }
 
 STRING 3337
-// Items: I0EJ (Thorn Spear), Description (Description)
+// Items: I0EJ (Bloodroot), Description (Description)
 {
-Throws a poisoned spear at a random enemy unit within range and roots it in place.
+Throws poisoned spears in quick succession at the nearest enemy unit that isn't rooted, slowing it. Every spear leaves a seed in the poison, and the third seed in one enemy ground unit sprouts in its blood: it is rooted on the spot, unable to attack, and the roots keep hurting it. Rooted enemies are passed over, so the spears plant the front of the charge one after another.
 
-Damage: |cffffcc0015 (spear) + 15 per second (roots)|r
-Cooldown: |cffffcc002.5s|r
+Damage: |cffffcc0015|r (spear) + |cffffcc0050|r per second (roots)
+Slow: |cffffcc00-25%|r movement speed for 2s
+Roots: on the |cffffcc003rd|r spear in one enemy (each within |cffffcc005s|r of the last), for |cffffcc002.5s|r
+Cooldown: |cffffcc000.6s|r
 Range: |cffffcc00600|r
-Duration: |cffffcc002.5s|r
-Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00piercing + spell|r
+Targets: |cffffcc00air & ground|r (spears), |cffffcc00ground only!|r (roots)
+Damage type: |cffffcc00piercing|r (spear), |cffffcc00spell|r (roots)
 }
 
 STRING 3338
-// Items: I0EJ (Thorn Spear), Name (Name)
+// Items: I0EJ (Bloodroot), Name (Name)
 {
-Thorn Spear
+Bloodroot
 }
 
 STRING 3339
