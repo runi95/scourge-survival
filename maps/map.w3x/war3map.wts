@@ -18553,13 +18553,13 @@ Purchase Strangling Winds
 STRING 3300
 // Items: I0EA (Strangling Winds), Description (Description)
 {
-Roots a random enemy unit within range in place and summons a tornado that wanders around, tossing enemies into the air.
+A storm full of whipping vines settles on the largest enemy group, catching every enemy ground unit around its eye and holding it circling in the winds, helpless, while the vines strangle it.
 }
 
 STRING 3301
 // Items: I0EA (Strangling Winds), Ubertip (Tooltip - Extended)
 {
-Roots a random enemy unit within range in place and summons a tornado that wanders around, tossing enemies into the air.
+A storm full of whipping vines settles on the largest enemy group, catching every enemy ground unit around its eye and holding it circling in the winds, helpless, while the vines strangle it.
 }
 
 STRING 3302
@@ -18577,28 +18577,28 @@ Purchase Strangling Winds
 STRING 3304
 // Items: I0EB (Strangling Winds), Ubertip (Tooltip - Extended)
 {
-Roots a random enemy unit within range in place and summons a tornado that wanders around, tossing enemies into the air.
+Every 7 seconds a storm full of whipping vines settles on the largest group of enemy ground units nearby and stays there for 6 seconds. Every enemy ground unit around its eye, and every one walking in later, is caught by the vines and held in the winds: lifted off its feet, it circles the eye ever closer, can't move or fight and is strangled. When the storm dies down it drops them all in a heap at its eye.
 
-Damage: |cffffcc0015 per second (roots) + 25 - 180 (tornado)|r
-Cooldown: |cffffcc005s|r
-Range: |cffffcc00600|r
-Area of effect: |cffffcc00650|r
-Duration: |cffffcc002.5s (roots) + 10s (tornado)|r
-Targets: |cffffcc00ground (roots), air & ground (tornado)|r
+Damage: |cffffcc0080 per second|r (every enemy held)
+Cooldown: |cffffcc007s|r
+Duration: |cffffcc006s|r
+Range: |cffffcc00800|r
+Area of effect: |cffffcc00400|r
+Targets: |cffffcc00ground only!|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 3305
 // Items: I0EB (Strangling Winds), Description (Description)
 {
-Roots a random enemy unit within range in place and summons a tornado that wanders around, tossing enemies into the air.
+Every 7 seconds a storm full of whipping vines settles on the largest group of enemy ground units nearby and stays there for 6 seconds. Every enemy ground unit around its eye, and every one walking in later, is caught by the vines and held in the winds: lifted off its feet, it circles the eye ever closer, can't move or fight and is strangled. When the storm dies down it drops them all in a heap at its eye.
 
-Damage: |cffffcc0015 per second (roots) + 25 - 180 (tornado)|r
-Cooldown: |cffffcc005s|r
-Range: |cffffcc00600|r
-Area of effect: |cffffcc00650|r
-Duration: |cffffcc002.5s (roots) + 10s (tornado)|r
-Targets: |cffffcc00ground (roots), air & ground (tornado)|r
+Damage: |cffffcc0080 per second|r (every enemy held)
+Cooldown: |cffffcc007s|r
+Duration: |cffffcc006s|r
+Range: |cffffcc00800|r
+Area of effect: |cffffcc00400|r
+Targets: |cffffcc00ground only!|r
 Damage type: |cffffcc00spell|r
 }
 
