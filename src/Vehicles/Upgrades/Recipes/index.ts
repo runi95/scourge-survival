@@ -210,7 +210,7 @@ export * from "./FlamingRockets";
 export * from "./FlamingSpear";
 export * from "./GlaiveWorkshop";
 export * from "./HuntressHall";
-export * from "./KnifeMine";
+export * from "./Caltrops";
 export * from "./KnifeRockets";
 export * from "./ReturningBlades";
 export * from "./NaturesWrath";

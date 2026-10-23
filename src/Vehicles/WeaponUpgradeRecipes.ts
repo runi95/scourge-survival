@@ -215,7 +215,7 @@ export const weaponRecipes = [
   new Recipes.FlamingSpear(),
   new Recipes.GlaiveWorkshop(),
   new Recipes.HuntressHall(),
-  new Recipes.KnifeMine(),
+  new Recipes.Caltrops(),
   new Recipes.KnifeRockets(),
   new Recipes.ReturningBlades(),
   new Recipes.NaturesWrath(),

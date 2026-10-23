@@ -17245,71 +17245,67 @@ Huntress Hall
 }
 
 STRING 3133
-// Items: I0D6 (Knife Mine), Tip (Tooltip - Basic)
+// Items: I0D6 (Caltrops), Tip (Tooltip - Basic)
 {
-Purchase Knife Mine
+Purchase Caltrops
 }
 
 STRING 3134
-// Items: I0D6 (Knife Mine), Description (Description)
+// Items: I0D6 (Caltrops), Description (Description)
 {
-Places land mines underneath your hero. When an enemy steps on one, it explodes in a fan of knives that hits every enemy around it.
+Flings fans of knives that stay strewn on the ground as caltrops, cutting and slowing every enemy that walks through them.
 }
 
 STRING 3135
-// Items: I0D6 (Knife Mine), Ubertip (Tooltip - Extended)
+// Items: I0D6 (Caltrops), Ubertip (Tooltip - Extended)
 {
-Places land mines underneath your hero. When an enemy steps on one, it explodes in a fan of knives that hits every enemy around it.
-}
-
-STRING 3136
-// Units: n01K (Knife Mine), Name (Name)
-{
-Knife Mine
+Flings fans of knives that stay strewn on the ground as caltrops, cutting and slowing every enemy that walks through them.
 }
 
 STRING 3137
-// Items: I0D7 (Knife Mine), Tip (Tooltip - Basic)
+// Items: I0D7 (Caltrops), Tip (Tooltip - Basic)
 {
-Purchase Knife Mine
+Purchase Caltrops
 }
 
 STRING 3138
-// Items: I0D7 (Knife Mine), Ubertip (Tooltip - Extended)
+// Items: I0D7 (Caltrops), Ubertip (Tooltip - Extended)
 {
-Places land mines underneath your hero. When an enemy steps on one, it explodes in a fan of knives that hits every enemy around it.
+Flings a fan of knives at every enemy unit around your hero. The knives don't vanish: they land and lie strewn over the ground around where your hero stood for 9 seconds. Every enemy ground unit that walks through them is cut the farther it walks and slowed; enemies that stand still are left alone.
 
-Damage: |cffffcc00100 (explosion) + 75 (knives)|r
+Damage: |cffffcc00105|r (fan), |cffffcc00150|r per 100 walked (caltrops)
+Slow: |cffffcc00-40% movement speed for 1.5s|r
 Cooldown: |cffffcc003s|r
-Area of effect: |cffffcc00300 (explosion) + 400 (knives)|r
-Mine activation delay: |cffffcc004s|r
-Targets: |cffffcc00ground (explosion), air & ground (knives)|r
-Damage type: |cffffcc00spell|r
+Area of effect: |cffffcc00400|r
+Caltrops last: |cffffcc009s|r
+Targets: |cffffcc00air & ground|r (fan), |cffffcc00ground only!|r (caltrops)
+Damage type: |cffffcc00spell|r (fan), |cffffcc00normal|r (caltrops)
 }
 
 STRING 3139
-// Items: I0D7 (Knife Mine), Description (Description)
+// Items: I0D7 (Caltrops), Description (Description)
 {
-Places land mines underneath your hero. When an enemy steps on one, it explodes in a fan of knives that hits every enemy around it.
+Flings a fan of knives at every enemy unit around your hero. The knives don't vanish: they land and lie strewn over the ground around where your hero stood for 9 seconds. Every enemy ground unit that walks through them is cut the farther it walks and slowed; enemies that stand still are left alone.
 
-Damage: |cffffcc00100 (explosion) + 75 (knives)|r
+Damage: |cffffcc00105|r (fan), |cffffcc00150|r per 100 walked (caltrops)
+Slow: |cffffcc00-40% movement speed for 1.5s|r
 Cooldown: |cffffcc003s|r
-Area of effect: |cffffcc00300 (explosion) + 400 (knives)|r
-Mine activation delay: |cffffcc004s|r
-Targets: |cffffcc00ground (explosion), air & ground (knives)|r
-Damage type: |cffffcc00spell|r
+Area of effect: |cffffcc00400|r
+Caltrops last: |cffffcc009s|r
+Targets: |cffffcc00air & ground|r (fan), |cffffcc00ground only!|r (caltrops)
+Damage type: |cffffcc00spell|r (fan), |cffffcc00normal|r (caltrops)
 }
 
 STRING 3140
-// Items: I0D6 (Knife Mine), Name (Name)
+// Items: I0D6 (Caltrops), Name (Name)
 {
-Knife Mine
+Caltrops
 }
 
 STRING 3141
-// Items: I0D7 (Knife Mine), Name (Name)
+// Items: I0D7 (Caltrops), Name (Name)
 {
-Knife Mine
+Caltrops
 }
 
 STRING 3142
@@ -20126,5 +20122,11 @@ STRING 3571
 // Abilities: A054 (Barbed Hook (slow)), Name (Name)
 {
 Barbed Hook (slow)
+}
+
+STRING 3572
+// Abilities: A055 (Caltrops (slow)), Name (Name)
+{
+Caltrops (slow)
 }
 
