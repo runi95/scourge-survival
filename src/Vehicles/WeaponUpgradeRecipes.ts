@@ -232,7 +232,7 @@ export const weaponRecipes = [
   new Recipes.Fever(),
   new Recipes.SearingVolley(),
   new Recipes.ShadowCyclone(),
-  new Recipes.ShadowTrap(),
+  new Recipes.SmokeBomb(),
   new Recipes.ShadowTreants(),
   new Recipes.StranglingStrike(),
   new Recipes.StranglingWinds(),
