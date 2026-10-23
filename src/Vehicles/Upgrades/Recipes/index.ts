@@ -219,7 +219,7 @@ export * from "./PoisonMine";
 export * from "./AcidBomb";
 export * from "./PoisonedArrow";
 export * from "./RootMine";
-export * from "./RootRockets";
+export * from "./Earthbind";
 export * from "./RootedTreants";
 export * from "./Wildseed";
 export * from "./SearingMine";

@@ -17839,69 +17839,63 @@ Root Mine
 }
 
 STRING 3208
-// Items: I0DO (Root Rockets), Tip (Tooltip - Basic)
+// Items: I0DO (Earthbind), Tip (Tooltip - Basic)
 {
-Purchase Root Rockets
+Purchase Earthbind
 }
 
 STRING 3209
-// Items: I0DO (Root Rockets), Description (Description)
+// Items: I0DO (Earthbind), Description (Description)
 {
-Fires Cluster Rockets at a random enemy unit within range and roots it in place.
+Fires vine-trailing rockets that tear enemy flyers out of the sky and bind them to the ground, then root the enemies that attack from afar.
 }
 
 STRING 3210
-// Items: I0DO (Root Rockets), Ubertip (Tooltip - Extended)
+// Items: I0DO (Earthbind), Ubertip (Tooltip - Extended)
 {
-Fires Cluster Rockets at a random enemy unit within range and roots it in place.
+Fires vine-trailing rockets that tear enemy flyers out of the sky and bind them to the ground, then root the enemies that attack from afar.
 }
 
 STRING 3211
-// Items: I0DO (Root Rockets), Name (Name)
+// Items: I0DO (Earthbind), Name (Name)
 {
-Root Rockets
+Earthbind
 }
 
 STRING 3212
-// Items: I0DP (Root Rockets), Tip (Tooltip - Basic)
+// Items: I0DP (Earthbind), Tip (Tooltip - Basic)
 {
-Purchase Root Rockets
+Purchase Earthbind
 }
 
 STRING 3213
-// Items: I0DP (Root Rockets), Ubertip (Tooltip - Extended)
+// Items: I0DP (Earthbind), Ubertip (Tooltip - Extended)
 {
-Fires Cluster Rockets at a random enemy unit within range and roots it in place.
+Fires 2 vine-trailing rockets at 2 different enemy units within range that aren't held yet: flyers first, then enemies that attack from range, then anyone. A flyer that is hit is torn out of the sky and bound to the ground by the vines; a ground unit is rooted in place. Either way it is held in place and the vines hurt it every second; a rooted ground unit cannot attack either.
 
-Damage: |cffffcc006 x 17.5 (rockets) + 15 per second (roots)|r
-Cooldown: |cffffcc002.5s|r
-Range: |cffffcc00600|r
-Area of effect: |cffffcc00300|r
-Duration: |cffffcc002.5s|r
-Targets: |cffffcc00ground only!|r
+Damage: |cffffcc0030|r (rocket) + |cffffcc0050|r per second for |cffffcc002.5s|r (vines)
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00800|r
+Targets: |cffffcc00air first|r, then ranged, then any
 Damage type: |cffffcc00spell|r
-Effect: |cffffcc00stuns for 1s|r
 }
 
 STRING 3214
-// Items: I0DP (Root Rockets), Description (Description)
+// Items: I0DP (Earthbind), Description (Description)
 {
-Fires Cluster Rockets at a random enemy unit within range and roots it in place.
+Fires 2 vine-trailing rockets at 2 different enemy units within range that aren't held yet: flyers first, then enemies that attack from range, then anyone. A flyer that is hit is torn out of the sky and bound to the ground by the vines; a ground unit is rooted in place. Either way it is held in place and the vines hurt it every second; a rooted ground unit cannot attack either.
 
-Damage: |cffffcc006 x 17.5 (rockets) + 15 per second (roots)|r
-Cooldown: |cffffcc002.5s|r
-Range: |cffffcc00600|r
-Area of effect: |cffffcc00300|r
-Duration: |cffffcc002.5s|r
-Targets: |cffffcc00ground only!|r
+Damage: |cffffcc0030|r (rocket) + |cffffcc0050|r per second for |cffffcc002.5s|r (vines)
+Cooldown: |cffffcc002s|r
+Range: |cffffcc00800|r
+Targets: |cffffcc00air first|r, then ranged, then any
 Damage type: |cffffcc00spell|r
-Effect: |cffffcc00stuns for 1s|r
 }
 
 STRING 3215
-// Items: I0DP (Root Rockets), Name (Name)
+// Items: I0DP (Earthbind), Name (Name)
 {
-Root Rockets
+Earthbind
 }
 
 STRING 3216
@@ -20144,5 +20138,29 @@ STRING 3575
 // Abilities: A057 (Acid Bomb (weapon)), Name (Name)
 {
 Acid Bomb (weapon)
+}
+
+STRING 3576
+// Buffs: B00D (vines), Name (Name)
+{
+Earthbind
+}
+
+STRING 3577
+// Buffs: B00D (vines), Tip (Tooltip)
+{
+Earthbind
+}
+
+STRING 3578
+// Buffs: B00D (vines), Ubertip (Tooltip - Extended)
+{
+This unit has been dragged to the ground by vines; it cannot move or fly.
+}
+
+STRING 3579
+// Abilities: A058 (Earthbind (weapon)), Name (Name)
+{
+Earthbind (weapon)
 }
 

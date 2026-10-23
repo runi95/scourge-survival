@@ -224,7 +224,7 @@ export const weaponRecipes = [
   new Recipes.AcidBomb(),
   new Recipes.PoisonedArrow(),
   new Recipes.RootMine(),
-  new Recipes.RootRockets(),
+  new Recipes.Earthbind(),
   new Recipes.RootedTreants(),
   new Recipes.Wildseed(),
   new Recipes.SearingMine(),
