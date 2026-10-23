@@ -215,7 +215,7 @@ export * from "./Buzzsaw";
 export * from "./ReturningBlades";
 export * from "./NaturesWrath";
 export * from "./Overgrowth";
-export * from "./PoisonMine";
+export * from "./VolatileToxin";
 export * from "./AcidBomb";
 export * from "./PoisonedArrow";
 export * from "./RootMine";

@@ -17567,75 +17567,71 @@ Overgrowth
 }
 
 STRING 3174
-// Items: I0DG (Poison Mine), Tip (Tooltip - Basic)
+// Items: I0DG (Volatile Toxin), Tip (Tooltip - Basic)
 {
-Purchase Poison Mine
+Purchase Volatile Toxin
 }
 
 STRING 3175
-// Items: I0DG (Poison Mine), Description (Description)
+// Items: I0DG (Volatile Toxin), Description (Description)
 {
-Places land mines underneath your hero. When an enemy steps on one, it explodes and throws poisoned spears at 3 enemy units nearby.
+Leaves toxin traps under your hero. The enemy that steps on one is injected with a volatile poison and bursts among its friends a few seconds later.
 }
 
 STRING 3176
-// Items: I0DG (Poison Mine), Ubertip (Tooltip - Extended)
+// Items: I0DG (Volatile Toxin), Ubertip (Tooltip - Extended)
 {
-Places land mines underneath your hero. When an enemy steps on one, it explodes and throws poisoned spears at 3 enemy units nearby.
-}
-
-STRING 3177
-// Units: n01L (Poison Mine), Name (Name)
-{
-Poison Mine
+Leaves toxin traps under your hero. The enemy that steps on one is injected with a volatile poison and bursts among its friends a few seconds later.
 }
 
 STRING 3178
-// Items: I0DH (Poison Mine), Tip (Tooltip - Basic)
+// Items: I0DH (Volatile Toxin), Tip (Tooltip - Basic)
 {
-Purchase Poison Mine
+Purchase Volatile Toxin
 }
 
 STRING 3179
-// Items: I0DH (Poison Mine), Ubertip (Tooltip - Extended)
+// Items: I0DH (Volatile Toxin), Ubertip (Tooltip - Extended)
 {
-Places land mines underneath your hero. When an enemy steps on one, it explodes and throws poisoned spears at 3 enemy units nearby.
+Leaves a toxin trap underneath your hero every 3 seconds. A trap doesn't explode: the first enemy ground unit that steps on it is injected with a volatile poison that slows it. 3 seconds later, or as soon as it dies, the poisoned enemy bursts wherever it has walked to, hurting every enemy around it and splashing them with the Dryad's slow poison.
 
-Damage: |cffffcc00100 (explosion) + 3 x 15 (spears)|r
-Slow: |cffffcc00-25% movement speed for 2s|r
+Injection: |cffffcc0015|r + slow poison
+Burst damage: |cffffcc00100|r (every enemy around the carrier)
+Poison: |cffffcc0010|r per second for |cffffcc002s|r, |cffffcc00-25%|r movement speed
+Fuse: |cffffcc003s|r
 Cooldown: |cffffcc003s|r
-Area of effect: |cffffcc00300|r
-Range: |cffffcc00500 (spears)|r
-Mine activation delay: |cffffcc004s|r
-Targets: |cffffcc00ground (explosion), air & ground (spears)|r
-Damage type: |cffffcc00spell + piercing|r
+Traps: up to |cffffcc0010|r, armed after |cffffcc001s|r, last |cffffcc0060s|r
+Area of effect: |cffffcc00250|r
+Targets: |cffffcc00ground|r (trap), |cffffcc00air & ground|r (burst)
+Damage type: |cffffcc00spell|r
 }
 
 STRING 3180
-// Items: I0DH (Poison Mine), Description (Description)
+// Items: I0DH (Volatile Toxin), Description (Description)
 {
-Places land mines underneath your hero. When an enemy steps on one, it explodes and throws poisoned spears at 3 enemy units nearby.
+Leaves a toxin trap underneath your hero every 3 seconds. A trap doesn't explode: the first enemy ground unit that steps on it is injected with a volatile poison that slows it. 3 seconds later, or as soon as it dies, the poisoned enemy bursts wherever it has walked to, hurting every enemy around it and splashing them with the Dryad's slow poison.
 
-Damage: |cffffcc00100 (explosion) + 3 x 15 (spears)|r
-Slow: |cffffcc00-25% movement speed for 2s|r
+Injection: |cffffcc0015|r + slow poison
+Burst damage: |cffffcc00100|r (every enemy around the carrier)
+Poison: |cffffcc0010|r per second for |cffffcc002s|r, |cffffcc00-25%|r movement speed
+Fuse: |cffffcc003s|r
 Cooldown: |cffffcc003s|r
-Area of effect: |cffffcc00300|r
-Range: |cffffcc00500 (spears)|r
-Mine activation delay: |cffffcc004s|r
-Targets: |cffffcc00ground (explosion), air & ground (spears)|r
-Damage type: |cffffcc00spell + piercing|r
+Traps: up to |cffffcc0010|r, armed after |cffffcc001s|r, last |cffffcc0060s|r
+Area of effect: |cffffcc00250|r
+Targets: |cffffcc00ground|r (trap), |cffffcc00air & ground|r (burst)
+Damage type: |cffffcc00spell|r
 }
 
 STRING 3181
-// Items: I0DG (Poison Mine), Name (Name)
+// Items: I0DG (Volatile Toxin), Name (Name)
 {
-Poison Mine
+Volatile Toxin
 }
 
 STRING 3182
-// Items: I0DH (Poison Mine), Name (Name)
+// Items: I0DH (Volatile Toxin), Name (Name)
 {
-Poison Mine
+Volatile Toxin
 }
 
 STRING 3183
