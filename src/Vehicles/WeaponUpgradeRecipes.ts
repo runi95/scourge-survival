@@ -212,7 +212,7 @@ export const weaponRecipes = [
   new Recipes.RicochetArrow(),
   new Recipes.Firestorm(),
   new Recipes.FlamingRockets(),
-  new Recipes.FlamingSpear(),
+  new Recipes.Firebrand(),
   new Recipes.GlaiveWorkshop(),
   new Recipes.HuntressHall(),
   new Recipes.Caltrops(),

@@ -17057,67 +17057,69 @@ Flaming Rockets
 }
 
 STRING 3109
-// Items: I0D0 (Flaming Spear), Tip (Tooltip - Basic)
+// Items: I0D0 (Firebrand), Tip (Tooltip - Basic)
 {
-Purchase Flaming Spear
+Purchase Firebrand
 }
 
 STRING 3110
-// Items: I0D0 (Flaming Spear), Description (Description)
+// Items: I0D0 (Firebrand), Description (Description)
 {
-Throws a burning spear at a random enemy unit within range that bursts into flames, burning every enemy around it.
+Throws a spear that brands an enemy with fire. Your hero's flames burn every branded enemy, however far away it is.
 }
 
 STRING 3111
-// Items: I0D0 (Flaming Spear), Ubertip (Tooltip - Extended)
+// Items: I0D0 (Firebrand), Ubertip (Tooltip - Extended)
 {
-Throws a burning spear at a random enemy unit within range that bursts into flames, burning every enemy around it.
+Throws a spear that brands an enemy with fire. Your hero's flames burn every branded enemy, however far away it is.
 }
 
 STRING 3112
-// Items: I0D0 (Flaming Spear), Name (Name)
+// Items: I0D0 (Firebrand), Name (Name)
 {
-Flaming Spear
+Firebrand
 }
 
 STRING 3113
-// Items: I0D1 (Flaming Spear), Tip (Tooltip - Basic)
+// Items: I0D1 (Firebrand), Tip (Tooltip - Basic)
 {
-Purchase Flaming Spear
+Purchase Firebrand
 }
 
 STRING 3114
-// Items: I0D1 (Flaming Spear), Ubertip (Tooltip - Extended)
+// Items: I0D1 (Firebrand), Ubertip (Tooltip - Extended)
 {
-Throws a burning spear at a random enemy unit within range that bursts into flames, burning every enemy around it.
+Engulfs your hero in flames that burn every enemy unit close to it. Every 1.5 seconds it throws a poisoned spear at a random enemy unit within range that isn't branded yet, beyond the flames when there is one, slowing it and branding it with fire. The flames burn every branded enemy unit within 700 of your hero as if it stood in them.
 
-Damage: |cffffcc0015 (spear) + 25 (flames)|r
+Damage: |cffffcc0015|r (spear) + |cffffcc0020 per second|r (flames)
 Slow: |cffffcc00-25% movement speed for 2s|r
 Cooldown: |cffffcc001.5s|r
 Range: |cffffcc00600|r
-Area of effect: |cffffcc00150|r
+Area of effect: |cffffcc00220|r, branded enemies within |cffffcc00700|r
+Brand: |cffffcc008s|r
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00piercing + spell|r
+Damage type: |cffffcc00piercing|r (spear), |cffffcc00spell|r (flames)
 }
 
 STRING 3115
-// Items: I0D1 (Flaming Spear), Description (Description)
+// Items: I0D1 (Firebrand), Description (Description)
 {
-Throws a burning spear at a random enemy unit within range that bursts into flames, burning every enemy around it.
+Engulfs your hero in flames that burn every enemy unit close to it. Every 1.5 seconds it throws a poisoned spear at a random enemy unit within range that isn't branded yet, beyond the flames when there is one, slowing it and branding it with fire. The flames burn every branded enemy unit within 700 of your hero as if it stood in them.
 
-Damage: |cffffcc0015 (spear) + 25 (flames)|r
+Damage: |cffffcc0015|r (spear) + |cffffcc0020 per second|r (flames)
 Slow: |cffffcc00-25% movement speed for 2s|r
 Cooldown: |cffffcc001.5s|r
 Range: |cffffcc00600|r
-Area of effect: |cffffcc00150|r
+Area of effect: |cffffcc00220|r, branded enemies within |cffffcc00700|r
+Brand: |cffffcc008s|r
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00piercing + spell|r
+Damage type: |cffffcc00piercing|r (spear), |cffffcc00spell|r (flames)
 }
 
 STRING 3116
-// Items: I0D1 (Flaming Spear), Name (Name)
+// Items: I0D1 (Firebrand), Name (Name)
 {
-Flaming Spear
+Firebrand
 }
 
 STRING 3117

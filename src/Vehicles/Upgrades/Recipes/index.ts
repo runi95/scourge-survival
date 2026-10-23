@@ -207,7 +207,7 @@ export * from "./DryadVolley";
 export * from "./RicochetArrow";
 export * from "./Firestorm";
 export * from "./FlamingRockets";
-export * from "./FlamingSpear";
+export * from "./Firebrand";
 export * from "./GlaiveWorkshop";
 export * from "./HuntressHall";
 export * from "./Caltrops";
