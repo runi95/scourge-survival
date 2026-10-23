@@ -16349,67 +16349,67 @@ Blade Cyclone
 }
 
 STRING 3018
-// Items: I0CE (Bladed Spear), Tip (Tooltip - Basic)
+// Items: I0CE (Barbed Hook), Tip (Tooltip - Basic)
 {
-Purchase Bladed Spear
+Purchase Barbed Hook
 }
 
 STRING 3019
-// Items: I0CE (Bladed Spear), Description (Description)
+// Items: I0CE (Barbed Hook), Description (Description)
 {
-Throws a poisoned spear at a random enemy unit within range and flings a fan of knives at every enemy around your hero.
+Hooks the farthest enemy with a barbed spear and reels it back to your hero, cutting everything it is dragged through.
 }
 
 STRING 3020
-// Items: I0CE (Bladed Spear), Ubertip (Tooltip - Extended)
+// Items: I0CE (Barbed Hook), Ubertip (Tooltip - Extended)
 {
-Throws a poisoned spear at a random enemy unit within range and flings a fan of knives at every enemy around your hero.
+Hooks the farthest enemy with a barbed spear and reels it back to your hero, cutting everything it is dragged through.
 }
 
 STRING 3021
-// Items: I0CE (Bladed Spear), Name (Name)
+// Items: I0CE (Barbed Hook), Name (Name)
 {
-Bladed Spear
+Barbed Hook
 }
 
 STRING 3022
-// Items: I0CF (Bladed Spear), Tip (Tooltip - Basic)
+// Items: I0CF (Barbed Hook), Tip (Tooltip - Basic)
 {
-Purchase Bladed Spear
+Purchase Barbed Hook
 }
 
 STRING 3023
-// Items: I0CF (Bladed Spear), Ubertip (Tooltip - Extended)
+// Items: I0CF (Barbed Hook), Ubertip (Tooltip - Extended)
 {
-Throws a poisoned spear at a random enemy unit within range and flings a fan of knives at every enemy around your hero.
+Throws a barbed spear on a chain at the farthest enemy unit within range and reels it back to your hero. The hooked enemy is cut by the barbs, and every enemy unit it is dragged through is cut and slowed.
 
-Damage: |cffffcc0015 (spear) + 75 (knives)|r
-Slow: |cffffcc00-25% movement speed for 2s|r
+Damage: |cffffcc00200|r (hooked), |cffffcc00150|r (dragged through)
+Slow: |cffffcc00-50% movement speed for 3s|r
 Cooldown: |cffffcc003s|r
-Range: |cffffcc00600|r
-Area of effect: |cffffcc00400|r
+Range: |cffffcc00800|r
+Area of effect: |cffffcc00150|r around the hooked enemy
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00piercing + spell|r
+Damage type: |cffffcc00spell|r
 }
 
 STRING 3024
-// Items: I0CF (Bladed Spear), Description (Description)
+// Items: I0CF (Barbed Hook), Description (Description)
 {
-Throws a poisoned spear at a random enemy unit within range and flings a fan of knives at every enemy around your hero.
+Throws a barbed spear on a chain at the farthest enemy unit within range and reels it back to your hero. The hooked enemy is cut by the barbs, and every enemy unit it is dragged through is cut and slowed.
 
-Damage: |cffffcc0015 (spear) + 75 (knives)|r
-Slow: |cffffcc00-25% movement speed for 2s|r
+Damage: |cffffcc00200|r (hooked), |cffffcc00150|r (dragged through)
+Slow: |cffffcc00-50% movement speed for 3s|r
 Cooldown: |cffffcc003s|r
-Range: |cffffcc00600|r
-Area of effect: |cffffcc00400|r
+Range: |cffffcc00800|r
+Area of effect: |cffffcc00150|r around the hooked enemy
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00piercing + spell|r
+Damage type: |cffffcc00spell|r
 }
 
 STRING 3025
-// Items: I0CF (Bladed Spear), Name (Name)
+// Items: I0CF (Barbed Hook), Name (Name)
 {
-Bladed Spear
+Barbed Hook
 }
 
 STRING 3026
@@ -20112,5 +20112,11 @@ STRING 3570
 // Units: e004 (Mountain Giant), Name (Name)
 {
 Mountain Giant
+}
+
+STRING 3571
+// Abilities: A054 (Barbed Hook (slow)), Name (Name)
+{
+Barbed Hook (slow)
 }
 

@@ -196,7 +196,7 @@ export * from "./IceCrystal";
 export * from "./MountainGiant";
 export * from "./ArcherBarracks";
 export * from "./BladeCyclone";
-export * from "./BladedSpear";
+export * from "./BarbedHook";
 export * from "./BlazingArrows";
 export * from "./BurningKnives";
 export * from "./BurningRoots";

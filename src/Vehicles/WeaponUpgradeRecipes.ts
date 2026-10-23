@@ -201,7 +201,7 @@ export const weaponRecipes = [
   new Recipes.MountainGiant(),
   new Recipes.ArcherBarracks(),
   new Recipes.BladeCyclone(),
-  new Recipes.BladedSpear(),
+  new Recipes.BarbedHook(),
   new Recipes.BlazingArrows(),
   new Recipes.BurningKnives(),
   new Recipes.BurningRoots(),
