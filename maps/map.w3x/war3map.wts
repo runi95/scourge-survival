@@ -19331,67 +19331,69 @@ Venom Spear
 }
 
 STRING 3397
-// Items: I0EY (Whirling Blades), Tip (Tooltip - Basic)
+// Items: I0EY (Warden), Tip (Tooltip - Basic)
 {
-Purchase Whirling Blades
+Purchase Warden
 }
 
 STRING 3398
-// Items: I0EY (Whirling Blades), Description (Description)
+// Items: I0EY (Warden), Description (Description)
 {
-Throws a poisoned dagger at a random enemy unit within range and flings a fan of knives at every enemy around your hero.
+A Warden fights by your side. She blinks into the largest enemy group and whirls poisoned knives around her, blinking on whenever they kill.
 }
 
 STRING 3399
-// Items: I0EY (Whirling Blades), Ubertip (Tooltip - Extended)
+// Items: I0EY (Warden), Ubertip (Tooltip - Extended)
 {
-Throws a poisoned dagger at a random enemy unit within range and flings a fan of knives at every enemy around your hero.
+A Warden fights by your side. She blinks into the largest enemy group and whirls poisoned knives around her, blinking on whenever they kill.
 }
 
 STRING 3400
-// Items: I0EY (Whirling Blades), Name (Name)
+// Items: I0EY (Warden), Name (Name)
 {
-Whirling Blades
+Warden
 }
 
 STRING 3401
-// Items: I0EZ (Whirling Blades), Tip (Tooltip - Basic)
+// Items: I0EZ (Warden), Tip (Tooltip - Basic)
 {
-Purchase Whirling Blades
+Purchase Warden
 }
 
 STRING 3402
-// Items: I0EZ (Whirling Blades), Ubertip (Tooltip - Extended)
+// Items: I0EZ (Warden), Ubertip (Tooltip - Extended)
 {
-Throws a poisoned dagger at a random enemy unit within range and flings a fan of knives at every enemy around your hero.
+Calls a Warden next to your hero that fights by its side, and calls her again 10 seconds after she falls. Every 3 seconds she blinks into the largest enemy group near your hero and whirls poisoned knives around her, cutting every enemy unit nearby and poisoning it. Whenever her knives kill, she blinks on to the next group at once, up to 5 times in a row.
 
-Damage: |cffffcc00100 + 30 every 3s for 9s (dagger) + 75 (knives)|r
-Slow: |cffffcc00-50% movement speed for 9s|r
-Cooldown: |cffffcc003s|r
-Range: |cffffcc00700|r
-Area of effect: |cffffcc00400|r
-Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00spell|r
+Damage: |cffffcc00100|r + |cffffcc0030 every 3s for 9s|r (knives), |cffffcc0027 - 37|r (attack)
+Slow: |cffffcc00-50% movement speed|r, fading over 9s
+Cooldown: |cffffcc003s|r (blink), |cffffcc0010s|r (call)
+Range: |cffffcc00800|r
+Area of effect: |cffffcc00300|r
+Health: |cffffcc00800|r
+Targets: |cffffcc00air & ground|r (knives), |cffffcc00ground only!|r (attack)
+Damage type: |cffffcc00spell|r (knives), |cffffcc00normal|r (attack)
 }
 
 STRING 3403
-// Items: I0EZ (Whirling Blades), Description (Description)
+// Items: I0EZ (Warden), Description (Description)
 {
-Throws a poisoned dagger at a random enemy unit within range and flings a fan of knives at every enemy around your hero.
+Calls a Warden next to your hero that fights by its side, and calls her again 10 seconds after she falls. Every 3 seconds she blinks into the largest enemy group near your hero and whirls poisoned knives around her, cutting every enemy unit nearby and poisoning it. Whenever her knives kill, she blinks on to the next group at once, up to 5 times in a row.
 
-Damage: |cffffcc00100 + 30 every 3s for 9s (dagger) + 75 (knives)|r
-Slow: |cffffcc00-50% movement speed for 9s|r
-Cooldown: |cffffcc003s|r
-Range: |cffffcc00700|r
-Area of effect: |cffffcc00400|r
-Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00spell|r
+Damage: |cffffcc00100|r + |cffffcc0030 every 3s for 9s|r (knives), |cffffcc0027 - 37|r (attack)
+Slow: |cffffcc00-50% movement speed|r, fading over 9s
+Cooldown: |cffffcc003s|r (blink), |cffffcc0010s|r (call)
+Range: |cffffcc00800|r
+Area of effect: |cffffcc00300|r
+Health: |cffffcc00800|r
+Targets: |cffffcc00air & ground|r (knives), |cffffcc00ground only!|r (attack)
+Damage type: |cffffcc00spell|r (knives), |cffffcc00normal|r (attack)
 }
 
 STRING 3404
-// Items: I0EZ (Whirling Blades), Name (Name)
+// Items: I0EZ (Warden), Name (Name)
 {
-Whirling Blades
+Warden
 }
 
 STRING 3405
@@ -20126,5 +20128,17 @@ STRING 3572
 // Abilities: A055 (Caltrops (slow)), Name (Name)
 {
 Caltrops (slow)
+}
+
+STRING 3573
+// Abilities: A056 (Warden's Poison), Name (Name)
+{
+Warden's Poison
+}
+
+STRING 3574
+// Units: e005 (Warden), Name (Name)
+{
+Warden
 }
 

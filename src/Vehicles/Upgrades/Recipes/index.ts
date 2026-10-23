@@ -242,5 +242,5 @@ export * from "./TwinStrike";
 export * from "./VenomCyclone";
 export * from "./VenomRockets";
 export * from "./VenomSpear";
-export * from "./WhirlingBlades";
+export * from "./Warden";
 export * from "./WildGrowth";
