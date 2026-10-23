@@ -217,7 +217,7 @@ export * from "./NaturesWrath";
 export * from "./Overgrowth";
 export * from "./VolatileToxin";
 export * from "./AcidBomb";
-export * from "./PoisonedArrow";
+export * from "./LonePrey";
 export * from "./RootMine";
 export * from "./Earthbind";
 export * from "./RootedTreants";
