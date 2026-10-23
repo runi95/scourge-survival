@@ -209,7 +209,7 @@ export * from "./Firestorm";
 export * from "./FlamingRockets";
 export * from "./Firebrand";
 export * from "./GlaiveWorkshop";
-export * from "./HuntressHall";
+export * from "./Watchers";
 export * from "./Caltrops";
 export * from "./Buzzsaw";
 export * from "./ReturningBlades";

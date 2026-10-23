@@ -17187,65 +17187,65 @@ Glaive Workshop
 }
 
 STRING 3125
-// Items: I0D4 (Huntress Hall), Tip (Tooltip - Basic)
+// Items: I0D4 (Watchers), Tip (Tooltip - Basic)
 {
-Purchase Huntress Hall
+Purchase Watchers
 }
 
 STRING 3126
-// Items: I0D4 (Huntress Hall), Description (Description)
+// Items: I0D4 (Watchers), Description (Description)
 {
-Sends out 2 Huntresses every 30 seconds. Their glaives bounce between enemies.
+Two of Maiev's Watchers guard your hero's back, stabbing enemies that get behind it with poisoned daggers.
 }
 
 STRING 3127
-// Items: I0D4 (Huntress Hall), Ubertip (Tooltip - Extended)
+// Items: I0D4 (Watchers), Ubertip (Tooltip - Extended)
 {
-Sends out 2 Huntresses every 30 seconds. Their glaives bounce between enemies.
+Two of Maiev's Watchers guard your hero's back, stabbing enemies that get behind it with poisoned daggers.
 }
 
 STRING 3128
-// Items: I0D4 (Huntress Hall), Name (Name)
+// Items: I0D4 (Watchers), Name (Name)
 {
-Huntress Hall
+Watchers
 }
 
 STRING 3129
-// Items: I0D5 (Huntress Hall), Tip (Tooltip - Basic)
+// Items: I0D5 (Watchers), Tip (Tooltip - Basic)
 {
-Purchase Huntress Hall
+Purchase Watchers
 }
 
 STRING 3130
-// Items: I0D5 (Huntress Hall), Ubertip (Tooltip - Extended)
+// Items: I0D5 (Watchers), Ubertip (Tooltip - Extended)
 {
-Sends out 2 Huntresses every 30 seconds. Their glaives bounce between enemies.
+Two of Maiev's Watchers shadow your hero unseen and guard its back. An enemy unit that comes within range from behind or the side of your hero is struck from the shadows: a Watcher appears behind it, stabs it in the back with a poisoned dagger and fades. The poison keeps hurting and slowing it. With nobody there, the Watchers slip round the crowd and stab the enemy at its back.
 
-Damage: |cffffcc002 x 16 - 18|r
-Cooldown: |cffffcc0030s|r
-Health: |cffffcc00600|r
-Duration: |cffffcc0020s|r
-Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00normal|r
+Damage: |cffffcc00100|r (stab) + |cffffcc00100 + 30 every 3s for 9s|r (poison)
+Slow: |cffffcc00-50% movement speed for 9s|r
+Cooldown: |cffffcc003s|r per Watcher (2 Watchers)
+Range: |cffffcc00600|r, more than |cffffcc0060|r degrees from where your hero faces
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
 }
 
 STRING 3131
-// Items: I0D5 (Huntress Hall), Description (Description)
+// Items: I0D5 (Watchers), Description (Description)
 {
-Sends out 2 Huntresses every 30 seconds. Their glaives bounce between enemies.
+Two of Maiev's Watchers shadow your hero unseen and guard its back. An enemy unit that comes within range from behind or the side of your hero is struck from the shadows: a Watcher appears behind it, stabs it in the back with a poisoned dagger and fades. The poison keeps hurting and slowing it. With nobody there, the Watchers slip round the crowd and stab the enemy at its back.
 
-Damage: |cffffcc002 x 16 - 18|r
-Cooldown: |cffffcc0030s|r
-Health: |cffffcc00600|r
-Duration: |cffffcc0020s|r
-Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00normal|r
+Damage: |cffffcc00100|r (stab) + |cffffcc00100 + 30 every 3s for 9s|r (poison)
+Slow: |cffffcc00-50% movement speed for 9s|r
+Cooldown: |cffffcc003s|r per Watcher (2 Watchers)
+Range: |cffffcc00600|r, more than |cffffcc0060|r degrees from where your hero faces
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
 }
 
 STRING 3132
-// Items: I0D5 (Huntress Hall), Name (Name)
+// Items: I0D5 (Watchers), Name (Name)
 {
-Huntress Hall
+Watchers
 }
 
 STRING 3133
