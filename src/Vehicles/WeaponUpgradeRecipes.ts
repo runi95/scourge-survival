@@ -231,7 +231,7 @@ export const weaponRecipes = [
   new Recipes.BurningPitch(),
   new Recipes.Fever(),
   new Recipes.Smoulder(),
-  new Recipes.ShadowCyclone(),
+  new Recipes.FunnelCloud(),
   new Recipes.SmokeBomb(),
   new Recipes.SneakAttack(),
   new Recipes.StranglingStrike(),

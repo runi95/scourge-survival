@@ -18283,69 +18283,69 @@ Smoulder
 }
 
 STRING 3266
-// Items: I0E2 (Shadow Cyclone), Tip (Tooltip - Basic)
+// Items: I0E2 (Funnel Cloud), Tip (Tooltip - Basic)
 {
-Purchase Shadow Cyclone
+Purchase Funnel Cloud
 }
 
 STRING 3267
-// Items: I0E2 (Shadow Cyclone), Description (Description)
+// Items: I0E2 (Funnel Cloud), Description (Description)
 {
-Throws a poisoned dagger at a random enemy unit within range and summons a tornado that wanders around, tossing enemies into the air.
+Dark funnel clouds stalk the strongest enemies, touching down on them again and again as twisters that hurl everything around into the air.
 }
 
 STRING 3268
-// Items: I0E2 (Shadow Cyclone), Ubertip (Tooltip - Extended)
+// Items: I0E2 (Funnel Cloud), Ubertip (Tooltip - Extended)
 {
-Throws a poisoned dagger at a random enemy unit within range and summons a tornado that wanders around, tossing enemies into the air.
+Dark funnel clouds stalk the strongest enemies, touching down on them again and again as twisters that hurl everything around into the air.
 }
 
 STRING 3269
-// Items: I0E2 (Shadow Cyclone), Name (Name)
+// Items: I0E2 (Funnel Cloud), Name (Name)
 {
-Shadow Cyclone
+Funnel Cloud
 }
 
 STRING 3270
-// Items: I0E3 (Shadow Cyclone), Tip (Tooltip - Basic)
+// Items: I0E3 (Funnel Cloud), Tip (Tooltip - Basic)
 {
-Purchase Shadow Cyclone
+Purchase Funnel Cloud
 }
 
 STRING 3271
-// Items: I0E3 (Shadow Cyclone), Ubertip (Tooltip - Extended)
+// Items: I0E3 (Funnel Cloud), Ubertip (Tooltip - Extended)
 {
-Throws a poisoned dagger at a random enemy unit within range and summons a tornado that wanders around, tossing enemies into the air.
+Every 3 seconds a dark funnel cloud singles out the enemy unit with the most life that no cloud is hunting yet and stalks it. It touches down on its prey as a twister at once and every 3 seconds after for 9 seconds, hurling the prey and every enemy around it into the air. When its prey dies, the cloud moves on to the strongest enemy nearby for the strikes it has left.
 
-Damage: |cffffcc00100 + 30 every 3s for 9s (dagger) + 25 - 180 (tornado)|r
-Slow: |cffffcc00-50% movement speed for 9s|r
-Cooldown: |cffffcc005s|r
-Range: |cffffcc00700|r
-Area of effect: |cffffcc00650|r
-Duration: |cffffcc0010s (tornado)|r
+Damage: |cffffcc00150|r (prey) + |cffffcc0075|r (every other enemy around), per strike
+Strikes: |cffffcc004|r per cloud, |cffffcc003s|r apart
+Stun: |cffffcc001s|r (hurled into the air)
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00800|r (prey), |cffffcc00600|r (next prey)
+Area of effect: |cffffcc00250|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 3272
-// Items: I0E3 (Shadow Cyclone), Description (Description)
+// Items: I0E3 (Funnel Cloud), Description (Description)
 {
-Throws a poisoned dagger at a random enemy unit within range and summons a tornado that wanders around, tossing enemies into the air.
+Every 3 seconds a dark funnel cloud singles out the enemy unit with the most life that no cloud is hunting yet and stalks it. It touches down on its prey as a twister at once and every 3 seconds after for 9 seconds, hurling the prey and every enemy around it into the air. When its prey dies, the cloud moves on to the strongest enemy nearby for the strikes it has left.
 
-Damage: |cffffcc00100 + 30 every 3s for 9s (dagger) + 25 - 180 (tornado)|r
-Slow: |cffffcc00-50% movement speed for 9s|r
-Cooldown: |cffffcc005s|r
-Range: |cffffcc00700|r
-Area of effect: |cffffcc00650|r
-Duration: |cffffcc0010s (tornado)|r
+Damage: |cffffcc00150|r (prey) + |cffffcc0075|r (every other enemy around), per strike
+Strikes: |cffffcc004|r per cloud, |cffffcc003s|r apart
+Stun: |cffffcc001s|r (hurled into the air)
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00800|r (prey), |cffffcc00600|r (next prey)
+Area of effect: |cffffcc00250|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 3273
-// Items: I0E3 (Shadow Cyclone), Name (Name)
+// Items: I0E3 (Funnel Cloud), Name (Name)
 {
-Shadow Cyclone
+Funnel Cloud
 }
 
 STRING 3274

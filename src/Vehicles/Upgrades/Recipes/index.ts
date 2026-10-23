@@ -226,7 +226,7 @@ export * from "./PowderKeg";
 export * from "./BurningPitch";
 export * from "./Fever";
 export * from "./Smoulder";
-export * from "./ShadowCyclone";
+export * from "./FunnelCloud";
 export * from "./SmokeBomb";
 export * from "./SneakAttack";
 export * from "./StranglingStrike";
