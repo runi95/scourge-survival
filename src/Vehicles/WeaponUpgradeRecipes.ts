@@ -227,7 +227,7 @@ export const weaponRecipes = [
   new Recipes.Earthbind(),
   new Recipes.RootedTreants(),
   new Recipes.Wildseed(),
-  new Recipes.SearingMine(),
+  new Recipes.PowderKeg(),
   new Recipes.SearingSpear(),
   new Recipes.Fever(),
   new Recipes.SearingVolley(),

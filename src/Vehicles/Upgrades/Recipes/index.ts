@@ -222,7 +222,7 @@ export * from "./RootMine";
 export * from "./Earthbind";
 export * from "./RootedTreants";
 export * from "./Wildseed";
-export * from "./SearingMine";
+export * from "./PowderKeg";
 export * from "./SearingSpear";
 export * from "./Fever";
 export * from "./SearingVolley";

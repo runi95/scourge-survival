@@ -18023,73 +18023,71 @@ Wildseed
 }
 
 STRING 3233
-// Items: I0DU (Searing Mine), Tip (Tooltip - Basic)
+// Items: I0DU (Powder Keg), Tip (Tooltip - Basic)
 {
-Purchase Searing Mine
+Purchase Powder Keg
 }
 
 STRING 3234
-// Items: I0DU (Searing Mine), Description (Description)
+// Items: I0DU (Powder Keg), Description (Description)
 {
-Places land mines underneath your hero. When an enemy steps on one, it explodes and fires searing arrows at 3 enemy units nearby.
+Leaves powder kegs behind your hero that don't go off when stepped on: your hero shoots a searing arrow into the keg the crowd gathers around and blows it up.
 }
 
 STRING 3235
-// Items: I0DU (Searing Mine), Ubertip (Tooltip - Extended)
+// Items: I0DU (Powder Keg), Ubertip (Tooltip - Extended)
 {
-Places land mines underneath your hero. When an enemy steps on one, it explodes and fires searing arrows at 3 enemy units nearby.
-}
-
-STRING 3236
-// Units: n01O (Searing Mine), Name (Name)
-{
-Searing Mine
+Leaves powder kegs behind your hero that don't go off when stepped on: your hero shoots a searing arrow into the keg the crowd gathers around and blows it up.
 }
 
 STRING 3237
-// Items: I0DV (Searing Mine), Tip (Tooltip - Basic)
+// Items: I0DV (Powder Keg), Tip (Tooltip - Basic)
 {
-Purchase Searing Mine
+Purchase Powder Keg
 }
 
 STRING 3238
-// Items: I0DV (Searing Mine), Ubertip (Tooltip - Extended)
+// Items: I0DV (Powder Keg), Ubertip (Tooltip - Extended)
 {
-Places land mines underneath your hero. When an enemy steps on one, it explodes and fires searing arrows at 3 enemy units nearby.
+Leaves a powder keg underneath your hero every 3 seconds. Stepping on a keg does nothing. Every 1.5 seconds your hero looks for the keg with the most enemies around it and, for 8 mana, shoots a searing arrow into it: the keg blows up, hurting every enemy around it, air included, and setting off every other keg in the blast. With no keg worth shooting, or no mana, your hero shoots a plain arrow at a nearby enemy unit instead.
 
-Damage: |cffffcc00100 (explosion) + 3 x 20 (arrows)|r
-Cooldown: |cffffcc003s|r
-Area of effect: |cffffcc00300|r
-Range: |cffffcc00500 (arrows)|r
-Mine activation delay: |cffffcc004s|r
-Targets: |cffffcc00ground (explosion), air & ground (arrows)|r
-Damage type: |cffffcc00spell + piercing|r
+Keg damage: |cffffcc0080|r (every enemy around the keg)
+Arrow damage: |cffffcc0010|r (plain arrow)
+Cooldown: |cffffcc001.5s|r (arrow), |cffffcc003s|r (keg)
+Additional cost: |cffffcc008 mana|r (per keg lit)
+Kegs: up to |cffffcc008|r, lit when |cffffcc002|r enemies are near, last |cffffcc0060s|r
+Range: |cffffcc00900|r (kegs), |cffffcc00600|r (arrow)
+Area of effect: |cffffcc00250|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r (keg), |cffffcc00piercing|r (arrow)
 }
 
 STRING 3239
-// Items: I0DV (Searing Mine), Description (Description)
+// Items: I0DV (Powder Keg), Description (Description)
 {
-Places land mines underneath your hero. When an enemy steps on one, it explodes and fires searing arrows at 3 enemy units nearby.
+Leaves a powder keg underneath your hero every 3 seconds. Stepping on a keg does nothing. Every 1.5 seconds your hero looks for the keg with the most enemies around it and, for 8 mana, shoots a searing arrow into it: the keg blows up, hurting every enemy around it, air included, and setting off every other keg in the blast. With no keg worth shooting, or no mana, your hero shoots a plain arrow at a nearby enemy unit instead.
 
-Damage: |cffffcc00100 (explosion) + 3 x 20 (arrows)|r
-Cooldown: |cffffcc003s|r
-Area of effect: |cffffcc00300|r
-Range: |cffffcc00500 (arrows)|r
-Mine activation delay: |cffffcc004s|r
-Targets: |cffffcc00ground (explosion), air & ground (arrows)|r
-Damage type: |cffffcc00spell + piercing|r
+Keg damage: |cffffcc0080|r (every enemy around the keg)
+Arrow damage: |cffffcc0010|r (plain arrow)
+Cooldown: |cffffcc001.5s|r (arrow), |cffffcc003s|r (keg)
+Additional cost: |cffffcc008 mana|r (per keg lit)
+Kegs: up to |cffffcc008|r, lit when |cffffcc002|r enemies are near, last |cffffcc0060s|r
+Range: |cffffcc00900|r (kegs), |cffffcc00600|r (arrow)
+Area of effect: |cffffcc00250|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r (keg), |cffffcc00piercing|r (arrow)
 }
 
 STRING 3240
-// Items: I0DU (Searing Mine), Name (Name)
+// Items: I0DU (Powder Keg), Name (Name)
 {
-Searing Mine
+Powder Keg
 }
 
 STRING 3241
-// Items: I0DV (Searing Mine), Name (Name)
+// Items: I0DV (Powder Keg), Name (Name)
 {
-Searing Mine
+Powder Keg
 }
 
 STRING 3242
