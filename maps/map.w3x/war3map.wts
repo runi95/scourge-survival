@@ -17309,67 +17309,67 @@ Caltrops
 }
 
 STRING 3142
-// Items: I0D8 (Knife Rockets), Tip (Tooltip - Basic)
+// Items: I0D8 (Buzzsaw), Tip (Tooltip - Basic)
 {
-Purchase Knife Rockets
+Purchase Buzzsaw
 }
 
 STRING 3143
-// Items: I0D8 (Knife Rockets), Description (Description)
+// Items: I0D8 (Buzzsaw), Description (Description)
 {
-Fires Cluster Rockets at a random enemy unit within range and flings a fan of knives at every enemy around your hero.
+Fires a spinning buzzsaw into the largest enemy group, where it caroms from enemy to enemy, cutting everything it passes.
 }
 
 STRING 3144
-// Items: I0D8 (Knife Rockets), Ubertip (Tooltip - Extended)
+// Items: I0D8 (Buzzsaw), Ubertip (Tooltip - Extended)
 {
-Fires Cluster Rockets at a random enemy unit within range and flings a fan of knives at every enemy around your hero.
+Fires a spinning buzzsaw into the largest enemy group, where it caroms from enemy to enemy, cutting everything it passes.
 }
 
 STRING 3145
-// Items: I0D8 (Knife Rockets), Name (Name)
+// Items: I0D8 (Buzzsaw), Name (Name)
 {
-Knife Rockets
+Buzzsaw
 }
 
 STRING 3146
-// Items: I0D9 (Knife Rockets), Tip (Tooltip - Basic)
+// Items: I0D9 (Buzzsaw), Tip (Tooltip - Basic)
 {
-Purchase Knife Rockets
+Purchase Buzzsaw
 }
 
 STRING 3147
-// Items: I0D9 (Knife Rockets), Ubertip (Tooltip - Extended)
+// Items: I0D9 (Buzzsaw), Ubertip (Tooltip - Extended)
 {
-Fires Cluster Rockets at a random enemy unit within range and flings a fan of knives at every enemy around your hero.
+Fires a spinning goblin buzzsaw into the largest enemy group within range. For 4 seconds it caroms from enemy to enemy inside the group, always off to one it hasn't just cut, and cuts every enemy unit it passes through. It drops early when no enemy is left near it.
 
-Damage: |cffffcc006 x 17.5 (rockets) + 75 (knives)|r
-Cooldown: |cffffcc003s|r
-Range: |cffffcc00700|r
-Area of effect: |cffffcc00300 (rockets) + 400 (knives)|r
+Damage: |cffffcc0070|r per cut, each enemy at most every |cffffcc000.5s|r
+Cooldown: |cffffcc004s|r
+Range: |cffffcc00800|r
+Duration: |cffffcc004s|r
+Area of effect: |cffffcc00100|r around the saw, bounces within |cffffcc00350|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
-Effect: |cffffcc00stuns for 1s|r
 }
 
 STRING 3148
-// Items: I0D9 (Knife Rockets), Description (Description)
+// Items: I0D9 (Buzzsaw), Description (Description)
 {
-Fires Cluster Rockets at a random enemy unit within range and flings a fan of knives at every enemy around your hero.
+Fires a spinning goblin buzzsaw into the largest enemy group within range. For 4 seconds it caroms from enemy to enemy inside the group, always off to one it hasn't just cut, and cuts every enemy unit it passes through. It drops early when no enemy is left near it.
 
-Damage: |cffffcc006 x 17.5 (rockets) + 75 (knives)|r
-Cooldown: |cffffcc003s|r
-Range: |cffffcc00700|r
-Area of effect: |cffffcc00300 (rockets) + 400 (knives)|r
+Damage: |cffffcc0070|r per cut, each enemy at most every |cffffcc000.5s|r
+Cooldown: |cffffcc004s|r
+Range: |cffffcc00800|r
+Duration: |cffffcc004s|r
+Area of effect: |cffffcc00100|r around the saw, bounces within |cffffcc00350|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
-Effect: |cffffcc00stuns for 1s|r
 }
 
 STRING 3149
-// Items: I0D9 (Knife Rockets), Name (Name)
+// Items: I0D9 (Buzzsaw), Name (Name)
 {
-Knife Rockets
+Buzzsaw
 }
 
 STRING 3150

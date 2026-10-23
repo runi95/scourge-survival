@@ -211,7 +211,7 @@ export * from "./FlamingSpear";
 export * from "./GlaiveWorkshop";
 export * from "./HuntressHall";
 export * from "./Caltrops";
-export * from "./KnifeRockets";
+export * from "./Buzzsaw";
 export * from "./ReturningBlades";
 export * from "./NaturesWrath";
 export * from "./Overgrowth";
