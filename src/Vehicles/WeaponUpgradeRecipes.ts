@@ -218,7 +218,7 @@ export const weaponRecipes = [
   new Recipes.Caltrops(),
   new Recipes.Buzzsaw(),
   new Recipes.ReturningBlades(),
-  new Recipes.NaturesWrath(),
+  new Recipes.Hurricane(),
   new Recipes.Overgrowth(),
   new Recipes.VolatileToxin(),
   new Recipes.AcidBomb(),

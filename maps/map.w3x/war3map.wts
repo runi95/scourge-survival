@@ -17441,67 +17441,67 @@ Returning Blades
 }
 
 STRING 3158
-// Items: I0DC (Nature's Wrath), Tip (Tooltip - Basic)
+// Items: I0DC (Hurricane), Tip (Tooltip - Basic)
 {
-Purchase Nature's Wrath
+Purchase Hurricane
 }
 
 STRING 3159
-// Items: I0DC (Nature's Wrath), Description (Description)
+// Items: I0DC (Hurricane), Description (Description)
 {
-Summons a tornado and 2 Treants every 10 seconds. The tornado wanders around, tossing enemies into the air.
+Your hero becomes the eye of a hurricane that has torn up 3 Treants. They whirl around it, sweeping in and out, battering and flinging away every enemy they crash into.
 }
 
 STRING 3160
-// Items: I0DC (Nature's Wrath), Ubertip (Tooltip - Extended)
+// Items: I0DC (Hurricane), Ubertip (Tooltip - Extended)
 {
-Summons a tornado and 2 Treants every 10 seconds. The tornado wanders around, tossing enemies into the air.
+Your hero becomes the eye of a hurricane that has torn up 3 Treants. They whirl around it, sweeping in and out, battering and flinging away every enemy they crash into.
 }
 
 STRING 3161
-// Items: I0DC (Nature's Wrath), Name (Name)
+// Items: I0DC (Hurricane), Name (Name)
 {
-Nature's Wrath
+Hurricane
 }
 
 STRING 3162
-// Items: I0DD (Nature's Wrath), Tip (Tooltip - Basic)
+// Items: I0DD (Hurricane), Tip (Tooltip - Basic)
 {
-Purchase Nature's Wrath
+Purchase Hurricane
 }
 
 STRING 3163
-// Items: I0DD (Nature's Wrath), Ubertip (Tooltip - Extended)
+// Items: I0DD (Hurricane), Ubertip (Tooltip - Extended)
 {
-Summons a tornado and 2 Treants every 10 seconds. The tornado wanders around, tossing enemies into the air.
+Your hero becomes the eye of a hurricane that has torn up 3 Treants. They whirl around your hero, one turn every 2 seconds, and their orbit sweeps out from 100 to 650 and back every 5 seconds. Every enemy a whirling Treant crashes into is battered, flung away from your hero and stunned.
 
-Damage: |cffffcc0025 - 180 (tornado) + 2 x 15 - 17 (treants)|r
-Cooldown: |cffffcc0010s|r
-Area of effect: |cffffcc00650|r
-Health: |cffffcc00300|r
-Duration: |cffffcc0010s|r
-Targets: |cffffcc00air & ground (tornado), ground (treants)|r
-Damage type: |cffffcc00spell + normal|r
+Damage: |cffffcc0085|r per crash (each Treant hits an enemy at most every 0.5s)
+Fling: |cffffcc00150|r away from your hero
+Stun: |cffffcc000.5s|r
+Orbit: |cffffcc00100 - 650|r, every |cffffcc005s|r
+Area of Effect: |cffffcc00100|r around each Treant
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
 }
 
 STRING 3164
-// Items: I0DD (Nature's Wrath), Description (Description)
+// Items: I0DD (Hurricane), Description (Description)
 {
-Summons a tornado and 2 Treants every 10 seconds. The tornado wanders around, tossing enemies into the air.
+Your hero becomes the eye of a hurricane that has torn up 3 Treants. They whirl around your hero, one turn every 2 seconds, and their orbit sweeps out from 100 to 650 and back every 5 seconds. Every enemy a whirling Treant crashes into is battered, flung away from your hero and stunned.
 
-Damage: |cffffcc0025 - 180 (tornado) + 2 x 15 - 17 (treants)|r
-Cooldown: |cffffcc0010s|r
-Area of effect: |cffffcc00650|r
-Health: |cffffcc00300|r
-Duration: |cffffcc0010s|r
-Targets: |cffffcc00air & ground (tornado), ground (treants)|r
-Damage type: |cffffcc00spell + normal|r
+Damage: |cffffcc0085|r per crash (each Treant hits an enemy at most every 0.5s)
+Fling: |cffffcc00150|r away from your hero
+Stun: |cffffcc000.5s|r
+Orbit: |cffffcc00100 - 650|r, every |cffffcc005s|r
+Area of Effect: |cffffcc00100|r around each Treant
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
 }
 
 STRING 3165
-// Items: I0DD (Nature's Wrath), Name (Name)
+// Items: I0DD (Hurricane), Name (Name)
 {
-Nature's Wrath
+Hurricane
 }
 
 STRING 3166

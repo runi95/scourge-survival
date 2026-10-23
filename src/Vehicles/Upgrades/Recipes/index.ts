@@ -213,7 +213,7 @@ export * from "./Watchers";
 export * from "./Caltrops";
 export * from "./Buzzsaw";
 export * from "./ReturningBlades";
-export * from "./NaturesWrath";
+export * from "./Hurricane";
 export * from "./Overgrowth";
 export * from "./VolatileToxin";
 export * from "./AcidBomb";
