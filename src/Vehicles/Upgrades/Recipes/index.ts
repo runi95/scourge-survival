@@ -221,7 +221,7 @@ export * from "./PoisonedArrow";
 export * from "./RootMine";
 export * from "./RootRockets";
 export * from "./RootedTreants";
-export * from "./SaplingMine";
+export * from "./Wildseed";
 export * from "./SearingMine";
 export * from "./SearingSpear";
 export * from "./Fever";

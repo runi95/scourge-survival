@@ -17967,75 +17967,67 @@ Rooted Treants
 }
 
 STRING 3224
-// Items: I0DS (Sapling Mine), Tip (Tooltip - Basic)
+// Items: I0DS (Wildseed), Tip (Tooltip - Basic)
 {
-Purchase Sapling Mine
+Purchase Wildseed
 }
 
 STRING 3225
-// Items: I0DS (Sapling Mine), Description (Description)
+// Items: I0DS (Wildseed), Description (Description)
 {
-Places seed-filled land mines underneath your hero. When an enemy steps on one, it explodes and 2 Treants sprout from it.
+Sows seed pods under your hero. A trampled pod bursts and reseeds the ground around it; an untouched one wakes as a Treant.
 }
 
 STRING 3226
-// Items: I0DS (Sapling Mine), Ubertip (Tooltip - Extended)
+// Items: I0DS (Wildseed), Ubertip (Tooltip - Extended)
 {
-Places seed-filled land mines underneath your hero. When an enemy steps on one, it explodes and 2 Treants sprout from it.
-}
-
-STRING 3227
-// Units: n01N (Sapling Mine), Name (Name)
-{
-Sapling Mine
+Sows seed pods under your hero. A trampled pod bursts and reseeds the ground around it; an untouched one wakes as a Treant.
 }
 
 STRING 3228
-// Items: I0DT (Sapling Mine), Tip (Tooltip - Basic)
+// Items: I0DT (Wildseed), Tip (Tooltip - Basic)
 {
-Purchase Sapling Mine
+Purchase Wildseed
 }
 
 STRING 3229
-// Items: I0DT (Sapling Mine), Ubertip (Tooltip - Extended)
+// Items: I0DT (Wildseed), Ubertip (Tooltip - Extended)
 {
-Places seed-filled land mines underneath your hero. When an enemy steps on one, it explodes and 2 Treants sprout from it.
+Leaves a seed pod under your hero every 3 seconds, up to 6 pods. When an enemy ground unit steps near a pod, it bursts, hurting every enemy ground unit around it, and flings 2 new pods into the ground nearby, so the field spreads into the crowd that walks into it. A pod nobody steps on for 12 seconds takes root and wakes as a Treant that fights by your side, up to 3 Treants at a time.
 
-Damage: |cffffcc00100 (explosion) + 2 x 15 - 17 (treants)|r
+Damage: |cffffcc0080|r (burst) + |cffffcc0041 - 43|r (Treant)
 Cooldown: |cffffcc003s|r
-Area of effect: |cffffcc00300|r
-Health: |cffffcc00300|r
-Duration: |cffffcc0010s|r
-Mine activation delay: |cffffcc004s|r
+Area of effect: |cffffcc00175|r (trigger), |cffffcc00200|r (burst)
+Pod arming delay: |cffffcc002s|r
+Treant: |cffffcc00300|r health, |cffffcc0015s|r
 Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00spell + normal|r
+Damage type: |cffffcc00spell|r (burst) + |cffffcc00normal|r (Treant)
 }
 
 STRING 3230
-// Items: I0DT (Sapling Mine), Description (Description)
+// Items: I0DT (Wildseed), Description (Description)
 {
-Places seed-filled land mines underneath your hero. When an enemy steps on one, it explodes and 2 Treants sprout from it.
+Leaves a seed pod under your hero every 3 seconds, up to 6 pods. When an enemy ground unit steps near a pod, it bursts, hurting every enemy ground unit around it, and flings 2 new pods into the ground nearby, so the field spreads into the crowd that walks into it. A pod nobody steps on for 12 seconds takes root and wakes as a Treant that fights by your side, up to 3 Treants at a time.
 
-Damage: |cffffcc00100 (explosion) + 2 x 15 - 17 (treants)|r
+Damage: |cffffcc0080|r (burst) + |cffffcc0041 - 43|r (Treant)
 Cooldown: |cffffcc003s|r
-Area of effect: |cffffcc00300|r
-Health: |cffffcc00300|r
-Duration: |cffffcc0010s|r
-Mine activation delay: |cffffcc004s|r
+Area of effect: |cffffcc00175|r (trigger), |cffffcc00200|r (burst)
+Pod arming delay: |cffffcc002s|r
+Treant: |cffffcc00300|r health, |cffffcc0015s|r
 Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00spell + normal|r
+Damage type: |cffffcc00spell|r (burst) + |cffffcc00normal|r (Treant)
 }
 
 STRING 3231
-// Items: I0DS (Sapling Mine), Name (Name)
+// Items: I0DS (Wildseed), Name (Name)
 {
-Sapling Mine
+Wildseed
 }
 
 STRING 3232
-// Items: I0DT (Sapling Mine), Name (Name)
+// Items: I0DT (Wildseed), Name (Name)
 {
-Sapling Mine
+Wildseed
 }
 
 STRING 3233
