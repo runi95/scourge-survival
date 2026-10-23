@@ -225,7 +225,7 @@ export * from "./Wildseed";
 export * from "./PowderKeg";
 export * from "./SearingSpear";
 export * from "./Fever";
-export * from "./SearingVolley";
+export * from "./Smoulder";
 export * from "./ShadowCyclone";
 export * from "./SmokeBomb";
 export * from "./ShadowTreants";

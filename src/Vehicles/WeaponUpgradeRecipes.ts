@@ -230,7 +230,7 @@ export const weaponRecipes = [
   new Recipes.PowderKeg(),
   new Recipes.SearingSpear(),
   new Recipes.Fever(),
-  new Recipes.SearingVolley(),
+  new Recipes.Smoulder(),
   new Recipes.ShadowCyclone(),
   new Recipes.SmokeBomb(),
   new Recipes.ShadowTreants(),
