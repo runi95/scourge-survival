@@ -141,7 +141,7 @@ export * from "./Palisade";
 export * from "./TremorLines";
 export * from "./SpiritPack";
 export * from "./Unleashed";
-export * from "./WolfDen";
+export * from "./Beaters";
 export * from "./SpiritHunters";
 export * from "./HuntingPack";
 export * from "./RocketSpears";
