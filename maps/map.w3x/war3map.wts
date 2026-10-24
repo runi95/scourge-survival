@@ -10427,73 +10427,73 @@ Frost Charge
 }
 
 STRING 2278
-// Items: I07E (Thunder Mine), Tip (Tooltip - Basic)
+// Items: I07E (Kettledrums), Tip (Tooltip - Basic)
 {
-Purchase Thunder Mine
+Purchase Kettledrums
 }
 
 STRING 2279
-// Items: I07E (Thunder Mine), Description (Description)
+// Items: I07E (Kettledrums), Description (Description)
 {
-Places thundering land mines underneath your hero. When an enemy steps on one, it explodes with a thunderclap that hurts and slows everything around it.
+Leaves goblin kettledrums underneath your hero. The enemies beat them as they walk over them: every beat booms out like a thunder clap, louder and wider every time, and on the fifth beat the drum bursts.
 }
 
 STRING 2280
-// Items: I07E (Thunder Mine), Ubertip (Tooltip - Extended)
+// Items: I07E (Kettledrums), Ubertip (Tooltip - Extended)
 {
-Places thundering land mines underneath your hero. When an enemy steps on one, it explodes with a thunderclap that hurts and slows everything around it.
+Leaves goblin kettledrums underneath your hero. The enemies beat them as they walk over them: every beat booms out like a thunder clap, louder and wider every time, and on the fifth beat the drum bursts.
 }
 
 STRING 2281
-// Units: n017 (Thunder Mine), Name (Name)
+// Units: n017 (drum), Name (Name)
 {
-Thunder Mine
+Kettledrum
 }
 
 STRING 2282
-// Items: I07F (Thunder Mine), Tip (Tooltip - Basic)
+// Items: I07F (Kettledrums), Tip (Tooltip - Basic)
 {
-Purchase Thunder Mine
+Purchase Kettledrums
 }
 
 STRING 2283
-// Items: I07F (Thunder Mine), Ubertip (Tooltip - Extended)
+// Items: I07F (Kettledrums), Ubertip (Tooltip - Extended)
 {
-Places thundering land mines underneath your hero. When an enemy steps on one, it explodes with a thunderclap that hurts and slows everything around it.
+Every 3.5 seconds leaves a kettledrum underneath your hero. Whenever an enemy ground unit comes near an armed drum, the drum booms, at most once every 1.5 seconds: a thunder clap that hurts and slows every enemy ground unit around it. Every beat is louder and wider than the one before, and the fifth beat bursts the drum.
 
-Damage: |cffffcc00100 (explosion) + 60 (thunderclap)|r
-Slow: |cffffcc00-50% movement and attack speed for 3s|r
-Cooldown: |cffffcc003s|r
-Area of effect: |cffffcc00300|r
-Mine activation delay: |cffffcc004s|r
+Damage: |cffffcc0010|r, |cffffcc0020|r, |cffffcc0030|r, |cffffcc0040|r (beats), |cffffcc0060|r (burst)
+Slow: |cffffcc00-50% movement speed for 3s|r
+Area of effect: |cffffcc00200|r, |cffffcc00+25|r every beat (|cffffcc00300|r when it bursts)
+Cooldown: |cffffcc003.5s|r (drum), |cffffcc001.5s|r (beat)
 Targets: |cffffcc00ground only!|r
 Damage type: |cffffcc00spell|r
+Drum activation delay: |cffffcc002s|r
 }
 
 STRING 2284
-// Items: I07F (Thunder Mine), Description (Description)
+// Items: I07F (Kettledrums), Description (Description)
 {
-Places thundering land mines underneath your hero. When an enemy steps on one, it explodes with a thunderclap that hurts and slows everything around it.
+Every 3.5 seconds leaves a kettledrum underneath your hero. Whenever an enemy ground unit comes near an armed drum, the drum booms, at most once every 1.5 seconds: a thunder clap that hurts and slows every enemy ground unit around it. Every beat is louder and wider than the one before, and the fifth beat bursts the drum.
 
-Damage: |cffffcc00100 (explosion) + 60 (thunderclap)|r
-Slow: |cffffcc00-50% movement and attack speed for 3s|r
-Cooldown: |cffffcc003s|r
-Area of effect: |cffffcc00300|r
-Mine activation delay: |cffffcc004s|r
+Damage: |cffffcc0010|r, |cffffcc0020|r, |cffffcc0030|r, |cffffcc0040|r (beats), |cffffcc0060|r (burst)
+Slow: |cffffcc00-50% movement speed for 3s|r
+Area of effect: |cffffcc00200|r, |cffffcc00+25|r every beat (|cffffcc00300|r when it bursts)
+Cooldown: |cffffcc003.5s|r (drum), |cffffcc001.5s|r (beat)
 Targets: |cffffcc00ground only!|r
 Damage type: |cffffcc00spell|r
+Drum activation delay: |cffffcc002s|r
 }
 
 STRING 2285
-// Items: I07E (Thunder Mine), Name (Name)
+// Items: I07E (Kettledrums), Name (Name)
 {
-Thunder Mine
+Kettledrums
 }
 
 STRING 2286
-// Items: I07F (Thunder Mine), Name (Name)
+// Items: I07F (Kettledrums), Name (Name)
 {
-Thunder Mine
+Kettledrums
 }
 
 STRING 2287

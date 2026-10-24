@@ -106,7 +106,7 @@ export * from "./Avatar";
 export * from "./MountainKing";
 export * from "./SkyHammer";
 export * from "./FlashFreeze";
-export * from "./ThunderMine";
+export * from "./Kettledrums";
 export * from "./HammerMine";
 export * from "./TaurenTotem";
 export * from "./ForwardOutpost";
