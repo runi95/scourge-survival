@@ -96,7 +96,7 @@ export * from "./Frostbite";
 export * from "./IceRockets";
 export * from "./FrozenEcho";
 export * from "./IceHammer";
-export * from "./SearingClap";
+export * from "./Firewater";
 export * from "./MoltenHammer";
 export * from "./ThunderRifle";
 export * from "./StunningShot";

@@ -101,7 +101,7 @@ export const weaponRecipes = [
   new Recipes.IceRockets(),
   new Recipes.FrozenEcho(),
   new Recipes.IceHammer(),
-  new Recipes.SearingClap(),
+  new Recipes.Firewater(),
   new Recipes.MoltenHammer(),
   new Recipes.ThunderRifle(),
   new Recipes.StunningShot(),
