@@ -10165,65 +10165,67 @@ Pinwheel
 }
 
 STRING 2245
-// Items: I076 (Aftershock), Tip (Tooltip - Basic)
+// Items: I076 (Avatar), Tip (Tooltip - Basic)
 {
-Purchase Aftershock
+Purchase Avatar
 }
 
 STRING 2246
-// Items: I076 (Aftershock), Description (Description)
+// Items: I076 (Avatar), Description (Description)
 {
-Slams the ground twice in a row, hurting and slowing every enemy unit around your hero.
+Your hero slams the ground, hurting and slowing every enemy around it. Every 16 seconds it becomes an Avatar for 8 seconds: it grows huge and slams the ground every second, twice as far around it and harder.
 }
 
 STRING 2247
-// Items: I076 (Aftershock), Ubertip (Tooltip - Extended)
+// Items: I076 (Avatar), Ubertip (Tooltip - Extended)
 {
-Slams the ground twice in a row, hurting and slowing every enemy unit around your hero.
+Your hero slams the ground, hurting and slowing every enemy around it. Every 16 seconds it becomes an Avatar for 8 seconds: it grows huge and slams the ground every second, twice as far around it and harder.
 }
 
 STRING 2248
-// Items: I076 (Aftershock), Name (Name)
+// Items: I076 (Avatar), Name (Name)
 {
-Aftershock
+Avatar
 }
 
 STRING 2249
-// Items: I077 (Aftershock), Tip (Tooltip - Basic)
+// Items: I077 (Avatar), Tip (Tooltip - Basic)
 {
-Purchase Aftershock
+Purchase Avatar
 }
 
 STRING 2250
-// Items: I077 (Aftershock), Ubertip (Tooltip - Extended)
+// Items: I077 (Avatar), Ubertip (Tooltip - Extended)
 {
-Slams the ground twice in a row, hurting and slowing every enemy unit around your hero.
+Every 3 seconds your hero slams the ground, hurting and slowing every enemy ground unit around it. Every 16 seconds it becomes an Avatar for 8 seconds: it grows huge and slams the ground every second, hurting and slowing every enemy ground unit twice as far away, harder than before.
 
-Damage: |cffffcc002 x 60|r
+Damage: |cffffcc0060|r (slam), |cffffcc00100|r (Avatar slam)
 Slow: |cffffcc00-50% movement and attack speed for 3s|r
-Cooldown: |cffffcc003s|r
-Area of effect: |cffffcc00300|r
+Cooldown: |cffffcc003s|r (slam), |cffffcc001s|r (Avatar slam), |cffffcc0016s|r (Avatar)
+Duration: |cffffcc008s|r (Avatar)
+Area of effect: |cffffcc00250|r (slam), |cffffcc00500|r (Avatar slam)
 Targets: |cffffcc00ground only!|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 2251
-// Items: I077 (Aftershock), Description (Description)
+// Items: I077 (Avatar), Description (Description)
 {
-Slams the ground twice in a row, hurting and slowing every enemy unit around your hero.
+Every 3 seconds your hero slams the ground, hurting and slowing every enemy ground unit around it. Every 16 seconds it becomes an Avatar for 8 seconds: it grows huge and slams the ground every second, hurting and slowing every enemy ground unit twice as far away, harder than before.
 
-Damage: |cffffcc002 x 60|r
+Damage: |cffffcc0060|r (slam), |cffffcc00100|r (Avatar slam)
 Slow: |cffffcc00-50% movement and attack speed for 3s|r
-Cooldown: |cffffcc003s|r
-Area of effect: |cffffcc00300|r
+Cooldown: |cffffcc003s|r (slam), |cffffcc001s|r (Avatar slam), |cffffcc0016s|r (Avatar)
+Duration: |cffffcc008s|r (Avatar)
+Area of effect: |cffffcc00250|r (slam), |cffffcc00500|r (Avatar slam)
 Targets: |cffffcc00ground only!|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 2252
-// Items: I077 (Aftershock), Name (Name)
+// Items: I077 (Avatar), Name (Name)
 {
-Aftershock
+Avatar
 }
 
 STRING 2253
@@ -20254,5 +20256,11 @@ STRING 3611
 // Abilities: A05M (Permafrost Slow), Name (Name)
 {
 Permafrost Slow
+}
+
+STRING 3612
+// Abilities: A05N (Avatar Slam), Name (Name)
+{
+Avatar Slam
 }
 

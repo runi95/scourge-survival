@@ -107,7 +107,7 @@ export const weaponRecipes = [
   new Recipes.StunningShot(),
   new Recipes.ThunderRockets(),
   new Recipes.Pinwheel(),
-  new Recipes.Aftershock(),
+  new Recipes.Avatar(),
   new Recipes.MountainKing(),
   new Recipes.HammerStorm(),
   new Recipes.FrostMines(),

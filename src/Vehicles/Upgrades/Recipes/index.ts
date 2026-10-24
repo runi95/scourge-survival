@@ -102,7 +102,7 @@ export * from "./ThunderRifle";
 export * from "./StunningShot";
 export * from "./ThunderRockets";
 export * from "./Pinwheel";
-export * from "./Aftershock";
+export * from "./Avatar";
 export * from "./MountainKing";
 export * from "./HammerStorm";
 export * from "./FrostMines";
