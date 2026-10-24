@@ -127,7 +127,7 @@ export * from "./BallLightning";
 export * from "./Landslide";
 export * from "./BloodScent";
 export * from "./Payload";
-export * from "./MineLauncher";
+export * from "./KillZone";
 export * from "./SiegeSpears";
 export * from "./NetCatapult";
 export * from "./ThunderStomp";

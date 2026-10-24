@@ -11869,67 +11869,67 @@ Payload
 }
 
 STRING 2449
-// Items: I08K (Mine Launcher), Tip (Tooltip - Basic)
+// Items: I08K (Kill Zone), Tip (Tooltip - Basic)
 {
-Purchase Mine Launcher
+Purchase Kill Zone
 }
 
 STRING 2450
-// Items: I08K (Mine Launcher), Description (Description)
+// Items: I08K (Kill Zone), Description (Description)
 {
-Lobs a boulder at a random enemy unit within range and scatters a land mine where it lands.
+Plants ranging stakes underneath your hero instead of mines. A stake doesn't explode: when an enemy steps near it, the catapult, already ranged on the spot, drops a boulder right on it.
 }
 
 STRING 2451
-// Items: I08K (Mine Launcher), Ubertip (Tooltip - Extended)
+// Items: I08K (Kill Zone), Ubertip (Tooltip - Extended)
 {
-Lobs a boulder at a random enemy unit within range and scatters a land mine where it lands.
+Plants ranging stakes underneath your hero instead of mines. A stake doesn't explode: when an enemy steps near it, the catapult, already ranged on the spot, drops a boulder right on it.
 }
 
 STRING 2452
-// Items: I08K (Mine Launcher), Name (Name)
+// Items: I08K (Kill Zone), Name (Name)
 {
-Mine Launcher
+Kill Zone
 }
 
 STRING 2453
-// Items: I08L (Mine Launcher), Tip (Tooltip - Basic)
+// Items: I08L (Kill Zone), Tip (Tooltip - Basic)
 {
-Purchase Mine Launcher
+Purchase Kill Zone
 }
 
 STRING 2454
-// Items: I08L (Mine Launcher), Ubertip (Tooltip - Extended)
+// Items: I08L (Kill Zone), Ubertip (Tooltip - Extended)
 {
-Lobs a boulder at a random enemy unit within range and scatters a land mine where it lands.
+Plants a ranging stake underneath your hero every 4 seconds, up to 4 at a time. A stake doesn't explode. When an enemy ground unit comes within 250 of it, your catapult, already ranged on the spot, drops a boulder right on the stake, crushing every enemy ground unit around it. A stake calls down 2 boulders, at most one every 2.5 seconds, before it is spent.
 
-Damage: |cffffcc0045 (boulder) + 100 (mine)|r
-Cooldown: |cffffcc003s|r
-Range: |cffffcc00800|r
-Area of effect: |cffffcc00150 (boulder) + 300 (mine)|r
-Mine activation delay: |cffffcc004s|r
+Damage: |cffffcc0060|r per boulder
+Area of effect: |cffffcc00250|r
+Boulders: |cffffcc002|r per stake
+Cooldown: |cffffcc004s|r (stakes), |cffffcc002.5s|r (boulders per stake)
+Stakes: up to |cffffcc004|r, |cffffcc0040s|r each
 Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00siege + spell|r
+Damage type: |cffffcc00siege|r
 }
 
 STRING 2455
-// Items: I08L (Mine Launcher), Description (Description)
+// Items: I08L (Kill Zone), Description (Description)
 {
-Lobs a boulder at a random enemy unit within range and scatters a land mine where it lands.
+Plants a ranging stake underneath your hero every 4 seconds, up to 4 at a time. A stake doesn't explode. When an enemy ground unit comes within 250 of it, your catapult, already ranged on the spot, drops a boulder right on the stake, crushing every enemy ground unit around it. A stake calls down 2 boulders, at most one every 2.5 seconds, before it is spent.
 
-Damage: |cffffcc0045 (boulder) + 100 (mine)|r
-Cooldown: |cffffcc003s|r
-Range: |cffffcc00800|r
-Area of effect: |cffffcc00150 (boulder) + 300 (mine)|r
-Mine activation delay: |cffffcc004s|r
+Damage: |cffffcc0060|r per boulder
+Area of effect: |cffffcc00250|r
+Boulders: |cffffcc002|r per stake
+Cooldown: |cffffcc004s|r (stakes), |cffffcc002.5s|r (boulders per stake)
+Stakes: up to |cffffcc004|r, |cffffcc0040s|r each
 Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00siege + spell|r
+Damage type: |cffffcc00siege|r
 }
 
 STRING 2456
-// Items: I08L (Mine Launcher), Name (Name)
+// Items: I08L (Kill Zone), Name (Name)
 {
-Mine Launcher
+Kill Zone
 }
 
 STRING 2457
@@ -20266,5 +20266,11 @@ STRING 3595
 // Units: u02N (Ball Lightning), Name (Name)
 {
 Ball Lightning
+}
+
+STRING 3596
+// Units: n01T (Ranging Stake), Name (Name)
+{
+Ranging Stake
 }
 

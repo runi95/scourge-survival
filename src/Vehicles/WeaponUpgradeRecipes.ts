@@ -132,7 +132,7 @@ export const weaponRecipes = [
   new Recipes.Landslide(),
   new Recipes.BloodScent(),
   new Recipes.Payload(),
-  new Recipes.MineLauncher(),
+  new Recipes.KillZone(),
   new Recipes.SiegeSpears(),
   new Recipes.NetCatapult(),
   new Recipes.ThunderStomp(),
