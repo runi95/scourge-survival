@@ -124,7 +124,7 @@ export * from "./SpiritJavelins";
 export * from "./PressGang";
 export * from "./TwinCatapults";
 export * from "./BallLightning";
-export * from "./EarthquakeShot";
+export * from "./Landslide";
 export * from "./WolfCatapult";
 export * from "./RocketCatapult";
 export * from "./MineLauncher";

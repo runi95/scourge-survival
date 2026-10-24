@@ -11671,67 +11671,67 @@ Ball Lightning
 }
 
 STRING 2425
-// Items: I08E (Earthquake Shot), Tip (Tooltip - Basic)
+// Items: I08E (Landslide), Tip (Tooltip - Basic)
 {
-Purchase Earthquake Shot
+Purchase Landslide
 }
 
 STRING 2426
-// Items: I08E (Earthquake Shot), Description (Description)
+// Items: I08E (Landslide), Description (Description)
 {
-Lobs a boulder at a random enemy unit within range that lands with a stomp, stunning everything around it.
+Lobs a flaming boulder at the farthest enemy unit within range. It doesn't stop where it lands: it rolls back down past your hero, crushing and stunning every enemy in its path and shoving them aside.
 }
 
 STRING 2427
-// Items: I08E (Earthquake Shot), Ubertip (Tooltip - Extended)
+// Items: I08E (Landslide), Ubertip (Tooltip - Extended)
 {
-Lobs a boulder at a random enemy unit within range that lands with a stomp, stunning everything around it.
+Lobs a flaming boulder at the farthest enemy unit within range. It doesn't stop where it lands: it rolls back down past your hero, crushing and stunning every enemy in its path and shoving them aside.
 }
 
 STRING 2428
-// Items: I08E (Earthquake Shot), Name (Name)
+// Items: I08E (Landslide), Name (Name)
 {
-Earthquake Shot
+Landslide
 }
 
 STRING 2429
-// Items: I08F (Earthquake Shot), Tip (Tooltip - Basic)
+// Items: I08F (Landslide), Tip (Tooltip - Basic)
 {
-Purchase Earthquake Shot
+Purchase Landslide
 }
 
 STRING 2430
-// Items: I08F (Earthquake Shot), Ubertip (Tooltip - Extended)
+// Items: I08F (Landslide), Ubertip (Tooltip - Extended)
 {
-Lobs a boulder at a random enemy unit within range that lands with a stomp, stunning everything around it.
+Every 2.5 seconds lobs a flaming boulder at the farthest enemy ground unit within range, crushing everything it lands on. Then it rolls back 1100 towards your hero and on past it, crushing every enemy ground unit in its path: they are hurt, stunned and shoved aside.
 
-Damage: |cffffcc0045 (boulder) + 90 (stomp)|r
-Cooldown: |cffffcc003s|r
-Range: |cffffcc00800|r
-Area of effect: |cffffcc00300|r
-Stun duration: |cffffcc001.5s|r
+Damage: |cffffcc0058 - 60|r (landing), |cffffcc0090|r (rolling)
+Stun duration: |cffffcc000.75s|r
+Area of effect: |cffffcc00150|r (landing), |cffffcc00300|r wide (rolling)
+Cooldown: |cffffcc002.5s|r
+Range: |cffffcc00800|r, |cffffcc001100|r (roll)
 Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00siege + spell|r
+Damage type: |cffffcc00siege|r (landing), |cffffcc00spell|r (rolling)
 }
 
 STRING 2431
-// Items: I08F (Earthquake Shot), Description (Description)
+// Items: I08F (Landslide), Description (Description)
 {
-Lobs a boulder at a random enemy unit within range that lands with a stomp, stunning everything around it.
+Every 2.5 seconds lobs a flaming boulder at the farthest enemy ground unit within range, crushing everything it lands on. Then it rolls back 1100 towards your hero and on past it, crushing every enemy ground unit in its path: they are hurt, stunned and shoved aside.
 
-Damage: |cffffcc0045 (boulder) + 90 (stomp)|r
-Cooldown: |cffffcc003s|r
-Range: |cffffcc00800|r
-Area of effect: |cffffcc00300|r
-Stun duration: |cffffcc001.5s|r
+Damage: |cffffcc0058 - 60|r (landing), |cffffcc0090|r (rolling)
+Stun duration: |cffffcc000.75s|r
+Area of effect: |cffffcc00150|r (landing), |cffffcc00300|r wide (rolling)
+Cooldown: |cffffcc002.5s|r
+Range: |cffffcc00800|r, |cffffcc001100|r (roll)
 Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00siege + spell|r
+Damage type: |cffffcc00siege|r (landing), |cffffcc00spell|r (rolling)
 }
 
 STRING 2432
-// Items: I08F (Earthquake Shot), Name (Name)
+// Items: I08F (Landslide), Name (Name)
 {
-Earthquake Shot
+Landslide
 }
 
 STRING 2433

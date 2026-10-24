@@ -34,6 +34,7 @@ import { ForwardOutpostDamageEvent } from "./DamageEvents/ForwardOutpostDamageEv
 import { DragnetDamageEvent } from "./DamageEvents/DragnetDamageEvent";
 import { BeatdownDamageEvent } from "./DamageEvents/BeatdownDamageEvent";
 import { BallLightningDamageEvent } from "./DamageEvents/BallLightningDamageEvent";
+import { LandslideDamageEvent } from "./DamageEvents/LandslideDamageEvent";
 
 export interface ExtendedDamageInstance extends DamageInstance {
   sourceOwningPlayer: player;
@@ -204,6 +205,10 @@ export class DamageEventController {
     );
     DamageEngine.register(
       new BallLightningDamageEvent(),
+      DamageEventType.AfterDamageEvent,
+    );
+    DamageEngine.register(
+      new LandslideDamageEvent(),
       DamageEventType.AfterDamageEvent,
     );
   }

@@ -129,7 +129,7 @@ export const weaponRecipes = [
   new Recipes.PressGang(),
   new Recipes.TwinCatapults(),
   new Recipes.BallLightning(),
-  new Recipes.EarthquakeShot(),
+  new Recipes.Landslide(),
   new Recipes.WolfCatapult(),
   new Recipes.RocketCatapult(),
   new Recipes.MineLauncher(),
