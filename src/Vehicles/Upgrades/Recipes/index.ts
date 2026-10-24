@@ -12,7 +12,7 @@ export * from "./FlyingBehemoth";
 export * from "./Phoenix";
 export * from "./DangerClose";
 export * from "./BoulderBarrage";
-export * from "./Firebolt";
+export * from "./Incinerate";
 export * from "./MortarTeam";
 export * from "./Whirlpool";
 export * from "./TeslaCoil";

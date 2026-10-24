@@ -4,7 +4,7 @@ import { OverdriveDamageEvent } from "./DamageEvents/OverdriveDamageEvent";
 import { AntiMagicShellDamageEvent } from "./DamageEvents/AntiMagicShellDamageEvent";
 import { BerserkDamageEvent } from "./DamageEvents/BerserkDamageEvent";
 import { CriticalStrikeDamageEvent } from "./DamageEvents/CriticalStrikeDamageEvent";
-import { FireboltDamageEvent } from "./DamageEvents/FireboltDamageEvent";
+import { IncinerateDamageEvent } from "./DamageEvents/IncinerateDamageEvent";
 import { InnerFireDamageEvent } from "./DamageEvents/InnerFireDamageEvent";
 import { LocustSwarmDamageEvent } from "./DamageEvents/LocustSwarmDamageEvent";
 import { LongRifleDamageEvent } from "./DamageEvents/LongRifleDamageEvent";
@@ -142,12 +142,12 @@ export class DamageEventController {
       new BlackIceDamageEvent(),
       DamageEventType.OnDamageEvent,
     );
+    DamageEngine.register(
+      new IncinerateDamageEvent(),
+      DamageEventType.OnDamageEvent,
+    );
 
     // After damage events
-    DamageEngine.register(
-      new FireboltDamageEvent(),
-      DamageEventType.AfterDamageEvent,
-    );
     DamageEngine.register(
       new InnerFireDamageEvent(),
       DamageEventType.AfterDamageEvent,

@@ -1969,9 +1969,9 @@ Boulder Barrage
 }
 
 STRING 822
-// Units: u00Q (Firebolt), Name (Name)
+// Units: u00Q (rocket), Name (Name)
 {
-Firebolt
+Incinerate
 }
 
 STRING 823
@@ -1987,67 +1987,65 @@ Tesla Coil
 }
 
 STRING 825
-// Items: I01K (Firebolt), Name (Name)
+// Items: I01K (Incinerate), Name (Name)
 {
-Firebolt
+Incinerate
 }
 
 STRING 826
-// Items: I01K (Firebolt), Tip (Tooltip - Basic)
+// Items: I01K (Incinerate), Tip (Tooltip - Basic)
 {
-Purchase Firebolt
+Purchase Incinerate
 }
 
 STRING 827
-// Items: I01K (Firebolt), Description (Description)
+// Items: I01K (Incinerate), Description (Description)
 {
-Shoots a firebolt with splash damage at a random enemy unit within range, setting the targets on fire.
+Fires burning rockets at one enemy until it dies, each one hitting harder than the last. An incinerated enemy that dies explodes, setting fire to every enemy around it.
 }
 
 STRING 828
-// Items: I01K (Firebolt), Ubertip (Tooltip - Extended)
+// Items: I01K (Incinerate), Ubertip (Tooltip - Extended)
 {
-Shoots a firebolt with splash damage at a random enemy unit within range, setting the targets on fire.
+Fires burning rockets at one enemy until it dies, each one hitting harder than the last. An incinerated enemy that dies explodes, setting fire to every enemy around it.
 }
 
 STRING 829
-// Items: I01L (Firebolt), Name (Name)
+// Items: I01L (Incinerate), Name (Name)
 {
-Firebolt
+Incinerate
 }
 
 STRING 830
-// Items: I01L (Firebolt), Tip (Tooltip - Basic)
+// Items: I01L (Incinerate), Tip (Tooltip - Basic)
 {
-Purchase Firebolt
+Purchase Incinerate
 }
 
 STRING 831
-// Items: I01L (Firebolt), Ubertip (Tooltip - Extended)
+// Items: I01L (Incinerate), Ubertip (Tooltip - Extended)
 {
-Shoots a firebolt with splash damage at a random enemy unit within range, setting the targets on fire.
+Every 0.5 seconds fires a burning rocket at the enemy unit it hit last, or at the nearest enemy unit within range once that one is gone. Every hit incinerates the target a little more: each rocket does 10 more damage to it than the one before, up to 100 more. An incinerated enemy unit that dies explodes, doing 25 damage for every rocket that hit it to every enemy unit within 200, and incinerating them a little too.
 
-Damage: |cffffcc0060|r
-Burn damage: |cffffcc0015 per second for 3s|r
-Cooldown: |cffffcc001s|r
-Area of Effect (splash): |cffffcc00125|r
+Damage: |cffffcc0025|r (+10 a hit, up to +100), |cffffcc0025|r for every hit (explosion)
+Cooldown: |cffffcc000.5s|r
 Range: |cffffcc00650|r
+Area of effect: |cffffcc00200|r (explosion)
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00magic|r
+Damage type: |cffffcc00magic|r (rocket), |cffffcc00spell|r (explosion)
 }
 
 STRING 832
-// Items: I01L (Firebolt), Description (Description)
+// Items: I01L (Incinerate), Description (Description)
 {
-Shoots a firebolt with splash damage at a random enemy unit within range, setting the targets on fire.
+Every 0.5 seconds fires a burning rocket at the enemy unit it hit last, or at the nearest enemy unit within range once that one is gone. Every hit incinerates the target a little more: each rocket does 10 more damage to it than the one before, up to 100 more. An incinerated enemy unit that dies explodes, doing 25 damage for every rocket that hit it to every enemy unit within 200, and incinerating them a little too.
 
-Damage: |cffffcc0060|r
-Burn damage: |cffffcc0015 per second for 3s|r
-Cooldown: |cffffcc001s|r
-Area of Effect (splash): |cffffcc00125|r
+Damage: |cffffcc0025|r (+10 a hit, up to +100), |cffffcc0025|r for every hit (explosion)
+Cooldown: |cffffcc000.5s|r
 Range: |cffffcc00650|r
+Area of effect: |cffffcc00200|r (explosion)
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00magic|r
+Damage type: |cffffcc00magic|r (rocket), |cffffcc00spell|r (explosion)
 }
 
 STRING 833
