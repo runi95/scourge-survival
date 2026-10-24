@@ -151,7 +151,7 @@ export const weaponRecipes = [
   new Recipes.Encircle(),
   new Recipes.Tunneler(),
   new Recipes.SkyNet(),
-  new Recipes.SnareMine(),
+  new Recipes.BearTrap(),
   new Recipes.HuntersSpear(),
   new Recipes.NetVolley(),
   new Recipes.SpearVolley(),
