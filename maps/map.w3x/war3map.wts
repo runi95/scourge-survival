@@ -9317,81 +9317,69 @@ Riptide
 }
 
 STRING 2136
-// Items: I06G (Lightning Elemental), Tip (Tooltip - Basic)
+// Items: I06G (Hammer and Anvil), Tip (Tooltip - Basic)
 {
-Purchase Lightning Elemental
+Purchase Hammer and Anvil
 }
 
 STRING 2137
-// Items: I06G (Lightning Elemental), Description (Description)
+// Items: I06G (Hammer and Anvil), Description (Description)
 {
-Summons a Lightning Elemental every 15 seconds. Its bolts sometimes stun their target.
+A Water Elemental plants itself between your hero and the enemies as the anvil. Your hero's storm hammers knock enemies flying back into it, and every enemy smashed against the anvil is stunned and splashes everything around it.
 }
 
 STRING 2138
-// Items: I06G (Lightning Elemental), Ubertip (Tooltip - Extended)
+// Items: I06G (Hammer and Anvil), Ubertip (Tooltip - Extended)
 {
-Summons a Lightning Elemental every 15 seconds. Its bolts sometimes stun their target.
-}
-
-STRING 2139
-// Units: n015 (Lightning Elemental), Name (Name)
-{
-Lightning Elemental
+A Water Elemental plants itself between your hero and the enemies as the anvil. Your hero's storm hammers knock enemies flying back into it, and every enemy smashed against the anvil is stunned and splashes everything around it.
 }
 
 STRING 2140
-// Items: I06H (Lightning Elemental), Tip (Tooltip - Basic)
+// Items: I06H (Hammer and Anvil), Tip (Tooltip - Basic)
 {
-Purchase Lightning Elemental
+Purchase Hammer and Anvil
 }
 
 STRING 2141
-// Items: I06H (Lightning Elemental), Ubertip (Tooltip - Extended)
+// Items: I06H (Hammer and Anvil), Ubertip (Tooltip - Extended)
 {
-Summons a Lightning Elemental every 15 seconds. Its bolts sometimes stun their target.
+Every 15 seconds a Water Elemental rises between your hero and the largest group of enemies and attacks nearby enemy units for 14 seconds. Every 3 seconds your hero throws a storm hammer at the enemy unit within 700 farthest from the elemental. A ground unit it hits is knocked flying into the elemental and smashed against it: the farther it flew the harder it hits, and it is stunned and splashes every enemy unit around the elemental.
 
-Damage: |cffffcc0029 - 43|r
-Stun: |cffffcc0020% chance for 1s|r
-Cooldown: |cffffcc0015s|r
-Range: |cffffcc00500|r
-Health: |cffffcc00450|r
-Duration: |cffffcc0014s|r
+Damage: |cffffcc0028 - 35|r (Water Elemental), |cffffcc00100|r (hammer), |cffffcc0010|r for every 100 flown (smash), |cffffcc0050|r (splash)
+Stun duration: |cffffcc001s|r (hammer), |cffffcc001.5s|r (smash)
+Cooldown: |cffffcc0015s|r (Water Elemental), |cffffcc003s|r (hammer)
+Range: |cffffcc00700|r (hammer), |cffffcc00500|r (Water Elemental)
+Area of effect: |cffffcc00150|r (splash)
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00piercing|r
+Damage type: |cffffcc00piercing|r (Water Elemental), |cffffcc00spell|r (hammer)
+Duration: |cffffcc0014s|r (Water Elemental)
 }
 
 STRING 2142
-// Items: I06H (Lightning Elemental), Description (Description)
+// Items: I06H (Hammer and Anvil), Description (Description)
 {
-Summons a Lightning Elemental every 15 seconds. Its bolts sometimes stun their target.
+Every 15 seconds a Water Elemental rises between your hero and the largest group of enemies and attacks nearby enemy units for 14 seconds. Every 3 seconds your hero throws a storm hammer at the enemy unit within 700 farthest from the elemental. A ground unit it hits is knocked flying into the elemental and smashed against it: the farther it flew the harder it hits, and it is stunned and splashes every enemy unit around the elemental.
 
-Damage: |cffffcc0029 - 43|r
-Stun: |cffffcc0020% chance for 1s|r
-Cooldown: |cffffcc0015s|r
-Range: |cffffcc00500|r
-Health: |cffffcc00450|r
-Duration: |cffffcc0014s|r
+Damage: |cffffcc0028 - 35|r (Water Elemental), |cffffcc00100|r (hammer), |cffffcc0010|r for every 100 flown (smash), |cffffcc0050|r (splash)
+Stun duration: |cffffcc001s|r (hammer), |cffffcc001.5s|r (smash)
+Cooldown: |cffffcc0015s|r (Water Elemental), |cffffcc003s|r (hammer)
+Range: |cffffcc00700|r (hammer), |cffffcc00500|r (Water Elemental)
+Area of effect: |cffffcc00150|r (splash)
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00piercing|r
+Damage type: |cffffcc00piercing|r (Water Elemental), |cffffcc00spell|r (hammer)
+Duration: |cffffcc0014s|r (Water Elemental)
 }
 
 STRING 2143
-// Items: I06G (Lightning Elemental), Name (Name)
+// Items: I06G (Hammer and Anvil), Name (Name)
 {
-Lightning Elemental
+Hammer and Anvil
 }
 
 STRING 2144
-// Items: I06H (Lightning Elemental), Name (Name)
+// Items: I06H (Hammer and Anvil), Name (Name)
 {
-Lightning Elemental
-}
-
-STRING 2145
-// Abilities: A04D (Lightning Elemental Bash), Name (Name)
-{
-Lightning Elemental Bash
+Hammer and Anvil
 }
 
 STRING 2146

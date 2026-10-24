@@ -94,7 +94,7 @@ export const weaponRecipes = [
   new Recipes.GryphonRoost(),
   new Recipes.IceElemental(),
   new Recipes.Riptide(),
-  new Recipes.LightningElemental(),
+  new Recipes.HammerAndAnvil(),
   new Recipes.EternalWinter(),
   new Recipes.Frostfire(),
   new Recipes.FrostbiteRifle(),
