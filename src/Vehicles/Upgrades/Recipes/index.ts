@@ -94,7 +94,7 @@ export * from "./Permafrost";
 export * from "./Frostfire";
 export * from "./Frostbite";
 export * from "./IceRockets";
-export * from "./FrostClap";
+export * from "./FrozenEcho";
 export * from "./IceHammer";
 export * from "./SearingClap";
 export * from "./MoltenHammer";

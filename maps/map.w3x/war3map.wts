@@ -9639,71 +9639,69 @@ Ice Rockets
 }
 
 STRING 2178
-// Items: I06Q (Frost Clap), Tip (Tooltip - Basic)
+// Items: I06Q (Frozen Echo), Tip (Tooltip - Basic)
 {
-Purchase Frost Clap
+Purchase Frozen Echo
 }
 
 STRING 2179
-// Items: I06Q (Frost Clap), Description (Description)
+// Items: I06Q (Frozen Echo), Description (Description)
 {
-Slams the ground with freezing force, hurting and greatly slowing every enemy unit around your hero.
+Your hero slams the ground, hurting and slowing every enemy around it, and every slam leaves a block of ice behind where it stood. A moment later the ice echoes the slam: it shatters into freezing shards that freeze solid every enemy the slam slowed.
 }
 
 STRING 2180
-// Items: I06Q (Frost Clap), Ubertip (Tooltip - Extended)
+// Items: I06Q (Frozen Echo), Ubertip (Tooltip - Extended)
 {
-Slams the ground with freezing force, hurting and greatly slowing every enemy unit around your hero.
+Your hero slams the ground, hurting and slowing every enemy around it, and every slam leaves a block of ice behind where it stood. A moment later the ice echoes the slam: it shatters into freezing shards that freeze solid every enemy the slam slowed.
 }
 
 STRING 2181
-// Items: I06Q (Frost Clap), Name (Name)
+// Items: I06Q (Frozen Echo), Name (Name)
 {
-Frost Clap
+Frozen Echo
 }
 
 STRING 2182
-// Items: I06R (Frost Clap), Tip (Tooltip - Basic)
+// Items: I06R (Frozen Echo), Tip (Tooltip - Basic)
 {
-Purchase Frost Clap
+Purchase Frozen Echo
 }
 
 STRING 2183
-// Items: I06R (Frost Clap), Ubertip (Tooltip - Extended)
+// Items: I06R (Frozen Echo), Ubertip (Tooltip - Extended)
 {
-Slams the ground with freezing force, hurting and greatly slowing every enemy unit around your hero.
+Every 2.5 seconds your hero slams the ground, hurting and slowing every enemy ground unit around it, and leaves a block of ice where it stood. 2 seconds later the ice echoes the slam and shatters, hurting every enemy unit around it, and every enemy unit still slowed by a slam is frozen solid for 1.5 seconds. Standing still, your hero is hit by its own echo; on the move, it leaves a trail of them behind.
 
-Damage: |cffffcc0090|r
-Slow: |cffffcc00-70% movement and attack speed for 5s|r
-Cooldown: |cffffcc003s|r
-Area of effect: |cffffcc00350|r
-Targets: |cffffcc00ground only!|r
+Damage: |cffffcc0060|r (slam), |cffffcc00100|r (echo)
+Slow: |cffffcc00-50% movement and attack speed for 3s|r
+Freeze duration: |cffffcc001.5s|r
+Cooldown: |cffffcc002.5s|r
+Delay: |cffffcc002s|r
+Area of effect: |cffffcc00250|r (slam), |cffffcc00300|r (echo)
+Targets: |cffffcc00ground only!|r (slam), |cffffcc00air & ground|r (echo)
 Damage type: |cffffcc00spell|r
 }
 
 STRING 2184
-// Items: I06R (Frost Clap), Description (Description)
+// Items: I06R (Frozen Echo), Description (Description)
 {
-Slams the ground with freezing force, hurting and greatly slowing every enemy unit around your hero.
+Every 2.5 seconds your hero slams the ground, hurting and slowing every enemy ground unit around it, and leaves a block of ice where it stood. 2 seconds later the ice echoes the slam and shatters, hurting every enemy unit around it, and every enemy unit still slowed by a slam is frozen solid for 1.5 seconds. Standing still, your hero is hit by its own echo; on the move, it leaves a trail of them behind.
 
-Damage: |cffffcc0090|r
-Slow: |cffffcc00-70% movement and attack speed for 5s|r
-Cooldown: |cffffcc003s|r
-Area of effect: |cffffcc00350|r
-Targets: |cffffcc00ground only!|r
+Damage: |cffffcc0060|r (slam), |cffffcc00100|r (echo)
+Slow: |cffffcc00-50% movement and attack speed for 3s|r
+Freeze duration: |cffffcc001.5s|r
+Cooldown: |cffffcc002.5s|r
+Delay: |cffffcc002s|r
+Area of effect: |cffffcc00250|r (slam), |cffffcc00300|r (echo)
+Targets: |cffffcc00ground only!|r (slam), |cffffcc00air & ground|r (echo)
 Damage type: |cffffcc00spell|r
 }
 
 STRING 2185
-// Items: I06R (Frost Clap), Name (Name)
+// Items: I06R (Frozen Echo), Name (Name)
 {
-Frost Clap
-}
-
-STRING 2186
-// Abilities: A04E (Frost Clap), Name (Name)
-{
-Frost Clap
+Frozen Echo
 }
 
 STRING 2187
