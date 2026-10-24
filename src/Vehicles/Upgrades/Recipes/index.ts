@@ -84,7 +84,7 @@ export * from "./FrostCannon";
 export * from "./ConcussionShells";
 export * from "./SkippingShot";
 export * from "./BubbleMachine";
-export * from "./FrostClockwerks";
+export * from "./WeatherMachine";
 export * from "./KnightStables";
 export * from "./GryphonRoost";
 export * from "./IceElemental";

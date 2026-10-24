@@ -8987,79 +8987,67 @@ Bubble Machine
 }
 
 STRING 2092
-// Items: I066 (Frost Clockwerks), Tip (Tooltip - Basic)
+// Items: I066 (Weather Machine), Tip (Tooltip - Basic)
 {
-Purchase Frost Clockwerks
+Purchase Weather Machine
 }
 
 STRING 2093
-// Items: I066 (Frost Clockwerks), Description (Description)
+// Items: I066 (Weather Machine), Description (Description)
 {
-Builds 3 Frost Clockwerk Goblins every 15 seconds. Their icy punches slow enemies, and they explode when they die.
+Goblins set up a weather machine that calls a blizzard down on the largest enemy group. The storm follows the group around and grows wider and colder every second the machine keeps running, until the machine overheats.
 }
 
 STRING 2094
-// Items: I066 (Frost Clockwerks), Ubertip (Tooltip - Extended)
+// Items: I066 (Weather Machine), Ubertip (Tooltip - Extended)
 {
-Builds 3 Frost Clockwerk Goblins every 15 seconds. Their icy punches slow enemies, and they explode when they die.
+Goblins set up a weather machine that calls a blizzard down on the largest enemy group. The storm follows the group around and grows wider and colder every second the machine keeps running, until the machine overheats.
 }
 
 STRING 2095
-// Items: I066 (Frost Clockwerks), Name (Name)
+// Items: I066 (Weather Machine), Name (Name)
 {
-Frost Clockwerks
+Weather Machine
 }
 
 STRING 2096
-// Items: I067 (Frost Clockwerks), Tip (Tooltip - Basic)
+// Items: I067 (Weather Machine), Tip (Tooltip - Basic)
 {
-Purchase Frost Clockwerks
+Purchase Weather Machine
 }
 
 STRING 2097
-// Items: I067 (Frost Clockwerks), Ubertip (Tooltip - Extended)
+// Items: I067 (Weather Machine), Ubertip (Tooltip - Extended)
 {
-Builds 3 Frost Clockwerk Goblins every 15 seconds. Their icy punches slow enemies, and they explode when they die.
+Every 15 seconds goblins set up a weather machine next to your hero. For 12 seconds it calls down a blizzard on the largest group of enemy units within 900 of your hero: every second ice shards hurt every enemy unit under it. The storm drifts after the group, and every second the machine runs it grows wider and its shards hit harder, until the machine overheats.
 
-Damage: |cffffcc008 (attack) + 60 (explosion)|r
-Slow: |cffffcc00-50% movement and attack speed for 3s|r
+Damage: |cffffcc0035|r, |cffffcc00+5|r every second (|cffffcc0090|r at the end)
+Area of effect: |cffffcc00150|r, |cffffcc00+20|r every second (|cffffcc00370|r at the end)
 Cooldown: |cffffcc0015s|r
-Health: |cffffcc00125|r
 Duration: |cffffcc0012s|r
-Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00normal (attack) + spell (explosion)|r
+Range: |cffffcc00900|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
 }
 
 STRING 2098
-// Items: I067 (Frost Clockwerks), Description (Description)
+// Items: I067 (Weather Machine), Description (Description)
 {
-Builds 3 Frost Clockwerk Goblins every 15 seconds. Their icy punches slow enemies, and they explode when they die.
+Every 15 seconds goblins set up a weather machine next to your hero. For 12 seconds it calls down a blizzard on the largest group of enemy units within 900 of your hero: every second ice shards hurt every enemy unit under it. The storm drifts after the group, and every second the machine runs it grows wider and its shards hit harder, until the machine overheats.
 
-Damage: |cffffcc008 (attack) + 60 (explosion)|r
-Slow: |cffffcc00-50% movement and attack speed for 3s|r
+Damage: |cffffcc0035|r, |cffffcc00+5|r every second (|cffffcc0090|r at the end)
+Area of effect: |cffffcc00150|r, |cffffcc00+20|r every second (|cffffcc00370|r at the end)
 Cooldown: |cffffcc0015s|r
-Health: |cffffcc00125|r
 Duration: |cffffcc0012s|r
-Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00normal (attack) + spell (explosion)|r
+Range: |cffffcc00900|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
 }
 
 STRING 2099
-// Items: I067 (Frost Clockwerks), Name (Name)
+// Items: I067 (Weather Machine), Name (Name)
 {
-Frost Clockwerks
-}
-
-STRING 2100
-// Units: n013 (Frost Clockwerk Goblin), Name (Name)
-{
-Frost Clockwerk Goblin
-}
-
-STRING 2101
-// Abilities: A04B (Frost Clockwerk Slow), Name (Name)
-{
-Frost Clockwerk Slow
+Weather Machine
 }
 
 STRING 2102
@@ -20264,5 +20252,11 @@ STRING 3608
 // Units: n01X (Bubble Machine), Name (Name)
 {
 Bubble Machine
+}
+
+STRING 3609
+// Units: n01Y (Weather Machine), Name (Name)
+{
+Weather Machine
 }
 
