@@ -128,7 +128,7 @@ export * from "./Landslide";
 export * from "./BloodScent";
 export * from "./Payload";
 export * from "./KillZone";
-export * from "./SiegeSpears";
+export * from "./Counterweight";
 export * from "./NetCatapult";
 export * from "./ThunderStomp";
 export * from "./StormWolves";

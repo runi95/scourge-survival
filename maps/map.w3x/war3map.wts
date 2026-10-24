@@ -11933,65 +11933,65 @@ Kill Zone
 }
 
 STRING 2457
-// Items: I08M (Siege Spears), Tip (Tooltip - Basic)
+// Items: I08M (Counterweight), Tip (Tooltip - Basic)
 {
-Purchase Siege Spears
+Purchase Counterweight
 }
 
 STRING 2458
-// Items: I08M (Siege Spears), Description (Description)
+// Items: I08M (Counterweight), Description (Description)
 {
-Lobs boulders and hurls spears at 2 random enemy units within range.
+Throws spears faster and faster while your hero stands still. Every spear adds weight to the catapult's counterweight, and every 4 seconds it lobs a boulder that hits harder the more spears were thrown since the last one.
 }
 
 STRING 2459
-// Items: I08M (Siege Spears), Ubertip (Tooltip - Extended)
+// Items: I08M (Counterweight), Ubertip (Tooltip - Extended)
 {
-Lobs boulders and hurls spears at 2 random enemy units within range.
+Throws spears faster and faster while your hero stands still. Every spear adds weight to the catapult's counterweight, and every 4 seconds it lobs a boulder that hits harder the more spears were thrown since the last one.
 }
 
 STRING 2460
-// Items: I08M (Siege Spears), Name (Name)
+// Items: I08M (Counterweight), Name (Name)
 {
-Siege Spears
+Counterweight
 }
 
 STRING 2461
-// Items: I08N (Siege Spears), Tip (Tooltip - Basic)
+// Items: I08N (Counterweight), Tip (Tooltip - Basic)
 {
-Purchase Siege Spears
+Purchase Counterweight
 }
 
 STRING 2462
-// Items: I08N (Siege Spears), Ubertip (Tooltip - Extended)
+// Items: I08N (Counterweight), Ubertip (Tooltip - Extended)
 {
-Lobs boulders and hurls spears at 2 random enemy units within range.
+Throws spears at enemies, faster and faster while your hero stands still. Every spear thrown adds weight to the catapult's counterweight. Every 4 seconds the catapult lobs a boulder at the largest group of enemy ground units within range, crushing everything it lands on. The more spears were thrown since the last boulder, the harder it hits.
 
-Damage: |cffffcc002 x 45 (boulder) + 2 x 20 - 30 (spear)|r
-Cooldown: |cffffcc003s|r
+Damage: |cffffcc0017|r (spear), |cffffcc0030 + 8|r per spear thrown since the last boulder (boulder)
+Cooldown: |cffffcc001/0.5/0.25s|r (spears), |cffffcc004s|r (boulder)
+Area of effect: |cffffcc00150|r (boulder)
 Range: |cffffcc00800|r
-Area of effect: |cffffcc00150|r
-Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00siege + piercing|r
+Targets: |cffffcc00air & ground|r (spears), |cffffcc00ground|r (boulder)
+Damage type: |cffffcc00piercing|r (spear), |cffffcc00siege|r (boulder)
 }
 
 STRING 2463
-// Items: I08N (Siege Spears), Description (Description)
+// Items: I08N (Counterweight), Description (Description)
 {
-Lobs boulders and hurls spears at 2 random enemy units within range.
+Throws spears at enemies, faster and faster while your hero stands still. Every spear thrown adds weight to the catapult's counterweight. Every 4 seconds the catapult lobs a boulder at the largest group of enemy ground units within range, crushing everything it lands on. The more spears were thrown since the last boulder, the harder it hits.
 
-Damage: |cffffcc002 x 45 (boulder) + 2 x 20 - 30 (spear)|r
-Cooldown: |cffffcc003s|r
+Damage: |cffffcc0017|r (spear), |cffffcc0030 + 8|r per spear thrown since the last boulder (boulder)
+Cooldown: |cffffcc001/0.5/0.25s|r (spears), |cffffcc004s|r (boulder)
+Area of effect: |cffffcc00150|r (boulder)
 Range: |cffffcc00800|r
-Area of effect: |cffffcc00150|r
-Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00siege + piercing|r
+Targets: |cffffcc00air & ground|r (spears), |cffffcc00ground|r (boulder)
+Damage type: |cffffcc00piercing|r (spear), |cffffcc00siege|r (boulder)
 }
 
 STRING 2464
-// Items: I08N (Siege Spears), Name (Name)
+// Items: I08N (Counterweight), Name (Name)
 {
-Siege Spears
+Counterweight
 }
 
 STRING 2465
