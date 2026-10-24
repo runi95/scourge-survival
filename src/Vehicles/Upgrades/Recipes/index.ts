@@ -123,7 +123,7 @@ export * from "./Beatdown";
 export * from "./SpiritJavelins";
 export * from "./PressGang";
 export * from "./TwinCatapults";
-export * from "./LightningBoulder";
+export * from "./BallLightning";
 export * from "./EarthquakeShot";
 export * from "./WolfCatapult";
 export * from "./RocketCatapult";

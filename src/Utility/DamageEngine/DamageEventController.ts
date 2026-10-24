@@ -33,6 +33,7 @@ import { CoupDeGraceDamageEvent } from "./DamageEvents/CoupDeGraceDamageEvent";
 import { ForwardOutpostDamageEvent } from "./DamageEvents/ForwardOutpostDamageEvent";
 import { DragnetDamageEvent } from "./DamageEvents/DragnetDamageEvent";
 import { BeatdownDamageEvent } from "./DamageEvents/BeatdownDamageEvent";
+import { BallLightningDamageEvent } from "./DamageEvents/BallLightningDamageEvent";
 
 export interface ExtendedDamageInstance extends DamageInstance {
   sourceOwningPlayer: player;
@@ -199,6 +200,10 @@ export class DamageEventController {
     );
     DamageEngine.register(
       new DragnetDamageEvent(),
+      DamageEventType.AfterDamageEvent,
+    );
+    DamageEngine.register(
+      new BallLightningDamageEvent(),
       DamageEventType.AfterDamageEvent,
     );
   }

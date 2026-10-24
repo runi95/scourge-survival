@@ -11607,67 +11607,67 @@ Twin Catapults
 }
 
 STRING 2417
-// Items: I08C (Lightning Boulder), Tip (Tooltip - Basic)
+// Items: I08C (Ball Lightning), Tip (Tooltip - Basic)
 {
-Purchase Lightning Boulder
+Purchase Ball Lightning
 }
 
 STRING 2418
-// Items: I08C (Lightning Boulder), Description (Description)
+// Items: I08C (Ball Lightning), Description (Description)
 {
-Lobs a boulder at a random enemy unit within range. It bursts into a chain of lightning that jumps between enemies.
+Lobs a crackling ball of lightning at the farthest enemy unit within range. It bounces from enemy to enemy like chain lightning, crushing everything where it lands.
 }
 
 STRING 2419
-// Items: I08C (Lightning Boulder), Ubertip (Tooltip - Extended)
+// Items: I08C (Ball Lightning), Ubertip (Tooltip - Extended)
 {
-Lobs a boulder at a random enemy unit within range. It bursts into a chain of lightning that jumps between enemies.
+Lobs a crackling ball of lightning at the farthest enemy unit within range. It bounces from enemy to enemy like chain lightning, crushing everything where it lands.
 }
 
 STRING 2420
-// Items: I08C (Lightning Boulder), Name (Name)
+// Items: I08C (Ball Lightning), Name (Name)
 {
-Lightning Boulder
+Ball Lightning
 }
 
 STRING 2421
-// Items: I08D (Lightning Boulder), Tip (Tooltip - Basic)
+// Items: I08D (Ball Lightning), Tip (Tooltip - Basic)
 {
-Purchase Lightning Boulder
+Purchase Ball Lightning
 }
 
 STRING 2422
-// Items: I08D (Lightning Boulder), Ubertip (Tooltip - Extended)
+// Items: I08D (Ball Lightning), Ubertip (Tooltip - Extended)
 {
-Lobs a boulder at a random enemy unit within range. It bursts into a chain of lightning that jumps between enemies.
+Every 2.5 seconds lobs a crackling ball of lightning at the farthest enemy ground unit within range. Where it lands it crushes every enemy ground unit around it, then bounces on to the nearest enemy unit it hasn't hit yet, up to 5 times in all, losing 15% of its damage with every bounce. Flying units are struck by an arc of lightning on the way instead, and the ball bounces on from beneath them.
 
-Damage: |cffffcc0045 (boulder) + 180 (lightning)|r
-Damage reduction jump: |cffffcc00-15%|r
-Cooldown: |cffffcc003s|r
-Range: |cffffcc00800|r
-Area of effect: |cffffcc00150 (boulder) + 500 (chain)|r
-Targets: |cffffcc00ground (boulder), air & ground (lightning)|r
-Damage type: |cffffcc00siege + spell|r
+Damage: |cffffcc00110|r, |cffffcc00-15%|r per bounce
+Bounces: |cffffcc005|r
+Area of effect: |cffffcc00150|r (each landing)
+Cooldown: |cffffcc002.5s|r
+Range: |cffffcc00800|r, |cffffcc00500|r (bounces)
+Targets: |cffffcc00ground|r (landings), |cffffcc00air|r (arcs)
+Damage type: |cffffcc00siege|r (landings), |cffffcc00spell|r (arcs)
 }
 
 STRING 2423
-// Items: I08D (Lightning Boulder), Description (Description)
+// Items: I08D (Ball Lightning), Description (Description)
 {
-Lobs a boulder at a random enemy unit within range. It bursts into a chain of lightning that jumps between enemies.
+Every 2.5 seconds lobs a crackling ball of lightning at the farthest enemy ground unit within range. Where it lands it crushes every enemy ground unit around it, then bounces on to the nearest enemy unit it hasn't hit yet, up to 5 times in all, losing 15% of its damage with every bounce. Flying units are struck by an arc of lightning on the way instead, and the ball bounces on from beneath them.
 
-Damage: |cffffcc0045 (boulder) + 180 (lightning)|r
-Damage reduction jump: |cffffcc00-15%|r
-Cooldown: |cffffcc003s|r
-Range: |cffffcc00800|r
-Area of effect: |cffffcc00150 (boulder) + 500 (chain)|r
-Targets: |cffffcc00ground (boulder), air & ground (lightning)|r
-Damage type: |cffffcc00siege + spell|r
+Damage: |cffffcc00110|r, |cffffcc00-15%|r per bounce
+Bounces: |cffffcc005|r
+Area of effect: |cffffcc00150|r (each landing)
+Cooldown: |cffffcc002.5s|r
+Range: |cffffcc00800|r, |cffffcc00500|r (bounces)
+Targets: |cffffcc00ground|r (landings), |cffffcc00air|r (arcs)
+Damage type: |cffffcc00siege|r (landings), |cffffcc00spell|r (arcs)
 }
 
 STRING 2424
-// Items: I08D (Lightning Boulder), Name (Name)
+// Items: I08D (Ball Lightning), Name (Name)
 {
-Lightning Boulder
+Ball Lightning
 }
 
 STRING 2425
@@ -20256,5 +20256,11 @@ STRING 3594
 // Units: u02M (Beatdown Javelin), Name (Name)
 {
 Beatdown Javelin
+}
+
+STRING 3595
+// Units: u02N (Ball Lightning), Name (Name)
+{
+Ball Lightning
 }
 
