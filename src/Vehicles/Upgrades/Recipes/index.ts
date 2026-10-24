@@ -140,7 +140,7 @@ export * from "./TremorMine";
 export * from "./Palisade";
 export * from "./TremorLines";
 export * from "./SpiritPack";
-export * from "./RocketWolves";
+export * from "./Unleashed";
 export * from "./WolfDen";
 export * from "./SpiritHunters";
 export * from "./HuntingPack";
