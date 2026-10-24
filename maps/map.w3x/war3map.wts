@@ -8921,67 +8921,69 @@ Skipping Shot
 }
 
 STRING 2084
-// Items: I064 (Elemental Foundry), Tip (Tooltip - Basic)
+// Items: I064 (Bubble Machine), Tip (Tooltip - Basic)
 {
-Purchase Elemental Foundry
+Purchase Bubble Machine
 }
 
 STRING 2085
-// Items: I064 (Elemental Foundry), Description (Description)
+// Items: I064 (Bubble Machine), Description (Description)
 {
-Pumps out 2 Water Elementals every 20 seconds that fight by your side.
+Goblins hook a Water Elemental up to a bubble machine. It blows bubbles that drift after the nearest enemies and trap them: a trapped enemy floats helpless and drowning until its bubble bursts, drenching everything around it.
 }
 
 STRING 2086
-// Items: I064 (Elemental Foundry), Ubertip (Tooltip - Extended)
+// Items: I064 (Bubble Machine), Ubertip (Tooltip - Extended)
 {
-Pumps out 2 Water Elementals every 20 seconds that fight by your side.
+Goblins hook a Water Elemental up to a bubble machine. It blows bubbles that drift after the nearest enemies and trap them: a trapped enemy floats helpless and drowning until its bubble bursts, drenching everything around it.
 }
 
 STRING 2087
-// Items: I064 (Elemental Foundry), Name (Name)
+// Items: I064 (Bubble Machine), Name (Name)
 {
-Elemental Foundry
+Bubble Machine
 }
 
 STRING 2088
-// Items: I065 (Elemental Foundry), Tip (Tooltip - Basic)
+// Items: I065 (Bubble Machine), Tip (Tooltip - Basic)
 {
-Purchase Elemental Foundry
+Purchase Bubble Machine
 }
 
 STRING 2089
-// Items: I065 (Elemental Foundry), Ubertip (Tooltip - Extended)
+// Items: I065 (Bubble Machine), Ubertip (Tooltip - Extended)
 {
-Pumps out 2 Water Elementals every 20 seconds that fight by your side.
+Every 15 seconds goblins set up a bubble machine near your hero, with a Water Elemental hooked up to it that attacks nearby enemy units. Every 3 seconds the machine blows a bubble that drifts after the nearest enemy unit that isn't trapped yet. The bubble traps it for 3 seconds: it can't move or attack, and it drowns. Then the bubble bursts, drenching every enemy unit around it.
 
-Damage: |cffffcc002 x 29 - 43|r
-Cooldown: |cffffcc0020s|r
-Range: |cffffcc00500|r
-Health: |cffffcc00450|r
-Duration: |cffffcc0015s|r
+Damage: |cffffcc0028 - 35|r (Water Elemental), |cffffcc0025|r per second (drowning), |cffffcc0060|r (burst)
+Cooldown: |cffffcc0015s|r (machine), |cffffcc003s|r (bubble), |cffffcc000.5s|r (Water Elemental)
+Trap duration: |cffffcc003s|r
+Range: |cffffcc00700|r (bubble), |cffffcc00500|r (Water Elemental)
+Area of effect: |cffffcc00200|r (burst)
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00piercing|r
+Damage type: |cffffcc00piercing|r (Water Elemental), |cffffcc00spell|r (bubble)
+Duration: |cffffcc0014s|r (machine and Water Elemental)
 }
 
 STRING 2090
-// Items: I065 (Elemental Foundry), Description (Description)
+// Items: I065 (Bubble Machine), Description (Description)
 {
-Pumps out 2 Water Elementals every 20 seconds that fight by your side.
+Every 15 seconds goblins set up a bubble machine near your hero, with a Water Elemental hooked up to it that attacks nearby enemy units. Every 3 seconds the machine blows a bubble that drifts after the nearest enemy unit that isn't trapped yet. The bubble traps it for 3 seconds: it can't move or attack, and it drowns. Then the bubble bursts, drenching every enemy unit around it.
 
-Damage: |cffffcc002 x 29 - 43|r
-Cooldown: |cffffcc0020s|r
-Range: |cffffcc00500|r
-Health: |cffffcc00450|r
-Duration: |cffffcc0015s|r
+Damage: |cffffcc0028 - 35|r (Water Elemental), |cffffcc0025|r per second (drowning), |cffffcc0060|r (burst)
+Cooldown: |cffffcc0015s|r (machine), |cffffcc003s|r (bubble), |cffffcc000.5s|r (Water Elemental)
+Trap duration: |cffffcc003s|r
+Range: |cffffcc00700|r (bubble), |cffffcc00500|r (Water Elemental)
+Area of effect: |cffffcc00200|r (burst)
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00piercing|r
+Damage type: |cffffcc00piercing|r (Water Elemental), |cffffcc00spell|r (bubble)
+Duration: |cffffcc0014s|r (machine and Water Elemental)
 }
 
 STRING 2091
-// Items: I065 (Elemental Foundry), Name (Name)
+// Items: I065 (Bubble Machine), Name (Name)
 {
-Elemental Foundry
+Bubble Machine
 }
 
 STRING 2092
@@ -20256,5 +20258,11 @@ STRING 3607
 // Units: h00F (Relay Flying Machine), Name (Name)
 {
 Relay Flying Machine
+}
+
+STRING 3608
+// Units: n01X (Bubble Machine), Name (Name)
+{
+Bubble Machine
 }
 

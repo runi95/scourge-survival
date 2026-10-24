@@ -88,7 +88,7 @@ export const weaponRecipes = [
   new Recipes.FrostCannon(),
   new Recipes.ConcussionShells(),
   new Recipes.SkippingShot(),
-  new Recipes.ElementalFoundry(),
+  new Recipes.BubbleMachine(),
   new Recipes.FrostClockwerks(),
   new Recipes.KnightStables(),
   new Recipes.GryphonRoost(),
