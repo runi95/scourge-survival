@@ -116,7 +116,7 @@ export * from "./HeadhunterHut";
 export * from "./RaiderCamp";
 export * from "./SeismicBoulder";
 export * from "./Earthsplitter";
-export * from "./SpiritWave";
+export * from "./Stampede";
 export * from "./SnareWave";
 export * from "./BarrageWagon";
 export * from "./JavelinStomp";

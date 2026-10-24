@@ -11157,67 +11157,65 @@ Earthsplitter
 }
 
 STRING 2360
-// Items: I07Y (Spirit Wave), Tip (Tooltip - Basic)
+// Items: I07Y (Stampede), Tip (Tooltip - Basic)
 {
-Purchase Spirit Wave
+Purchase Stampede
 }
 
 STRING 2361
-// Items: I07Y (Spirit Wave), Description (Description)
+// Items: I07Y (Stampede), Description (Description)
 {
-Sends a shockwave towards a random enemy unit within range, and a Spirit Wolf leaps out of it to fight by your side.
+Every 6 seconds a stampede of spirit beasts charges out from your hero towards the largest enemy group. Each beast tramples the first enemy it runs into, hurting every enemy around it.
 }
 
 STRING 2362
-// Items: I07Y (Spirit Wave), Ubertip (Tooltip - Extended)
+// Items: I07Y (Stampede), Ubertip (Tooltip - Extended)
 {
-Sends a shockwave towards a random enemy unit within range, and a Spirit Wolf leaps out of it to fight by your side.
+Every 6 seconds a stampede of spirit beasts charges out from your hero towards the largest enemy group. Each beast tramples the first enemy it runs into, hurting every enemy around it.
 }
 
 STRING 2363
-// Items: I07Y (Spirit Wave), Name (Name)
+// Items: I07Y (Stampede), Name (Name)
 {
-Spirit Wave
+Stampede
 }
 
 STRING 2364
-// Items: I07Z (Spirit Wave), Tip (Tooltip - Basic)
+// Items: I07Z (Stampede), Tip (Tooltip - Basic)
 {
-Purchase Spirit Wave
+Purchase Stampede
 }
 
 STRING 2365
-// Items: I07Z (Spirit Wave), Ubertip (Tooltip - Extended)
+// Items: I07Z (Stampede), Ubertip (Tooltip - Extended)
 {
-Sends a shockwave towards a random enemy unit within range, and a Spirit Wolf leaps out of it to fight by your side.
+Every 6 seconds a stampede of spirit beasts charges out from your hero for 2 seconds, towards the largest group of enemy units within 900. The beasts run in a wide band from behind your hero to far past it. Each one bursts on the first enemy unit it runs into, ground or air, hurting every enemy unit around it.
 
-Damage: |cffffcc0050 (shockwave) + 16 - 17 (wolf)|r
-Cooldown: |cffffcc003s|r
-Range: |cffffcc00700|r
-Health: |cffffcc00350|r
-Duration: |cffffcc008s|r
+Damage: |cffffcc0070|r per beast
+Beasts: |cffffcc006|r a second for |cffffcc002s|r
+Area of effect: |cffffcc00175|r (each beast), |cffffcc001000 x 1000|r (stampede)
+Cooldown: |cffffcc006s|r
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00spell + normal|r
+Damage type: |cffffcc00universal|r
 }
 
 STRING 2366
-// Items: I07Z (Spirit Wave), Description (Description)
+// Items: I07Z (Stampede), Description (Description)
 {
-Sends a shockwave towards a random enemy unit within range, and a Spirit Wolf leaps out of it to fight by your side.
+Every 6 seconds a stampede of spirit beasts charges out from your hero for 2 seconds, towards the largest group of enemy units within 900. The beasts run in a wide band from behind your hero to far past it. Each one bursts on the first enemy unit it runs into, ground or air, hurting every enemy unit around it.
 
-Damage: |cffffcc0050 (shockwave) + 16 - 17 (wolf)|r
-Cooldown: |cffffcc003s|r
-Range: |cffffcc00700|r
-Health: |cffffcc00350|r
-Duration: |cffffcc008s|r
+Damage: |cffffcc0070|r per beast
+Beasts: |cffffcc006|r a second for |cffffcc002s|r
+Area of effect: |cffffcc00175|r (each beast), |cffffcc001000 x 1000|r (stampede)
+Cooldown: |cffffcc006s|r
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00spell + normal|r
+Damage type: |cffffcc00universal|r
 }
 
 STRING 2367
-// Items: I07Z (Spirit Wave), Name (Name)
+// Items: I07Z (Stampede), Name (Name)
 {
-Spirit Wave
+Stampede
 }
 
 STRING 2368
@@ -20224,5 +20222,11 @@ STRING 3590
 // Units: o005 (Iron Wolf), Name (Name)
 {
 Iron Wolf
+}
+
+STRING 3591
+// Abilities: A05H (Stampede), Name (Name)
+{
+Stampede
 }
 
