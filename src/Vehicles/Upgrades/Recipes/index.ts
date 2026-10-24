@@ -107,7 +107,7 @@ export * from "./MountainKing";
 export * from "./SkyHammer";
 export * from "./FlashFreeze";
 export * from "./Kettledrums";
-export * from "./HammerMine";
+export * from "./SpringTrap";
 export * from "./TaurenTotem";
 export * from "./ForwardOutpost";
 export * from "./Piledriver";
