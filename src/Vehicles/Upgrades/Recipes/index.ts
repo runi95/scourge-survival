@@ -92,7 +92,7 @@ export * from "./Riptide";
 export * from "./HammerAndAnvil";
 export * from "./Permafrost";
 export * from "./Frostfire";
-export * from "./FrostbiteRifle";
+export * from "./Frostbite";
 export * from "./IceRockets";
 export * from "./FrostClap";
 export * from "./IceHammer";

@@ -9513,67 +9513,65 @@ Frostfire
 }
 
 STRING 2162
-// Items: I06M (Frostbite Rifle), Tip (Tooltip - Basic)
+// Items: I06M (Frostbite), Tip (Tooltip - Basic)
 {
-Purchase Frostbite Rifle
+Purchase Frostbite
 }
 
 STRING 2163
-// Items: I06M (Frostbite Rifle), Description (Description)
+// Items: I06M (Frostbite), Description (Description)
 {
-Shoots a random enemy unit within range with a frozen bullet that bursts into a Frost Nova.
+Shoots the farthest enemy with a frozen bullet, harder the farther it flies. The wound freezes over: every step the enemy takes and every blow it strikes cracks the ice and hurts it, until it freezes solid and the frost spreads to every enemy around it.
 }
 
 STRING 2164
-// Items: I06M (Frostbite Rifle), Ubertip (Tooltip - Extended)
+// Items: I06M (Frostbite), Ubertip (Tooltip - Extended)
 {
-Shoots a random enemy unit within range with a frozen bullet that bursts into a Frost Nova.
+Shoots the farthest enemy with a frozen bullet, harder the farther it flies. The wound freezes over: every step the enemy takes and every blow it strikes cracks the ice and hurts it, until it freezes solid and the frost spreads to every enemy around it.
 }
 
 STRING 2165
-// Items: I06M (Frostbite Rifle), Name (Name)
+// Items: I06M (Frostbite), Name (Name)
 {
-Frostbite Rifle
+Frostbite
 }
 
 STRING 2166
-// Items: I06N (Frostbite Rifle), Tip (Tooltip - Basic)
+// Items: I06N (Frostbite), Tip (Tooltip - Basic)
 {
-Purchase Frostbite Rifle
+Purchase Frostbite
 }
 
 STRING 2167
-// Items: I06N (Frostbite Rifle), Ubertip (Tooltip - Extended)
+// Items: I06N (Frostbite), Ubertip (Tooltip - Extended)
 {
-Shoots a random enemy unit within range with a frozen bullet that bursts into a Frost Nova.
+Every 1.25 seconds shoots the farthest enemy unit within range with a frozen bullet that hits harder the farther it flies. The enemy is frostbitten for 8 seconds: every step it takes hurts it, and so does every attack it starts, as much as 100 steps. Once it has walked 300 that way it freezes solid for 2 seconds and takes a final blow, and every enemy unit within 250 of it is frostbitten too.
 
-Damage: |cffffcc00750 (bullet) + 60 (target) + 40 (nova)|r
-Slow: |cffffcc00-50% movement speed for 3s|r
-Cooldown: |cffffcc005s|r
+Damage: |cffffcc0080 - 230|r (bullet), |cffffcc0050|r for every 100 walked or every attack, |cffffcc00150|r (frozen solid)
+Cooldown: |cffffcc001.25s|r
 Range: |cffffcc001500|r
-Area of effect: |cffffcc00200|r
+Freeze duration: |cffffcc002s|r
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00piercing + spell|r
+Damage type: |cffffcc00piercing|r (bullet), |cffffcc00spell|r (frostbite)
 }
 
 STRING 2168
-// Items: I06N (Frostbite Rifle), Description (Description)
+// Items: I06N (Frostbite), Description (Description)
 {
-Shoots a random enemy unit within range with a frozen bullet that bursts into a Frost Nova.
+Every 1.25 seconds shoots the farthest enemy unit within range with a frozen bullet that hits harder the farther it flies. The enemy is frostbitten for 8 seconds: every step it takes hurts it, and so does every attack it starts, as much as 100 steps. Once it has walked 300 that way it freezes solid for 2 seconds and takes a final blow, and every enemy unit within 250 of it is frostbitten too.
 
-Damage: |cffffcc00750 (bullet) + 60 (target) + 40 (nova)|r
-Slow: |cffffcc00-50% movement speed for 3s|r
-Cooldown: |cffffcc005s|r
+Damage: |cffffcc0080 - 230|r (bullet), |cffffcc0050|r for every 100 walked or every attack, |cffffcc00150|r (frozen solid)
+Cooldown: |cffffcc001.25s|r
 Range: |cffffcc001500|r
-Area of effect: |cffffcc00200|r
+Freeze duration: |cffffcc002s|r
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00piercing + spell|r
+Damage type: |cffffcc00piercing|r (bullet), |cffffcc00spell|r (frostbite)
 }
 
 STRING 2169
-// Items: I06N (Frostbite Rifle), Name (Name)
+// Items: I06N (Frostbite), Name (Name)
 {
-Frostbite Rifle
+Frostbite
 }
 
 STRING 2170
