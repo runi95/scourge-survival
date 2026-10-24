@@ -10,7 +10,7 @@ export * from "./ShockwaveStorm";
 export * from "./LiquidFire";
 export * from "./FlyingBehemoth";
 export * from "./Phoenix";
-export * from "./Workshop";
+export * from "./DangerClose";
 export * from "./BoulderBarrage";
 export * from "./Firebolt";
 export * from "./MortarTeam";

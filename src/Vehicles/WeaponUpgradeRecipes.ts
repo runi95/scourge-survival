@@ -15,7 +15,7 @@ export const weaponRecipes = [
   new Recipes.LiquidFire(),
   new Recipes.FlyingBehemoth(),
   new Recipes.Phoenix(),
-  new Recipes.Workshop(),
+  new Recipes.DangerClose(),
   new Recipes.BoulderBarrage(),
   new Recipes.Firebolt(),
   new Recipes.MortarTeam(),

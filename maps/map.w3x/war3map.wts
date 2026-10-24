@@ -1806,42 +1806,6 @@ Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00magic|r
 }
 
-STRING 787
-// Units: n003 (Workshop), Name (Name)
-{
-Workshop
-}
-
-STRING 788
-// Units: n003 (Workshop), EditorSuffix (Name - Editor Suffix)
-{
-(Pocket Factory)
-}
-
-STRING 789
-// Units: n006 (Siege Engine), EditorSuffix (Name - Editor Suffix)
-{
-(Workshop)
-}
-
-STRING 790
-// Units: n006 (Siege Engine), Name (Name)
-{
-Siege Engine
-}
-
-STRING 791
-// Units: n006 (Siege Engine), Tip (Tooltip - Basic)
-{
-Summon Siege Engine
-}
-
-STRING 792
-// Units: n006 (Siege Engine), Ubertip (Tooltip - Extended)
-{
-Heavily armored vehicle, effective at destroying buildings. Can be upgraded with the Barrage ability. |n|n|cffffcc00Attacks buildings.|r
-}
-
 STRING 793
 // Abilities: A01G (Kaboom!), EditorSuffix (Editor Suffix)
 {
@@ -1849,9 +1813,9 @@ STRING 793
 }
 
 STRING 794
-// Items: I01G (Workshop), Name (Name)
+// Items: I01G (Danger Close), Name (Name)
 {
-Workshop
+Danger Close
 }
 
 STRING 795
@@ -1861,65 +1825,67 @@ STRING 795
 }
 
 STRING 799
-// Items: I01H (Workshop), Name (Name)
+// Items: I01H (Danger Close), Name (Name)
 {
-Workshop
+Danger Close
 }
 
 STRING 803
-// Abilities: A01D (Workshop), Name (Name)
+// Abilities: A01D (factory), Name (Name)
 {
-Workshop
+Pocket Factory (Danger Close)
 }
 
 STRING 805
-// Items: I01G (Workshop), Ubertip (Tooltip - Extended)
+// Items: I01G (Danger Close), Ubertip (Tooltip - Extended)
 {
-Spawns a Workshop every 60 seconds. The Workshop spawns a Siege Engine every 5 seconds that attacks nearby ground enemies.
+Every 40 seconds goblins set up a Pocket Factory near your hero that sends out a Spotter Goblin every 2.5 seconds. Spotters run into the enemies and fight them. Every 1.25 seconds your hero's cannon shells the spotter with the most enemies around it: the shell hits everything around the spotter, and blows the spotter up too.
 
-Damage: |cffffcc0045 - 55 (attack)|r
-Cooldown: |cffffcc0060s (workshop) + 5s (siege engine)|r
-Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00siege|r
-Health: |cffffcc00 300 (workshop) + 125 (siege engine)|r
-Duration: |cffffcc0060s (workshop) + 12s (siege engine)|r
+Damage: |cffffcc00100|r (shell) + |cffffcc0060|r (spotter explosion)
+Area of effect: |cffffcc00250|r (shell)
+Cooldown: |cffffcc0040s|r (factory), |cffffcc002.5s|r (spotter), |cffffcc001.25s|r (shell)
+Targets: |cffffcc00air & ground|r (shell), |cffffcc00ground only!|r (spotter)
+Damage type: |cffffcc00siege|r (shell), |cffffcc00spell|r (explosion)
+Health: |cffffcc00500|r (factory), |cffffcc00125|r (spotter)
+Duration: |cffffcc0040s|r (factory), |cffffcc0012s|r (spotter)
 }
 
 STRING 806
-// Items: I01G (Workshop), Tip (Tooltip - Basic)
+// Items: I01G (Danger Close), Tip (Tooltip - Basic)
 {
-Purchase Workshop
+Purchase Danger Close
 }
 
 STRING 807
-// Items: I01G (Workshop), Description (Description)
+// Items: I01G (Danger Close), Description (Description)
 {
-Spawns a Workshop every 60 seconds. The Workshop spawns a Siege Engine every 5 seconds that attacks nearby ground enemies.
+Every 40 seconds goblins set up a Pocket Factory near your hero that sends out a Spotter Goblin every 2.5 seconds. Spotters run into the enemies and fight them. Every 1.25 seconds your hero's cannon shells the spotter with the most enemies around it: the shell hits everything around the spotter, and blows the spotter up too.
 
-Damage: |cffffcc0045 - 55 (attack)|r
-Cooldown: |cffffcc0060s (workshop) + 5s (siege engine)|r
-Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00siege|r
-Health: |cffffcc00 300 (workshop) + 125 (siege engine)|r
-Duration: |cffffcc0060s (workshop) + 12s (siege engine)|r
+Damage: |cffffcc00100|r (shell) + |cffffcc0060|r (spotter explosion)
+Area of effect: |cffffcc00250|r (shell)
+Cooldown: |cffffcc0040s|r (factory), |cffffcc002.5s|r (spotter), |cffffcc001.25s|r (shell)
+Targets: |cffffcc00air & ground|r (shell), |cffffcc00ground only!|r (spotter)
+Damage type: |cffffcc00siege|r (shell), |cffffcc00spell|r (explosion)
+Health: |cffffcc00500|r (factory), |cffffcc00125|r (spotter)
+Duration: |cffffcc0040s|r (factory), |cffffcc0012s|r (spotter)
 }
 
 STRING 808
-// Items: I01H (Workshop), Tip (Tooltip - Basic)
+// Items: I01H (Danger Close), Tip (Tooltip - Basic)
 {
-Purchase Workshop
+Purchase Danger Close
 }
 
 STRING 809
-// Items: I01H (Workshop), Description (Description)
+// Items: I01H (Danger Close), Description (Description)
 {
-Creates a Workshop nearby every 60 seconds.
+Goblins set up a Pocket Factory that sends Spotter Goblins with signal flares running into the enemies. Your hero's cannon shells each spotter right where it stands, blowing it up along with everything around it.
 }
 
 STRING 810
-// Items: I01H (Workshop), Ubertip (Tooltip - Extended)
+// Items: I01H (Danger Close), Ubertip (Tooltip - Extended)
 {
-Creates a Workshop nearby every 60 seconds.
+Goblins set up a Pocket Factory that sends Spotter Goblins with signal flares running into the enemies. Your hero's cannon shells each spotter right where it stands, blowing it up along with everything around it.
 }
 
 STRING 811
@@ -20284,5 +20250,11 @@ STRING 3600
 // Units: u02O (Sitting Ducks Spear), Name (Name)
 {
 Sitting Ducks Spear
+}
+
+STRING 3601
+// Units: n01U (Spotter Goblin), Name (Name)
+{
+Spotter Goblin
 }
 
