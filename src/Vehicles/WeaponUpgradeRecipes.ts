@@ -147,7 +147,7 @@ export const weaponRecipes = [
   new Recipes.SpiritPack(),
   new Recipes.Unleashed(),
   new Recipes.Beaters(),
-  new Recipes.SpiritHunters(),
+  new Recipes.Den(),
   new Recipes.HuntingPack(),
   new Recipes.RocketSpears(),
   new Recipes.NetRockets(),

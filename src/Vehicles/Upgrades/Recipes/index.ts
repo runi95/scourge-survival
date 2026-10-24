@@ -142,7 +142,7 @@ export * from "./TremorLines";
 export * from "./SpiritPack";
 export * from "./Unleashed";
 export * from "./Beaters";
-export * from "./SpiritHunters";
+export * from "./Den";
 export * from "./HuntingPack";
 export * from "./RocketSpears";
 export * from "./NetRockets";
