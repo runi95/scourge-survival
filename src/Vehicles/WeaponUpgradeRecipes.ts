@@ -122,7 +122,7 @@ export const weaponRecipes = [
   new Recipes.SeismicBoulder(),
   new Recipes.Earthsplitter(),
   new Recipes.Stampede(),
-  new Recipes.SnareWave(),
+  new Recipes.Dragnet(),
   new Recipes.BarrageWagon(),
   new Recipes.JavelinStomp(),
   new Recipes.SpiritJavelins(),

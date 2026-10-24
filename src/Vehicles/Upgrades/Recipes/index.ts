@@ -117,7 +117,7 @@ export * from "./RaiderCamp";
 export * from "./SeismicBoulder";
 export * from "./Earthsplitter";
 export * from "./Stampede";
-export * from "./SnareWave";
+export * from "./Dragnet";
 export * from "./BarrageWagon";
 export * from "./JavelinStomp";
 export * from "./SpiritJavelins";

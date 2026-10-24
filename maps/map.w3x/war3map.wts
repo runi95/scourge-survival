@@ -11219,65 +11219,69 @@ Stampede
 }
 
 STRING 2368
-// Items: I080 (Snare Wave), Tip (Tooltip - Basic)
+// Items: I080 (Dragnet), Tip (Tooltip - Basic)
 {
-Purchase Snare Wave
+Purchase Dragnet
 }
 
 STRING 2369
-// Items: I080 (Snare Wave), Description (Description)
+// Items: I080 (Dragnet), Description (Description)
 {
-Sends a shockwave towards a random enemy unit within range and throws a net at it, holding it in place.
+Sends a shockwave that drags a net along with it. Every enemy it hits is held in place and tied into the same net, and for 5 seconds every enemy in the net shares the hurt of the others.
 }
 
 STRING 2370
-// Items: I080 (Snare Wave), Ubertip (Tooltip - Extended)
+// Items: I080 (Dragnet), Ubertip (Tooltip - Extended)
 {
-Sends a shockwave towards a random enemy unit within range and throws a net at it, holding it in place.
+Sends a shockwave that drags a net along with it. Every enemy it hits is held in place and tied into the same net, and for 5 seconds every enemy in the net shares the hurt of the others.
 }
 
 STRING 2371
-// Items: I080 (Snare Wave), Name (Name)
+// Items: I080 (Dragnet), Name (Name)
 {
-Snare Wave
+Dragnet
 }
 
 STRING 2372
-// Items: I081 (Snare Wave), Tip (Tooltip - Basic)
+// Items: I081 (Dragnet), Tip (Tooltip - Basic)
 {
-Purchase Snare Wave
+Purchase Dragnet
 }
 
 STRING 2373
-// Items: I081 (Snare Wave), Ubertip (Tooltip - Extended)
+// Items: I081 (Dragnet), Ubertip (Tooltip - Extended)
 {
-Sends a shockwave towards a random enemy unit within range and throws a net at it, holding it in place.
+Every 2.5 seconds sends a shockwave towards the nearest enemy unit within range, dragging a net along with it. Every enemy unit the shockwave hits is held in place, and flying units are pulled to the ground. They are all tied into the same net: for 5 seconds, whenever one of them takes damage from anything, every other enemy in the net within 800 of it takes 40% of that damage too.
 
-Damage: |cffffcc0050 (shockwave) + 40 (net)|r
-Cooldown: |cffffcc003s|r
-Range: |cffffcc00600|r
-Duration: |cffffcc003s|r
+Damage: |cffffcc0080|r (shockwave)
+Shared damage: |cffffcc0040%|r to every other enemy in the net
+Hold duration: |cffffcc003s|r
+Net duration: |cffffcc005s|r
+Cooldown: |cffffcc002.5s|r
+Range: |cffffcc00700|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 2374
-// Items: I081 (Snare Wave), Description (Description)
+// Items: I081 (Dragnet), Description (Description)
 {
-Sends a shockwave towards a random enemy unit within range and throws a net at it, holding it in place.
+Every 2.5 seconds sends a shockwave towards the nearest enemy unit within range, dragging a net along with it. Every enemy unit the shockwave hits is held in place, and flying units are pulled to the ground. They are all tied into the same net: for 5 seconds, whenever one of them takes damage from anything, every other enemy in the net within 800 of it takes 40% of that damage too.
 
-Damage: |cffffcc0050 (shockwave) + 40 (net)|r
-Cooldown: |cffffcc003s|r
-Range: |cffffcc00600|r
-Duration: |cffffcc003s|r
+Damage: |cffffcc0080|r (shockwave)
+Shared damage: |cffffcc0040%|r to every other enemy in the net
+Hold duration: |cffffcc003s|r
+Net duration: |cffffcc005s|r
+Cooldown: |cffffcc002.5s|r
+Range: |cffffcc00700|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 2375
-// Items: I081 (Snare Wave), Name (Name)
+// Items: I081 (Dragnet), Name (Name)
 {
-Snare Wave
+Dragnet
 }
 
 STRING 2376
@@ -20228,5 +20232,11 @@ STRING 3591
 // Abilities: A05H (Stampede), Name (Name)
 {
 Stampede
+}
+
+STRING 3592
+// Abilities: A05I (Dragnet), Name (Name)
+{
+Dragnet
 }
 
