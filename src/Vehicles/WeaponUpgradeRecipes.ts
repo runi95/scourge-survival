@@ -123,7 +123,7 @@ export const weaponRecipes = [
   new Recipes.Earthsplitter(),
   new Recipes.Stampede(),
   new Recipes.Dragnet(),
-  new Recipes.BarrageWagon(),
+  new Recipes.Skewer(),
   new Recipes.JavelinStomp(),
   new Recipes.SpiritJavelins(),
   new Recipes.HarpoonThrow(),

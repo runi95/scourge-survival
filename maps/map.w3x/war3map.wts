@@ -11285,65 +11285,67 @@ Dragnet
 }
 
 STRING 2376
-// Items: I082 (Barrage Wagon), Tip (Tooltip - Basic)
+// Items: I082 (Skewer), Tip (Tooltip - Basic)
 {
-Purchase Barrage Wagon
+Purchase Skewer
 }
 
 STRING 2377
-// Items: I082 (Barrage Wagon), Description (Description)
+// Items: I082 (Skewer), Description (Description)
 {
-Lobs boulders and throws javelins at 2 random enemy units within range.
+Hurls a heavy siege javelin down the line with the most enemies on it. It runs through every enemy in its way and pins the last one to the ground.
 }
 
 STRING 2378
-// Items: I082 (Barrage Wagon), Ubertip (Tooltip - Extended)
+// Items: I082 (Skewer), Ubertip (Tooltip - Extended)
 {
-Lobs boulders and throws javelins at 2 random enemy units within range.
+Hurls a heavy siege javelin down the line with the most enemies on it. It runs through every enemy in its way and pins the last one to the ground.
 }
 
 STRING 2379
-// Items: I082 (Barrage Wagon), Name (Name)
+// Items: I082 (Skewer), Name (Name)
 {
-Barrage Wagon
+Skewer
 }
 
 STRING 2380
-// Items: I083 (Barrage Wagon), Tip (Tooltip - Basic)
+// Items: I083 (Skewer), Tip (Tooltip - Basic)
 {
-Purchase Barrage Wagon
+Purchase Skewer
 }
 
 STRING 2381
-// Items: I083 (Barrage Wagon), Ubertip (Tooltip - Extended)
+// Items: I083 (Skewer), Ubertip (Tooltip - Extended)
 {
-Lobs boulders and throws javelins at 2 random enemy units within range.
+Every 3 seconds hurls a heavy siege javelin from your hero down the line through the most enemy units within range. It runs straight through every enemy unit in its way, ground and air, and pins the farthest one it hits to the ground, stunning it.
 
-Damage: |cffffcc002 x 45 (boulder) + 2 x 19 - 23 (javelin)|r
+Damage: |cffffcc0060|r to every enemy in the line
+Pin: |cffffcc001.5s|r stun on the farthest enemy hit
 Cooldown: |cffffcc003s|r
-Range: |cffffcc00450|r
-Area of effect: |cffffcc00150|r
-Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00siege + piercing|r
+Range: |cffffcc001100|r
+Width: |cffffcc00100|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
 }
 
 STRING 2382
-// Items: I083 (Barrage Wagon), Description (Description)
+// Items: I083 (Skewer), Description (Description)
 {
-Lobs boulders and throws javelins at 2 random enemy units within range.
+Every 3 seconds hurls a heavy siege javelin from your hero down the line through the most enemy units within range. It runs straight through every enemy unit in its way, ground and air, and pins the farthest one it hits to the ground, stunning it.
 
-Damage: |cffffcc002 x 45 (boulder) + 2 x 19 - 23 (javelin)|r
+Damage: |cffffcc0060|r to every enemy in the line
+Pin: |cffffcc001.5s|r stun on the farthest enemy hit
 Cooldown: |cffffcc003s|r
-Range: |cffffcc00450|r
-Area of effect: |cffffcc00150|r
-Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00siege + piercing|r
+Range: |cffffcc001100|r
+Width: |cffffcc00100|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00spell|r
 }
 
 STRING 2383
-// Items: I083 (Barrage Wagon), Name (Name)
+// Items: I083 (Skewer), Name (Name)
 {
-Barrage Wagon
+Skewer
 }
 
 STRING 2384
@@ -20238,5 +20240,11 @@ STRING 3592
 // Abilities: A05I (Dragnet), Name (Name)
 {
 Dragnet
+}
+
+STRING 3593
+// Abilities: A05J (Skewer), Name (Name)
+{
+Skewer
 }
 
