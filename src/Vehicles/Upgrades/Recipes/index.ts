@@ -88,7 +88,7 @@ export * from "./WeatherMachine";
 export * from "./KnightStables";
 export * from "./GryphonRoost";
 export * from "./IceElemental";
-export * from "./WaterSlam";
+export * from "./Riptide";
 export * from "./LightningElemental";
 export * from "./EternalWinter";
 export * from "./Frostfire";

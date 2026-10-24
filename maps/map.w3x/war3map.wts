@@ -9253,71 +9253,67 @@ Ice Elemental Slow
 }
 
 STRING 2128
-// Items: I06E (Water Slam), Tip (Tooltip - Basic)
+// Items: I06E (Riptide), Tip (Tooltip - Basic)
 {
-Purchase Water Slam
+Purchase Riptide
 }
 
 STRING 2129
-// Items: I06E (Water Slam), Description (Description)
+// Items: I06E (Riptide), Description (Description)
 {
-A Water Elemental slams down onto a random enemy unit within range, hurting and slowing everything around it, and stays to fight.
+A Water Elemental fights by your hero and slams the ground like a thunder clap. Every slam sends a ring of water rolling out from it that sweeps every enemy it passes along and throws them all out where it breaks.
 }
 
 STRING 2130
-// Items: I06E (Water Slam), Ubertip (Tooltip - Extended)
+// Items: I06E (Riptide), Ubertip (Tooltip - Extended)
 {
-A Water Elemental slams down onto a random enemy unit within range, hurting and slowing everything around it, and stays to fight.
+A Water Elemental fights by your hero and slams the ground like a thunder clap. Every slam sends a ring of water rolling out from it that sweeps every enemy it passes along and throws them all out where it breaks.
 }
 
 STRING 2131
-// Items: I06E (Water Slam), Name (Name)
+// Items: I06E (Riptide), Name (Name)
 {
-Water Slam
+Riptide
 }
 
 STRING 2132
-// Items: I06F (Water Slam), Tip (Tooltip - Basic)
+// Items: I06F (Riptide), Tip (Tooltip - Basic)
 {
-Purchase Water Slam
+Purchase Riptide
 }
 
 STRING 2133
-// Items: I06F (Water Slam), Ubertip (Tooltip - Extended)
+// Items: I06F (Riptide), Ubertip (Tooltip - Extended)
 {
-A Water Elemental slams down onto a random enemy unit within range, hurting and slowing everything around it, and stays to fight.
+Every 15 seconds a Water Elemental rises near your hero and attacks nearby enemy units for 14 seconds. Every 4 seconds it slams the ground, sending a ring of water rolling out from it. The ring hurts every enemy ground unit it reaches and sweeps it along, and where it breaks, 500 out, it throws them all down, hurt again and slowed for 3 seconds.
 
-Damage: |cffffcc0060 (slam) + 29 - 43 (elemental)|r
-Slow: |cffffcc00-50% movement and attack speed for 3s|r
-Cooldown: |cffffcc004s|r
-Range: |cffffcc00700|r
-Area of effect: |cffffcc00300|r
-Health: |cffffcc00450|r
-Duration: |cffffcc008s|r
-Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00spell + piercing|r
+Damage: |cffffcc0028 - 35|r (Water Elemental), |cffffcc0040|r (ring) + |cffffcc0040|r (where it breaks)
+Slow: |cffffcc00-50% movement speed for 3s|r
+Cooldown: |cffffcc0015s|r (Water Elemental), |cffffcc004s|r (slam), |cffffcc000.5s|r (attack)
+Area of effect: |cffffcc00500|r (ring)
+Targets: |cffffcc00air & ground|r (Water Elemental), |cffffcc00ground only!|r (ring)
+Damage type: |cffffcc00piercing|r (Water Elemental), |cffffcc00spell|r (ring)
+Duration: |cffffcc0014s|r (Water Elemental)
 }
 
 STRING 2134
-// Items: I06F (Water Slam), Description (Description)
+// Items: I06F (Riptide), Description (Description)
 {
-A Water Elemental slams down onto a random enemy unit within range, hurting and slowing everything around it, and stays to fight.
+Every 15 seconds a Water Elemental rises near your hero and attacks nearby enemy units for 14 seconds. Every 4 seconds it slams the ground, sending a ring of water rolling out from it. The ring hurts every enemy ground unit it reaches and sweeps it along, and where it breaks, 500 out, it throws them all down, hurt again and slowed for 3 seconds.
 
-Damage: |cffffcc0060 (slam) + 29 - 43 (elemental)|r
-Slow: |cffffcc00-50% movement and attack speed for 3s|r
-Cooldown: |cffffcc004s|r
-Range: |cffffcc00700|r
-Area of effect: |cffffcc00300|r
-Health: |cffffcc00450|r
-Duration: |cffffcc008s|r
-Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00spell + piercing|r
+Damage: |cffffcc0028 - 35|r (Water Elemental), |cffffcc0040|r (ring) + |cffffcc0040|r (where it breaks)
+Slow: |cffffcc00-50% movement speed for 3s|r
+Cooldown: |cffffcc0015s|r (Water Elemental), |cffffcc004s|r (slam), |cffffcc000.5s|r (attack)
+Area of effect: |cffffcc00500|r (ring)
+Targets: |cffffcc00air & ground|r (Water Elemental), |cffffcc00ground only!|r (ring)
+Damage type: |cffffcc00piercing|r (Water Elemental), |cffffcc00spell|r (ring)
+Duration: |cffffcc0014s|r (Water Elemental)
 }
 
 STRING 2135
-// Items: I06F (Water Slam), Name (Name)
+// Items: I06F (Riptide), Name (Name)
 {
-Water Slam
+Riptide
 }
 
 STRING 2136
@@ -20258,5 +20254,11 @@ STRING 3609
 // Units: n01Y (Weather Machine), Name (Name)
 {
 Weather Machine
+}
+
+STRING 3610
+// Abilities: A05L (Riptide Slow), Name (Name)
+{
+Riptide Slow
 }
 

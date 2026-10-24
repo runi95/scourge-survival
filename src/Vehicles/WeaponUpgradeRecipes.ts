@@ -93,7 +93,7 @@ export const weaponRecipes = [
   new Recipes.KnightStables(),
   new Recipes.GryphonRoost(),
   new Recipes.IceElemental(),
-  new Recipes.WaterSlam(),
+  new Recipes.Riptide(),
   new Recipes.LightningElemental(),
   new Recipes.EternalWinter(),
   new Recipes.Frostfire(),
