@@ -145,7 +145,7 @@ export * from "./Beaters";
 export * from "./Den";
 export * from "./Encircle";
 export * from "./Tunneler";
-export * from "./NetRockets";
+export * from "./SkyNet";
 export * from "./SnareMine";
 export * from "./HuntersSpear";
 export * from "./NetVolley";

@@ -13045,69 +13045,67 @@ Tunneler
 }
 
 STRING 2596
-// Items: I09K (Net Rockets), Tip (Tooltip - Basic)
+// Items: I09K (Sky Net), Tip (Tooltip - Basic)
 {
-Purchase Net Rockets
+Purchase Sky Net
 }
 
 STRING 2597
-// Items: I09K (Net Rockets), Description (Description)
+// Items: I09K (Sky Net), Description (Description)
 {
-Throws a net at a random enemy unit within range, holding it in place, and fires Cluster Rockets at it.
+A goblin rocket carries a net over the largest group of enemies and hoists everything it catches up into the air. Then the rocket cuts out, and the whole catch comes crashing down.
 }
 
 STRING 2598
-// Items: I09K (Net Rockets), Ubertip (Tooltip - Extended)
+// Items: I09K (Sky Net), Ubertip (Tooltip - Extended)
 {
-Throws a net at a random enemy unit within range, holding it in place, and fires Cluster Rockets at it.
+A goblin rocket carries a net over the largest group of enemies and hoists everything it catches up into the air. Then the rocket cuts out, and the whole catch comes crashing down.
 }
 
 STRING 2599
-// Items: I09K (Net Rockets), Name (Name)
+// Items: I09K (Sky Net), Name (Name)
 {
-Net Rockets
+Sky Net
 }
 
 STRING 2600
-// Items: I09L (Net Rockets), Tip (Tooltip - Basic)
+// Items: I09L (Sky Net), Tip (Tooltip - Basic)
 {
-Purchase Net Rockets
+Purchase Sky Net
 }
 
 STRING 2601
-// Items: I09L (Net Rockets), Ubertip (Tooltip - Extended)
+// Items: I09L (Sky Net), Ubertip (Tooltip - Extended)
 {
-Throws a net at a random enemy unit within range, holding it in place, and fires Cluster Rockets at it.
+Every 4 seconds fires a goblin rocket that carries a net over the largest group of enemy units within range. Every enemy unit under the net is caught and hoisted up into the air, helpless, for 1.5 seconds; flying units are caught too. Then the rocket cuts out and the catch comes crashing down: every enemy caught is hurt, and so is every enemy unit it lands near.
 
-Damage: |cffffcc0040 (net) + 6 x 17.5 (rockets)|r
-Cooldown: |cffffcc002.5s|r
-Range: |cffffcc00600|r
-Area of effect: |cffffcc00300|r
-Duration: |cffffcc003s|r
+Damage: |cffffcc0080|r (each enemy caught), |cffffcc0040|r (around each one it lands near)
+Helpless: |cffffcc001.5s|r
+Area of effect: |cffffcc00200|r (net), |cffffcc00150|r (around each one landing)
+Cooldown: |cffffcc004s|r
+Range: |cffffcc00800|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
-Effect: |cffffcc00stuns for 1s|r
 }
 
 STRING 2602
-// Items: I09L (Net Rockets), Description (Description)
+// Items: I09L (Sky Net), Description (Description)
 {
-Throws a net at a random enemy unit within range, holding it in place, and fires Cluster Rockets at it.
+Every 4 seconds fires a goblin rocket that carries a net over the largest group of enemy units within range. Every enemy unit under the net is caught and hoisted up into the air, helpless, for 1.5 seconds; flying units are caught too. Then the rocket cuts out and the catch comes crashing down: every enemy caught is hurt, and so is every enemy unit it lands near.
 
-Damage: |cffffcc0040 (net) + 6 x 17.5 (rockets)|r
-Cooldown: |cffffcc002.5s|r
-Range: |cffffcc00600|r
-Area of effect: |cffffcc00300|r
-Duration: |cffffcc003s|r
+Damage: |cffffcc0080|r (each enemy caught), |cffffcc0040|r (around each one it lands near)
+Helpless: |cffffcc001.5s|r
+Area of effect: |cffffcc00200|r (net), |cffffcc00150|r (around each one landing)
+Cooldown: |cffffcc004s|r
+Range: |cffffcc00800|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
-Effect: |cffffcc00stuns for 1s|r
 }
 
 STRING 2603
-// Items: I09L (Net Rockets), Name (Name)
+// Items: I09L (Sky Net), Name (Name)
 {
-Net Rockets
+Sky Net
 }
 
 STRING 2604
