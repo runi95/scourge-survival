@@ -84,7 +84,7 @@ export const weaponRecipes = [
   new Recipes.SteamRockets(),
   new Recipes.CloudSeeders(),
   new Recipes.ThunderBombs(),
-  new Recipes.HammerSquadron(),
+  new Recipes.Relay(),
   new Recipes.FrostCannon(),
   new Recipes.ConcussionShells(),
   new Recipes.HammerCannon(),

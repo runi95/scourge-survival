@@ -79,7 +79,7 @@ export * from "./HeatSeekers";
 export * from "./SteamRockets";
 export * from "./CloudSeeders";
 export * from "./ThunderBombs";
-export * from "./HammerSquadron";
+export * from "./Relay";
 export * from "./FrostCannon";
 export * from "./ConcussionShells";
 export * from "./HammerCannon";

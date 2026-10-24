@@ -8657,65 +8657,65 @@ Thunder Bombs
 }
 
 STRING 2049
-// Items: I05W (Hammer Squadron), Tip (Tooltip - Basic)
+// Items: I05W (Relay), Tip (Tooltip - Basic)
 {
-Purchase Hammer Squadron
+Purchase Relay
 }
 
 STRING 2050
-// Items: I05W (Hammer Squadron), Description (Description)
+// Items: I05W (Relay), Description (Description)
 {
-Throws magical hammers at 3 random enemy units within range, damaging and stunning them.
+3 Flying Machines spread out around your hero to relay its storm hammers. A hammer flies from machine to machine, picking up speed and clipping every enemy under its path, before it comes down on the farthest enemy.
 }
 
 STRING 2051
-// Items: I05W (Hammer Squadron), Ubertip (Tooltip - Extended)
+// Items: I05W (Relay), Ubertip (Tooltip - Extended)
 {
-Throws magical hammers at 3 random enemy units within range, damaging and stunning them.
+3 Flying Machines spread out around your hero to relay its storm hammers. A hammer flies from machine to machine, picking up speed and clipping every enemy under its path, before it comes down on the farthest enemy.
 }
 
 STRING 2052
-// Items: I05W (Hammer Squadron), Name (Name)
+// Items: I05W (Relay), Name (Name)
 {
-Hammer Squadron
+Relay
 }
 
 STRING 2053
-// Items: I05X (Hammer Squadron), Tip (Tooltip - Basic)
+// Items: I05X (Relay), Tip (Tooltip - Basic)
 {
-Purchase Hammer Squadron
+Purchase Relay
 }
 
 STRING 2054
-// Items: I05X (Hammer Squadron), Ubertip (Tooltip - Extended)
+// Items: I05X (Relay), Ubertip (Tooltip - Extended)
 {
-Throws magical hammers at 3 random enemy units within range, damaging and stunning them.
+3 Flying Machines keep station around your hero, 450 away from it. Every 3 seconds your hero throws a storm hammer to the first of them, and they relay it from one to the next before the last one hurls it at the farthest enemy unit within 1000 of your hero. Every enemy unit under the hammer's path is clipped by it, and every relay makes the final blow harder and its stun longer.
 
-Damage: |cffffcc003 x 100|r
+Damage: |cffffcc00150|r + |cffffcc0050|r per relay (|cffffcc00300|r with 3 relays), |cffffcc0040|r (clipped)
+Stun duration: |cffffcc001s|r + |cffffcc000.5s|r per relay (|cffffcc002.5s|r with 3 relays)
 Cooldown: |cffffcc003s|r
-Range: |cffffcc00800|r
-Stun duration: |cffffcc001s|r
+Range: |cffffcc001000|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 2055
-// Items: I05X (Hammer Squadron), Description (Description)
+// Items: I05X (Relay), Description (Description)
 {
-Throws magical hammers at 3 random enemy units within range, damaging and stunning them.
+3 Flying Machines keep station around your hero, 450 away from it. Every 3 seconds your hero throws a storm hammer to the first of them, and they relay it from one to the next before the last one hurls it at the farthest enemy unit within 1000 of your hero. Every enemy unit under the hammer's path is clipped by it, and every relay makes the final blow harder and its stun longer.
 
-Damage: |cffffcc003 x 100|r
+Damage: |cffffcc00150|r + |cffffcc0050|r per relay (|cffffcc00300|r with 3 relays), |cffffcc0040|r (clipped)
+Stun duration: |cffffcc001s|r + |cffffcc000.5s|r per relay (|cffffcc002.5s|r with 3 relays)
 Cooldown: |cffffcc003s|r
-Range: |cffffcc00800|r
-Stun duration: |cffffcc001s|r
+Range: |cffffcc001000|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 2056
-// Items: I05X (Hammer Squadron), Name (Name)
+// Items: I05X (Relay), Name (Name)
 {
-Hammer Squadron
+Relay
 }
 
 STRING 2057
@@ -20254,5 +20254,11 @@ STRING 3606
 // Units: h00E (Cloud Seeder), Name (Name)
 {
 Cloud Seeder
+}
+
+STRING 3607
+// Units: h00F (Relay Flying Machine), Name (Name)
+{
+Relay Flying Machine
 }
 
