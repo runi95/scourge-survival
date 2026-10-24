@@ -130,7 +130,7 @@ export * from "./Payload";
 export * from "./KillZone";
 export * from "./Counterweight";
 export * from "./ChainShot";
-export * from "./ThunderStomp";
+export * from "./Discharge";
 export * from "./StormWolves";
 export * from "./LightningNet";
 export * from "./SeismicStomp";

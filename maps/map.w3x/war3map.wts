@@ -12059,69 +12059,69 @@ Chain Shot
 }
 
 STRING 2473
-// Items: I08Q (Thunder Stomp), Tip (Tooltip - Basic)
+// Items: I08Q (Discharge), Tip (Tooltip - Basic)
 {
-Purchase Thunder Stomp
+Purchase Discharge
 }
 
 STRING 2474
-// Items: I08Q (Thunder Stomp), Description (Description)
+// Items: I08Q (Discharge), Description (Description)
 {
-Calls a chain lightning on a random enemy unit within range and stomps the ground, stunning every enemy around your hero.
+Chain lightning leaves a static charge in every enemy it hits. Every stomp of your hero discharges them all: the more charges an enemy holds, the harder it is hurt and the longer it is stunned.
 }
 
 STRING 2475
-// Items: I08Q (Thunder Stomp), Ubertip (Tooltip - Extended)
+// Items: I08Q (Discharge), Ubertip (Tooltip - Extended)
 {
-Calls a chain lightning on a random enemy unit within range and stomps the ground, stunning every enemy around your hero.
+Chain lightning leaves a static charge in every enemy it hits. Every stomp of your hero discharges them all: the more charges an enemy holds, the harder it is hurt and the longer it is stunned.
 }
 
 STRING 2476
-// Items: I08Q (Thunder Stomp), Name (Name)
+// Items: I08Q (Discharge), Name (Name)
 {
-Thunder Stomp
+Discharge
 }
 
 STRING 2477
-// Items: I08R (Thunder Stomp), Tip (Tooltip - Basic)
+// Items: I08R (Discharge), Tip (Tooltip - Basic)
 {
-Purchase Thunder Stomp
+Purchase Discharge
 }
 
 STRING 2478
-// Items: I08R (Thunder Stomp), Ubertip (Tooltip - Extended)
+// Items: I08R (Discharge), Ubertip (Tooltip - Extended)
 {
-Calls a chain lightning on a random enemy unit within range and stomps the ground, stunning every enemy around your hero.
+Every 2 seconds calls a chain lightning on a nearby enemy unit. Every enemy unit it hits holds a static charge, up to 5 charges, for 8 seconds after its last one. Every 4 seconds your hero stomps the ground, discharging every enemy ground unit around it: each takes damage and is stunned, more for every charge it held.
 
-Damage: |cffffcc00180 (lightning) + 90 (stomp)|r
-Damage reduction jump: |cffffcc00-15%|r
-Cooldown: |cffffcc003s|r
-Range: |cffffcc00500|r
-Area of effect: |cffffcc00500 (chain) + 300 (stomp)|r
-Stun duration: |cffffcc001.5s|r
-Targets: |cffffcc00air & ground (lightning), ground (stomp)|r
+Damage: |cffffcc00125|r (chain lightning, |cffffcc00-15%|r per jump), |cffffcc0070 + 50|r per charge (stomp)
+Stun duration: |cffffcc001s + 0.3s|r per charge
+Charges: up to |cffffcc005|r per enemy, |cffffcc008s|r
+Cooldown: |cffffcc002s|r (chain lightning), |cffffcc004s|r (stomp)
+Range: |cffffcc00500|r (chain lightning)
+Area of effect: |cffffcc00300|r (stomp)
+Targets: |cffffcc00air & ground|r (chain lightning), |cffffcc00ground|r (stomp)
 Damage type: |cffffcc00spell|r
 }
 
 STRING 2479
-// Items: I08R (Thunder Stomp), Description (Description)
+// Items: I08R (Discharge), Description (Description)
 {
-Calls a chain lightning on a random enemy unit within range and stomps the ground, stunning every enemy around your hero.
+Every 2 seconds calls a chain lightning on a nearby enemy unit. Every enemy unit it hits holds a static charge, up to 5 charges, for 8 seconds after its last one. Every 4 seconds your hero stomps the ground, discharging every enemy ground unit around it: each takes damage and is stunned, more for every charge it held.
 
-Damage: |cffffcc00180 (lightning) + 90 (stomp)|r
-Damage reduction jump: |cffffcc00-15%|r
-Cooldown: |cffffcc003s|r
-Range: |cffffcc00500|r
-Area of effect: |cffffcc00500 (chain) + 300 (stomp)|r
-Stun duration: |cffffcc001.5s|r
-Targets: |cffffcc00air & ground (lightning), ground (stomp)|r
+Damage: |cffffcc00125|r (chain lightning, |cffffcc00-15%|r per jump), |cffffcc0070 + 50|r per charge (stomp)
+Stun duration: |cffffcc001s + 0.3s|r per charge
+Charges: up to |cffffcc005|r per enemy, |cffffcc008s|r
+Cooldown: |cffffcc002s|r (chain lightning), |cffffcc004s|r (stomp)
+Range: |cffffcc00500|r (chain lightning)
+Area of effect: |cffffcc00300|r (stomp)
+Targets: |cffffcc00air & ground|r (chain lightning), |cffffcc00ground|r (stomp)
 Damage type: |cffffcc00spell|r
 }
 
 STRING 2480
-// Items: I08R (Thunder Stomp), Name (Name)
+// Items: I08R (Discharge), Name (Name)
 {
-Thunder Stomp
+Discharge
 }
 
 STRING 2481
