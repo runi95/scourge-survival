@@ -8531,65 +8531,65 @@ Fan of Knives
 }
 
 STRING 2033
-// Items: I05S (Frost Bombers), Tip (Tooltip - Basic)
+// Items: I05S (Cloud Seeders), Tip (Tooltip - Basic)
 {
-Purchase Frost Bombers
+Purchase Cloud Seeders
 }
 
 STRING 2034
-// Items: I05S (Frost Bombers), Description (Description)
+// Items: I05S (Cloud Seeders), Description (Description)
 {
-Flying Machines drop freezing ice bombs, calling down a Blizzard on 2 random enemy units within range.
+3 Flying Machines fly over the enemies around your hero, seeding the sky wherever they go. A moment later the seeded clouds come down as freezing ice shards along their whole flight path.
 }
 
 STRING 2035
-// Items: I05S (Frost Bombers), Ubertip (Tooltip - Extended)
+// Items: I05S (Cloud Seeders), Ubertip (Tooltip - Extended)
 {
-Flying Machines drop freezing ice bombs, calling down a Blizzard on 2 random enemy units within range.
+3 Flying Machines fly over the enemies around your hero, seeding the sky wherever they go. A moment later the seeded clouds come down as freezing ice shards along their whole flight path.
 }
 
 STRING 2036
-// Items: I05S (Frost Bombers), Name (Name)
+// Items: I05S (Cloud Seeders), Name (Name)
 {
-Frost Bombers
+Cloud Seeders
 }
 
 STRING 2037
-// Items: I05T (Frost Bombers), Tip (Tooltip - Basic)
+// Items: I05T (Cloud Seeders), Tip (Tooltip - Basic)
 {
-Purchase Frost Bombers
+Purchase Cloud Seeders
 }
 
 STRING 2038
-// Items: I05T (Frost Bombers), Ubertip (Tooltip - Extended)
+// Items: I05T (Cloud Seeders), Ubertip (Tooltip - Extended)
 {
-Flying Machines drop freezing ice bombs, calling down a Blizzard on 2 random enemy units within range.
+3 Flying Machines fly over the enemy units within 450 of your hero, or around your hero when there are none. Every second each one seeds a cloud where it flies, and 2 seconds later the cloud comes down as a shower of ice shards, hurting every enemy unit under it. Wherever the machines and your hero lead, the snow follows.
 
-Damage: |cffffcc002 x 6 x 50|r
-Cooldown: |cffffcc006s|r
-Range: |cffffcc00900|r
-Area of effect: |cffffcc00200|r
+Damage: |cffffcc0040|r (ice shards)
+Area of effect: |cffffcc00150|r
+Cooldown: |cffffcc001s|r (each machine)
+Delay: |cffffcc002s|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 2039
-// Items: I05T (Frost Bombers), Description (Description)
+// Items: I05T (Cloud Seeders), Description (Description)
 {
-Flying Machines drop freezing ice bombs, calling down a Blizzard on 2 random enemy units within range.
+3 Flying Machines fly over the enemy units within 450 of your hero, or around your hero when there are none. Every second each one seeds a cloud where it flies, and 2 seconds later the cloud comes down as a shower of ice shards, hurting every enemy unit under it. Wherever the machines and your hero lead, the snow follows.
 
-Damage: |cffffcc002 x 6 x 50|r
-Cooldown: |cffffcc006s|r
-Range: |cffffcc00900|r
-Area of effect: |cffffcc00200|r
+Damage: |cffffcc0040|r (ice shards)
+Area of effect: |cffffcc00150|r
+Cooldown: |cffffcc001s|r (each machine)
+Delay: |cffffcc002s|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 2040
-// Items: I05T (Frost Bombers), Name (Name)
+// Items: I05T (Cloud Seeders), Name (Name)
 {
-Frost Bombers
+Cloud Seeders
 }
 
 STRING 2041
@@ -20248,5 +20248,11 @@ STRING 3605
 // Units: u02Q (Heat-Seeking Rocket), Name (Name)
 {
 Heat-Seeking Rocket
+}
+
+STRING 3606
+// Units: h00E (Cloud Seeder), Name (Name)
+{
+Cloud Seeder
 }
 

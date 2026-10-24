@@ -77,7 +77,7 @@ export * from "./DragonWhelpForge";
 export * from "./BlastFurnace";
 export * from "./HeatSeekers";
 export * from "./SteamRockets";
-export * from "./FrostBombers";
+export * from "./CloudSeeders";
 export * from "./ThunderBombs";
 export * from "./HammerSquadron";
 export * from "./FrostCannon";
