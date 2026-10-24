@@ -37,7 +37,7 @@ export * from "./GryphonAviary";
 export * from "./Marksman";
 export * from "./CarpetBombing";
 export * from "./CannonTower";
-export * from "./LavaSpawnForge";
+export * from "./Crucible";
 export * from "./RiflemanBarracks";
 export * from "./FlameStrike";
 export * from "./DragonbreathShot";

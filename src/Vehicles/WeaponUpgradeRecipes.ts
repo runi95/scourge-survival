@@ -42,7 +42,7 @@ export const weaponRecipes = [
   new Recipes.Marksman(),
   new Recipes.CarpetBombing(),
   new Recipes.CannonTower(),
-  new Recipes.LavaSpawnForge(),
+  new Recipes.Crucible(),
   new Recipes.RiflemanBarracks(),
   new Recipes.FlameStrike(),
   new Recipes.DragonbreathShot(),

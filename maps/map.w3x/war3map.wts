@@ -4325,83 +4325,73 @@ Cannon Tower Mine
 }
 
 STRING 1313
-// Items: I031 (Lava Spawn Forge), Tip (Tooltip - Basic)
+// Items: I031 (Crucible), Tip (Tooltip - Basic)
 {
-Purchase Lava Spawn Forge
+Purchase Crucible
 }
 
 STRING 1314
-// Items: I031 (Lava Spawn Forge), Description (Description)
+// Items: I031 (Crucible), Description (Description)
 {
-Spawns a Lava Spawn Forge every 60 seconds that spawns Lava Spawns, which split in two when they die.
+Goblins tip out a crucible of molten iron that floods towards the largest enemy group, burning everything in it. When it cools, every enemy still standing in it is cast in iron.
 }
 
 STRING 1315
-// Items: I031 (Lava Spawn Forge), Ubertip (Tooltip - Extended)
+// Items: I031 (Crucible), Ubertip (Tooltip - Extended)
 {
-Spawns a Lava Spawn Forge every 60 seconds that spawns Lava Spawns, which split in two when they die.
+Goblins tip out a crucible of molten iron that floods towards the largest enemy group, burning everything in it. When it cools, every enemy still standing in it is cast in iron.
 }
 
 STRING 1316
-// Units: n00Q (Lava Spawn Forge), Name (Name)
+// Units: n00Q (crucible), Name (Name)
 {
-Lava Spawn Forge
+Crucible
 }
 
 STRING 1317
-// Items: I032 (Lava Spawn Forge), Tip (Tooltip - Basic)
+// Items: I032 (Crucible), Tip (Tooltip - Basic)
 {
-Purchase Lava Spawn Forge
+Purchase Crucible
 }
 
 STRING 1318
-// Items: I032 (Lava Spawn Forge), Ubertip (Tooltip - Extended)
+// Items: I032 (Crucible), Ubertip (Tooltip - Extended)
 {
-Spawns a Lava Spawn Forge every 60 seconds. The Forge spawns a Lava Spawn every 5 seconds. When a Lava Spawn dies, it splits into 2 smaller ones.
+Every 3 seconds goblins tip out a crucible of molten iron next to your hero. The iron floods towards the largest group of enemy ground units within 800, burning every enemy ground unit standing in it. After 3 seconds the iron cools, and every enemy ground unit still standing in it is cast in iron, unable to move or attack for 2 seconds.
 
-Damage: |cffffcc0020 - 25 (large) + 10 - 12 (small)|r
-Cooldown: |cffffcc0060s (forge) + 5s (lava spawn)|r
-Health: |cffffcc00300 (large) + 120 (small)|r
-Duration: |cffffcc0060s (forge) + 15s (lava spawn)|r
+Damage: |cffffcc00100|r per second
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00800|r
+Width: |cffffcc00240|r
+Duration: |cffffcc003s|r (molten), |cffffcc002s|r (cast in iron)
 Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00magic|r
+Damage type: |cffffcc00spell|r
 }
 
 STRING 1319
-// Items: I032 (Lava Spawn Forge), Description (Description)
+// Items: I032 (Crucible), Description (Description)
 {
-Spawns a Lava Spawn Forge every 60 seconds. The Forge spawns a Lava Spawn every 5 seconds. When a Lava Spawn dies, it splits into 2 smaller ones.
+Every 3 seconds goblins tip out a crucible of molten iron next to your hero. The iron floods towards the largest group of enemy ground units within 800, burning every enemy ground unit standing in it. After 3 seconds the iron cools, and every enemy ground unit still standing in it is cast in iron, unable to move or attack for 2 seconds.
 
-Damage: |cffffcc0020 - 25 (large) + 10 - 12 (small)|r
-Cooldown: |cffffcc0060s (forge) + 5s (lava spawn)|r
-Health: |cffffcc00300 (large) + 120 (small)|r
-Duration: |cffffcc0060s (forge) + 15s (lava spawn)|r
+Damage: |cffffcc00100|r per second
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00800|r
+Width: |cffffcc00240|r
+Duration: |cffffcc003s|r (molten), |cffffcc002s|r (cast in iron)
 Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00magic|r
+Damage type: |cffffcc00spell|r
 }
 
 STRING 1320
-// Items: I031 (Lava Spawn Forge), Name (Name)
+// Items: I031 (Crucible), Name (Name)
 {
-Lava Spawn Forge
-}
-
-STRING 1321
-// Units: n00O (Small Lava Spawn), Name (Name)
-{
-Small Lava Spawn
-}
-
-STRING 1322
-// Units: n00P (Lava Spawn), Name (Name)
-{
-Lava Spawn
+Crucible
 }
 
 STRING 1323
-// Items: I032 (Lava Spawn Forge), Name (Name)
+// Items: I032 (Crucible), Name (Name)
 {
-Lava Spawn Forge
+Crucible
 }
 
 STRING 1324
