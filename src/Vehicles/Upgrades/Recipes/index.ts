@@ -75,7 +75,7 @@ export * from "./Tripwire";
 export * from "./NerubianTower";
 export * from "./DragonWhelpForge";
 export * from "./BlastFurnace";
-export * from "./MeteorShower";
+export * from "./HeatSeekers";
 export * from "./SteamRockets";
 export * from "./FrostBombers";
 export * from "./ThunderBombs";

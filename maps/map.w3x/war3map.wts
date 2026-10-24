@@ -7923,73 +7923,67 @@ Blast Furnace
 }
 
 STRING 1936
-// Items: I058 (Meteor Shower), Tip (Tooltip - Basic)
+// Items: I058 (Heat Seekers), Tip (Tooltip - Basic)
 {
-Purchase Meteor Shower
+Purchase Heat Seekers
 }
 
 STRING 1937
-// Items: I058 (Meteor Shower), Description (Description)
+// Items: I058 (Heat Seekers), Description (Description)
 {
-Calls down 5 meteors over a random enemy group. Each meteor stuns and burns the enemies it hits.
+Lobs fireballs that leave the enemies they splash burning. Goblin heat-seeking rockets lock onto every burning enemy and chase it down wherever it runs, two rockets a second for every enemy on fire.
 }
 
 STRING 1938
-// Items: I058 (Meteor Shower), Ubertip (Tooltip - Extended)
+// Items: I058 (Heat Seekers), Ubertip (Tooltip - Extended)
 {
-Calls down 5 meteors over a random enemy group. Each meteor stuns and burns the enemies it hits.
+Lobs fireballs that leave the enemies they splash burning. Goblin heat-seeking rockets lock onto every burning enemy and chase it down wherever it runs, two rockets a second for every enemy on fire.
 }
 
 STRING 1939
-// Items: I058 (Meteor Shower), Name (Name)
+// Items: I058 (Heat Seekers), Name (Name)
 {
-Meteor Shower
+Heat Seekers
 }
 
 STRING 1940
-// Items: I059 (Meteor Shower), Tip (Tooltip - Basic)
+// Items: I059 (Heat Seekers), Tip (Tooltip - Basic)
 {
-Purchase Meteor Shower
+Purchase Heat Seekers
 }
 
 STRING 1941
-// Items: I059 (Meteor Shower), Ubertip (Tooltip - Extended)
+// Items: I059 (Heat Seekers), Ubertip (Tooltip - Extended)
 {
-Calls down 5 meteors over a random enemy group. Each meteor stuns and burns the enemies it hits.
+Every 1.5 seconds lobs a fireball with splash damage at a random enemy unit within range, setting every enemy unit it hits on fire for 5 seconds. Every 0.5 seconds a goblin heat-seeking rocket takes off for every burning enemy unit within 900 of your hero, and chases it down wherever it goes.
 
-Damage: |cffffcc005 x 80|r
-Cooldown: |cffffcc003s|r
-Area of Effect (meteor): |cffffcc00150|r
-Range: |cffffcc00600|r
-Stun duration: |cffffcc000.5s|r
-Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00magic|r
+Damage: |cffffcc00100|r (fireball), |cffffcc0025|r (rocket)
+Area of effect: |cffffcc00125|r (fireball)
+Cooldown: |cffffcc001.5s|r (fireball), |cffffcc000.5s|r (rockets)
+Range: |cffffcc00500|r (fireball), |cffffcc00900|r (rockets)
+Burn duration: |cffffcc005s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00magic|r (fireball), |cffffcc00siege|r (rocket)
 }
 
 STRING 1942
-// Items: I059 (Meteor Shower), Description (Description)
+// Items: I059 (Heat Seekers), Description (Description)
 {
-Calls down 5 meteors over a random enemy group. Each meteor stuns and burns the enemies it hits.
+Every 1.5 seconds lobs a fireball with splash damage at a random enemy unit within range, setting every enemy unit it hits on fire for 5 seconds. Every 0.5 seconds a goblin heat-seeking rocket takes off for every burning enemy unit within 900 of your hero, and chases it down wherever it goes.
 
-Damage: |cffffcc005 x 80|r
-Cooldown: |cffffcc003s|r
-Area of Effect (meteor): |cffffcc00150|r
-Range: |cffffcc00600|r
-Stun duration: |cffffcc000.5s|r
-Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00magic|r
+Damage: |cffffcc00100|r (fireball), |cffffcc0025|r (rocket)
+Area of effect: |cffffcc00125|r (fireball)
+Cooldown: |cffffcc001.5s|r (fireball), |cffffcc000.5s|r (rockets)
+Range: |cffffcc00500|r (fireball), |cffffcc00900|r (rockets)
+Burn duration: |cffffcc005s|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00magic|r (fireball), |cffffcc00siege|r (rocket)
 }
 
 STRING 1943
-// Items: I059 (Meteor Shower), Name (Name)
+// Items: I059 (Heat Seekers), Name (Name)
 {
-Meteor Shower
-}
-
-STRING 1944
-// Abilities: A03X (Meteor Impact), Name (Name)
-{
-Meteor Impact
+Heat Seekers
 }
 
 STRING 1945
@@ -20242,5 +20236,17 @@ STRING 3603
 // Units: n01W (Sortie Flying Machine), Name (Name)
 {
 Sortie Flying Machine
+}
+
+STRING 3604
+// Units: u02P (Heat Seekers Fireball), Name (Name)
+{
+Heat Seekers Fireball
+}
+
+STRING 3605
+// Units: u02Q (Heat-Seeking Rocket), Name (Name)
+{
+Heat-Seeking Rocket
 }
 

@@ -80,7 +80,7 @@ export const weaponRecipes = [
   new Recipes.NerubianTower(),
   new Recipes.DragonWhelpForge(),
   new Recipes.BlastFurnace(),
-  new Recipes.MeteorShower(),
+  new Recipes.HeatSeekers(),
   new Recipes.SteamRockets(),
   new Recipes.FrostBombers(),
   new Recipes.ThunderBombs(),

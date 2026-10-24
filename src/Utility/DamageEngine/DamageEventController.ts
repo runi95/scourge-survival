@@ -5,6 +5,7 @@ import { AntiMagicShellDamageEvent } from "./DamageEvents/AntiMagicShellDamageEv
 import { BerserkDamageEvent } from "./DamageEvents/BerserkDamageEvent";
 import { CriticalStrikeDamageEvent } from "./DamageEvents/CriticalStrikeDamageEvent";
 import { IncinerateDamageEvent } from "./DamageEvents/IncinerateDamageEvent";
+import { HeatSeekersDamageEvent } from "./DamageEvents/HeatSeekersDamageEvent";
 import { InnerFireDamageEvent } from "./DamageEvents/InnerFireDamageEvent";
 import { LocustSwarmDamageEvent } from "./DamageEvents/LocustSwarmDamageEvent";
 import { LongRifleDamageEvent } from "./DamageEvents/LongRifleDamageEvent";
@@ -148,6 +149,10 @@ export class DamageEventController {
     );
 
     // After damage events
+    DamageEngine.register(
+      new HeatSeekersDamageEvent(),
+      DamageEventType.AfterDamageEvent,
+    );
     DamageEngine.register(
       new InnerFireDamageEvent(),
       DamageEventType.AfterDamageEvent,
