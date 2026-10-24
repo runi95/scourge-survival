@@ -11349,67 +11349,67 @@ Skewer
 }
 
 STRING 2384
-// Items: I084 (Javelin Stomp), Tip (Tooltip - Basic)
+// Items: I084 (Beatdown), Tip (Tooltip - Basic)
 {
-Purchase Javelin Stomp
+Purchase Beatdown
 }
 
 STRING 2385
-// Items: I084 (Javelin Stomp), Description (Description)
+// Items: I084 (Beatdown), Description (Description)
 {
-Throws a javelin at a random enemy unit within range, then stomps the ground where it lands, stunning everything around it.
+Stomps the ground, stunning every enemy around your hero, then rains javelins on the stunned ones. Each javelin hits a stunned enemy twice as hard and keeps it down a little longer.
 }
 
 STRING 2386
-// Items: I084 (Javelin Stomp), Ubertip (Tooltip - Extended)
+// Items: I084 (Beatdown), Ubertip (Tooltip - Extended)
 {
-Throws a javelin at a random enemy unit within range, then stomps the ground where it lands, stunning everything around it.
+Stomps the ground, stunning every enemy around your hero, then rains javelins on the stunned ones. Each javelin hits a stunned enemy twice as hard and keeps it down a little longer.
 }
 
 STRING 2387
-// Items: I084 (Javelin Stomp), Name (Name)
+// Items: I084 (Beatdown), Name (Name)
 {
-Javelin Stomp
+Beatdown
 }
 
 STRING 2388
-// Items: I085 (Javelin Stomp), Tip (Tooltip - Basic)
+// Items: I085 (Beatdown), Tip (Tooltip - Basic)
 {
-Purchase Javelin Stomp
+Purchase Beatdown
 }
 
 STRING 2389
-// Items: I085 (Javelin Stomp), Ubertip (Tooltip - Extended)
+// Items: I085 (Beatdown), Ubertip (Tooltip - Extended)
 {
-Throws a javelin at a random enemy unit within range, then stomps the ground where it lands, stunning everything around it.
+Every 4 seconds stomps the ground, hurting and stunning every enemy ground unit around your hero. While any enemy unit within range is stunned, your hero throws a javelin at the nearest of them every 0.5 seconds. A javelin that hits a stunned enemy deals double damage and keeps it stunned for 0.5 seconds longer, up to 2 seconds longer per enemy every 4 seconds. While no enemy is stunned, a javelin goes to the nearest enemy unit every 2 seconds.
 
-Damage: |cffffcc0019 - 23 (javelin) + 90 (stomp)|r
-Cooldown: |cffffcc003s|r
-Range: |cffffcc00450|r
-Area of effect: |cffffcc00300|r
-Stun duration: |cffffcc001.5s|r
-Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00piercing + spell|r
+Damage: |cffffcc0090|r (stomp), |cffffcc0034 - 39|r (javelin), x2 against stunned enemies
+Stun duration: |cffffcc001.5s|r, |cffffcc00+0.5s|r per javelin (up to |cffffcc00+2s|r)
+Cooldown: |cffffcc004s|r (stomp), |cffffcc000.5s|r (javelins at stunned enemies), |cffffcc002s|r (otherwise)
+Area of effect: |cffffcc00300|r (stomp)
+Range: |cffffcc00600|r (javelins)
+Targets: |cffffcc00ground|r (stomp), |cffffcc00air & ground|r (javelins)
+Damage type: |cffffcc00spell|r (stomp), |cffffcc00piercing|r (javelins)
 }
 
 STRING 2390
-// Items: I085 (Javelin Stomp), Description (Description)
+// Items: I085 (Beatdown), Description (Description)
 {
-Throws a javelin at a random enemy unit within range, then stomps the ground where it lands, stunning everything around it.
+Every 4 seconds stomps the ground, hurting and stunning every enemy ground unit around your hero. While any enemy unit within range is stunned, your hero throws a javelin at the nearest of them every 0.5 seconds. A javelin that hits a stunned enemy deals double damage and keeps it stunned for 0.5 seconds longer, up to 2 seconds longer per enemy every 4 seconds. While no enemy is stunned, a javelin goes to the nearest enemy unit every 2 seconds.
 
-Damage: |cffffcc0019 - 23 (javelin) + 90 (stomp)|r
-Cooldown: |cffffcc003s|r
-Range: |cffffcc00450|r
-Area of effect: |cffffcc00300|r
-Stun duration: |cffffcc001.5s|r
-Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00piercing + spell|r
+Damage: |cffffcc0090|r (stomp), |cffffcc0034 - 39|r (javelin), x2 against stunned enemies
+Stun duration: |cffffcc001.5s|r, |cffffcc00+0.5s|r per javelin (up to |cffffcc00+2s|r)
+Cooldown: |cffffcc004s|r (stomp), |cffffcc000.5s|r (javelins at stunned enemies), |cffffcc002s|r (otherwise)
+Area of effect: |cffffcc00300|r (stomp)
+Range: |cffffcc00600|r (javelins)
+Targets: |cffffcc00ground|r (stomp), |cffffcc00air & ground|r (javelins)
+Damage type: |cffffcc00spell|r (stomp), |cffffcc00piercing|r (javelins)
 }
 
 STRING 2391
-// Items: I085 (Javelin Stomp), Name (Name)
+// Items: I085 (Beatdown), Name (Name)
 {
-Javelin Stomp
+Beatdown
 }
 
 STRING 2392
@@ -20246,5 +20246,11 @@ STRING 3593
 // Abilities: A05J (Skewer), Name (Name)
 {
 Skewer
+}
+
+STRING 3594
+// Units: u02M (Beatdown Javelin), Name (Name)
+{
+Beatdown Javelin
 }
 

@@ -132,6 +132,10 @@ export class StunUtils {
     this.FROZEN_UNITS_MAP.get(handleId)?.setDuration(0);
   }
 
+  public static isStunned(handleId: number): boolean {
+    return this.STUNNED_UNITS_MAP.has(handleId);
+  }
+
   public static removeStun(handleId: number) {
     this.STUNNED_UNITS_MAP.get(handleId)?.setDuration(0);
   }

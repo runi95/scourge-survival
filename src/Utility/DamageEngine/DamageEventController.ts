@@ -32,6 +32,7 @@ import { BloodrootDamageEvent } from "./DamageEvents/BloodrootDamageEvent";
 import { CoupDeGraceDamageEvent } from "./DamageEvents/CoupDeGraceDamageEvent";
 import { ForwardOutpostDamageEvent } from "./DamageEvents/ForwardOutpostDamageEvent";
 import { DragnetDamageEvent } from "./DamageEvents/DragnetDamageEvent";
+import { BeatdownDamageEvent } from "./DamageEvents/BeatdownDamageEvent";
 
 export interface ExtendedDamageInstance extends DamageInstance {
   sourceOwningPlayer: player;
@@ -72,6 +73,10 @@ export class DamageEventController {
     );
     DamageEngine.register(
       new ScattergunDamageEvent(),
+      DamageEventType.OnDamageEvent,
+    );
+    DamageEngine.register(
+      new BeatdownDamageEvent(),
       DamageEventType.OnDamageEvent,
     );
     DamageEngine.register(

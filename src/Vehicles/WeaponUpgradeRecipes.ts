@@ -124,7 +124,7 @@ export const weaponRecipes = [
   new Recipes.Stampede(),
   new Recipes.Dragnet(),
   new Recipes.Skewer(),
-  new Recipes.JavelinStomp(),
+  new Recipes.Beatdown(),
   new Recipes.SpiritJavelins(),
   new Recipes.HarpoonThrow(),
   new Recipes.TwinCatapults(),
