@@ -10357,71 +10357,73 @@ Sky Hammer
 }
 
 STRING 2269
-// Items: I07C (Frost Mines), Tip (Tooltip - Basic)
+// Items: I07C (Flash Freeze), Tip (Tooltip - Basic)
 {
-Purchase Frost Mines
+Purchase Flash Freeze
 }
 
 STRING 2270
-// Items: I07C (Frost Mines), Description (Description)
+// Items: I07C (Flash Freeze), Description (Description)
 {
-Places frozen land mines underneath your hero. When an enemy steps on one, it explodes and calls down a Blizzard.
+Places frost charges underneath your hero. The enemy that steps on one is flash frozen, and the cold spreads by touch: every enemy that comes near a frozen one freezes too, on and on through a packed crowd.
 }
 
 STRING 2271
-// Items: I07C (Frost Mines), Ubertip (Tooltip - Extended)
+// Items: I07C (Flash Freeze), Ubertip (Tooltip - Extended)
 {
-Places frozen land mines underneath your hero. When an enemy steps on one, it explodes and calls down a Blizzard.
+Places frost charges underneath your hero. The enemy that steps on one is flash frozen, and the cold spreads by touch: every enemy that comes near a frozen one freezes too, on and on through a packed crowd.
 }
 
 STRING 2272
-// Items: I07C (Frost Mines), Name (Name)
+// Items: I07C (Flash Freeze), Name (Name)
 {
-Frost Mines
+Flash Freeze
 }
 
 STRING 2273
-// Items: I07D (Frost Mines), Tip (Tooltip - Basic)
+// Items: I07D (Flash Freeze), Tip (Tooltip - Basic)
 {
-Purchase Frost Mines
+Purchase Flash Freeze
 }
 
 STRING 2274
-// Items: I07D (Frost Mines), Ubertip (Tooltip - Extended)
+// Items: I07D (Flash Freeze), Ubertip (Tooltip - Extended)
 {
-Places frozen land mines underneath your hero. When an enemy steps on one, it explodes and calls down a Blizzard.
+Every 2 seconds places a frost charge underneath your hero, up to 8. When an enemy ground unit comes near an armed charge, the charge bursts and flash freezes it. For the first second it is frozen, every enemy unit that comes within 150 of it freezes too and passes the cold on in turn. A frozen enemy unit takes damage when it freezes and again when it thaws 2 seconds later.
 
-Damage: |cffffcc00100 (explosion) + 6 x 50 (blizzard)|r
-Cooldown: |cffffcc003s|r
-Area of effect: |cffffcc00300 (explosion) + 200 (blizzard)|r
-Mine activation delay: |cffffcc004s|r
-Targets: |cffffcc00ground (explosion), air & ground (blizzard)|r
+Damage: |cffffcc00120|r (freezing) + |cffffcc00120|r (thawing)
+Freeze duration: |cffffcc002s|r
+Cooldown: |cffffcc002s|r
+Area of effect: |cffffcc00150|r (spreading)
+Targets: |cffffcc00ground only!|r (charge), |cffffcc00air & ground|r (spreading)
 Damage type: |cffffcc00spell|r
+Charge activation delay: |cffffcc002s|r
 }
 
 STRING 2275
-// Items: I07D (Frost Mines), Description (Description)
+// Items: I07D (Flash Freeze), Description (Description)
 {
-Places frozen land mines underneath your hero. When an enemy steps on one, it explodes and calls down a Blizzard.
+Every 2 seconds places a frost charge underneath your hero, up to 8. When an enemy ground unit comes near an armed charge, the charge bursts and flash freezes it. For the first second it is frozen, every enemy unit that comes within 150 of it freezes too and passes the cold on in turn. A frozen enemy unit takes damage when it freezes and again when it thaws 2 seconds later.
 
-Damage: |cffffcc00100 (explosion) + 6 x 50 (blizzard)|r
-Cooldown: |cffffcc003s|r
-Area of effect: |cffffcc00300 (explosion) + 200 (blizzard)|r
-Mine activation delay: |cffffcc004s|r
-Targets: |cffffcc00ground (explosion), air & ground (blizzard)|r
+Damage: |cffffcc00120|r (freezing) + |cffffcc00120|r (thawing)
+Freeze duration: |cffffcc002s|r
+Cooldown: |cffffcc002s|r
+Area of effect: |cffffcc00150|r (spreading)
+Targets: |cffffcc00ground only!|r (charge), |cffffcc00air & ground|r (spreading)
 Damage type: |cffffcc00spell|r
+Charge activation delay: |cffffcc002s|r
 }
 
 STRING 2276
-// Items: I07D (Frost Mines), Name (Name)
+// Items: I07D (Flash Freeze), Name (Name)
 {
-Frost Mines
+Flash Freeze
 }
 
 STRING 2277
-// Units: n016 (Frost Mine), Name (Name)
+// Units: n016 (charge), Name (Name)
 {
-Frost Mine
+Frost Charge
 }
 
 STRING 2278
