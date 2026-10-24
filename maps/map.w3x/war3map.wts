@@ -12389,67 +12389,69 @@ Pounce
 }
 
 STRING 2514
-// Items: I090 (Rocket Stomp), Tip (Tooltip - Basic)
+// Items: I090 (Seismic Charges), Tip (Tooltip - Basic)
 {
-Purchase Rocket Stomp
+Purchase Seismic Charges
 }
 
 STRING 2515
-// Items: I090 (Rocket Stomp), Description (Description)
+// Items: I090 (Seismic Charges), Description (Description)
 {
-Fires Cluster Rockets at a random enemy unit within range and stomps the ground, stunning every enemy around your hero.
+Fires goblin rockets that bury themselves among the enemies without going off. Every stomp of your hero sets every buried rocket off at once.
 }
 
 STRING 2516
-// Items: I090 (Rocket Stomp), Ubertip (Tooltip - Extended)
+// Items: I090 (Seismic Charges), Ubertip (Tooltip - Extended)
 {
-Fires Cluster Rockets at a random enemy unit within range and stomps the ground, stunning every enemy around your hero.
+Fires goblin rockets that bury themselves among the enemies without going off. Every stomp of your hero sets every buried rocket off at once.
 }
 
 STRING 2517
-// Items: I090 (Rocket Stomp), Name (Name)
+// Items: I090 (Seismic Charges), Name (Name)
 {
-Rocket Stomp
+Seismic Charges
 }
 
 STRING 2518
-// Items: I091 (Rocket Stomp), Tip (Tooltip - Basic)
+// Items: I091 (Seismic Charges), Tip (Tooltip - Basic)
 {
-Purchase Rocket Stomp
+Purchase Seismic Charges
 }
 
 STRING 2519
-// Items: I091 (Rocket Stomp), Ubertip (Tooltip - Extended)
+// Items: I091 (Seismic Charges), Ubertip (Tooltip - Extended)
 {
-Fires Cluster Rockets at a random enemy unit within range and stomps the ground, stunning every enemy around your hero.
+Every 1.5 seconds fires a goblin rocket at a random enemy ground unit within range. It buries itself in the ground there without going off, up to 6 rockets at a time. Every 4 seconds your hero stomps the ground, hurting and stunning every enemy ground unit around it, and the shock sets off every buried rocket at once, each one hurting and stunning every enemy ground unit around it.
 
-Damage: |cffffcc006 x 17.5 (rockets) + 90 (stomp)|r
-Cooldown: |cffffcc003s|r
-Range: |cffffcc00600|r
-Area of effect: |cffffcc00300|r
-Stun duration: |cffffcc001s (rockets) + 1.5s (stomp)|r
-Targets: |cffffcc00air & ground (rockets), ground (stomp)|r
+Damage: |cffffcc0090|r (stomp), |cffffcc0060|r (each rocket)
+Stun duration: |cffffcc001.5s|r (stomp), |cffffcc000.5s|r (rockets)
+Area of effect: |cffffcc00300|r (stomp), |cffffcc00175|r (each rocket)
+Buried rockets: up to |cffffcc006|r
+Cooldown: |cffffcc001.5s|r (rockets), |cffffcc004s|r (stomp)
+Range: |cffffcc00700|r
+Targets: |cffffcc00ground only!|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 2520
-// Items: I091 (Rocket Stomp), Description (Description)
+// Items: I091 (Seismic Charges), Description (Description)
 {
-Fires Cluster Rockets at a random enemy unit within range and stomps the ground, stunning every enemy around your hero.
+Every 1.5 seconds fires a goblin rocket at a random enemy ground unit within range. It buries itself in the ground there without going off, up to 6 rockets at a time. Every 4 seconds your hero stomps the ground, hurting and stunning every enemy ground unit around it, and the shock sets off every buried rocket at once, each one hurting and stunning every enemy ground unit around it.
 
-Damage: |cffffcc006 x 17.5 (rockets) + 90 (stomp)|r
-Cooldown: |cffffcc003s|r
-Range: |cffffcc00600|r
-Area of effect: |cffffcc00300|r
-Stun duration: |cffffcc001s (rockets) + 1.5s (stomp)|r
-Targets: |cffffcc00air & ground (rockets), ground (stomp)|r
+Damage: |cffffcc0090|r (stomp), |cffffcc0060|r (each rocket)
+Stun duration: |cffffcc001.5s|r (stomp), |cffffcc000.5s|r (rockets)
+Area of effect: |cffffcc00300|r (stomp), |cffffcc00175|r (each rocket)
+Buried rockets: up to |cffffcc006|r
+Cooldown: |cffffcc001.5s|r (rockets), |cffffcc004s|r (stomp)
+Range: |cffffcc00700|r
+Targets: |cffffcc00ground only!|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 2521
-// Items: I091 (Rocket Stomp), Name (Name)
+// Items: I091 (Seismic Charges), Name (Name)
 {
-Rocket Stomp
+Seismic Charges
 }
 
 STRING 2522
