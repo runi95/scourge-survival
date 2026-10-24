@@ -11803,67 +11803,69 @@ Blood Scent
 }
 
 STRING 2441
-// Items: I08I (Rocket Catapult), Tip (Tooltip - Basic)
+// Items: I08I (Payload), Tip (Tooltip - Basic)
 {
-Purchase Rocket Catapult
+Purchase Payload
 }
 
 STRING 2442
-// Items: I08I (Rocket Catapult), Description (Description)
+// Items: I08I (Payload), Description (Description)
 {
-Lobs a boulder and fires Cluster Rockets at a random enemy unit within range.
+Goblin rockets launch a huge flaming boulder high into the sky. Moments later it crashes down on the largest group of enemies, blasting them outward.
 }
 
 STRING 2443
-// Items: I08I (Rocket Catapult), Ubertip (Tooltip - Extended)
+// Items: I08I (Payload), Ubertip (Tooltip - Extended)
 {
-Lobs a boulder and fires Cluster Rockets at a random enemy unit within range.
+Goblin rockets launch a huge flaming boulder high into the sky. Moments later it crashes down on the largest group of enemies, blasting them outward.
 }
 
 STRING 2444
-// Items: I08I (Rocket Catapult), Name (Name)
+// Items: I08I (Payload), Name (Name)
 {
-Rocket Catapult
+Payload
 }
 
 STRING 2445
-// Items: I08J (Rocket Catapult), Tip (Tooltip - Basic)
+// Items: I08J (Payload), Tip (Tooltip - Basic)
 {
-Purchase Rocket Catapult
+Purchase Payload
 }
 
 STRING 2446
-// Items: I08J (Rocket Catapult), Ubertip (Tooltip - Extended)
+// Items: I08J (Payload), Ubertip (Tooltip - Extended)
 {
-Lobs a boulder and fires Cluster Rockets at a random enemy unit within range.
+Every 7 seconds goblin rockets launch a huge flaming boulder high into the sky. 1.5 seconds later it crashes down on the largest group of enemy units within range, marked on the ground the moment it is launched. Enemies near the middle of the impact take the most damage and are stunned; every enemy ground unit caught in the blast is thrown outward.
 
-Damage: |cffffcc0045 (boulder) + 6 x 17.5 (rockets)|r
-Cooldown: |cffffcc003s|r
-Range: |cffffcc00800|r
-Area of effect: |cffffcc00150 (boulder) + 300 (rockets)|r
-Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00siege + spell|r
-Effect: |cffffcc00stuns for 1s|r
+Damage: |cffffcc00250|r in the middle, down to |cffffcc00100|r at the edge
+Stun duration: |cffffcc001s|r (within 150 of the middle)
+Area of effect: |cffffcc00400|r
+Knockback: |cffffcc00150|r
+Cooldown: |cffffcc007s|r
+Range: |cffffcc001200|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00siege|r
 }
 
 STRING 2447
-// Items: I08J (Rocket Catapult), Description (Description)
+// Items: I08J (Payload), Description (Description)
 {
-Lobs a boulder and fires Cluster Rockets at a random enemy unit within range.
+Every 7 seconds goblin rockets launch a huge flaming boulder high into the sky. 1.5 seconds later it crashes down on the largest group of enemy units within range, marked on the ground the moment it is launched. Enemies near the middle of the impact take the most damage and are stunned; every enemy ground unit caught in the blast is thrown outward.
 
-Damage: |cffffcc0045 (boulder) + 6 x 17.5 (rockets)|r
-Cooldown: |cffffcc003s|r
-Range: |cffffcc00800|r
-Area of effect: |cffffcc00150 (boulder) + 300 (rockets)|r
-Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00siege + spell|r
-Effect: |cffffcc00stuns for 1s|r
+Damage: |cffffcc00250|r in the middle, down to |cffffcc00100|r at the edge
+Stun duration: |cffffcc001s|r (within 150 of the middle)
+Area of effect: |cffffcc00400|r
+Knockback: |cffffcc00150|r
+Cooldown: |cffffcc007s|r
+Range: |cffffcc001200|r
+Targets: |cffffcc00air & ground|r
+Damage type: |cffffcc00siege|r
 }
 
 STRING 2448
-// Items: I08J (Rocket Catapult), Name (Name)
+// Items: I08J (Payload), Name (Name)
 {
-Rocket Catapult
+Payload
 }
 
 STRING 2449
