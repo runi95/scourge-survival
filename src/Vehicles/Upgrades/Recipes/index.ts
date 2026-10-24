@@ -143,7 +143,7 @@ export * from "./SpiritPack";
 export * from "./Unleashed";
 export * from "./Beaters";
 export * from "./Den";
-export * from "./HuntingPack";
+export * from "./Encircle";
 export * from "./RocketSpears";
 export * from "./NetRockets";
 export * from "./SnareMine";

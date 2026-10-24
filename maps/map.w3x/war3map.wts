@@ -12913,67 +12913,71 @@ Den
 }
 
 STRING 2580
-// Items: I09G (Hunting Pack), Tip (Tooltip - Basic)
+// Items: I09G (Encircle), Tip (Tooltip - Basic)
 {
-Purchase Hunting Pack
+Purchase Encircle
 }
 
 STRING 2581
-// Items: I09G (Hunting Pack), Description (Description)
+// Items: I09G (Encircle), Description (Description)
 {
-Throws a net at a random enemy unit within range, holding it in place, and a Spirit Wolf pounces on it.
+Summons 2 Spirit Wolves every 30 seconds. Every few seconds they run a circle around the largest group of enemies, trailing a net between them, and when the circle closes everything inside is caught in it.
 }
 
 STRING 2582
-// Items: I09G (Hunting Pack), Ubertip (Tooltip - Extended)
+// Items: I09G (Encircle), Ubertip (Tooltip - Extended)
 {
-Throws a net at a random enemy unit within range, holding it in place, and a Spirit Wolf pounces on it.
+Summons 2 Spirit Wolves every 30 seconds. Every few seconds they run a circle around the largest group of enemies, trailing a net between them, and when the circle closes everything inside is caught in it.
 }
 
 STRING 2583
-// Items: I09G (Hunting Pack), Name (Name)
+// Items: I09G (Encircle), Name (Name)
 {
-Hunting Pack
+Encircle
 }
 
 STRING 2584
-// Items: I09H (Hunting Pack), Tip (Tooltip - Basic)
+// Items: I09H (Encircle), Tip (Tooltip - Basic)
 {
-Purchase Hunting Pack
+Purchase Encircle
 }
 
 STRING 2585
-// Items: I09H (Hunting Pack), Ubertip (Tooltip - Extended)
+// Items: I09H (Encircle), Ubertip (Tooltip - Extended)
 {
-Throws a net at a random enemy unit within range, holding it in place, and a Spirit Wolf pounces on it.
+Summons 2 Spirit Wolves every 30 seconds that fight by your side. Every 6 seconds they break off and run a circle 250 around the largest group of enemy units near your hero, trailing a net between them. When the circle closes, every enemy unit inside it is caught: it is hurt and held in place, and flying units are pulled to the ground.
 
-Damage: |cffffcc0040 (net) + 16 - 17 (wolf)|r
-Cooldown: |cffffcc004s|r
-Range: |cffffcc00600|r
-Duration: |cffffcc003s (net) + 10s (wolf)|r
-Health: |cffffcc00350|r
-Targets: |cffffcc00air & ground (net), ground (wolf)|r
-Damage type: |cffffcc00spell + normal|r
+Damage: |cffffcc0046 - 47|r (bite), |cffffcc00120|r (net)
+Critical strike: |cffffcc0015% chance for x2 damage|r
+Hold duration: |cffffcc003s|r
+Area of effect: |cffffcc00250|r
+Cooldown: |cffffcc0030s|r (wolves), |cffffcc006s|r (circle)
+Range: |cffffcc00700|r
+Wolves: |cffffcc00300|r health, |cffffcc0025s|r
+Targets: |cffffcc00air & ground|r (net), |cffffcc00ground|r (bite)
+Damage type: |cffffcc00normal|r (bite), |cffffcc00spell|r (net)
 }
 
 STRING 2586
-// Items: I09H (Hunting Pack), Description (Description)
+// Items: I09H (Encircle), Description (Description)
 {
-Throws a net at a random enemy unit within range, holding it in place, and a Spirit Wolf pounces on it.
+Summons 2 Spirit Wolves every 30 seconds that fight by your side. Every 6 seconds they break off and run a circle 250 around the largest group of enemy units near your hero, trailing a net between them. When the circle closes, every enemy unit inside it is caught: it is hurt and held in place, and flying units are pulled to the ground.
 
-Damage: |cffffcc0040 (net) + 16 - 17 (wolf)|r
-Cooldown: |cffffcc004s|r
-Range: |cffffcc00600|r
-Duration: |cffffcc003s (net) + 10s (wolf)|r
-Health: |cffffcc00350|r
-Targets: |cffffcc00air & ground (net), ground (wolf)|r
-Damage type: |cffffcc00spell + normal|r
+Damage: |cffffcc0046 - 47|r (bite), |cffffcc00120|r (net)
+Critical strike: |cffffcc0015% chance for x2 damage|r
+Hold duration: |cffffcc003s|r
+Area of effect: |cffffcc00250|r
+Cooldown: |cffffcc0030s|r (wolves), |cffffcc006s|r (circle)
+Range: |cffffcc00700|r
+Wolves: |cffffcc00300|r health, |cffffcc0025s|r
+Targets: |cffffcc00air & ground|r (net), |cffffcc00ground|r (bite)
+Damage type: |cffffcc00normal|r (bite), |cffffcc00spell|r (net)
 }
 
 STRING 2587
-// Items: I09H (Hunting Pack), Name (Name)
+// Items: I09H (Encircle), Name (Name)
 {
-Hunting Pack
+Encircle
 }
 
 STRING 2588
