@@ -39,6 +39,7 @@ import { BloodScentDamageEvent } from "./DamageEvents/BloodScentDamageEvent";
 import { DischargeDamageEvent } from "./DamageEvents/DischargeDamageEvent";
 import { ThunderFangsDamageEvent } from "./DamageEvents/ThunderFangsDamageEvent";
 import { BeatersDamageEvent } from "./DamageEvents/BeatersDamageEvent";
+import { SittingDucksDamageEvent } from "./DamageEvents/SittingDucksDamageEvent";
 
 export interface ExtendedDamageInstance extends DamageInstance {
   sourceOwningPlayer: player;
@@ -87,6 +88,10 @@ export class DamageEventController {
     );
     DamageEngine.register(
       new BloodScentDamageEvent(),
+      DamageEventType.OnDamageEvent,
+    );
+    DamageEngine.register(
+      new SittingDucksDamageEvent(),
       DamageEventType.OnDamageEvent,
     );
     DamageEngine.register(

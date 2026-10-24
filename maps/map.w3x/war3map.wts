@@ -13175,65 +13175,65 @@ Bear Trap
 }
 
 STRING 2613
-// Items: I09O (Hunter's Spear), Tip (Tooltip - Basic)
+// Items: I09O (Sitting Ducks), Tip (Tooltip - Basic)
 {
-Purchase Hunter's Spear
+Purchase Sitting Ducks
 }
 
 STRING 2614
-// Items: I09O (Hunter's Spear), Description (Description)
+// Items: I09O (Sitting Ducks), Description (Description)
 {
-Hurls a spear and throws a net at a random enemy unit within range, holding it in place.
+Hurls spears at the enemy that has stood still the longest. The longer a target has stood still, the harder the spear hits, and nets hold moving enemies still for the spears.
 }
 
 STRING 2615
-// Items: I09O (Hunter's Spear), Ubertip (Tooltip - Extended)
+// Items: I09O (Sitting Ducks), Ubertip (Tooltip - Extended)
 {
-Hurls a spear and throws a net at a random enemy unit within range, holding it in place.
+Hurls spears at the enemy that has stood still the longest. The longer a target has stood still, the harder the spear hits, and nets hold moving enemies still for the spears.
 }
 
 STRING 2616
-// Items: I09O (Hunter's Spear), Name (Name)
+// Items: I09O (Sitting Ducks), Name (Name)
 {
-Hunter's Spear
+Sitting Ducks
 }
 
 STRING 2617
-// Items: I09P (Hunter's Spear), Tip (Tooltip - Basic)
+// Items: I09P (Sitting Ducks), Tip (Tooltip - Basic)
 {
-Purchase Hunter's Spear
+Purchase Sitting Ducks
 }
 
 STRING 2618
-// Items: I09P (Hunter's Spear), Ubertip (Tooltip - Extended)
+// Items: I09P (Sitting Ducks), Ubertip (Tooltip - Extended)
 {
-Hurls a spear and throws a net at a random enemy unit within range, holding it in place.
+Every 0.4 seconds hurls a spear at the enemy unit within range that has stood still the longest. A spear hits 50% harder for every second its target has stood still, up to 3 times as hard after 4 seconds; enemies attacking your hero stand still too. Every 3 seconds a net goes to the nearest enemy unit that is on the move, damaging it and holding it in place, and flying units are pulled to the ground.
 
-Damage: |cffffcc0020 - 30 (spear) + 40 (net)|r
-Cooldown: |cffffcc002s|r
-Range: |cffffcc00800|r
-Duration: |cffffcc003s|r
+Damage: |cffffcc0015 - 29|r (spear), up to 3 times as much against an enemy that stood still for 4 seconds, |cffffcc0040|r (net)
+Hold duration: |cffffcc003s|r
+Cooldown: |cffffcc000.4s|r (spears), |cffffcc003s|r (net)
+Range: |cffffcc00800|r (spears), |cffffcc00600|r (net)
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00piercing + spell|r
+Damage type: |cffffcc00piercing|r (spear), |cffffcc00spell|r (net)
 }
 
 STRING 2619
-// Items: I09P (Hunter's Spear), Description (Description)
+// Items: I09P (Sitting Ducks), Description (Description)
 {
-Hurls a spear and throws a net at a random enemy unit within range, holding it in place.
+Every 0.4 seconds hurls a spear at the enemy unit within range that has stood still the longest. A spear hits 50% harder for every second its target has stood still, up to 3 times as hard after 4 seconds; enemies attacking your hero stand still too. Every 3 seconds a net goes to the nearest enemy unit that is on the move, damaging it and holding it in place, and flying units are pulled to the ground.
 
-Damage: |cffffcc0020 - 30 (spear) + 40 (net)|r
-Cooldown: |cffffcc002s|r
-Range: |cffffcc00800|r
-Duration: |cffffcc003s|r
+Damage: |cffffcc0015 - 29|r (spear), up to 3 times as much against an enemy that stood still for 4 seconds, |cffffcc0040|r (net)
+Hold duration: |cffffcc003s|r
+Cooldown: |cffffcc000.4s|r (spears), |cffffcc003s|r (net)
+Range: |cffffcc00800|r (spears), |cffffcc00600|r (net)
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00piercing + spell|r
+Damage type: |cffffcc00piercing|r (spear), |cffffcc00spell|r (net)
 }
 
 STRING 2620
-// Items: I09P (Hunter's Spear), Name (Name)
+// Items: I09P (Sitting Ducks), Name (Name)
 {
-Hunter's Spear
+Sitting Ducks
 }
 
 STRING 2621
@@ -20278,5 +20278,11 @@ STRING 3599
 // Units: o007 (Spirit Pup), Name (Name)
 {
 Spirit Pup
+}
+
+STRING 3600
+// Units: u02O (Sitting Ducks Spear), Name (Name)
+{
+Sitting Ducks Spear
 }
 

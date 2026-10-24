@@ -147,7 +147,7 @@ export * from "./Encircle";
 export * from "./Tunneler";
 export * from "./SkyNet";
 export * from "./BearTrap";
-export * from "./HuntersSpear";
+export * from "./SittingDucks";
 export * from "./NetVolley";
 export * from "./SpearVolley";
 export * from "./NightTerror";
