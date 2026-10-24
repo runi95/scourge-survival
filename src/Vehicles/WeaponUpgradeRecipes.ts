@@ -149,7 +149,7 @@ export const weaponRecipes = [
   new Recipes.Beaters(),
   new Recipes.Den(),
   new Recipes.Encircle(),
-  new Recipes.RocketSpears(),
+  new Recipes.Tunneler(),
   new Recipes.NetRockets(),
   new Recipes.SnareMine(),
   new Recipes.HuntersSpear(),

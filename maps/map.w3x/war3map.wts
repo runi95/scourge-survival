@@ -12981,67 +12981,67 @@ Encircle
 }
 
 STRING 2588
-// Items: I09I (Rocket Spears), Tip (Tooltip - Basic)
+// Items: I09I (Tunneler), Tip (Tooltip - Basic)
 {
-Purchase Rocket Spears
+Purchase Tunneler
 }
 
 STRING 2589
-// Items: I09I (Rocket Spears), Description (Description)
+// Items: I09I (Tunneler), Description (Description)
 {
-Hurls spears and fires Cluster Rockets at 2 random enemy units within range.
+Fires spear-tipped goblin rockets that burrow underground. Each one tunnels to a random enemy unit and bursts up beneath it, impaling it and tossing it into the air.
 }
 
 STRING 2590
-// Items: I09I (Rocket Spears), Ubertip (Tooltip - Extended)
+// Items: I09I (Tunneler), Ubertip (Tooltip - Extended)
 {
-Hurls spears and fires Cluster Rockets at 2 random enemy units within range.
+Fires spear-tipped goblin rockets that burrow underground. Each one tunnels to a random enemy unit and bursts up beneath it, impaling it and tossing it into the air.
 }
 
 STRING 2591
-// Items: I09I (Rocket Spears), Name (Name)
+// Items: I09I (Tunneler), Name (Name)
 {
-Rocket Spears
+Tunneler
 }
 
 STRING 2592
-// Items: I09J (Rocket Spears), Tip (Tooltip - Basic)
+// Items: I09J (Tunneler), Tip (Tooltip - Basic)
 {
-Purchase Rocket Spears
+Purchase Tunneler
 }
 
 STRING 2593
-// Items: I09J (Rocket Spears), Ubertip (Tooltip - Extended)
+// Items: I09J (Tunneler), Ubertip (Tooltip - Extended)
 {
-Hurls spears and fires Cluster Rockets at 2 random enemy units within range.
+Every 1.25 seconds fires a spear-tipped goblin rocket that burrows into the ground and tunnels after a random enemy unit within range. It bursts up beneath its target, impaling it and tossing it into the air, stunned, and the blast hurts every enemy unit around it. Flying units are hit from below.
 
-Damage: |cffffcc002 x 20 - 30 (spear) + 2 x 6 x 17.5 (rockets)|r
-Cooldown: |cffffcc002.5s|r
+Damage: |cffffcc00120|r (target), |cffffcc0060|r (around it)
+Stun duration: |cffffcc001s|r
+Area of effect: |cffffcc00175|r
+Cooldown: |cffffcc001.25s|r
 Range: |cffffcc00800|r
-Area of effect: |cffffcc00300|r
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00piercing + spell|r
-Effect: |cffffcc00stuns for 1s|r
+Damage type: |cffffcc00piercing|r (target), |cffffcc00spell|r (around it)
 }
 
 STRING 2594
-// Items: I09J (Rocket Spears), Description (Description)
+// Items: I09J (Tunneler), Description (Description)
 {
-Hurls spears and fires Cluster Rockets at 2 random enemy units within range.
+Every 1.25 seconds fires a spear-tipped goblin rocket that burrows into the ground and tunnels after a random enemy unit within range. It bursts up beneath its target, impaling it and tossing it into the air, stunned, and the blast hurts every enemy unit around it. Flying units are hit from below.
 
-Damage: |cffffcc002 x 20 - 30 (spear) + 2 x 6 x 17.5 (rockets)|r
-Cooldown: |cffffcc002.5s|r
+Damage: |cffffcc00120|r (target), |cffffcc0060|r (around it)
+Stun duration: |cffffcc001s|r
+Area of effect: |cffffcc00175|r
+Cooldown: |cffffcc001.25s|r
 Range: |cffffcc00800|r
-Area of effect: |cffffcc00300|r
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00piercing + spell|r
-Effect: |cffffcc00stuns for 1s|r
+Damage type: |cffffcc00piercing|r (target), |cffffcc00spell|r (around it)
 }
 
 STRING 2595
-// Items: I09J (Rocket Spears), Name (Name)
+// Items: I09J (Tunneler), Name (Name)
 {
-Rocket Spears
+Tunneler
 }
 
 STRING 2596

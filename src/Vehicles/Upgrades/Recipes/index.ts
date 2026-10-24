@@ -144,7 +144,7 @@ export * from "./Unleashed";
 export * from "./Beaters";
 export * from "./Den";
 export * from "./Encircle";
-export * from "./RocketSpears";
+export * from "./Tunneler";
 export * from "./NetRockets";
 export * from "./SnareMine";
 export * from "./HuntersSpear";
