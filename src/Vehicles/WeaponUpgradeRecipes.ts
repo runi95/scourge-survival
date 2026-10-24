@@ -126,7 +126,7 @@ export const weaponRecipes = [
   new Recipes.Skewer(),
   new Recipes.Beatdown(),
   new Recipes.SpiritJavelins(),
-  new Recipes.HarpoonThrow(),
+  new Recipes.PressGang(),
   new Recipes.TwinCatapults(),
   new Recipes.LightningBoulder(),
   new Recipes.EarthquakeShot(),

@@ -11479,65 +11479,69 @@ Spirit Javelin
 }
 
 STRING 2401
-// Items: I088 (Harpoon Throw), Tip (Tooltip - Basic)
+// Items: I088 (Press Gang), Tip (Tooltip - Basic)
 {
-Purchase Harpoon Throw
+Purchase Press Gang
 }
 
 STRING 2402
-// Items: I088 (Harpoon Throw), Description (Description)
+// Items: I088 (Press Gang), Description (Description)
 {
-Throws a harpoon and a net at a random enemy unit within range, holding it in place.
+Javelins wear the enemies down, and a net takes the weakest of them alive: a netted enemy left below a third of its life is captured and fights for you.
 }
 
 STRING 2403
-// Items: I088 (Harpoon Throw), Ubertip (Tooltip - Extended)
+// Items: I088 (Press Gang), Ubertip (Tooltip - Extended)
 {
-Throws a harpoon and a net at a random enemy unit within range, holding it in place.
+Javelins wear the enemies down, and a net takes the weakest of them alive: a netted enemy left below a third of its life is captured and fights for you.
 }
 
 STRING 2404
-// Items: I088 (Harpoon Throw), Name (Name)
+// Items: I088 (Press Gang), Name (Name)
 {
-Harpoon Throw
+Press Gang
 }
 
 STRING 2405
-// Items: I089 (Harpoon Throw), Tip (Tooltip - Basic)
+// Items: I089 (Press Gang), Tip (Tooltip - Basic)
 {
-Purchase Harpoon Throw
+Purchase Press Gang
 }
 
 STRING 2406
-// Items: I089 (Harpoon Throw), Ubertip (Tooltip - Extended)
+// Items: I089 (Press Gang), Ubertip (Tooltip - Extended)
 {
-Throws a harpoon and a net at a random enemy unit within range, holding it in place.
+Throws a javelin at the nearest enemy unit every 1.25 seconds. Every 4 seconds a net goes to the enemy unit within range with the least of its life left, damaging it and holding it in place. An enemy the net leaves below 35% of its life is taken alive: it is captured and fights by your side for 20 seconds with half its health, up to 3 captives at a time.
 
-Damage: |cffffcc0019 - 23 (harpoon) + 40 (net)|r
-Cooldown: |cffffcc002s|r
-Range: |cffffcc00450|r
-Duration: |cffffcc003s|r
+Damage: |cffffcc0034 - 39|r (javelin), |cffffcc0060|r (net)
+Captures: netted enemies left below |cffffcc0035%|r life
+Captives: up to |cffffcc003|r, |cffffcc0020s|r each
+Hold duration: |cffffcc003s|r
+Cooldown: |cffffcc001.25s|r (javelins), |cffffcc004s|r (net)
+Range: |cffffcc00450|r (javelins), |cffffcc00600|r (net)
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00piercing + spell|r
+Damage type: |cffffcc00piercing|r (javelin), |cffffcc00spell|r (net)
 }
 
 STRING 2407
-// Items: I089 (Harpoon Throw), Description (Description)
+// Items: I089 (Press Gang), Description (Description)
 {
-Throws a harpoon and a net at a random enemy unit within range, holding it in place.
+Throws a javelin at the nearest enemy unit every 1.25 seconds. Every 4 seconds a net goes to the enemy unit within range with the least of its life left, damaging it and holding it in place. An enemy the net leaves below 35% of its life is taken alive: it is captured and fights by your side for 20 seconds with half its health, up to 3 captives at a time.
 
-Damage: |cffffcc0019 - 23 (harpoon) + 40 (net)|r
-Cooldown: |cffffcc002s|r
-Range: |cffffcc00450|r
-Duration: |cffffcc003s|r
+Damage: |cffffcc0034 - 39|r (javelin), |cffffcc0060|r (net)
+Captures: netted enemies left below |cffffcc0035%|r life
+Captives: up to |cffffcc003|r, |cffffcc0020s|r each
+Hold duration: |cffffcc003s|r
+Cooldown: |cffffcc001.25s|r (javelins), |cffffcc004s|r (net)
+Range: |cffffcc00450|r (javelins), |cffffcc00600|r (net)
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00piercing + spell|r
+Damage type: |cffffcc00piercing|r (javelin), |cffffcc00spell|r (net)
 }
 
 STRING 2408
-// Items: I089 (Harpoon Throw), Name (Name)
+// Items: I089 (Press Gang), Name (Name)
 {
-Harpoon Throw
+Press Gang
 }
 
 STRING 2409

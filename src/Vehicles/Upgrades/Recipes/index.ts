@@ -121,7 +121,7 @@ export * from "./Dragnet";
 export * from "./Skewer";
 export * from "./Beatdown";
 export * from "./SpiritJavelins";
-export * from "./HarpoonThrow";
+export * from "./PressGang";
 export * from "./TwinCatapults";
 export * from "./LightningBoulder";
 export * from "./EarthquakeShot";
