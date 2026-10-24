@@ -10845,65 +10845,67 @@ Piledriver
 }
 
 STRING 2320
-// Items: I07O (Spirit Lodge), Tip (Tooltip - Basic)
+// Items: I07O (Iron Wolf), Tip (Tooltip - Basic)
 {
-Purchase Spirit Lodge
+Purchase Iron Wolf
 }
 
 STRING 2321
-// Items: I07O (Spirit Lodge), Description (Description)
+// Items: I07O (Iron Wolf), Description (Description)
 {
-Calls 3 Shadow Wolves every 20 seconds that fight by your side. They strike critically and turn invisible.
+Goblins bolt a feral spirit into a clockwork wolf that fights by your side. Every enemy it kills makes it bigger and stronger. When it is destroyed it blows up, and its spirit is bolted into a new wolf with half its strength.
 }
 
 STRING 2322
-// Items: I07O (Spirit Lodge), Ubertip (Tooltip - Extended)
+// Items: I07O (Iron Wolf), Ubertip (Tooltip - Extended)
 {
-Calls 3 Shadow Wolves every 20 seconds that fight by your side. They strike critically and turn invisible.
+Goblins bolt a feral spirit into a clockwork wolf that fights by your side. Every enemy it kills makes it bigger and stronger. When it is destroyed it blows up, and its spirit is bolted into a new wolf with half its strength.
 }
 
 STRING 2323
-// Items: I07O (Spirit Lodge), Name (Name)
+// Items: I07O (Iron Wolf), Name (Name)
 {
-Spirit Lodge
+Iron Wolf
 }
 
 STRING 2324
-// Items: I07P (Spirit Lodge), Tip (Tooltip - Basic)
+// Items: I07P (Iron Wolf), Tip (Tooltip - Basic)
 {
-Purchase Spirit Lodge
+Purchase Iron Wolf
 }
 
 STRING 2325
-// Items: I07P (Spirit Lodge), Ubertip (Tooltip - Extended)
+// Items: I07P (Iron Wolf), Ubertip (Tooltip - Extended)
 {
-Calls 3 Shadow Wolves every 20 seconds that fight by your side. They strike critically and turn invisible.
+Goblins bolt a feral spirit into a clockwork Iron Wolf that fights by your side until it is destroyed. Every enemy unit it kills makes it bigger, and adds 4 damage and 40 health to it, up to 30 kills. Its bites sometimes deal critical damage. When it is destroyed it blows up, hurting every enemy ground unit around it more the more it had grown, and 10 seconds later its spirit is bolted into a new wolf, keeping half its kills.
 
-Damage: |cffffcc003 x 21 - 22|r
-Cooldown: |cffffcc0020s|r
-Health: |cffffcc00500|r
-Duration: |cffffcc0015s|r
+Damage: |cffffcc0050|r, |cffffcc00+4|r per kill (up to |cffffcc00+120|r)
+Critical strike: |cffffcc0015% chance for x2 damage|r
+Health: |cffffcc00800|r, |cffffcc00+40|r per kill
+Explosion: |cffffcc00100 + 10|r per kill, |cffffcc00300|r area
+Cooldown: |cffffcc0010s|r (rebuilt)
 Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00normal|r
+Damage type: |cffffcc00normal|r (bite), |cffffcc00spell|r (explosion)
 }
 
 STRING 2326
-// Items: I07P (Spirit Lodge), Description (Description)
+// Items: I07P (Iron Wolf), Description (Description)
 {
-Calls 3 Shadow Wolves every 20 seconds that fight by your side. They strike critically and turn invisible.
+Goblins bolt a feral spirit into a clockwork Iron Wolf that fights by your side until it is destroyed. Every enemy unit it kills makes it bigger, and adds 4 damage and 40 health to it, up to 30 kills. Its bites sometimes deal critical damage. When it is destroyed it blows up, hurting every enemy ground unit around it more the more it had grown, and 10 seconds later its spirit is bolted into a new wolf, keeping half its kills.
 
-Damage: |cffffcc003 x 21 - 22|r
-Cooldown: |cffffcc0020s|r
-Health: |cffffcc00500|r
-Duration: |cffffcc0015s|r
+Damage: |cffffcc0050|r, |cffffcc00+4|r per kill (up to |cffffcc00+120|r)
+Critical strike: |cffffcc0015% chance for x2 damage|r
+Health: |cffffcc00800|r, |cffffcc00+40|r per kill
+Explosion: |cffffcc00100 + 10|r per kill, |cffffcc00300|r area
+Cooldown: |cffffcc0010s|r (rebuilt)
 Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00normal|r
+Damage type: |cffffcc00normal|r (bite), |cffffcc00spell|r (explosion)
 }
 
 STRING 2327
-// Items: I07P (Spirit Lodge), Name (Name)
+// Items: I07P (Iron Wolf), Name (Name)
 {
-Spirit Lodge
+Iron Wolf
 }
 
 STRING 2328
@@ -20216,5 +20218,11 @@ STRING 3589
 // Abilities: A05G (Piledriver), Name (Name)
 {
 Piledriver
+}
+
+STRING 3590
+// Units: o005 (Iron Wolf), Name (Name)
+{
+Iron Wolf
 }
 

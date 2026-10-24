@@ -111,7 +111,7 @@ export * from "./HammerMine";
 export * from "./TaurenTotem";
 export * from "./ForwardOutpost";
 export * from "./Piledriver";
-export * from "./SpiritLodge";
+export * from "./IronWolf";
 export * from "./HeadhunterHut";
 export * from "./RaiderCamp";
 export * from "./SeismicBoulder";
