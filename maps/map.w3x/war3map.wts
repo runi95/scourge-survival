@@ -10101,67 +10101,67 @@ Thunder Rockets
 }
 
 STRING 2237
-// Items: I074 (Rocket Hammers), Tip (Tooltip - Basic)
+// Items: I074 (Pinwheel), Tip (Tooltip - Basic)
 {
-Purchase Rocket Hammers
+Purchase Pinwheel
 }
 
 STRING 2238
-// Items: I074 (Rocket Hammers), Description (Description)
+// Items: I074 (Pinwheel), Description (Description)
 {
-Fires Cluster Rockets and a magical hammer at a random enemy unit within range.
+Throws a storm hammer with goblin rockets strapped to its head into the largest enemy group. The rockets spin it round like a pinwheel, knocking down every enemy it strikes and spraying sparks, until they burn out and the hammer comes crashing down.
 }
 
 STRING 2239
-// Items: I074 (Rocket Hammers), Ubertip (Tooltip - Extended)
+// Items: I074 (Pinwheel), Ubertip (Tooltip - Extended)
 {
-Fires Cluster Rockets and a magical hammer at a random enemy unit within range.
+Throws a storm hammer with goblin rockets strapped to its head into the largest enemy group. The rockets spin it round like a pinwheel, knocking down every enemy it strikes and spraying sparks, until they burn out and the hammer comes crashing down.
 }
 
 STRING 2240
-// Items: I074 (Rocket Hammers), Name (Name)
+// Items: I074 (Pinwheel), Name (Name)
 {
-Rocket Hammers
+Pinwheel
 }
 
 STRING 2241
-// Items: I075 (Rocket Hammers), Tip (Tooltip - Basic)
+// Items: I075 (Pinwheel), Tip (Tooltip - Basic)
 {
-Purchase Rocket Hammers
+Purchase Pinwheel
 }
 
 STRING 2242
-// Items: I075 (Rocket Hammers), Ubertip (Tooltip - Extended)
+// Items: I075 (Pinwheel), Ubertip (Tooltip - Extended)
 {
-Fires Cluster Rockets and a magical hammer at a random enemy unit within range.
+Every 4 seconds throws a storm hammer with goblin rockets strapped to it into the largest group of enemy units within 700. For 4 seconds the rockets spin it round in a circle there, striking and stunning every enemy unit it hits, at most once a second each, and spraying sparks at enemy units within 400 of it. Then the rockets burn out and the hammer crashes down, hurting every enemy unit around it.
 
-Damage: |cffffcc006 x 17.5 (rockets) + 100 (hammer)|r
-Cooldown: |cffffcc002s|r
+Damage: |cffffcc0025|r (strike), |cffffcc0015|r (spark), |cffffcc0060|r (crash)
+Stun duration: |cffffcc000.5s|r (strike)
+Cooldown: |cffffcc004s|r
 Range: |cffffcc00700|r
-Area of effect: |cffffcc00300|r
-Stun duration: |cffffcc001s|r
+Area of effect: |cffffcc00220|r (spinning), |cffffcc00200|r (crash)
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 2243
-// Items: I075 (Rocket Hammers), Description (Description)
+// Items: I075 (Pinwheel), Description (Description)
 {
-Fires Cluster Rockets and a magical hammer at a random enemy unit within range.
+Every 4 seconds throws a storm hammer with goblin rockets strapped to it into the largest group of enemy units within 700. For 4 seconds the rockets spin it round in a circle there, striking and stunning every enemy unit it hits, at most once a second each, and spraying sparks at enemy units within 400 of it. Then the rockets burn out and the hammer crashes down, hurting every enemy unit around it.
 
-Damage: |cffffcc006 x 17.5 (rockets) + 100 (hammer)|r
-Cooldown: |cffffcc002s|r
+Damage: |cffffcc0025|r (strike), |cffffcc0015|r (spark), |cffffcc0060|r (crash)
+Stun duration: |cffffcc000.5s|r (strike)
+Cooldown: |cffffcc004s|r
 Range: |cffffcc00700|r
-Area of effect: |cffffcc00300|r
-Stun duration: |cffffcc001s|r
+Area of effect: |cffffcc00220|r (spinning), |cffffcc00200|r (crash)
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 2244
-// Items: I075 (Rocket Hammers), Name (Name)
+// Items: I075 (Pinwheel), Name (Name)
 {
-Rocket Hammers
+Pinwheel
 }
 
 STRING 2245
