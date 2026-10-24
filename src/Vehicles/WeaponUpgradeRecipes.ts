@@ -137,7 +137,7 @@ export const weaponRecipes = [
   new Recipes.ChainShot(),
   new Recipes.Discharge(),
   new Recipes.ThunderFangs(),
-  new Recipes.LightningNet(),
+  new Recipes.LiveWire(),
   new Recipes.SeismicStomp(),
   new Recipes.SpiritStomp(),
   new Recipes.RocketStomp(),

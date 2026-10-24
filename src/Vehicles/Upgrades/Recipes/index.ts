@@ -132,7 +132,7 @@ export * from "./Counterweight";
 export * from "./ChainShot";
 export * from "./Discharge";
 export * from "./ThunderFangs";
-export * from "./LightningNet";
+export * from "./LiveWire";
 export * from "./SeismicStomp";
 export * from "./SpiritStomp";
 export * from "./RocketStomp";

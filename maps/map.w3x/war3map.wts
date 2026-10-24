@@ -12189,69 +12189,67 @@ Thunder Fangs
 }
 
 STRING 2489
-// Items: I08U (Lightning Net), Tip (Tooltip - Basic)
+// Items: I08U (Live Wire), Tip (Tooltip - Basic)
 {
-Purchase Lightning Net
+Purchase Live Wire
 }
 
 STRING 2490
-// Items: I08U (Lightning Net), Description (Description)
+// Items: I08U (Live Wire), Description (Description)
 {
-Throws a net at a random enemy unit within range, holding it in place, and strikes it with a chain of lightning.
+Throws a crackling net at the enemy standing in the thickest crowd. While it is held, the netted enemy is a live wire: it burns, and lightning arcs from it into every enemy around it.
 }
 
 STRING 2491
-// Items: I08U (Lightning Net), Ubertip (Tooltip - Extended)
+// Items: I08U (Live Wire), Ubertip (Tooltip - Extended)
 {
-Throws a net at a random enemy unit within range, holding it in place, and strikes it with a chain of lightning.
+Throws a crackling net at the enemy standing in the thickest crowd. While it is held, the netted enemy is a live wire: it burns, and lightning arcs from it into every enemy around it.
 }
 
 STRING 2492
-// Items: I08U (Lightning Net), Name (Name)
+// Items: I08U (Live Wire), Name (Name)
 {
-Lightning Net
+Live Wire
 }
 
 STRING 2493
-// Items: I08V (Lightning Net), Tip (Tooltip - Basic)
+// Items: I08V (Live Wire), Tip (Tooltip - Basic)
 {
-Purchase Lightning Net
+Purchase Live Wire
 }
 
 STRING 2494
-// Items: I08V (Lightning Net), Ubertip (Tooltip - Extended)
+// Items: I08V (Live Wire), Ubertip (Tooltip - Extended)
 {
-Throws a net at a random enemy unit within range, holding it in place, and strikes it with a chain of lightning.
+Every 3 seconds throws a crackling net at the enemy unit within range with the most enemies around it, holding it in place; flying units are pulled to the ground. For as long as it is held, the netted enemy is a live wire: every 0.5 seconds it is shocked, and lightning arcs from it into every other enemy unit within 300 of it.
 
-Damage: |cffffcc0040 (net) + 180 (lightning)|r
-Damage reduction jump: |cffffcc00-15%|r
-Cooldown: |cffffcc002.5s|r
-Range: |cffffcc00500|r
-Area of effect: |cffffcc00500|r
-Duration: |cffffcc003s|r
+Damage: |cffffcc0040|r (net), |cffffcc0045|r to the netted enemy and |cffffcc0050|r to every enemy around it every 0.5s
+Hold duration: |cffffcc003s|r
+Area of effect: |cffffcc00300|r around the netted enemy
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00600|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 2495
-// Items: I08V (Lightning Net), Description (Description)
+// Items: I08V (Live Wire), Description (Description)
 {
-Throws a net at a random enemy unit within range, holding it in place, and strikes it with a chain of lightning.
+Every 3 seconds throws a crackling net at the enemy unit within range with the most enemies around it, holding it in place; flying units are pulled to the ground. For as long as it is held, the netted enemy is a live wire: every 0.5 seconds it is shocked, and lightning arcs from it into every other enemy unit within 300 of it.
 
-Damage: |cffffcc0040 (net) + 180 (lightning)|r
-Damage reduction jump: |cffffcc00-15%|r
-Cooldown: |cffffcc002.5s|r
-Range: |cffffcc00500|r
-Area of effect: |cffffcc00500|r
-Duration: |cffffcc003s|r
+Damage: |cffffcc0040|r (net), |cffffcc0045|r to the netted enemy and |cffffcc0050|r to every enemy around it every 0.5s
+Hold duration: |cffffcc003s|r
+Area of effect: |cffffcc00300|r around the netted enemy
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00600|r
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 2496
-// Items: I08V (Lightning Net), Name (Name)
+// Items: I08V (Live Wire), Name (Name)
 {
-Lightning Net
+Live Wire
 }
 
 STRING 2497
