@@ -109,7 +109,7 @@ export const weaponRecipes = [
   new Recipes.Pinwheel(),
   new Recipes.Avatar(),
   new Recipes.MountainKing(),
-  new Recipes.HammerStorm(),
+  new Recipes.SkyHammer(),
   new Recipes.FrostMines(),
   new Recipes.ThunderMine(),
   new Recipes.HammerMine(),
