@@ -3936,16 +3936,10 @@ STRING 1250
 Machine Gunner
 }
 
-STRING 1251
-// Units: h00B (Call to Arms), Name (Name)
-{
-Call to Arms
-}
-
 STRING 1252
-// Items: I02P (Call to Arms), Name (Name)
+// Items: I02P (Airfield), Name (Name)
 {
-Call to Arms
+Airfield
 }
 
 STRING 1253
@@ -3955,61 +3949,59 @@ STRING 1253
 }
 
 STRING 1254
-// Items: I02P (Call to Arms), Tip (Tooltip - Basic)
+// Items: I02P (Airfield), Tip (Tooltip - Basic)
 {
-Purchase Call to Arms
+Purchase Airfield
 }
 
 STRING 1255
-// Items: I02P (Call to Arms), Description (Description)
+// Items: I02P (Airfield), Description (Description)
 {
-Summons several air support gunners to your aid.
+Goblins lay out an airfield next to your hero. Flying Machines take off from it one after another, fly sorties against the enemies farthest from your hero, and come back to land and rearm.
 }
 
 STRING 1256
-// Items: I02P (Call to Arms), Ubertip (Tooltip - Extended)
+// Items: I02P (Airfield), Ubertip (Tooltip - Extended)
 {
-Summons several air support gunners to your aid.
+Goblins lay out an airfield next to your hero. Flying Machines take off from it one after another, fly sorties against the enemies farthest from your hero, and come back to land and rearm.
 }
 
 STRING 1257
-// Items: I02Q (Call to Arms), Name (Name)
+// Items: I02Q (Airfield), Name (Name)
 {
-Call to Arms
+Airfield
 }
 
 STRING 1258
-// Items: I02Q (Call to Arms), Tip (Tooltip - Basic)
+// Items: I02Q (Airfield), Tip (Tooltip - Basic)
 {
-Purchase Call to Arms
+Purchase Airfield
 }
 
 STRING 1259
-// Items: I02Q (Call to Arms), Ubertip (Tooltip - Extended)
+// Items: I02Q (Airfield), Ubertip (Tooltip - Extended)
 {
-Summons several air support gunners to your aid.
+Goblins lay out an airfield next to your hero, and move it up to your hero again every 30 seconds. It builds a Flying Machine every 4 seconds, up to 4. A Flying Machine on the field takes off for the farthest enemy unit within 1000 of your hero that no other machine is after, bombs it and every enemy unit around it, then flies back to land on the airfield and rearms for 1 second.
 
-Damage: |cffffcc0011|r
-Cooldown: |cffffcc0060s|r
+Damage: |cffffcc0090|r (bomb)
+Area of effect: |cffffcc00200|r (bomb)
+Range: |cffffcc001000|r
+Cooldown: |cffffcc004s|r (Flying Machine), |cffffcc001s|r (rearming), |cffffcc0030s|r (moving the airfield)
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00spell|r
+Damage type: |cffffcc00siege|r
 }
 
 STRING 1260
-// Items: I02Q (Call to Arms), Description (Description)
+// Items: I02Q (Airfield), Description (Description)
 {
-Summons several air support gunners to your aid.
+Goblins lay out an airfield next to your hero, and move it up to your hero again every 30 seconds. It builds a Flying Machine every 4 seconds, up to 4. A Flying Machine on the field takes off for the farthest enemy unit within 1000 of your hero that no other machine is after, bombs it and every enemy unit around it, then flies back to land on the airfield and rearms for 1 second.
 
-Damage: |cffffcc0011|r
-Cooldown: |cffffcc0060s|r
+Damage: |cffffcc0090|r (bomb)
+Area of effect: |cffffcc00200|r (bomb)
+Range: |cffffcc001000|r
+Cooldown: |cffffcc004s|r (Flying Machine), |cffffcc001s|r (rearming), |cffffcc0030s|r (moving the airfield)
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00spell|r
-}
-
-STRING 1261
-// Abilities: A00O (Call to Arms), Name (Name)
-{
-Call to Arms
+Damage type: |cffffcc00siege|r
 }
 
 STRING 1262
@@ -19814,12 +19806,6 @@ STRING 3526
 (Ghoul Pit)
 }
 
-STRING 3527
-// Abilities: A00O (Call to Arms), EditorSuffix (Editor Suffix)
-{
-(Locust Swarm)
-}
-
 STRING 3528
 // Abilities: A04T (Frost Rockets (Nova)), Name (Name)
 {
@@ -20254,5 +20240,17 @@ STRING 3601
 // Units: n01U (Spotter Goblin), Name (Name)
 {
 Spotter Goblin
+}
+
+STRING 3602
+// Units: n01V (Airfield), Name (Name)
+{
+Airfield
+}
+
+STRING 3603
+// Units: n01W (Sortie Flying Machine), Name (Name)
+{
+Sortie Flying Machine
 }
 

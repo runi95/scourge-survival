@@ -31,7 +31,7 @@ export * from "./ExtraLargeRifle";
 export * from "./MassRifles";
 export * from "./ElementalTwins";
 export * from "./MachineGunner";
-export * from "./CallToArms";
+export * from "./Airfield";
 export * from "./KamikazeGyros";
 export * from "./GryphonAviary";
 export * from "./Marksman";

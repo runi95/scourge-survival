@@ -36,7 +36,7 @@ export const weaponRecipes = [
   new Recipes.MassRifles(),
   new Recipes.ElementalTwins(),
   new Recipes.MachineGunner(),
-  new Recipes.CallToArms(),
+  new Recipes.Airfield(),
   new Recipes.KamikazeGyros(),
   new Recipes.GryphonAviary(),
   new Recipes.Marksman(),
