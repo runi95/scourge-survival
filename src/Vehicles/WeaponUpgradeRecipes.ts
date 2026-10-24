@@ -134,7 +134,7 @@ export const weaponRecipes = [
   new Recipes.Payload(),
   new Recipes.KillZone(),
   new Recipes.Counterweight(),
-  new Recipes.NetCatapult(),
+  new Recipes.ChainShot(),
   new Recipes.ThunderStomp(),
   new Recipes.StormWolves(),
   new Recipes.LightningNet(),

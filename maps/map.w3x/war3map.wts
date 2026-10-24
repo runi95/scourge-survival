@@ -11995,67 +11995,67 @@ Counterweight
 }
 
 STRING 2465
-// Items: I08O (Net Catapult), Tip (Tooltip - Basic)
+// Items: I08O (Chain Shot), Tip (Tooltip - Basic)
 {
-Purchase Net Catapult
+Purchase Chain Shot
 }
 
 STRING 2466
-// Items: I08O (Net Catapult), Description (Description)
+// Items: I08O (Chain Shot), Description (Description)
 {
-Lobs a boulder at a random enemy unit within range and throws a net at it, holding it in place.
+Lobs two boulders chained together. They whirl through the enemies on their way, and every enemy the chain sweeps is tangled up in it and held in place, before both boulders crash down.
 }
 
 STRING 2467
-// Items: I08O (Net Catapult), Ubertip (Tooltip - Extended)
+// Items: I08O (Chain Shot), Ubertip (Tooltip - Extended)
 {
-Lobs a boulder at a random enemy unit within range and throws a net at it, holding it in place.
+Lobs two boulders chained together. They whirl through the enemies on their way, and every enemy the chain sweeps is tangled up in it and held in place, before both boulders crash down.
 }
 
 STRING 2468
-// Items: I08O (Net Catapult), Name (Name)
+// Items: I08O (Chain Shot), Name (Name)
 {
-Net Catapult
+Chain Shot
 }
 
 STRING 2469
-// Items: I08P (Net Catapult), Tip (Tooltip - Basic)
+// Items: I08P (Chain Shot), Tip (Tooltip - Basic)
 {
-Purchase Net Catapult
+Purchase Chain Shot
 }
 
 STRING 2470
-// Items: I08P (Net Catapult), Ubertip (Tooltip - Extended)
+// Items: I08P (Chain Shot), Ubertip (Tooltip - Extended)
 {
-Lobs a boulder at a random enemy unit within range and throws a net at it, holding it in place.
+Every 3 seconds lobs two boulders chained together towards a random enemy ground unit within range. The chain whirls through the enemies on its way, 250 wide: every enemy unit it sweeps is hurt, tangled up in it and held in place, and flying units are pulled to the ground. At the end of its flight both boulders crash down, crushing every enemy ground unit around them.
 
-Damage: |cffffcc0045 (boulder) + 40 (net)|r
+Damage: |cffffcc0065|r (chain), |cffffcc0070|r (each boulder)
+Hold duration: |cffffcc003s|r
+Area of effect: |cffffcc00250|r wide (chain), |cffffcc00150|r (boulders)
 Cooldown: |cffffcc003s|r
-Range: |cffffcc00600|r
-Area of effect: |cffffcc00150|r
-Duration: |cffffcc003s|r
-Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00siege + spell|r
+Range: |cffffcc00800|r
+Targets: |cffffcc00air & ground|r (chain), |cffffcc00ground|r (boulders)
+Damage type: |cffffcc00spell|r (chain), |cffffcc00siege|r (boulders)
 }
 
 STRING 2471
-// Items: I08P (Net Catapult), Description (Description)
+// Items: I08P (Chain Shot), Description (Description)
 {
-Lobs a boulder at a random enemy unit within range and throws a net at it, holding it in place.
+Every 3 seconds lobs two boulders chained together towards a random enemy ground unit within range. The chain whirls through the enemies on its way, 250 wide: every enemy unit it sweeps is hurt, tangled up in it and held in place, and flying units are pulled to the ground. At the end of its flight both boulders crash down, crushing every enemy ground unit around them.
 
-Damage: |cffffcc0045 (boulder) + 40 (net)|r
+Damage: |cffffcc0065|r (chain), |cffffcc0070|r (each boulder)
+Hold duration: |cffffcc003s|r
+Area of effect: |cffffcc00250|r wide (chain), |cffffcc00150|r (boulders)
 Cooldown: |cffffcc003s|r
-Range: |cffffcc00600|r
-Area of effect: |cffffcc00150|r
-Duration: |cffffcc003s|r
-Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00siege + spell|r
+Range: |cffffcc00800|r
+Targets: |cffffcc00air & ground|r (chain), |cffffcc00ground|r (boulders)
+Damage type: |cffffcc00spell|r (chain), |cffffcc00siege|r (boulders)
 }
 
 STRING 2472
-// Items: I08P (Net Catapult), Name (Name)
+// Items: I08P (Chain Shot), Name (Name)
 {
-Net Catapult
+Chain Shot
 }
 
 STRING 2473

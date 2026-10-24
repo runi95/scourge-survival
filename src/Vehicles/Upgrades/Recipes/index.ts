@@ -129,7 +129,7 @@ export * from "./BloodScent";
 export * from "./Payload";
 export * from "./KillZone";
 export * from "./Counterweight";
-export * from "./NetCatapult";
+export * from "./ChainShot";
 export * from "./ThunderStomp";
 export * from "./StormWolves";
 export * from "./LightningNet";
