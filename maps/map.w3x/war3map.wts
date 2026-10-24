@@ -9383,65 +9383,69 @@ Hammer and Anvil
 }
 
 STRING 2146
-// Items: I06I (Eternal Winter), Tip (Tooltip - Basic)
+// Items: I06I (Permafrost), Tip (Tooltip - Basic)
 {
-Purchase Eternal Winter
+Purchase Permafrost
 }
 
 STRING 2147
-// Items: I06I (Eternal Winter), Description (Description)
+// Items: I06I (Permafrost), Description (Description)
 {
-Calls down a Blizzard on 3 random enemy units within range.
+Calls Blizzards down on the largest enemy groups, and every Blizzard leaves the ground frozen behind it. Enemies on frozen ground are slowed, and a Blizzard that falls on frozen ground hits twice as hard and spreads the frost wider.
 }
 
 STRING 2148
-// Items: I06I (Eternal Winter), Ubertip (Tooltip - Extended)
+// Items: I06I (Permafrost), Ubertip (Tooltip - Extended)
 {
-Calls down a Blizzard on 3 random enemy units within range.
+Calls Blizzards down on the largest enemy groups, and every Blizzard leaves the ground frozen behind it. Enemies on frozen ground are slowed, and a Blizzard that falls on frozen ground hits twice as hard and spreads the frost wider.
 }
 
 STRING 2149
-// Items: I06I (Eternal Winter), Name (Name)
+// Items: I06I (Permafrost), Name (Name)
 {
-Eternal Winter
+Permafrost
 }
 
 STRING 2150
-// Items: I06J (Eternal Winter), Tip (Tooltip - Basic)
+// Items: I06J (Permafrost), Tip (Tooltip - Basic)
 {
-Purchase Eternal Winter
+Purchase Permafrost
 }
 
 STRING 2151
-// Items: I06J (Eternal Winter), Ubertip (Tooltip - Extended)
+// Items: I06J (Permafrost), Ubertip (Tooltip - Extended)
 {
-Calls down a Blizzard on 3 random enemy units within range.
+Every 3 seconds calls down a Blizzard on the largest group of enemy units within 800: 6 waves of ice shards, one every 0.5 seconds, hurting every enemy unit under it. It leaves the ground frozen for 20 seconds, and every enemy unit on frozen ground is slowed. A Blizzard that falls on frozen ground hits twice as hard, and the frost there spreads wider and lasts another 20 seconds, up to twice as wide.
 
-Damage: |cffffcc003 x 6 x 50|r
-Cooldown: |cffffcc006s|r
-Range: |cffffcc00900|r
-Area of effect: |cffffcc00200|r
+Damage: |cffffcc006 x 40|r, |cffffcc006 x 80|r on frozen ground
+Slow: |cffffcc00-50% movement speed|r on frozen ground
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00800|r
+Area of effect: |cffffcc00200|r (Blizzard), |cffffcc00200 - 400|r (frozen ground)
+Duration: |cffffcc0020s|r (frozen ground)
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 2152
-// Items: I06J (Eternal Winter), Description (Description)
+// Items: I06J (Permafrost), Description (Description)
 {
-Calls down a Blizzard on 3 random enemy units within range.
+Every 3 seconds calls down a Blizzard on the largest group of enemy units within 800: 6 waves of ice shards, one every 0.5 seconds, hurting every enemy unit under it. It leaves the ground frozen for 20 seconds, and every enemy unit on frozen ground is slowed. A Blizzard that falls on frozen ground hits twice as hard, and the frost there spreads wider and lasts another 20 seconds, up to twice as wide.
 
-Damage: |cffffcc003 x 6 x 50|r
-Cooldown: |cffffcc006s|r
-Range: |cffffcc00900|r
-Area of effect: |cffffcc00200|r
+Damage: |cffffcc006 x 40|r, |cffffcc006 x 80|r on frozen ground
+Slow: |cffffcc00-50% movement speed|r on frozen ground
+Cooldown: |cffffcc003s|r
+Range: |cffffcc00800|r
+Area of effect: |cffffcc00200|r (Blizzard), |cffffcc00200 - 400|r (frozen ground)
+Duration: |cffffcc0020s|r (frozen ground)
 Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 2153
-// Items: I06J (Eternal Winter), Name (Name)
+// Items: I06J (Permafrost), Name (Name)
 {
-Eternal Winter
+Permafrost
 }
 
 STRING 2154
@@ -20248,5 +20252,11 @@ STRING 3610
 // Abilities: A05L (Riptide Slow), Name (Name)
 {
 Riptide Slow
+}
+
+STRING 3611
+// Abilities: A05M (Permafrost Slow), Name (Name)
+{
+Permafrost Slow
 }
 

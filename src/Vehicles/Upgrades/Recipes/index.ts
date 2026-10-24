@@ -90,7 +90,7 @@ export * from "./GryphonRoost";
 export * from "./IceElemental";
 export * from "./Riptide";
 export * from "./HammerAndAnvil";
-export * from "./EternalWinter";
+export * from "./Permafrost";
 export * from "./Frostfire";
 export * from "./FrostbiteRifle";
 export * from "./IceRockets";

@@ -95,7 +95,7 @@ export const weaponRecipes = [
   new Recipes.IceElemental(),
   new Recipes.Riptide(),
   new Recipes.HammerAndAnvil(),
-  new Recipes.EternalWinter(),
+  new Recipes.Permafrost(),
   new Recipes.Frostfire(),
   new Recipes.FrostbiteRifle(),
   new Recipes.IceRockets(),
