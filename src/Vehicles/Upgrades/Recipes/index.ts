@@ -125,7 +125,7 @@ export * from "./PressGang";
 export * from "./TwinCatapults";
 export * from "./BallLightning";
 export * from "./Landslide";
-export * from "./WolfCatapult";
+export * from "./BloodScent";
 export * from "./RocketCatapult";
 export * from "./MineLauncher";
 export * from "./SiegeSpears";

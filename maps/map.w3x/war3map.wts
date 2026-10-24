@@ -11735,69 +11735,71 @@ Landslide
 }
 
 STRING 2433
-// Items: I08G (Wolf Catapult), Tip (Tooltip - Basic)
+// Items: I08G (Blood Scent), Tip (Tooltip - Basic)
 {
-Purchase Wolf Catapult
+Purchase Blood Scent
 }
 
 STRING 2434
-// Items: I08G (Wolf Catapult), Description (Description)
+// Items: I08G (Blood Scent), Description (Description)
 {
-Lobs a boulder at a random enemy unit within range, and a Spirit Wolf leaps out where it lands.
+Lobs flaming boulders that leave every enemy they crush bleeding. Two Spirit Wolves follow the scent: they always hunt the nearest bleeding enemy, and bite it twice as hard.
 }
 
 STRING 2435
-// Items: I08G (Wolf Catapult), Ubertip (Tooltip - Extended)
+// Items: I08G (Blood Scent), Ubertip (Tooltip - Extended)
 {
-Lobs a boulder at a random enemy unit within range, and a Spirit Wolf leaps out where it lands.
+Lobs flaming boulders that leave every enemy they crush bleeding. Two Spirit Wolves follow the scent: they always hunt the nearest bleeding enemy, and bite it twice as hard.
 }
 
 STRING 2436
-// Items: I08G (Wolf Catapult), Name (Name)
+// Items: I08G (Blood Scent), Name (Name)
 {
-Wolf Catapult
+Blood Scent
 }
 
 STRING 2437
-// Items: I08H (Wolf Catapult), Tip (Tooltip - Basic)
+// Items: I08H (Blood Scent), Tip (Tooltip - Basic)
 {
-Purchase Wolf Catapult
+Purchase Blood Scent
 }
 
 STRING 2438
-// Items: I08H (Wolf Catapult), Ubertip (Tooltip - Extended)
+// Items: I08H (Blood Scent), Ubertip (Tooltip - Extended)
 {
-Lobs a boulder at a random enemy unit within range, and a Spirit Wolf leaps out where it lands.
+Every 2.5 seconds lobs a flaming boulder at a random enemy ground unit within range, crushing everything it lands on. Every enemy it crushes bleeds for 5 seconds. Every 30 seconds 2 Spirit Wolves come to fight by your side. They follow the scent of blood: they always go for the nearest bleeding enemy, and their bites on a bleeding enemy deal double damage.
 
-Damage: |cffffcc0045 (boulder) + 16 - 17 (wolf)|r
-Cooldown: |cffffcc004s|r
-Range: |cffffcc00800|r
+Damage: |cffffcc0058 - 60|r (boulder), |cffffcc0046 - 47|r (bite), x2 on bleeding enemies
+Critical strike: |cffffcc0015% chance for x2 damage|r
+Bleeding: |cffffcc005s|r
+Cooldown: |cffffcc002.5s|r (boulder), |cffffcc0030s|r (wolves)
 Area of effect: |cffffcc00150|r
-Health: |cffffcc00350|r
-Duration: |cffffcc0010s|r
+Range: |cffffcc00800|r
+Wolves: |cffffcc00300|r health, |cffffcc0025s|r
 Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00siege + normal|r
+Damage type: |cffffcc00siege|r (boulder), |cffffcc00normal|r (bite)
 }
 
 STRING 2439
-// Items: I08H (Wolf Catapult), Description (Description)
+// Items: I08H (Blood Scent), Description (Description)
 {
-Lobs a boulder at a random enemy unit within range, and a Spirit Wolf leaps out where it lands.
+Every 2.5 seconds lobs a flaming boulder at a random enemy ground unit within range, crushing everything it lands on. Every enemy it crushes bleeds for 5 seconds. Every 30 seconds 2 Spirit Wolves come to fight by your side. They follow the scent of blood: they always go for the nearest bleeding enemy, and their bites on a bleeding enemy deal double damage.
 
-Damage: |cffffcc0045 (boulder) + 16 - 17 (wolf)|r
-Cooldown: |cffffcc004s|r
-Range: |cffffcc00800|r
+Damage: |cffffcc0058 - 60|r (boulder), |cffffcc0046 - 47|r (bite), x2 on bleeding enemies
+Critical strike: |cffffcc0015% chance for x2 damage|r
+Bleeding: |cffffcc005s|r
+Cooldown: |cffffcc002.5s|r (boulder), |cffffcc0030s|r (wolves)
 Area of effect: |cffffcc00150|r
-Health: |cffffcc00350|r
-Duration: |cffffcc0010s|r
+Range: |cffffcc00800|r
+Wolves: |cffffcc00300|r health, |cffffcc0025s|r
 Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00siege + normal|r
+Damage type: |cffffcc00siege|r (boulder), |cffffcc00normal|r (bite)
 }
 
 STRING 2440
-// Items: I08H (Wolf Catapult), Name (Name)
+// Items: I08H (Blood Scent), Name (Name)
 {
-Wolf Catapult
+Blood Scent
 }
 
 STRING 2441

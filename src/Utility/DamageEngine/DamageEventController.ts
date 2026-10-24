@@ -35,6 +35,7 @@ import { DragnetDamageEvent } from "./DamageEvents/DragnetDamageEvent";
 import { BeatdownDamageEvent } from "./DamageEvents/BeatdownDamageEvent";
 import { BallLightningDamageEvent } from "./DamageEvents/BallLightningDamageEvent";
 import { LandslideDamageEvent } from "./DamageEvents/LandslideDamageEvent";
+import { BloodScentDamageEvent } from "./DamageEvents/BloodScentDamageEvent";
 
 export interface ExtendedDamageInstance extends DamageInstance {
   sourceOwningPlayer: player;
@@ -79,6 +80,10 @@ export class DamageEventController {
     );
     DamageEngine.register(
       new BeatdownDamageEvent(),
+      DamageEventType.OnDamageEvent,
+    );
+    DamageEngine.register(
+      new BloodScentDamageEvent(),
       DamageEventType.OnDamageEvent,
     );
     DamageEngine.register(
