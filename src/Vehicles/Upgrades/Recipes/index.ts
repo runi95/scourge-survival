@@ -110,7 +110,7 @@ export * from "./ThunderMine";
 export * from "./HammerMine";
 export * from "./TaurenTotem";
 export * from "./ForwardOutpost";
-export * from "./KodoPen";
+export * from "./Piledriver";
 export * from "./SpiritLodge";
 export * from "./HeadhunterHut";
 export * from "./RaiderCamp";

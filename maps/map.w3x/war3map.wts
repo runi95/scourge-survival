@@ -10781,65 +10781,67 @@ Forward Outpost
 }
 
 STRING 2312
-// Items: I07M (Kodo Pen), Tip (Tooltip - Basic)
+// Items: I07M (Piledriver), Tip (Tooltip - Basic)
 {
-Purchase Kodo Pen
+Purchase Piledriver
 }
 
 STRING 2313
-// Items: I07M (Kodo Pen), Description (Description)
+// Items: I07M (Piledriver), Description (Description)
 {
-Sends out 2 Kodo Beasts every 30 seconds that fight by your side.
+Every 20 seconds goblins drive a steam piledriver into the ground next to your hero. It pounds the ground, stunning every enemy around it, and the more enemies crowd around it the faster it pounds.
 }
 
 STRING 2314
-// Items: I07M (Kodo Pen), Ubertip (Tooltip - Extended)
+// Items: I07M (Piledriver), Ubertip (Tooltip - Extended)
 {
-Sends out 2 Kodo Beasts every 30 seconds that fight by your side.
+Every 20 seconds goblins drive a steam piledriver into the ground next to your hero. It pounds the ground, stunning every enemy around it, and the more enemies crowd around it the faster it pounds.
 }
 
 STRING 2315
-// Items: I07M (Kodo Pen), Name (Name)
+// Items: I07M (Piledriver), Name (Name)
 {
-Kodo Pen
+Piledriver
 }
 
 STRING 2316
-// Items: I07N (Kodo Pen), Tip (Tooltip - Basic)
+// Items: I07N (Piledriver), Tip (Tooltip - Basic)
 {
-Purchase Kodo Pen
+Purchase Piledriver
 }
 
 STRING 2317
-// Items: I07N (Kodo Pen), Ubertip (Tooltip - Extended)
+// Items: I07N (Piledriver), Ubertip (Tooltip - Extended)
 {
-Sends out 2 Kodo Beasts every 30 seconds that fight by your side.
+Every 20 seconds goblins drive a steam piledriver into the ground 100 away from your hero, towards the nearest enemy unit. It pounds the ground, hurting and stunning every enemy ground unit around it. The more enemies crowd around it, the faster it pounds: every 3 seconds with one enemy near it, down to every second with 6 or more.
 
-Damage: |cffffcc002 x 16 - 20|r
-Cooldown: |cffffcc0030s|r
-Health: |cffffcc001000|r
+Damage: |cffffcc0040|r per pound
+Area of effect: |cffffcc00300|r
+Stun duration: |cffffcc000.5s|r
+Cooldown: |cffffcc0020s|r (piledriver), |cffffcc003s - 1s|r (pounds)
 Duration: |cffffcc0020s|r
-Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00piercing|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell|r
 }
 
 STRING 2318
-// Items: I07N (Kodo Pen), Description (Description)
+// Items: I07N (Piledriver), Description (Description)
 {
-Sends out 2 Kodo Beasts every 30 seconds that fight by your side.
+Every 20 seconds goblins drive a steam piledriver into the ground 100 away from your hero, towards the nearest enemy unit. It pounds the ground, hurting and stunning every enemy ground unit around it. The more enemies crowd around it, the faster it pounds: every 3 seconds with one enemy near it, down to every second with 6 or more.
 
-Damage: |cffffcc002 x 16 - 20|r
-Cooldown: |cffffcc0030s|r
-Health: |cffffcc001000|r
+Damage: |cffffcc0040|r per pound
+Area of effect: |cffffcc00300|r
+Stun duration: |cffffcc000.5s|r
+Cooldown: |cffffcc0020s|r (piledriver), |cffffcc003s - 1s|r (pounds)
 Duration: |cffffcc0020s|r
-Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00piercing|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell|r
 }
 
 STRING 2319
-// Items: I07N (Kodo Pen), Name (Name)
+// Items: I07N (Piledriver), Name (Name)
 {
-Kodo Pen
+Piledriver
 }
 
 STRING 2320
@@ -20202,5 +20204,17 @@ STRING 3587
 // Units: n01R (Forward Outpost), Name (Name)
 {
 Forward Outpost
+}
+
+STRING 3588
+// Units: n01S (Piledriver), Name (Name)
+{
+Piledriver
+}
+
+STRING 3589
+// Abilities: A05G (Piledriver), Name (Name)
+{
+Piledriver
 }
 
