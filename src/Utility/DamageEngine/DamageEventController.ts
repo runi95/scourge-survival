@@ -37,6 +37,7 @@ import { BallLightningDamageEvent } from "./DamageEvents/BallLightningDamageEven
 import { LandslideDamageEvent } from "./DamageEvents/LandslideDamageEvent";
 import { BloodScentDamageEvent } from "./DamageEvents/BloodScentDamageEvent";
 import { DischargeDamageEvent } from "./DamageEvents/DischargeDamageEvent";
+import { ThunderFangsDamageEvent } from "./DamageEvents/ThunderFangsDamageEvent";
 
 export interface ExtendedDamageInstance extends DamageInstance {
   sourceOwningPlayer: player;
@@ -219,6 +220,10 @@ export class DamageEventController {
     );
     DamageEngine.register(
       new DischargeDamageEvent(),
+      DamageEventType.AfterDamageEvent,
+    );
+    DamageEngine.register(
+      new ThunderFangsDamageEvent(),
       DamageEventType.AfterDamageEvent,
     );
   }

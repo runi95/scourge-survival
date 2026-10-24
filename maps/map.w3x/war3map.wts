@@ -12125,71 +12125,67 @@ Discharge
 }
 
 STRING 2481
-// Items: I08S (Storm Wolves), Tip (Tooltip - Basic)
+// Items: I08S (Thunder Fangs), Tip (Tooltip - Basic)
 {
-Purchase Storm Wolves
+Purchase Thunder Fangs
 }
 
 STRING 2482
-// Items: I08S (Storm Wolves), Description (Description)
+// Items: I08S (Thunder Fangs), Description (Description)
 {
-Calls a chain lightning on a random enemy unit within range, and a Spirit Wolf charges out of the storm.
+Summons 2 storm-charged Spirit Wolves every 30 seconds. Every second bite of a wolf releases a chain lightning from the enemy it bit.
 }
 
 STRING 2483
-// Items: I08S (Storm Wolves), Ubertip (Tooltip - Extended)
+// Items: I08S (Thunder Fangs), Ubertip (Tooltip - Extended)
 {
-Calls a chain lightning on a random enemy unit within range, and a Spirit Wolf charges out of the storm.
+Summons 2 storm-charged Spirit Wolves every 30 seconds. Every second bite of a wolf releases a chain lightning from the enemy it bit.
 }
 
 STRING 2484
-// Items: I08S (Storm Wolves), Name (Name)
+// Items: I08S (Thunder Fangs), Name (Name)
 {
-Storm Wolves
+Thunder Fangs
 }
 
 STRING 2485
-// Items: I08T (Storm Wolves), Tip (Tooltip - Basic)
+// Items: I08T (Thunder Fangs), Tip (Tooltip - Basic)
 {
-Purchase Storm Wolves
+Purchase Thunder Fangs
 }
 
 STRING 2486
-// Items: I08T (Storm Wolves), Ubertip (Tooltip - Extended)
+// Items: I08T (Thunder Fangs), Ubertip (Tooltip - Extended)
 {
-Calls a chain lightning on a random enemy unit within range, and a Spirit Wolf charges out of the storm.
+Summons 2 storm-charged Spirit Wolves every 30 seconds that fight by your side, leaping at flying units too. Every second bite of a wolf releases a chain lightning from the enemy it bit, jumping on to the enemies around it.
 
-Damage: |cffffcc00180 (lightning) + 16 - 17 (wolf)|r
-Damage reduction jump: |cffffcc00-15%|r
-Cooldown: |cffffcc004s|r
-Range: |cffffcc00500|r
-Area of effect: |cffffcc00500|r
-Health: |cffffcc00350|r
-Duration: |cffffcc0010s|r
+Damage: |cffffcc0046 - 47|r (bite), |cffffcc00125|r (chain lightning, |cffffcc00-15%|r per jump)
+Critical strike: |cffffcc0015% chance for x2 damage|r
+Cooldown: |cffffcc0030s|r
+Health: |cffffcc00500|r
+Duration: |cffffcc0030s|r
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00spell + normal|r
+Damage type: |cffffcc00normal|r (bite), |cffffcc00spell|r (chain lightning)
 }
 
 STRING 2487
-// Items: I08T (Storm Wolves), Description (Description)
+// Items: I08T (Thunder Fangs), Description (Description)
 {
-Calls a chain lightning on a random enemy unit within range, and a Spirit Wolf charges out of the storm.
+Summons 2 storm-charged Spirit Wolves every 30 seconds that fight by your side, leaping at flying units too. Every second bite of a wolf releases a chain lightning from the enemy it bit, jumping on to the enemies around it.
 
-Damage: |cffffcc00180 (lightning) + 16 - 17 (wolf)|r
-Damage reduction jump: |cffffcc00-15%|r
-Cooldown: |cffffcc004s|r
-Range: |cffffcc00500|r
-Area of effect: |cffffcc00500|r
-Health: |cffffcc00350|r
-Duration: |cffffcc0010s|r
+Damage: |cffffcc0046 - 47|r (bite), |cffffcc00125|r (chain lightning, |cffffcc00-15%|r per jump)
+Critical strike: |cffffcc0015% chance for x2 damage|r
+Cooldown: |cffffcc0030s|r
+Health: |cffffcc00500|r
+Duration: |cffffcc0030s|r
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00spell + normal|r
+Damage type: |cffffcc00normal|r (bite), |cffffcc00spell|r (chain lightning)
 }
 
 STRING 2488
-// Items: I08T (Storm Wolves), Name (Name)
+// Items: I08T (Thunder Fangs), Name (Name)
 {
-Storm Wolves
+Thunder Fangs
 }
 
 STRING 2489
@@ -20272,5 +20268,11 @@ STRING 3596
 // Units: n01T (Ranging Stake), Name (Name)
 {
 Ranging Stake
+}
+
+STRING 3597
+// Units: o006 (Storm Wolf), Name (Name)
+{
+Storm Wolf
 }
 

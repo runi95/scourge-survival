@@ -136,7 +136,7 @@ export const weaponRecipes = [
   new Recipes.Counterweight(),
   new Recipes.ChainShot(),
   new Recipes.Discharge(),
-  new Recipes.StormWolves(),
+  new Recipes.ThunderFangs(),
   new Recipes.LightningNet(),
   new Recipes.SeismicStomp(),
   new Recipes.SpiritStomp(),
