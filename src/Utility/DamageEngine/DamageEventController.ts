@@ -30,6 +30,7 @@ import { VertigoDamageEvent } from "./DamageEvents/VertigoDamageEvent";
 import { GarroteDamageEvent } from "./DamageEvents/GarroteDamageEvent";
 import { BloodrootDamageEvent } from "./DamageEvents/BloodrootDamageEvent";
 import { CoupDeGraceDamageEvent } from "./DamageEvents/CoupDeGraceDamageEvent";
+import { ForwardOutpostDamageEvent } from "./DamageEvents/ForwardOutpostDamageEvent";
 
 export interface ExtendedDamageInstance extends DamageInstance {
   sourceOwningPlayer: player;
@@ -184,6 +185,10 @@ export class DamageEventController {
     );
     DamageEngine.register(
       new CoupDeGraceDamageEvent(),
+      DamageEventType.AfterDamageEvent,
+    );
+    DamageEngine.register(
+      new ForwardOutpostDamageEvent(),
       DamageEventType.AfterDamageEvent,
     );
   }

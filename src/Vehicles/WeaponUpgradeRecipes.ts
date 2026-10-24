@@ -114,7 +114,7 @@ export const weaponRecipes = [
   new Recipes.ThunderMine(),
   new Recipes.HammerMine(),
   new Recipes.TaurenTotem(),
-  new Recipes.SiegeWorkshop(),
+  new Recipes.ForwardOutpost(),
   new Recipes.KodoPen(),
   new Recipes.SpiritLodge(),
   new Recipes.HeadhunterHut(),

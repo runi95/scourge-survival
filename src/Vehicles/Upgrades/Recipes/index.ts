@@ -109,7 +109,7 @@ export * from "./FrostMines";
 export * from "./ThunderMine";
 export * from "./HammerMine";
 export * from "./TaurenTotem";
-export * from "./SiegeWorkshop";
+export * from "./ForwardOutpost";
 export * from "./KodoPen";
 export * from "./SpiritLodge";
 export * from "./HeadhunterHut";

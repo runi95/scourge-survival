@@ -10717,65 +10717,67 @@ Tauren Totem
 }
 
 STRING 2304
-// Items: I07K (Siege Workshop), Tip (Tooltip - Basic)
+// Items: I07K (Forward Outpost), Tip (Tooltip - Basic)
 {
-Purchase Siege Workshop
+Purchase Forward Outpost
 }
 
 STRING 2305
-// Items: I07K (Siege Workshop), Description (Description)
+// Items: I07K (Forward Outpost), Description (Description)
 {
-Builds 2 Demolishers every 30 seconds that bombard enemies from afar.
+Every 30 seconds goblins put up an outpost between your hero and the enemies. Any enemy that attacks your hero or the outpost near it has a flaming boulder lobbed at it.
 }
 
 STRING 2306
-// Items: I07K (Siege Workshop), Ubertip (Tooltip - Extended)
+// Items: I07K (Forward Outpost), Ubertip (Tooltip - Extended)
 {
-Builds 2 Demolishers every 30 seconds that bombard enemies from afar.
+Every 30 seconds goblins put up an outpost between your hero and the enemies. Any enemy that attacks your hero or the outpost near it has a flaming boulder lobbed at it.
 }
 
 STRING 2307
-// Items: I07K (Siege Workshop), Name (Name)
+// Items: I07K (Forward Outpost), Name (Name)
 {
-Siege Workshop
+Forward Outpost
 }
 
 STRING 2308
-// Items: I07L (Siege Workshop), Tip (Tooltip - Basic)
+// Items: I07L (Forward Outpost), Tip (Tooltip - Basic)
 {
-Purchase Siege Workshop
+Purchase Forward Outpost
 }
 
 STRING 2309
-// Items: I07L (Siege Workshop), Ubertip (Tooltip - Extended)
+// Items: I07L (Forward Outpost), Ubertip (Tooltip - Extended)
 {
-Builds 2 Demolishers every 30 seconds that bombard enemies from afar.
+Every 30 seconds goblins put up a Forward Outpost 350 away from your hero, towards the nearest enemy unit. Every enemy ground unit within 800 of the outpost that attacks your hero or the outpost has a flaming boulder lobbed at it from the outpost, crushing everything it lands on (at most one a second). While nobody does, the outpost shells the enemy ground unit nearest to it every 3 seconds.
 
-Damage: |cffffcc002 x 72 - 89|r
-Cooldown: |cffffcc0030s|r
-Health: |cffffcc00425|r
-Duration: |cffffcc0020s|r
+Damage: |cffffcc0058 - 60|r
+Area of effect: |cffffcc00150|r
+Range: |cffffcc00800|r (from the outpost)
+Cooldown: |cffffcc0030s|r (outpost), |cffffcc001s|r (boulders), |cffffcc003s|r (left alone)
+Outpost: |cffffcc00800|r health, |cffffcc003|r armor, lasts |cffffcc0030s|r
 Targets: |cffffcc00ground only!|r
 Damage type: |cffffcc00siege|r
 }
 
 STRING 2310
-// Items: I07L (Siege Workshop), Description (Description)
+// Items: I07L (Forward Outpost), Description (Description)
 {
-Builds 2 Demolishers every 30 seconds that bombard enemies from afar.
+Every 30 seconds goblins put up a Forward Outpost 350 away from your hero, towards the nearest enemy unit. Every enemy ground unit within 800 of the outpost that attacks your hero or the outpost has a flaming boulder lobbed at it from the outpost, crushing everything it lands on (at most one a second). While nobody does, the outpost shells the enemy ground unit nearest to it every 3 seconds.
 
-Damage: |cffffcc002 x 72 - 89|r
-Cooldown: |cffffcc0030s|r
-Health: |cffffcc00425|r
-Duration: |cffffcc0020s|r
+Damage: |cffffcc0058 - 60|r
+Area of effect: |cffffcc00150|r
+Range: |cffffcc00800|r (from the outpost)
+Cooldown: |cffffcc0030s|r (outpost), |cffffcc001s|r (boulders), |cffffcc003s|r (left alone)
+Outpost: |cffffcc00800|r health, |cffffcc003|r armor, lasts |cffffcc0030s|r
 Targets: |cffffcc00ground only!|r
 Damage type: |cffffcc00siege|r
 }
 
 STRING 2311
-// Items: I07L (Siege Workshop), Name (Name)
+// Items: I07L (Forward Outpost), Name (Name)
 {
-Siege Workshop
+Forward Outpost
 }
 
 STRING 2312
@@ -20194,5 +20196,11 @@ STRING 3586
 // Abilities: A05F (Garrote Vines), Name (Name)
 {
 Garrote Vines
+}
+
+STRING 3587
+// Units: n01R (Forward Outpost), Name (Name)
+{
+Forward Outpost
 }
 
