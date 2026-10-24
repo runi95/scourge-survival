@@ -12589,67 +12589,69 @@ Palisade
 }
 
 STRING 2539
-// Items: I096 (Hunter's Stomp), Tip (Tooltip - Basic)
+// Items: I096 (Tremor Lines), Tip (Tooltip - Basic)
 {
-Purchase Hunter's Stomp
+Purchase Tremor Lines
 }
 
 STRING 2540
-// Items: I096 (Hunter's Stomp), Description (Description)
+// Items: I096 (Tremor Lines), Description (Description)
 {
-Throws a net at a random enemy unit within range and stomps the ground, stunning every enemy around your hero.
+Throws nets at enemies beyond the reach of your hero's stomp, each one roped back to your hero. When your hero stomps, the shock runs down every rope and erupts around every netted enemy too.
 }
 
 STRING 2541
-// Items: I096 (Hunter's Stomp), Ubertip (Tooltip - Extended)
+// Items: I096 (Tremor Lines), Ubertip (Tooltip - Extended)
 {
-Throws a net at a random enemy unit within range and stomps the ground, stunning every enemy around your hero.
+Throws nets at enemies beyond the reach of your hero's stomp, each one roped back to your hero. When your hero stomps, the shock runs down every rope and erupts around every netted enemy too.
 }
 
 STRING 2542
-// Items: I096 (Hunter's Stomp), Name (Name)
+// Items: I096 (Tremor Lines), Name (Name)
 {
-Hunter's Stomp
+Tremor Lines
 }
 
 STRING 2543
-// Items: I097 (Hunter's Stomp), Tip (Tooltip - Basic)
+// Items: I097 (Tremor Lines), Tip (Tooltip - Basic)
 {
-Purchase Hunter's Stomp
+Purchase Tremor Lines
 }
 
 STRING 2544
-// Items: I097 (Hunter's Stomp), Ubertip (Tooltip - Extended)
+// Items: I097 (Tremor Lines), Ubertip (Tooltip - Extended)
 {
-Throws a net at a random enemy unit within range and stomps the ground, stunning every enemy around your hero.
+Every 1.5 seconds throws a net at a random enemy unit 300 to 800 away from your hero (or nearer, when none is that far), damaging it and holding it in place; flying units are pulled to the ground. Each net is roped back to your hero while it holds. Every 4 seconds your hero stomps the ground, hurting and stunning every enemy ground unit around it, and the shock runs down every rope: around every netted enemy the ground erupts too, hurting and stunning every enemy unit around it.
 
-Damage: |cffffcc0040 (net) + 90 (stomp)|r
-Cooldown: |cffffcc003s|r
-Range: |cffffcc00600|r
-Area of effect: |cffffcc00300|r
-Duration: |cffffcc003s (net) + 1.5s (stun)|r
-Targets: |cffffcc00air & ground (net), ground (stomp)|r
+Damage: |cffffcc0040|r (net), |cffffcc0090|r (stomp, and around every netted enemy)
+Stun duration: |cffffcc001.5s|r
+Hold duration: |cffffcc003s|r
+Area of effect: |cffffcc00300|r (stomp), |cffffcc00175|r (around every netted enemy)
+Cooldown: |cffffcc001.5s|r (nets), |cffffcc004s|r (stomp)
+Range: |cffffcc00300 - 800|r (nets)
+Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 2545
-// Items: I097 (Hunter's Stomp), Description (Description)
+// Items: I097 (Tremor Lines), Description (Description)
 {
-Throws a net at a random enemy unit within range and stomps the ground, stunning every enemy around your hero.
+Every 1.5 seconds throws a net at a random enemy unit 300 to 800 away from your hero (or nearer, when none is that far), damaging it and holding it in place; flying units are pulled to the ground. Each net is roped back to your hero while it holds. Every 4 seconds your hero stomps the ground, hurting and stunning every enemy ground unit around it, and the shock runs down every rope: around every netted enemy the ground erupts too, hurting and stunning every enemy unit around it.
 
-Damage: |cffffcc0040 (net) + 90 (stomp)|r
-Cooldown: |cffffcc003s|r
-Range: |cffffcc00600|r
-Area of effect: |cffffcc00300|r
-Duration: |cffffcc003s (net) + 1.5s (stun)|r
-Targets: |cffffcc00air & ground (net), ground (stomp)|r
+Damage: |cffffcc0040|r (net), |cffffcc0090|r (stomp, and around every netted enemy)
+Stun duration: |cffffcc001.5s|r
+Hold duration: |cffffcc003s|r
+Area of effect: |cffffcc00300|r (stomp), |cffffcc00175|r (around every netted enemy)
+Cooldown: |cffffcc001.5s|r (nets), |cffffcc004s|r (stomp)
+Range: |cffffcc00300 - 800|r (nets)
+Targets: |cffffcc00air & ground|r
 Damage type: |cffffcc00spell|r
 }
 
 STRING 2546
-// Items: I097 (Hunter's Stomp), Name (Name)
+// Items: I097 (Tremor Lines), Name (Name)
 {
-Hunter's Stomp
+Tremor Lines
 }
 
 STRING 2547

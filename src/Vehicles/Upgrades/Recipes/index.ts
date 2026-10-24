@@ -138,7 +138,7 @@ export * from "./Pounce";
 export * from "./SeismicCharges";
 export * from "./TremorMine";
 export * from "./Palisade";
-export * from "./HuntersStomp";
+export * from "./TremorLines";
 export * from "./SpiritPack";
 export * from "./RocketWolves";
 export * from "./WolfDen";
