@@ -137,7 +137,7 @@ export * from "./SeismicStomp";
 export * from "./Pounce";
 export * from "./SeismicCharges";
 export * from "./TremorMine";
-export * from "./EarthSpikes";
+export * from "./Palisade";
 export * from "./HuntersStomp";
 export * from "./SpiritPack";
 export * from "./RocketWolves";

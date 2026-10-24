@@ -142,7 +142,7 @@ export const weaponRecipes = [
   new Recipes.Pounce(),
   new Recipes.SeismicCharges(),
   new Recipes.TremorMine(),
-  new Recipes.EarthSpikes(),
+  new Recipes.Palisade(),
   new Recipes.HuntersStomp(),
   new Recipes.SpiritPack(),
   new Recipes.RocketWolves(),

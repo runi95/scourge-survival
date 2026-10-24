@@ -12525,67 +12525,67 @@ Tremor Mine
 }
 
 STRING 2531
-// Items: I094 (Earth Spikes), Tip (Tooltip - Basic)
+// Items: I094 (Palisade), Tip (Tooltip - Basic)
 {
-Purchase Earth Spikes
+Purchase Palisade
 }
 
 STRING 2532
-// Items: I094 (Earth Spikes), Description (Description)
+// Items: I094 (Palisade), Description (Description)
 {
-Hurls a spear at a random enemy unit within range and stomps the ground, stunning every enemy around your hero.
+Every stomp drives a ring of spears up out of the ground around your hero, impaling every enemy in it and every enemy that crosses it. While your hero stays put the spears grow taller with every stomp.
 }
 
 STRING 2533
-// Items: I094 (Earth Spikes), Ubertip (Tooltip - Extended)
+// Items: I094 (Palisade), Ubertip (Tooltip - Extended)
 {
-Hurls a spear at a random enemy unit within range and stomps the ground, stunning every enemy around your hero.
+Every stomp drives a ring of spears up out of the ground around your hero, impaling every enemy in it and every enemy that crosses it. While your hero stays put the spears grow taller with every stomp.
 }
 
 STRING 2534
-// Items: I094 (Earth Spikes), Name (Name)
+// Items: I094 (Palisade), Name (Name)
 {
-Earth Spikes
+Palisade
 }
 
 STRING 2535
-// Items: I095 (Earth Spikes), Tip (Tooltip - Basic)
+// Items: I095 (Palisade), Tip (Tooltip - Basic)
 {
-Purchase Earth Spikes
+Purchase Palisade
 }
 
 STRING 2536
-// Items: I095 (Earth Spikes), Ubertip (Tooltip - Extended)
+// Items: I095 (Palisade), Ubertip (Tooltip - Extended)
 {
-Hurls a spear at a random enemy unit within range and stomps the ground, stunning every enemy around your hero.
+Every 4 seconds stomps the ground, hurting and stunning every enemy ground unit around your hero, and drives a ring of spears up out of the ground around it that stands for 4 seconds. Every enemy ground unit in the ring, or that crosses it, is impaled and slowed. If your hero hasn't moved since the last stomp, the new ring grows taller and impales harder, up to 3 times.
 
-Damage: |cffffcc0020 - 30 (spear) + 90 (stomp)|r
-Cooldown: |cffffcc003s|r
-Range: |cffffcc00800|r
-Area of effect: |cffffcc00300|r
+Damage: |cffffcc0090|r (stomp), |cffffcc0050/75/100|r (ring)
 Stun duration: |cffffcc001.5s|r
-Targets: |cffffcc00air & ground (spear), ground (stomp)|r
-Damage type: |cffffcc00piercing + spell|r
+Slow: |cffffcc00-50%|r movement speed for |cffffcc001.5s|r
+Area of effect: |cffffcc00300|r (stomp), |cffffcc00150 - 420|r away (ring)
+Cooldown: |cffffcc004s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell|r (stomp), |cffffcc00piercing|r (ring)
 }
 
 STRING 2537
-// Items: I095 (Earth Spikes), Description (Description)
+// Items: I095 (Palisade), Description (Description)
 {
-Hurls a spear at a random enemy unit within range and stomps the ground, stunning every enemy around your hero.
+Every 4 seconds stomps the ground, hurting and stunning every enemy ground unit around your hero, and drives a ring of spears up out of the ground around it that stands for 4 seconds. Every enemy ground unit in the ring, or that crosses it, is impaled and slowed. If your hero hasn't moved since the last stomp, the new ring grows taller and impales harder, up to 3 times.
 
-Damage: |cffffcc0020 - 30 (spear) + 90 (stomp)|r
-Cooldown: |cffffcc003s|r
-Range: |cffffcc00800|r
-Area of effect: |cffffcc00300|r
+Damage: |cffffcc0090|r (stomp), |cffffcc0050/75/100|r (ring)
 Stun duration: |cffffcc001.5s|r
-Targets: |cffffcc00air & ground (spear), ground (stomp)|r
-Damage type: |cffffcc00piercing + spell|r
+Slow: |cffffcc00-50%|r movement speed for |cffffcc001.5s|r
+Area of effect: |cffffcc00300|r (stomp), |cffffcc00150 - 420|r away (ring)
+Cooldown: |cffffcc004s|r
+Targets: |cffffcc00ground only!|r
+Damage type: |cffffcc00spell|r (stomp), |cffffcc00piercing|r (ring)
 }
 
 STRING 2538
-// Items: I095 (Earth Spikes), Name (Name)
+// Items: I095 (Palisade), Name (Name)
 {
-Earth Spikes
+Palisade
 }
 
 STRING 2539
@@ -20276,5 +20276,11 @@ STRING 3597
 // Units: o006 (Storm Wolf), Name (Name)
 {
 Storm Wolf
+}
+
+STRING 3598
+// Abilities: A05K (Palisade), Name (Name)
+{
+Palisade
 }
 
