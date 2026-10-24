@@ -82,7 +82,7 @@ export * from "./ThunderBombs";
 export * from "./Relay";
 export * from "./FrostCannon";
 export * from "./ConcussionShells";
-export * from "./HammerCannon";
+export * from "./SkippingShot";
 export * from "./ElementalFoundry";
 export * from "./FrostClockwerks";
 export * from "./KnightStables";

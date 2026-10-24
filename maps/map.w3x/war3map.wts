@@ -8857,71 +8857,67 @@ Concussion Shells
 }
 
 STRING 2075
-// Items: I062 (Hammer Cannon), Tip (Tooltip - Basic)
+// Items: I062 (Skipping Shot), Tip (Tooltip - Basic)
 {
-Purchase Hammer Cannon
+Purchase Skipping Shot
 }
 
 STRING 2076
-// Items: I062 (Hammer Cannon), Description (Description)
+// Items: I062 (Skipping Shot), Description (Description)
 {
-Fires a heavy hammer-shaped shell at a random enemy unit within range, damaging and stunning it.
+Fires a heavy shot at the nearest enemy that doesn't stop where it lands: it skips off the ground and bounces on in a straight line, stunning everything at every landing.
 }
 
 STRING 2077
-// Items: I062 (Hammer Cannon), Ubertip (Tooltip - Extended)
+// Items: I062 (Skipping Shot), Ubertip (Tooltip - Extended)
 {
-Fires a heavy hammer-shaped shell at a random enemy unit within range, damaging and stunning it.
+Fires a heavy shot at the nearest enemy that doesn't stop where it lands: it skips off the ground and bounces on in a straight line, stunning everything at every landing.
 }
 
 STRING 2078
-// Items: I062 (Hammer Cannon), Name (Name)
+// Items: I062 (Skipping Shot), Name (Name)
 {
-Hammer Cannon
+Skipping Shot
 }
 
 STRING 2079
-// Items: I063 (Hammer Cannon), Tip (Tooltip - Basic)
+// Items: I063 (Skipping Shot), Tip (Tooltip - Basic)
 {
-Purchase Hammer Cannon
+Purchase Skipping Shot
 }
 
 STRING 2080
-// Items: I063 (Hammer Cannon), Ubertip (Tooltip - Extended)
+// Items: I063 (Skipping Shot), Ubertip (Tooltip - Extended)
 {
-Fires a heavy hammer-shaped shell at a random enemy unit within range, damaging and stunning it.
+Every 1.5 seconds fires a heavy shot at the nearest enemy unit within range. It lands on the target and skips on along the same line, landing 3 more times, 200 further each time. Every landing hurts and stuns every enemy unit around it.
 
-Damage: |cffffcc00120|r
+Damage: |cffffcc0065|r (each landing)
+Stun duration: |cffffcc000.75s|r
+Area of effect: |cffffcc00120|r (each landing)
 Cooldown: |cffffcc001.5s|r
-Range: |cffffcc00700|r
-Stun duration: |cffffcc000.5s|r
+Range: |cffffcc00600|r
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00spell|r
+Damage type: |cffffcc00siege|r
 }
 
 STRING 2081
-// Items: I063 (Hammer Cannon), Description (Description)
+// Items: I063 (Skipping Shot), Description (Description)
 {
-Fires a heavy hammer-shaped shell at a random enemy unit within range, damaging and stunning it.
+Every 1.5 seconds fires a heavy shot at the nearest enemy unit within range. It lands on the target and skips on along the same line, landing 3 more times, 200 further each time. Every landing hurts and stuns every enemy unit around it.
 
-Damage: |cffffcc00120|r
+Damage: |cffffcc0065|r (each landing)
+Stun duration: |cffffcc000.75s|r
+Area of effect: |cffffcc00120|r (each landing)
 Cooldown: |cffffcc001.5s|r
-Range: |cffffcc00700|r
-Stun duration: |cffffcc000.5s|r
+Range: |cffffcc00600|r
 Targets: |cffffcc00air & ground|r
-Damage type: |cffffcc00spell|r
+Damage type: |cffffcc00siege|r
 }
 
 STRING 2082
-// Items: I063 (Hammer Cannon), Name (Name)
+// Items: I063 (Skipping Shot), Name (Name)
 {
-Hammer Cannon
-}
-
-STRING 2083
-// Abilities: A04A (Hammer Cannon), Name (Name)
-{
-Hammer Cannon
+Skipping Shot
 }
 
 STRING 2084
