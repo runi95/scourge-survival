@@ -134,7 +134,7 @@ export * from "./Discharge";
 export * from "./ThunderFangs";
 export * from "./LiveWire";
 export * from "./SeismicStomp";
-export * from "./SpiritStomp";
+export * from "./Pounce";
 export * from "./RocketStomp";
 export * from "./TremorMine";
 export * from "./EarthSpikes";

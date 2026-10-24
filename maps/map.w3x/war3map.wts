@@ -12321,69 +12321,71 @@ Seismic Stomp
 }
 
 STRING 2506
-// Items: I08Y (Spirit Stomp), Tip (Tooltip - Basic)
+// Items: I08Y (Pounce), Tip (Tooltip - Basic)
 {
-Purchase Spirit Stomp
+Purchase Pounce
 }
 
 STRING 2507
-// Items: I08Y (Spirit Stomp), Description (Description)
+// Items: I08Y (Pounce), Description (Description)
 {
-Stomps the ground, stunning every enemy unit around your hero, and calls a Spirit Wolf to fight by your side.
+Summons 2 Spirit Wolves every 30 seconds. They don't walk into a fight: every few seconds each wolf leaps onto the thickest group of enemies near it and lands with a stomp that stuns them all.
 }
 
 STRING 2508
-// Items: I08Y (Spirit Stomp), Ubertip (Tooltip - Extended)
+// Items: I08Y (Pounce), Ubertip (Tooltip - Extended)
 {
-Stomps the ground, stunning every enemy unit around your hero, and calls a Spirit Wolf to fight by your side.
+Summons 2 Spirit Wolves every 30 seconds. They don't walk into a fight: every few seconds each wolf leaps onto the thickest group of enemies near it and lands with a stomp that stuns them all.
 }
 
 STRING 2509
-// Items: I08Y (Spirit Stomp), Name (Name)
+// Items: I08Y (Pounce), Name (Name)
 {
-Spirit Stomp
+Pounce
 }
 
 STRING 2510
-// Items: I08Z (Spirit Stomp), Tip (Tooltip - Basic)
+// Items: I08Z (Pounce), Tip (Tooltip - Basic)
 {
-Purchase Spirit Stomp
+Purchase Pounce
 }
 
 STRING 2511
-// Items: I08Z (Spirit Stomp), Ubertip (Tooltip - Extended)
+// Items: I08Z (Pounce), Ubertip (Tooltip - Extended)
 {
-Stomps the ground, stunning every enemy unit around your hero, and calls a Spirit Wolf to fight by your side.
+Summons 2 Spirit Wolves every 30 seconds that fight by your side. Every 3 seconds each wolf leaps onto the thickest group of enemy ground units within 500 of it and lands with a stomp, hurting and stunning every enemy ground unit around it.
 
-Damage: |cffffcc0090 (stomp) + 16 - 17 (wolf)|r
-Cooldown: |cffffcc004s|r
-Area of effect: |cffffcc00300|r
-Stun duration: |cffffcc001.5s|r
-Health: |cffffcc00350|r
-Duration: |cffffcc0010s|r
+Damage: |cffffcc0046 - 47|r (bite), |cffffcc0080|r (stomp)
+Critical strike: |cffffcc0015% chance for x2 damage|r
+Stun duration: |cffffcc001s|r
+Area of effect: |cffffcc00250|r (stomp)
+Cooldown: |cffffcc0030s|r (wolves), |cffffcc003s|r (leaps)
+Health: |cffffcc00300|r
+Duration: |cffffcc0025s|r
 Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00spell + normal|r
+Damage type: |cffffcc00normal|r (bite), |cffffcc00spell|r (stomp)
 }
 
 STRING 2512
-// Items: I08Z (Spirit Stomp), Description (Description)
+// Items: I08Z (Pounce), Description (Description)
 {
-Stomps the ground, stunning every enemy unit around your hero, and calls a Spirit Wolf to fight by your side.
+Summons 2 Spirit Wolves every 30 seconds that fight by your side. Every 3 seconds each wolf leaps onto the thickest group of enemy ground units within 500 of it and lands with a stomp, hurting and stunning every enemy ground unit around it.
 
-Damage: |cffffcc0090 (stomp) + 16 - 17 (wolf)|r
-Cooldown: |cffffcc004s|r
-Area of effect: |cffffcc00300|r
-Stun duration: |cffffcc001.5s|r
-Health: |cffffcc00350|r
-Duration: |cffffcc0010s|r
+Damage: |cffffcc0046 - 47|r (bite), |cffffcc0080|r (stomp)
+Critical strike: |cffffcc0015% chance for x2 damage|r
+Stun duration: |cffffcc001s|r
+Area of effect: |cffffcc00250|r (stomp)
+Cooldown: |cffffcc0030s|r (wolves), |cffffcc003s|r (leaps)
+Health: |cffffcc00300|r
+Duration: |cffffcc0025s|r
 Targets: |cffffcc00ground only!|r
-Damage type: |cffffcc00spell + normal|r
+Damage type: |cffffcc00normal|r (bite), |cffffcc00spell|r (stomp)
 }
 
 STRING 2513
-// Items: I08Z (Spirit Stomp), Name (Name)
+// Items: I08Z (Pounce), Name (Name)
 {
-Spirit Stomp
+Pounce
 }
 
 STRING 2514

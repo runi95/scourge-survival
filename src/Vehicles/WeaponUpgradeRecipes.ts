@@ -139,7 +139,7 @@ export const weaponRecipes = [
   new Recipes.ThunderFangs(),
   new Recipes.LiveWire(),
   new Recipes.SeismicStomp(),
-  new Recipes.SpiritStomp(),
+  new Recipes.Pounce(),
   new Recipes.RocketStomp(),
   new Recipes.TremorMine(),
   new Recipes.EarthSpikes(),
